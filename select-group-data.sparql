@@ -1,0 +1,5 @@
+SELECT DISTINCT ?title ?abstract ?description WHERE {
+  <%GROUP%> <http://purl.org/dc/terms/title>|<http://www.w3.org/2000/01/rdf-schema#label> ?title .
+  OPTIONAL { <%GROUP%> <http://purl.org/dc/terms/abstract>|<http://www.w3.org/2000/01/rdf-schema#comment> ?abstract . }
+  OPTIONAL { <%GROUP%> <http://purl.org/dc/terms/description> ?description . }
+}

@@ -1,0 +1,4 @@
+SELECT DISTINCT ?g ?s WHERE {
+  GRAPH ?g { ?s a <http://dataid.dbpedia.org/ns/core#Dataset> }
+  FILTER(regex(str(?g), "%SOURCE%" ))
+}
