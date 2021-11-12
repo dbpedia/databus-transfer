@@ -38,7 +38,7 @@ async function transfer() {
 
   // TODO: Configurable?
   var sourceEndpoint = sourceUri.origin + '/repo/sparql';
-
+/*
   // Fetch the list of groups from the specified account of the source Databus.
   var selectGroupsQuery = fs.readFileSync(path.resolve(__dirname, 'select-groups.sparql'), 'utf8');
   selectGroupsQuery = selectGroupsQuery.replace('%SOURCE%', sourceUri.href);
@@ -118,7 +118,8 @@ async function transfer() {
   }
 
   console.log(`All groups created!`);
-
+*/
+  
   // Fetch all graphs that specify a dataid:Dataset
   var selectGraphs = fs.readFileSync(path.resolve(__dirname, 'select-graphs.sparql'), 'utf8');
   selectGraphs = selectGraphs.replace('%SOURCE%', sourceUri.href);
@@ -186,16 +187,23 @@ async function transfer() {
       }
     }
 
+    if(versionGraph == null) {
+      continue;
+    }
     // Modify the graphs to match the new API input format
     var targetBody = {};
     targetBody['@context'] = jsonld['@context'];
     targetBody['@graph'] = [];
 
     // Assign new id, set dct:abstract/description/publisher
-    datasetGraph['@id'] = `${versionGraph['@id']}/dataid.jsonld#Dataset`;
+    datasetGraph['@id'] = `${versionGraph['@id']}#Dataset`;
     datasetGraph['dct:abstract'] = datasetGraph['rdfs:comment'];
     datasetGraph['dct:description'] = datasetGraph['rdfs:comment'];
     datasetGraph['dct:publisher'] = { '@id': `${targetUri.href}#this` }
+
+    datasetGraph['dcat:distribution'] = [];
+
+    console.log(`Processing ${datasetGraph['@id']}`);
 
     // Add subgraphs
     targetBody['@graph'].push(versionGraph);
@@ -213,15 +221,23 @@ async function transfer() {
 
       var hash = new URL(fileGraph['@id']).hash.replace('#', '');
 
-      fileGraph['@id'] = `${versionGraph['@id']}/dataid.jsonld#${hash}`;
+      fileGraph['@id'] = `${versionGraph['@id']}#${hash}`;
       fileGraph['dataid:file'] = { '@id': `${versionGraph['@id']}/${hash}` };
 
       delete fileGraph['dataid:signature'];
+      delete fileGraph['dataid:duplicates'];
+      delete fileGraph['dataid:isDistributionOf'];
+      delete fileGraph['dataid:associatedAgent'];
+      delete fileGraph['dct:publisher'];
 
       targetBody['@graph'].push(fileGraph);
+
+      datasetGraph['dcat:distribution'].push({
+        '@id' : fileGraph['@id']
+      });
+
     }
 
-    console.log(datasetGraph);
 
     // Send PUT to API
     try {
@@ -232,14 +248,16 @@ async function transfer() {
         json: targetBody
       };
 
+      fs.writeFileSync(path.resolve(__dirname, 'current.jsonld'), JSON.stringify(targetBody), 'utf8');
+
       var res = await got.put(versionGraph['@id'], params);
+      console.log(res.body);
 
     } catch (e) {
       console.log(e);
       console.log(`ERROR ${e.response.statusCode}: ${e.response.body}`);
     }
 
-    break;
   }
-
+  
 }
