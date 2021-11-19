@@ -10,3 +10,6 @@ Parameters:
 * s: source account on DBpedia Databus (v.1)
 * t: target account on target Databus (v.2)
 * a: API key of target account
+
+
+Transfer will exit on error, latest dataid can be found in `current.jsonld`.
