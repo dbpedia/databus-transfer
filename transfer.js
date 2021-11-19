@@ -142,6 +142,8 @@ async function transfer() {
 
   console.log(`Found ${graphs.length} graphs.`);
 
+  var hasError = false;
+
   // Iterate over the found graphs and convert them to new syntax dataids
   for (var graph of graphs) {
 
@@ -261,8 +263,14 @@ async function transfer() {
     } catch (e) {
       console.log(e);
       console.log(`ERROR ${e.response.statusCode}: ${e.response.body}`);
+      hasError = true;
+      break;
     }
-
   }
   
+  if(!hasError) {
+    console.log('SUCCESS WITHOUT ERRORS!');
+  } else {
+    console.log('EXITING WITH ERROR!');
+  }
 }
