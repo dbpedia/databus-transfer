@@ -38,7 +38,7 @@ async function transfer() {
 
   // TODO: Configurable?
   var sourceEndpoint = sourceUri.origin + '/repo/sparql';
-/*
+
   // Fetch the list of groups from the specified account of the source Databus.
   var selectGroupsQuery = fs.readFileSync(path.resolve(__dirname, 'select-groups.sparql'), 'utf8');
   selectGroupsQuery = selectGroupsQuery.replace('%SOURCE%', sourceUri.href);
@@ -108,6 +108,8 @@ async function transfer() {
         json: groupdata
       };
 
+      console.log(`Publishing Group ${groupdata['@id']}..`);
+
       // Send request to target databus
       var res = await got.put(groupdata['@id'], params);
       console.log(`${res.statusCode}: ${res.body}`);
@@ -118,7 +120,7 @@ async function transfer() {
   }
 
   console.log(`All groups created!`);
-*/
+
   
   // Fetch all graphs that specify a dataid:Dataset
   var selectGraphs = fs.readFileSync(path.resolve(__dirname, 'select-graphs.sparql'), 'utf8');
@@ -237,6 +239,9 @@ async function transfer() {
       });
 
     }
+
+
+    console.log(`Publishing Version ${versionGraph['@id']}..`);
 
 
     // Send PUT to API
