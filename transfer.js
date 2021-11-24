@@ -14,6 +14,8 @@ const ttl2jsonld = require('@frogcat/ttl2jsonld').parse;
 var sourceUri = "";
 var targetUri = "";
 var apiKey = "";
+var offset = 0;
+var groups = true;
 
 for (var i = 2; i < process.argv.length; i++) {
   if (process.argv[i] == "-a") {
@@ -25,102 +27,137 @@ for (var i = 2; i < process.argv.length; i++) {
   if (process.argv[i] == "-s") {
     sourceUri = new URL(process.argv[i + 1]);
   }
+  if (process.argv[i] == "-o") {
+    offset = process.argv[i + 1];
+  }
+  if (process.argv[i] == "-g") {
+    groups = process.argv[i + 1];
+  }
 }
 
 console.log(apiKey);
 console.log(targetUri);
 console.log(sourceUri);
+console.log(offset);
+console.log(groups);
+
 
 // Start the transfer process
 transfer();
+
+function fixDecimalNan(fileGraph) {
+
+  var nanProperties = [
+    'dataid:nonEmptyLines',
+    'dataid:uncompressedByteSize',
+    'dcat:byteSize'
+  ]
+
+  for(var p of nanProperties) {
+    var obj = fileGraph[p];
+    if(obj != null && obj['@value'] == 'NaN' && obj['@type'] == 'xsd:decimal') {
+      console.log(`Invalid decimal NaN value detected for ${p}. Replacing with xsd:double`);
+      obj['@type'] = 'xsd:double';
+    }
+  }
+
+}
 
 async function transfer() {
 
   // TODO: Configurable?
   var sourceEndpoint = sourceUri.origin + '/repo/sparql';
 
-  // Fetch the list of groups from the specified account of the source Databus.
-  var selectGroupsQuery = fs.readFileSync(path.resolve(__dirname, 'select-groups.sparql'), 'utf8');
-  selectGroupsQuery = selectGroupsQuery.replace('%SOURCE%', sourceUri.href);
-  var groups = [];
+  if(groups) {
+    // Fetch the list of groups from the specified account of the source Databus.
+    var selectGroupsQuery = fs.readFileSync(path.resolve(__dirname, 'select-groups.sparql'), 'utf8');
+    selectGroupsQuery = selectGroupsQuery.replace('%SOURCE%', sourceUri.href);
+    var groups = [];
 
-  try {
-    console.log(`Selecting groups...`);
-    var requestUri = sourceEndpoint + `?query=${encodeURIComponent(selectGroupsQuery)}`;
-    var res = await got.get(requestUri, { responseType: 'json' });
-    for (var entry of res.body.results.bindings) {
-      groups.push(entry.s.value);
-    }
-  } catch (e) {
-    console.log(e);
-  }
-
-  console.log(`Found ${groups.length} groups.`);
-
-  // Foreach found group query additional data and prepare the groupdata object
-  for (var uri of groups) {
-
-    // Initialize groupdata with fixed values
-    var groupdata = {
-      "@id": uri.replace(sourceUri.href, targetUri.href),
-      "@type": "http://dataid.dbpedia.org/ns/core#Group",
-      "http://purl.org/dc/terms/title": {
-        "@value": "",
-        "@language": "en"
-      },
-      "http://purl.org/dc/terms/abstract": {
-        "@value": "",
-        "@language": "en"
-      },
-      "http://purl.org/dc/terms/description": {
-        "@value": "",
-        "@language": "en"
-      }
-    };
-
-    // Query additional group data
-    var groupQuery = fs.readFileSync(path.resolve(__dirname, 'select-group-data.sparql'), 'utf8');
-    groupQuery = groupQuery.replaceAll('%GROUP%', uri);
-
-    var requestUri = sourceEndpoint + `?query=${encodeURIComponent(groupQuery)}`;
-    var res = await got.get(requestUri, { responseType: 'json' });
-
-    for (var entry of res.body.results.bindings) {
-      if (entry.title != undefined) {
-        groupdata["http://purl.org/dc/terms/title"]["@value"] = entry.title.value;
-      }
-
-      if (entry.abstract != undefined) {
-        groupdata["http://purl.org/dc/terms/abstract"]["@value"] = entry.abstract.value;
-      }
-
-      if (entry.description != undefined) {
-        groupdata["http://purl.org/dc/terms/description"]["@value"] = entry.description.value;
-      }
-    }
-
-    // Make the put to the new Databus to create the groups
     try {
-      var params = {
-        headers: {
-          'x-api-key': apiKey
+      console.log(`Selecting groups...`);
+      var requestUri = sourceEndpoint + `?query=${encodeURIComponent(selectGroupsQuery)}`;
+      var res = await got.get(requestUri, { responseType: 'json' });
+      for (var entry of res.body.results.bindings) {
+        groups.push(entry.s.value);
+      }
+    } catch (e) {
+      console.log(e);
+    }
+
+    console.log(`Found ${groups.length} groups.`);
+    var k = 0;
+
+    // Foreach found group query additional data and prepare the groupdata object
+    for (var uri of groups) {
+
+      k++;
+      
+      // Initialize groupdata with fixed values
+      var groupdata = {
+        "@id": uri.replace(sourceUri.href, targetUri.href),
+        "@type": "http://dataid.dbpedia.org/ns/core#Group",
+        "http://purl.org/dc/terms/title": {
+          "@value": "",
+          "@language": "en"
         },
-        json: groupdata
+        "http://purl.org/dc/terms/abstract": {
+          "@value": "",
+          "@language": "en"
+        },
+        "http://purl.org/dc/terms/description": {
+          "@value": "",
+          "@language": "en"
+        }
       };
 
-      console.log(`Publishing Group ${groupdata['@id']}..`);
+      // Query additional group data
+      var groupQuery = fs.readFileSync(path.resolve(__dirname, 'select-group-data.sparql'), 'utf8');
+      groupQuery = groupQuery.replaceAll('%GROUP%', uri);
 
-      // Send request to target databus
-      var res = await got.put(groupdata['@id'], params);
-      console.log(`${res.statusCode}: ${res.body}`);
+      var requestUri = sourceEndpoint + `?query=${encodeURIComponent(groupQuery)}`;
+      var res = await got.get(requestUri, { responseType: 'json' });
 
-    } catch (e) {
-      console.log(`ERROR ${e.response.statusCode}: ${e.response.body}`);
+      for (var entry of res.body.results.bindings) {
+        if (entry.title != undefined) {
+          groupdata["http://purl.org/dc/terms/title"]["@value"] = entry.title.value;
+        }
+
+        if (entry.abstract != undefined) {
+          groupdata["http://purl.org/dc/terms/abstract"]["@value"] = entry.abstract.value;
+        }
+
+        if (entry.description != undefined) {
+          groupdata["http://purl.org/dc/terms/description"]["@value"] = entry.description.value;
+        }
+      }
+
+      // Make the put to the new Databus to create the groups
+      try {
+        var params = {
+          headers: {
+            'x-api-key': apiKey
+          },
+          json: groupdata
+        };
+
+        // fs.writeFileSync(path.resolve(__dirname, `groups/group_${k}.jsonld`), JSON.stringify(groupdata, null, 3), 'utf8');
+
+        console.log(`Publishing Group ${groupdata['@id']}..`);
+
+        // Send request to target databus
+        var res = await got.put(groupdata['@id'], params);
+        console.log(`${res.statusCode}: ${res.body}`);
+
+      } catch (e) {
+        console.log(e);
+        console.log(`ERROR ${e.response.statusCode}: ${e.response.body}`);
+      }
+
     }
+
+    console.log(`All groups created!`);
   }
-
-  console.log(`All groups created!`);
-
   
   // Fetch all graphs that specify a dataid:Dataset
   var selectGraphs = fs.readFileSync(path.resolve(__dirname, 'select-graphs.sparql'), 'utf8');
@@ -144,16 +181,32 @@ async function transfer() {
 
   var hasError = false;
 
+  k = 0;
+  var l = graphs.length;
+
+  console.log(`Starting at ${offset}`);
+
   // Iterate over the found graphs and convert them to new syntax dataids
   for (var graph of graphs) {
 
+    k++;
+
+    if(k < offset) {
+      continue;
+    }
+
+    console.log(`Progress: [${k}/${l}]`);
     var replacedBody = {};
+
 
     try {
       // Query the dataid documents and replace URI prefixes
+      console.log(`Quering DataId for ${graph.dataset}`);
+
       var res = await got.get(graph.dataset);
       var replacedBody = res.body.replaceAll(sourceUri.href, targetUri.href);
     } catch (e) {
+      console.log(`Error querying DataId from source Databus:`);
       console.log(e);
       continue;
     }
@@ -204,7 +257,6 @@ async function transfer() {
     datasetGraph['dct:abstract'] = datasetGraph['rdfs:comment'];
     datasetGraph['dct:description'] = datasetGraph['rdfs:comment'];
     datasetGraph['dct:publisher'] = { '@id': `${targetUri.href}#this` }
-
     datasetGraph['dcat:distribution'] = [];
 
     console.log(`Processing ${datasetGraph['@id']}`);
@@ -234,6 +286,8 @@ async function transfer() {
       delete fileGraph['dataid:associatedAgent'];
       delete fileGraph['dct:publisher'];
 
+      fixDecimalNan(fileGraph);
+
       targetBody['@graph'].push(fileGraph);
 
       datasetGraph['dcat:distribution'].push({
@@ -254,8 +308,9 @@ async function transfer() {
         },
         json: targetBody
       };
-
-      fs.writeFileSync(path.resolve(__dirname, 'current.jsonld'), JSON.stringify(targetBody), 'utf8');
+      
+      fs.writeFileSync(path.resolve(__dirname, `current.jsonld`), JSON.stringify(targetBody, null, 3), 'utf8');
+      //fs.writeFileSync(path.resolve(__dirname, `dataids/dataid_${k}.jsonld`), JSON.stringify(targetBody, null, 3), 'utf8');
 
       var res = await got.put(versionGraph['@id'], params);
       console.log(res.body);
