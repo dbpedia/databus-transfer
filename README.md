@@ -12,3 +12,6 @@ Parameters:
 * a: API key of target account
 * o: Offset. Skips a number of DataIds
 * g: Boolean. If false, group publishing is skipped.
+
+
+Transfer will exit on error, latest dataid can be found in `current.jsonld`.
