@@ -15,7 +15,7 @@ var sourceUri = "";
 var targetUri = "";
 var apiKey = "";
 var offset = 0;
-var groups = true;
+var publishGroups = true;
 
 for (var i = 2; i < process.argv.length; i++) {
   if (process.argv[i] == "-a") {
@@ -31,7 +31,7 @@ for (var i = 2; i < process.argv.length; i++) {
     offset = process.argv[i + 1];
   }
   if (process.argv[i] == "-g") {
-    groups = process.argv[i + 1];
+    publishGroups = process.argv[i + 1];
   }
 }
 
@@ -39,7 +39,7 @@ console.log(apiKey);
 console.log(targetUri);
 console.log(sourceUri);
 console.log(offset);
-console.log(groups);
+console.log(publishGroups);
 
 
 // Start the transfer process
@@ -68,7 +68,7 @@ async function transfer() {
   // TODO: Configurable?
   var sourceEndpoint = sourceUri.origin + '/repo/sparql';
 
-  if(groups) {
+  if(publishGroups != 'false') {
     // Fetch the list of groups from the specified account of the source Databus.
     var selectGroupsQuery = fs.readFileSync(path.resolve(__dirname, 'select-groups.sparql'), 'utf8');
     selectGroupsQuery = selectGroupsQuery.replace('%SOURCE%', sourceUri.href);
@@ -88,6 +88,7 @@ async function transfer() {
     console.log(`Found ${groups.length} groups.`);
     var k = 0;
 
+
     // Foreach found group query additional data and prepare the groupdata object
     for (var uri of groups) {
 
@@ -99,15 +100,12 @@ async function transfer() {
         "@type": "http://dataid.dbpedia.org/ns/core#Group",
         "http://purl.org/dc/terms/title": {
           "@value": "",
-          "@language": "en"
         },
         "http://purl.org/dc/terms/abstract": {
           "@value": "",
-          "@language": "en"
         },
         "http://purl.org/dc/terms/description": {
           "@value": "",
-          "@language": "en"
         }
       };
 
@@ -256,6 +254,14 @@ async function transfer() {
     datasetGraph['@id'] = `${versionGraph['@id']}#Dataset`;
     datasetGraph['dct:abstract'] = datasetGraph['rdfs:comment'];
     datasetGraph['dct:description'] = datasetGraph['rdfs:comment'];
+
+
+    delete datasetGraph['rdfs:label'];
+    delete datasetGraph['rdfs:comment'];
+    delete datasetGraph['dataid:groupdocu'];
+    delete datasetGraph['dct:abstract']['@language'];
+    delete datasetGraph['dct:description']['@language'];
+    delete datasetGraph['dct:title']['@language'];
     datasetGraph['dct:publisher'] = { '@id': `${targetUri.href}#this` }
     datasetGraph['dcat:distribution'] = [];
 
@@ -278,6 +284,7 @@ async function transfer() {
       var hash = new URL(fileGraph['@id']).hash.replace('#', '');
 
       fileGraph['@id'] = `${versionGraph['@id']}#${hash}`;
+      fileGraph['@type'] = 'dataid:Part'
       fileGraph['dataid:file'] = { '@id': `${versionGraph['@id']}/${hash}` };
 
       delete fileGraph['dataid:signature'];
@@ -285,8 +292,23 @@ async function transfer() {
       delete fileGraph['dataid:isDistributionOf'];
       delete fileGraph['dataid:associatedAgent'];
       delete fileGraph['dct:publisher'];
+      delete fileGraph['dataid:format'];
+      delete fileGraph['dataid:contentVariant'];
 
+      delete fileGraph['rdfs:label'];
+      delete fileGraph['rdfs:comment'];
+      delete fileGraph['dataid:maintainer'];
+
+
+      if(fileGraph['dataid:compression'] == undefined) {
+        fileGraph['dataid:compression'] = '';
+      }
+      if(fileGraph['dataid:compression'] == 'None') {
+        fileGraph['dataid:compression'] = 'none';
+      }
+      
       fixDecimalNan(fileGraph);
+      fixDuplicateCv(fileGraph);
 
       targetBody['@graph'].push(fileGraph);
 
@@ -298,6 +320,10 @@ async function transfer() {
 
 
     console.log(`Publishing Version ${versionGraph['@id']}..`);
+
+
+
+    // console.log(JSON.stringify(targetBody, null, 3));
 
 
     // Send PUT to API
