@@ -39,7 +39,7 @@ services:
 
 Then:
 ```
-bash run.sh -s https://databus.dbpedia.org/dbpedia -t http://localhost:3000/debug -o 0 -g false
+bash run.sh -s https://databus.dbpedia.org/dbpedia -a 997c4bdd-cce6-4ff9-8c7a-808ae07a2a8c -t http://localhost:3000/janni -o 160 -g false
 ```
 
 ## ERROR WILL OCCUR AT [179/1092]
