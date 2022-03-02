@@ -63,10 +63,21 @@ function fixDecimalNan(fileGraph) {
 
 }
 
+function fixDuplicateCv(fileGraph) {
+
+
+
+  
+}
+
 async function transfer() {
 
   // TODO: Configurable?
   var sourceEndpoint = sourceUri.origin + '/repo/sparql';
+
+  var skipLines = fs.readFileSync(path.resolve(__dirname, 'skip.txt'), 'utf8');
+  var skips = skipLines.split('\n');
+  console.log(`Skipping: \n${skips}`);
 
   if(publishGroups != 'false') {
     // Fetch the list of groups from the specified account of the source Databus.
@@ -242,6 +253,16 @@ async function transfer() {
       }
     }
 
+    if(datasetGraph != null) {
+
+      var artifactUri = datasetGraph['dataid:artifact']['@id'];
+      
+      if(skips.includes(artifactUri)) {
+        console.log(`Skipping ${artifactUri}`);
+        continue;
+      }
+    }
+
     if(versionGraph == null) {
       continue;
     }
@@ -321,10 +342,7 @@ async function transfer() {
 
     console.log(`Publishing Version ${versionGraph['@id']}..`);
 
-
-
     // console.log(JSON.stringify(targetBody, null, 3));
-
 
     // Send PUT to API
     try {
@@ -336,9 +354,15 @@ async function transfer() {
       };
       
       fs.writeFileSync(path.resolve(__dirname, `current.jsonld`), JSON.stringify(targetBody, null, 3), 'utf8');
-      //fs.writeFileSync(path.resolve(__dirname, `dataids/dataid_${k}.jsonld`), JSON.stringify(targetBody, null, 3), 'utf8');
 
-      var res = await got.put(versionGraph['@id'], params);
+      var versionUri = versionGraph['@id']
+      versionUri = versionUri.replace(targetUri, '');
+
+      console.log(`POSTING to http://localhost:3002/graph/save?repo=janni&path=${versionUri}`);
+      var res = await got.post(`http://localhost:3002/graph/save?repo=janni&path=${versionUri}`, params);
+
+      // var res = await got.put(versionGraph['@id'], params);
+      
       console.log(res.body);
 
     } catch (e) {
