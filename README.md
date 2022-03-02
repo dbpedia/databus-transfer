@@ -1,9 +1,16 @@
 # databus-transfer
 Transfer published data to a new Databus
 
+# DEBUG BRANCH!
+
+* NO API KEY NEEDED
+* SENDS POST TO http://localhost:3002/graph/save
+* NEEDS A RUNNING GSTORE ON http://localhost:3002
+
+
 Example Usage:
 ```
-bash run.sh -s https://databus.dbpedia.org/dbpedia -t http://localhost:3000/jan -a 45c08e6b-6f0c-4922-91ca-8ad1d93075c2 -o 0 -g true
+bash run.sh -s https://databus.dbpedia.org/dbpedia -t http://localhost:3000/jan -o 0 -g false
 ```
 
 Parameters:

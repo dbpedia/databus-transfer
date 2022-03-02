@@ -358,8 +358,8 @@ async function transfer() {
       var versionUri = versionGraph['@id']
       versionUri = versionUri.replace(targetUri, '');
 
-      console.log(`POSTING to http://localhost:3002/graph/save?repo=janni&path=${versionUri}`);
-      var res = await got.post(`http://localhost:3002/graph/save?repo=janni&path=${versionUri}`, params);
+      console.log(`POSTING to http://localhost:3002/graph/save?repo=debug&path=${versionUri}`);
+      var res = await got.post(`http://localhost:3002/graph/save?repo=debug&path=${versionUri}`, params);
 
       // var res = await got.put(versionGraph['@id'], params);
       
