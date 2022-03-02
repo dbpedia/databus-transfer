@@ -33,6 +33,8 @@ services:
       - ./data/virtuoso:/data
 ```
 
+Then:
+```
 bash run.sh -s https://databus.dbpedia.org/dbpedia -t http://localhost:3000/jan -a 45c08e6b-6f0c-4922-91ca-8ad1d93075c2 -o 0 -g true
 ```
 
