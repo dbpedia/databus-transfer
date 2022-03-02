@@ -2,41 +2,9 @@
 Transfer published data to a new Databus
 
 Example Usage:
-
-start Gstore with `docker-compose up` and the following config
-
 ```
-version: "3.0"
-services:
-  gstore:
-    image: dbpedia/gstore
-    container_name: devenv_gstore
-    environment: 
-      VIRT_USER: "dba"
-      VIRT_PASS: "everyoneknows"
-      VIRT_URI: "http://virtuoso:8890"
-      GIT_ROOT: "/root/git"
-    ports:
-      - "127.0.0.1:3002:8080"
-    volumes:
-      - ./data/repo:/root/git
-  virtuoso:
-    image: "openlink/virtuoso-opensource-7"
-    container_name: devenv_virtuoso
-    environment:
-      DBA_PASSWORD: "everyoneknows"
-      SPARQL_UPDATE: "true"
-      DEFAULT_GRAPH: "http://localhost:3000"
-    ports:
-      - "127.0.0.1:3003:8890"
-    volumes: 
-      - ./data/virtuoso:/data
-```
-
-Then:
-```
-bash run.sh -s https://databus.dbpedia.org/dbpedia -t http://localhost:3000/debug -o 0 -g false
-```
+bash run.sh -s https://databus.dbpedia.org/dbpedia -t http://localhost:3000/janni -a 45c08e6b-6f0c-4922-91ca-8ad1d93075c2 -o 0 -g true
+```ni
 
 Parameters:
 * s: source account on DBpedia Databus (v.1)
