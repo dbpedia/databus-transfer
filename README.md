@@ -6,7 +6,6 @@ Example Usage:
 start Gstore with `docker-compose up` and the following config
 
 ```
-# Starts everything except the databus
 version: "3.0"
 services:
   gstore:
