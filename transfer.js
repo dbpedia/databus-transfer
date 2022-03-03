@@ -10,6 +10,53 @@ const path = require('path');
 const got = require('got');
 const ttl2jsonld = require('@frogcat/ttl2jsonld').parse;
 
+async function sleep(msec) {
+  return new Promise(resolve => setTimeout(resolve, msec));
+}
+
+async function debug() {
+  var files = fs.readdirSync(__dirname + '/debug-in');      
+
+  console.log(files);
+
+  var k = 0;
+
+  try {
+
+    for(var file of files) {
+      var targetBody = JSON.parse(fs.readFileSync(__dirname + '/debug-in/' + file));
+
+      var params = {
+        headers: {
+          'x-api-key': apiKey
+        },
+        json: targetBody
+      };
+     
+      console.log(`${k}) POSTING to http://localhost:3002/graph/save?repo=test&path=debug/file_${k}}`);
+      var res = await got.post(`http://localhost:3002/graph/save?repo=test&path=debug/file_${k}`, params);
+
+      console.log(res.body);
+      k++;
+      
+
+    }
+
+  } catch (e) {
+    console.log(e);
+    console.log(`ERROR ${e.response.statusCode}: ${e.response.body}`);
+    hasError = true;
+  }
+}
+
+
+debug();
+return;
+
+
+
+
+
 // Parse CLI parameters
 var sourceUri = "";
 var targetUri = "";
@@ -358,10 +405,10 @@ async function transfer() {
       var versionUri = versionGraph['@id']
       versionUri = versionUri.replace(targetUri, '');
 
-      console.log(`POSTING to http://localhost:3002/graph/save?repo=debug&path=${versionUri}`);
-      var res = await got.post(`http://localhost:3002/graph/save?repo=debug&path=${versionUri}`, params);
+      console.log(`POSTING to http://localhost:3002/graph/save?repo=janni&path=${versionUri}/dataid.jsonld`);
+      // var res = await got.post(`http://localhost:3002/graph/save?repo=janni&path=${versionUri}/dataid.jsonld`, params);
 
-      // var res = await got.put(versionGraph['@id'], params);
+      var res = await got.put(versionGraph['@id'], params);
       
       console.log(res.body);
 

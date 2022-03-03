@@ -16,7 +16,6 @@ version: "3.0"
 services:
   gstore:
     image: dbpedia/gstore
-    container_name: devenv_gstore
     environment: 
       VIRT_USER: "dba"
       VIRT_PASS: "everyoneknows"
@@ -28,7 +27,6 @@ services:
       - ./data/repo:/root/git
   virtuoso:
     image: "openlink/virtuoso-opensource-7"
-    container_name: devenv_virtuoso
     environment:
       DBA_PASSWORD: "everyoneknows"
       SPARQL_UPDATE: "true"
