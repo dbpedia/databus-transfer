@@ -6,6 +6,7 @@ Transfer published data to a new Databus
 * NO API KEY NEEDED
 * SENDS POST TO http://localhost:3002/graph/save
 * NEEDS A RUNNING GSTORE ON http://localhost:3002
+* SENDS ALL DATAIDS IN DEBUG-IN FOLDER
 
 Example Usage:
 
@@ -39,9 +40,10 @@ services:
 
 Then:
 ```
-bash run.sh -s https://databus.dbpedia.org/dbpedia -a 997c4bdd-cce6-4ff9-8c7a-808ae07a2a8c -t http://localhost:3000/janni -o 160 -g false
+bash run.sh
 ```
 
-## ERROR WILL OCCUR AT [179/1092]
+## Error should be thrown on mappings-mappingbased-literals-2018.12.01-dataid.jsonld
 
-Transfer will exit on error, latest dataid can be found in `current.jsonld`.
+Only occurs when the data in `mappings-mappingbased-literals-2018.12.01-dataid.jsonld` is NOT the first insert. After a successful insert, a repeated insert will not fail.
+
