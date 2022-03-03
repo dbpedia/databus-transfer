@@ -39,15 +39,9 @@ services:
 
 Then:
 ```
-bash run.sh -s https://databus.dbpedia.org/dbpedia -t http://localhost:3000/debug -o 0 -g false
+bash run.sh -s https://databus.dbpedia.org/dbpedia -a 997c4bdd-cce6-4ff9-8c7a-808ae07a2a8c -t http://localhost:3000/janni -o 160 -g false
 ```
 
-Parameters:
-* s: source account on DBpedia Databus (v.1)
-* t: target account on target Databus (v.2)
-* a: API key of target account
-* o: Offset. Skips a number of DataIds
-* g: Boolean. If false, group publishing is skipped.
-
+## ERROR WILL OCCUR AT [179/1092]
 
 Transfer will exit on error, latest dataid can be found in `current.jsonld`.
