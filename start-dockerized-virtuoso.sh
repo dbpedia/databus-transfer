@@ -1,0 +1,1 @@
+docker run --name test_virtuoso --interactive --tty --env DBA_PASSWORD=password --publish 1111:1111 --publish 8890:8890 openlink/virtuoso-opensource-7:latest
