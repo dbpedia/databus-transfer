@@ -1,0 +1,669 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/dba--ontology",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/w3id.org/dba--ontology"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/w3id.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The ontology, presented here in a beta version, is based on the analysis of the documentation and descriptive requirements of the Intesa Sanpaolo Historical Archive and is intended to describe the content of historical banking documents and of some of the activities carried out by the bank, particularly in relation to third parties (loans, charity donations, seizures and confiscations, etc.), which involve the initiation of processes or the production of documents."
+         },
+         "dct:hasVersion": "2022.01.27-122250",
+         "dct:issued": {
+            "@value": "2022-01-27T12:25:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Description Banking Archives Ontology"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=pelletConsistency_imports=FULL.txt"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The ontology, presented here in a beta version, is based on the analysis of the documentation and descriptive requirements of the Intesa Sanpaolo Historical Archive and is intended to describe the content of historical banking documents and of some of the activities carried out by the bank, particularly in relation to third parties (loans, charity donations, seizures and confiscations, etc.), which involve the initiation of processes or the production of documents."
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<https://w3id.org/dba/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<https://w3id.org/dba/ontology/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .\n<https://w3id.org/dba/ontology/> <http://purl.org/dc/elements/1.1/creator> \"Federica Brambilla\" .\n<https://w3id.org/dba/ontology/> <http://purl.org/dc/elements/1.1/creator> \"Giovanni Bruno\" .\n<https://w3id.org/dba/ontology/> <http://purl.org/dc/elements/1.1/creator> \"Fabiana Guernaccini\" .\n<https://w3id.org/dba/ontology/> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> .\n<https://w3id.org/dba/ontology/> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by-sa/4.0/> .\n<https://w3id.org/dba/ontology/> <http://www.w3.org/2002/07/owl#versionInfo> \"0.1\"^^<http://www.w3.org/2001/XMLSchema#decimal> .\n<https://w3id.org/dba/ontology/> <http://purl.org/vocab/vann/preferredNamespacePrefix> \"dba\" .\n<https://w3id.org/dba/ontology/> <http://purl.org/vocab/vann/preferredNamespaceUri> \"https://w3id.org/dba/ontology/\" .",
+         "dataid:sha256sum": "b8183f186c6f054bf30f5bd5a8548ad0b96389c5c32bc08ffb8e2118b11f738d",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.01.27-122250",
+         "dct:issued": {
+            "@value": "2022-01-27T12:25:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-01-27T12:22:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "101012",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.01.27-122250",
+         "dct:issued": {
+            "@value": "2022-01-27T12:25:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-01-27T12:22:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "44d0c3cc9965008240b45b939040c077e5d2b2ea633c304aed9f8052d4bbf70f",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.01.27-122250",
+         "dct:issued": {
+            "@value": "2022-01-27T12:25:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-01-27T12:22:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3719",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.01.27-122250",
+         "dct:issued": {
+            "@value": "2022-01-27T12:25:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-01-27T12:22:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;",
+         "dataid:sha256sum": "55a989f51084273a8a70b39253bbe646350ec05f0ed17e87a5769b927ddc6a31",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.01.27-122250",
+         "dct:issued": {
+            "@value": "2022-01-27T12:25:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-01-27T12:22:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "72769",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:cpannotationschema=\"http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>Description Banking Archives Ontology</title><title>Description Banking Archives Ontology</title><title>Description Banking Archives Ontology</title><link href=\"./owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"./Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"./rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"./extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"./favicon.ico\" /><script src=\"./jquery.js\"></script><script src=\"./jquery.scrollTo.js\"></script><script src=\"./marked.min.js\"></script><script>\n\t\t\t$(document).ready(\n\t\t\tfunction () {\n\t\t\tjQuery(\".markdown\").each(function(el){\n\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n\t\t\tvar list =\n\t\t\t$('a[name=\"\n\t\t\thttps://asisp.intesasanpaolo.com/intesa-web/resources/documenti/dba/dba.rdf\n\t\t\t\"]');\n\t\t\tif (list.size() != 0) {",
+         "dataid:sha256sum": "759e154fda20878882aa8e65accebf2bbd956bb0faf154519cbf5f5c54e67880",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.01.27-122250",
+         "dct:issued": {
+            "@value": "2022-01-27T12:25:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-01-27T12:25:10Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "97675",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <https://w3id.org/dba/ontology/> .\n@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix cc: <http://creativecommons.org/ns#> .\n@prefix vann: <http://purl.org/vocab/vann/> .",
+         "dataid:sha256sum": "4d35ae92eda731efa6d03e896c5b1abf9f2d6510941ff33d76a557cdcff7acb7",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.01.27-122250",
+         "dct:issued": {
+            "@value": "2022-01-27T12:25:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-01-27T12:22:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "47203",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2022-01-27 12:22:50.287195\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"68841\",\n        \"e-tag\": \"\",\n        \"lastModified\": \"Mon, 20 Dec 2021 05:57:48 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Date': 'Thu, 27 Jan 2022 12:21:48 GMT', 'Server': 'Apache/2.4.29 (Ubuntu)', 'Access-Control-Allow-Origin': '*', 'Location': 'https://asisp.intesasanpaolo.com/intesa-web/resources/documenti/dba/dba.rdf', 'Content-Length': '357', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'text/html; charset=iso-8859-1'}\",",
+         "dataid:sha256sum": "9ee57f6434017cf75c2ec3f28683fb6ccb904874631e08583c3f9aaf74f0963d",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.01.27-122250",
+         "dct:issued": {
+            "@value": "2022-01-27T12:25:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-01-27T12:22:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1851",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=parsed.ttl\nStart loading\nJan 27, 2022 12:22:54 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring domain axiom for AnnotationProperty http://purl.org/dc/elements/1.1/description\nJan 27, 2022 12:22:54 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring range axiom for AnnotationProperty http://purl.org/dc/elements/1.1/description\nFinished loading in 00:00:00.237\nInput size: Classes = 42, Properties = 69, Individuals = 2\nExpressivity: ALHI(D)",
+         "dataid:sha256sum": "9252cc205bad2867b7bdcd2769832d83a83dc607c8996164a7c660bc10996417",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.01.27-122250",
+         "dct:issued": {
+            "@value": "2022-01-27T12:25:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-01-27T12:22:54Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "947",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n<rdf:RDF\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns=\"https://w3id.org/dba/ontology/\"\n    xmlns:vs=\"http://www.w3.org/2003/06/sw-vocab-status/ns#\"\n    xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n    xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n\txmlns:dcterms=\"http://purl.org/dc/terms/\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n    xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"",
+         "dataid:sha256sum": "76bfa11c895289f88787eff5053ff407fbead55ab812aa3c11555c6067d720b8",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.01.27-122250",
+         "dct:issued": {
+            "@value": "2022-01-27T12:25:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-01-27T12:22:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "68842",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.01.27-122250",
+         "dct:issued": {
+            "@value": "2022-01-27T12:25:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-01-27T12:22:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.1.0.jar\n\n",
+         "dataid:sha256sum": "35133f3681a6ccdb320324b1927689adc218a5150f47233c68c456e42e0d1a9f",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.01.27-122250",
+         "dct:issued": {
+            "@value": "2022-01-27T12:25:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-01-27T12:22:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "44d0c3cc9965008240b45b939040c077e5d2b2ea633c304aed9f8052d4bbf70f",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.01.27-122250",
+         "dct:issued": {
+            "@value": "2022-01-27T12:25:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-01-27T12:22:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3719",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:vs=\"http://www.w3.org/2003/06/sw-vocab-status/ns#\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"https://w3id.org/dba/ontology/\">\n  <rdf:Description rdf:about=\"https://w3id.org/dba/ontology/\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://w3id.org/dba/ontology/\">\n    <rdf:type rdf:resource=\"http://purl.org/vocommons/voaf#Vocabulary\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://w3id.org/dba/ontology/\">\n    <dc:creator>Federica Brambilla</dc:creator>",
+         "dataid:sha256sum": "6afb268bbf013f0c661b2d0e43457330be6b0034c98ee42ae1d1b0dd8c7c9533",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.01.27-122250",
+         "dct:issued": {
+            "@value": "2022-01-27T12:25:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-01-27T12:22:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "123102",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250#dba--ontology_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=parsed.ttl\nStart loading\nJan 27, 2022 12:22:53 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring domain axiom for AnnotationProperty http://purl.org/dc/elements/1.1/description\nJan 27, 2022 12:22:53 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring range axiom for AnnotationProperty http://purl.org/dc/elements/1.1/description\nFinished loading in 00:00:00.229\nInput size: Classes = 42, Properties = 69, Individuals = 2\nExpressivity: ALHI(D)",
+         "dataid:sha256sum": "724e443457020a8ad1962cc1b12129fe7a432da5ea7896ac4c14e18313ffdc3c",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.01.27-122250",
+         "dct:issued": {
+            "@value": "2022-01-27T12:25:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-01-27T12:22:54Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "947",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/dba--ontology/2022.01.27-122250/dba--ontology_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      }
+   ]
+}

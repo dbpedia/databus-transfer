@@ -1,0 +1,885 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/w3id.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The ontology Metadata4Ing is developed within the NFDI Consortium NFDI4Ing with the aim of providing a thorough framework for the semantic description of research data, with a particular focus on engineering sciences and neighbouring disciplines."
+         },
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Metadata4Ing"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=diff_axioms=new.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=parsed_sorted.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=diff_axioms=old.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=diff_triples=new.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=diff_triples=old.nt"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The ontology Metadata4Ing is developed within the NFDI Consortium NFDI4Ing with the aim of providing a thorough framework for the semantic description of research data, with a particular focus on engineering sciences and neighbouring disciplines."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:axioms",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:triples",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n<rdf:RDF xmlns=\"http://w3id.org/nfdi4ing/metadata4ing#\"\n     xml:base=\"http://w3id.org/nfdi4ing/metadata4ing\"\n     xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n     xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n     xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"\n     xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n     xmlns:bibo=\"http://purl.org/ontology/bibo/\"\n     xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n     xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"",
+         "dataid:sha256sum": "228c40c69eb0b9307f495db4c0095a582ad9dcd75e1f35ad8a9debd63e87151d",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:29:46Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148068",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <http://w3id.org/nfdi4ing/metadata4ing#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix xml: <http://www.w3.org/XML/1998/namespace> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix bibo: <http://purl.org/ontology/bibo/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix vann: <http://purl.org/vocab/vann/> .\n@prefix terms: <http://purl.org/dc/terms/> .",
+         "dataid:sha256sum": "22bbf15d9b8728d1effcb22d6c6a6793e55e85506332b6dd8e30f4f2f2c28b29",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:29:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "89768",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://w3id.org/nfdi4ing/metadata4ing#endOfProject> ;",
+         "dataid:sha256sum": "baa8c05d2e3113b5c58b38d968f1e4719464d70cba3eb794fb68810669a61f0b",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:29:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "150691",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:29:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=parsed.ttl\nStart loading\nFeb 19, 2022 12:29:54 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://w3id.org/nfdi4ing/metadata4ing# @owl:versionIRI http://w3id.org/nfdi4ing/metadata4ing/1.0.0\nFeb 19, 2022 12:29:54 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from XSD namespace: 4a333dc56b3cb2edaf91c4f990d4a011 @xsd:pattern \"https://ror.org/[0-9][0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][0-9][0-9]\"\nFinished loading in 00:00:00.308\nInput size: Classes = 33, Properties = 127, Individuals = 21\nExpressivity: SRIN(D)",
+         "dataid:sha256sum": "4dfddcab1467de5b0b8d313aa5f3939d0811a04b52bd0626578a01d66f2b5d52",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:29:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1130",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:29:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://w3id.org/nfdi4ing/metadata4ing#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://w3id.org/nfdi4ing/metadata4ing#> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/nfdi4ing/metadata4ing/1.0.0> .\n<http://w3id.org/nfdi4ing/metadata4ing#> <http://purl.org/dc/terms/abstract> \"The ontology Metadata4Ing is developed within the NFDI Consortium NFDI4Ing with the aim of providing a thorough framework for the semantic description of research data, with a particular focus on engineering sciences and neighbouring disciplines. This ontology allows a thorough description of the whole data generation process (experiment, observation, simulation), embracing the object of investigation, all sample and data manipulation procedures, a summary of the data files and the information contained, and all personal and institutional roles. The subordinate classes and relations can be built according to the two principles of _inheritance_ and _modularity_. _Inheritance_ means that a subclass inherits all properties of its superordinate class, possibly adding some new ones. _Modularity_ means that all expansions are independent of each other; this makes possible for instance to generate expanded ontologies for any possible combinations of method \\u00D7 object of research.\" .\n<http://w3id.org/nfdi4ing/metadata4ing#> <http://purl.org/dc/terms/contributor> \"Ashish Karmacharya (https://orcid.org/0000-0003-2822-7648), Technische Universit\\u00E4t Darmstadt (https://ror.org/05n911h24, https://isni.org/isni/0000000109401669)\" .\n<http://w3id.org/nfdi4ing/metadata4ing#> <http://purl.org/dc/terms/contributor> \"Benjamin Farnbacher (https://orcid.org/0000-0002-1489-6501), Technische Universit\\u00E4t M\\u00FCnchen (TUM) (https://ror.org/02kkvpp62, https://isni.org/isni/0000000123222966)\" .\n<http://w3id.org/nfdi4ing/metadata4ing#> <http://purl.org/dc/terms/contributor> \"Cord Wiljes (https://orcid.org/0000-0003-2528-5391), Universit\\u00E4t Bielefeld (https://ror.org/02hpadn98, https://isni.org/isni/0000000109449128)\" .\n<http://w3id.org/nfdi4ing/metadata4ing#> <http://purl.org/dc/terms/contributor> \"Dorothea Iglezakis (https://orcid.org/0000-0002-8524-0569), Universit\\u00E4t Stuttgart (https://ror.org/04vnq7t77, https://isni.org/isni/0000000419369713)\" .\n<http://w3id.org/nfdi4ing/metadata4ing#> <http://purl.org/dc/terms/contributor> \"D\\u017Eulia Terzijska (https://orcid.org/0000-0002-1698-6826), Karlsruher Institut f\\u00FCr Technologie (KIT) (https://ror.org/04t3en479, https://isni.org/isni/0000000100755874)\" .\n<http://w3id.org/nfdi4ing/metadata4ing#> <http://purl.org/dc/terms/contributor> \"Giacomo Lanza (https://orcid.org/0000-0002-2239-3955), Physikalisch-Technische Bundesanstalt (PTB) (https://ror.org/05r3f7h03, https://isni.org/isni/0000000121861887)\" .\n<http://w3id.org/nfdi4ing/metadata4ing#> <http://purl.org/dc/terms/contributor> \"Johanna Hickmann (https://orcid.org/0000-0002-7535-8344), Technische Universit\\u00E4t Berlin (https://ror.org/03v4gjf40, https://isni.org/isni/0000000122928254)\" .",
+         "dataid:sha256sum": "eb772884b99a51f3eda1bb0832a4bac2dd34b150d71bf03c593b523fb8a68877",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:29:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "190603",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:29:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:bibo=\"http://purl.org/ontology/bibo/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:schema=\"https://schema.org/\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:terms=\"http://purl.org/dc/terms/\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"http://w3id.org/nfdi4ing/metadata4ing#\">\n  <rdf:Description rdf:about=\"http://w3id.org/nfdi4ing/metadata4ing#\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://w3id.org/nfdi4ing/metadata4ing#\">\n    <owl:versionIRI rdf:resource=\"http://w3id.org/nfdi4ing/metadata4ing/1.0.0\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://w3id.org/nfdi4ing/metadata4ing#\">\n    <terms:abstract>The ontology Metadata4Ing is developed within the NFDI Consortium NFDI4Ing with the aim of providing a thorough framework for the semantic description of research data, with a particular focus on engineering sciences and neighbouring disciplines. This ontology allows a thorough description of the whole data generation process (experiment, observation, simulation), embracing the object of investigation, all sample and data manipulation procedures, a summary of the data files and the information contained, and all personal and institutional roles. The subordinate classes and relations can be built according to the two principles of _inheritance_ and _modularity_. _Inheritance_ means that a subclass inherits all properties of its superordinate class, possibly adding some new ones. _Modularity_ means that all expansions are independent of each other; this makes possible for instance to generate expanded ontologies for any possible combinations of method × object of research.</terms:abstract>",
+         "dataid:sha256sum": "f606995faaa635f2e577fcaf07bddff535881b93b42a0c1b106281dc5ff9c5b0",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:29:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "239906",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=diff_axioms=new.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=diff_axioms=new.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "",
+         "dataid:sha256sum": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+         "dataid-cv:axioms": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:29:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=diff_axioms=new.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:cpannotationschema=\"http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>Metadata4Ing: An ontology for describing the generation of research data within a scientific activity.</title><title>Metadata4Ing</title><title>Metadata4Ing: An ontology for describing the generation of research data within a scientific activity.</title><link href=\"./owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"./Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"./rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"./extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"./favicon.ico\" /><script src=\"./jquery.js\"></script><script src=\"./jquery.scrollTo.js\"></script><script src=\"./marked.min.js\"></script><script>\n\t\t\t$(document).ready(\n\t\t\tfunction () {\n\t\t\tjQuery(\".markdown\").each(function(el){\n\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n\t\t\tvar list =\n\t\t\t$('a[name=\"\n\t\t\thttps://nfdi4ing.pages.rwth-aachen.de/metadata4ing/metadata4ing/ontology.xml\n\t\t\t\"]');\n\t\t\tif (list.size() != 0) {",
+         "dataid:sha256sum": "9c3dbd4e0dfad82130f38e88701ef56910a238f7602dcf177c5f7187623f5da7",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:32:13Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "164899",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=parsed_sorted.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=parsed_sorted.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://emmo.info/emmo#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .\n<http://emmo.info/emmo#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://schema.org/Intangible> .\n<http://emmo.info/emmo#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.molmod.info/semantics/pims-ii.ttl#MeasurementUnit> .\n<http://emmo.info/emmo#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4> <http://www.w3.org/2004/02/skos/core#definition> \"MeasurementUnit, i.e., a Mathematical ReferenceUnit that stands for the standard reference magnitude of a specific class of measurement processes, defined and adopted by convention or by law\"@en .\n<http://emmo.info/emmo#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4> <http://www.w3.org/2004/02/skos/core#editorialNote> \"changed by m4i: added skos:prefLabel\"@en .\n<http://emmo.info/emmo#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4> <http://www.w3.org/2004/02/skos/core#prefLabel> \"Messeinheit\"@de .\n<http://emmo.info/emmo#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4> <http://www.w3.org/2004/02/skos/core#prefLabel> \"measurement unit\"@en .\n<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .\n<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.molmod.info/semantics/pims-ii.ttl#Process> .\n<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/2004/02/skos/core#definition> \"Process, i.e., a physical entity with a temporal evolution that 'has a meaning for the ontologist'\"@en .",
+         "dataid:sha256sum": "ae78faad1b54e472bce771859b7c1679e119e93f49f37c93e7dfa1f5c980949e",
+         "dataid-cv:tag": "sorted",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:29:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "190603",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=parsed_sorted.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "5d494e7b065bd06d2590f331addecdea1981f1f2fae78b2181a9f61d4c14a885",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:30:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1932",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "6565d0970acc8c11fdabfc8775e3dedd0d365b97ee994a490900ef94e9e7113b",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:29:58Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1932",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2022.02.19; 00:29:46\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"148067\",\n        \"e-tag\": \"\\\"6cd6bdbb2b2d65eb403126b45e856c7b6d107bdcbba01d361b89a8d7b3d87448\\\"\",\n        \"lastModified\": \"Fri, 18 Feb 2022 16:49:04 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Date': 'Sat, 19 Feb 2022 00:27:13 GMT', 'Server': 'Apache/2.4.29 (Ubuntu)', 'Access-Control-Allow-Origin': '*', 'Location': 'https://w3id.org/nfdi4ing/metadata4ing', 'Content-Length': '320', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'text/html; charset=iso-8859-1'}\",",
+         "dataid:sha256sum": "5df153e1271490ec276988ee7102872d6b5ee8400de3a52da7a5f96747e03864",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:30:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1817",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=diff_axioms=old.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=diff_axioms=old.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "",
+         "dataid:sha256sum": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+         "dataid-cv:axioms": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:29:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=diff_axioms=old.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=diff_triples=new.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=diff_triples=new.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://w3id.org/nfdi4ing/metadata4ing#> <http://www.w3.org/2000/01/rdf-schema#comment> \"\\nMetadata4Ing defines classes and properties or reuses such classes and properties from other ontologies to describe research processes and research data management in NFDI4Ing. \\nNew concepts and properties are located in the namespace of Metadata4Ing.\\nMetadata4Ing does not import complete ontologies for the sake of relevance, readability, understandability and usability by and for engineers.\\nInstead, it tries to make re-use of existing identifiers for classes and properties by re-using all or a relevant subset of the axioms from the original ontology.\\nThese statements have been extracted in different ways, e.g. by using Prot\\u00E9g\\u00E9 tools importing an ontology and copying axioms of relevant items to Metadata4Ing or by download from data services or raw files of ontologies and manual copypasting.\\nIn some cases there was a need to extend or modify the original set of statements about an entity, e.g. because labels and definitions were expressed with a different owl:AnnotationProperty than the rest of Metadata4Ing, or because a skos:preflabel or a skos:definition in any of the languages we would like to support was missing.\\nAny editorial changes on elements from external ontologies are declared in Metadata4Ing by an annotation with skos:editorialNote at item-level.\\nTo get the original set of statements we encourage to visit the original namespace of the respective item.\\nMetadata4Ing reuses elements from the following ontologies:\\n- BIBO = Bibliographic Ontology  \\n- BIRO = Bibliographic Reference Ontology  \\n- DCAT = Data Catalog  \\n- DCTERMS = Dublin Core Terms  \\n- FOAF = Friend of a Friend  \\n- OWL = Web Ontology Language  \\n- PROV = Provenance Namespace  \\n- QUDT = Quantities, Units, Dimensions and Types  \\n- RDF = Resource Description Framework  \\n- RDFS = RDF Schema  \\n- SCHEMA = schema.org  \\n- SKOS = Simple Knowledge Organization System  \\n- SSN = Semantic Sensor Network Ontology  \\n- VANN = Vocabulary for Annotating vocabulary descriptions  \\n- XSD = XML Schema Definition  \\n- EMMO = European Materials and Modelling Ontology  \\n- BFO = Basic Formal Ontology  \\n- RO = Relation Ontology  \\n- PIMS-II = PIMS Interoperability Infrastructure  \\n- D-SI = Digital System of Units  \\n\"@en .\n<http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity> <http://www.w3.org/2004/02/skos/core#note> \"we recommend using a persistent identifier resolving to a persistent URL\"@en .\n<http://www.w3.org/ns/prov#qualifiedAssociation> <http://www.w3.org/2004/02/skos/core#example> \"Example application in m4i:\\n:SomeProcess\\n    a m4i:ProcessingStep; \\n    obo:RO_0000057 :SomePerson;\\n    prov:qualifiedAssociation [\\n        a prov:Association;\\n        prov:agent   :SomePerson;\\n        prov:hadRole :SomeRole;\\n        rdfs:comment \\\":SomePerson had the :SomeRole in this :SomeProcess\\\"@en\\n    ].\\n\\nThe direct relation between an activity and an agent expressed with 'has participant' (http://purl.obolibrary.org/obo/RO_0000057) does not give details about the agent's role in that activity. Using the property prov:qualifiedAssociation one can point to a blank node (cf. https://en.wikipedia.org/w/index.php?title=Blank_node&oldid=1015446558) containing additional information about the participation relation.\\n\"@en .",
+         "dataid:sha256sum": "42b7538be9a95fbfb71543db3d3b0ba306cfa294511b3220bfcf0f130221f8ef",
+         "dataid-cv:triples": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:29:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3349",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=diff_triples=new.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=parsed.ttl\nStart loading\nFeb 19, 2022 12:29:55 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://w3id.org/nfdi4ing/metadata4ing# @owl:versionIRI http://w3id.org/nfdi4ing/metadata4ing/1.0.0\nFeb 19, 2022 12:29:55 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from XSD namespace: 644a63f0f576bef7b8125879a23ab02f @xsd:pattern \"https://ror.org/[0-9][0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][0-9][0-9]\"\nFinished loading in 00:00:00.307\nInput size: Classes = 33, Properties = 127, Individuals = 21\nExpressivity: SRIN(D)",
+         "dataid:sha256sum": "c03422579fcc2b324c8e1c88e20dd54234a33bbf087754a9fc38bac3b51005bf",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:29:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1130",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.1.0.jar\n\n",
+         "dataid:sha256sum": "35133f3681a6ccdb320324b1927689adc218a5150f47233c68c456e42e0d1a9f",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:30:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643#nfdi4ing--metadata4ing_type=diff_triples=old.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=diff_triples=old.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://w3id.org/nfdi4ing/metadata4ing#> <http://www.w3.org/2000/01/rdf-schema#comment> \"\\nMetadata4Ing defines classes and properties or reuses such classes and properties from other ontologies to describe research processes and research data management in NFDI4Ing. \\nNew concepts and properties are located in the namespace of Metadata4Ing.\\nMetadata4Ing does not import complete ontologies for the sake of relevance, readability, understandability and usability by and for engineers.\\nInstead, it tries to make re-use of existing identifiers for classes and properties by re-using all or a relevant subset of the axioms from the original ontology.\\nThese statements have been extracted in different ways, e.g. by using Prot\\u00E9g\\u00E9 tools importing an ontology and copying axioms of relevant items to Metadata4Ing or by download from data services or raw files of ontologies and manual copypasting.\\nIn some cases there was a need to extend or modify the original set of statements about an entity, e.g. because labels and definitions were expressed with a different owl:AnnotationProperty than the rest of Metadata4Ing, or because a skos:preflabel or a skos:definition in any of the languages we would like to support was missing.\\nAny editorial changes on elements from external ontologies are declared in Metadata4Ing by an annotation with skos:editorialNote at item-level.\\nTo get the original set of statements we encourage to visit the original namespace of the respective item.\\nMetadata4Ing reuses elements from the following ontologies:\\n- Basic Formal Ontology\\n- BIRO\\n- D-SI\\n- DCAT\\n- Dublin Core\\n- European Materials and Modelling Ontology\\n- FOAF\\n- OBI\\n- PIMS Interoperability Infrastructure\\n- Relation Ontology\\n- Semantic Sensor Network Ontology\\n- schema.org\\n\"@en .\n<http://w3id.org/nfdi4ing/metadata4ing#KindOfQuantity> <http://www.w3.org/2000/01/rdf-schema#note> \"we recommend using a persistent identifier resolving to a persistent URL\"@en .\n<http://www.w3.org/2000/01/rdf-schema#note> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://www.w3.org/ns/prov#qualifiedAssociation> <http://www.w3.org/2004/02/skos/core#example> \"Example application in m4i:\\n:SomeProcess\\n    a m4i:ProcessingStep; \\n    obo:RO_0000057 :SomePerson;\\n    prov:qualifiedAssociation [\\n        a prov:Association;\\n        prov:agent   :SomePerson;\\n        prov:hadRole :SomeRole;\\n        rdfs:comment \\\":SomePerson had the :SomeRole in this :SomeProcess\\\"@en\\n    ];\\n\" .",
+         "dataid:sha256sum": "16f4d7c84ee34a575499f7c5e9c3426f153b1f416c908d9430e4da1dcc510279",
+         "dataid-cv:triples": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.19-002643",
+         "dct:issued": {
+            "@value": "2022-02-19T00:32:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2022-02-19T00:29:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2690",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/nfdi4ing--metadata4ing/2022.02.19-002643/nfdi4ing--metadata4ing_type=diff_triples=old.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

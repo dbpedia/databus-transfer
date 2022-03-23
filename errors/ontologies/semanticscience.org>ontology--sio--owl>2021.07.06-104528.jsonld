@@ -1,0 +1,838 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/semanticscience.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The semanticscience integrated ontology (SIO) provides a simple, integrated ontology (types, relations) for objects, processes and their attributes.  This project provides foundational support for the Bio2RDF (http://bio2rdf.org) and SADI (http://sadiframework.org) projects.   website: http://semanticscience.org email: sio-ontology@googlegroups.com mailing list: http://groups.google.com/group/sio-ontology"
+         },
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Semanticscience Integrated Ontology (SIO)"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=diff_axioms=new.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=parsed_sorted.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=pyLodeDoc.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=diff_axioms=old.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=pelletInfo_imports=FULL.txt"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The semanticscience integrated ontology (SIO) provides a simple, integrated ontology (types, relations) for objects, processes and their attributes.  This project provides foundational support for the Bio2RDF (http://bio2rdf.org) and SADI (http://sadiframework.org) projects.   website: http://semanticscience.org email: sio-ontology@googlegroups.com mailing list: http://groups.google.com/group/sio-ontology"
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:axioms",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix cito: <http://purl.org/spar/cito/> .\n@prefix vann: <http://purl.org/vocab/vann/> .\n@prefix ns0: <http://schema.org/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix ns1: <http://rdfs.org/ns/void#> .",
+         "dataid:sha256sum": "bd4067da0ae175c85047d50fc31e3720637834f4bb76d3e991eab272b32973f6",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:45:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "800393",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:45:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>Semanticscience Integrated Ontology (SIO)</title><title>Semanticscience Integrated Ontology (SIO)</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"https://raw.githubusercontent.com/micheldumontier/semanticscience/master/ontology/sio/release/sio-release.owl\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "be876aaa0b3236c73a248cc155fa360f73de84684f8b5e62875a16f2a45b4c40",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:48:02Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2037945",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2021.07.06; 10:45:39\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"124426\",\n        \"e-tag\": \"W/\\\"8ba787ada825ae2daf1a8ce602e78fc17e5a485268765d2b36d694c3abf40bf1\\\"\",\n        \"lastModified\": \"\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Server': 'nginx/1.19.10', 'Date': 'Tue, 06 Jul 2021 10:45:28 GMT', 'Content-Type': 'text/html', 'Content-Length': '170', 'Connection': 'keep-alive', 'Location': 'https://semanticscience.org/ontology/sio.owl'}\",",
+         "dataid:sha256sum": "b806d671a731ec6fdc872753c0d83bdfa99c2167b2dfe0037c12566afc87d56a",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:47:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2085",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:cito=\"http://purl.org/spar/cito/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:ns0=\"http://schema.org/\" xmlns:ns1=\"http://rdfs.org/ns/void#\" xmlns:ns2=\"http://www.w3.org/2004/02/skos/core#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:protege=\"http://protege.stanford.edu/plugins/owl/protege#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:sio=\"http://semanticscience.org/resource/\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\">\n  <rdf:Description rdf:about=\"http://semanticscience.org/ontology/sio.owl\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://semanticscience.org/ontology/sio.owl\">\n    <protege:defaultLanguage>en</protege:defaultLanguage>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://semanticscience.org/ontology/sio.owl\">\n    <dc:contributor rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">Contributors are those that engage in discussions in the context of SIO (in alphabetical order):",
+         "dataid:sha256sum": "ba63fbc3abaee40d52433ef9d26ce8bbbb7e580773b8e21c44b123b189db917b",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:45:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2636457",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=diff_axioms=new.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=diff_axioms=new.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "SIO_010455 ⊑ ∃ SIO_000272.SIO_011125\nSIO_010458 ⊑ ∃ SIO_000217.SIO_010464\nSIO_000469 ⊑ SIO_000185\n∃ SIO_000221.⊤ ⊑ SIO_000075\n⊤ ⊑ ∀ SIO_000362.SIO_000136\n∃ SIO_000362.⊤ ⊑ SIO_000000\n⊤ ⊑ ∀ SIO_000001.SIO_000000\n∃ SIO_000008.⊤ ⊑ SIO_000000\n⊤ ⊑ ∀ SIO_000364.SIO_000000\nSIO_010363 ⊑ ∃ SIO_000244.SIO_010362",
+         "dataid:sha256sum": "b8ea9a8a4fedf93ce3a5fcfcb606af3ef312c3c37170075d1300c5ec6d392251",
+         "dataid-cv:axioms": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:45:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "857",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=diff_axioms=new.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rdf:RDF xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n  xmlns:protege=\"http://protege.stanford.edu/plugins/owl/protege#\"\n  xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n  xmlns:dct=\"http://purl.org/dc/terms/\"\n  xmlns:cito=\"http://purl.org/spar/cito/\"\n  xmlns:vann=\"http://purl.org/vocab/vann/\"\n  xmlns:ns0=\"http://schema.org/\"\n  xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n  xmlns:owl=\"http://www.w3.org/2002/07/owl#\"",
+         "dataid:sha256sum": "e39e1479b1d9e27902e57acb4d015f45414696ac4ad172417d35194aeb59def7",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:45:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1458356",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:45:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=parsed_sorted.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=parsed_sorted.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage> <http://purl.org/dc/elements/1.1/identifier> \"protege#defaultLanguage\" .\n<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/dc/elements/1.1/contributor> <http://purl.org/dc/elements/1.1/identifier> \"contributor\" .\n<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/dc/elements/1.1/creator> <http://purl.org/dc/elements/1.1/identifier> \"creator\" .\n<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/dc/elements/1.1/description> <http://purl.org/dc/elements/1.1/identifier> \"description\" .\n<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/dc/terms/alternative> <http://purl.org/dc/elements/1.1/identifier> \"alternative\" .\n<http://purl.org/dc/terms/alternative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .",
+         "dataid:sha256sum": "13766a9a0ac6b9e2c1bb245be7acc285915cca83f595524d5c01e062b5a011b9",
+         "dataid-cv:tag": "sorted",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:45:41Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2043518",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=parsed_sorted.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=pyLodeDoc.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=pyLodeDoc.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <title>Semanticscience Integrated Ontology (SIO)</title>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1Sew\nEAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n    \n    <style>",
+         "dataid:sha256sum": "f31575357f61445eb3c60105dbff5a8ec4c8a59a14f35b38546d199f80066b69",
+         "dataid-cv:type": "pyLodeDoc",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:51:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2660701",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=pyLodeDoc.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:46:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=diff_axioms=old.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=diff_axioms=old.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "SIO_000612 ≡ SIO_000015 ⊓ (∀ SIO_000210.SIO_000000)\n∃ SIO_000001.⊤ ⊑ ⊤\nSIO_000779 ⊑ SIO_011125\n⊤ ⊑ ∀ SIO_000001.⊤",
+         "dataid:sha256sum": "7e4138b85df72a1de59d18066cdd5d22b2a24aa6cb44f4014420c75789fe303f",
+         "dataid-cv:axioms": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:45:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "138",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=diff_axioms=old.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.1.0.jar\n\n",
+         "dataid:sha256sum": "35133f3681a6ccdb320324b1927689adc218a5150f47233c68c456e42e0d1a9f",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:47:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://semanticscience.org/resource/SIO_001362> ;",
+         "dataid:sha256sum": "389c8d8192737c250785a55eeb3555bd042c831ec5398f94f1de4321b8f7d086",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:46:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "855676",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n./data/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=parsed.ttl\nStart loading\nJul 06, 2021 10:46:50 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://semanticscience.org/ontology/sio.owl @owl:versionIRI http://semanticscience.org/ontology/sio/v1.53/sio-release.owl\nFinished loading in 00:00:53.569\nInput size: Classes = 1574, Properties = 251, Individuals = 2802\nExpressivity: SRIQ(D)\nStart consistency check\nFinished consistency check in 00:00:00.242",
+         "dataid:sha256sum": "99bf055d6790f7b49f65dd3067d373c8c36f80654384956c37396af76ccb4147",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:47:43Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "828",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://semanticscience.org/ontology/sio.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://semanticscience.org/ontology/sio.owl> <http://protege.stanford.edu/plugins/owl/protege#defaultLanguage> \"en\" .\n<http://semanticscience.org/ontology/sio.owl> <http://purl.org/dc/elements/1.1/contributor> \"Contributors are those that engage in discussions in the context of SIO (in alphabetical order):\\nsivaram arabandi\\nchristopher baker\\njoachim baran\\njerven bolleman\\nmatthew brush\\nalison callahan\\nleonid chepelev\\nkevin cohen\\nmelanie courtot\\ngeraint duck\\nlaura furlong\\nelisa kendall\\ntatsuya kushida\\nluke mccarthy\\njim mccusker\\njose miguel cruz-toledo\\nchris mungall\\nrobert hoehndorf\\nsimon jupp\\njin-dong kim\\ndana klassen\\nthomas luetteke\\njames malone\\nchris mungall\\ndavid osumi-sutherland\\ntazro ohta\\nnuria queralt\\nstephen reed\\nalexandre riazanov\\nmatthias samwald\\nrobert stevens\\nmark wilkinson\\nkarin verspoor\\nnatalia villanueva-rosales\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://semanticscience.org/ontology/sio.owl> <http://purl.org/dc/elements/1.1/creator> \"Michel Dumontier\"@en .\n<http://semanticscience.org/ontology/sio.owl> <http://purl.org/dc/terms/creator> \"http://orcid.org/0000-0003-4727-9435\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<http://semanticscience.org/ontology/sio.owl> <http://purl.org/dc/terms/description> \"The semanticscience integrated ontology (SIO) provides a simple, integrated ontology (types, relations) for objects, processes and their attributes.\\n\\nThis project provides foundational support for the Bio2RDF (http://bio2rdf.org) and SADI (http://sadiframework.org) projects. \\n\\nwebsite: http://semanticscience.org\\nemail: sio-ontology@googlegroups.com\\nmailing list: http://groups.google.com/group/sio-ontology\\n\"@en .\n<http://semanticscience.org/ontology/sio.owl> <http://purl.org/dc/terms/issued> \"2010-03-29\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://semanticscience.org/ontology/sio.owl> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .\n<http://semanticscience.org/ontology/sio.owl> <http://purl.org/dc/terms/rights> \"free to use,share,modify. modify with attribution [http://creativecommons.org/licenses/by/4.0/].\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://semanticscience.org/ontology/sio.owl> <http://purl.org/dc/terms/title> \"Semanticscience Integrated Ontology (SIO)\"@en .",
+         "dataid:sha256sum": "ddc81c0cb0b696fe463d40682015921ccd87df2a64b7b2b8a25481720bb982d0",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:45:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2043518",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "991b17b089d0e28127d0001235cb97c71835b2e76063f9e0c70e0826bf6d9eaa",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:47:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "6462",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n./data/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=parsed.ttl\nStart loading\nJul 06, 2021 10:46:18 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://semanticscience.org/ontology/sio.owl @owl:versionIRI http://semanticscience.org/ontology/sio/v1.53/sio-release.owl\nFinished loading in 00:00:29.623\nInput size: Classes = 1574, Properties = 251, Individuals = 2802\nExpressivity: SRIQ(D)\nStart consistency check\nFinished consistency check in 00:00:00.278",
+         "dataid:sha256sum": "b6a29922fd87f51ac9ea71b914292791c54d9552653ce3234f5747d53a1513a0",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:47:43Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "828",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528#ontology--sio--owl_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "882b48616d42b6904f58ca8967ad2418cdcf3208a3256ac5472ca2d9c5dcde48",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.06-104528",
+         "dct:issued": {
+            "@value": "2021-07-06T10:51:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-07-06T10:47:46Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "6462",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/semanticscience.org/ontology--sio--owl/2021.07.06-104528/ontology--sio--owl_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      }
+   ]
+}

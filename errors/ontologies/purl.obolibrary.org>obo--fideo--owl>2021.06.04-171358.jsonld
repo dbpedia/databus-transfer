@@ -1,0 +1,707 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The Food Interactions with Drugs Evidence Ontology (FIDEO) represents Food-Drug Interactions and underlying interaction mechanisms described in scientific publications, drug and adverse effects databases, and drug interactions compendia."
+         },
+         "dct:hasVersion": "2021.06.04-171358",
+         "dct:issued": {
+            "@value": "2021-06-04T17:14:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "http://purl.obolibrary.org/obo/fideo.owl"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=pyLodeDoc.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=orig.owl"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The Food Interactions with Drugs Evidence Ontology (FIDEO) represents Food-Drug Interactions and underlying interaction mechanisms described in scientific publications, drug and adverse effects databases, and drug interactions compendia."
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"https://gitub.u-bordeaux.fr/erias/fideo/-/raw/master/fideo.owl\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "403ce030fddc647cee85a09ee4d621405058c8755d8c487c1755c7cd1a9d6b09",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.04-171358",
+         "dct:issued": {
+            "@value": "2021-06-04T17:14:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-06-04T17:14:14Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "354009",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.1.0.jar\n\n",
+         "dataid:sha256sum": "35133f3681a6ccdb320324b1927689adc218a5150f47233c68c456e42e0d1a9f",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.04-171358",
+         "dct:issued": {
+            "@value": "2021-06-04T17:14:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-06-04T17:14:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://purl.obolibrary.org/obo/PATO_0001241> ;",
+         "dataid:sha256sum": "80dc18131a10bb83d546222047e9a96a5b0b51381902a3d752c13678820d3466",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.04-171358",
+         "dct:issued": {
+            "@value": "2021-06-04T17:14:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-06-04T17:14:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "363830",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "2aee74f7ca08333d784ea1dadf3534925e4b7517760582c213beb705a132bac1",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.04-171358",
+         "dct:issued": {
+            "@value": "2021-06-04T17:14:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-06-04T17:14:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3628",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=pyLodeDoc.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=pyLodeDoc.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <title>{no title found}</title>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1Sew\nEAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n    \n    <style>",
+         "dataid:sha256sum": "004a94e7b213ebd0d8c580b3bb75525c7bbd03028e7dd2355ed45c30c71bddc7",
+         "dataid-cv:type": "pyLodeDoc",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.04-171358",
+         "dct:issued": {
+            "@value": "2021-06-04T17:14:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-06-04T17:14:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "453495",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=pyLodeDoc.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:NCBITaxon=\"http://purl.obolibrary.org/obo/NCBITaxon#\" xmlns:apollo_sv=\"http://purl.obolibrary.org/obo/apollo_sv.owl/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:efo=\"http://www.ebi.ac.uk/efo/\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\" xmlns:ncbitaxon=\"http://purl.obolibrary.org/obo/ncbitaxon#\" xmlns:obo=\"http://purl.obolibrary.org/obo/\" xmlns:oboInOwl=\"http://www.geneontology.org/formats/oboInOwl#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:patterns=\"http://www.co-ode.org/patterns#\" xmlns:protege=\"http://protege.stanford.edu/plugins/owl/protege#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:semweb=\"http://purl.obolibrary.org/obo/fideo\" xmlns:terms=\"http://purl.org/dc/terms/\" xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"http://purl.obolibrary.org/obo/fideo.owl#\">\n  <rdf:Description rdf:about=\"http://purl.obolibrary.org/obo/fideo.owl\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://purl.obolibrary.org/obo/fideo.owl\">\n    <dc:description>The Food Interactions with Drugs Evidence Ontology (FIDEO) represents Food-Drug Interactions and underlying interaction mechanisms described in scientific publications, drug and adverse effects databases, and drug interactions compendia. The ontology builds on previous efforts from the FoodOn, DRON, ChEBI, and DIDEO ontologies as well as the Thériaque database. This ontology is maintained at https://gitub.u-bordeaux.fr/erias/fideo, and requests for changes or additions should be filed at the issue tracker there.</dc:description>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://purl.obolibrary.org/obo/fideo.owl\">\n    <dc:creator>ERIAS Research Team, Bordeaux Population Health Research Center</dc:creator>",
+         "dataid:sha256sum": "b4884409c8612da8ead6ef156927d849e9f194a861e3ba19fc324b5627f4fb25",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.04-171358",
+         "dct:issued": {
+            "@value": "2021-06-04T17:14:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-06-04T17:13:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "576299",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "42814a34ae5fd2cc4560e68fae0fee42d20416496d03f01ecb97bf5c7cdde230",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.04-171358",
+         "dct:issued": {
+            "@value": "2021-06-04T17:14:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-06-04T17:14:10Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3628",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n./data/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=parsed.ttl\nStart loading\nJun 04, 2021 5:14:05 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring literal value used with ObjectProperty : http://purl.obolibrary.org/obo/FOODON_03309832 @http://www.geneontology.org/formats/oboInOwl#inSubset \"subset_siren\"\nJun 04, 2021 5:14:05 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring literal value used with ObjectProperty : http://purl.obolibrary.org/obo/FOODON_03305236 @http://www.geneontology.org/formats/oboInOwl#inSubset \"subset_siren\"\nJun 04, 2021 5:14:05 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring literal value used with ObjectProperty : http://purl.obolibrary.org/obo/FOODON_03301721 @http://www.geneontology.org/formats/oboInOwl#inSubset \"subset_siren\"\nJun 04, 2021 5:14:05 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature",
+         "dataid:sha256sum": "c30ff768f8126eeaeb0228f173682e1496fab5cef8f5334be14f65b751e8f5b6",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.04-171358",
+         "dct:issued": {
+            "@value": "2021-06-04T17:14:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-06-04T17:14:07Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "16918",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://purl.obolibrary.org/obo/fideo.owl> ;\n            sh:resultMessage \"No dct:license statement found\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "0bca5a1e356fff1b39aa18e5d95cce5d5a13ad6776ea744d12bc11290376cba2",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.04-171358",
+         "dct:issued": {
+            "@value": "2021-06-04T17:14:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-06-04T17:14:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "659",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://purl.obolibrary.org/obo/fideo.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://purl.obolibrary.org/obo/fideo.owl> <http://purl.org/dc/elements/1.1/description> \"The Food Interactions with Drugs Evidence Ontology (FIDEO) represents Food-Drug Interactions and underlying interaction mechanisms described in scientific publications, drug and adverse effects databases, and drug interactions compendia. The ontology builds on previous efforts from the FoodOn, DRON, ChEBI, and DIDEO ontologies as well as the Th\\u00E9riaque database. This ontology is maintained at https://gitub.u-bordeaux.fr/erias/fideo, and requests for changes or additions should be filed at the issue tracker there.\" .\n<http://purl.obolibrary.org/obo/fideo.owl> <http://purl.org/dc/elements/1.1/creator> \"ERIAS Research Team, Bordeaux Population Health Research Center\" .\n<http://purl.obolibrary.org/obo/fideo.owl> <http://purl.org/dc/elements/1.1/creator> \"Georgeta Bordea\" .\n<http://purl.obolibrary.org/obo/fideo.owl> <http://purl.org/dc/elements/1.1/creator> \"Fleur Mougin\" .\n<http://purl.obolibrary.org/obo/fideo.owl> <http://purl.org/dc/elements/1.1/rights> \"http://creativecommons.org/publicdomain/zero/1.0/\" .\n<http://purl.obolibrary.org/obo/GENEPIO_0001772> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://www.geneontology.org/formats/oboInOwl#hasSynonym> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.obolibrary.org/obo/FIDEO_00000000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .\n<http://purl.obolibrary.org/obo/FIDEO_00000000> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/GO_0008150> .",
+         "dataid:sha256sum": "8067356c825977a62b5e97264fee88bf3a7d66514608b5539f8c29e1d8a94aa8",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.04-171358",
+         "dct:issued": {
+            "@value": "2021-06-04T17:14:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-06-04T17:13:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "458323",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://purl.obolibrary.org/obo/fideo.owl> ;\n            sh:resultMessage \"Archivo requires either skos:prefLabel, rdfs:label, dct:title or dc:title for the title of the ontology. Default is the non information resource URI.\"@en ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:OrConstraintComponent ;",
+         "dataid:sha256sum": "2f3ee83b0c2e152a41543b17384fa76f4bf081012218a76cb5a40abd40ade5aa",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.04-171358",
+         "dct:issued": {
+            "@value": "2021-06-04T17:14:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-06-04T17:14:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "765",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2021-06-04 17:13:58.718876\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"\",\n        \"e-tag\": \"W/\\\"af758bce07cd4bf206bf810de5daf7a7\\\"\",\n        \"lastModified\": \"\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Date': 'Fri, 04 Jun 2021 17:13:56 GMT', 'Server': 'Apache/2.4.18 (Ubuntu)', 'Location': 'https://gitub.u-bordeaux.fr/erias/fideo/-/raw/master/fideo.owl', 'Content-Length': '331', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'text/html; charset=iso-8859-1'}\",",
+         "dataid:sha256sum": "bccb1c92541aa7c0fff24f43216ae5f1e51097ad132e0488aff7d266d3f69bbc",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.04-171358",
+         "dct:issued": {
+            "@value": "2021-06-04T17:14:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-06-04T17:14:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1915",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://purl.obolibrary.org/obo/fideo.owl> ;\n            sh:resultMessage \"No license found at all (neither dct:license, xhv:license nor cc:license)\"@en ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:OrConstraintComponent ;",
+         "dataid:sha256sum": "396d03430c5fd199dab385646077043e706d530f3ee4c7d57c56f1240e98f5ce",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.04-171358",
+         "dct:issued": {
+            "@value": "2021-06-04T17:14:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-06-04T17:14:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "676",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <http://purl.obolibrary.org/obo/fideo.owl#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .\n@prefix apollo_sv: <http://purl.obolibrary.org/obo/apollo_sv.owl/> .\n@prefix semweb: <http://purl.obolibrary.org/obo/fideo> .\n@prefix patterns: <http://www.co-ode.org/patterns#> .\n@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .",
+         "dataid:sha256sum": "44b551aac7e0997d54379d08d25205fff0bc642d010d34e5435043232f9a8fdd",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.04-171358",
+         "dct:issued": {
+            "@value": "2021-06-04T17:14:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-06-04T17:13:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "165618",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n./data/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=parsed.ttl\nStart loading\nJun 04, 2021 5:14:07 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring literal value used with ObjectProperty : http://purl.obolibrary.org/obo/FOODON_03309832 @http://www.geneontology.org/formats/oboInOwl#inSubset \"subset_siren\"\nJun 04, 2021 5:14:07 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring literal value used with ObjectProperty : http://purl.obolibrary.org/obo/FOODON_03305236 @http://www.geneontology.org/formats/oboInOwl#inSubset \"subset_siren\"\nJun 04, 2021 5:14:07 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring literal value used with ObjectProperty : http://purl.obolibrary.org/obo/FOODON_03301721 @http://www.geneontology.org/formats/oboInOwl#inSubset \"subset_siren\"\nJun 04, 2021 5:14:07 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature",
+         "dataid:sha256sum": "9f136e14173bcb0c6f0591c1c9274c98dc7f232297e6a23c1c1cfdbee811052b",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.04-171358",
+         "dct:issued": {
+            "@value": "2021-06-04T17:14:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-06-04T17:14:07Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "16918",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358#obo--fideo--owl_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n\n<!DOCTYPE rdf:RDF [\n    <!ENTITY terms \"http://purl.org/dc/terms/\" >\n    <!ENTITY foaf \"http://xmlns.com/foaf/0.1/\" >\n    <!ENTITY owl \"http://www.w3.org/2002/07/owl#\" >\n    <!ENTITY obo \"http://purl.obolibrary.org/obo/\" >\n    <!ENTITY patterns \"http://www.co-ode.org/patterns#\" >\n    <!ENTITY dc \"http://purl.org/dc/elements/1.1/\" >\n    <!ENTITY xsd \"http://www.w3.org/2001/XMLSchema#\" >",
+         "dataid:sha256sum": "e5e9577420f4eaffa2bc5144911842dddf2c38555f37fa36b2baf60fe1c36c7c",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.04-171358",
+         "dct:issued": {
+            "@value": "2021-06-04T17:14:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-06-04T17:13:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "344598",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--fideo--owl/2021.06.04-171358/obo--fideo--owl_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      }
+   ]
+}

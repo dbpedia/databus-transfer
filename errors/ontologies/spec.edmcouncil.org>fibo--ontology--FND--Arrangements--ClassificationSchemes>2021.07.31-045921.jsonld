@@ -1,0 +1,838 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "This ontology defines abstract concepts for representation of classification schemes that themselves are intended to permit the classification of arbitrary concepts into hierarchies (or partial orders) for use in other FIBO ontology elements."
+         },
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Classification Schemes Ontology"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=diff_axioms=new.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=parsed_sorted.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=diff_axioms=old.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pyLodeDoc.html"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "This ontology defines abstract concepts for representation of classification schemes that themselves are intended to permit the classification of arbitrary concepts into hierarchies (or partial orders) for use in other FIBO ontology elements."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:axioms",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://www.w3.org/2000/01/rdf-schema#label> \"Classification Schemes Ontology\" .\n<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://purl.org/dc/terms/abstract> \"This ontology defines abstract concepts for representation of classification schemes that themselves are intended to permit the classification of arbitrary concepts into hierarchies (or partial orders) for use in other FIBO ontology elements.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://purl.org/dc/terms/license> \"http://opensource.org/licenses/MIT\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/contentLanguage> \"https://www.w3.org/TR/owl2-quick-reference/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2014-2021 EDM Council, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2014-2021 Object Management Group, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Arrangements/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .",
+         "dataid:sha256sum": "d98c866305a05adf46a18be5a0294e8b58eb32207b43575d0ee695065f8c7e53",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "15087",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:fibo-fnd-arr-arr=\"https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Arrangements/\" xmlns:fibo-fnd-arr-cls=\"https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/\" xmlns:fibo-fnd-rel-rel=\"https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/\" xmlns:fibo-fnd-utl-av=\"https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/\" xmlns:lcc-cr=\"https://www.omg.org/spec/LCC/Countries/CountryRepresentation/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:sm=\"http://www.omg.org/techprocess/ab/SpecificationMetadata/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\">\n  <rdf:Description rdf:about=\"https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/\">\n    <rdfs:label>Classification Schemes Ontology</rdfs:label>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/\">\n    <dct:abstract>This ontology defines abstract concepts for representation of classification schemes that themselves are intended to permit the classification of arbitrary concepts into hierarchies (or partial orders) for use in other FIBO ontology elements.</dct:abstract>",
+         "dataid:sha256sum": "20542ec2d9c4a3b69aab6f4128cda667d5e1d342f7d0b05fd9c885b03233b1f7",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "18230",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl",
+         "dataid:sha256sum": "215b644153f3e66f295f61f7f86fa6ccf3edd4fdac378e5c0725e95d12de1861",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "14817",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl",
+         "dataid:sha256sum": "215b644153f3e66f295f61f7f86fa6ccf3edd4fdac378e5c0725e95d12de1861",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "14817",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2021.07.31; 04:59:23\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"9623\",\n        \"e-tag\": \"\\\"610452bf-2597\\\"\",\n        \"lastModified\": \"Fri, 30 Jul 2021 19:27:59 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"\",",
+         "dataid:sha256sum": "0dbce3e09906773e7ca012d53b220e92a5cfecc71f767c7742574ca61384cb60",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:54Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1270",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=parsed.ttl\nStart loading\nJul 31, 2021 4:59:40 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/ @owl:versionIRI https://spec.edmcouncil.org/fibo/ontology/master/latest/FND/Arrangements/ClassificationSchemes/\nFinished loading in 00:00:00.138\nInput size: Classes = 7, Properties = 28, Individuals = 6\nExpressivity: ALCHQ(D)\nStart consistency check\nFinished consistency check in 00:00:00.018",
+         "dataid:sha256sum": "957c22b707d6d68d041542214384bd2e8253bbbae57c1f6f7a2b5471f4b39b2d",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:40Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "986",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=diff_axioms=new.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=diff_axioms=new.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "",
+         "dataid:sha256sum": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+         "dataid-cv:axioms": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=diff_axioms=new.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>Classification Schemes Ontology</title><title>Classification Schemes Ontology</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "c121a196cdc843f9f1fa59e768b69cb91b81564e6ae542d93c10a6307ab4bdcb",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:58Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "11344",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=parsed_sorted.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=parsed_sorted.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://purl.org/dc/terms/abstract> \"This ontology defines abstract concepts for representation of classification schemes that themselves are intended to permit the classification of arbitrary concepts into hierarchies (or partial orders) for use in other FIBO ontology elements.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://purl.org/dc/terms/license> \"http://opensource.org/licenses/MIT\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/contentLanguage> \"https://www.w3.org/TR/owl2-quick-reference/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2014-2021 EDM Council, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2014-2021 Object Management Group, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Arrangements/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://www.omg.org/spec/LCC/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/fileAbbreviation> \"fibo-fnd-arr-cls\" .",
+         "dataid:sha256sum": "a9b05a1a50e8f8b89e438869c00d2d66b650de5b38b00bd9f58b5182ceaa00e4",
+         "dataid-cv:tag": "sorted",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:24Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "15087",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=parsed_sorted.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> ;",
+         "dataid:sha256sum": "32a423a742326c57053bb97c1cc31119aa286d1839e86f90f3ff0a8bcf134210",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "8253",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix fibo-fnd-arr-arr: <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Arrangements/> .\n@prefix fibo-fnd-arr-cls: <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> .\n@prefix fibo-fnd-rel-rel: <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/> .\n@prefix fibo-fnd-utl-av: <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/> .\n@prefix lcc-cr: <https://www.omg.org/spec/LCC/Countries/CountryRepresentation/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .",
+         "dataid:sha256sum": "0bbc454f0869bcbcbd132ef788ec02cc4aa8516d116c9de71b5083cf3b8f6db0",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "7251",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/> ;\n            sh:resultMessage \"dct:license statement is not an IRI\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "0be3f58c4a1af0f5c2c6936f950e8d6ed9fdeb161cdfe1ff087ce5140bc6af07",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "777",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.1.0.jar\n\n",
+         "dataid:sha256sum": "35133f3681a6ccdb320324b1927689adc218a5150f47233c68c456e42e0d1a9f",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:54Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=diff_axioms=old.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=diff_axioms=old.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "",
+         "dataid:sha256sum": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+         "dataid-cv:axioms": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=diff_axioms=old.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE rdf:RDF [\n\t<!ENTITY dct \"http://purl.org/dc/terms/\">\n\t<!ENTITY fibo-fnd-arr-arr \"https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Arrangements/\">\n\t<!ENTITY fibo-fnd-arr-cls \"https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/\">\n\t<!ENTITY fibo-fnd-rel-rel \"https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/\">\n\t<!ENTITY fibo-fnd-utl-av \"https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/\">\n\t<!ENTITY lcc-cr \"https://www.omg.org/spec/LCC/Countries/CountryRepresentation/\">\n\t<!ENTITY owl \"http://www.w3.org/2002/07/owl#\">\n\t<!ENTITY rdf \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\">",
+         "dataid:sha256sum": "8ceceeb39d0153a3e795b27d78e4757b3134aa44721efb0f4c56366e05cab727",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "9624",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=parsed.ttl\nStart loading\nJul 31, 2021 4:59:38 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/ClassificationSchemes/ @owl:versionIRI https://spec.edmcouncil.org/fibo/ontology/master/latest/FND/Arrangements/ClassificationSchemes/\nFinished loading in 00:00:00.146\nInput size: Classes = 7, Properties = 28, Individuals = 6\nExpressivity: ALCHQ(D)\nStart consistency check\nFinished consistency check in 00:00:00.020",
+         "dataid:sha256sum": "7fe452e51de5edf57921fbd1cba99fbe963e42dfaac7c13a95d8adcf4bed6217",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:40Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "986",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921#fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pyLodeDoc.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pyLodeDoc.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <title>Classification Schemes Ontology</title>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1Sew\nEAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n    \n    <style>",
+         "dataid:sha256sum": "03e07e78634356aef699eea0677095212e9e689630d6f85e14461471bb150bd6",
+         "dataid-cv:type": "pyLodeDoc",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.31-045921",
+         "dct:issued": {
+            "@value": "2021-07-31T05:00:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-31T04:59:58Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "19730",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--Arrangements--ClassificationSchemes/2021.07.31-045921/fibo--ontology--FND--Arrangements--ClassificationSchemes_type=pyLodeDoc.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      }
+   ]
+}

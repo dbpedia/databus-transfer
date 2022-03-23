@@ -1,0 +1,838 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "This ontology defines the fundamental concepts for financial instruments in general, providing the high-level hooks for build-out in more detail in the relevant domain areas.  These include, but are not limited to, equities, options, debt instruments, and so forth, some of which may be negotiable."
+         },
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Financial Instruments Ontology"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pyLodeDoc.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=diff_axioms=new.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=diff_axioms=old.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=parsed_sorted.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=shaclReport_validates=minLicense.ttl"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "This ontology defines the fundamental concepts for financial instruments in general, providing the high-level hooks for build-out in more detail in the relevant domain areas.  These include, but are not limited to, equities, options, debt instruments, and so forth, some of which may be negotiable."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:axioms",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2021.07.13; 02:51:45\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"53316\",\n        \"e-tag\": \"\\\"60ec9d49-d044\\\"\",\n        \"lastModified\": \"Mon, 12 Jul 2021 19:51:37 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"\",",
+         "dataid:sha256sum": "10301d10fefe71b45c4e04ccc0b0c2b6dd72f42e9bf8beb6fedd92e073d2dcf4",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:52:29Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1287",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> ;\n            sh:resultMessage \"dc:publisher of the ontology is missing and will not be displayed\"@en ;",
+         "dataid:sha256sum": "1655ea0ffed5a8c04a32b84f90014b787b5e38dab0bd010e1fe9793ee64dc3b6",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:52:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "5619",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pyLodeDoc.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pyLodeDoc.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <title>Financial Instruments Ontology</title>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1Sew\nEAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n    \n    <style>",
+         "dataid:sha256sum": "2c01b09853c2eb22a9d5393e7b878404346e0c75b0cb8530afbfa5dae68e2b9c",
+         "dataid-cv:type": "pyLodeDoc",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:52:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "88435",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pyLodeDoc.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:52:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> ;\n            sh:resultMessage \"dct:license statement is not an IRI\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "ae24b412527442f2c4a9e08c167f9f0800d4d437afd8773afb545cf503b7dbbe",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:52:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "784",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n./data/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=parsed.ttl\nStart loading\nJul 13, 2021 2:52:07 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/ @owl:versionIRI https://spec.edmcouncil.org/fibo/ontology/master/latest/FBC/FinancialInstruments/FinancialInstruments/\nFinished loading in 00:00:00.231\nInput size: Classes = 41, Properties = 59, Individuals = 38\nExpressivity: ALCHIQ(D)\nStart consistency check\nFinished consistency check in 00:00:00.025",
+         "dataid:sha256sum": "365ef34854a30b7a64f763e2d86047f03e89b47733705532f63a2ae4db6f202b",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:52:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1000",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=diff_axioms=new.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=diff_axioms=new.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "∃ hasDaysToMaturity.⊤ ⊑ FinancialInstrument\n⊤ ⊑ ∀ hasDaysToMaturity.integer\nDebtInstrument ⊑ ≥ 0 hasDaysToMaturity.integer",
+         "dataid:sha256sum": "9ebfdbbb8ace07e91996a5a0e338155f9f8ec3e724ad42d99d6d808d38c6b4c6",
+         "dataid-cv:axioms": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:52:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "139",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=diff_axioms=new.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n./data/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=parsed.ttl\nStart loading\nJul 13, 2021 2:52:06 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/ @owl:versionIRI https://spec.edmcouncil.org/fibo/ontology/master/latest/FBC/FinancialInstruments/FinancialInstruments/\nFinished loading in 00:00:00.226\nInput size: Classes = 41, Properties = 59, Individuals = 38\nExpressivity: ALCHIQ(D)\nStart consistency check\nFinished consistency check in 00:00:00.024",
+         "dataid:sha256sum": "88febff5814e43d4b7b350dfef2e48052f1acad34c4d4aa9acf6df2c5494c923",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:52:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1000",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>Financial Instruments Ontology</title><title>Financial Instruments Ontology</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "571c334b93c67c7da42a0c0647b80929b8ba158a0c3b6fda78a3c917042bf85f",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:52:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "73222",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix fibo-be-le-fbo: <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/> .\n@prefix fibo-be-le-lp: <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/> .\n@prefix fibo-be-oac-cown: <https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/> .\n@prefix fibo-fbc-fi-fi: <https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> .\n@prefix fibo-fbc-pas-fpas: <https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/> .\n@prefix fibo-fnd-acc-cur: <https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/> .\n@prefix fibo-fnd-agr-ctr: <https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/> .\n@prefix fibo-fnd-dt-fd: <https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/> .",
+         "dataid:sha256sum": "f7ad426e72bc3348975569343480081b2f5af9a0ca029d7a9ae5baf2a1bb433f",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:52:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "42518",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.1.0.jar\n\n",
+         "dataid:sha256sum": "35133f3681a6ccdb320324b1927689adc218a5150f47233c68c456e42e0d1a9f",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:52:29Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=diff_axioms=old.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=diff_axioms=old.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "",
+         "dataid:sha256sum": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+         "dataid-cv:axioms": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:52:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=diff_axioms=old.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl",
+         "dataid:sha256sum": "7735d7d00119341c294ffa7bfab7cdbc5de1ec406853c1c8ef351f9622681cfe",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:52:29Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "40773",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://www.w3.org/2000/01/rdf-schema#label> \"Financial Instruments Ontology\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://www.w3.org/2000/01/rdf-schema#comment> \"QName: fibo-fbc-fi-fi:\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://purl.org/dc/terms/abstract> \"This ontology defines the fundamental concepts for financial instruments in general, providing the high-level hooks for build-out in more detail in the relevant domain areas.  These include, but are not limited to, equities, options, debt instruments, and so forth, some of which may be negotiable.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://purl.org/dc/terms/license> \"http://opensource.org/licenses/MIT\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/contentLanguage> \"https://www.w3.org/TR/owl2-quick-reference/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2015-2021 EDM Council, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2015-2021 Object Management Group, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/BE/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .",
+         "dataid:sha256sum": "f2cfeb5c3aa23417e26d3d4536241d12ab7db412db4969bb0fc1384415712d1e",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:52:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "103231",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE rdf:RDF [\n\t<!ENTITY dct \"http://purl.org/dc/terms/\">\n\t<!ENTITY fibo-be-le-fbo \"https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/\">\n\t<!ENTITY fibo-be-le-lp \"https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/\">\n\t<!ENTITY fibo-be-oac-cown \"https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/\">\n\t<!ENTITY fibo-fbc-fi-fi \"https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/\">\n\t<!ENTITY fibo-fbc-pas-fpas \"https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/\">\n\t<!ENTITY fibo-fnd-acc-cur \"https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/\">\n\t<!ENTITY fibo-fnd-agr-ctr \"https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/\">",
+         "dataid:sha256sum": "ab7952d69ab6585453505855b3982dc4215e0bc1b1d5c19ea6f119363866c5fd",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:51:45Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "53317",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:fibo-be-le-fbo=\"https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/\" xmlns:fibo-be-le-lp=\"https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/\" xmlns:fibo-be-oac-cown=\"https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateOwnership/\" xmlns:fibo-fbc-fi-fi=\"https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/\" xmlns:fibo-fbc-pas-fpas=\"https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/\" xmlns:fibo-fnd-acc-cur=\"https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/\" xmlns:fibo-fnd-agr-ctr=\"https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/\" xmlns:fibo-fnd-dt-fd=\"https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/\" xmlns:fibo-fnd-law-jur=\"https://spec.edmcouncil.org/fibo/ontology/FND/Law/Jurisdiction/\" xmlns:fibo-fnd-pas-pas=\"https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/\" xmlns:fibo-fnd-plc-adr=\"https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/\" xmlns:fibo-fnd-pty-pty=\"https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/\" xmlns:fibo-fnd-pty-rl=\"https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Roles/\" xmlns:fibo-fnd-rel-rel=\"https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/\" xmlns:fibo-fnd-utl-av=\"https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/\" xmlns:lcc-lr=\"https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:sm=\"http://www.omg.org/techprocess/ab/SpecificationMetadata/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\">\n  <rdf:Description rdf:about=\"https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/\">\n    <rdfs:label>Financial Instruments Ontology</rdfs:label>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/\">\n    <rdfs:comment>QName: fibo-fbc-fi-fi:</rdfs:comment>",
+         "dataid:sha256sum": "af412b17a3a6dc1f1787d63b1269bd09e982034ec2f0a2aac0c85d820eb6b48d",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:52:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "120386",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=parsed_sorted.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=parsed_sorted.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://purl.org/dc/terms/abstract> \"This ontology defines the fundamental concepts for financial instruments in general, providing the high-level hooks for build-out in more detail in the relevant domain areas.  These include, but are not limited to, equities, options, debt instruments, and so forth, some of which may be negotiable.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://purl.org/dc/terms/license> \"http://opensource.org/licenses/MIT\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/contentLanguage> \"https://www.w3.org/TR/owl2-quick-reference/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2015-2021 EDM Council, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2015-2021 Object Management Group, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/BE/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/Markets/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FND/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://www.omg.org/spec/LCC/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .",
+         "dataid:sha256sum": "08ea20dd19fae26d0b7f91c0f3d454bc4fbedffe5edc77637aae73f79f023520",
+         "dataid-cv:tag": "sorted",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:51:46Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "103231",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=parsed_sorted.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl",
+         "dataid:sha256sum": "7735d7d00119341c294ffa7bfab7cdbc5de1ec406853c1c8ef351f9622681cfe",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:52:18Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "40773",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144#fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.07.13-025144",
+         "dct:issued": {
+            "@value": "2021-07-13T02:52:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-07-13T02:52:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments/2021.07.13-025144/fibo--ontology--FBC--FinancialInstruments--FinancialInstruments_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

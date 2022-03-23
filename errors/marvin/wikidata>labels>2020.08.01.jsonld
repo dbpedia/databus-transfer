@@ -1,0 +1,149 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/wikidata/labels/2020.08.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/labels",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/labels/2020.08.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/wikidata/labels"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/wikidata"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/wikidata/labels/2020.08.01"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/d69e027e6f7ace84ba485d3158913bf901b812e2 . After its releases, data is cleaned and persisted under the DBpedia account. ) Contains the name in all the languages in wikidata."
+         },
+         "dct:hasVersion": "2020.08.01",
+         "dct:issued": {
+            "@value": "2020-08-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Wikidata Labels"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/wikidata/labels/2020.08.01#labels.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/wikidata/labels/2020.08.01#labels_nmw.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/d69e027e6f7ace84ba485d3158913bf901b812e2 . After its releases, data is cleaned and persisted under the DBpedia account. ) Contains the name in all the languages in wikidata."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/labels/2020.08.01#labels.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/labels/2020.08.01/labels.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://wikidata.dbpedia.org/resource/Q10000000> <http://www.w3.org/2000/01/rdf-schema#label> \"Categoria:Panagyurishte\"@it .\n<http://wikidata.dbpedia.org/resource/Q10000000> <http://www.w3.org/2000/01/rdf-schema#label> \"Categorie:Panagyurishte\"@nl .\n<http://wikidata.dbpedia.org/resource/Q10000000> <http://www.w3.org/2000/01/rdf-schema#label> \"Category:Panagyurishte\"@en .\n<http://wikidata.dbpedia.org/resource/Q10000000> <http://www.w3.org/2000/01/rdf-schema#label> \"Category:パナギュリシテ\"@ja .\n<http://wikidata.dbpedia.org/resource/Q10000000> <http://www.w3.org/2000/01/rdf-schema#label> \"Categoría:Panaguiúrishte\"@es .\n<http://wikidata.dbpedia.org/resource/Q10000000> <http://www.w3.org/2000/01/rdf-schema#label> \"Catégorie:Panagyurichté\"@fr .\n<http://wikidata.dbpedia.org/resource/Q10000000> <http://www.w3.org/2000/01/rdf-schema#label> \"Kategori:Panagjurisjte\"@sv .\n<http://wikidata.dbpedia.org/resource/Q10000000> <http://www.w3.org/2000/01/rdf-schema#label> \"Kategorie:Panagjurischte\"@de .\n<http://wikidata.dbpedia.org/resource/Q10000000> <http://www.w3.org/2000/01/rdf-schema#label> \"Kategorie:Panagyurishte\"@cs .\n<http://wikidata.dbpedia.org/resource/Q10000000> <http://www.w3.org/2000/01/rdf-schema#label> \"Kategória:Panagyurishte\"@sk .",
+         "dataid:sha256sum": "a5730faced7f68aa8d944d42b154bee3d4d84efca5305bf32be2d3e6d9642a7f",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.08.01",
+         "dct:issued": {
+            "@value": "2020-08-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-08-24T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2614623319",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/databus-repo/marvin/wikidata/labels/2020.08.01/labels.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/labels/2020.08.01#labels_nmw.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/labels/2020.08.01/labels_nmw.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://wikidata.dbpedia.org/resource/Q10000000> <http://www.w3.org/2000/01/rdf-schema#label> \"Categurìa:Panagyurishte\"@eml .\n<http://wikidata.dbpedia.org/resource/Q10000000> <http://www.w3.org/2000/01/rdf-schema#label> \"Kategori:Panagyurishte\"@da .\n<http://wikidata.dbpedia.org/resource/Q10000000> <http://www.w3.org/2000/01/rdf-schema#label> \"Kategori:Panagyurishte\"@nn .\n<http://wikidata.dbpedia.org/resource/Q10000000> <http://www.w3.org/2000/01/rdf-schema#label> \"Luokka:Panagjurište\"@fi .\n<http://wikidata.dbpedia.org/resource/Q10000000> <http://www.w3.org/2000/01/rdf-schema#label> \"קטגוריה:פנגיורישטה\"@iw .\n<http://wikidata.dbpedia.org/resource/Q10000000> <http://www.w3.org/2000/01/rdf-schema#label> \"رده:پاناگیوریشته\"@fa .\n<http://wikidata.dbpedia.org/resource/Q10000000> <http://www.w3.org/2000/01/rdf-schema#label> \"پۆل:پاناگیوریشتێ\"@ckb .\n<http://wikidata.dbpedia.org/resource/Q10000000> <http://www.w3.org/2000/01/rdf-schema#label> \"பகுப்பு:பனக்யுரிஷ்டெ\"@ta .\n<http://wikidata.dbpedia.org/resource/Q10000001> <http://www.w3.org/2000/01/rdf-schema#label> \"4\"@ji .\n<http://wikidata.dbpedia.org/resource/Q10000001> <http://www.w3.org/2000/01/rdf-schema#label> \"Tatyana Kolotilshchikova\"@ast .",
+         "dataid:sha256sum": "18e9f62a52c268d08a91b61788463c66b565fce58c969b87e76ca6d8dba16dfc",
+         "dataid-cv:tag": "nmw",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.08.01",
+         "dct:issued": {
+            "@value": "2020-08-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-08-24T10:09:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "709829579",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/databus-repo/marvin/wikidata/labels/2020.08.01/labels_nmw.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

@@ -1,0 +1,715 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The CAPES Assessment Vocabulary provides a minimum set of RDF classes and properties for describing the 4 most elementary entities of the Brazilian postgraduate assessment exercise: the natural person, the research project, the educational organization and their research products."
+         },
+         "dct:hasVersion": "2020.10.24-025938",
+         "dct:issued": {
+            "@value": "2020-10-24T01:00:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "CAPES Assessment Vocabulary"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=diff_axioms=new.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=orig.rdf"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=diff_axioms=old.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=parsed.owl"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The CAPES Assessment Vocabulary provides a minimum set of RDF classes and properties for describing the 4 most elementary entities of the Brazilian postgraduate assessment exercise: the natural person, the research project, the educational organization and their research products."
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:axioms",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://vocab.capes.gov.br/def/vcav#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://vocab.capes.gov.br/def/vcav#> <http://www.w3.org/2000/01/rdf-schema#label> \"CAPES Assessment Vocabulary\"@en .\n<http://vocab.capes.gov.br/def/vcav#> <http://purl.org/dc/terms/abstract> \"O Vocabulario da Avalia\\u00E7\\u00E3o da CAPES fornece um conjunto minimo de classes e propriedades RDF para representar as 4 entidades mais elementares do processo de avaliacao dos programas de pos-graduacao brasileiros, que sao: a pessoa natural, o projeto de pesquisa, a organizacao de ensino e a producao intelectual.\"@pt .\n<http://vocab.capes.gov.br/def/vcav#> <http://purl.org/vocab/vann/preferredNamespacePrefix> \"capes\" .\n<http://vocab.capes.gov.br/def/vcav#> <http://purl.org/dc/terms/abstract> \"The CAPES Assessment Vocabulary provides a minimum set of RDF classes and properties for describing the 4 most elementary entities of the Brazilian postgraduate assessment exercise: the natural person, the research project, the educational organization and their research products.\"@en .\n<http://vocab.capes.gov.br/def/vcav#> <http://purl.org/dc/terms/title> \"Vocabulario da Avalia\\u00E7\\u00E3o da CAPES\"@pt .\n<http://vocab.capes.gov.br/def/vcav#> <http://purl.org/vocab/vann/preferredNamespaceUri> \"\\\"http://vocab.capes.gov.br/def/vcav#\\\"\" .\n<http://vocab.capes.gov.br/def/vcav#> <http://www.w3.org/2000/01/rdf-schema#comment> \"This document specifies the set of RDF classes and properties of the Assessment Vocabulary of CAPES.\"@en .\n_:genid1 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://lattes.cnpq.br/2304407281727553> .\n_:genid1 <http://xmlns.com/foaf/0.1/homepage> <http://orcid.org/0000-0002-5629-6299> .",
+         "dataid:sha256sum": "af2ef3c5229433511e4b5b90f5b6dd8c5c66cee1bc783dc8db4b6469081d7bdf",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-025938",
+         "dct:issued": {
+            "@value": "2020-10-24T01:00:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:59:46Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "48658",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "\nOWL2_DL: 3 violations\nOWL2_QL: 7 violations\nOWL2_EL: 7 violations\nOWL2_RL: 3 violations\nOWL2_FULL: 3 violations\n",
+         "dataid:sha256sum": "aac8990b919fa07e4343343c29aec58930f86962584930a18414c440c914e3ee",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-025938",
+         "dct:issued": {
+            "@value": "2020-10-24T01:00:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:59:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "114",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<html><head><title>LODE error</title></head><body><h2>LODE error</h2><p><strong>Reason: </strong>A sequence of more than one item is not allowed as the @select attribute of xsl:sort</p></body></html>\n",
+         "dataid:sha256sum": "8bedb295026e2f36357b7d3c649e5761aa12b9d8f2e9e98333fb880660c1872e",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-025938",
+         "dct:issued": {
+            "@value": "2020-10-24T01:00:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:59:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "201",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://vocab.capes.gov.br/def/vcav#> ;\n            sh:resultMessage \"No license found at all (neither dct:license, xhv:license nor cc:license)\"@en ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:OrConstraintComponent ;",
+         "dataid:sha256sum": "58b4d956213ba2028e98f66c55481e5399362f1c7d3fd8f8a220cba299a3a8c7",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-025938",
+         "dct:issued": {
+            "@value": "2020-10-24T01:00:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:59:46Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "666",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://vocab.capes.gov.br/def/vcav#areaConhecimento> ;",
+         "dataid:sha256sum": "67bbeab7269256f855666b3526b14b9222bc394b20a38e96c886eaaf26114ecd",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-025938",
+         "dct:issued": {
+            "@value": "2020-10-24T01:00:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:59:46Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "44589",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://vocab.capes.gov.br/def/vcav#> ;\n            sh:resultMessage \"No dct:license statement found\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "01a3abf034d6182eac902a01dbb18a8e68e9ac989fcd14defbeb48a62b3ac89e",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-025938",
+         "dct:issued": {
+            "@value": "2020-10-24T01:00:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:59:46Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "654",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\nVersion Info = 1.0.3\n\t\t\t\t\t\tEssa eh uma versão implementa as seguintes modificações em relação a anterior:\n1) eliminação de certos tipos de papel e adição de outros\n2) criacao do esquema de conceitos tipo de ensino",
+         "dataid:sha256sum": "c83cedc4b5174db236d8634b01c1057e0b7bca0ed77aa835cdd4844badb96138",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-025938",
+         "dct:issued": {
+            "@value": "2020-10-24T01:00:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:59:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3273",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2020.10.24; 02:59:44\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"40373\",\n        \"e-tag\": \"\\\"9db5-5b12b4c81f083\\\"\",\n        \"lastModified\": \"Thu, 08 Oct 2020 16:26:48 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Date': 'Sat, 24 Oct 2020 00:59:43 GMT', 'Server': 'Apache/2.4.43 (Unix)', 'Location': 'http://vocab.capes.gov.br/def/vcav.rdf', 'Content-Length': '245', 'Content-Type': 'text/html; charset=iso-8859-1', 'Set-Cookie': '6106a8808399606bcaf5f82479b02486=ed6993f06db65053a6183b54a346484f; path=/; HttpOnly'}\",",
+         "dataid:sha256sum": "1bc4ba8fdfcd6fc0ded03540c0cdc36d639cc8ad7c701c3f97c0d3d105a9974c",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-025938",
+         "dct:issued": {
+            "@value": "2020-10-24T01:00:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:59:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1380",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <http://vocab.capes.gov.br/def/vcav#> .\n@prefix schema: <http://schema.org/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix frapo: <http://purl.org/cerif/frapo/> .\n@prefix dce: <http://purl.org/dc/elements/1.1/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix capes-code: <http://vocab.capes.gov.br/def/schema/code#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .",
+         "dataid:sha256sum": "02e59270912cacd0dcd4b477a3044dc0722340a46825d70378920287e0f5bb28",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-025938",
+         "dct:issued": {
+            "@value": "2020-10-24T01:00:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:59:46Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "20810",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\nVersion Info = 1.0.3\n\t\t\t\t\t\tEssa eh uma versão implementa as seguintes modificações em relação a anterior:\n1) eliminação de certos tipos de papel e adição de outros\n2) criacao do esquema de conceitos tipo de ensino",
+         "dataid:sha256sum": "c83cedc4b5174db236d8634b01c1057e0b7bca0ed77aa835cdd4844badb96138",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-025938",
+         "dct:issued": {
+            "@value": "2020-10-24T01:00:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:59:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3273",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=diff_axioms=new.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=diff_axioms=new.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "",
+         "dataid:sha256sum": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+         "dataid-cv:axioms": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-025938",
+         "dct:issued": {
+            "@value": "2020-10-24T01:00:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:59:46Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=diff_axioms=new.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/data/home/dstreitmatter/data/archivo-init-release/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=parsed.ttl\nStart loading\nFinished loading in 00:00:00.142\nInput size: Classes = 24, Properties = 60, Individuals = 2\nExpressivity: ALCH(D)\nStart consistency check\nFinished consistency check in 00:00:00.017\n\nTimer summary:",
+         "dataid:sha256sum": "604d5ca6c2b322ee775f15daef59a8fa5dd8d8ae778cd0d908d5c36b96867f3d",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-025938",
+         "dct:issued": {
+            "@value": "2020-10-24T01:00:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:59:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "535",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/data/home/dstreitmatter/data/archivo-init-release/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=parsed.ttl\nStart loading\nFinished loading in 00:00:00.134\nInput size: Classes = 24, Properties = 60, Individuals = 2\nExpressivity: ALCH(D)\nStart consistency check\nFinished consistency check in 00:00:00.018\n\nTimer summary:",
+         "dataid:sha256sum": "15e4fe2fa7fe80151ccb14cd83c872def8c83debe486e696d76d33557be43369",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-025938",
+         "dct:issued": {
+            "@value": "2020-10-24T01:00:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:59:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "535",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=orig.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=orig.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n<rdf:RDF xmlns=\"http://vocab.capes.gov.br/def/vcav#\"\n     xml:base=\"http://vocab.capes.gov.br/def/vcav\"\n     xmlns:schema=\"http://schema.org/\"\n     xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n     xmlns:frapo=\"http://purl.org/cerif/frapo/\"\n     xmlns:dce=\"http://purl.org/dc/elements/1.1/\"\n     xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n     xmlns:capes-code=\"http://vocab.capes.gov.br/def/schema/code#\"\n     xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"",
+         "dataid:sha256sum": "78919faec60a1971be7cea08072cda93c8245735cc0b8449baeb0bcae36ba28a",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-025938",
+         "dct:issued": {
+            "@value": "2020-10-24T01:00:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:59:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "40374",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=orig.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=diff_axioms=old.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=diff_axioms=old.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "",
+         "dataid:sha256sum": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+         "dataid-cv:axioms": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-025938",
+         "dct:issued": {
+            "@value": "2020-10-24T01:00:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:59:46Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=diff_axioms=old.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938#def--vcav_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:adms=\"http://www.w3.org/ns/adms#\" xmlns:bibo=\"http://purl.org/ontology/bibo/\" xmlns:capes-area=\"http://vocab.capes.gov.br/def/schema/area/\" xmlns:capes-code=\"http://vocab.capes.gov.br/def/schema/code#\" xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:cerif=\"http://www.eurocris.org/ontologies/cerif/1.3#\" xmlns:dbo=\"http://dbpedia.org/ontology/\" xmlns:dce=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dctype=\"http://purl.org/dc/dcmitype/\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\" xmlns:frapo=\"http://purl.org/cerif/frapo/\" xmlns:frbr=\"http://purl.org/spar/frbr/\" xmlns:gn=\"http://www.geonames.org/ontology#\" xmlns:org=\"http://www.w3.org/ns/org#\" xmlns:ov=\"http://open.vocab.org/terms/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:pro=\"http://purl.org/spar/pro/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:schema=\"http://schema.org/\" xmlns:scoro=\"http://purl.org/spar/scoro/\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:ti=\"http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:vcard=\"http://www.w3.org/2006/vcard/ns#\" xmlns:voaf=\"http://purl.org/vocommons/voaf#\" xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"http://vocab.capes.gov.br/def/vcav#\">\n  <rdf:Description rdf:about=\"http://vocab.capes.gov.br/def/vcav#\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://vocab.capes.gov.br/def/vcav#\">\n    <rdfs:label xml:lang=\"en\">CAPES Assessment Vocabulary</rdfs:label>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://vocab.capes.gov.br/def/vcav#\">\n    <dcterms:abstract xml:lang=\"pt\">O Vocabulario da Avaliação da CAPES fornece um conjunto minimo de classes e propriedades RDF para representar as 4 entidades mais elementares do processo de avaliacao dos programas de pos-graduacao brasileiros, que sao: a pessoa natural, o projeto de pesquisa, a organizacao de ensino e a producao intelectual.</dcterms:abstract>",
+         "dataid:sha256sum": "ee8cfde7f5038661af80fc4148a3cf8d9762b79212aea801fe936d28c6f1901a",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-025938",
+         "dct:issued": {
+            "@value": "2020-10-24T01:00:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:59:46Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "64400",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.capes.gov.br/def--vcav/2020.10.24-025938/def--vcav_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      }
+   ]
+}

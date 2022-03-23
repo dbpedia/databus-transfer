@@ -1,0 +1,630 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "An ontology and vocabulary used for exposing IEEE LOM, a metadata standard for educational contents, as Linked Data.  \t\tIt is intended as a bridge for linkage of educational metadata into Linked Open Data (LOD).  \t\tIn this ontology, we designed a mapping of IEEE LOM elements to RDF based on Linked Data principles."
+         },
+         "dct:hasVersion": "2020.06.10-180653",
+         "dct:issued": {
+            "@value": "2020-07-08T14:37:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "A vocabulary for exposing IEEE LOM metadata as Linked Open Data"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=profile.txt"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "An ontology and vocabulary used for exposing IEEE LOM, a metadata standard for educational contents, as Linked Data.  \t\tIt is intended as a bridge for linkage of educational metadata into Linked Open Data (LOD).  \t\tIn this ontology, we designed a mapping of IEEE LOM elements to RDF based on Linked Data principles."
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2020.05.06; 22:03:46\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"109963\",\n        \"e-tag\": \"\",\n        \"lastModified\": \"Mon, 30 Mar 2015 10:41:28 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"\",",
+         "dataid:sha256sum": "a1d2f514eb659dd6e28f0d37c852e7931d05ecd5e0eb578f8c3b4053a432c3a3",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-180653",
+         "dct:issued": {
+            "@value": "2020-07-08T14:37:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:23:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1094",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://data.opendiscoveryspace.eu/lom_ontology_ods.owl#> ;\n            sh:resultMessage \"No dct:license statement found\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "cc6bf413bcafff089e3528e89bbd379a5bfaf9463dbcd46c6054101c32da7468",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-180653",
+         "dct:issued": {
+            "@value": "2020-07-08T14:37:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:23:42Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "674",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://data.opendiscoveryspace.eu/lom_ontology_ods.owl#annotationEntity> ;",
+         "dataid:sha256sum": "2066f947e53d3d0fcb3b5f603579e26234fa4ba9311b12b812265f73831c92b6",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-180653",
+         "dct:issued": {
+            "@value": "2020-07-08T14:37:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:23:42Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "101613",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n\n\n<!DOCTYPE rdf:RDF [\n    <!ENTITY terms \"http://purl.org/dc/terms/\" >\n    <!ENTITY owl \"http://www.w3.org/2002/07/owl#\" >\n    <!ENTITY dc \"http://purl.org/dc/elements/1.1/\" >\n    <!ENTITY ns \"http://www.w3.org/2006/vcard/ns#\" >\n    <!ENTITY xsd \"http://www.w3.org/2001/XMLSchema#\" >\n    <!ENTITY owl2xml \"http://www.w3.org/2006/12/owl2-xml#\" >",
+         "dataid:sha256sum": "f149d9407186ff54757dd71194d8a1c65f046f7bc28c8f2ec075ba13e8bc72f1",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-180653",
+         "dct:issued": {
+            "@value": "2020-07-08T14:37:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:23:42Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "109966",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@base <http://data.opendiscoveryspace.eu/lom_ontology_ods.owl#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix ns: <http://www.w3.org/2006/vcard/ns#> .\n@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#> .\n@prefix terms: <http://purl.org/dc/terms/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .",
+         "dataid:sha256sum": "ade6f8febead0eb2d9be69dd68d218357e410c7eab590494866aca3108a99c0d",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-180653",
+         "dct:issued": {
+            "@value": "2020-07-08T14:37:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:23:42Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "37130",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=parsed.ttl\nStart loading\nJul 07, 2020 11:23:45 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Property http://data.opendiscoveryspace.eu/lom_ontology_ods.owlannotationEntity is defined both as an ObjectProperty and a DatatypeProperty\nJul 07, 2020 11:23:45 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://data.opendiscoveryspace.eu/lom_ontology_ods.owlannotationEntity @owl:dataPropertyRange xsd:string\nJul 07, 2020 11:23:45 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://data.opendiscoveryspace.eu/lom_ontology_ods.owlannotationEntity @owl:dataPropertyDomain http://data.opendiscoveryspace.eu/lom_ontology_ods.owlAnnotation\nFinished loading in 00:00:00.232",
+         "dataid:sha256sum": "2cf93de75f2ff50f9204a1c08a08a9988a5deab9b1141bc60de94470a105eb0c",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-180653",
+         "dct:issued": {
+            "@value": "2020-07-08T14:37:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:23:45Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1486",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>A vocabulary for exposing IEEE LOM metadata as Linked Open Data</title><title>A vocabulary for exposing IEEE LOM metadata as Linked Open Data</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"http://data.opendiscoveryspace.eu/lom_ontology_ods.owl\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "ab954bf04b5948315b2a7596573b545a9913f301af428bc735abe2b0144f7bc2",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-180653",
+         "dct:issued": {
+            "@value": "2020-07-08T14:37:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:23:42Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "135716",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://data.opendiscoveryspace.eu/lom_ontology_ods.owl#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://data.opendiscoveryspace.eu/lom_ontology_ods.owl#> <http://purl.org/dc/elements/1.1/title> \"A vocabulary for exposing IEEE LOM metadata as Linked Open Data\"@en .\n<http://data.opendiscoveryspace.eu/lom_ontology_ods.owl#> <http://purl.org/dc/elements/1.1/description> \"An ontology and vocabulary used for exposing IEEE LOM, a metadata standard for educational contents, as Linked Data. \\n\\t\\tIt is intended as a bridge for linkage of educational metadata into Linked Open Data (LOD). \\n\\t\\tIn this ontology, we designed a mapping of IEEE LOM elements to RDF based on Linked Data principles. \"@en .\n<http://data.opendiscoveryspace.eu/lom_ontology_ods.owl#> <http://purl.org/dc/elements/1.1/issued> \"2014-05-20\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://data.opendiscoveryspace.eu/lom_ontology_ods.owl#> <http://purl.org/dc/elements/1.1/modified> \"2015-03-30\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://data.opendiscoveryspace.eu/lom_ontology_ods.owl#> <http://www.w3.org/2002/07/owl#versionInfo> \"1.0\"^^<http://www.w3.org/2001/XMLSchema#decimal> .\n<http://data.opendiscoveryspace.eu/lom_ontology_ods.owl#> <http://www.w3.org/2000/01/rdf-schema#comment> \"-Version 1.0: covers a complete mapping of IEEE LOM to Linked Open Data\"@en .\n<http://data.opendiscoveryspace.eu/lom_ontology_ods.owl#> <http://purl.org/dc/elements/1.1/rights> \"Copyright \\u00C2\\u00A9 2015 University of Alcala, Information Engineering (IE) research unit (http://www.ieru.org/) \" .\n<http://data.opendiscoveryspace.eu/lom_ontology_ods.owl#> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/3.0/> .\n<http://data.opendiscoveryspace.eu/lom_ontology_ods.owl#> <http://purl.org/dc/elements/1.1/creator> \"\\n\\t\\t\\tEnayat Rajabi (enayat.rajabi@uah.es)\\n\\t\\t\" .",
+         "dataid:sha256sum": "d8b8ef76791ab0faad08c14fce8c901dedc7d0c635e1b4ca5973afddfd4c4263",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-180653",
+         "dct:issued": {
+            "@value": "2020-07-08T14:37:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:23:42Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "134217",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:ns=\"http://www.w3.org/2006/vcard/ns#\" xmlns:owl2xml=\"http://www.w3.org/2006/12/owl2-xml#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:terms=\"http://purl.org/dc/terms/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"http://data.opendiscoveryspace.eu/lom_ontology_ods.owl#\" xml:base=\"http://data.opendiscoveryspace.eu/lom_ontology_ods.owl#\">\n  <rdf:Description rdf:about=\"\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"\">\n    <dc:title xml:lang=\"en\">A vocabulary for exposing IEEE LOM metadata as Linked Open Data</dc:title>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"\">\n    <dc:description xml:lang=\"en\">An ontology and vocabulary used for exposing IEEE LOM, a metadata standard for educational contents, as Linked Data. ",
+         "dataid:sha256sum": "b4cfebd16af8547eb6b275e372fcca3fa937c30662888cb2667d78d00c908080",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-180653",
+         "dct:issued": {
+            "@value": "2020-07-08T14:37:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:23:42Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "137912",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\n[main] ERROR uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl - Illegal redeclarations of entities: reuse of entity http://data.opendiscoveryspace.eu/lom_ontology_ods.owlannotationEntity in punning not allowed [Declaration(DataProperty(<http://data.opendiscoveryspace.eu/lom_ontology_ods.owlannotationEntity>)), Declaration(ObjectProperty(<http://data.opendiscoveryspace.eu/lom_ontology_ods.owlannotationEntity>))]\nVersion Info = 1.0\norg.semanticweb.owlapi.model.OWLRuntimeException: No current axiom; is the walker being used outside of an ontology visit?\n\tat org.semanticweb.owlapi.util.OWLOntologyWalkerVisitor.getCurrentAxiom(OWLOntologyWalkerVisitor.java:48)",
+         "dataid:sha256sum": "8b82885f47abb1ebdeef32764d12f89ebef1036b5c1a5fcd60add63474d19f20",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-180653",
+         "dct:issued": {
+            "@value": "2020-07-08T14:37:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:23:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3265",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=parsed.ttl\nStart loading\nJul 07, 2020 11:23:44 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Property http://data.opendiscoveryspace.eu/lom_ontology_ods.owlannotationEntity is defined both as an ObjectProperty and a DatatypeProperty\nJul 07, 2020 11:23:44 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://data.opendiscoveryspace.eu/lom_ontology_ods.owlannotationEntity @owl:dataPropertyRange xsd:string\nJul 07, 2020 11:23:44 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://data.opendiscoveryspace.eu/lom_ontology_ods.owlannotationEntity @owl:dataPropertyDomain http://data.opendiscoveryspace.eu/lom_ontology_ods.owlAnnotation\nFinished loading in 00:00:00.231",
+         "dataid:sha256sum": "58f0a0e47812f63bb8198fef6f6f0a2a694d1de9ba9e87a2b7b0f4b25e89cb18",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-180653",
+         "dct:issued": {
+            "@value": "2020-07-08T14:37:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:23:45Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1486",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\n[main] ERROR uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl - Illegal redeclarations of entities: reuse of entity http://data.opendiscoveryspace.eu/lom_ontology_ods.owlannotationEntity in punning not allowed [Declaration(DataProperty(<http://data.opendiscoveryspace.eu/lom_ontology_ods.owlannotationEntity>)), Declaration(ObjectProperty(<http://data.opendiscoveryspace.eu/lom_ontology_ods.owlannotationEntity>))]\nVersion Info = 1.0\norg.semanticweb.owlapi.model.OWLRuntimeException: No current axiom; is the walker being used outside of an ontology visit?\n\tat org.semanticweb.owlapi.util.OWLOntologyWalkerVisitor.getCurrentAxiom(OWLOntologyWalkerVisitor.java:48)",
+         "dataid:sha256sum": "8b82885f47abb1ebdeef32764d12f89ebef1036b5c1a5fcd60add63474d19f20",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-180653",
+         "dct:issued": {
+            "@value": "2020-07-08T14:37:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:23:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3265",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-180653",
+         "dct:issued": {
+            "@value": "2020-07-08T14:37:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:23:42Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653#lom--ontology--ods--owl_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.0.0.jar\n\n",
+         "dataid:sha256sum": "fcdd4ee978b74ae744e3205ebaee81c876347817db89cd283b1d71911a9e2047",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-180653",
+         "dct:issued": {
+            "@value": "2020-07-08T14:37:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:23:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/data.opendiscoveryspace.eu/lom--ontology--ods--owl/2020.06.10-180653/lom--ontology--ods--owl_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      }
+   ]
+}

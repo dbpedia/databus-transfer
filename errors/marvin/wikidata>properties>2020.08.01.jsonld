@@ -1,0 +1,104 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/wikidata/properties/2020.08.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/properties",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/properties/2020.08.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/wikidata/properties"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/wikidata"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/wikidata/properties/2020.08.01"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/d69e027e6f7ace84ba485d3158913bf901b812e2 . After its releases, data is cleaned and persisted under the DBpedia account. ) Wikidata property URIs as subject and dbo:alias to their labels"
+         },
+         "dct:hasVersion": "2020.08.01",
+         "dct:issued": {
+            "@value": "2020-08-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Wikidata properties with labels"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/wikidata/properties/2020.08.01#properties.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/d69e027e6f7ace84ba485d3158913bf901b812e2 . After its releases, data is cleaned and persisted under the DBpedia account. ) Wikidata property URIs as subject and dbo:alias to their labels"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/properties/2020.08.01#properties.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/properties/2020.08.01/properties.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://www.wikidata.org/entity/P1000> <http://dbpedia.org/ontology/alias> \"détient le record\"@fr .\n<http://www.wikidata.org/entity/P1000> <http://dbpedia.org/ontology/alias> \"record deținut\"@ro .\n<http://www.wikidata.org/entity/P1000> <http://dbpedia.org/ontology/alias> \"紀錄\"@zh .\n<http://www.wikidata.org/entity/P1000> <http://dbpedia.org/ontology/description> \"Rekordhalter in\"@de .\n<http://www.wikidata.org/entity/P1000> <http://dbpedia.org/ontology/description> \"csúcstartó ebben\"@hu .\n<http://www.wikidata.org/entity/P1000> <http://dbpedia.org/ontology/description> \"henkilön tai kohteen saavuttama ennätys\"@fi .\n<http://www.wikidata.org/entity/P1000> <http://dbpedia.org/ontology/description> \"lu suggettu stabbilìu stu record\"@scn .\n<http://www.wikidata.org/entity/P1000> <http://dbpedia.org/ontology/description> \"notable record achieved by a person or entity, include qualifiers for dates held\"@en .\n<http://www.wikidata.org/entity/P1000> <http://dbpedia.org/ontology/description> \"record détenu par une personne ou une entité\"@fr .\n<http://www.wikidata.org/entity/P1000> <http://dbpedia.org/ontology/description> \"record stabilito da una persona o entità\"@it .",
+         "dataid:sha256sum": "42347d62ec983cadfc0a6bf15732bcdaec517e0f2ae947477f0da4cfd228f888",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.08.01",
+         "dct:issued": {
+            "@value": "2020-08-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-08-24T09:08:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4598758",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/databus-repo/marvin/wikidata/properties/2020.08.01/properties.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

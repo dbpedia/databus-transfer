@@ -1,0 +1,838 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The Ontology for Nutritional Studies (ONS) has been developed as part of the ENPADASI European project (http://www.enpadasi.eu/) with the aim to define a common language and building ontologies for nutritional studies."
+         },
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "ONS"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=diff_axioms=old.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=diff_axioms=new.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=parsed_sorted.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pyLodeDoc.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=shaclReport_validates=goodLicense.ttl"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The Ontology for Nutritional Studies (ONS) has been developed as part of the ENPADASI European project (http://www.enpadasi.eu/) with the aim to define a common language and building ontologies for nutritional studies."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:axioms",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix efo: <http://www.ebi.ac.uk/efo/> .\n@prefix obo: <http://purl.obolibrary.org/obo/> .\n@prefix ont: <http://www.co-ode.org/ontologies/ont.owl#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix xml: <http://www.w3.org/XML/1998/namespace> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix doap: <http://usefulinc.com/ns/doap#> .",
+         "dataid:sha256sum": "db4d2a1e2d8c7df22b9523cb6007e4b9b09108624a0bfe8ed63d43d26dd03362",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:44:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2513396",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip",
+         "dataid:sha256sum": "fe2d85d6e86842698c207350840572a8765875a98459e86b3a3d1b346848fb02",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:45:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "10712",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl> <http://www.w3.org/2002/07/owl#imports> <https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ONS_imports.owl> .\n<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl> <http://protege.stanford.edu/plugins/owl/protege#defaultLanguage> \"en\" .\n<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl> <http://purl.org/dc/elements/1.1/creator> \"Alessandra Bordoni\" .\n<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl> <http://purl.org/dc/elements/1.1/creator> \"Alessia Trimigno\" .\n<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl> <http://purl.org/dc/elements/1.1/creator> \"Bernard De Baets\" .\n<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl> <http://purl.org/dc/elements/1.1/creator> \"Carl Lachat\" .\n<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl> <http://purl.org/dc/elements/1.1/creator> \"Chen Yang\" .\n<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl> <http://purl.org/dc/elements/1.1/creator> \"Damariz Rivero\" .\n<https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl> <http://purl.org/dc/elements/1.1/creator> \"Duccio Cavalieri\" .",
+         "dataid:sha256sum": "00b71d3c63c34a103709a4829a45738744c18f31f3d5df6984111fc458a924e7",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:44:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "7323810",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://purl.obolibrary.org/obo/FOODON_03413956> ;",
+         "dataid:sha256sum": "e8fcba772b7a4122fccda6a1401dccff9ac3399df189de9417964d978460c78f",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:45:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3447076",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.1.0.jar\n\n",
+         "dataid:sha256sum": "35133f3681a6ccdb320324b1927689adc218a5150f47233c68c456e42e0d1a9f",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:45:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=parsed.ttl\nStart loading\nSep 04, 2021 1:45:16 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://purl.obolibrary.org/obo/ONS_0000065 @owl:deprecated \"true\"^^http://www.w3.org/2001/XMLSchema#boolean\nSep 04, 2021 1:45:16 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://purl.obolibrary.org/obo/ONS_0000056 @owl:deprecated \"true\"^^http://www.w3.org/2001/XMLSchema#boolean\nSep 04, 2021 1:45:16 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://purl.obolibrary.org/obo/ONS_0000057 @owl:deprecated \"true\"^^http://www.w3.org/2001/XMLSchema#boolean\nSep 04, 2021 1:45:16 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature",
+         "dataid:sha256sum": "d29bbd017599e8166dbfb38e01a06076ae60d4043441847fde1150bc722df85c",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:45:24Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4156",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>Ontology for Nutritional Studies</title><title>ONS</title><title>Ontology for Nutritional Studies</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "b286e7d9327bd5f0d5c06e6b396f97c0a2c5da51ee5beb5c9a10cf655c2989e5",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:46:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3493361",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:44:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:apollo_sv=\"http://purl.obolibrary.org/obo/apollo_sv.owl/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:doap=\"http://usefulinc.com/ns/doap#\" xmlns:edamontology=\"http://edamontology.org/\" xmlns:efo=\"http://www.ebi.ac.uk/efo/\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\" xmlns:obo=\"http://purl.obolibrary.org/obo/\" xmlns:oboInOwl=\"http://www.geneontology.org/formats/oboInOwl#\" xmlns:ont=\"http://www.co-ode.org/ontologies/ont.owl#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:protege=\"http://protege.stanford.edu/plugins/owl/protege#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:resource=\"http://semanticscience.org/resource/\" xmlns:schema=\"http://schema.org/\" xmlns:statistics=\"http://purl.org/net/OCRe/statistics.owl#\" xmlns:study_protocol=\"http://purl.org/net/OCRe/study_protocol.owl#\" xmlns:terms=\"http://purl.org/dc/terms/\" xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl\">\n  <rdf:Description rdf:about=\"https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl\">\n    <owl:imports rdf:resource=\"https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ONS_imports.owl\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl\">\n    <protege:defaultLanguage>en</protege:defaultLanguage>",
+         "dataid:sha256sum": "f7670a12c38e6cb959a8850549e780da9b909a3701b8f21148abfae9001a4e8e",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:44:14Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "9383515",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip",
+         "dataid:sha256sum": "eea49491089cc6c29f2c0e52d4a30223c5efdc1b55ae732e2054a06ffef9406a",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:45:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "10712",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2021.09.04; 13:43:50\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"471831\",\n        \"e-tag\": \"W/\\\"6653cd7f7568193c7ab1d8d1c0b10f6c7953d0f1a02eda8111c7b33c65c25b8d\\\"\",\n        \"lastModified\": \"\"\n    },\n    \"logs\": {\n        \"nir-header\": \"\",",
+         "dataid:sha256sum": "643f90bfa1f5c1a685c915f0d791a32257b16ddd1a7a1ad3160030c23f91b103",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:45:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1905",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=diff_axioms=old.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=diff_axioms=old.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "",
+         "dataid:sha256sum": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+         "dataid-cv:axioms": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:44:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=diff_axioms=old.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=diff_axioms=new.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=diff_axioms=new.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "ONS_2000036 ⊑ ∃ IAO_0000219.ONS_1000036\nONS_2000045 ⊑ ∃ IAO_0000219.ONS_1000066\nONS_0000132 ⊑ IAO_0000030\nONS_0000094 ⊑ ∃ SIO_000001.ONS_1000064\nONS_2000023 ⊑ ∃ IAO_0000219.ONS_1000023\nONS_0000127 ⊑ OBI_0000011\nONS_2000022 ⊑ ∃ IAO_0000219.ONS_1000022\nONS_0000118 ⊑ ONS_0000115\nONS_2000024 ⊑ ∃ IAO_0000219.ONS_1000024\nONS_2000008 ⊑ ∃ IAO_0000219.ONS_1000008",
+         "dataid:sha256sum": "7830bd0d48d94c78ea46b6751d9728136748ad5e75ee939a1aa1ddf15def7a08",
+         "dataid-cv:axioms": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:44:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1990",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=diff_axioms=new.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n<rdf:RDF xmlns=\"https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl\"\n     xml:base=\"https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl\"\n     xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n     xmlns:efo=\"http://www.ebi.ac.uk/efo/\"\n     xmlns:obo=\"http://purl.obolibrary.org/obo/\"\n     xmlns:ont=\"http://www.co-ode.org/ontologies/ont.owl#\"\n     xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n     xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n     xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"",
+         "dataid:sha256sum": "244ebbff7525b6a1af818b752fc1844b42f87716df14aeb363ee12973c5e7447",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:43:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4902469",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl> ;\n            sh:resultMessage \"No license found at all (neither dct:license, xhv:license nor cc:license)\"@en ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:OrConstraintComponent ;",
+         "dataid:sha256sum": "ee443c87bffb90a7925da7c073d59cccdbb328b017d9b169bb369bbc6bf47d3f",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:44:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "776",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=parsed_sorted.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=parsed_sorted.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://edamontology.org/created_in> <http://purl.obolibrary.org/obo/is_metadata_tag> \"true\" .\n<http://edamontology.org/created_in> <http://www.geneontology.org/formats/oboInOwl#hasDefinition> \"Version in which a concept was created.\" .\n<http://edamontology.org/created_in> <http://www.geneontology.org/formats/oboInOwl#inSubset> \"concept_properties\" .\n<http://edamontology.org/created_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://edamontology.org/created_in> <http://www.w3.org/2000/01/rdf-schema#label> \"Created in\" .\n<http://edamontology.org/data_0970> <http://edamontology.org/created_in> \"beta12orEarlier\" .\n<http://edamontology.org/data_0970> <http://purl.obolibrary.org/obo/IAO_0000412> <http://edamontology.org/EDAM.owl> .\n<http://edamontology.org/data_0970> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> \"Moby:GCP_SimpleCitation\" .\n<http://edamontology.org/data_0970> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> \"Moby:Publication\" .\n<http://edamontology.org/data_0970> <http://www.geneontology.org/formats/oboInOwl#hasDefinition> \"Bibliographic data that uniquely identifies a scientific article, book or other published material.\" .",
+         "dataid:sha256sum": "e42fe29092298a51202b314121a6830276635f1c5855ba052099c0b60470fc6d",
+         "dataid-cv:tag": "sorted",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:43:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "7323810",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=parsed_sorted.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pyLodeDoc.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pyLodeDoc.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <title>ONS</title>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1Sew\nEAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n    \n    <style>",
+         "dataid:sha256sum": "300233e2c7001399955e99663685509e5ef736141d5763e958aca861c74db1b8",
+         "dataid-cv:type": "pyLodeDoc",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:49:42Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4407176",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pyLodeDoc.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=parsed.ttl\nStart loading\nSep 04, 2021 1:45:21 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://purl.obolibrary.org/obo/ONS_0000065 @owl:deprecated \"true\"^^http://www.w3.org/2001/XMLSchema#boolean\nSep 04, 2021 1:45:22 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://purl.obolibrary.org/obo/ONS_0000056 @owl:deprecated \"true\"^^http://www.w3.org/2001/XMLSchema#boolean\nSep 04, 2021 1:45:22 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://purl.obolibrary.org/obo/ONS_0000057 @owl:deprecated \"true\"^^http://www.w3.org/2001/XMLSchema#boolean\nSep 04, 2021 1:45:22 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature",
+         "dataid:sha256sum": "234c515e4c461c27ad281d40ee4ba38a1ae00a5ad540af89077ff569e95c3470",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:45:24Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4156",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346#enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl> ;\n            sh:resultMessage \"No dct:license statement found\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "1305c94146ac6ea368d1a920e7c46db4c2af1275b1cafbbe2bdf5abff230aebc",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.04-134346",
+         "dct:issued": {
+            "@value": "2021-09-04T13:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-09-04T13:45:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "709",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/raw.githubusercontent.com/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl/2021.09.04-134346/enpadasi--Ontology-for-Nutritional-Studies--master--ons--owl_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

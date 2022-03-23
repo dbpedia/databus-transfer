@@ -1,0 +1,352 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/commons-sameas-links",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/generic/commons-sameas-links"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/generic"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01"
+         },
+         "dataid-debug:codeReference": {
+            "@id": "https://github.com/dbpedia/extraction-framework/blob/master/core/src/org/dbpedia/extraction/mappings/CommonsResourceExtractor.scala"
+         },
+         "dataid-debug:documentationLocation": {
+            "@id": "https://git.informatik.uni-leipzig.de/dbpedia-assoc/marvin-config/-/tree/master/databus-poms/dbpedia/generic/commons-sameas-links"
+         },
+         "dataid-debug:feedbackChannel": {
+            "@id": "https://forum.dbpedia.org/c/data/databus/14"
+         },
+         "dataid-debug:issueTracker": {
+            "@id": "https://github.com/dbpedia/extraction-framework/issues"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/852b69e98e8243a67052bf5fa020c3c10656e550 . After its releases, data is cleaned and persisted under the DBpedia account. ) Links non-commons DBpedia resources to their DBpedia Commons"
+         },
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Commons sameAs Links"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01#commons-sameas-links_lang=pt.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01#commons-sameas-links_lang=de.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01#commons-sameas-links_lang=nl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01#commons-sameas-links_lang=es.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01#commons-sameas-links_lang=ja.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01#commons-sameas-links_lang=fr.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01#commons-sameas-links_lang=en.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/852b69e98e8243a67052bf5fa020c3c10656e550 . After its releases, data is cleaned and persisted under the DBpedia account. ) Links non-commons DBpedia resources to their DBpedia Commons"
+         }
+      },
+      {
+         "@id": "dataid-cv:lang",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01#commons-sameas-links_lang=pt.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01/commons-sameas-links_lang=pt.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2022-01-05T09:46:51Z\n<http://pt.dbpedia.org/resource/Anarcocapitalismo> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Anarcocapitalismo> .\n<http://pt.dbpedia.org/resource/Anatomia> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Anatomy> .\n<http://pt.dbpedia.org/resource/Aruaques> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Category:Arawak> .\n<http://pt.dbpedia.org/resource/Anton_Tchekhov> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Антон_Павлович_Чехов> .\n<http://pt.dbpedia.org/resource/Alto_Trás-os-Montes> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Trás-os-Montes> .\n<http://pt.dbpedia.org/resource/Auguste_e_Louis_Lumière> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Category:Frères_Lumière> .\n<http://pt.dbpedia.org/resource/Calendário> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Category:Calendars> .\n<http://pt.dbpedia.org/resource/Conteúdo_aberto> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Open_content> .\n<http://pt.dbpedia.org/resource/Carnívoros> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Carnivora> .",
+         "dataid:sha256sum": "10822e95c30661928d5b915724e1af3412f8a6ca5bc8a3b98e698ac99a936d9e",
+         "dataid-cv:lang": "pt",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2022-01-18T11:53:41Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "247133",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/commons-sameas-links/2021.12.01/commons-sameas-links_lang=pt.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01#commons-sameas-links_lang=de.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01/commons-sameas-links_lang=de.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2022-01-03T18:16:36Z\n<http://de.dbpedia.org/resource/Alexander_der_Große> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Alexander_the_Great> .\n<http://de.dbpedia.org/resource/Astat> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Astatine> .\n<http://de.dbpedia.org/resource/Antimon> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Antimony> .\n<http://de.dbpedia.org/resource/Akeleien> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Aquilegia> .\n<http://de.dbpedia.org/resource/Afghanistan> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/افغانستان> .\n<http://de.dbpedia.org/resource/Alicia_Silverstone> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Alicia_Silverstone> .\n<http://de.dbpedia.org/resource/Aristoteles> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Aristotelēs> .\n<http://de.dbpedia.org/resource/Arthur_Wellesley,_1._Duke_of_Wellington> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Arthur_Wellesley> .\n<http://de.dbpedia.org/resource/Archaeopteryx> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Archaeopteryx> .",
+         "dataid:sha256sum": "12fd098bdefb36a1431605cbd40525bad75c5c634791ffc34d948c3f275d9c98",
+         "dataid-cv:lang": "de",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2022-01-18T11:52:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "328029",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/commons-sameas-links/2021.12.01/commons-sameas-links_lang=de.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01#commons-sameas-links_lang=nl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01/commons-sameas-links_lang=nl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2022-01-04T13:33:00Z\n<http://nl.dbpedia.org/resource/Bandoneon> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Bandoneon> .\n<http://nl.dbpedia.org/resource/Buggyen> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Kite_buggying> .\n<http://nl.dbpedia.org/resource/Geïntegreerde_schakeling> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Integrated_circuit> .\n<http://nl.dbpedia.org/resource/Chinese_Muur> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/长城> .\n<http://nl.dbpedia.org/resource/Constantijn_III_Herakleios> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Heraclius_Constantine> .\n<http://nl.dbpedia.org/resource/Citroenmelisse> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Melissa_officinalis> .\n<http://nl.dbpedia.org/resource/Constantijn_V_Kopronymos> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Constantine_V> .\n<http://nl.dbpedia.org/resource/Europese_Unie> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/European_Union> .\n<http://nl.dbpedia.org/resource/Dille> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Anethum_graveolens> .",
+         "dataid:sha256sum": "e529cd565e7d6840a4b24954ac69243b5639216523da88d884f34e4592d6febf",
+         "dataid-cv:lang": "nl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2022-01-18T11:53:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "78071",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/commons-sameas-links/2021.12.01/commons-sameas-links_lang=nl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01#commons-sameas-links_lang=es.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01/commons-sameas-links_lang=es.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2022-01-04T17:46:41Z\n<http://es.dbpedia.org/resource/Agujero_negro> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Black_hole> .\n<http://es.dbpedia.org/resource/Andorra> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Andorra> .\n<http://es.dbpedia.org/resource/Argentina> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Argentina> .\n<http://es.dbpedia.org/resource/Alfabeto_griego> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Greek_alphabet> .\n<http://es.dbpedia.org/resource/Arqueología> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Archaeology> .\n<http://es.dbpedia.org/resource/Commodore_Amiga_500> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Amiga_500> .\n<http://es.dbpedia.org/resource/Commodore_Amiga> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Commodore_International> .\n<http://es.dbpedia.org/resource/América_del_Sur> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/América_del_Sur> .\n<http://es.dbpedia.org/resource/Alergia> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Allergy> .",
+         "dataid:sha256sum": "f86d2caa22ff75081f397f0472de8fb6c2adfd927cfd180cd58fe091278dad17",
+         "dataid-cv:lang": "es",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2022-01-18T11:53:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "253808",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/commons-sameas-links/2021.12.01/commons-sameas-links_lang=es.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01#commons-sameas-links_lang=ja.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01/commons-sameas-links_lang=ja.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2022-01-03T04:56:18Z\n<http://ja.dbpedia.org/resource/アンパサンド> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Ampersand> .\n<http://ja.dbpedia.org/resource/言語> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Language> .\n<http://ja.dbpedia.org/resource/バールーフ・デ・スピノザ> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Baruch_de_Spinoza> .\n<http://ja.dbpedia.org/resource/液晶> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Liquid_crystal> .\n<http://ja.dbpedia.org/resource/宝石> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Category:Gemstones> .\n<http://ja.dbpedia.org/resource/ソクラテス> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Socrates> .\n<http://ja.dbpedia.org/resource/LimeWire> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/LimeWire> .\n<http://ja.dbpedia.org/resource/Mozilla_Application_Suite> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Mozilla> .\n<http://ja.dbpedia.org/resource/ジャズ> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Category:Jazz> .",
+         "dataid:sha256sum": "87b1604f6eb8d3a391db21ccf2ae8d05072a15101a4ac50cb763ee8e4e9035fa",
+         "dataid-cv:lang": "ja",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2022-01-18T11:53:26Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "285179",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/commons-sameas-links/2021.12.01/commons-sameas-links_lang=ja.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01#commons-sameas-links_lang=fr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01/commons-sameas-links_lang=fr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2022-01-03T09:15:23Z\n<http://fr.dbpedia.org/resource/Modèle:Commons/Documentation> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Ardèche> .\n# completed 2022-01-03T14:35:53Z",
+         "dataid:sha256sum": "31084d323e9ca8b6aa347dffb3659c57c74be00f39dc4feb21ffd3ab44919291",
+         "dataid-cv:lang": "fr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2022-01-18T11:53:13Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "208",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/commons-sameas-links/2021.12.01/commons-sameas-links_lang=fr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01#commons-sameas-links_lang=en.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/commons-sameas-links/2021.12.01/commons-sameas-links_lang=en.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2022-01-08T16:43:59Z\n<http://dbpedia.org/resource/A> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/A> .\n<http://dbpedia.org/resource/Apollo> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Apollo> .\n<http://dbpedia.org/resource/Alkane> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Alkane> .\n<http://dbpedia.org/resource/Aardvark> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Aardvark> .\n<http://dbpedia.org/resource/Aardwolf> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Aardwolf> .\n<http://dbpedia.org/resource/Apollo_8> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Apollo_8> .\n<http://dbpedia.org/resource/Abacus> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Abacus> .\n<http://dbpedia.org/resource/Asparagales> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Asparagales> .\n<http://dbpedia.org/resource/Aries_(constellation)> <http://www.w3.org/2002/07/owl#sameAs> <http://commons.dbpedia.org/resource/Aries> .",
+         "dataid:sha256sum": "4e1bfd36149d52a3349ce1dc4308e2806d7d4b18d7f1bd86a1f2e35b95ec0590",
+         "dataid-cv:lang": "en",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2022-01-18T11:52:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "737055",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/commons-sameas-links/2021.12.01/commons-sameas-links_lang=en.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

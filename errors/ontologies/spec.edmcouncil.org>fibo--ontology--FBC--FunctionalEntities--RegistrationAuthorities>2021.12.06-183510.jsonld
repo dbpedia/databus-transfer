@@ -1,0 +1,885 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "This ontology defines concepts for representation of registration authorities, registrars, registration-specific identifiers and related identification schemes, and registration authorities specific to ISO and the financial industry.  Examples of financial industry registration authorities in the US include the Federal Deposit Insurance Corporation (FDIC) and the Securities Exchange Commission (SEC)."
+         },
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Registration Authorities Ontology"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=diff_axioms=old.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=diff_triples=old.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=parsed_sorted.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=diff_axioms=new.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=diff_triples=new.nt"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "This ontology defines concepts for representation of registration authorities, registrars, registration-specific identifiers and related identification schemes, and registration authorities specific to ISO and the financial industry.  Examples of financial industry registration authorities in the US include the Federal Deposit Insurance Corporation (FDIC) and the Securities Exchange Commission (SEC)."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:axioms",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:triples",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=parsed.ttl\nStart loading\nDec 06, 2021 6:35:30 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/ @owl:versionIRI https://spec.edmcouncil.org/fibo/ontology/master/latest/FBC/FunctionalEntities/RegistrationAuthorities/\nFinished loading in 00:00:00.179\nInput size: Classes = 19, Properties = 48, Individuals = 18\nExpressivity: ALCHIQ(D)\nStart consistency check\nFinished consistency check in 00:00:00.019",
+         "dataid:sha256sum": "4a4f5ab839f2583c4c73a99693c78a076f16afe544dc29dabf0265be5a66112a",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1021",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=diff_axioms=old.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=diff_axioms=old.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "RegistryIdentifier ⊑ ≥ 0 isIndexTo.Registry\nRegistryEntry ⊑ CollectionConstituent",
+         "dataid:sha256sum": "7028fd196f1f47729b2c275465d9913657db618e934b8f93efb03d5c06010040",
+         "dataid-cv:axioms": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "88",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=diff_axioms=old.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=parsed.ttl\nStart loading\nDec 06, 2021 6:35:29 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/ @owl:versionIRI https://spec.edmcouncil.org/fibo/ontology/master/latest/FBC/FunctionalEntities/RegistrationAuthorities/\nFinished loading in 00:00:00.181\nInput size: Classes = 19, Properties = 48, Individuals = 18\nExpressivity: ALCHIQ(D)\nStart consistency check\nFinished consistency check in 00:00:00.019",
+         "dataid:sha256sum": "6b918979e1bb1fdf7a92fdc93470f3fe3619bde7f37b73e9099a4411bcfa8bc7",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1021",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl",
+         "dataid:sha256sum": "763488126f849e83ae5ed24d5cc20222f567bb5a35b7c1c0e52603e847c8ab1e",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "27798",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=diff_triples=old.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=diff_triples=old.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/contentLanguage> \"http://www.w3.org/standards/techs/owl#w3c_all\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2015-2020 EDM Council, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2015-2020 Object Management Group, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.w3.org/2002/07/owl#imports> <https://spec.edmcouncil.org/fibo/ontology/master/latest/BE/FunctionalEntities/FunctionalEntities/> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.w3.org/2002/07/owl#imports> <https://spec.edmcouncil.org/fibo/ontology/master/latest/BE/OwnershipAndControl/Executives/> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.w3.org/2002/07/owl#imports> <https://spec.edmcouncil.org/fibo/ontology/master/latest/FND/Arrangements/ClassificationSchemes/> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.w3.org/2002/07/owl#imports> <https://spec.edmcouncil.org/fibo/ontology/master/latest/FND/Arrangements/IdentifiersAndIndices/> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/RegistryEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Arrangements/CollectionConstituent> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/RegistryIdentifier> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/RegistryIdentifier> <http://www.w3.org/2004/02/skos/core#definition> \"an identifier associated with an entry in a registry, i.e., one that provides an index to the registry for the identified item\" .",
+         "dataid:sha256sum": "a50e976ec2b7f5dbfc379fd2c6a125e4cf6fe3208c6210fac269d2f1efbe54cd",
+         "dataid-cv:triples": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "5284",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=diff_triples=old.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.w3.org/2000/01/rdf-schema#label> \"Registration Authorities Ontology\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://purl.org/dc/terms/abstract> \"This ontology defines concepts for representation of registration authorities, registrars, registration-specific identifiers and related identification schemes, and registration authorities specific to ISO and the financial industry.  Examples of financial industry registration authorities in the US include the Federal Deposit Insurance Corporation (FDIC) and the Securities Exchange Commission (SEC).\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://purl.org/dc/terms/license> \"http://opensource.org/licenses/MIT\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/contentLanguage> \"https://www.w3.org/TR/owl2-quick-reference/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2015-2021 EDM Council, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2015-2021 Object Management Group, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/BE/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FND/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://www.omg.org/spec/LCC/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .",
+         "dataid:sha256sum": "82706e05e2ccfd06c34fadc6b793eabf6a0c231aaa4fd8ff42495cb7bee43ad2",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "40873",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> ;\n            sh:resultMessage \"dct:license statement is not an IRI\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "b9616dd48d9375fa5891c2d1e1f64f077a978265bfe25ba48ff218bb2fcdb0b0",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "785",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:fibo-be-le-lp=\"https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/\" xmlns:fibo-fbc-fct-ra=\"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/\" xmlns:fibo-fnd-arr-arr=\"https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Arrangements/\" xmlns:fibo-fnd-arr-doc=\"https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Documents/\" xmlns:fibo-fnd-dt-fd=\"https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/\" xmlns:fibo-fnd-law-lcap=\"https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/\" xmlns:fibo-fnd-pas-pas=\"https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/\" xmlns:fibo-fnd-pty-pty=\"https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/\" xmlns:fibo-fnd-pty-rl=\"https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Roles/\" xmlns:fibo-fnd-rel-rel=\"https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/\" xmlns:fibo-fnd-utl-av=\"https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/\" xmlns:lcc-lr=\"https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:sm=\"http://www.omg.org/techprocess/ab/SpecificationMetadata/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\">\n  <rdf:Description rdf:about=\"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/\">\n    <rdfs:label>Registration Authorities Ontology</rdfs:label>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/\">\n    <dct:abstract>This ontology defines concepts for representation of registration authorities, registrars, registration-specific identifiers and related identification schemes, and registration authorities specific to ISO and the financial industry.  Examples of financial industry registration authorities in the US include the Federal Deposit Insurance Corporation (FDIC) and the Securities Exchange Commission (SEC).</dct:abstract>",
+         "dataid:sha256sum": "22846ca461704c272bf00aabad2e9fb540088bdac206e293730fbd7fd817d8bb",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "50016",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE rdf:RDF [\n\t<!ENTITY dct \"http://purl.org/dc/terms/\">\n\t<!ENTITY fibo-be-le-lp \"https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/\">\n\t<!ENTITY fibo-fbc-fct-ra \"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/\">\n\t<!ENTITY fibo-fnd-arr-arr \"https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Arrangements/\">\n\t<!ENTITY fibo-fnd-arr-doc \"https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Documents/\">\n\t<!ENTITY fibo-fnd-dt-fd \"https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/\">\n\t<!ENTITY fibo-fnd-law-lcap \"https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/\">\n\t<!ENTITY fibo-fnd-pas-pas \"https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/\">",
+         "dataid:sha256sum": "2873e178d802a09b7cd221b7855e87cd168904a8a374d4107084d71cfc9c766f",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "20868",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/registers> ;",
+         "dataid:sha256sum": "0192aeafd47a8d9bf71cb9b29e80d1bc7521541d60cd85c9bdd06e579968f5cd",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "14782",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl",
+         "dataid:sha256sum": "763488126f849e83ae5ed24d5cc20222f567bb5a35b7c1c0e52603e847c8ab1e",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "27798",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=parsed_sorted.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=parsed_sorted.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://purl.org/dc/terms/abstract> \"This ontology defines concepts for representation of registration authorities, registrars, registration-specific identifiers and related identification schemes, and registration authorities specific to ISO and the financial industry.  Examples of financial industry registration authorities in the US include the Federal Deposit Insurance Corporation (FDIC) and the Securities Exchange Commission (SEC).\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://purl.org/dc/terms/license> \"http://opensource.org/licenses/MIT\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/contentLanguage> \"https://www.w3.org/TR/owl2-quick-reference/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2015-2021 EDM Council, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2015-2021 Object Management Group, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/BE/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FND/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://www.omg.org/spec/LCC/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/fileAbbreviation> \"fibo-fbc-fct-ra\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/filename> \"RegistrationAuthorities.rdf\" .",
+         "dataid:sha256sum": "dee33a4ebb411edfe8c7b736505ba62bf0f74a50bf5385891c683cb7befd3aaf",
+         "dataid-cv:tag": "sorted",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "40873",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=parsed_sorted.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2021.12.06; 18:35:12\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"20867\",\n        \"e-tag\": \"\\\"61ae1e71-5183\\\"\",\n        \"lastModified\": \"Mon, 06 Dec 2021 14:30:09 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"\",",
+         "dataid:sha256sum": "6c26030e19989a5c7a90b826b2b5304e95f05a22350440c04e0dbd466f34ce51",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1289",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=diff_axioms=new.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=diff_axioms=new.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "hasRegistrationDate⊑hasObservedDateTime\nRegistryEntry ⊑ DatedCollectionConstituent",
+         "dataid:sha256sum": "47ffb6afdbcbfe26ec6e070c503e064a947d0dd8f2a1d1fb61fb8c19798a29cb",
+         "dataid-cv:axioms": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "87",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=diff_axioms=new.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>Registration Authorities Ontology</title><title>Registration Authorities Ontology</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "e5995cd4eb21498fac27c263f08ccd71edfdf9743b96526fb982e77286ab4495",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:38:02Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "35504",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.1.0.jar\n\n",
+         "dataid:sha256sum": "35133f3681a6ccdb320324b1927689adc218a5150f47233c68c456e42e0d1a9f",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix fibo-be-le-lp: <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/> .\n@prefix fibo-fbc-fct-ra: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> .\n@prefix fibo-fnd-arr-arr: <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Arrangements/> .\n@prefix fibo-fnd-arr-doc: <https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Documents/> .\n@prefix fibo-fnd-dt-fd: <https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/> .\n@prefix fibo-fnd-law-lcap: <https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/> .\n@prefix fibo-fnd-pas-pas: <https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/> .\n@prefix fibo-fnd-pty-pty: <https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/> .",
+         "dataid:sha256sum": "cfb1b5d2a005abc7c61ce313b03c7ad5758e99b6bce81ae305e94c7dd5b0a37a",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "15128",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510#fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=diff_triples=new.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=diff_triples=new.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/contentLanguage> \"https://www.w3.org/TR/owl2-quick-reference/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2015-2021 EDM Council, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2015-2021 Object Management Group, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> <http://www.w3.org/2004/02/skos/core#changeNote> \"The https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities.rdf version of this ontology was modified to clarify the definition of registry identifier, eliminate an unnecessary restriction on registry identifier, and refine the definition of registry entry and hasRegistrationDate based on usage.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/RegistryEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/DatedCollectionConstituent> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/RegistryIdentifier> <http://www.w3.org/2004/02/skos/core#definition> \"identifier associated with an entry in a registry, i.e., one that provides an index into the registry for the identified item\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/hasRegistrationDate> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/hasObservedDateTime> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/isRegisteredBy> <http://www.w3.org/2000/01/rdf-schema#range> _:genid28 .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/registers> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid31 .\n_:genid26 <http://www.w3.org/2002/07/owl#onClass> <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/RegistrationScheme> .",
+         "dataid:sha256sum": "c707741226b82168e642ef367e2dc3b16d3b6e52945e763f9614ca122ab2327a",
+         "dataid-cv:triples": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.06-183510",
+         "dct:issued": {
+            "@value": "2021-12-06T18:38:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-12-06T18:35:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4397",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities/2021.12.06-183510/fibo--ontology--FBC--FunctionalEntities--RegistrationAuthorities_type=diff_triples=new.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

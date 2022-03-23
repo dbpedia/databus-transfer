@@ -1,0 +1,116 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/wikidata/references/2019.11.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/references",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/references/2019.11.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/wikidata/references"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/wikidata"
+         },
+         "dataid:maintainer": {
+            "@id": "https://alismayilov.github.io/webid-ali.ttl#this"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/wikidata/references/2019.11.01"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software. After its releases, data is cleaned and persisted under the dbpedia account. Commit: ) Reified statements about references"
+         },
+         "dct:hasVersion": "2019.11.01",
+         "dct:issued": {
+            "@value": "2019-11-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Wikidata References"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/wikidata/references/2019.11.01#references.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software. After its releases, data is cleaned and persisted under the dbpedia account. Commit: ) Reified statements about references"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/references/2019.11.01#references.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/references/2019.11.01/references.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "1041791657",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2019-11-12T09:02:24Z\n<http://wikidata.dbpedia.org/resource/Q18_P625_Q19826574> <http://dbpedia.org/ontology/reference> \"http://wikidata.dbpedia.org/resource/Q19826574\" .\n<http://wikidata.dbpedia.org/resource/Q18_P227_Q48183> <http://dbpedia.org/ontology/reference> \"http://wikidata.dbpedia.org/resource/Q48183\" .\n<http://wikidata.dbpedia.org/resource/Q18_P935_Q191168> <http://dbpedia.org/ontology/reference> \"http://wikidata.dbpedia.org/resource/Q191168\" .\n<http://wikidata.dbpedia.org/resource/Q18_P646_Q15241312> <http://dbpedia.org/ontology/reference> \"http://wikidata.dbpedia.org/resource/Q15241312\" .\n<http://wikidata.dbpedia.org/resource/Q18_P646_V4652a> <http://dbpedia.org/ontology/reference> \"2013-10-28\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://wikidata.dbpedia.org/resource/Q18_P244_Q48183> <http://dbpedia.org/ontology/reference> \"http://wikidata.dbpedia.org/resource/Q48183\" .\n<http://wikidata.dbpedia.org/resource/Q18_P268_Q54919> <http://dbpedia.org/ontology/reference> \"http://wikidata.dbpedia.org/resource/Q54919\" .\n<http://wikidata.dbpedia.org/resource/Q18_P268_V3d3f1> <http://dbpedia.org/ontology/reference> \"2015-10-6\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://wikidata.dbpedia.org/resource/Q18_P527_Vf2750> <http://dbpedia.org/ontology/reference> \"https://unstats.un.org/unsd/methodology/m49/\" .",
+         "dataid:sha256sum": "3c8d5db0d6645cc449549356d5c2c3a80db9ed5a853290fe5ffb6d24d42c76a3",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "155041564651",
+            "@type": "xsd:decimal"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.11.01",
+         "dct:issued": {
+            "@value": "2019-11-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-11-21T14:40:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3206156646",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/release/wikidata/references/2019.11.01/references.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

@@ -1,0 +1,669 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "This ontology defines basic financial service providers, such as holding companies, financial institutions (both depository and non-depository institutions), and clearing houses at a relatively general level."
+         },
+         "dct:hasVersion": "2021.01.31-162553",
+         "dct:issued": {
+            "@value": "2021-01-31T15:27:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Financial Services Entities Ontology"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=generatedDocu.html"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "This ontology defines basic financial service providers, such as holding companies, financial institutions (both depository and non-depository institutions), and clearing houses at a relatively general level."
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/2004/02/skos/core#inScheme -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/2004/02/skos/core#hasTopConcept -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/2004/02/skos/core#topConceptOf -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/2004/02/skos/core#prefLabel -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/2004/02/skos/core#altLabel -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/2004/02/skos/core#hiddenLabel -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/2004/02/skos/core#notation -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/2004/02/skos/core#note -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/2004/02/skos/core#changeNote -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/2004/02/skos/core#definition -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+         "dataid:sha256sum": "6876f8157fb3ba13b88bc1d922e3682edea1f6e4ec27489c223c56d2fb9c1564",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-162553",
+         "dct:issued": {
+            "@value": "2021-01-31T15:27:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-31T15:27:05Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "7074",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-162553",
+         "dct:issued": {
+            "@value": "2021-01-31T15:27:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-31T15:25:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix fibo-be-fct-fct: <https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/FunctionalEntities/> .\n@prefix fibo-be-ge-ge: <https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/> .\n@prefix fibo-be-le-cb: <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/> .\n@prefix fibo-be-le-fbo: <https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/> .\n@prefix fibo-be-oac-cpty: <https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/> .\n@prefix fibo-fbc-fct-fse: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/> .\n@prefix fibo-fbc-fct-ra: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/> .\n@prefix fibo-fbc-fct-rga: <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/> .",
+         "dataid:sha256sum": "0999255734555ef77143fe4a56a864618aaeabe7d6a7b25a8498591a5af22367",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-162553",
+         "dct:issued": {
+            "@value": "2021-01-31T15:27:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-31T15:25:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "65696",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/> ;\n            sh:resultMessage \"no dc:description given or no literal, will not be displayed\"@en ;",
+         "dataid:sha256sum": "e94a49d81bc3807b8a259866c1a31d29697427ac3785c0ff22cdf097f2ddde4b",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-162553",
+         "dct:issued": {
+            "@value": "2021-01-31T15:27:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-31T15:25:54Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "5649",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2021-01-31 16:25:53.104851\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"81761\",\n        \"e-tag\": \"\\\"6011c54b-13f61\\\"\",\n        \"lastModified\": \"Wed, 27 Jan 2021 19:55:55 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"\",",
+         "dataid:sha256sum": "72ada487e5048a63305d4f846eddb26a43bad87e1f22ec843751627c0d7c9435",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-162553",
+         "dct:issued": {
+            "@value": "2021-01-31T15:27:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-31T15:27:05Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1296",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/data/home/dstreitmatter/data/archivo-init-release/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=parsed.ttl\nStart loading\nJan 31, 2021 4:25:57 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ @owl:versionIRI https://spec.edmcouncil.org/fibo/ontology/master/latest/FBC/FunctionalEntities/FinancialServicesEntities/\nFinished loading in 00:00:00.241\nInput size: Classes = 74, Properties = 54, Individuals = 62\nExpressivity: ALCHIQ(D)\nStart consistency check\nFinished consistency check in 00:00:00.026",
+         "dataid:sha256sum": "5e30403adbc311cb9944545a3c6b0d3751fd9edb0de17fd49c70c7098780265c",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-162553",
+         "dct:issued": {
+            "@value": "2021-01-31T15:27:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-31T15:25:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1056",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl",
+         "dataid:sha256sum": "49a988e9c10a3ee58289dc09a4c8faef1875986575af4b36ae27191e7a9fe2ea",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-162553",
+         "dct:issued": {
+            "@value": "2021-01-31T15:27:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-31T15:26:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "37882",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/data/home/dstreitmatter/data/archivo-init-release/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=parsed.ttl\nStart loading\nJan 31, 2021 4:25:55 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ @owl:versionIRI https://spec.edmcouncil.org/fibo/ontology/master/latest/FBC/FunctionalEntities/FinancialServicesEntities/\nFinished loading in 00:00:00.233\nInput size: Classes = 74, Properties = 54, Individuals = 62\nExpressivity: ALCHIQ(D)\nStart consistency check\nFinished consistency check in 00:00:00.027",
+         "dataid:sha256sum": "42bb41ac6276d2f378908741792405b6ef050e42bda41786695e3cc9b18fec2c",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-162553",
+         "dct:issued": {
+            "@value": "2021-01-31T15:27:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-31T15:25:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1056",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:fibo-be-fct-fct=\"https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/FunctionalEntities/\" xmlns:fibo-be-ge-ge=\"https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/\" xmlns:fibo-be-le-cb=\"https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/\" xmlns:fibo-be-le-fbo=\"https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/\" xmlns:fibo-be-oac-cpty=\"https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/\" xmlns:fibo-fbc-fct-fse=\"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/\" xmlns:fibo-fbc-fct-ra=\"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/\" xmlns:fibo-fbc-fct-rga=\"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegulatoryAgencies/\" xmlns:fibo-fbc-pas-fpas=\"https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/\" xmlns:fibo-fnd-acc-cur=\"https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/\" xmlns:fibo-fnd-agr-ctr=\"https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/\" xmlns:fibo-fnd-dt-fd=\"https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/\" xmlns:fibo-fnd-law-jur=\"https://spec.edmcouncil.org/fibo/ontology/FND/Law/Jurisdiction/\" xmlns:fibo-fnd-oac-ctl=\"https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/\" xmlns:fibo-fnd-org-fm=\"https://spec.edmcouncil.org/fibo/ontology/FND/Organizations/FormalOrganizations/\" xmlns:fibo-fnd-pas-psch=\"https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/PaymentsAndSchedules/\" xmlns:fibo-fnd-pty-pty=\"https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/\" xmlns:fibo-fnd-pty-rl=\"https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Roles/\" xmlns:fibo-fnd-rel-rel=\"https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/\" xmlns:fibo-fnd-utl-av=\"https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/\" xmlns:lcc-cr=\"https://www.omg.org/spec/LCC/Countries/CountryRepresentation/\" xmlns:lcc-lr=\"https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:sm=\"http://www.omg.org/techprocess/ab/SpecificationMetadata/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\">\n  <rdf:Description rdf:about=\"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/\">\n    <rdfs:label>Financial Services Entities Ontology</rdfs:label>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/\">\n    <rdfs:comment>QName: fibo-fbc-fct-fse:</rdfs:comment>",
+         "dataid:sha256sum": "673f43092f4ed47273951a2aafef764bce1748556d2661d9e34e58ddb2add646",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-162553",
+         "dct:issued": {
+            "@value": "2021-01-31T15:27:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-31T15:25:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "189844",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/> ;\n            sh:resultMessage \"dct:license statement is not an IRI\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "66b59e71530ced59443f40a858e024fe8e31db235519b155c8d3a4590086c370",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-162553",
+         "dct:issued": {
+            "@value": "2021-01-31T15:27:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-31T15:25:54Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "787",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-162553",
+         "dct:issued": {
+            "@value": "2021-01-31T15:27:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-31T15:25:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE rdf:RDF [\n\t<!ENTITY dct \"http://purl.org/dc/terms/\">\n\t<!ENTITY fibo-be-fct-fct \"https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/FunctionalEntities/\">\n\t<!ENTITY fibo-be-ge-ge \"https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/\">\n\t<!ENTITY fibo-be-le-cb \"https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/\">\n\t<!ENTITY fibo-be-le-fbo \"https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/\">\n\t<!ENTITY fibo-be-oac-cpty \"https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/ControlParties/\">\n\t<!ENTITY fibo-fbc-fct-fse \"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/\">\n\t<!ENTITY fibo-fbc-fct-ra \"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/\">",
+         "dataid:sha256sum": "a81cd05644d2a02cd091c5f8797b9e277dee639aee1ed68a57b4aeb2a7e93c4c",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-162553",
+         "dct:issued": {
+            "@value": "2021-01-31T15:27:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-31T15:25:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "81762",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/> <http://www.w3.org/2000/01/rdf-schema#label> \"Financial Services Entities Ontology\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/> <http://www.w3.org/2000/01/rdf-schema#comment> \"QName: fibo-fbc-fct-fse:\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/> <http://purl.org/dc/terms/abstract> \"This ontology defines basic financial service providers, such as holding companies, financial institutions (both depository and non-depository institutions), and clearing houses at a relatively general level. Nuances specific to the institutions located in a specific country are defined in jurisdiction specific dependent ontologies.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/> <http://purl.org/dc/terms/license> \"http://opensource.org/licenses/MIT\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/contentLanguage> <https://www.w3.org/TR/owl2-quick-reference/> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2015-2021 EDM Council, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2015-2021 Object Management Group, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/BE/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/RegistrationAuthorities/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .",
+         "dataid:sha256sum": "be37434e1037b2fe77f86e77aa5c3c29f6ec8dc1858648450b8ec4561c533c77",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-162553",
+         "dct:issued": {
+            "@value": "2021-01-31T15:27:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-31T15:25:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "164328",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl",
+         "dataid:sha256sum": "49a988e9c10a3ee58289dc09a4c8faef1875986575af4b36ae27191e7a9fe2ea",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-162553",
+         "dct:issued": {
+            "@value": "2021-01-31T15:27:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-31T15:26:07Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "37882",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553#fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>Financial Services Entities Ontology</title><title>Financial Services Entities Ontology</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "830da3954a628804542887caee6298dc879d342926fc3b19274cbdb38f50729a",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-162553",
+         "dct:issued": {
+            "@value": "2021-01-31T15:27:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-31T15:27:13Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "112056",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities/2021.01.31-162553/fibo--ontology--FBC--FunctionalEntities--FinancialServicesEntities_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      }
+   ]
+}

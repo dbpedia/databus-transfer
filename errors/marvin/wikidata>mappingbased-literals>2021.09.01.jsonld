@@ -1,0 +1,104 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/wikidata/mappingbased-literals/2021.09.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/mappingbased-literals",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/mappingbased-literals/2021.09.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/wikidata/mappingbased-literals"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/wikidata"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/wikidata/mappingbased-literals/2021.09.01"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/6ce5e19acd2b2051ee1283a1409bcffadde365f3 . After its releases, data is cleaned and persisted under the DBpedia account. ) High-quality data extracted using the mapping-based extraction (Literal properties only)."
+         },
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Wikidata Mappingbased Literals"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/wikidata/mappingbased-literals/2021.09.01#mappingbased-literals.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/6ce5e19acd2b2051ee1283a1409bcffadde365f3 . After its releases, data is cleaned and persisted under the DBpedia account. ) High-quality data extracted using the mapping-based extraction (Literal properties only)."
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/mappingbased-literals/2021.09.01#mappingbased-literals.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/mappingbased-literals/2021.09.01/mappingbased-literals.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2021-09-18T14:01:11Z\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/populationTotal> \"385742554\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/areaTotal> \"17843000\"^^<http://dbpedia.org/datatype/Area> .\n<http://wikidata.dbpedia.org/resource/Q21> <http://dbpedia.org/ontology/personName> \"England\" .\n<http://wikidata.dbpedia.org/resource/Q21> <http://dbpedia.org/ontology/populationTotal> \"53012456\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://wikidata.dbpedia.org/resource/Q21> <http://dbpedia.org/ontology/areaTotal> \"130278.43\"^^<http://dbpedia.org/datatype/Area> .\n<http://wikidata.dbpedia.org/resource/Q21> <http://dbpedia.org/ontology/areaTotal> \"130278\"^^<http://dbpedia.org/datatype/Area> .\n<http://wikidata.dbpedia.org/resource/Q22> <http://dbpedia.org/ontology/populationTotal> \"5404700\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://wikidata.dbpedia.org/resource/Q22> <http://dbpedia.org/ontology/areaTotal> \"78782\"^^<http://dbpedia.org/datatype/Area> .\n<http://wikidata.dbpedia.org/resource/Q26> <http://dbpedia.org/ontology/personName> \"Northern Ireland\" .",
+         "dataid:sha256sum": "bfae337106e2d5d51bc930d4557c6c78bf819205c10c61679f5491ea53018f84",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T11:13:25Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "300794721",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/databus-repo/marvin/wikidata/mappingbased-literals/2021.09.01/mappingbased-literals.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

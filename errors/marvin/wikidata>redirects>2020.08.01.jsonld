@@ -1,0 +1,104 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/wikidata/redirects/2020.08.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/redirects",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/redirects/2020.08.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/wikidata/redirects"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/wikidata"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/wikidata/redirects/2020.08.01"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/d69e027e6f7ace84ba485d3158913bf901b812e2 . After its releases, data is cleaned and persisted under the DBpedia account. ) Dataset containing redirects between articles in Wikidata."
+         },
+         "dct:hasVersion": "2020.08.01",
+         "dct:issued": {
+            "@value": "2020-08-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Redirects"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/wikidata/redirects/2020.08.01#redirects.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/d69e027e6f7ace84ba485d3158913bf901b812e2 . After its releases, data is cleaned and persisted under the DBpedia account. ) Dataset containing redirects between articles in Wikidata."
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/redirects/2020.08.01#redirects.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/redirects/2020.08.01/redirects.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://wikidata.dbpedia.org/resource/Category:API_dataset> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Category:API_datasets> .\n<http://wikidata.dbpedia.org/resource/Category:Data_dump_dataset> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Category:Data_dump_datasets> .\n<http://wikidata.dbpedia.org/resource/Category:Dataset_Import_Hub_categories> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Category:Dataset_Imports_categories> .\n<http://wikidata.dbpedia.org/resource/Category:Historical_Place> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Category:WikiProject_Historical_Place> .\n<http://wikidata.dbpedia.org/resource/Category:Limits_of_Wikidata> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Category:WikiProject_Limits_of_Wikidata> .\n<http://wikidata.dbpedia.org/resource/Category:List_datasets> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Category:Text_document_datasets> .\n<http://wikidata.dbpedia.org/resource/Category:Mathematical_templates> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Category:Mathematical_function_templates> .\n<http://wikidata.dbpedia.org/resource/Category:Modules_and_templates_based_on_Module:Wikidades> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Category:Modules_and_templates_based_on_Module_Wikidades> .\n<http://wikidata.dbpedia.org/resource/Category:Navigational_modules> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Category:Navigation_modules> .\n<http://wikidata.dbpedia.org/resource/Category:ScienceSource_project> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Category:ScienceSource> .",
+         "dataid:sha256sum": "23ca938478c4e5d00fe16a385146d05d97e72ff30fdb61725fce63e06dd3ebaf",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.08.01",
+         "dct:issued": {
+            "@value": "2020-08-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-08-24T09:01:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "9292",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/databus-repo/marvin/wikidata/redirects/2020.08.01/redirects.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

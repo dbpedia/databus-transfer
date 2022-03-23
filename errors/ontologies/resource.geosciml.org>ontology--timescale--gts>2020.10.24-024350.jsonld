@@ -1,0 +1,715 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in Cox, S.J.D, & Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.  The permitted nesting relationships between eras of different ranks are axiomatized as local constraints using interval relationships from OWL-Time."
+         },
+         "dct:hasVersion": "2020.10.24-024350",
+         "dct:issued": {
+            "@value": "2020-10-24T00:44:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Geologic Timescale model"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=orig.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=diff_axioms=old.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=diff_axioms=new.dl"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in Cox, S.J.D, & Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119–137.  The permitted nesting relationships between eras of different ranks are axiomatized as local constraints using interval relationships from OWL-Time."
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:axioms",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl",
+         "dataid:sha256sum": "a4bf2eb5dc5e1986ffe20a194f4dbf576b1c81f8fb030f9cd78469e758c1915a",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-024350",
+         "dct:issued": {
+            "@value": "2020-10-24T00:44:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:44:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "30604",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix gts: <http://resource.geosciml.org/ontology/timescale/gts#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rank: <http://resource.geosciml.org/ontology/timescale/rank/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sdo: <https://schema.org/> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix sosa: <http://www.w3.org/ns/sosa/> .",
+         "dataid:sha256sum": "b8a4b2f2728fd8809cb3254747189aa4e7e54a78ee005e98d8bd5769e65995d1",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-024350",
+         "dct:issued": {
+            "@value": "2020-10-24T00:44:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:44:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "37010",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl",
+         "dataid:sha256sum": "c3593d73946c54ee406e2f4c3baf46432b68760078d3abf57b346cb8b061fbde",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-024350",
+         "dct:issued": {
+            "@value": "2020-10-24T00:44:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:44:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "30604",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-024350",
+         "dct:issued": {
+            "@value": "2020-10-24T00:44:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:44:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=orig.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=orig.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# baseURI: http://resource.geosciml.org/ontology/timescale/gts\n# imports: http://resource.geosciml.org/ontology/timescale/thors\n# imports: http://www.w3.org/ns/sosa/\n# prefix: gts\n\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix gts: <http://resource.geosciml.org/ontology/timescale/gts#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rank: <http://resource.geosciml.org/ontology/timescale/rank/> .",
+         "dataid:sha256sum": "dc614c94c6bf5efe5b4c9edf67f40caab2bc3954e1ee634e7087fb53e37da659",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-024350",
+         "dct:issued": {
+            "@value": "2020-10-24T00:44:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:43:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "37940",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=orig.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] INFO org.semanticweb.owlapi.io.DocumentSources - URL connection input stream is compressed using gzip\n[main] INFO org.semanticweb.owlapi.io.DocumentSources - URL connection input stream is compressed using gzip\n[main] INFO org.semanticweb.owlapi.io.DocumentSources - URL connection input stream is compressed using gzip\n[main] INFO org.semanticweb.owlapi.io.DocumentSources - URL connection input stream is compressed using gzip\n[main] INFO org.semanticweb.owlapi.io.DocumentSources - URL connection input stream is compressed using gzip\n[main] INFO org.semanticweb.owlapi.io.DocumentSources - URL connection input stream is compressed using gzip\n[main] INFO org.semanticweb.owlapi.io.DocumentSources - URL connection input stream is compressed using gzip\nException in thread \"main\" org.semanticweb.owlapi.model.UnloadableImportException: Could not load imported ontology: <http://resource.geosciml.org/ontology/timescale/thors> Cause: Problem parsing http://resource.geosciml.org/ontology/timescale/thors\nCould not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.\nThe following parsers were tried:",
+         "dataid:sha256sum": "c970e368a6d4a350acd785dd37361df4299f1c4fb3e7581afe1a16117780c74d",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-024350",
+         "dct:issued": {
+            "@value": "2020-10-24T00:44:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:44:21Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "39874",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2020.10.24; 02:43:55\",\n        \"best-header\": \"text/turtle\",\n        \"content-length\": \"6326\",\n        \"e-tag\": \"W/\\\"c64970ac2f69a30f13ff0db550285e7cccc322621c6c95408b1a09fefc092d77\\\"\",\n        \"lastModified\": \"\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Date': 'Sat, 24 Oct 2020 00:43:25 GMT', 'Server': 'Apache', 'Pragma': 'no-cache', 'Cache-Control': 'no-cache, no-store, private, must-revalidate, max-stale=0, post-check=0, pre-check=0', 'Expires': 'Thu, 01 Jan 1970 00:00:00 GMT', 'Location': 'https://raw.githack.com/CGI-IUGS/timescale-ont/master/rdf/gts.ttl', 'Content-Length': '0', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive'}\",",
+         "dataid:sha256sum": "c23c8cbbbd588ec470fe05b4885042441f1f5413ceb2f0839b2e42c4e851f357",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-024350",
+         "dct:issued": {
+            "@value": "2020-10-24T00:44:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:44:21Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2924",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/data/home/dstreitmatter/data/archivo-init-release/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=parsed.ttl\nStart loading\nOct 24, 2020 2:44:06 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from XSD namespace: 147ecb6827c7588d79ebd973c8291882 @xsd:pattern \"[ax][12](.[1-9])*\"\nFinished loading in 00:00:00.224\nInput size: Classes = 26, Properties = 51, Individuals = 42\nExpressivity: ALCHOQ(D)\nStart consistency check\nFinished consistency check in 00:00:00.024",
+         "dataid:sha256sum": "eca56d9575a866291f39a5bbbfd610a930248437a36ac0b1865319189bd5af82",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-024350",
+         "dct:issued": {
+            "@value": "2020-10-24T00:44:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:44:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "826",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=diff_axioms=old.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=diff_axioms=old.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "org.semanticweb.owlapi.model.OWLRuntimeException: org.coode.owlapi.rdfxml.parser.TranslatedUnloadedImportException: Could not load imported ontology: <http://resource.geosciml.org/ontology/timescale/thors> Cause: Problem parsing http://resource.geosciml.org/ontology/timescale/thors\nCould not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.\nThe following parsers were tried:\n1) RDFXMLParser\n2) OWLXMLParser\n3) OWLFunctionalSyntaxOWLParser\n4) TurtleOntologyParser\n5) OWLOBOParser\n6) KRSS2OWLParser\n7) ManchesterOWLSyntaxOntologyParser",
+         "dataid:sha256sum": "9494681a568b6f16000988470cb035a07e6227c8b51dbd1316ccdf1ddd7d0455",
+         "dataid-cv:axioms": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-024350",
+         "dct:issued": {
+            "@value": "2020-10-24T00:44:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:44:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4445",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=diff_axioms=old.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:gts=\"http://resource.geosciml.org/ontology/timescale/gts#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rank=\"http://resource.geosciml.org/ontology/timescale/rank/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:sdo=\"https://schema.org/\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:sosa=\"http://www.w3.org/ns/sosa/\" xmlns:thors=\"http://resource.geosciml.org/ontology/timescale/thors#\" xmlns:time=\"http://www.w3.org/2006/time#\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:voaf=\"http://purl.org/vocommons/voaf#\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\">\n  <rdf:Description rdf:about=\"http://resource.geosciml.org/ontology/timescale/gts\">\n    <rdf:type rdf:resource=\"http://purl.org/vocommons/voaf#Vocabulary\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://resource.geosciml.org/ontology/timescale/gts\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://resource.geosciml.org/ontology/timescale/gts\">\n    <dcterms:contributor rdf:resource=\"https://orcid.org/0000-0001-6041-5302\"/>",
+         "dataid:sha256sum": "9b0e2d82d3da0adffeda12690f7f2e33713249e5d78524f3ff80a0ba7591527c",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-024350",
+         "dct:issued": {
+            "@value": "2020-10-24T00:44:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:44:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "130955",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/data/home/dstreitmatter/data/archivo-init-release/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=parsed.ttl\nStart loading\nOct 24, 2020 2:44:05 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from XSD namespace: 07953bacc215cae18eef779e9b812d71 @xsd:pattern \"[ax][12](.[1-9])*\"\nFinished loading in 00:00:00.232\nInput size: Classes = 26, Properties = 51, Individuals = 42\nExpressivity: ALCHOQ(D)\nStart consistency check\nFinished consistency check in 00:00:00.025",
+         "dataid:sha256sum": "68d6cb641829e3983b9fa30b887ecee6bff278b6d72bfb901492d23be5d0801e",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-024350",
+         "dct:issued": {
+            "@value": "2020-10-24T00:44:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:44:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "826",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>Geologic Timescale model</title><title>Geologic Timescale model</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"https://raw.githack.com/CGI-IUGS/timescale-ont/master/rdf/gts.ttl\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "c54d71698c6478ad82d55aebedf29ed4600c0aca7c57ff4cb394608932f765f7",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-024350",
+         "dct:issued": {
+            "@value": "2020-10-24T00:44:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:44:26Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "59102",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://resource.geosciml.org/ontology/timescale/gts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .\n<http://resource.geosciml.org/ontology/timescale/gts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/dc/terms/contributor> <https://orcid.org/0000-0001-6041-5302> .\n<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/dc/terms/created> \"2011-01-01\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0002-3884-3420> .\n<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/dc/terms/description> \"This is an RDF/OWL representation of the GeoSciML Geologic Timescale model, which has been adapted from the model described in Cox, S.J.D, & Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119\\u2013137.\\n\\nThe permitted nesting relationships between eras of different ranks are axiomatized as local constraints using interval relationships from OWL-Time. \" .\n<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> .\n<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/dc/terms/modified> \"2020-05-31\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/dc/terms/rights> \"Copyright 2012-2020 CSIRO\" .\n<http://resource.geosciml.org/ontology/timescale/gts> <http://purl.org/dc/terms/source> \"Cox, S.J.D, & Richard, S.M. (2005) A formal model for the geologic timescale and GSSP, compatible with geospatial information transfer standards, Geosphere, Geological Society of America 1/3, 119\\u2013137.\" .",
+         "dataid:sha256sum": "59ee743637a805666f99f2c4fc6fc63288048c00adc1fdf90b893108689f9653",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-024350",
+         "dct:issued": {
+            "@value": "2020-10-24T00:44:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:44:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "103652",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-024350",
+         "dct:issued": {
+            "@value": "2020-10-24T00:44:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:44:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://resource.geosciml.org/ontology/timescale/gts#Super-Eon> ;",
+         "dataid:sha256sum": "e08ba4f0663dfc7d537953e5f734e9790b0ef2080c712a1dcfc60084c2feb808",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-024350",
+         "dct:issued": {
+            "@value": "2020-10-24T00:44:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:44:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "18631",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350#ontology--timescale--gts_type=diff_axioms=new.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=diff_axioms=new.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "org.semanticweb.owlapi.model.OWLRuntimeException: org.coode.owlapi.rdfxml.parser.TranslatedUnloadedImportException: Could not load imported ontology: <http://resource.geosciml.org/ontology/timescale/thors> Cause: Problem parsing http://resource.geosciml.org/ontology/timescale/thors\nCould not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.\nThe following parsers were tried:\n1) RDFXMLParser\n2) OWLXMLParser\n3) OWLFunctionalSyntaxOWLParser\n4) TurtleOntologyParser\n5) OWLOBOParser\n6) KRSS2OWLParser\n7) ManchesterOWLSyntaxOntologyParser",
+         "dataid:sha256sum": "9494681a568b6f16000988470cb035a07e6227c8b51dbd1316ccdf1ddd7d0455",
+         "dataid-cv:axioms": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.10.24-024350",
+         "dct:issued": {
+            "@value": "2020-10-24T00:44:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-10-24T00:44:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4445",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/resource.geosciml.org/ontology--timescale--gts/2020.10.24-024350/ontology--timescale--gts_type=diff_axioms=new.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      }
+   ]
+}

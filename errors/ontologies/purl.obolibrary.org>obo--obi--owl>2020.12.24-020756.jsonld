@@ -1,0 +1,762 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The Ontology for Biomedical Investigations (OBI) is build in a collaborative, international effort and will serve as a resource for annotating biomedical investigations, including the study design, protocols and instrumentation used, the data generated and the types of analysis performed on the data."
+         },
+         "dct:hasVersion": "2020.12.24-020756",
+         "dct:issued": {
+            "@value": "2020-12-24T01:21:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Ontology for Biomedical Investigations"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=diff_axioms=new.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=diff_axioms=old.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=parsed_sorted.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=shaclReport_validates=goodLicense.ttl"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The Ontology for Biomedical Investigations (OBI) is build in a collaborative, international effort and will serve as a resource for annotating biomedical investigations, including the study design, protocols and instrumentation used, the data generated and the types of analysis performed on the data."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:axioms",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=diff_axioms=new.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=diff_axioms=new.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "OBI_0002924 ⊑ ∃ OBI_0000304.{OBI_0002903}\nOBI_0002783 ≡ (OBI_0100051 ⊓ (∃ OBI_0000312.(OBI_0002600 ⊓ (∃ OBI_0000293.UBERON_0001558))))\nOBI_0002938 ⊑ OBI_0002920\nOBI_0002778 ⊑ OBI_0100051 ⊓ (∃ OBI_0000312.(OBI_0002600 ⊓ (∃ OBI_0000293.UBERON_0003126)))\nOBI_0002937 ⊑ OBI_0002920\nOBI_0002929 ⊑ OBI_0002920\nOBI_0002902 ⊑ OBI_0400065\nUBERON_0003126 ⊑ UBERON_0000465\nGO_0001046 ⊑ GO_0043565\nOBI_0000913 ⊑ ∃ OBI_0000299.(∃ IAO_0000136.GO_0001046)",
+         "dataid:sha256sum": "9e398a7ffb60fed1bc3c5b0c4067df66f4b25c1280fa00b8d5a589a42c250dc6",
+         "dataid-cv:axioms": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.12.24-020756",
+         "dct:issued": {
+            "@value": "2020-12-24T01:21:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2020-12-24T01:08:07Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3092",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=diff_axioms=new.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <http://purl.obolibrary.org/obo/obi.owl#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix obo: <http://purl.obolibrary.org/obo/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix xml: <http://www.w3.org/XML/1998/namespace> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix terms: <http://purl.org/dc/terms/> .",
+         "dataid:sha256sum": "13990aa57c4ce084529abd6205f457a9304bd71899501fd94fdd31778a28aec8",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.12.24-020756",
+         "dct:issued": {
+            "@value": "2020-12-24T01:21:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2020-12-24T01:08:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3780940",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=diff_axioms=old.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=diff_axioms=old.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "OBI_0001271 ⊑ OBI_0600047\nOBI_0000913 ⊑ ∃ OBI_0000299.(∃ IAO_0000136.GO_0001047)\nOBI_0001271 ⊑ (∃ BFO_0000055.(BFO_0000034 ⊓ (∃ RO_0000052.OBI_0400103))) ⊓ (∃ OBI_0000293.OBI_0400103)\nOBI_0001271 ⊑ ∃ OBI_0000299.OBI_0000973\nOBI_0001271 ⊑ OBI_0000424\nOBI_0001271 ⊑ ∃ OBI_0000417.OBI_0001331\nOBI_0001271 ⊑ ∃ OBI_0000293.(OBI_0100051 ⊓ (∃ BFO_0000051.CHEBI_33697))\nUBERON_0007311 ⊑ UBERON_0000463\nOBI_0001271 ⊑ (∃ BFO_0000055.(OBI_0000275 ⊓ (∃ RO_0000052.CHEBI_33697))) ⊓ (∃ OBI_0000293.CHEBI_33697)\nGO_0003823 ⊑ BFO_0000015",
+         "dataid:sha256sum": "b2254ae9a5ad1918c14069b6c5390294f266be1c80afe1eee0c3c1f769fe2015",
+         "dataid-cv:axioms": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.12.24-020756",
+         "dct:issued": {
+            "@value": "2020-12-24T01:21:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2020-12-24T01:08:07Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "576",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=diff_axioms=old.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://purl.obolibrary.org/obo/obi.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://purl.obolibrary.org/obo/obi.owl> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.obolibrary.org/obo/obi/2020-12-16/obi.owl> .\n<http://purl.obolibrary.org/obo/obi.owl> <http://protege.stanford.edu/plugins/owl/protege#defaultLanguage> \"en\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/obi.owl> <http://purl.obolibrary.org/obo/IAO_0000589> \"Ontology for Biomedical Investigations\"@en .\n<http://purl.obolibrary.org/obo/obi.owl> <http://purl.org/dc/elements/1.1/contributor> \"Advisors for this project come from the IFOMIS group, Saarbruecken and from the Co-ODE group in Manchester\"@en .\n<http://purl.obolibrary.org/obo/obi.owl> <http://purl.org/dc/elements/1.1/creator> \"Alan Ruttenberg\"@en .\n<http://purl.obolibrary.org/obo/obi.owl> <http://purl.org/dc/elements/1.1/creator> \"Allyson Lister\"@en .\n<http://purl.obolibrary.org/obo/obi.owl> <http://purl.org/dc/elements/1.1/creator> \"Barry Smith\"@en .\n<http://purl.obolibrary.org/obo/obi.owl> <http://purl.org/dc/elements/1.1/creator> \"Bill Bug\"@en .\n<http://purl.obolibrary.org/obo/obi.owl> <http://purl.org/dc/elements/1.1/creator> \"Bjoern Peters\"@en .",
+         "dataid:sha256sum": "178d797db13785c10bca7f8f3f53c855219006a3f547a10fca245b8132981816",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.12.24-020756",
+         "dct:issued": {
+            "@value": "2020-12-24T01:21:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2020-12-24T01:08:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "9300642",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\" xmlns:obo=\"http://purl.obolibrary.org/obo/\" xmlns:oboInOwl=\"http://www.geneontology.org/formats/oboInOwl#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:protege=\"http://protege.stanford.edu/plugins/owl/protege#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:terms=\"http://purl.org/dc/terms/\" xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"http://purl.obolibrary.org/obo/obi.owl#\">\n  <rdf:Description rdf:about=\"http://purl.obolibrary.org/obo/obi.owl\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://purl.obolibrary.org/obo/obi.owl\">\n    <owl:versionIRI rdf:resource=\"http://purl.obolibrary.org/obo/obi/2020-12-16/obi.owl\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://purl.obolibrary.org/obo/obi.owl\">\n    <protege:defaultLanguage rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">en</protege:defaultLanguage>",
+         "dataid:sha256sum": "d172da4027faeede5ae325271b24d4da72b3c440d7117d9ceb80fae6b4091c93",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.12.24-020756",
+         "dct:issued": {
+            "@value": "2020-12-24T01:21:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2020-12-24T01:08:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "11973096",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.12.24-020756",
+         "dct:issued": {
+            "@value": "2020-12-24T01:21:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2020-12-24T01:08:25Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://purl.obolibrary.org/obo/OBI_1110116> ;",
+         "dataid:sha256sum": "604596873aad7b889ecd510419edf555738bc043e9e3406d3fcf171d38b64afb",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.12.24-020756",
+         "dct:issued": {
+            "@value": "2020-12-24T01:21:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2020-12-24T01:08:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3612482",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Timeout in pellet\n\n",
+         "dataid:sha256sum": "cbb42a834bc4c2ffe399627b3a443360b333ef8bbed6487d27ec6acf1a7894e2",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.12.24-020756",
+         "dct:issued": {
+            "@value": "2020-12-24T01:21:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2020-12-24T01:18:58Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "20",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - http://purl.obolibrary.org/obo/OBI_0002903 -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> _:genid-nodeid-node1eq957v8ex9301\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - http://purl.obolibrary.org/obo/OBI_0000462 -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> _:genid-nodeid-node1eq957v8ex701\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - http://purl.obolibrary.org/obo/OBI_0000462 -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> _:genid-nodeid-node1eq957v8ex700\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - http://purl.obolibrary.org/obo/OBI_0001855 -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> _:genid-nodeid-node1eq957v8ex6104\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - http://purl.obolibrary.org/obo/OBI_0001856 -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> _:genid-nodeid-node1eq957v8ex6105",
+         "dataid:sha256sum": "1ae8a9cec81899540a781a555350d19bbf03572e35a3740c83268abd733c3edd",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.12.24-020756",
+         "dct:issued": {
+            "@value": "2020-12-24T01:21:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2020-12-24T01:19:10Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "10187",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n<rdf:RDF xmlns=\"http://purl.obolibrary.org/obo/obi.owl#\"\n     xml:base=\"http://purl.obolibrary.org/obo/obi.owl\"\n     xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n     xmlns:obo=\"http://purl.obolibrary.org/obo/\"\n     xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n     xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n     xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"\n     xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n     xmlns:foaf=\"http://xmlns.com/foaf/0.1/\"",
+         "dataid:sha256sum": "c337bf5e9d86376ff021d8311010d80b86fd0e4d1ff7c7fd09284e22bb37a1a4",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.12.24-020756",
+         "dct:issued": {
+            "@value": "2020-12-24T01:21:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2020-12-24T01:08:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "6945522",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=parsed_sorted.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=parsed_sorted.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://example.com/bfo-spec-label> <http://purl.obolibrary.org/obo/IAO_0000119> \"Person:Alan Ruttenberg\" .\n<http://protege.stanford.edu/plugins/owl/protege#defaultLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.obolibrary.org/obo/APOLLO_SV_00000008> <http://purl.obolibrary.org/obo/IAO_0000115> \"A planned process that has specified output a software product and that involves the creation of source code.\"@en .\n<http://purl.obolibrary.org/obo/APOLLO_SV_00000008> <http://purl.obolibrary.org/obo/IAO_0000117> \"Mathias Brochhausen\"@en .\n<http://purl.obolibrary.org/obo/APOLLO_SV_00000008> <http://purl.obolibrary.org/obo/IAO_0000117> \"William R. Hogan\"@en .\n<http://purl.obolibrary.org/obo/APOLLO_SV_00000008> <http://purl.obolibrary.org/obo/IAO_0000119> \"http://en.wikipedia.org/wiki/Software_development\" .\n<http://purl.obolibrary.org/obo/APOLLO_SV_00000008> <http://purl.obolibrary.org/obo/IAO_0000600> \"A planned process resulting in a software product involving the creation of source code.\"@en .\n<http://purl.obolibrary.org/obo/APOLLO_SV_00000008> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .\n<http://purl.obolibrary.org/obo/APOLLO_SV_00000008> <http://www.w3.org/2000/01/rdf-schema#label> \"software development\"@en .\n<http://purl.obolibrary.org/obo/APOLLO_SV_00000008> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/OBI_0000011> .",
+         "dataid:sha256sum": "e8cee6b43274195ca2e24f0c5e5a4f677a17da419cbbbf04edf9c7407852a246",
+         "dataid-cv:tag": "sorted",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.12.24-020756",
+         "dct:issued": {
+            "@value": "2020-12-24T01:21:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2020-12-24T01:08:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "9300642",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=parsed_sorted.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - http://purl.obolibrary.org/obo/OBI_0002903 -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> _:genid-nodeid-node1eq957pa7x9301\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - http://purl.obolibrary.org/obo/OBI_0000462 -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> _:genid-nodeid-node1eq957pa7x701\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - http://purl.obolibrary.org/obo/OBI_0000462 -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> _:genid-nodeid-node1eq957pa7x700\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - _:genid-nodeid-node1eq957pa7x10969 -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/2002/07/owl#AllDifferent\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - _:genid-nodeid-node1eq957pa7x10960 -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/2002/07/owl#AllDifferent",
+         "dataid:sha256sum": "f21e7c236025b2f3216608b60f0c78a4e6414d9f6b4d619d9f7a57392e7b83c7",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.12.24-020756",
+         "dct:issued": {
+            "@value": "2020-12-24T01:21:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2020-12-24T01:19:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "10187",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2020.12.24; 02:08:00\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"785742\",\n        \"e-tag\": \"W/\\\"a8e37c399602e0e4646b001c226d2a1796b0f1c9761c74063b10a08f48bcc99c\\\"\",\n        \"lastModified\": \"\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Date': 'Thu, 24 Dec 2020 01:07:57 GMT', 'Server': 'Apache/2.4.18 (Ubuntu)', 'Location': 'https://raw.githubusercontent.com/obi-ontology/obi/v2020-12-16/obi.owl', 'Content-Length': '339', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'text/html; charset=iso-8859-1'}\",",
+         "dataid:sha256sum": "774d188b54fb4031ebab345b73e29e7e9bedd3b831d1a0f2ef859f575637cd7e",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.12.24-020756",
+         "dct:issued": {
+            "@value": "2020-12-24T01:21:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2020-12-24T01:19:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2230",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - Unparsed triple: http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://purl.obolibrary.org/obo/OBI_0002903 -> _:genid9301\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - Unparsed triple: http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://purl.obolibrary.org/obo/OBI_0000462 -> _:genid700\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - Unparsed triple: http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://purl.obolibrary.org/obo/OBI_0000462 -> _:genid701\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - Unparsed triple: http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://purl.obolibrary.org/obo/OBI_0001855 -> _:genid6104\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - Unparsed triple: http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://purl.obolibrary.org/obo/OBI_0001856 -> _:genid6105\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - Unparsed triple: http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://purl.obolibrary.org/obo/OBI_0001860 -> _:genid6189\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - Unparsed triple: http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://purl.obolibrary.org/obo/OBI_0000756 -> _:genid1275\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - Unparsed triple: http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://purl.obolibrary.org/obo/OBI_0000754 -> _:genid1274\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - Unparsed triple: http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://purl.obolibrary.org/obo/OBI_0000753 -> _:genid1273\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - Unparsed triple: http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://purl.obolibrary.org/obo/OBI_0000752 -> _:genid1272",
+         "dataid:sha256sum": "9283f17cf81b409abab970b608fd813fd735926c2893dda0660ff1c57448c89f",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.12.24-020756",
+         "dct:issued": {
+            "@value": "2020-12-24T01:21:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2020-12-24T01:19:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "8354",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.12.24-020756",
+         "dct:issued": {
+            "@value": "2020-12-24T01:21:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2020-12-24T01:08:25Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Timeout in pellet\n\n",
+         "dataid:sha256sum": "cbb42a834bc4c2ffe399627b3a443360b333ef8bbed6487d27ec6acf1a7894e2",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.12.24-020756",
+         "dct:issued": {
+            "@value": "2020-12-24T01:21:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2020-12-24T01:18:58Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "20",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756#obo--obi--owl_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://purl.obolibrary.org/obo/obi.owl> ;\n            sh:resultMessage \"dct:license statement is not an IRI\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "d49a87af5cbef5b9a0db29c8b54269d3a0a2b58815dfc9d5651d2cf7e9cebb47",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.12.24-020756",
+         "dct:issued": {
+            "@value": "2020-12-24T01:21:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2020-12-24T01:08:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "731",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--obi--owl/2020.12.24-020756/obo--obi--owl_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

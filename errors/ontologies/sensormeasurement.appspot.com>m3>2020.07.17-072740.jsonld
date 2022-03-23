@@ -1,0 +1,592 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The Machine-to-Machine Measurement (M3) Ontology is a unified language, nomenclature, dictionnary which enables semantically annotating heterogeneous IoT data produced by heterogeneous devices measurements (sensors, RFID tags, etc.)."
+         },
+         "dct:hasVersion": "2020.07.17-072740",
+         "dct:issued": {
+            "@value": "2020-09-22T11:49:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "The Machine-to-Machine Measurement (M3) Ontology"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=orig.rdf"
+            },
+            {
+               "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=pelletInfo_imports=NONE.txt"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The Machine-to-Machine Measurement (M3) Ontology is a unified language, nomenclature, dictionnary which enables semantically annotating heterogeneous IoT data produced by heterogeneous devices measurements (sensors, RFID tags, etc.)."
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - http://sensormeasurement.appspot.com/m3#hasValue -> http://www.w3.org/2002/07/owl#equivalentProperty -> http://purl.oclc.org/NET/ssnx/ssn#hasValue\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - http://sensormeasurement.appspot.com/m3#detects -> http://www.w3.org/2002/07/owl#equivalentProperty -> http://purl.oclc.org/NET/ssnx/ssn#detects\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - http://sensormeasurement.appspot.com/m3#observes -> http://www.w3.org/2002/07/owl#equivalentProperty -> http://purl.oclc.org/NET/ssnx/ssn#observes\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - http://sensormeasurement.appspot.com/m3#hasName -> http://www.w3.org/2002/07/owl#equivalentProperty -> http://purl.oclc.org/NET/ssnx/ssn#observedProperty\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - http://sensormeasurement.appspot.com/m3#produces -> http://www.w3.org/2002/07/owl#equivalentProperty -> https://saref.etsi.org/core/makesMeasurement",
+         "dataid:sha256sum": "df165279fde6034afa1930cc82402109816dcf6bc6e429663b8894a9e5403581",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.17-072740",
+         "dct:issued": {
+            "@value": "2020-09-22T11:49:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-09-22T11:46:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3881",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:aws=\"http://purl.oclc.org/NET/ssnx/meteo/aws#\" xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:cose=\"http://casas.wsu.edu/owl/cose.owl#\" xmlns:dbpedia=\"http://dbpedia.org/ontology/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dogont=\"http://elite.polito.it/ontologies/dogont.owl#\" xmlns:dul2=\"http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#\" xmlns:dul=\"http://www.loa-cnr.it/ontologies/DUL.owl#\" xmlns:emoca=\"http://ns.inria.fr/emoca#\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\" xmlns:food_smart_product=\"http://kmi.open.ac.uk/projects/smartproducts/ontologies/food.owl#\" xmlns:home=\"http://sensormeasurement.appspot.com/home#\" xmlns:m3-lite=\"http://purl.org/iot/vocab/m3-lite#\" xmlns:m3=\"http://sensormeasurement.appspot.com/m3#\" xmlns:mo=\"http://purl.org/ontology/mo/\" xmlns:movie=\"http://www.movieontology.org/2010/01/movieontology.owl\" xmlns:muo=\"http://purl.oclc.org/NET/muo/muo#\" xmlns:naturopathy=\"http://sensormeasurement.appspot.com/naturopathy#\" xmlns:om=\"http://www.wurvoc.org/vocabularies/om-1.8/\" xmlns:ontoSensor=\"http://mmisw.org/ont/univmemphis/sensor\" xmlns:openIoT=\"http://openiot.eu/ontology/ns/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:prov=\"http://www.w3.org/ns/prov#\" xmlns:qudt=\"http://qudt.org/schema/qudt#\" xmlns:qudt_unit=\"http://data.qudt.org/qudt/owl/1.0.0/unit.owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:saref-core=\"https://saref.etsi.org/core/\" xmlns:saref4agri=\"https://saref.etsi.org/saref4agri/\" xmlns:saref4bldg=\"https://saref.etsi.org/saref4bldg#\" xmlns:saref4city=\"https://w3id.org/def/saref4city#\" xmlns:saref4envi=\"https://saref.etsi.org/saref4envi#\" xmlns:saref4health=\"https://w3id.org/def/saref4health#\" xmlns:seas=\"https://w3id.org/seas/\" xmlns:shw=\"http://paul.staroch.name/thesis/SmartHomeWeather.owl#\" xmlns:sosa=\"http://www.w3.org/ns/sosa/\" xmlns:spitfire=\"http://spitfire-project.eu/ontology/ns/\" xmlns:ssn=\"http://purl.oclc.org/NET/ssnx/ssn#\" xmlns:ssnv2=\"http://www.w3.org/ns/ssn/\" xmlns:stac=\"http://securitytoolbox.appspot.com/stac#\" xmlns:sweet_unit=\"http://sweet.jpl.nasa.gov/ontology/units.owl#\" xmlns:txn=\"http://lod.taxonconcept.org/ontology/txn.owl#\" xmlns:ucum=\"http://idi.fundacionctic.org/muo/ucum-instances.owl\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:voaf=\"http://purl.org/vocommons/voaf#\" xmlns:vs=\"http://www.w3.org/2003/06/sw-vocab-status/ns#\" xmlns:weather=\"http://archive.knoesis.org/research/semsci/application_domain/sem_sensor/ont/weather.owl\" xmlns:wgs84_pos=\"http://www.w3.org/2003/01/geo/wgs84_pos#\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xml:base=\"http://sensormeasurement.appspot.com/m3\">\n  <rdf:Description rdf:about=\"#\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"#\">\n    <rdf:type rdf:resource=\"http://purl.org/vocommons/voaf#Vocabulary\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"#\">\n    <dc:title xml:lang=\"en\">The Machine-to-Machine Measurement (M3) Ontology</dc:title>",
+         "dataid:sha256sum": "2b25744f16c9dfb3c812bf18a372f229967ff278108a56e0c0d8b122a7fe6d2a",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.17-072740",
+         "dct:issued": {
+            "@value": "2020-09-22T11:49:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-09-22T11:46:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "468023",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2020.07.17; 07:27:40\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"270502\",\n        \"e-tag\": \"\\\"i-iz6Q\\\"\",\n        \"lastModified\": \"\"\n    },\n    \"logs\": {\n        \"nir-header\": \"\",",
+         "dataid:sha256sum": "c4f3b0349f67fcabd3259a62d61be26373c6b03641f343e774f35d11b9a32e7b",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.17-072740",
+         "dct:issued": {
+            "@value": "2020-09-22T11:49:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-09-22T11:47:54Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1117",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://sensormeasurement.appspot.com/m3#WindDirectionSensor> ;",
+         "dataid:sha256sum": "73446438bd57b8ade431b20b6fe05d77dde9e07832773a6dd8e8f3fadbef5b8b",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.17-072740",
+         "dct:issued": {
+            "@value": "2020-09-22T11:49:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-09-22T11:46:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "219803",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://sensormeasurement.appspot.com/m3#> ;\n            sh:resultMessage \"No dct:license statement found\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "a86c931e725d61ed0d9d9da591c850adf710e2825997c7e83cec5dc13b62142d",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.17-072740",
+         "dct:issued": {
+            "@value": "2020-09-22T11:49:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-09-22T11:46:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "659",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/new-archivo-crawl/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=parsed.ttl\nStart loading\nFinished loading in 00:00:00.391\nInput size: Classes = 559, Properties = 57, Individuals = 311\nExpressivity: ALCH(D)\nStart consistency check\nFinished consistency check in 00:00:00.039\n\nTimer summary:",
+         "dataid:sha256sum": "7b711e28cc0e7cb2f42c88671a943352524f445aef3b8f8f224ab0df41aad8c3",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.17-072740",
+         "dct:issued": {
+            "@value": "2020-09-22T11:49:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-09-22T11:46:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "527",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/new-archivo-crawl/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=parsed.ttl\nStart loading\nFinished loading in 00:00:00.379\nInput size: Classes = 559, Properties = 57, Individuals = 311\nExpressivity: ALCH(D)\nStart consistency check\nFinished consistency check in 00:00:00.038\n\nTimer summary:",
+         "dataid:sha256sum": "5ec523fd86e3bc5096c40da4aa420730220aa03d86b61a9c8a8fef95a7166962",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.17-072740",
+         "dct:issued": {
+            "@value": "2020-09-22T11:49:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-09-22T11:46:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "527",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://sensormeasurement.appspot.com/m3#> ;\n            sh:resultMessage \"No license found at all (neither dct:license, xhv:license nor cc:license)\"@en ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:OrConstraintComponent ;",
+         "dataid:sha256sum": "df60407fa5648a506f402a2bc24be50c34efa34c9ce76e7f1ff00a3d5b838416",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.17-072740",
+         "dct:issued": {
+            "@value": "2020-09-22T11:49:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-09-22T11:46:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "676",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@base <http://sensormeasurement.appspot.com/m3> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix voaf: <http://purl.org/vocommons/voaf#> .\n@prefix saref-core: <https://saref.etsi.org/core/> .\n@prefix saref4envi: <https://saref.etsi.org/saref4envi#> .\n@prefix saref4agri: <https://saref.etsi.org/saref4agri/> .\n@prefix saref4health: <https://w3id.org/def/saref4health#> .\n@prefix saref4bldg: <https://saref.etsi.org/saref4bldg#> .\n@prefix saref4city: <https://w3id.org/def/saref4city#> .",
+         "dataid:sha256sum": "183de7fc11019b7cd59d4453f38b4c328b6d37686b9909de94ba35d643177a7b",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.17-072740",
+         "dct:issued": {
+            "@value": "2020-09-22T11:49:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-09-22T11:46:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "158299",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://sensormeasurement.appspot.com/m3#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://sensormeasurement.appspot.com/m3#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .\n<http://sensormeasurement.appspot.com/m3#> <http://purl.org/dc/elements/1.1/title> \"The Machine-to-Machine Measurement (M3) Ontology\"@en .\n<http://sensormeasurement.appspot.com/m3#> <http://purl.org/dc/elements/1.1/description> \"The Machine-to-Machine Measurement (M3) Ontology is a unified language, nomenclature, dictionnary which enables semantically annotating heterogeneous IoT data produced by heterogeneous devices measurements (sensors, RFID tags, etc.). We classify all devices, their measurements and the feature of interests (health, smart home, smart kitchen, environmental monitoring, etc.). By combining data from heterogeneous areas, we could propose new kinds of applications.\"@en .\n<mailto:amelie.gyrard@emse.fr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .\n<mailto:amelie.gyrard@emse.fr> <http://xmlns.com/foaf/0.1/name> \"Amelie Gyrard\" .\n<http://sensormeasurement.appspot.com/m3#> <http://purl.org/dc/elements/1.1/creator> <mailto:amelie.gyrard@emse.fr> .\n<http://sensormeasurement.appspot.com/m3#> <http://purl.org/dc/terms/modified> \"2020-06-17\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://sensormeasurement.appspot.com/m3#> <http://purl.org/dc/terms/issued> \"2013-02-21\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://sensormeasurement.appspot.com/m3#> <http://www.w3.org/2002/07/owl#versionInfo> \"2.7\"^^<http://www.w3.org/2001/XMLSchema#decimal> .",
+         "dataid:sha256sum": "feb44cde8f6da29a0c91f9c1226f85b7398a5dc706db7a719135e8606decb994",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.17-072740",
+         "dct:issued": {
+            "@value": "2020-09-22T11:49:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-09-22T11:46:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "486095",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=orig.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=orig.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<!DOCTYPE rdf:RDF [\n         <!ENTITY rdfs\t\"http://www.w3.org/2000/01/rdf-schema#\">\n         <!ENTITY ssnv2\t\"http://www.w3.org/ns/ssn/\">\n         <!ENTITY sosa\t\"http://www.w3.org/ns/sosa/\">\n         <!ENTITY owl   \"http://www.w3.org/2002/07/owl#\">\n         <!ENTITY dcterms \"http://purl.org/dc/terms/\">\n         <!ENTITY dc \"http://purl.org/dc/elements/1.1/\">\n         <!ENTITY dul \"http://www.loa-cnr.it/ontologies/DUL.owl#\">",
+         "dataid:sha256sum": "06d0661082bd2aa0b248c83477bee4f0fcb1d3c288f80caebf5a1877f1091355",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.17-072740",
+         "dct:issued": {
+            "@value": "2020-09-22T11:49:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-09-22T11:46:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "270503",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=orig.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.0.0.jar\n\n",
+         "dataid:sha256sum": "fcdd4ee978b74ae744e3205ebaee81c876347817db89cd283b1d71911a9e2047",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.17-072740",
+         "dct:issued": {
+            "@value": "2020-09-22T11:49:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-09-22T11:46:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740#m3_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - http://sensormeasurement.appspot.com/m3#hasValue -> http://www.w3.org/2002/07/owl#equivalentProperty -> http://purl.oclc.org/NET/ssnx/ssn#hasValue\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - http://sensormeasurement.appspot.com/m3#detects -> http://www.w3.org/2002/07/owl#equivalentProperty -> http://purl.oclc.org/NET/ssnx/ssn#detects\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - http://sensormeasurement.appspot.com/m3#observes -> http://www.w3.org/2002/07/owl#equivalentProperty -> http://purl.oclc.org/NET/ssnx/ssn#observes\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - http://sensormeasurement.appspot.com/m3#hasName -> http://www.w3.org/2002/07/owl#equivalentProperty -> http://purl.oclc.org/NET/ssnx/ssn#observedProperty\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - http://sensormeasurement.appspot.com/m3#produces -> http://www.w3.org/2002/07/owl#equivalentProperty -> https://saref.etsi.org/core/makesMeasurement",
+         "dataid:sha256sum": "df165279fde6034afa1930cc82402109816dcf6bc6e429663b8894a9e5403581",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.17-072740",
+         "dct:issued": {
+            "@value": "2020-09-22T11:49:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-09-22T11:46:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3881",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/sensormeasurement.appspot.com/m3/2020.07.17-072740/m3_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      }
+   ]
+}

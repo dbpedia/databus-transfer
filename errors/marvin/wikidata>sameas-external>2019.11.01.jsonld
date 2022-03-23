@@ -1,0 +1,116 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/wikidata/sameas-external/2019.11.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/sameas-external",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/sameas-external/2019.11.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/wikidata/sameas-external"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/wikidata"
+         },
+         "dataid:maintainer": {
+            "@id": "https://alismayilov.github.io/webid-ali.ttl#this"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/wikidata/sameas-external/2019.11.01"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software. After its releases, data is cleaned and persisted under the dbpedia account. Commit: ) External sameas"
+         },
+         "dct:hasVersion": "2019.11.01",
+         "dct:issued": {
+            "@value": "2019-11-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) SameAs External"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/wikidata/sameas-external/2019.11.01#sameas-external.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software. After its releases, data is cleaned and persisted under the dbpedia account. Commit: ) External sameas"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/sameas-external/2019.11.01#sameas-external.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/sameas-external/2019.11.01/sameas-external.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "9597872",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2019-11-12T09:02:24Z\n<http://wikidata.dbpedia.org/resource/Q18> <http://www.w3.org/2002/07/owl#sameAs> <http://sws.geonames.org/6255150/> .\n<http://wikidata.dbpedia.org/resource/Q18> <http://www.w3.org/2002/07/owl#sameAs> <http://id.ndl.go.jp/auth/ndla/00567659> .\n<http://wikidata.dbpedia.org/resource/Q18> <http://www.w3.org/2002/07/owl#sameAs> <http://d-nb.info/gnd/4078014-4/about/rdf> .\n<http://wikidata.dbpedia.org/resource/Q18> <http://www.w3.org/2002/07/owl#sameAs> <http://freebase.com//m/06n3y> .\n<http://wikidata.dbpedia.org/resource/Q18> <http://www.w3.org/2002/07/owl#sameAs> <http://id.loc.gov/authorities/names/sh85125524> .\n<http://wikidata.dbpedia.org/resource/Q18> <http://www.w3.org/2002/07/owl#sameAs> <http://viaf.org/viaf/170506329> .\n<http://wikidata.dbpedia.org/resource/Q15> <http://www.w3.org/2002/07/owl#sameAs> <http://id.ndl.go.jp/auth/ndla/00560082> .\n<http://wikidata.dbpedia.org/resource/Q15> <http://www.w3.org/2002/07/owl#sameAs> <http://sws.geonames.org/6255146/> .\n<http://wikidata.dbpedia.org/resource/Q15> <http://www.w3.org/2002/07/owl#sameAs> <http://d-nb.info/gnd/4000695-5/about/rdf> .",
+         "dataid:sha256sum": "7fa7970e3fb78c20ed8cecc3d9995fb9ef35abb52a2a13c4507a25c172cec63c",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "1230217188",
+            "@type": "xsd:decimal"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.11.01",
+         "dct:issued": {
+            "@value": "2019-11-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-11-21T14:40:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "71469601",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/release/wikidata/sameas-external/2019.11.01/sameas-external.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

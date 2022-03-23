@@ -1,0 +1,668 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/w3id.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "<p>The BCI ontology specifies a foundational metadata model set for real-world multimodal Brain-Computer Interaction (BCI) data capture activities.<br />Its structure depicts a conceptual framework that BCI applications can extend and use in their implementations, to define core concepts that capture a relevant and interoperable metadata vocabulary.</p>  <p>This ontology is aligned to the Semantic Sensor Network Ontology (SSN): a domain-independent and end-to-end model for sensor/actuator applications. <br />Hence, its structure has been normalized to assist its use in conjunction with other ontologies or linked data resources to specify any particular definitions (such as units of measurement, time and time series, and location and mobility), that specialized applications in the BCI domain might need.</p>  <p>Also, this spec provides general alignment data modeling guidelines for core concepts, to help BCI applications in their design.</p>"
+         },
+         "dct:hasVersion": "2020.06.10-220146",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Brain-Computer Interaction (BCI) Ontology"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=orig.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=OOPS.rdf"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=parsed.owl"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "<p>The BCI ontology specifies a foundational metadata model set for real-world multimodal Brain-Computer Interaction (BCI) data capture activities.<br />Its structure depicts a conceptual framework that BCI applications can extend and use in their implementations, to define core concepts that capture a relevant and interoperable metadata vocabulary.</p>  <p>This ontology is aligned to the Semantic Sensor Network Ontology (SSN): a domain-independent and end-to-end model for sensor/actuator applications. <br />Hence, its structure has been normalized to assist its use in conjunction with other ontologies or linked data resources to specify any particular definitions (such as units of measurement, time and time series, and location and mobility), that specialized applications in the BCI domain might need.</p>  <p>Also, this spec provides general alignment data modeling guidelines for core concepts, to help BCI applications in their design.</p>"
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.AbstractState - Notice: root element does not have an xml:base. Relative IRIs will be resolved against http://www.w3.org/ns/sosa/sampling\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl",
+         "dataid:sha256sum": "33ef5414d5fa78a2e745e9e7a46d9012044ce670c21dd56a31d2e54908d93543",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220146",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:40:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "13521",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.0.0.jar\n\n",
+         "dataid:sha256sum": "fcdd4ee978b74ae744e3205ebaee81c876347817db89cd283b1d71911a9e2047",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220146",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:40:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://w3id.org/BCI-ontology> ;\n            sh:resultMessage \"No dct:license statement found\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "631ac49d906ddac5948cd701d9d0101fa754cb47613d90cdc6f6228dc9584466",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220146",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:40:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "648",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=orig.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=orig.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix : <https://w3id.org/BCI-ontology#> .\n@prefix cc: <http://creativecommons.org/ns#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix DUL: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .\n@prefix bci: <https://w3id.org/BCI-ontology#> .\n@prefix dbp: <http://dbpedia.org/ontology/> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix san: <https://www.irit.fr/recherches/MELODI/ontologies/SAN#> .",
+         "dataid:sha256sum": "7b550ecf3d53911677e49e9831ffe47920925ebfe537b2c68dd36480262662f3",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220146",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:39:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "489053",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=orig.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=OOPS.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=OOPS.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<rdf:RDF\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\nxmlns:oops=\"http://www.oeg-upm.net/oops#\" > \n<rdf:Description rdf:about=\"http://www.oeg-upm.net/oops/unexpected_error\">\n    <oops:hasTitle rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">OOPS! something went wrong.</oops:hasTitle>\n    <oops:hasMessage rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">There was an unexpected error.</oops:hasMessage>\n    <rdf:type rdf:resource=\"http://www.oeg-upm.net/oops#response\"/>\n</rdf:Description>\n</rdf:RDF>\n",
+         "dataid:sha256sum": "fee85825301371342ac23871a7d98e8b6ab4722b9eb9cb3eb57550f59bc37678",
+         "dataid-cv:type": "OOPS",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220146",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:39:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "527",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=OOPS.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<https://w3id.org/BCI-ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<https://w3id.org/BCI-ontology> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/ssn/dul> .\n<https://w3id.org/BCI-ontology> <http://www.w3.org/2002/07/owl#imports> <https://www.irit.fr/recherches/MELODI/ontologies/SAN> .\n<https://w3id.org/BCI-ontology> <http://purl.org/dc/terms/identifier> \"https://w3id.org/BCI-ontology#\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://w3id.org/BCI-ontology> <http://purl.org/dc/terms/references> \"<ul>\\n<li>[<strong>Compton2009</strong>] Compton, M.; Neuhaus, H.; Taylor K. and Tran, K. <em>Reasoning about Sensors and Compositions</em>. In Proceedings of the 2nd International Workshop on Semantic Sensor Networks (<a title=\\\"International Workshop on Semantic Sensor Networks 2009\\\" href=\\\"http://ceur-ws.org/Vol-522/\\\" target=\\\"_blank\\\">SSN 09</a>) at ISWC 2009, pp. 33-48, 2009. URL=<a title=\\\"Reasoning about Sensors and Compositions\\\" href=\\\"http://ceur-ws.org/Vol-522/p7.pdf\\\" target=\\\"_blank\\\">http://ceur-ws.org/Vol-522/p7.pdf</a>.</li>\\n<li>[<strong>ESS</strong>] SCCN, \\\"<em>EEG Study Schema</em> (ESS)\\\". Resources: [<a title=\\\"ESS@SCCN\\\" href=\\\"http://sccn.ucsd.edu/wiki/ESS\\\" target=\\\"_blank\\\"><strong>ESS@SCCN</strong></a>], [<a title=\\\"ESS v2.0\\\" href=\\\"http://www.eegstudy.org/\\\" target=\\\"_blank\\\"><strong>ESS v2.0</strong></a>].</li>\\n<li>[<strong>HED</strong>] N. Bigdely-Shamlo, K. Kreutz-Delgado, M. Miyakoshi, M. Westerfield, T. Bel-Bahar, C. Kothe and K. Robbins, \\\"<em>Hierarchical event descriptor (HED) tags for analysis of event-related EEG studies</em>\\\". Resources: [<a title=\\\"HED@SCCN\\\" href=\\\"http://sccn.ucsd.edu/wiki/HED\\\" target=\\\"_blank\\\"><strong>HED@SCCN</strong></a>], [<a title=\\\"HED v2.0\\\" href=\\\"http://www.hedtags.org/\\\" target=\\\"_blank\\\"><strong>HED v2.0</strong></a>].</li>\\n<li>[<strong>OWL-Time</strong>] OGC &amp; W3C, \\\"<em>Time Ontology in OWL (W3C Recommendation 19 October 2017)</em>\\\", <a title=\\\"Time Ontology in OWL\\\" href=\\\"https://www.w3.org/TR/owl-time/\\\" target=\\\"_blank\\\">https://www.w3.org/TR/owl-time/</a></li>\\n<li>[<strong>Seydoux2016</strong>] Seydoux, Nicolas; Drira, Khalil; Hernandez, Nathalie; Monteil, Thierry. <em>IoT-O, a Core-Domain IoT Ontology to Represent Connected Devices Networks</em>. 20th International Conference on Knowledge Engineering and Knowledge Management - Volume 10024 (EKAW 2016). Bologna, Italy. 2016. Pp. 561-576. DOI=<a href=\\\"http://dx.doi.org/10.1007/978-3-319-49004-5_36\\\" target=\\\"_blank\\\">http://dx.doi.org/10.1007/978-3-319-49004-5_36</a>. URL=<a title=\\\"IoT-O, a Core-Domain IoT Ontology to Represent Connected Devices Networks\\\" href=\\\"https://dl.acm.org/citation.cfm?id=3092997\\\" target=\\\"_blank\\\">https://dl.acm.org/citation.cfm?id=3092997</a>.<br />\\nSee also:\\n<ul><li>\\n[<strong>SAN</strong>] The \\\"<em>Semantic Actuator Network (SAN)</em>\\\" ontology.&nbsp;<a title=\\\"Semantic Actuator Network ontology\\\" href=\\\"http://lov.okfn.org/dataset/lov/vocabs/SAN\\\" target=\\\"_blank\\\">http://lov.okfn.org/dataset/lov/vocabs/SAN</a>.</li>\\n<li>[<strong>AAE</strong>] The \\\"<em>Actuation-Actuator-Effect (AAE)</em>\\\" design pattern.&nbsp;<a title=\\\"Actuation-Actuator-Effect (AAE) design pattern\\\" href=\\\"http://ontologydesignpatterns.org/wiki/Submissions:Actuation-Actuator-Effect\\\" target=\\\"_blank\\\">http://ontologydesignpatterns.org/wiki/Submissions:Actuation-Actuator-Effect</a>.</li>\\n</ul></li>\\n<li>[<strong>Shafer2001</strong>] Shafer, Steven A. N.; Brumitt, Barry; Cadiz, J. J. <em>Interaction Issues in Context-aware Intelligent Environments</em>. Human-Computer Interaction. Volumen 16, Issue 2 (December 2001), Pp. 363-378. DOI=<a href=\\\"http://dx.doi.org/10.1207/S15327051HCI16234_16\\\" target=\\\"_blank\\\">http://dx.doi.org/10.1207/S15327051HCI16234_16</a>. URL=<a title=\\\"Interaction Issues in Context-aware Intelligent Environments\\\" href=\\\"http://dl.acm.org/citation.cfm?id=1463124\\\" target=\\\"_blank\\\">http://dl.acm.org/citation.cfm?id=1463124</a>.</li>\\n<li>[<strong>SSN</strong>] OGC &amp; W3C, \\\"<em>Semantic Sensor Network (W3C Recommendation 19 October 2017)</em>\\\", <a title=\\\"Semantic Sensor Network\\\" href=\\\"https://www.w3.org/TR/vocab-ssn/\\\" target=\\\"_blank\\\">https://www.w3.org/TR/vocab-ssn/</a>.<br />W3C Spatial Data on the Web Working Group, \\\"<em>W3C Spatial Data on the Web Working Group</em>\\\", <a title=\\\"W3C Spatial Data on the Web Working Group\\\" href=\\\"https://www.w3.org/2015/spatial/wiki/Main_Page\\\" target=\\\"_blank\\\">https://www.w3.org/2015/spatial/wiki/Main_Page</a>.</li>\\n<li>[<strong>oldSSN</strong>] W3C, \\\"<em>Semantic Sensor Network (SSN) Ontology</em>\\\", <a title=\\\"Semantic Sensor Network (SSN) Ontology\\\" href=\\\"http://www.w3.org/2005/Incubator/ssn/ssnx/ssn.html\\\" target=\\\"_blank\\\">http://www.w3.org/2005/Incubator/ssn/ssnx/ssn.html</a>.<br />W3C Semantic Sensor Network Incubator Group, \\\"<em>Semantic Sensor Network XG Final Report</em>\\\", <a title=\\\"Semantic Sensor Network XG Final Report\\\" href=\\\"http://www.w3.org/2005/Incubator/ssn/XGR-ssn-20110628/\\\" target=\\\"_blank\\\">http://www.w3.org/2005/Incubator/ssn/XGR-ssn-20110628/</a>.</li>\\n<li>[<strong>Unity</strong>] Unity Gaming Platform (<a title=\\\"Unity Gaming Platform\\\" href=\\\"http://unity3d.com/\\\" target=\\\"_blank\\\">http://unity3d.com/</a>), Unity's Gaming Modeling Architecture Manual <a title=\\\"Unity's Gaming Modeling Architecture Manual\\\" href=\\\"http://docs.unity3d.com/Manual/index.html\\\" target=\\\"_blank\\\">http://docs.unity3d.com/Manual/index.html</a></li>\\n<li>[<strong>XDF</strong>] C. Kothe and C. Brunner, \\\"XDF (<em>Extensible Data Format</em>)\\\", <a title=\\\"XDF (Extensible Data Format)\\\" href=\\\"https://code.google.com/p/xdf/\\\" target=\\\"_blank\\\">https://code.google.com/p/xdf/</a></li>\\n</ul>\"@en .\n<https://w3id.org/BCI-ontology> <http://xmlns.com/foaf/0.1/homepage> \"https://w3id.org/BCI-ontology#\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://w3id.org/BCI-ontology> <http://www.w3.org/2004/02/skos/core#editorialNote> \"<h3 id=\\\"1_MAPPINGS-TO-SOSA-SSN\\\">Mappings to SOSA/SSN</h3>\\n<dd>\\n<p>At the beginning, the BCI ontology was developed following closely its alignment to the [<strong>oldSSN</strong>] spec. By mid-July 2017, as the new version of SSN released by W3C ([<strong>SSN</strong>]) had reached the Candidate Recommendation <a title=\\\"Semantic Sensor Network Ontology | W3C Candidate Recommendation (11 July 2017)\\\" href=\\\"https://www.w3.org/TR/2017/CR-vocab-ssn-20170711/\\\" target=\\\"_blank\\\">status</a>, the core concepts were \\\"remapped\\\" to the new SOSA/SSN definitions based on its <a title=\\\"Semantic Sensor Network Ontology | W3C Recommendation (19 October 2017): (6) Vertical Segmentation &raquo; (6.2) SSNX Alignment Module\\\" href=\\\"https://www.w3.org/TR/vocab-ssn/#SSNX_Alignment\\\" target=\\\"_blank\\\">SSNX Vertical Alignment</a>:</p>\\n<table style=\\\"height: 287px;\\\">\\n<tbody>\\n<tr><th style=\\\"text-align: center;\\\" width=\\\"100\\\"><strong>bci</strong></th><th style=\\\"text-align: center;\\\" width=\\\"60\\\"><strong>(<em>mapping</em>)</strong></th><th style=\\\"text-align: center;\\\" width=\\\"160\\\"><strong>Initial mapping: oldssn</strong></th><th style=\\\"text-align: center;\\\" width=\\\"170\\\"><strong>New mapping: SOSA/SSN</strong></th><th style=\\\"text-align: center;\\\" width=\\\"335\\\"><strong>SSNX &#38; BCI-O Remarks</strong></th></tr>\\n<tr><th style=\\\"text-align: center;\\\" colspan=\\\"5\\\"><em>Classes</em></th></tr>\\n<tr>\\n<td>bci:Aspect</td>\\n<td style=\\\"background-color: red;\\\"><span style=\\\"color: #ffff00;\\\">&sqsube;</span></td>\\n<td>oldssn:FeatureOfInterest</td>\\n<td>sosa:FeatureOfInterest</td>\\n<td>&equiv; (distinction between observation and actuation targets)</td>\\n</tr>\\n<tr>\\n<td>bci:Modality</td>\\n<td style=\\\"background-color: red;\\\"><span style=\\\"color: #ffff00;\\\">&sqsube;</span></td>\\n<td>oldssn:Property</td>\\n<td>sosa:ObservableProperty</td>\\n<td>(oldssn:Property &equiv; ssn:Property);<br />(sosa:ObservableProperty &sqsube; ssn:Property)</td>\\n</tr>\\n<tr>\\n<td>bci:StimulusEvent</td>\\n<td>&sqsube;</td>\\n<td>oldssn:Stimulus</td>\\n<td>ssn:Stimulus</td>\\n<td>&equiv;</td>\\n</tr>\\n<tr>\\n<td>bci:Device</td>\\n<td style=\\\"background-color: red;\\\"><span style=\\\"color: #ffff00;\\\">&sqsube;</span></td>\\n<td>oldssn:SensingDevice</td>\\n<td>sosa:Sensor</td>\\n<td>(sosa:Sensor &equiv; oldssn:Sensor); <br />(<span style=\\\"color: red;\\\">oldssn:SensingDevice &sqsube; </span>oldssn:Sensor)</td>\\n</tr>\\n<tr>\\n<td>bci:Record</td>\\n<td style=\\\"background-color: red;\\\"><span style=\\\"color: #ffff00;\\\">&sqsube;</span></td>\\n<td>oldssn:Observation</td>\\n<td>sosa:Observation</td>\\n<td>oldssn:Observation: combination of oldssn axiomatic statements.</td>\\n</tr>\\n<tr>\\n<td>bci:RecordedData</td>\\n<td style=\\\"background-color: red;\\\"><span style=\\\"color: #ffff00;\\\">&sqsube;</span></td>\\n<td>oldssn:SensorOutput</td>\\n<td>sosa:Result</td>\\n<td>(<span style=\\\"color: red;\\\">oldssn:SensorOutput &sqsube; </span>sosa:Result) <br />and (combination of oldssn axiomatic statements);\\n<br />(alignment to sosa:Result)</td>\\n</tr>\\n<tr>\\n<td>bci:DataBlock</td>\\n<td style=\\\"background-color: red;\\\"><span style=\\\"color: #ffff00;\\\">&sqsube;</span></td>\\n<td>oldssn:ObservationValue</td>\\n<td>sosa:Result</td>\\n<td>(<span style=\\\"color: red;\\\">oldssn:ObservationValue &sqsube; </span>sosa:Result)\\n<br />and (combination of oldssn axiomatic statements);\\n<br />(<span style=\\\"color: red;\\\">alignment removed</span>)</td>\\n</tr>\\n<tr>\\n<td>bci:Channel</td>\\n<td style=\\\"background-color: red;\\\"><span style=\\\"color: #ffff00;\\\">&sqsube;</span></td>\\n<td>oldssn:MeasurementCapability</td>\\n<td>ssn-system:SystemCapability</td>\\n<td>(oldssn:MeasurementCapability <br />&nbsp;&nbsp;&nbsp;&sqsube; ssn-system:SystemCapability) <br />and (combination of oldssn axiomatic statements)</td>\\n</tr>\\n<tr>\\n<td>bci:NonChannel</td>\\n<td style=\\\"background-color: red;\\\"><span style=\\\"color: #ffff00;\\\">&sqsube;</span></td>\\n<td>oldssn:MeasurementCapability</td>\\n<td>ssn-system:SystemCapability</td>\\n<td>(oldssn:MeasurementCapability <br />&nbsp;&nbsp;&nbsp;&sqsube; ssn-system:SystemCapability) <br />and (combination of oldssn axiomatic statements)</td>\\n</tr>\\n<tr>\\n<td>bci:SamplingRate</td>\\n<td>&sqsube;</td>\\n<td>oldssn:Frequency</td>\\n<td>ssn-system:Frequency</td>\\n<td>(oldssn:Frequency &sqsube; ssn-system:Frequency)</td>\\n</tr>\\n<tr>\\n<td>bci:DeviceSpec</td>\\n<td>&sqsube;</td>\\n<td>oldssn:SensorDataSheet</td>\\n<td>&nbsp;</td>\\n<td>unchanged</td>\\n</tr>\\n<tr>\\n<td>bci:Actuation</td>\\n<td>&sqsube;</td>\\n<td>&nbsp;</td>\\n<td>sosa:Actuation</td>\\n<td>new</td>\\n</tr>\\n<tr>\\n<td>bci:Actuator</td>\\n<td>&sqsube;</td>\\n<td>&nbsp;</td>\\n<td>sosa:Actuator</td>\\n<td>new</td>\\n</tr>\\n<tr>\\n<td>bci:ImpactedProperty</td>\\n<td>&sqsube;</td>\\n<td>&nbsp;</td>\\n<td>sosa:ActuatableProperty</td>\\n<td>new</td>\\n</tr>\\n<tr>\\n<td>bci:ActuationResult</td>\\n<td>&sqsube;</td>\\n<td>&nbsp;</td>\\n<td>sosa:Result</td>\\n<td>new</td>\\n</tr>\\n<tr>\\n<td>bci:ActuationTarget</td>\\n<td>&sqsube;</td>\\n<td>&nbsp;</td>\\n<td>sosa:FeatureOfInterest</td>\\n<td>new</td>\\n</tr>\\n<tr><th style=\\\"text-align: center;\\\" colspan=\\\"5\\\"><em>Object Properties</em></th></tr>\\n<tr>\\n<td>bci:hasModality</td>\\n<td>&sqsube;</td>\\n<td>oldssn:hasProperty</td>\\n<td>ssn:hasProperty</td>\\n<td>&equiv;</td>\\n</tr>\\n<tr>\\n<td>bci:isModalityOf</td>\\n<td>&sqsube;</td>\\n<td>oldssn:isPropertyOf</td>\\n<td>ssn:isPropertyOf</td>\\n<td>&equiv;</td>\\n</tr>\\n<tr>\\n<td>bci:aspectOfInterest</td>\\n<td>&sqsube;</td>\\n<td>oldssn:featureOfInterest</td>\\n<td>sosa:hasFeatureOfInterest</td>\\n<td>&equiv;</td>\\n</tr>\\n<tr>\\n<td>bci:madeRecord</td>\\n<td>&sqsube;</td>\\n<td>oldssn:madeObservation</td>\\n<td>sosa:madeObservation</td>\\n<td>&equiv;</td>\\n</tr>\\n<tr>\\n<td>bci:observedByDevice</td>\\n<td>&sqsube;</td>\\n<td>oldssn:observedBy</td>\\n<td>sosa:madeBySensor</td>\\n<td>&equiv;</td>\\n</tr>\\n<tr>\\n<td>bci:observedModality</td>\\n<td>&sqsube;</td>\\n<td>oldssn:observedProperty</td>\\n<td>sosa:observedProperty</td>\\n<td>&equiv;</td>\\n</tr>\\n<tr>\\n<td>bci:detects</td>\\n<td>&sqsube;</td>\\n<td>oldssn:detects</td>\\n<td>ssn:detects</td>\\n<td>&equiv;</td>\\n</tr>\\n<tr>\\n<td>bci:isProxyFor</td>\\n<td>&sqsube;</td>\\n<td>oldssn:isProxyFor</td>\\n<td>ssn:isProxyFor</td>\\n<td>&equiv;</td>\\n</tr>\\n<tr>\\n<td>bci:hasValue</td>\\n<td style=\\\"background-color: red;\\\"><span style=\\\"color: #ffff00;\\\">&sqsube;</span></td>\\n<td>oldssn:hasValue</td>\\n<td>sosa:hasResult</td>\\n<td>&equiv; (<span style=\\\"color: red;\\\">deprecated</span> to simplify the model)</td>\\n</tr>\\n<tr>\\n<td>bci:isProducedByDevice</td>\\n<td style=\\\"background-color: red;\\\"><span style=\\\"color: #ffff00;\\\">&sqsube;</span></td>\\n<td>oldssn:isProducedBy</td>\\n<td>&nbsp;</td>\\n<td>not defined in SOSA/SSN; <span style=\\\"color: red;\\\">deprecated</span>.<br />\\ndefined as the following role inclusion axiom:<br />\\n(bci:isObservationResultOf &sqsube; sosa:isResultOf) &compfn;<br />\\n(bci:observedByDevice &sqsube; sosa:madeBySensor) &SubsetEqual;<br />\\n(bci:isProducedByDevice)</td>\\n</tr>\\n<tr>\\n<td>bci:observationResult</td>\\n<td>&sqsube;</td>\\n<td>oldssn:observationResult</td>\\n<td>sosa:hasResult</td>\\n<td>&equiv;</td>\\n</tr>\\n<tr>\\n<td>bci:forModality</td>\\n<td>&sqsube;</td>\\n<td>oldssn:forProperty</td>\\n<td>ssn:forProperty</td>\\n<td>&equiv;</td>\\n</tr>\\n<tr>\\n<td>bci:hasNonChannelData</td>\\n<td>&sqsube;</td>\\n<td>oldssn:hasMeasurementCapability</td>\\n<td>ssn-system:hasSystemCapability</td>\\n<td>oldssn:hasMeasurementCapability <br />&nbsp;&nbsp;&nbsp;&sqsube; ssn-system:hasSystemCapability</td>\\n</tr>\\n<tr>\\n<td>bci:observes</td>\\n<td>&sqsube;</td>\\n<td>oldssn:observes</td>\\n<td>sosa:observes</td>\\n<td>&equiv; in combination with the property-chain axioms</td>\\n</tr>\\n<tr>\\n<td>bci:ofAspect</td>\\n<td style=\\\"background-color: red;\\\"><span style=\\\"color: #ffff00;\\\">&sqsube;</span></td>\\n<td>oldssn:ofFeature</td>\\n<td>&nbsp;</td>\\n<td>not defined in SOSA/SSN; <span style=\\\"color: red;\\\">deprecated</span>.</td>\\n</tr>\\n<tr>\\n<td>bci:includesEvent</td>\\n<td style=\\\"background-color: red;\\\"><span style=\\\"color: #ffff00;\\\">&sqsube;</span></td>\\n<td>DUL:includesEvent</td>\\n<td>&nbsp;</td>\\n<td>not used in SOSA/SSN; <span style=\\\"color: red;\\\">deprecated</span>.<br />\\nA new property has been defined: ssn:wasOriginatedBy</td>\\n</tr>\\n</tbody>\\n</table>\\n<br />\\n<p>Symbolic notation:</p>\\n<table style=\\\"height: 51px;\\\">\\n<tbody>\\n<tr>\\n<td width=\\\"315\\\">aligned to (subclass or sub-property of)</td>\\n<td width=\\\"15\\\"><strong>&sqsube;</strong></td>\\n</tr>\\n<tr>\\n<td>equivalent concepts</td>\\n<td><strong>&equiv;</strong></td>\\n</tr>\\n<tr>\\n<td>the new mapping implies a conceptual update</td>\\n<td style=\\\"background-color: red;\\\"><span style=\\\"color: #ffff00;\\\">&sqsube;</span></td>\\n</tr>\\n</tbody>\\n</table>\\n<br />\\n<p>\\nAs for January 2018, due that all alignments were updated to SOSA/SSN core classes, the new mappings are based now on the <a title=\\\"Semantic Sensor Network Ontology | W3C Recommendation (19 October 2017): (6) Vertical Segmentation &raquo; (6.1) Dolce-Ultralite Alignment Module\\\" href=\\\"https://www.w3.org/TR/vocab-ssn/#DUL_Alignment\\\" target=\\\"_blank\\\">Dolce-Ultralite Alignment Module</a>&nbsp;of the Vertical Segmentation of [<strong>SSN</strong>]. Thus, the BCI ontology imports the <a title=\\\"ssn-dul\\\" href=\\\"http://www.w3.org/ns/ssn/dul\\\" target=\\\"_blank\\\">ssn-dul definitions</a>.</p>\\n<p>As one of the ontologies (\\\"<a title=\\\"OGC &#38; W3C, On the usage of the SSN ontology (W3C Document): (3) Usage in ontologies (Producers)\\\" href=\\\"https://w3c.github.io/sdw/ssn-usage/#usage-ontologies\\\" target=\\\"_blank\\\">concept producers</a>\\\") that reuse SSN, BCI-O was selected as part of the analysis <a title=\\\"OGC &#38; W3C, On the usage of the SSN ontology (W3C Document)\\\" href=\\\"https://w3c.github.io/sdw/ssn-usage/\\\" target=\\\"_blank\\\">on the usage of SSN</a>.\\n</p></dd>\"@en .\n<https://w3id.org/BCI-ontology> <http://purl.org/dc/terms/modified> \"2018-06-07T23:54:36\"@en .\n<https://w3id.org/BCI-ontology> <http://purl.org/dc/terms/issued> \"2014-03-27\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<https://w3id.org/BCI-ontology> <http://www.w3.org/2004/02/skos/core#example> \"<h3 id=\\\"Actuation-Use-Case\\\">Actuation: Automated Wheelchair</h3>\\n<dd>\\n<p>The following use case presents an example that depicts how to define related BCI-O actuation concepts.</p>\\n<p><span style=\\\"text-decoration: underline;\\\"><strong>Wheelchair driving scenario</strong></span>:</p>\\n<ul>\\n<li><em>Purpose</em>:&nbsp;use an actuator capable to control a wheelchair based on the input&nbsp;from a BCI/EEG record (obtained directly from the subject's head).</li>\\n<li><em>Description</em>: Alice is driving a wheelchair throughout a human interface composed of three major components:</li>\\n</ul>\\n<ol>\\n<li>An EEG sensor capable of reading brain signals.</li>\\n<li>A computing system capable to process and analyze (classify) the brain signals collected from the EEG sensor.</li>\\n<li>An actuator capable to control the wheelchair's movement (such as direction and acceleration) based on the input from (2).</li>\\n</ol>\\n<p>The actuator is a device that works in the following way:</p>\\n<ul>\\n<li>The processed brain signals issue specific movement commands to the actuator, such as:\\n<ul>\\n<li>Command: \\\"slow down\\\" with:\\n<ol style=\\\"list-style-type: lower-alpha;\\\">\\n<li>Direction: go forward (no change in the direction).</li>\\n<li>Acceleration: -10.5 cm/s2 (change in the speed).</li>\\n</ol>\\n</li>\\n</ul>\\n</li>\\n<li>The actuator mechanism:\\n<ul>\\n<li>Implements the procedure (actuation) to control the wheelchair.</li>\\n<li>It triggers a series of steps aimed to change the wheelchair's state: to decelerate its wheels.</li>\\n</ul>\\n</li>\\n</ul>\\n<p>The modeled BCI-O concepts involved in this scenario, excluding those from the observation component (except for EEG-Record and EEG-Device), are listed below:</p>\\n<ul style=\\\"list-style-type: square;\\\">\\n<li>Subject (x1): \\\"Alice\\\"</li>\\n<li>Session (x1): \\\"a situation where the observation (EEG recording) and actuation happened\\\"</li>\\n<li>Activity (x1): \\\"controlling the automated wheelchair\\\"</li>\\n<li>Context (x1): \\\"at home\\\"</li>\\n<li>Context.Scene (x1): \\\"specific indoors situation\\\"</li>\\n<li>EegRecord (x1): \\\"observation of the EEG record that serves as the input of the actuations\\\"</li>\\n<li>EegDevice (x1): \\\"EEG device that made the EEG recordings\\\"</li>\\n<li>Command (x1): \\\"slow down : (EEG record) --&gt; actuators\\\"</li>\\n<li>Actuator (x2): \\\"the devices that peform the actuations\\\"</li>\\n<li>Actuation (x2): \\\"the procedures that change the state of the wheels via actuators\\\"</li>\\n<li>ImpactedProperty (x2): \\\"the speed of the wheels (their state)\\\"</li>\\n<li>ActuationEvent (x2): \\\"reduce the speed of wheels\\\".</li>\\n<li>ActuationResult (x2): \\\"slowing down\\\" (\\\"the effect of decelerating the wheels\\\").</li>\\n<li>ActuationTarget (x2): \\\"rear wheels\\\" (x2).</li>\\n<li>Context.Object (composite) (x1): \\\"wheelchair\\\".</li>\\n<li>Context.Method (x1): \\\"deacceleration of a wheel\\\".</li>\\n</ul>\\n<DCMIType-StillImage>05-UserCase-Actuation.jpg</DCMIType-StillImage>\\n<br />\\n<p>An RDF file containing a <a title=\\\"Turtle representation of the RDF graph\\\" href=\\\"../BCI-O_Actuation-Automated-Wheelchair.ttl\\\" target=\\\"_blank\\\">graph corresponding to this example is available</a>.</p>\\n\\n<div class=\\\"example\\\">\\n<div class=\\\"example-title marker\\\"><span>Actuation: Automated Wheelchair</span></div>\\n<pre class=\\\"hljs xml\\\" aria-busy=\\\"false\\\" aria-live=\\\"polite\\\">\\n@prefix : &lt;http://example.org/data/&gt; .\\n@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .\\n@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .\\n@prefix schema: &lt;http://schema.org/&gt;.\\n@prefix time: &lt;http://www.w3.org/2006/time#&gt;.\\n@prefix sosa: &lt;http://www.w3.org/ns/sosa/&gt; .\\n@prefix ssn:  &lt;http://www.w3.org/ns/ssn/&gt; .\\n@prefix bci:  &lt;https://w3id.org/BCI-ontology#&gt; .\\n@prefix xsd:  &lt;http://www.w3.org/2001/XMLSchema#&gt; .\\n@prefix qudt-1-1: &lt;http://qudt.org/1.1/schema/qudt#&gt; .\\n@prefix qudt-unit-1-1: &lt;http://qudt.org/1.1/vocab/unit#&gt; .\\n@base &lt;http://example.org/data/&gt; .\\n\\n\\n# Alice performs a \\\"controlling-wheelchair\\\" activity \\\"at home\\\" (scene labeled as: \\\"indoors-X3\\\" #4).\\n# The context scene indoors-X3 #4 has the wheelchair as part of its structure composition.\\n\\n&lt;Alice&gt; rdf:type bci:Subject .\\n\\n&lt;controlling-wheelchair&gt; rdf:type bci:Activity .\\n\\n&lt;context/at-home/6&gt; rdf:type bci:Context ;\\n  bci:hasScene &lt;scene/indoors-X3/4&gt; .\\n\\n&lt;scene/indoors-X3/4&gt; rdf:type bci:Context.Scene ;\\n  bci:hasObject &lt;wheelchair&gt; .\\n\\n\\n# The wheelchair has a left-rear-wheel (#47) and a right-rear-wheel (#39), which are the actuations targets.\\n# All of them are context objects.\\n\\n&lt;wheelchair&gt; rdf:type bci:Context.Object ;\\n  bci:hasObject &lt;left-rear-wheel/47&gt; ; # bci:ActuationTarget defined below\\n  bci:hasObject &lt;right-rear-wheel/39&gt; . # bci:ActuationTarget defined below\\n\\n\\n# The session is titled \\\"an actuation example\\\".\\n# The session observes an EEG-Record and covers 2 actuations (one for each rear wheel).\\n\\n&lt;session/91&gt; rdf:type bci:Session ;\\n\\tbci:hasTitle \\\"an actuation example\\\" ;\\n\\tbci:isSessionOf &lt;Alice&gt;, &lt;context/at-home/6&gt; ;\\n\\tbci:hasActivity &lt;controlling-wheelchair&gt; ;\\n\\tbci:hasRecord &lt;EegRecord/46&gt; ;\\n\\tbci:hasActuation &lt;actuation/62&gt;, &lt;actuation/63&gt; .\\n\\n\\n# Alice's EEG-Record is observed by EEG-device ctnp-A128 #5.\\n# This is the input for the command to \\\"slow down\\\" #11 that initiates the execution of the actuators.\\n# All the details about the recordings' data and results are not shown in this graph.\\n\\n&lt;EegRecord/46&gt; rdf:type bci:EegRecord ;\\n\\tbci:observedByDevice &lt;ctnp-A128/5&gt; ;\\n\\tbci:isInputFor &lt;cmd/slowDown/11&gt; .\\n\\n\\n# EegDevice ctnp-A128 #5 observes the EEG recordings of Alice.\\n\\n&lt;ctnp-A128/5&gt; rdf:type bci:EegDevice ;\\n  bci:madeRecord &lt;EegRecord/46&gt; .\\n\\n\\n# The SlowDown command defines two associated values:\\n# - direction: in this scenario, its value is \\\"forward\\\" (implies no change in this state's axis).\\n# - acceleration: in this scenario, its value is -10.5 cm/s2 (implies a change in this state's axis).\\n# The SlowDown command #11 gives to the actuators servo4WC-ABC #1 and #2, their entry point for execution,\\n# based on the input received from the EEG recordings #46.\\n\\n:SlowDown rdfs:subClassOf bci:Command .\\n\\n:direction a owl:ObjectProperty ;\\n    schema:domainIncludes :SlowDown ;\\n    schema:rangeIncludes rdfs:Literal .\\n\\n:acceleration a owl:ObjectProperty ;\\n    schema:domainIncludes :SlowDown ; # bci:Command\\n    schema:domainIncludes :slowingDown ; # bci:ActuationResult\\n    schema:domainIncludes :accelerateWheel ; # bci:Context.Method\\n    schema:rangeIncludes qudt-1-1:QuantityValue .\\n\\n_:acceleration-value rdf:type qudt-1-1:QuantityValue ;\\n  qudt-1-1:numericValue \\\"-10.5\\\"^^xsd:double ; # deacceleration\\n  qudt-1-1:unit qudt-unit-1-1:CentimeterPerSecondSquared .\\n\\n&lt;cmd/slowDown/11&gt; rdf:type :SlowDown ;\\n  :direction \\\"forward\\\" ;\\n  :acceleration _:acceleration-value ;\\n  bci:consumesInputFrom &lt;EegRecord/46&gt; ;\\n  bci:isExecutedBy &lt;servo4WC-ABC/1&gt;, &lt;servo4WC-ABC/2&gt; .\\n\\n\\n# servo4WC-ABC #1 made actuation #62, and servo4WC-ABC #2 made actuation #63:\\n# both execute the command to \\\"slow down\\\" #11.\\n# The model says that:\\n# - &lt;servo4WC-ABC/1&gt; is designed to automatically change the speed of the right rear wheel.\\n# - &lt;servo4WC-ABC/2&gt; is designed to automatically change the speed of the left rear wheel.\\n# Each actuator triggers an event to reduce the speed of the wheel that it is bound to.\\n\\n&lt;servo4WC-ABC/1&gt; rdf:type bci:Actuator ;\\n  sosa:madeActuation &lt;actuation/62&gt; ;\\n  ssn:forProperty &lt;right-rear-wheel/39#speed&gt; ;\\n  bci:triggers &lt;ae/reduceSpeed/81&gt; .\\n\\n&lt;servo4WC-ABC/2&gt; rdf:type bci:Actuator ;\\n  sosa:madeActuation &lt;actuation/63&gt; ;\\n  ssn:forProperty &lt;left-rear-wheel/47#speed&gt; ;\\n  bci:triggers &lt;ae/reduceSpeed/82&gt; .\\n\\n\\n# The rear wheels are the actuation targets (for each correspondent actuation procedure).\\n# Each wheel's speed state is an ImpactedProperty. The model allows to explicitly say that:\\n# - &lt;left-rear-wheel/47#speed&gt; is a property of &lt;left-rear-wheel/47&gt;\\n# - &lt;right-rear-wheel/39#speed&gt; is a property of &lt;right-rear-wheel/39&gt;\\n\\n&lt;left-rear-wheel/47&gt; rdf:type bci:ActuationTarget ;\\n  ssn:hasProperty &lt;left-rear-wheel/47#speed&gt; .\\n\\n&lt;right-rear-wheel/39&gt; rdf:type bci:ActuationTarget ;\\n  ssn:hasProperty &lt;right-rear-wheel/39#speed&gt; .\\n\\n&lt;left-rear-wheel/47#speed&gt; rdf:type bci:ImpactedProperty ;\\n  sosa:isActedOnBy &lt;actuation/63&gt; .\\n\\n&lt;right-rear-wheel/39#speed&gt; rdf:type bci:ImpactedProperty ;\\n  sosa:isActedOnBy &lt;actuation/62&gt; .\\n\\n\\n# Actuation #62 acted on the state (speed) of right-rear-wheel #39,\\n# and returned \\\"slowing down\\\" #788 as its associated result.\\n# Actuation #63 acted on the state (speed) of left-rear-wheel #47,\\n# and returned \\\"slowing down\\\" #789 as its associated result.\\n# Each actuation has a timestamp for its associated result.\\n\\n&lt;actuation/62&gt; rdf:type bci:Actuation ;\\n  sosa:actsOnProperty &lt;right-rear-wheel/39#speed&gt; ;\\n  sosa:actuationMadeBy &lt;servo4WC-ABC/1&gt; ; \\n  sosa:hasResult &lt;ar/slowingDown/788&gt; ;\\n  sosa:phenomenonTime _:actuation-time ;\\n  sosa:resultTime \\\"2018-05-06T20:05:13+00:00\\\"^^xsd:dateTimeStamp .\\n\\n&lt;actuation/63&gt; rdf:type bci:Actuation ;\\n  sosa:actsOnProperty &lt;left-rear-wheel/47#speed&gt; ;\\n  sosa:actuationMadeBy &lt;servo4WC-ABC/2&gt; ; \\n  sosa:hasResult &lt;ar/slowingDown/789&gt; ;\\n  sosa:phenomenonTime _:actuation-time ;\\n  sosa:resultTime \\\"2018-05-06T20:05:13+00:00\\\"^^xsd:dateTimeStamp .\\n\\n# The time interval of the actuations:\\n_:actuation-time rdf:type time:Interval ;\\n  time:hasBeginning [ \\n    rdf:type time:Instant ;\\n    time:inXSDDateTimeStamp \\\"2018-05-06T20:05:12+58:00\\\"^^xsd:dateTimeStamp ] ;\\n  time:hasEnd [ \\n    rdf:type time:Instant ;\\n    time:inXSDDateTimeStamp \\\"2018-05-06T20:05:13+02:00\\\"^^xsd:dateTimeStamp ] .\\n\\n\\n# The slowingDown actuation result defines a value for the acceleration (change of speed): see above...\\n# // :acceleration schema:domainIncludes :slowingDown ; //\\n\\n:slowingDown rdfs:subClassOf bci:ActuationResult .\\n\\n# The actuation results of \\\"slowing down\\\" #788 and #789, are defined in the following way:\\n# * Both \\\"slowing down\\\" #788 and #789 are the actuation results of actuations #62 and #63 respectively.\\n# * They have the associated values:\\n#   - change of speed: the deacceleration of 10.5 cm/s2.\\n# * Both \\\"slowing down\\\" #788 and #789 involve the event of \\\"reduce speed\\\" #81 and #82 respectively.\\n\\n&lt;ar/slowingDown/788&gt; rdf:type :slowingDown ;\\n  :acceleration _:acceleration-value ;\\n  bci:involves &lt;ae/reduceSpeed/81&gt; .\\n\\n&lt;ar/slowingDown/789&gt; rdf:type :slowingDown ;\\n  :acceleration _:acceleration-value ;\\n  bci:involves &lt;ae/reduceSpeed/82&gt; .\\n\\n\\n# The actuation events (#81 and #83) change the state of the actuation targets (the rear wheels),\\n# throught the \\\"accelerateWheel\\\" (context method) deacceleration effectuation, which handles the acceleration-value.\\n# The \\\"accelerateWheel\\\" context method defines a \\\"parameter\\\" value: see above...\\n# // :acceleration schema:domainIncludes :accelerateWheel ; //\\n\\n:accelerateWheel rdfs:subClassOf bci:Context.Method .\\n\\n&lt;deacceleration&gt; rdf:type :accelerateWheel ;\\n  :acceleration _:acceleration-value .\\n\\n&lt;ae/reduceSpeed/81&gt; rdf:type bci:ActuationEvent ;\\n  bci:effectuates &lt;deacceleration&gt; ;\\n  bci:changes &lt;right-rear-wheel/39&gt; .\\n\\n&lt;ae/reduceSpeed/82&gt; rdf:type bci:ActuationEvent ;\\n  bci:effectuates &lt;deacceleration&gt; ;\\n  bci:changes &lt;left-rear-wheel/47&gt; .\\n</pre></div>\\n</dd>\"@en .",
+         "dataid:sha256sum": "2ed32522a18b0f6f9e606ed6cbd746110abe19461579cbc41fb420abfee28c9e",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220146",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:39:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "764880",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=parsed.ttl\nStart loading\nJul 08, 2020 3:40:03 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://w3id.org/BCI-ontology#hasEegNonChannelData @owl:deprecated \"&laquo;Concerning EEG, this ontology only defines its related classes. It does not extend or define any specific properties for EEG.&raquo;\n<br />$ 04:27 AM 2016-07-29 $\"^^http://www.w3.org/2000/01/rdf-schema#Literal\nJul 08, 2020 3:40:03 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://w3id.org/BCI-ontology#hasEegNonChannelData @owl:deprecated \"true\"^^http://www.w3.org/2001/XMLSchema#boolean\nJul 08, 2020 3:40:03 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://w3id.org/BCI-ontology#hasMQTT.ID @owl:deprecated \"true\"^^http://www.w3.org/2001/XMLSchema#boolean",
+         "dataid:sha256sum": "e7ad81e24581740b66e49c7c2ec5b731032baf8591c5ca4f0e4611a9a637f8bd",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220146",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:40:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "14831",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=parsed.ttl\nStart loading\nJul 08, 2020 3:40:01 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://w3id.org/BCI-ontology#hasEegNonChannelData @owl:deprecated \"&laquo;Concerning EEG, this ontology only defines its related classes. It does not extend or define any specific properties for EEG.&raquo;\n<br />$ 04:27 AM 2016-07-29 $\"^^http://www.w3.org/2000/01/rdf-schema#Literal\nJul 08, 2020 3:40:01 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://w3id.org/BCI-ontology#hasEegNonChannelData @owl:deprecated \"true\"^^http://www.w3.org/2001/XMLSchema#boolean\nJul 08, 2020 3:40:01 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://w3id.org/BCI-ontology#hasMQTT.ID @owl:deprecated \"true\"^^http://www.w3.org/2001/XMLSchema#boolean",
+         "dataid:sha256sum": "dea746322ebe93ea132f1353ec0851b8687c4e514c030f830e5397d087e3eac9",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220146",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:40:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "14831",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@base <https://w3id.org/BCI-ontology> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <#> .\n@prefix cc: <http://creativecommons.org/ns#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix DUL: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .\n@prefix dbp: <http://dbpedia.org/ontology/> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix san: <https://www.irit.fr/recherches/MELODI/ontologies/SAN#> .",
+         "dataid:sha256sum": "e956e43a21a026c83b763b0ec8d3cfbfc21d74c131887a27225514d7514d0139",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220146",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:39:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "405547",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220146",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:39:58Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>Brain-Computer Interaction (BCI) Ontology</title><title>Brain-Computer Interaction (BCI) Ontology</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"https://w3id.org/BCI-ontology\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "c4719c659260e85b6c3f3c35f89d909dc87915ddd5ccae3b31b8a281c430fa04",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220146",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:39:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "313833",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2020.05.06; 19:07:08\",\n        \"best-header\": \"text/turtle\",\n        \"content-length\": \"489052\",\n        \"e-tag\": \"W/\\\"489052-1528313923000\\\"\",\n        \"lastModified\": \"Wed, 06 Jun 2018 19:38:43 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Date': 'Wed, 06 May 2020 17:07:09 GMT', 'Server': 'Apache/2.4.29 (Ubuntu)', 'Access-Control-Allow-Origin': '*', 'Location': 'https://w3id.org/BCI-ontology/', 'Content-Length': '313', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'text/html; charset=iso-8859-1'}\",",
+         "dataid:sha256sum": "79e0a3b488bc459d9f545805faf84b0d313f846660163998146259fd455e1390",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220146",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:40:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1315",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://w3id.org/BCI-ontology#ProtocolBuffersDataFormat> ;",
+         "dataid:sha256sum": "1e8ad5a3d3e38f1e354cec35c65ef66ccc24e83dbdb1aa2c6c7f43755fd90134",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220146",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:40:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "213555",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.AbstractState - Notice: root element does not have an xml:base. Relative IRIs will be resolved against http://www.w3.org/ns/sosa/sampling\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl",
+         "dataid:sha256sum": "33ef5414d5fa78a2e745e9e7a46d9012044ce670c21dd56a31d2e54908d93543",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220146",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:40:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "13521",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146#BCI-ontology_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:DCMIType=\"http://purl.org/dc/dcmitype/\" xmlns:DUL=\"http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#\" xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:dbp=\"http://dbpedia.org/ontology/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\" xmlns:oldssn=\"http://purl.oclc.org/NET/ssnx/ssn#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:san=\"https://www.irit.fr/recherches/MELODI/ontologies/SAN#\" xmlns:schema=\"http://schema.org/\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:sosa=\"http://www.w3.org/ns/sosa/\" xmlns:ssn-system=\"http://www.w3.org/ns/ssn/systems/\" xmlns:ssn=\"http://www.w3.org/ns/ssn/\" xmlns:terms=\"http://open.vocab.org/terms/\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:voaf=\"http://purl.org/vocommons/voaf#\" xmlns:wdrs=\"http://www.w3.org/2007/05/powder-s#\" xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"https://w3id.org/BCI-ontology#\" xml:base=\"https://w3id.org/BCI-ontology\">\n  <rdf:Description rdf:about=\"\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"\">\n    <owl:imports rdf:resource=\"http://www.w3.org/ns/ssn/dul\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"\">\n    <owl:imports rdf:resource=\"https://www.irit.fr/recherches/MELODI/ontologies/SAN\"/>",
+         "dataid:sha256sum": "2ec44a207a985802f79fc7931e27da2bf13e1d784710baddb68cada697bd81bd",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220146",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:39:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "886466",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/BCI-ontology/2020.06.10-220146/BCI-ontology_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      }
+   ]
+}

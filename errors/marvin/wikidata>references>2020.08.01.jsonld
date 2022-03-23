@@ -1,0 +1,104 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/wikidata/references/2020.08.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/references",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/references/2020.08.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/wikidata/references"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/wikidata"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/wikidata/references/2020.08.01"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/d69e027e6f7ace84ba485d3158913bf901b812e2 . After its releases, data is cleaned and persisted under the DBpedia account. ) Reified statements about references"
+         },
+         "dct:hasVersion": "2020.08.01",
+         "dct:issued": {
+            "@value": "2020-08-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Wikidata References"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/wikidata/references/2020.08.01#references.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/d69e027e6f7ace84ba485d3158913bf901b812e2 . After its releases, data is cleaned and persisted under the DBpedia account. ) Reified statements about references"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/references/2020.08.01#references.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/references/2020.08.01/references.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://wikidata.dbpedia.org/resource/Property:P1004_P1630_V1d3c5> <http://dbpedia.org/ontology/reference> \"https://www.wikidata.org/w/index.php?title=MediaWiki:Gadget-AuthorityControl.js&oldid=179329592\" .\n<http://wikidata.dbpedia.org/resource/Property:P1004_P4876_V7c295> <http://dbpedia.org/ontology/reference> \"https://musicbrainz.org/statistics\" .\n<http://wikidata.dbpedia.org/resource/Property:P1005_P1552_V681bb> <http://dbpedia.org/ontology/reference> \"http://viaf.org/viaf/partnerpages/PTBNP.html\" .\n<http://wikidata.dbpedia.org/resource/Property:P1005_P1659_Vee2c7> <http://dbpedia.org/ontology/reference> \"https://www.wikidata.org/w/index.php?title=Wikidata:Property_proposal/BNP_Catalog_ID&oldid=835554252\" .\n<http://wikidata.dbpedia.org/resource/Property:P1006_P1552_V83908> <http://dbpedia.org/ontology/reference> \"http://viaf.org/viaf/partnerpages/NTA.html\" .\n<http://wikidata.dbpedia.org/resource/Property:P1011_P1282_V2c3d9> <http://dbpedia.org/ontology/reference> \"https://wiki.openstreetmap.org/wiki/Key:except\" .\n<http://wikidata.dbpedia.org/resource/Property:P1011_P1659_Vcf5b5> <http://dbpedia.org/ontology/reference> \"https://www.wikidata.org/w/index.php?title=Wikidata:Property_proposal/does_not_have_quality_(2)&oldid=853155779\" .\n<http://wikidata.dbpedia.org/resource/Property:P1013_P1659_Vf3d54> <http://dbpedia.org/ontology/reference> \"https://www.wikidata.org/w/index.php?title=Wikidata:Property_proposal/test_taken&oldid=661425097\" .\n<http://wikidata.dbpedia.org/resource/Property:P1014_P1630_V92967> <http://dbpedia.org/ontology/reference> \"https://groups.google.com/forum/#!topic/gettyvocablod/lkb8pATlrYs\" .\n<http://wikidata.dbpedia.org/resource/Property:P1014_P1659_V433c6> <http://dbpedia.org/ontology/reference> \"https://www.wikidata.org/w/index.php?title=Wikidata:Property_proposal/identifiant_Thésaurus_de_la_désignation_des_objets_mobiliers&oldid=655220646\" .",
+         "dataid:sha256sum": "c735cbad44037a1c5b0afb67b3db8e5836f710c03a453711fc24b4e79a9b98e0",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.08.01",
+         "dct:issued": {
+            "@value": "2020-08-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-08-24T13:02:18Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4176154064",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/databus-repo/marvin/wikidata/references/2020.08.01/references.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

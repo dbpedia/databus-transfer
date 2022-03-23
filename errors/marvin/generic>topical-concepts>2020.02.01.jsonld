@@ -1,0 +1,1138 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/generic"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01"
+         },
+         "dataid-debug:codeReference": {
+            "@id": "https://github.com/dbpedia/extraction-framework/blob/master/core/src/main/scala/org/dbpedia/extraction/mappings/"
+         },
+         "dataid-debug:documentationLocation": {
+            "@id": "https://github.com/dbpedia/databus-maven-plugin/blob/master/dbpedia/generic/topical-concepts"
+         },
+         "dataid-debug:feedbackChannel": {
+            "@id": "https://forum.dbpedia.org/c/data/databus/14"
+         },
+         "dataid-debug:issueTracker": {
+            "@id": "https://github.com/dbpedia/extraction-framework/issues"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/0c57c6dd252f6d81a5d6d6c8736b03d0b911d396 . After its releases, data is cleaned and persisted under the DBpedia account. ) help needed"
+         },
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) topical-concepts dataset"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=eu_redirected.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=it_redirected.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=ar_redirected.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=es.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=eu.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=ja.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=fr_redirected.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=en_redirected.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=ru.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=ca_redirected.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=fr.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=pt.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=pt_redirected.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=es_redirected.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=ar.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=ca.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=it.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=ja_redirected.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=ru_redirected.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=el.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=en.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=el_redirected.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/0c57c6dd252f6d81a5d6d6c8736b03d0b911d396 . After its releases, data is cleaned and persisted under the DBpedia account. ) help needed"
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:lang",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=eu_redirected.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=eu_redirected.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "27518",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-04T12:38:44Z\n<http://eu.dbpedia.org/resource/Kategoria:Sudan> <http://purl.org/dc/terms/subject> <http://eu.dbpedia.org/resource/Sudan> .\n<http://eu.dbpedia.org/resource/Sudan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://eu.dbpedia.org/resource/Kategoria:Anatomia> <http://purl.org/dc/terms/subject> <http://eu.dbpedia.org/resource/Anatomia> .\n<http://eu.dbpedia.org/resource/Anatomia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://eu.dbpedia.org/resource/Kategoria:Ikuskizunak> <http://purl.org/dc/terms/subject> <http://eu.dbpedia.org/resource/Ikuskizun> .\n<http://eu.dbpedia.org/resource/Ikuskizun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://eu.dbpedia.org/resource/Kategoria:Lapurdi> <http://purl.org/dc/terms/subject> <http://eu.dbpedia.org/resource/Lapurdi> .\n<http://eu.dbpedia.org/resource/Lapurdi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://eu.dbpedia.org/resource/Kategoria:Medikuak> <http://purl.org/dc/terms/subject> <http://eu.dbpedia.org/resource/Mediku> .",
+         "dataid:sha256sum": "bf0a15629f7ddb3a5faf6afcd235b08c74a419b25a9dbc2c111d9e21ad75a95d",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "3959431",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "eu",
+         "dataid-cv:tag": "redirected",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:15:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "180982",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=eu_redirected.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=it_redirected.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=it_redirected.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "118",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-03T21:29:04Z\n<http://it.dbpedia.org/resource/Categoria:Medicina_legale> <http://purl.org/dc/terms/subject> <http://it.dbpedia.org/resource/Medicina_legale> .\n<http://it.dbpedia.org/resource/Medicina_legale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://it.dbpedia.org/resource/Categoria:Arterie> <http://purl.org/dc/terms/subject> <http://it.dbpedia.org/resource/Anatomia> .\n<http://it.dbpedia.org/resource/Anatomia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://it.dbpedia.org/resource/Categoria:Antidiarroici> <http://purl.org/dc/terms/subject> <http://it.dbpedia.org/resource/Diarrea> .\n<http://it.dbpedia.org/resource/Diarrea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://it.dbpedia.org/resource/Categoria:Spintronica> <http://purl.org/dc/terms/subject> <http://it.dbpedia.org/resource/spintronica> .\n<http://it.dbpedia.org/resource/spintronica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://it.dbpedia.org/resource/Categoria:Neoplasie_dell'utero> <http://purl.org/dc/terms/subject> <http://it.dbpedia.org/resource/Tumore_dell'utero> .",
+         "dataid:sha256sum": "2c832be04a2c5549be665e1f1b3e2f5ecc0a57ae67327c60f3c80bf739a2a389",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "17246",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "it",
+         "dataid-cv:tag": "redirected",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:15:46Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1472",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=it_redirected.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=ar_redirected.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=ar_redirected.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "8996",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-04T13:08:09Z\n<http://ar.dbpedia.org/resource/تصنيف:أعمال_يوسف_السباعي> <http://purl.org/dc/terms/subject> <http://ar.dbpedia.org/resource/يوسف_السباعي> .\n<http://ar.dbpedia.org/resource/يوسف_السباعي> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ar.dbpedia.org/resource/تصنيف:عقد_1200_هـ> <http://purl.org/dc/terms/subject> <http://ar.dbpedia.org/resource/عقد_1200_هـ> .\n<http://ar.dbpedia.org/resource/عقد_1200_هـ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ar.dbpedia.org/resource/تصنيف:مركز_الجيزة> <http://purl.org/dc/terms/subject> <http://ar.dbpedia.org/resource/مركز_الجيزة> .\n<http://ar.dbpedia.org/resource/مركز_الجيزة> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ar.dbpedia.org/resource/تصنيف:أفلام_أحمد_مظهر> <http://purl.org/dc/terms/subject> <http://ar.dbpedia.org/resource/أحمد_مظهر> .\n<http://ar.dbpedia.org/resource/أحمد_مظهر> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ar.dbpedia.org/resource/تصنيف:أبطال_الاتحاد_السوفيتي> <http://purl.org/dc/terms/subject> <http://ar.dbpedia.org/resource/بطل_الاتحاد_السوفيتي> .",
+         "dataid:sha256sum": "7fe5b28cc69785b0957b1a50caa5a2e75f6ffcba1095e427e4e9c4a4d859404e",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "1519690",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ar",
+         "dataid-cv:tag": "redirected",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:15:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "72434",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=ar_redirected.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=es.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=es.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "3082",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://es.dbpedia.org/resource/Categoría:Historia_de_América_Central> <http://purl.org/dc/terms/subject> <http://es.dbpedia.org/resource/Historia_de_Centroamérica> .\n<http://es.dbpedia.org/resource/Historia_de_Centroamérica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://es.dbpedia.org/resource/Categoría:Nutrientes> <http://purl.org/dc/terms/subject> <http://es.dbpedia.org/resource/Nutrimento> .\n<http://es.dbpedia.org/resource/Nutrimento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://es.dbpedia.org/resource/Categoría:Aplicaciones_informáticas> <http://purl.org/dc/terms/subject> <http://es.dbpedia.org/resource/Aplicación_informática> .\n<http://es.dbpedia.org/resource/Aplicación_informática> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://es.dbpedia.org/resource/Categoría:Alemania> <http://purl.org/dc/terms/subject> <http://es.dbpedia.org/resource/República_Federal_de_Alemania> .\n<http://es.dbpedia.org/resource/República_Federal_de_Alemania> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://es.dbpedia.org/resource/Categoría:Premios> <http://purl.org/dc/terms/subject> <http://es.dbpedia.org/resource/Premio> .\n<http://es.dbpedia.org/resource/Premio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .",
+         "dataid:sha256sum": "82d186ea96dea95dc6759ffd51b85258c1b7d1cc518f229916f899a4d9390347",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "492599",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "es",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:15:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "968255",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=es.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=eu.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=eu.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "892",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://eu.dbpedia.org/resource/Kategoria:Sudan> <http://purl.org/dc/terms/subject> <http://eu.dbpedia.org/resource/Sudan> .\n<http://eu.dbpedia.org/resource/Sudan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://eu.dbpedia.org/resource/Kategoria:Anatomia> <http://purl.org/dc/terms/subject> <http://eu.dbpedia.org/resource/Anatomia> .\n<http://eu.dbpedia.org/resource/Anatomia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://eu.dbpedia.org/resource/Kategoria:Ikuskizunak> <http://purl.org/dc/terms/subject> <http://eu.dbpedia.org/resource/Ikuskizun> .\n<http://eu.dbpedia.org/resource/Ikuskizun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://eu.dbpedia.org/resource/Kategoria:Lapurdi> <http://purl.org/dc/terms/subject> <http://eu.dbpedia.org/resource/Lapurdi> .\n<http://eu.dbpedia.org/resource/Lapurdi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://eu.dbpedia.org/resource/Kategoria:Medikuak> <http://purl.org/dc/terms/subject> <http://eu.dbpedia.org/resource/Mediku> .\n<http://eu.dbpedia.org/resource/Mediku> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .",
+         "dataid:sha256sum": "4060dc009bb0c6f45cee13c82c42fc0f74bcbe4cbdc13a9fb7107176d645df96",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "128601",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "eu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:15:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "214384",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=eu.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=ja.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=ja.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "36",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://ja.dbpedia.org/resource/Category:アメリカ合衆国の大統領> <http://purl.org/dc/terms/subject> <http://ja.dbpedia.org/resource/アメリカ合衆国大統領> .\n<http://ja.dbpedia.org/resource/アメリカ合衆国大統領> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ja.dbpedia.org/resource/Category:クモ> <http://purl.org/dc/terms/subject> <http://ja.dbpedia.org/resource/クモ目> .\n<http://ja.dbpedia.org/resource/クモ目> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ja.dbpedia.org/resource/Category:キエフ大公> <http://purl.org/dc/terms/subject> <http://ja.dbpedia.org/resource/キエフ大公> .\n<http://ja.dbpedia.org/resource/キエフ大公> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ja.dbpedia.org/resource/Category:環形動物> <http://purl.org/dc/terms/subject> <http://ja.dbpedia.org/resource/環形動物門> .\n<http://ja.dbpedia.org/resource/環形動物門> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ja.dbpedia.org/resource/Category:Wikia> <http://purl.org/dc/terms/subject> <http://ja.dbpedia.org/resource/ウィキア> .\n<http://ja.dbpedia.org/resource/ウィキア> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .",
+         "dataid:sha256sum": "8e5523f4f386c881ce5fac9e6c36fc2e1b17ac75c32c7490e01a714ed9fe8d6b",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "5507",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ja",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:15:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "24270",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=ja.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=fr_redirected.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=fr_redirected.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "155636",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-04T02:22:42Z\n<http://fr.dbpedia.org/resource/Catégorie:Finance> <http://purl.org/dc/terms/subject> <http://fr.dbpedia.org/resource/Finance> .\n<http://fr.dbpedia.org/resource/Finance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://fr.dbpedia.org/resource/Catégorie:Parti_politique> <http://purl.org/dc/terms/subject> <http://fr.dbpedia.org/resource/Parti_politique> .\n<http://fr.dbpedia.org/resource/Parti_politique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://fr.dbpedia.org/resource/Catégorie:Programmation_informatique> <http://purl.org/dc/terms/subject> <http://fr.dbpedia.org/resource/programmation> .\n<http://fr.dbpedia.org/resource/programmation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://fr.dbpedia.org/resource/Catégorie:Région_en_France> <http://purl.org/dc/terms/subject> <http://fr.dbpedia.org/resource/Région_française> .\n<http://fr.dbpedia.org/resource/Région_française> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://fr.dbpedia.org/resource/Catégorie:Politique> <http://purl.org/dc/terms/subject> <http://fr.dbpedia.org/resource/Politique> .",
+         "dataid:sha256sum": "3e6f8bec6037c201ae486988a4cdf5ea63ac56890887a5a98ea6e252df0d5c70",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "24716780",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "fr",
+         "dataid-cv:tag": "redirected",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:15:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1399732",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=fr_redirected.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=en_redirected.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=en_redirected.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "230034",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-04T05:12:44Z\n<http://dbpedia.org/resource/Category:Chess> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Chess> .\n<http://dbpedia.org/resource/Chess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://dbpedia.org/resource/Category:Paul_McCartney> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Paul_McCartney> .\n<http://dbpedia.org/resource/Paul_McCartney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://dbpedia.org/resource/Category:Anatomy> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Anatomy> .\n<http://dbpedia.org/resource/Anatomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://dbpedia.org/resource/Category:GNOME> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/GNOME> .\n<http://dbpedia.org/resource/GNOME> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://dbpedia.org/resource/Category:Geography> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Geography> .",
+         "dataid:sha256sum": "c8a13b45903831ce6d8e8756754f41ccd0307b8ec6788f762e4723a6ab7e1bd0",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "34616700",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "en",
+         "dataid-cv:tag": "redirected",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:15:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2031543",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=en_redirected.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=ru.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=ru.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "2238",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://ru.dbpedia.org/resource/Категория:Сценаристы> <http://purl.org/dc/terms/subject> <http://ru.dbpedia.org/resource/Сценарий> .\n<http://ru.dbpedia.org/resource/Сценарий> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ru.dbpedia.org/resource/Категория:Музыкальные_жанры> <http://purl.org/dc/terms/subject> <http://ru.dbpedia.org/resource/Список_музыкальных_жанров,_направлений_и_стилей> .\n<http://ru.dbpedia.org/resource/Список_музыкальных_жанров,_направлений_и_стилей> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ru.dbpedia.org/resource/Категория:События> <http://purl.org/dc/terms/subject> <http://ru.dbpedia.org/resource/Событие> .\n<http://ru.dbpedia.org/resource/Событие> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ru.dbpedia.org/resource/Категория:Герои_Советского_Союза> <http://purl.org/dc/terms/subject> <http://ru.dbpedia.org/resource/Список_Героев_Советского_Союза> .\n<http://ru.dbpedia.org/resource/Список_Героев_Советского_Союза> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ru.dbpedia.org/resource/Категория:Продюсеры> <http://purl.org/dc/terms/subject> <http://ru.dbpedia.org/resource/Продюсер> .\n<http://ru.dbpedia.org/resource/Продюсер> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .",
+         "dataid:sha256sum": "ecfa384dd75a0d8e577dae55fa045f6e84728a4c80af832ca7e54c7b6c3f9be0",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "425025",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ru",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:16:24Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "774527",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=ru.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=ca_redirected.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=ca_redirected.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "20284",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-04T11:45:14Z\n<http://ca.dbpedia.org/resource/Categoria:Amèrica_del_Nord> <http://purl.org/dc/terms/subject> <http://ca.dbpedia.org/resource/Amèrica_del_Nord> .\n<http://ca.dbpedia.org/resource/Amèrica_del_Nord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ca.dbpedia.org/resource/Categoria:Història> <http://purl.org/dc/terms/subject> <http://ca.dbpedia.org/resource/Història> .\n<http://ca.dbpedia.org/resource/Història> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ca.dbpedia.org/resource/Categoria:Àcids> <http://purl.org/dc/terms/subject> <http://ca.dbpedia.org/resource/àcid> .\n<http://ca.dbpedia.org/resource/àcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ca.dbpedia.org/resource/Categoria:Còmics> <http://purl.org/dc/terms/subject> <http://ca.dbpedia.org/resource/Còmic> .\n<http://ca.dbpedia.org/resource/Còmic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ca.dbpedia.org/resource/Categoria:Medi_ambient> <http://purl.org/dc/terms/subject> <http://ca.dbpedia.org/resource/Medi_ambient> .",
+         "dataid:sha256sum": "af5fc17dc438c251f073d358e025cedcaf5428f0688816ab08f2a27c29424c70",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "3008990",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ca",
+         "dataid-cv:tag": "redirected",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:15:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "152204",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=ca_redirected.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=fr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=fr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "4774",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://fr.dbpedia.org/resource/Catégorie:Finance> <http://purl.org/dc/terms/subject> <http://fr.dbpedia.org/resource/Finance> .\n<http://fr.dbpedia.org/resource/Finance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://fr.dbpedia.org/resource/Catégorie:Parti_politique> <http://purl.org/dc/terms/subject> <http://fr.dbpedia.org/resource/Parti_politique> .\n<http://fr.dbpedia.org/resource/Parti_politique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://fr.dbpedia.org/resource/Catégorie:Programmation_informatique> <http://purl.org/dc/terms/subject> <http://fr.dbpedia.org/resource/programmation> .\n<http://fr.dbpedia.org/resource/programmation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://fr.dbpedia.org/resource/Catégorie:Région_en_France> <http://purl.org/dc/terms/subject> <http://fr.dbpedia.org/resource/Région_française> .\n<http://fr.dbpedia.org/resource/Région_française> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://fr.dbpedia.org/resource/Catégorie:Politique> <http://purl.org/dc/terms/subject> <http://fr.dbpedia.org/resource/Politique> .\n<http://fr.dbpedia.org/resource/Politique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .",
+         "dataid:sha256sum": "254c508dde0670913f7d6c5cc10a3893832d9690a8efd05682436cce3f972ad8",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "756224",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "fr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:15:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1411836",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=fr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=pt.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=pt.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "222",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://pt.dbpedia.org/resource/Categoria:Biologia> <http://purl.org/dc/terms/subject> <http://pt.dbpedia.org/resource/Biologia> .\n<http://pt.dbpedia.org/resource/Biologia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://pt.dbpedia.org/resource/Categoria:Rios> <http://purl.org/dc/terms/subject> <http://pt.dbpedia.org/resource/Rios> .\n<http://pt.dbpedia.org/resource/Rios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://pt.dbpedia.org/resource/Categoria:Gírias> <http://purl.org/dc/terms/subject> <http://pt.dbpedia.org/resource/Gíria> .\n<http://pt.dbpedia.org/resource/Gíria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://pt.dbpedia.org/resource/Categoria:Vertigo> <http://purl.org/dc/terms/subject> <http://pt.dbpedia.org/resource/Vertigo_(molusco)> .\n<http://pt.dbpedia.org/resource/Vertigo_(molusco)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://pt.dbpedia.org/resource/Categoria:Carroçarias> <http://purl.org/dc/terms/subject> <http://pt.dbpedia.org/resource/Carroçaria> .\n<http://pt.dbpedia.org/resource/Carroçaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .",
+         "dataid:sha256sum": "f9ace675c6c631c3123eaa944c2a386affd6c824c13ef9e5ceb95b302fa3be64",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "33648",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "pt",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:16:21Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "93673",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=pt.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=pt_redirected.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=pt_redirected.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "7500",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-03T16:15:53Z\n<http://pt.dbpedia.org/resource/Categoria:Biologia> <http://purl.org/dc/terms/subject> <http://pt.dbpedia.org/resource/Biologia> .\n<http://pt.dbpedia.org/resource/Biologia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://pt.dbpedia.org/resource/Categoria:Rios> <http://purl.org/dc/terms/subject> <http://pt.dbpedia.org/resource/Rio> .\n<http://pt.dbpedia.org/resource/Rios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://pt.dbpedia.org/resource/Categoria:Gírias> <http://purl.org/dc/terms/subject> <http://pt.dbpedia.org/resource/Gíria> .\n<http://pt.dbpedia.org/resource/Gíria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://pt.dbpedia.org/resource/Categoria:Vertigo> <http://purl.org/dc/terms/subject> <http://pt.dbpedia.org/resource/Vertigo_(gênero)> .\n<http://pt.dbpedia.org/resource/Vertigo_(molusco)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://pt.dbpedia.org/resource/Categoria:Carroçarias> <http://purl.org/dc/terms/subject> <http://pt.dbpedia.org/resource/Carroçaria> .",
+         "dataid:sha256sum": "d2ac2ab117c885d4af1ed1dc427d89aeb8cb563ce62e3efcc52c10edb6e0909d",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "1145821",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "pt",
+         "dataid-cv:tag": "redirected",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:16:21Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "63570",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=pt_redirected.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=es_redirected.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=es_redirected.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "101360",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-03T11:59:25Z\n<http://es.dbpedia.org/resource/Categoría:Historia_de_América_Central> <http://purl.org/dc/terms/subject> <http://es.dbpedia.org/resource/Historia_de_América_Central> .\n<http://es.dbpedia.org/resource/Historia_de_Centroamérica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://es.dbpedia.org/resource/Categoría:Nutrientes> <http://purl.org/dc/terms/subject> <http://es.dbpedia.org/resource/Nutrimento> .\n<http://es.dbpedia.org/resource/Nutrimento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://es.dbpedia.org/resource/Categoría:Aplicaciones_informáticas> <http://purl.org/dc/terms/subject> <http://es.dbpedia.org/resource/Aplicación_informática> .\n<http://es.dbpedia.org/resource/Aplicación_informática> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://es.dbpedia.org/resource/Categoría:Alemania> <http://purl.org/dc/terms/subject> <http://es.dbpedia.org/resource/Alemania> .\n<http://es.dbpedia.org/resource/República_Federal_de_Alemania> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://es.dbpedia.org/resource/Categoría:Premios> <http://purl.org/dc/terms/subject> <http://es.dbpedia.org/resource/Premio> .",
+         "dataid:sha256sum": "4fee254c6efe1dc34a944e294a936ccf0a7ca3f9920b53f3e015bc9f48c7dc96",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "16190160",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "es",
+         "dataid-cv:tag": "redirected",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:15:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "926155",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=es_redirected.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=ar.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=ar.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "236",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://ar.dbpedia.org/resource/تصنيف:أعمال_يوسف_السباعي> <http://purl.org/dc/terms/subject> <http://ar.dbpedia.org/resource/يوسف_السباعي> .\n<http://ar.dbpedia.org/resource/يوسف_السباعي> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ar.dbpedia.org/resource/تصنيف:عقد_1200_هـ> <http://purl.org/dc/terms/subject> <http://ar.dbpedia.org/resource/عقد_1200_هـ> .\n<http://ar.dbpedia.org/resource/عقد_1200_هـ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ar.dbpedia.org/resource/تصنيف:مركز_الجيزة> <http://purl.org/dc/terms/subject> <http://ar.dbpedia.org/resource/مركز_الجيزة> .\n<http://ar.dbpedia.org/resource/مركز_الجيزة> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ar.dbpedia.org/resource/تصنيف:أفلام_أحمد_مظهر> <http://purl.org/dc/terms/subject> <http://ar.dbpedia.org/resource/أحمد_مظهر> .\n<http://ar.dbpedia.org/resource/أحمد_مظهر> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ar.dbpedia.org/resource/تصنيف:أبطال_الاتحاد_السوفيتي> <http://purl.org/dc/terms/subject> <http://ar.dbpedia.org/resource/بطل_الاتحاد_السوفيتي> .\n<http://ar.dbpedia.org/resource/بطل_الاتحاد_السوفيتي> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .",
+         "dataid:sha256sum": "7dd8f12033ba703a63c88e560707c6113bf203ae20dfd536473aa7a6610d1b55",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "40716",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ar",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:15:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "99863",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=ar.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=ca.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=ca.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "590",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://ca.dbpedia.org/resource/Categoria:Amèrica_del_Nord> <http://purl.org/dc/terms/subject> <http://ca.dbpedia.org/resource/Amèrica_del_Nord> .\n<http://ca.dbpedia.org/resource/Amèrica_del_Nord> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ca.dbpedia.org/resource/Categoria:Història> <http://purl.org/dc/terms/subject> <http://ca.dbpedia.org/resource/Història> .\n<http://ca.dbpedia.org/resource/Història> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ca.dbpedia.org/resource/Categoria:Àcids> <http://purl.org/dc/terms/subject> <http://ca.dbpedia.org/resource/àcid> .\n<http://ca.dbpedia.org/resource/àcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ca.dbpedia.org/resource/Categoria:Còmics> <http://purl.org/dc/terms/subject> <http://ca.dbpedia.org/resource/Còmic> .\n<http://ca.dbpedia.org/resource/Còmic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ca.dbpedia.org/resource/Categoria:Medi_ambient> <http://purl.org/dc/terms/subject> <http://ca.dbpedia.org/resource/Medi_ambient> .\n<http://ca.dbpedia.org/resource/Medi_ambient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .",
+         "dataid:sha256sum": "bdffb3f9a53fb1d6deed49f5bd22b8920a3c91906d4cdcd55a1973f4bbf2a074",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "87854",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ca",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:15:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "192199",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=ca.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=it.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=it.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "8",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://it.dbpedia.org/resource/Categoria:Medicina_legale> <http://purl.org/dc/terms/subject> <http://it.dbpedia.org/resource/Medicina_legale> .\n<http://it.dbpedia.org/resource/Medicina_legale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://it.dbpedia.org/resource/Categoria:Arterie> <http://purl.org/dc/terms/subject> <http://it.dbpedia.org/resource/Anatomia> .\n<http://it.dbpedia.org/resource/Anatomia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://it.dbpedia.org/resource/Categoria:Antidiarroici> <http://purl.org/dc/terms/subject> <http://it.dbpedia.org/resource/Diarrea> .\n<http://it.dbpedia.org/resource/Diarrea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://it.dbpedia.org/resource/Categoria:Spintronica> <http://purl.org/dc/terms/subject> <http://it.dbpedia.org/resource/spintronica> .\n<http://it.dbpedia.org/resource/spintronica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .",
+         "dataid:sha256sum": "e77817aca27a59f5b27d9d618e7d4e1108a7e46d19baaca952165c469d3d6a21",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "1116",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "it",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:15:46Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "7190",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=it.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=ja_redirected.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=ja_redirected.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "1034",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-03T19:59:31Z\n<http://ja.dbpedia.org/resource/Category:アメリカ合衆国の大統領> <http://purl.org/dc/terms/subject> <http://ja.dbpedia.org/resource/アメリカ合衆国大統領> .\n<http://ja.dbpedia.org/resource/アメリカ合衆国大統領> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ja.dbpedia.org/resource/Category:クモ> <http://purl.org/dc/terms/subject> <http://ja.dbpedia.org/resource/クモ> .\n<http://ja.dbpedia.org/resource/クモ目> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ja.dbpedia.org/resource/Category:キエフ大公> <http://purl.org/dc/terms/subject> <http://ja.dbpedia.org/resource/キエフ大公> .\n<http://ja.dbpedia.org/resource/キエフ大公> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ja.dbpedia.org/resource/Category:環形動物> <http://purl.org/dc/terms/subject> <http://ja.dbpedia.org/resource/環形動物> .\n<http://ja.dbpedia.org/resource/環形動物門> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ja.dbpedia.org/resource/Category:Wikia> <http://purl.org/dc/terms/subject> <http://ja.dbpedia.org/resource/ウィキア> .",
+         "dataid:sha256sum": "953b010d6581ac1b0e31ea0167b102fca9072a39f2256f8cacc96bc6e2f48c82",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "156607",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ja",
+         "dataid-cv:tag": "redirected",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:15:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "9346",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=ja_redirected.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=ru_redirected.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=ru_redirected.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "72748",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-03T14:29:55Z\n<http://ru.dbpedia.org/resource/Категория:Сценаристы> <http://purl.org/dc/terms/subject> <http://ru.dbpedia.org/resource/Сценарий> .\n<http://ru.dbpedia.org/resource/Сценарий> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ru.dbpedia.org/resource/Категория:Музыкальные_жанры> <http://purl.org/dc/terms/subject> <http://ru.dbpedia.org/resource/Список_музыкальных_жанров,_направлений_и_стилей> .\n<http://ru.dbpedia.org/resource/Список_музыкальных_жанров,_направлений_и_стилей> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ru.dbpedia.org/resource/Категория:События> <http://purl.org/dc/terms/subject> <http://ru.dbpedia.org/resource/Событие> .\n<http://ru.dbpedia.org/resource/Событие> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ru.dbpedia.org/resource/Категория:Герои_Советского_Союза> <http://purl.org/dc/terms/subject> <http://ru.dbpedia.org/resource/Список_Героев_Советского_Союза> .\n<http://ru.dbpedia.org/resource/Список_Героев_Советского_Союза> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://ru.dbpedia.org/resource/Категория:Продюсеры> <http://purl.org/dc/terms/subject> <http://ru.dbpedia.org/resource/Продюсер> .",
+         "dataid:sha256sum": "97c74db6864ad9905cd95ed3902a9931e9940cb61ebc3ec3cf0d848bb5133f30",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "13890199",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ru",
+         "dataid-cv:tag": "redirected",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:16:24Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "716120",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=ru_redirected.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=el.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=el.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "254",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://el.dbpedia.org/resource/Κατηγορία:Εγκυκλοπαίδειες> <http://purl.org/dc/terms/subject> <http://el.dbpedia.org/resource/Εγκυκλοπαίδεια> .\n<http://el.dbpedia.org/resource/Εγκυκλοπαίδεια> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://el.dbpedia.org/resource/Κατηγορία:Ανθρωπιστικές_επιστήμες> <http://purl.org/dc/terms/subject> <http://el.dbpedia.org/resource/Ανθρωπιστικές_επιστήμες> .\n<http://el.dbpedia.org/resource/Ανθρωπιστικές_επιστήμες> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://el.dbpedia.org/resource/Κατηγορία:Νοτιοσλαβικές_γλώσσες> <http://purl.org/dc/terms/subject> <http://el.dbpedia.org/resource/Νότιες_σλαβικές_γλώσσες> .\n<http://el.dbpedia.org/resource/Νότιες_σλαβικές_γλώσσες> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://el.dbpedia.org/resource/Κατηγορία:Αρχιτεκτονική_υπολογιστή> <http://purl.org/dc/terms/subject> <http://el.dbpedia.org/resource/Αρχιτεκτονική_υπολογιστών> .\n<http://el.dbpedia.org/resource/Αρχιτεκτονική_υπολογιστών> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://el.dbpedia.org/resource/Κατηγορία:Πόλεις_της_Τσεχίας> <http://purl.org/dc/terms/subject> <http://el.dbpedia.org/resource/Κατάλογος_πόλεων_της_Τσεχίας> .\n<http://el.dbpedia.org/resource/Κατάλογος_πόλεων_της_Τσεχίας> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .",
+         "dataid:sha256sum": "8fa7d643e3403e31fc53cf71ddd444a4a8ddd5f3933f739ac5123783fbd5cf70",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "45669",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "el",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:15:21Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "90854",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=el.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=en.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=en.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "7076",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://dbpedia.org/resource/Category:Chess> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Chess> .\n<http://dbpedia.org/resource/Chess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://dbpedia.org/resource/Category:Paul_McCartney> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Paul_McCartney> .\n<http://dbpedia.org/resource/Paul_McCartney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://dbpedia.org/resource/Category:Anatomy> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Anatomy> .\n<http://dbpedia.org/resource/Anatomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://dbpedia.org/resource/Category:GNOME> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/GNOME> .\n<http://dbpedia.org/resource/GNOME> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://dbpedia.org/resource/Category:Geography> <http://purl.org/dc/terms/subject> <http://dbpedia.org/resource/Geography> .\n<http://dbpedia.org/resource/Geography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .",
+         "dataid:sha256sum": "5d3ec801d3bd4b6e0e23fec31f8db303edaeb65bbfcaac52b8cb9168c6faca52",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "1063771",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "en",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:15:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2055823",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=en.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01#topical-concepts_lang=el_redirected.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2020.02.01/topical-concepts_lang=el_redirected.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "7194",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-03T23:55:54Z\n<http://el.dbpedia.org/resource/Κατηγορία:Εγκυκλοπαίδειες> <http://purl.org/dc/terms/subject> <http://el.dbpedia.org/resource/Εγκυκλοπαίδεια> .\n<http://el.dbpedia.org/resource/Εγκυκλοπαίδεια> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://el.dbpedia.org/resource/Κατηγορία:Ανθρωπιστικές_επιστήμες> <http://purl.org/dc/terms/subject> <http://el.dbpedia.org/resource/Ανθρωπιστικές_επιστήμες> .\n<http://el.dbpedia.org/resource/Ανθρωπιστικές_επιστήμες> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://el.dbpedia.org/resource/Κατηγορία:Νοτιοσλαβικές_γλώσσες> <http://purl.org/dc/terms/subject> <http://el.dbpedia.org/resource/Νότιες_σλαβικές_γλώσσες> .\n<http://el.dbpedia.org/resource/Νότιες_σλαβικές_γλώσσες> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://el.dbpedia.org/resource/Κατηγορία:Αρχιτεκτονική_υπολογιστή> <http://purl.org/dc/terms/subject> <http://el.dbpedia.org/resource/Αρχιτεκτονική_υπολογιστών> .\n<http://el.dbpedia.org/resource/Αρχιτεκτονική_υπολογιστών> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .\n<http://el.dbpedia.org/resource/Κατηγορία:Πόλεις_της_Τσεχίας> <http://purl.org/dc/terms/subject> <http://el.dbpedia.org/resource/Κατάλογος_πόλεων_της_Τσεχίας> .",
+         "dataid:sha256sum": "6c46bfb3bfb9ddfde2bdca6c6f1ccf46d7a9da101d3727fa5eb141bd37aa2497",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "1297848",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "el",
+         "dataid-cv:tag": "redirected",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-20T16:15:21Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "57509",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2020.02.01/topical-concepts_lang=el_redirected.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

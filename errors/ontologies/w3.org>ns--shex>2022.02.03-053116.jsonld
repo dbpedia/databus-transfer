@@ -1,0 +1,847 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/w3.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "This document describes the RDFS vocabulary description used in the Shape Expression Language (ShEx) [[shex-semantics]] along with the default JSON-LD Context and shape expression to validate RDF versions of shapes."
+         },
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Shape Expression Vocabulary"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=diff_axioms=new.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=diff_triples=new.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=orig.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=diff_axioms=old.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=diff_triples=old.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=parsed_sorted.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=meta.json"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "This document describes the RDFS vocabulary description used in the Shape Expression Language (ShEx) [[shex-semantics]] along with the default JSON-LD Context and shape expression to validate RDF versions of shapes."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:axioms",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:triples",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://www.w3.org/ns/shex#> ;\n            sh:resultMessage \"No license found at all (neither dct:license, xhv:license nor cc:license)\"@en ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:OrConstraintComponent ;",
+         "dataid:sha256sum": "6dd969ef2bba69aec6f5d88cbb85f57410c480275818d6ea0e4cd4217a91d99b",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:21Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "648",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix dc: <http://purl.org/dc/terms/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix shex: <http://www.w3.org/ns/shex#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n<http://www.w3.org/ns/shex#>\n    dc:date \"2017-07-07\"^^xsd:date ;\n    dc:description \"This document describes the RDFS vocabulary description used in the Shape Expression Language (ShEx) [[shex-semantics]] along with the default JSON-LD Context and shape expression to validate RDF versions of shapes.\"@en ;",
+         "dataid:sha256sum": "16b500ba7b7b8283168d00e830b270210f658f5e1985d971247a39a23a4a0253",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:20Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "20074",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.1.0.jar\n\n",
+         "dataid:sha256sum": "35133f3681a6ccdb320324b1927689adc218a5150f47233c68c456e42e0d1a9f",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:29Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=diff_axioms=new.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=diff_axioms=new.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "",
+         "dataid:sha256sum": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+         "dataid-cv:axioms": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:20Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=diff_axioms=new.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=diff_triples=new.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=diff_triples=new.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://www.w3.org/ns/shex#> <http://purl.org/dc/terms/date> \"2017-07-07\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://www.w3.org/ns/shex#> <http://purl.org/dc/terms/description> \"This document describes the RDFS vocabulary description used in the Shape Expression Language (ShEx) [[shex-semantics]] along with the default JSON-LD Context and shape expression to validate RDF versions of shapes.\"@en .\n<http://www.w3.org/ns/shex#> <http://purl.org/dc/terms/title> \"Shape Expression Vocabulary\"@en .",
+         "dataid:sha256sum": "646b9c744d5e522724e345eaddaecca6dce6d45e4fca47466e16c4931d770e5c",
+         "dataid-cv:triples": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:20Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "505",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=diff_triples=new.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/ns/shex#annotation -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+         "dataid:sha256sum": "af16c4bf3033f4573985714889a2a07e924ebebd7cf0d4e07abb9e375ccfa249",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:29Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "12839",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/ns/shex#annotation -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+         "dataid:sha256sum": "f7bdd16240ab8458b6c15869f7a7af49d7919b0af5a6c9d93c15062b2085330a",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "12839",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=orig.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=orig.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/terms/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix shex: <http://www.w3.org/ns/shex#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n# CSVM Ontology definition\nshex: a owl:Ontology;\n  dc:title \"Shape Expression Vocabulary\"@en;",
+         "dataid:sha256sum": "26f2598087a2805e042ea8fff802330cb56b80b9a09f099607010054d190c89f",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "16979",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=orig.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=parsed.ttl\nStart loading\nFinished loading in 00:00:00.157\nInput size: Classes = 27, Properties = 54, Individuals = 5\nExpressivity: ALCH(D)\nStart consistency check\nFinished consistency check in 00:00:00.017\n\nTimer summary:",
+         "dataid:sha256sum": "a52187d49cb396453b14e3c03a706dfa60617944f668fc4857c9c06c9b99aa29",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:24Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "494",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dc=\"http://purl.org/dc/terms/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:shex=\"http://www.w3.org/ns/shex#\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\">\n  <rdf:Description rdf:about=\"http://www.w3.org/ns/shex#\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://www.w3.org/ns/shex#\">\n    <dc:title xml:lang=\"en\">Shape Expression Vocabulary</dc:title>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://www.w3.org/ns/shex#\">\n    <dc:description xml:lang=\"en\">This document describes the RDFS vocabulary description used in the Shape Expression Language (ShEx) [[shex-semantics]] along with the default JSON-LD Context and shape expression to validate RDF versions of shapes.</dc:description>",
+         "dataid:sha256sum": "aefee36c1acbc7ea59b49fe07a31cd4a90396282309ec53379f1d1a16d6f9179",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:21Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "74236",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=diff_axioms=old.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=diff_axioms=old.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "",
+         "dataid:sha256sum": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+         "dataid-cv:axioms": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:20Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=diff_axioms=old.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=diff_triples=old.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=diff_triples=old.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://www.w3.org/ns/shex#> <http://www.w3.org/ns/http;//purl.org/dc/terms/date> \"2017-07-07\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://www.w3.org/ns/shex#> <http://www.w3.org/ns/http;//purl.org/dc/terms/description> \"This document describes the RDFS vocabulary description used in the Shape Expression Language (ShEx) [[shex-semantics]] along with the default JSON-LD Context and shape expression to validate RDF versions of shapes.\"@en .\n<http://www.w3.org/ns/shex#> <http://www.w3.org/ns/http;//purl.org/dc/terms/title> \"Shape Expression Vocabulary\"@en .",
+         "dataid:sha256sum": "edf4135c9e14e575d521303c56e3a26ddf478184142eca285652989b77f0b910",
+         "dataid-cv:triples": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:20Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "568",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=diff_triples=old.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://www.w3.org/ns/shex#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://www.w3.org/ns/shex#> <http://purl.org/dc/terms/title> \"Shape Expression Vocabulary\"@en .\n<http://www.w3.org/ns/shex#> <http://purl.org/dc/terms/description> \"This document describes the RDFS vocabulary description used in the Shape Expression Language (ShEx) [[shex-semantics]] along with the default JSON-LD Context and shape expression to validate RDF versions of shapes.\"@en .\n<http://www.w3.org/ns/shex#> <http://purl.org/dc/terms/date> \"2017-07-07\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://www.w3.org/ns/shex#> <http://www.w3.org/2002/07/owl#versionInfo> <https://github.com/shexSpec/shexspec.github.io/commit/e05f8e97471f5271f50612bed253102f770364b4> .\n<http://www.w3.org/ns/shex#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://shex.io/shex-semantics> .\n<http://www.w3.org/ns/shex#Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .\n<http://www.w3.org/ns/shex#Annotation> <http://www.w3.org/2000/01/rdf-schema#label> \"Annotation\"@en .\n<http://www.w3.org/ns/shex#Annotation> <http://www.w3.org/2000/01/rdf-schema#comment> \"Annotations provide a format-independent way to provide additional information about elements in a schema. \"@en .\n<http://www.w3.org/ns/shex#Annotation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/shex#> .",
+         "dataid:sha256sum": "90f9bf32032f31fca76e2d76a90eb0d6aa7a0a575a2905e05159a0563462713b",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:20Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "57149",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:21Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://www.w3.org/ns/shex#> ;",
+         "dataid:sha256sum": "89db1d427861eb304975cc327846d76e701fd0423ecc51357e411a5e82ede13c",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:21Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "5985",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://www.w3.org/ns/shex#> ;\n            sh:resultMessage \"No dct:license statement found\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "cf8be9a4d8e6afdc0ef4a4e930d1c3226bb2508c0990df02907352eb94bde78e",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:21Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "645",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=parsed.ttl\nStart loading\nFinished loading in 00:00:00.161\nInput size: Classes = 27, Properties = 54, Individuals = 5\nExpressivity: ALCH(D)\nStart consistency check\nFinished consistency check in 00:00:00.017\n\nTimer summary:",
+         "dataid:sha256sum": "af7a88cccdc3d8c45c624f13119c87eab194ba2c5403a0ec2698b20b348ab50e",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:24Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "494",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=parsed_sorted.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=parsed_sorted.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://www.w3.org/ns/shex#> <http://purl.org/dc/terms/date> \"2017-07-07\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://www.w3.org/ns/shex#> <http://purl.org/dc/terms/description> \"This document describes the RDFS vocabulary description used in the Shape Expression Language (ShEx) [[shex-semantics]] along with the default JSON-LD Context and shape expression to validate RDF versions of shapes.\"@en .\n<http://www.w3.org/ns/shex#> <http://purl.org/dc/terms/title> \"Shape Expression Vocabulary\"@en .\n<http://www.w3.org/ns/shex#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://www.w3.org/ns/shex#> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://shex.io/shex-semantics> .\n<http://www.w3.org/ns/shex#> <http://www.w3.org/2002/07/owl#versionInfo> <https://github.com/shexSpec/shexspec.github.io/commit/e05f8e97471f5271f50612bed253102f770364b4> .\n<http://www.w3.org/ns/shex#Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .\n<http://www.w3.org/ns/shex#Annotation> <http://www.w3.org/2000/01/rdf-schema#comment> \"Annotations provide a format-independent way to provide additional information about elements in a schema. \"@en .\n<http://www.w3.org/ns/shex#Annotation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/shex#> .\n<http://www.w3.org/ns/shex#Annotation> <http://www.w3.org/2000/01/rdf-schema#label> \"Annotation\"@en .",
+         "dataid:sha256sum": "3e1df57e1fa0bd0df34cda25e9c83bb27ee6e5da7ab3e95a43578ad6a22da115",
+         "dataid-cv:tag": "sorted",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:18Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "57149",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=parsed_sorted.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116#ns--shex_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2022.02.03; 05:31:17\",\n        \"best-header\": \"text/turtle\",\n        \"content-length\": \"16978\",\n        \"e-tag\": \"\\\"4252-5d7062b6ea380;9f-54ba7ba504e40\\\"\",\n        \"lastModified\": \"Wed, 02 Feb 2022 10:06:22 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"\",",
+         "dataid:sha256sum": "80125ebb7aa4a8f4bf94c65f88e3b35b791c080fc7c7a3efd8a7288386234021",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2022.02.03-053116",
+         "dct:issued": {
+            "@value": "2022-02-03T05:33:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2022-02-03T05:31:29Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1319",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--shex/2022.02.03-053116/ns--shex_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      }
+   ]
+}

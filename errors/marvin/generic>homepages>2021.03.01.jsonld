@@ -1,0 +1,580 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/generic/homepages"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/generic"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01"
+         },
+         "dataid-debug:codeReference": {
+            "@id": "https://github.com/dbpedia/extraction-framework/blob/master/core/src/main/scala/org/dbpedia/extraction/mappings/"
+         },
+         "dataid-debug:documentationLocation": {
+            "@id": "https://git.informatik.uni-leipzig.de/dbpedia-assoc/marvin-config/-/tree/master/databus-poms/dbpedia/generic/homepages"
+         },
+         "dataid-debug:feedbackChannel": {
+            "@id": "https://forum.dbpedia.org/c/data/databus/14"
+         },
+         "dataid-debug:issueTracker": {
+            "@id": "https://github.com/dbpedia/extraction-framework/issues"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/6ce5e19acd2b2051ee1283a1409bcffadde365f3 . After its releases, data is cleaned and persisted under the DBpedia account. ) help needed"
+         },
+         "dct:hasVersion": "2021.03.01",
+         "dct:issued": {
+            "@value": "2021-03-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) homepages dataset"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=el.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=en.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=ga.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=de.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=es.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=eu.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=ja.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=pl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=ru.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=ca.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=pt.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=fr.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=it.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/6ce5e19acd2b2051ee1283a1409bcffadde365f3 . After its releases, data is cleaned and persisted under the DBpedia account. ) help needed"
+         }
+      },
+      {
+         "@id": "dataid-cv:lang",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=el.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01/homepages_lang=el.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://el.dbpedia.org/resource/.bm> <http://xmlns.com/foaf/0.1/homepage> <http://www.bermudanic.bm/> .\n<http://el.dbpedia.org/resource/.bn> <http://xmlns.com/foaf/0.1/homepage> <http://www.brunet.bn/products_webrelated_domain_main.htm> .\n<http://el.dbpedia.org/resource/.bo> <http://xmlns.com/foaf/0.1/homepage> <http://www.nic.bo/> .\n<http://el.dbpedia.org/resource/.cy> <http://xmlns.com/foaf/0.1/homepage> <http://www.nic.cy/> .\n<http://el.dbpedia.org/resource/.gs> <http://xmlns.com/foaf/0.1/homepage> <http://www.gov.gs> .\n<http://el.dbpedia.org/resource/.мкд> <http://xmlns.com/foaf/0.1/homepage> <https://marnet.mk/> .\n<http://el.dbpedia.org/resource/0_A.D.> <http://xmlns.com/foaf/0.1/homepage> <https://play0ad.com> .\n<http://el.dbpedia.org/resource/1._ΦΚ_Νυρεμβέργη> <http://xmlns.com/foaf/0.1/homepage> <https://web.archive.org/web/20171016091323/http:/www.fcn.de/en> .\n<http://el.dbpedia.org/resource/1000mods> <http://xmlns.com/foaf/0.1/homepage> <https://1000mods.bandcamp.com/> .\n<http://el.dbpedia.org/resource/100_πράγματα_που_πρέπει_να_κάνεις_πριν_το_λύκειο> <http://xmlns.com/foaf/0.1/homepage> <http://www.nick.com/100-things-to-do-before-high-school> .",
+         "dataid:sha256sum": "db34e3c29a6dc2dee7dfa7a487d3a5c525d1467340236c6e97c66d20e6739665",
+         "dataid-cv:lang": "el",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.03.01",
+         "dct:issued": {
+            "@value": "2021-03-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-22T14:27:29Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "224047",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2021.03.01/homepages_lang=el.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=en.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01/homepages_lang=en.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://dbpedia.org/resource/!PAUS3> <http://xmlns.com/foaf/0.1/homepage> <http://Last.FM> .\n<http://dbpedia.org/resource/!T.O.O.H.!> <http://xmlns.com/foaf/0.1/homepage> <http://bandzone.cz/tooh> .\n<http://dbpedia.org/resource/!Women_Art_Revolution> <http://xmlns.com/foaf/0.1/homepage> <http://womenartrevolution.com> .\n<http://dbpedia.org/resource/$100_Guitar_Project> <http://xmlns.com/foaf/0.1/homepage> <http://www.100dollarguitar.com> .\n<http://dbpedia.org/resource/$30_Film_School> <http://xmlns.com/foaf/0.1/homepage> <https://web.archive.org/web/20110917093844/http:/www.30dollarfilmschool.com/> .\n<http://dbpedia.org/resource/$40_a_Day> <http://xmlns.com/foaf/0.1/homepage> <http://www.foodnetwork.com/food/show_ad> .\n<http://dbpedia.org/resource/$50SAT> <http://xmlns.com/foaf/0.1/homepage> <http://www.50dollarsat.info/> .\n<http://dbpedia.org/resource/$5_Cover> <http://xmlns.com/foaf/0.1/homepage> <http://www.fivedollarcover.com> .\n<http://dbpedia.org/resource/%22A%22_Is_for_Alibi> <http://xmlns.com/foaf/0.1/homepage> <http://www.suegrafton.com/bookshelf.php> .\n<http://dbpedia.org/resource/%22B%22_Is_for_Burglar> <http://xmlns.com/foaf/0.1/homepage> <http://www.suegrafton.com/bookshelf.php> .",
+         "dataid:sha256sum": "5c94fb2d5cc8c601ecc5a500369aa7828daab839342cef9babadcaf4071b01fa",
+         "dataid-cv:lang": "en",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.03.01",
+         "dct:issued": {
+            "@value": "2021-03-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-22T14:27:21Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "11900322",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2021.03.01/homepages_lang=en.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=ga.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01/homepages_lang=ga.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://ga.dbpedia.org/resource/1._Fußballclub_Union_Berlin> <http://xmlns.com/foaf/0.1/homepage> <http://www.fc-union-berlin.de> .\n<http://ga.dbpedia.org/resource/10_Items_or_Less_(scannán)> <http://xmlns.com/foaf/0.1/homepage> <http://www.thinkfilmcompany.com/> .\n<http://ga.dbpedia.org/resource/10_Lúnasa_ag_Cluichí_Oilimpeacha_an_tSamhraidh_2016> <http://xmlns.com/foaf/0.1/homepage> <https://www.rio2016.com> .\n<http://ga.dbpedia.org/resource/11_Lúnasa_ag_Cluichí_Oilimpeacha_an_tSamhraidh_2016> <http://xmlns.com/foaf/0.1/homepage> <https://www.rio2016.com> .\n<http://ga.dbpedia.org/resource/12_Lúnasa_ag_Cluichí_Oilimpeacha_an_tSamhraidh_2016> <http://xmlns.com/foaf/0.1/homepage> <https://www.rio2016.com> .\n<http://ga.dbpedia.org/resource/3_Lúnasa_ag_Cluichí_Oilimpeacha_an_tSamhraidh_2016> <http://xmlns.com/foaf/0.1/homepage> <http://www.fifa.com/womensolympic/index.html> .\n<http://ga.dbpedia.org/resource/5_Lúnasa_ag_Cluichí_Oilimpeacha_an_tSamhraidh_2016> <http://xmlns.com/foaf/0.1/homepage> <https://www.rio2016.com> .\n<http://ga.dbpedia.org/resource/6_Lúnasa_ag_Cluichí_Oilimpeacha_an_tSamhraidh_2016> <http://xmlns.com/foaf/0.1/homepage> <https://www.rio2016.com> .\n<http://ga.dbpedia.org/resource/7_Lúnasa_ag_Cluichí_Oilimpeacha_an_tSamhraidh_2016> <http://xmlns.com/foaf/0.1/homepage> <https://www.rio2016.com> .\n<http://ga.dbpedia.org/resource/8_Lúnasa_ag_Cluichí_Oilimpeacha_an_tSamhraidh_2016> <http://xmlns.com/foaf/0.1/homepage> <https://www.rio2016.com> .",
+         "dataid:sha256sum": "fbc7813e60b4683609b78ac9b3c32c974f0ab685b9e94fa20ecef502652a19d6",
+         "dataid-cv:lang": "ga",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.03.01",
+         "dct:issued": {
+            "@value": "2021-03-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-22T14:27:29Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "15116",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2021.03.01/homepages_lang=ga.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=de.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01/homepages_lang=de.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://de.dbpedia.org/resource/!!!> <http://xmlns.com/foaf/0.1/homepage> <http://chkchkchk.net/> .\n<http://de.dbpedia.org/resource/!distain> <http://xmlns.com/foaf/0.1/homepage> <http://www.distain.de/> .\n<http://de.dbpedia.org/resource/$100,000_Nanjing_2015> <http://xmlns.com/foaf/0.1/homepage> <http://www.tennis.org.cn> .\n<http://de.dbpedia.org/resource/$100,000_Shenzhen_2016> <http://xmlns.com/foaf/0.1/homepage> <http://www.missionhillschina.com> .\n<http://de.dbpedia.org/resource/$100,000_Shenzhen_2017> <http://xmlns.com/foaf/0.1/homepage> <http://www.missionhillschina.com/> .\n<http://de.dbpedia.org/resource/$100,000_Shenzhen_2018> <http://xmlns.com/foaf/0.1/homepage> <http://www.missionhillschina.com/> .\n<http://de.dbpedia.org/resource/$80,000_Waco_Showdown_2017> <http://xmlns.com/foaf/0.1/homepage> <http://www.wacotennisshowdown.com/> .\n<http://de.dbpedia.org/resource/&RQ> <http://xmlns.com/foaf/0.1/homepage> <http://www.rejetto.com/&RQ/> .\n<http://de.dbpedia.org/resource/(500)_Days_of_Summer> <http://xmlns.com/foaf/0.1/homepage> <http://www.foxsearchlight.com/500daysofsummer/> .\n<http://de.dbpedia.org/resource/(Dis)Honesty:_The_Truth_About_Lies> <http://xmlns.com/foaf/0.1/homepage> <http://thedishonestyproject.com/film/> .",
+         "dataid:sha256sum": "b2c5e4d506944e1d82e5e72a9da32bdad720d2726d307b2147e62e2c5f5c79ea",
+         "dataid-cv:lang": "de",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.03.01",
+         "dct:issued": {
+            "@value": "2021-03-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-22T14:27:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3625338",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2021.03.01/homepages_lang=de.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=es.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01/homepages_lang=es.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://es.dbpedia.org/resource/!!!> <http://xmlns.com/foaf/0.1/homepage> <http://www.chkchkchk.net/> .\n<http://es.dbpedia.org/resource/$9.99> <http://xmlns.com/foaf/0.1/homepage> <http://www.9dollars99movie.com/> .\n<http://es.dbpedia.org/resource/%22Weird_Al%22_Yankovic> <http://xmlns.com/foaf/0.1/homepage> <http://weirdal.com/> .\n<http://es.dbpedia.org/resource/'Cuz_I_Can> <http://xmlns.com/foaf/0.1/homepage> <http://www.pinkspage.com> .\n<http://es.dbpedia.org/resource/(500)_Days_of_Summer> <http://xmlns.com/foaf/0.1/homepage> <http://www.youtube.com/watch%3Fv=PsD0NpFSADM> .\n<http://es.dbpedia.org/resource/(I_Can't_Get_No)_Satisfaction> <http://xmlns.com/foaf/0.1/homepage> <https://web.archive.org/web/20080518135315/http:/www.rollingstones.com/discog/index.php%3Fv=so&a=1&id=31> .\n<http://es.dbpedia.org/resource/(Me_Llamo)_Sebastián> <http://xmlns.com/foaf/0.1/homepage> <https://web.archive.org/web/20161009135314/http:/www.mellamosebastian.cl/> .\n<http://es.dbpedia.org/resource/(Ne)_Polnoe_sobranie_sochineni> <http://xmlns.com/foaf/0.1/homepage> <http://www.leningradspb.ru> .\n<http://es.dbpedia.org/resource/(No_existen)_Técnicas_para_olvidar> <http://xmlns.com/foaf/0.1/homepage> <https://m.youtube.com/playlist%3Flist=OLAK5uy_khYM3TKx3MP9ZYroyRTuJbDuUVO-E0DHc> .\n<http://es.dbpedia.org/resource/(Untitled)> <http://xmlns.com/foaf/0.1/homepage> <http://www.untitled-themovie.com/> .",
+         "dataid:sha256sum": "985aeb3bec939f1a5193087656d84f0ca46b490c385f314f8465807769b31d93",
+         "dataid-cv:lang": "es",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.03.01",
+         "dct:issued": {
+            "@value": "2021-03-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-22T14:27:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2410110",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2021.03.01/homepages_lang=es.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=eu.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01/homepages_lang=eu.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://eu.dbpedia.org/resource/.ac> <http://xmlns.com/foaf/0.1/homepage> <http://www.nic.ac/> .\n<http://eu.dbpedia.org/resource/.ad> <http://xmlns.com/foaf/0.1/homepage> <http://www.nic.ad/> .\n<http://eu.dbpedia.org/resource/.ae> <http://xmlns.com/foaf/0.1/homepage> <http://www.nic.ae/> .\n<http://eu.dbpedia.org/resource/.af> <http://xmlns.com/foaf/0.1/homepage> <http://www.nic.af/> .\n<http://eu.dbpedia.org/resource/.ag> <http://xmlns.com/foaf/0.1/homepage> <http://www.nic.ag/> .\n<http://eu.dbpedia.org/resource/.ai> <http://xmlns.com/foaf/0.1/homepage> <http://nic.com.ai/> .\n<http://eu.dbpedia.org/resource/.al> <http://xmlns.com/foaf/0.1/homepage> <http://www.webhost.al> .\n<http://eu.dbpedia.org/resource/.am> <http://xmlns.com/foaf/0.1/homepage> <https://www.amnic.net/> .\n<http://eu.dbpedia.org/resource/.an> <http://xmlns.com/foaf/0.1/homepage> <http://www.una.an/an_domreg/> .\n<http://eu.dbpedia.org/resource/.ao> <http://xmlns.com/foaf/0.1/homepage> <http://www.dns.ao/> .",
+         "dataid:sha256sum": "73c6e77a484966663a8227794ff74f8c3430297acc6cb61a26a56a56e240287f",
+         "dataid-cv:lang": "eu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.03.01",
+         "dct:issued": {
+            "@value": "2021-03-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-22T14:27:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "97078",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2021.03.01/homepages_lang=eu.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=ja.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01/homepages_lang=ja.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://ja.dbpedia.org/resource/!!!!!!!!/君という仮説> <http://xmlns.com/foaf/0.1/homepage> <http://www.upupgirlskakkokari.com/contents/discography/single26.php> .\n<http://ja.dbpedia.org/resource/$LY> <http://xmlns.com/foaf/0.1/homepage> <https://www.slyofficial.com/> .\n<http://ja.dbpedia.org/resource/%2274ers%22_LIVE_IN_OSAKA-JO_HALL_2003> <http://xmlns.com/foaf/0.1/homepage> <https://www.pornograffitti.jp/> .\n<http://ja.dbpedia.org/resource/%22BITTER_SWEET_MUSIC_BIZ%22_LIVE_IN_BUDOKAN_2002> <http://xmlns.com/foaf/0.1/homepage> <https://www.pornograffitti.jp/> .\n<http://ja.dbpedia.org/resource/%22E%22qual> <http://xmlns.com/foaf/0.1/homepage> <https://ameblo.jp/equal-mosad/> .\n<http://ja.dbpedia.org/resource/%22GALAXY_ANGEL%22_Character_Series> <http://xmlns.com/foaf/0.1/homepage> <https://www.broccoli.co.jp/ga/goods/cd_ga1.html> .\n<http://ja.dbpedia.org/resource/%22Kyoto%22検索> <http://xmlns.com/foaf/0.1/homepage> <http://www.fm807.jp/program/kyoto/> .\n<http://ja.dbpedia.org/resource/%22OPEN_MUSIC_CABINET%22_LIVE_IN_SAITAMA_SUPER_ARENA_2007> <http://xmlns.com/foaf/0.1/homepage> <https://www.pornograffitti.jp/> .\n<http://ja.dbpedia.org/resource/%22X%22_plosion_GUNDAM_SEED> <http://xmlns.com/foaf/0.1/homepage> <http://pc.webnt.jp/newrelease/ga_top.html> .\n<http://ja.dbpedia.org/resource/%22∠TARGET%22_LIVE_IN_JCB_HALL_2010> <http://xmlns.com/foaf/0.1/homepage> <https://www.pornograffitti.jp/> .",
+         "dataid:sha256sum": "382c0a80b45769b379edf06d3a519e93c4e27e6119bb3db1805aa65d84de04ed",
+         "dataid-cv:lang": "ja",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.03.01",
+         "dct:issued": {
+            "@value": "2021-03-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-22T14:27:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2520519",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2021.03.01/homepages_lang=ja.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=pl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01/homepages_lang=pl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://pl.dbpedia.org/resource/(I’ll_Never_Be)_Maria_Magdalena> <http://xmlns.com/foaf/0.1/homepage> <http://www.sandra-music.com/> .\n<http://pl.dbpedia.org/resource/(Life_May_Be)_A_Big_Insanity> <http://xmlns.com/foaf/0.1/homepage> <http://www.sandra-music.com/> .\n<http://pl.dbpedia.org/resource/(Nie)_Tylko_taniec> <http://xmlns.com/foaf/0.1/homepage> <http://web.archive.org/web/20150430071232/http:/www.thedanceflick.com:80/> .\n<http://pl.dbpedia.org/resource/-123_min.> <http://xmlns.com/foaf/0.1/homepage> <http://minus123minut.cz/> .\n<http://pl.dbpedia.org/resource/-Oz-> <http://xmlns.com/foaf/0.1/homepage> <http://web.archive.org/web/20160822092939/http:/www.territory-oz.com/> .\n<http://pl.dbpedia.org/resource/...IAM> <http://xmlns.com/foaf/0.1/homepage> <http://www.iam.tm.fr/> .\n<http://pl.dbpedia.org/resource/.LRN> <http://xmlns.com/foaf/0.1/homepage> <http://dotlrn.org/> .\n<http://pl.dbpedia.org/resource/.ac> <http://xmlns.com/foaf/0.1/homepage> <http://www.nic.ac> .\n<http://pl.dbpedia.org/resource/.ad> <http://xmlns.com/foaf/0.1/homepage> <http://www.nic.ad> .\n<http://pl.dbpedia.org/resource/.ae> <http://xmlns.com/foaf/0.1/homepage> <https://www.tra.gov.ae/aeda/en/home.aspx> .",
+         "dataid:sha256sum": "3baf90ff8fdfc870d9cfa07885f838cb955ac6df00d8fcc460821e0816dd125c",
+         "dataid-cv:lang": "pl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.03.01",
+         "dct:issued": {
+            "@value": "2021-03-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-22T14:27:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "800353",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2021.03.01/homepages_lang=pl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=ru.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01/homepages_lang=ru.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://ru.dbpedia.org/resource/!!!> <http://xmlns.com/foaf/0.1/homepage> <http://www.chkchkchk.net/> .\n<http://ru.dbpedia.org/resource/!Action_Pact!> <http://xmlns.com/foaf/0.1/homepage> <http://www.uk82.com/bands/action_pact.cfm> .\n<http://ru.dbpedia.org/resource/!T.O.O.H.!> <http://xmlns.com/foaf/0.1/homepage> <http://tooh.wz.cz/> .\n<http://ru.dbpedia.org/resource/!ФЕСТ> <http://xmlns.com/foaf/0.1/homepage> <http://www.fest.lviv.ua/> .\n<http://ru.dbpedia.org/resource/%3FWhat_If!> <http://xmlns.com/foaf/0.1/homepage> <http://www.whatifinnovation.com/> .\n<http://ru.dbpedia.org/resource/%3F_(фильм)> <http://xmlns.com/foaf/0.1/homepage> <http://web.archive.org/web/20110510033311/http:/filmtandatanya.com/> .\n<http://ru.dbpedia.org/resource/&RQ> <http://xmlns.com/foaf/0.1/homepage> <http://www.rejetto.com/&RQ/> .\n<http://ru.dbpedia.org/resource/(15212)_Ярославль> <http://xmlns.com/foaf/0.1/homepage> <https://web.archive.org/web/20120128130927/http:/www.city-yar.ru/home/city/vehi/13.html> .\n<http://ru.dbpedia.org/resource/(21)_Лютеция> <http://xmlns.com/foaf/0.1/homepage> <http://webservices.esa.int/blog/post/5/1246> .\n<http://ru.dbpedia.org/resource/(4)_Веста> <http://xmlns.com/foaf/0.1/homepage> <https://www.nasa.gov/mission_pages/dawn/main/index.html> .",
+         "dataid:sha256sum": "d1435d467a756de3651d6ec3d3edaf88a63838fb20bc7a47b481f98ecf9d24cb",
+         "dataid-cv:lang": "ru",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.03.01",
+         "dct:issued": {
+            "@value": "2021-03-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-22T14:27:14Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2758274",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2021.03.01/homepages_lang=ru.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=ca.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01/homepages_lang=ca.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://ca.dbpedia.org/resource/(1023)_Thomana> <http://xmlns.com/foaf/0.1/homepage> <http://ssd.jpl.nasa.gov/sbdb.cgi%3Fsstr=1023> .\n<http://ca.dbpedia.org/resource/(134)_Sophrosyne> <http://xmlns.com/foaf/0.1/homepage> <http://ssd.jpl.nasa.gov/sbdb.cgi%3Fsstr=134> .\n<http://ca.dbpedia.org/resource/(2001)_Einstein> <http://xmlns.com/foaf/0.1/homepage> <http://ssd.jpl.nasa.gov/sbdb.cgi%3Fsstr=2001> .\n<http://ca.dbpedia.org/resource/(206)_Hersilia> <http://xmlns.com/foaf/0.1/homepage> <http://ssd.jpl.nasa.gov/sbdb.cgi%3Fsstr=206> .\n<http://ca.dbpedia.org/resource/(222)_Lucia> <http://xmlns.com/foaf/0.1/homepage> <http://ssd.jpl.nasa.gov/sbdb.cgi%3Fsstr=222> .\n<http://ca.dbpedia.org/resource/(25143)_Itokawa> <http://xmlns.com/foaf/0.1/homepage> <http://www.hayabusa.isas.jaxa.jp/e/index.html> .\n<http://ca.dbpedia.org/resource/(256)_Walpurga> <http://xmlns.com/foaf/0.1/homepage> <http://ssd.jpl.nasa.gov/sbdb.cgi%3Fsstr=256> .\n<http://ca.dbpedia.org/resource/(271)_Penthesilea> <http://xmlns.com/foaf/0.1/homepage> <http://ssd.jpl.nasa.gov/sbdb.cgi%3Fsstr=271> .\n<http://ca.dbpedia.org/resource/(323)_Brucia> <http://xmlns.com/foaf/0.1/homepage> <http://ssd.jpl.nasa.gov/sbdb.cgi%3Fsstr=323> .\n<http://ca.dbpedia.org/resource/(348)_May> <http://xmlns.com/foaf/0.1/homepage> <http://ssd.jpl.nasa.gov/sbdb.cgi%3Fsstr=348> .",
+         "dataid:sha256sum": "eba0319a0ffe4c102f4c69bb4715ce906b0742484edca9463733a00c9faa7ded",
+         "dataid-cv:lang": "ca",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.03.01",
+         "dct:issued": {
+            "@value": "2021-03-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-22T14:27:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "521013",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2021.03.01/homepages_lang=ca.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=pt.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01/homepages_lang=pt.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://pt.dbpedia.org/resource/!!!> <http://xmlns.com/foaf/0.1/homepage> <http://www.chkchkchk.net/> .\n<http://pt.dbpedia.org/resource/$h*!_My_Dad_Says> <http://xmlns.com/foaf/0.1/homepage> <http://www.cbs.com/primetime/my_dad_says%7Cen> .\n<http://pt.dbpedia.org/resource/%22Weird_Al%22_Yankovic> <http://xmlns.com/foaf/0.1/homepage> <http://www.weirdal.com/%7Cweirdal.com> .\n<http://pt.dbpedia.org/resource/'N_Sync> <http://xmlns.com/foaf/0.1/homepage> <http://www.nsync-world.com/> .\n<http://pt.dbpedia.org/resource/'Orrible> <http://xmlns.com/foaf/0.1/homepage> <http://www.bbc.co.uk/comedy/orrible/%7Cproduction_website=> .\n<http://pt.dbpedia.org/resource/'s-Hertogenbosch> <http://xmlns.com/foaf/0.1/homepage> <http://www.s-hertogenbosch.nl/> .\n<http://pt.dbpedia.org/resource/(500)_Days_of_Summer> <http://xmlns.com/foaf/0.1/homepage> <http://www.foxsearchlight.com/500daysofsummer/> .\n<http://pt.dbpedia.org/resource/(G)I-dle> <http://xmlns.com/foaf/0.1/homepage> <http://www.cubeent.co.kr/gidle> .\n<http://pt.dbpedia.org/resource/(You_Drive_Me)_Crazy> <http://xmlns.com/foaf/0.1/homepage> <http://www.britneyspears.com/> .\n<http://pt.dbpedia.org/resource/(o_vento_lá_fora)> <http://xmlns.com/foaf/0.1/homepage> <https://www.youtube.com/watch%3Fv=t8N3Kld04Ho/> .",
+         "dataid:sha256sum": "00899129074d1507dfcacd142ff89a64a4f21534ea4a751a5d00d630af650fd8",
+         "dataid-cv:lang": "pt",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.03.01",
+         "dct:issued": {
+            "@value": "2021-03-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-22T14:27:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1428446",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2021.03.01/homepages_lang=pt.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=fr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01/homepages_lang=fr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://fr.dbpedia.org/resource/!!!> <http://xmlns.com/foaf/0.1/homepage> <http://www.chkchkchk.net/> .\n<http://fr.dbpedia.org/resource/'74_Jailbreak> <http://xmlns.com/foaf/0.1/homepage> <http://www.acdc.com/music/74-jailbreak> .\n<http://fr.dbpedia.org/resource/'Ajjur> <http://xmlns.com/foaf/0.1/homepage> <http://palestineremembered.com> .\n<http://fr.dbpedia.org/resource/'t_Hof_van_Commerce> <http://xmlns.com/foaf/0.1/homepage> <http://www.thofvancommerce.be/> .\n<http://fr.dbpedia.org/resource/'t_Mariacransken> <http://xmlns.com/foaf/0.1/homepage> <http://www.wijngaardtheater.be> .\n<http://fr.dbpedia.org/resource/(3834)_Zappafrank> <http://xmlns.com/foaf/0.1/homepage> <http://www.zappa.com/fz/randomonium/index.html> .\n<http://fr.dbpedia.org/resource/(523794)_2015_RR245> <http://xmlns.com/foaf/0.1/homepage> <http://cfht.hawaii.edu> .\n<http://fr.dbpedia.org/resource/(La)Horde> <http://xmlns.com/foaf/0.1/homepage> <http://www.collectiflahorde.com/> .\n<http://fr.dbpedia.org/resource/(Life_Is_a)_Dead_End> <http://xmlns.com/foaf/0.1/homepage> <http://www.deadend.fr> .\n<http://fr.dbpedia.org/resource/*shels> <http://xmlns.com/foaf/0.1/homepage> <http://shelsmusic.com/> .",
+         "dataid:sha256sum": "e68b18579d310d615c2a389fd7fd503db06fca2b0c45e766e57d4d3727cd8b2e",
+         "dataid-cv:lang": "fr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.03.01",
+         "dct:issued": {
+            "@value": "2021-03-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-22T14:27:25Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3072199",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2021.03.01/homepages_lang=fr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01#homepages_lang=it.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2021.03.01/homepages_lang=it.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://it.dbpedia.org/resource/%22The_Above_Ground_Sound%22_of_Jake_Holmes> <http://xmlns.com/foaf/0.1/homepage> <http://furious.com> .\n<http://it.dbpedia.org/resource/''Babbacombe''_Lee> <http://xmlns.com/foaf/0.1/homepage> <http://rateyourmusic.com> .\n<http://it.dbpedia.org/resource/'Abd_al-Aziz_ibn_'Abd_Allah_ibn_Baz> <http://xmlns.com/foaf/0.1/homepage> <https://www.binbaz.org.sa/> .\n<http://it.dbpedia.org/resource/'Bout_Changes_&_Things> <http://xmlns.com/foaf/0.1/homepage> <http://rateyourmusic.com> .\n<http://it.dbpedia.org/resource/'Bout_Changes_'n'_Things_Take_2> <http://xmlns.com/foaf/0.1/homepage> <http://deaddisc.com> .\n<http://it.dbpedia.org/resource/'Ndrangheta_in_Lombardia> <http://xmlns.com/foaf/0.1/homepage> <http://consiglio.regione.lombardia.it> .\n<http://it.dbpedia.org/resource/'Ndrina_Lo_Presti> <http://xmlns.com/foaf/0.1/homepage> <http://quotidianopiemontese.it> .\n<http://it.dbpedia.org/resource/'Nuff_Said!> <http://xmlns.com/foaf/0.1/homepage> <http://boscarol.com> .\n<http://it.dbpedia.org/resource/'Uday_Saddam> <http://xmlns.com/foaf/0.1/homepage> <http://Militaryphotos.net> .\n<http://it.dbpedia.org/resource/(42301)_2001_UR163> <http://xmlns.com/foaf/0.1/homepage> <http://minorplanetcenter.net> .",
+         "dataid:sha256sum": "270954ac97b13113ff4f67f7fd6f2e588cb12423b995f18659a5917c48feca19",
+         "dataid-cv:lang": "it",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.03.01",
+         "dct:issued": {
+            "@value": "2021-03-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-22T14:27:29Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "977773",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2021.03.01/homepages_lang=it.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

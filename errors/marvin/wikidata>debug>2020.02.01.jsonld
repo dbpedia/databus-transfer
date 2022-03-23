@@ -1,0 +1,218 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/wikidata/debug/2020.02.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/debug",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/debug/2020.02.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/wikidata/debug"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/wikidata"
+         },
+         "dataid:maintainer": {
+            "@id": "https://alismayilov.github.io/webid-ali.ttl#this"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/wikidata/debug/2020.02.01"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software. After its releases, data is cleaned and persisted under the dbpedia account. Commit: ) Debug information about duplicate IRIs and r2r mapping errors"
+         },
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Wikidata Debug Duplicate IRI Split"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/wikidata/debug/2020.02.01#debug_typelikestatements.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/wikidata/debug/2020.02.01#debug_r2rmappingerrors.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/wikidata/debug/2020.02.01#debug_duplicateirisplit.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software. After its releases, data is cleaned and persisted under the dbpedia account. Commit: ) Debug information about duplicate IRIs and r2r mapping errors"
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/debug/2020.02.01#debug_typelikestatements.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/debug/2020.02.01/debug_typelikestatements.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "2",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-02-12T02:30:23Z\n# completed 2020-02-18T17:21:17Z",
+         "dataid:sha256sum": "38643bf08bfb70ecbaeb938e914985a252d0c158df97a39d967cff785426d4b9",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "64",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:tag": "typelikestatements",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-02-25T11:04:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "88",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/release/wikidata/debug/2020.02.01/debug_typelikestatements.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/debug/2020.02.01#debug_r2rmappingerrors.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/debug/2020.02.01/debug_r2rmappingerrors.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "6540079",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-02-12T02:30:23Z\n<http://wikidata.dbpedia.org/resource/Q21> <http://dbpedia.org/ontology/flag> \"http://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_England.svg\" .\n<http://wikidata.dbpedia.org/resource/Q17> <http://dbpedia.org/ontology/flag> \"http://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Japan.svg\" .\n<http://wikidata.dbpedia.org/resource/Q28> <http://dbpedia.org/ontology/flag> \"http://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Hungary.svg\" .\n<http://wikidata.dbpedia.org/resource/Q27> <http://dbpedia.org/ontology/flag> \"http://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Ireland.svg\" .\n<http://wikidata.dbpedia.org/resource/Q25> <http://dbpedia.org/ontology/flag> \"http://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Wales_(1959–present).svg\" .\n<http://wikidata.dbpedia.org/resource/Q20> <http://dbpedia.org/ontology/flag> \"http://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Norway.svg\" .\n<http://wikidata.dbpedia.org/resource/Q26> <http://dbpedia.org/ontology/flag> \"http://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_the_United_Kingdom.svg\" .\n<http://wikidata.dbpedia.org/resource/Q22> <http://dbpedia.org/ontology/flag> \"http://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Scotland.svg\" .\n<http://wikidata.dbpedia.org/resource/Q39> <http://dbpedia.org/ontology/logo> \"http://commons.wikimedia.org/wiki/Special:FilePath/Logo_der_Schweizerischen_Eidgenossenschaft.svg\" .",
+         "dataid:sha256sum": "f2ef2f265177f823768beab33bb3e0559e49835d9ecfca61e58307c023ec5baa",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "876580185",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:tag": "r2rmappingerrors",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-02-25T11:04:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "18221146",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/release/wikidata/debug/2020.02.01/debug_r2rmappingerrors.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/debug/2020.02.01#debug_duplicateirisplit.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/debug/2020.02.01/debug_duplicateirisplit.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "4017078",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-02-12T02:30:23Z\n<http://wikidata.dbpedia.org/resource/Q18_P1343_Q602358> <http://dbpedia.org/ontology/wikidataSplitIri> <http://wikidata.dbpedia.org/resource/Q18_P1343_Q602358_89a02> .\n<http://wikidata.dbpedia.org/resource/Q18_P1343_Q602358> <http://dbpedia.org/ontology/wikidataSplitIri> <http://wikidata.dbpedia.org/resource/Q18_P1343_Q602358_80885> .\n<http://wikidata.dbpedia.org/resource/Q21_P1549_Ve0afb> <http://dbpedia.org/ontology/wikidataSplitIri> <http://wikidata.dbpedia.org/resource/Q21_P1549_Ve0afb_e9eea> .\n<http://wikidata.dbpedia.org/resource/Q21_P1549_Ve0afb> <http://dbpedia.org/ontology/wikidataSplitIri> <http://wikidata.dbpedia.org/resource/Q21_P1549_Ve0afb_2be81> .\n<http://wikidata.dbpedia.org/resource/Q21_P1549_V540a9> <http://dbpedia.org/ontology/wikidataSplitIri> <http://wikidata.dbpedia.org/resource/Q21_P1549_V540a9_17b7b> .\n<http://wikidata.dbpedia.org/resource/Q21_P1549_V540a9> <http://dbpedia.org/ontology/wikidataSplitIri> <http://wikidata.dbpedia.org/resource/Q21_P1549_V540a9_10b47> .\n<http://wikidata.dbpedia.org/resource/Q15_P2573_V20516> <http://dbpedia.org/ontology/wikidataSplitIri> <http://wikidata.dbpedia.org/resource/Q15_P2573_V20516_b31d9> .\n<http://wikidata.dbpedia.org/resource/Q17_P1549_V4d7af> <http://dbpedia.org/ontology/wikidataSplitIri> <http://wikidata.dbpedia.org/resource/Q17_P1549_V4d7af_fa443> .\n<http://wikidata.dbpedia.org/resource/Q17_P1549_V4d7af> <http://dbpedia.org/ontology/wikidataSplitIri> <http://wikidata.dbpedia.org/resource/Q17_P1549_V4d7af_5bc1d> .",
+         "dataid:sha256sum": "482faaea991b02e98d9fcb1e4d5b7dddaa4bf9f15a7f456cb52b702998cfd81c",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "720626184",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:tag": "duplicateirisplit",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-02-25T11:04:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "31259459",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/release/wikidata/debug/2020.02.01/debug_duplicateirisplit.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

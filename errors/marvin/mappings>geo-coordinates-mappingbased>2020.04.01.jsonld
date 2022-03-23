@@ -1,0 +1,1195 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/mappings"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01"
+         },
+         "dataid-debug:codeReference": {
+            "@id": "https://github.com/dbpedia/extraction-framework/blob/master/core/src/main/scala/org/dbpedia/extraction/mappings/GeoCoordinatesMapping.scala"
+         },
+         "dataid-debug:documentationLocation": {
+            "@id": "https://git.informatik.uni-leipzig.de/dbpedia-assoc/marvin-config/-/tree/master/databus-poms/dbpedia/mappings/geo-coordinates-mappingbased"
+         },
+         "dataid-debug:feedbackChannel": {
+            "@id": "https://forum.dbpedia.org/c/data/databus/14"
+         },
+         "dataid-debug:issueTracker": {
+            "@id": "https://github.com/dbpedia/extraction-framework/issues"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/1240a4cfe1011b4d5403f24ce6b0c0accd6069ee . After its releases, data is cleaned and persisted under the DBpedia account. ) Contains geographic coordinates from the Wikipedia Infoboxes refined by the mapping-based extraction."
+         },
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Geo-coordinates extracted with mappings"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=lv.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=id.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=tr.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=de.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=es.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=eu.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=vi.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=hr.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=ja.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=pl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=ko.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=sk.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=nl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=ru.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=ar.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=sl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=ca.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=bg.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=be.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=cs.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=pt.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=fr.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_commons.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=it.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=mk.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=el.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=en.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=hi.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=ga.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/1240a4cfe1011b4d5403f24ce6b0c0accd6069ee . After its releases, data is cleaned and persisted under the DBpedia account. ) Contains geographic coordinates from the Wikipedia Infoboxes refined by the mapping-based extraction."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:lang",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=lv.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=lv.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-15T21:27:58Z\n<http://lv.dbpedia.org/resource/Latvija> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://lv.dbpedia.org/resource/Latvija> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"56.95\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://lv.dbpedia.org/resource/Latvija> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"24.1\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://lv.dbpedia.org/resource/Latvija> <http://www.georss.org/georss/point> \"56.95 24.1\" .\n<http://lv.dbpedia.org/resource/Rīga> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://lv.dbpedia.org/resource/Rīga> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"56.9475\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://lv.dbpedia.org/resource/Rīga> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"24.10638888888889\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://lv.dbpedia.org/resource/Rīga> <http://www.georss.org/georss/point> \"56.9475 24.10638888888889\" .\n<http://lv.dbpedia.org/resource/Albānija> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "10b6a5c944c17ef53c3959cbd5e63b2dee4ee8dd51b4b32fb260b08e58c61742",
+         "dataid-cv:lang": "lv",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "319660",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=lv.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=id.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=id.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-16T01:46:37Z\n<http://id.dbpedia.org/resource/Wales> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://id.dbpedia.org/resource/Wales> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"51.483333333333334\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://id.dbpedia.org/resource/Wales> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"-3.183333333333333\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://id.dbpedia.org/resource/Wales> <http://www.georss.org/georss/point> \"51.483333333333334 -3.183333333333333\" .\n<http://id.dbpedia.org/resource/Yerusalem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://id.dbpedia.org/resource/Yerusalem> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"31.783333333333335\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://id.dbpedia.org/resource/Yerusalem> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"35.21666666666667\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://id.dbpedia.org/resource/Yerusalem> <http://www.georss.org/georss/point> \"31.783333333333335 35.21666666666667\" .\n<http://id.dbpedia.org/resource/Port_Moresby> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "149da0bae03df6f6329686205bf2416fc45fcf2dded01807b3ec6abb2fe14c99",
+         "dataid-cv:lang": "id",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "179057",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=id.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=tr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=tr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-16T04:17:09Z\n<http://tr.dbpedia.org/resource/Cezayir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://tr.dbpedia.org/resource/Cezayir> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"36.7\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://tr.dbpedia.org/resource/Cezayir> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"3.216666666666667\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://tr.dbpedia.org/resource/Cezayir> <http://www.georss.org/georss/point> \"36.7 3.216666666666667\" .\n<http://tr.dbpedia.org/resource/Los_Angeles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://tr.dbpedia.org/resource/Los_Angeles> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"34.05\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://tr.dbpedia.org/resource/Los_Angeles> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"-118.25\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://tr.dbpedia.org/resource/Los_Angeles> <http://www.georss.org/georss/point> \"34.05 -118.25\" .\n<http://tr.dbpedia.org/resource/Küba> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "31ab37240e65dfe7e12a27691d7ccd086a0e30b320bb27d626ebfa8331ecdfa9",
+         "dataid-cv:lang": "tr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "370365",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=tr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=de.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=de.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-17T05:32:41Z\n<http://de.dbpedia.org/resource/Nur-Sultan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://de.dbpedia.org/resource/Nur-Sultan> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"51.166666666666664\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://de.dbpedia.org/resource/Nur-Sultan> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"71.41666666666667\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://de.dbpedia.org/resource/Nur-Sultan> <http://www.georss.org/georss/point> \"51.166666666666664 71.41666666666667\" .\n<http://de.dbpedia.org/resource/Ankara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://de.dbpedia.org/resource/Ankara> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"39.916666666666664\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://de.dbpedia.org/resource/Ankara> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"32.85\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://de.dbpedia.org/resource/Ankara> <http://www.georss.org/georss/point> \"39.916666666666664 32.85\" .\n<http://de.dbpedia.org/resource/Afghanistan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "d87e73a5f6d7a8862beee70164b1fa4c6a83ee9321dd76b0d739fa51c362496b",
+         "dataid-cv:lang": "de",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "20245276",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=de.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=es.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=es.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-17T03:30:30Z\n<http://es.dbpedia.org/resource/Universidad_de_Cartagena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://es.dbpedia.org/resource/Universidad_de_Cartagena> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"10.42567\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://es.dbpedia.org/resource/Universidad_de_Cartagena> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"-75.54986\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://es.dbpedia.org/resource/Universidad_de_Cartagena> <http://www.georss.org/georss/point> \"10.42567 -75.54986\" .\n<http://es.dbpedia.org/resource/Universidad_de_Essex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://es.dbpedia.org/resource/Universidad_de_Essex> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"51.87638888888889\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://es.dbpedia.org/resource/Universidad_de_Essex> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"0.9450000000000001\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://es.dbpedia.org/resource/Universidad_de_Essex> <http://www.georss.org/georss/point> \"51.87638888888889 0.9450000000000001\" .\n<http://es.dbpedia.org/resource/Municipio_de_Purísima_del_Rincón> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "e7e344c5af6e347d6b8cd05c9c2acdc79697060f9b311b3131773657e9771341",
+         "dataid-cv:lang": "es",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:29Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4530",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=es.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=eu.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=eu.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-15T20:55:09Z\n<http://eu.dbpedia.org/resource/Etoumbi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://eu.dbpedia.org/resource/Etoumbi> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"0.016666666666666666\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://eu.dbpedia.org/resource/Etoumbi> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"14.9\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://eu.dbpedia.org/resource/Etoumbi> <http://www.georss.org/georss/point> \"0.016666666666666666 14.9\" .\n<http://eu.dbpedia.org/resource/Viena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://eu.dbpedia.org/resource/Viena> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"48.208333333333336\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://eu.dbpedia.org/resource/Viena> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"16.373055555555556\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://eu.dbpedia.org/resource/Viena> <http://www.georss.org/georss/point> \"48.208333333333336 16.373055555555556\" .\n<http://eu.dbpedia.org/resource/Alexandria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "e788212967586cb8df8d111d70bd2bbb855ffd8c5ce25f440cd6dabd106f18aa",
+         "dataid-cv:lang": "eu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1161484",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=eu.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=vi.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=vi.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-17T04:31:52Z\n# completed 2020-04-17T04:43:37Z",
+         "dataid:sha256sum": "70722a88ef550b8f15a35b30e63d7d9061138beb9ad9642da8f888273365bed9",
+         "dataid-cv:lang": "vi",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "90",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=vi.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=hr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=hr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-16T01:39:15Z\n# completed 2020-04-16T01:42:47Z",
+         "dataid:sha256sum": "6cbd1ebd001a2ce2e73cbe64dc33cb5d3880f9a17049a42b71699e39b9c09756",
+         "dataid-cv:lang": "hr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "90",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=hr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=ja.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=ja.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-17T02:29:42Z\n<http://ja.dbpedia.org/resource/兼六園> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://ja.dbpedia.org/resource/兼六園> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"36.56213888888889\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ja.dbpedia.org/resource/兼六園> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"136.6625\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ja.dbpedia.org/resource/兼六園> <http://www.georss.org/georss/point> \"36.56213888888889 136.6625\" .\n<http://ja.dbpedia.org/resource/北海道大学> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://ja.dbpedia.org/resource/北海道大学> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"43.07472222222222\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ja.dbpedia.org/resource/北海道大学> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"141.34083333333334\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ja.dbpedia.org/resource/北海道大学> <http://www.georss.org/georss/point> \"43.07472222222222 141.34083333333334\" .\n<http://ja.dbpedia.org/resource/京都大学> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "98e592da8cd5de8843b3c23085501235625dcfb3f6002128a7b6b5ec0e8a87e9",
+         "dataid-cv:lang": "ja",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1185092",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=ja.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=pl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=pl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-17T04:59:41Z\n<http://pl.dbpedia.org/resource/Valletta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://pl.dbpedia.org/resource/Valletta> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"14.516666666666667\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://pl.dbpedia.org/resource/Valletta> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"35.9\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://pl.dbpedia.org/resource/Valletta> <http://www.georss.org/georss/point> \"14.516666666666667 35.9\" .\n<http://pl.dbpedia.org/resource/Birkirkara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://pl.dbpedia.org/resource/Birkirkara> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"14.4625\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://pl.dbpedia.org/resource/Birkirkara> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"35.89666666666667\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://pl.dbpedia.org/resource/Birkirkara> <http://www.georss.org/georss/point> \"14.4625 35.89666666666667\" .\n<http://pl.dbpedia.org/resource/Gżira> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "3230d1a1ad15dd819e82bbe7ceec5b95182662afae23e1d9c702dc32844946d3",
+         "dataid-cv:lang": "pl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1498",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=pl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=ko.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=ko.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-17T04:43:39Z\n<http://ko.dbpedia.org/resource/서울특별시> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://ko.dbpedia.org/resource/서울특별시> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"37.56666666666667\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ko.dbpedia.org/resource/서울특별시> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"126.97805555555556\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ko.dbpedia.org/resource/서울특별시> <http://www.georss.org/georss/point> \"37.56666666666667 126.97805555555556\" .\n<http://ko.dbpedia.org/resource/워싱턴_D.C.> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://ko.dbpedia.org/resource/워싱턴_D.C.> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"38.895\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ko.dbpedia.org/resource/워싱턴_D.C.> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"-77.03666666666666\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ko.dbpedia.org/resource/워싱턴_D.C.> <http://www.georss.org/georss/point> \"38.895 -77.03666666666666\" .\n<http://ko.dbpedia.org/resource/나이로비> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "906d87baf1d103153f6e68f1590f5a4c6741503ab44bf0e92d0dc0d52781398f",
+         "dataid-cv:lang": "ko",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "40051",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=ko.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=sk.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=sk.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-17T04:55:45Z\n<http://sk.dbpedia.org/resource/Trnava> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://sk.dbpedia.org/resource/Trnava> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"48.0\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://sk.dbpedia.org/resource/Trnava> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"17.0\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://sk.dbpedia.org/resource/Trnava> <http://www.georss.org/georss/point> \"48.0 17.0\" .\n<http://sk.dbpedia.org/resource/Bratislava_–_mestská_časť_Ružinov> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://sk.dbpedia.org/resource/Bratislava_–_mestská_časť_Ružinov> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"48.0\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://sk.dbpedia.org/resource/Bratislava_–_mestská_časť_Ružinov> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"17.0\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://sk.dbpedia.org/resource/Bratislava_–_mestská_časť_Ružinov> <http://www.georss.org/georss/point> \"48.0 17.0\" .\n<http://sk.dbpedia.org/resource/Bratislava_–_mestská_časť_Vrakuňa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "cf19f239991b6f4d8eb167ea752c95cfbc830431a7f40403087645cae765ebfc",
+         "dataid-cv:lang": "sk",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "43737",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=sk.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=nl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=nl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-16T02:07:18Z\n<http://nl.dbpedia.org/resource/Alpen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://nl.dbpedia.org/resource/Alpen> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"46.0\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://nl.dbpedia.org/resource/Alpen> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"10.0\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://nl.dbpedia.org/resource/Alpen> <http://www.georss.org/georss/point> \"46.0 10.0\" .\n<http://nl.dbpedia.org/resource/Arnhem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://nl.dbpedia.org/resource/Arnhem> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"51.983333333333334\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://nl.dbpedia.org/resource/Arnhem> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"5.916666666666667\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://nl.dbpedia.org/resource/Arnhem> <http://www.georss.org/georss/point> \"51.983333333333334 5.916666666666667\" .\n<http://nl.dbpedia.org/resource/Amersfoort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "ad662c1b6e6d5308de7c327704638cae9c5acdc487a610b4e31456412d0bc37e",
+         "dataid-cv:lang": "nl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "6920245",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=nl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=ru.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=ru.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-15T22:43:45Z\n<http://ru.dbpedia.org/resource/Кавказские_Минеральные_Воды> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://ru.dbpedia.org/resource/Кавказские_Минеральные_Воды> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"44.11666666666667\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ru.dbpedia.org/resource/Кавказские_Минеральные_Воды> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"43.21666666666667\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ru.dbpedia.org/resource/Кавказские_Минеральные_Воды> <http://www.georss.org/georss/point> \"44.11666666666667 43.21666666666667\" .\n<http://ru.dbpedia.org/resource/Санкт-Петербург> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://ru.dbpedia.org/resource/Санкт-Петербург> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"59.95\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ru.dbpedia.org/resource/Санкт-Петербург> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"30.316666666666666\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ru.dbpedia.org/resource/Санкт-Петербург> <http://www.georss.org/georss/point> \"59.95 30.316666666666666\" .\n<http://ru.dbpedia.org/resource/Шартр> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "761603b0ad5f5c793dcfdf3244a281b60b41581abbb26fe32bf027649ede6d34",
+         "dataid-cv:lang": "ru",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "5191634",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=ru.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=ar.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=ar.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-16T21:32:45Z\n# completed 2020-04-16T21:57:14Z",
+         "dataid:sha256sum": "aad3a7c7be9f3931a880f4c72591e4ee4c7ef6253179afe0e382f605662d9cfc",
+         "dataid-cv:lang": "ar",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "92",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=ar.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=sl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=sl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-16T21:57:16Z\n<http://sl.dbpedia.org/resource/Anglija> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://sl.dbpedia.org/resource/Anglija> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"51.5\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://sl.dbpedia.org/resource/Anglija> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"-0.11666666666666667\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://sl.dbpedia.org/resource/Anglija> <http://www.georss.org/georss/point> \"51.5 -0.11666666666666667\" .\n<http://sl.dbpedia.org/resource/Združene_države_Amerike> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://sl.dbpedia.org/resource/Združene_države_Amerike> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"38.88333333333333\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://sl.dbpedia.org/resource/Združene_države_Amerike> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"-77.03333333333333\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://sl.dbpedia.org/resource/Združene_države_Amerike> <http://www.georss.org/georss/point> \"38.88333333333333 -77.03333333333333\" .\n<http://sl.dbpedia.org/resource/Etiopija> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "b8988ee9f81b2a37adb614513cebb001f0fa1bf19c2740b0aa91ad69c393676a",
+         "dataid-cv:lang": "sl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "184491",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=sl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=ca.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=ca.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-17T03:16:23Z\n# completed 2020-04-17T03:30:29Z",
+         "dataid:sha256sum": "812b1f4b9318a2afe8eb71eae9407c7d719f844b2e9277e8ad7db4e9977f5576",
+         "dataid-cv:lang": "ca",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:24Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "89",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=ca.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=bg.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=bg.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-16T21:18:09Z\n<http://bg.dbpedia.org/resource/Искър> <http://dbpedia.org/ontology/sourcePosition> <http://bg.dbpedia.org/resource/Искър__sourcePosition__1> .\n<http://bg.dbpedia.org/resource/Искър__sourcePosition__1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://bg.dbpedia.org/resource/Искър__sourcePosition__1> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"42.2886\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://bg.dbpedia.org/resource/Искър__sourcePosition__1> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"23.5347\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://bg.dbpedia.org/resource/Искър__sourcePosition__1> <http://www.georss.org/georss/point> \"42.2886 23.5347\" .\n<http://bg.dbpedia.org/resource/Искър> <http://dbpedia.org/ontology/mouthPosition> <http://bg.dbpedia.org/resource/Искър__mouthPosition__1> .\n<http://bg.dbpedia.org/resource/Искър__mouthPosition__1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://bg.dbpedia.org/resource/Искър__mouthPosition__1> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"43.7322\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://bg.dbpedia.org/resource/Искър__mouthPosition__1> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"24.4414\"^^<http://www.w3.org/2001/XMLSchema#float> .",
+         "dataid:sha256sum": "2a18c2b698038b235bb1aa87141ab1041a3561d3274d2a31e349cee8dffb1ebf",
+         "dataid-cv:lang": "bg",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "588054",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=bg.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=be.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=be.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-17T03:11:40Z\n<http://be.dbpedia.org/resource/Ізраіль> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://be.dbpedia.org/resource/Ізраіль> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"31.783333333333335\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://be.dbpedia.org/resource/Ізраіль> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"35.21666666666667\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://be.dbpedia.org/resource/Ізраіль> <http://www.georss.org/georss/point> \"31.783333333333335 35.21666666666667\" .\n<http://be.dbpedia.org/resource/Індыгірка> <http://dbpedia.org/ontology/sourcePosition> <http://be.dbpedia.org/resource/Індыгірка__sourcePosition__1> .\n<http://be.dbpedia.org/resource/Індыгірка__sourcePosition__1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://be.dbpedia.org/resource/Індыгірка__sourcePosition__1> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"63.11138888888889\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://be.dbpedia.org/resource/Індыгірка__sourcePosition__1> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"144.18527777777777\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://be.dbpedia.org/resource/Індыгірка__sourcePosition__1> <http://www.georss.org/georss/point> \"63.11138888888889 144.18527777777777\" .",
+         "dataid:sha256sum": "529b5bf975bb4d69bb2d554a4e97cb0d84d65f164beadbaa87679c639ded8301",
+         "dataid-cv:lang": "be",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "967221",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=be.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=cs.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=cs.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-16T00:44:27Z\n<http://cs.dbpedia.org/resource/Paříž> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://cs.dbpedia.org/resource/Paříž> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"48.0\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://cs.dbpedia.org/resource/Paříž> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"2.0\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://cs.dbpedia.org/resource/Paříž> <http://www.georss.org/georss/point> \"48.0 2.0\" .\n<http://cs.dbpedia.org/resource/Litavka> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://cs.dbpedia.org/resource/Litavka> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"49.0\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://cs.dbpedia.org/resource/Litavka> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"13.0\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://cs.dbpedia.org/resource/Litavka> <http://www.georss.org/georss/point> \"49.0 13.0\" .\n<http://cs.dbpedia.org/resource/Litavka> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"14.0\"^^<http://www.w3.org/2001/XMLSchema#float> .",
+         "dataid:sha256sum": "ac4c42666d623f25ed6ec03c443b41d4cf56c4a40a9f01427b1c85e4ab2e8327",
+         "dataid-cv:lang": "cs",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "682999",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=cs.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=pt.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=pt.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-16T03:46:20Z\n<http://pt.dbpedia.org/resource/Andorra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://pt.dbpedia.org/resource/Andorra> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"42.0\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://pt.dbpedia.org/resource/Andorra> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"1.0\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://pt.dbpedia.org/resource/Andorra> <http://www.georss.org/georss/point> \"42.0 1.0\" .\n<http://pt.dbpedia.org/resource/Arménia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://pt.dbpedia.org/resource/Arménia> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"40.0\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://pt.dbpedia.org/resource/Arménia> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"44.0\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://pt.dbpedia.org/resource/Arménia> <http://www.georss.org/georss/point> \"40.0 44.0\" .\n<http://pt.dbpedia.org/resource/Austrália> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "ec34de45602b724cf16fbca5c8e57db66e47b8711905d222aca7a2bb7d0e2584",
+         "dataid-cv:lang": "pt",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1846529",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=pt.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=fr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=fr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-16T04:26:07Z\n<http://fr.dbpedia.org/resource/Alger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://fr.dbpedia.org/resource/Alger> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"36.776234\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://fr.dbpedia.org/resource/Alger> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"3.05997\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://fr.dbpedia.org/resource/Alger> <http://www.georss.org/georss/point> \"36.776234 3.05997\" .\n<http://fr.dbpedia.org/resource/Akihabara> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://fr.dbpedia.org/resource/Akihabara> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"35.69844\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://fr.dbpedia.org/resource/Akihabara> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"139.77222\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://fr.dbpedia.org/resource/Akihabara> <http://www.georss.org/georss/point> \"35.69844 139.77222\" .\n<http://fr.dbpedia.org/resource/Anvers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "880e7ac23d445eabf710d2f3980be8694bf02e3d333704449667fd3fd0e7c3a6",
+         "dataid-cv:lang": "fr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "6275898",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=fr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_commons.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_commons.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-16T05:40:34Z\n<http://commons.dbpedia.org/resource/File:Cononish_GoldMine.jpeg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://commons.dbpedia.org/resource/File:Cononish_GoldMine.jpeg> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"56.419563\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://commons.dbpedia.org/resource/File:Cononish_GoldMine.jpeg> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"-4.772868\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://commons.dbpedia.org/resource/File:Cononish_GoldMine.jpeg> <http://www.georss.org/georss/point> \"56.419563 -4.772868\" .\n<http://commons.dbpedia.org/resource/File:Drumoak_and_district_bowling_green.jpg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://commons.dbpedia.org/resource/File:Drumoak_and_district_bowling_green.jpg> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"57.080728\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://commons.dbpedia.org/resource/File:Drumoak_and_district_bowling_green.jpg> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"-2.344435\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://commons.dbpedia.org/resource/File:Drumoak_and_district_bowling_green.jpg> <http://www.georss.org/georss/point> \"57.080728 -2.344435\" .\n<http://commons.dbpedia.org/resource/File:Clayrack_Drainage_Windmill.jpg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "59c606335e1d629c7957aa72297afa8d3f0fcb671d9582bb7014dbd4beb5ce84",
+         "dataid-cv:tag": "commons",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:24Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "12752971",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_commons.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=it.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=it.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-15T23:51:40Z\n<http://it.dbpedia.org/resource/Brescia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://it.dbpedia.org/resource/Brescia> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"45.53888888888889\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://it.dbpedia.org/resource/Brescia> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"10.220277777777778\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://it.dbpedia.org/resource/Brescia> <http://www.georss.org/georss/point> \"45.53888888888889 10.220277777777778\" .\n<http://it.dbpedia.org/resource/Columbia_Britannica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://it.dbpedia.org/resource/Columbia_Britannica> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"48.428611\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://it.dbpedia.org/resource/Columbia_Britannica> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"-123.365556\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://it.dbpedia.org/resource/Columbia_Britannica> <http://www.georss.org/georss/point> \"48.428611 -123.365556\" .\n<http://it.dbpedia.org/resource/Corno_del_Renon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "ebc301270f254a5c4b8d251ff5346a5f9a94c547ba43a0771307c38ba1a80d7c",
+         "dataid-cv:lang": "it",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2654425",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=it.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=mk.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=mk.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-16T01:44:10Z\n<http://mk.dbpedia.org/resource/Битола> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://mk.dbpedia.org/resource/Битола> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"41.03194444444444\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://mk.dbpedia.org/resource/Битола> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"21.334722222222222\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://mk.dbpedia.org/resource/Битола> <http://www.georss.org/georss/point> \"41.03194444444444 21.334722222222222\" .\n<http://mk.dbpedia.org/resource/Прилеп> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://mk.dbpedia.org/resource/Прилеп> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"42.44444444444444\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://mk.dbpedia.org/resource/Прилеп> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"22.105555555555554\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://mk.dbpedia.org/resource/Прилеп> <http://www.georss.org/georss/point> \"42.44444444444444 22.105555555555554\" .\n<http://mk.dbpedia.org/resource/Делчево> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "4dbbd941bb3f7fbce0857e646a57bf982de41a7a4edb2f3454441d972e0c06eb",
+         "dataid-cv:lang": "mk",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "88650",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=mk.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=el.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=el.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-15T21:35:56Z\n<http://el.dbpedia.org/resource/Εθνικό_Μετσόβιο_Πολυτεχνείο__Ελλάδα_Αθήνα_κέντρο__1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://el.dbpedia.org/resource/Εθνικό_Μετσόβιο_Πολυτεχνείο__Ελλάδα_Αθήνα_κέντρο__1> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"37.987864\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://el.dbpedia.org/resource/Εθνικό_Μετσόβιο_Πολυτεχνείο__Ελλάδα_Αθήνα_κέντρο__1> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"23.731614\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://el.dbpedia.org/resource/Εθνικό_Μετσόβιο_Πολυτεχνείο__Ελλάδα_Αθήνα_κέντρο__1> <http://www.georss.org/georss/point> \"37.987864 23.731614\" .\n<http://el.dbpedia.org/resource/Διεθνής_Αερολιμένας_Αθηνών_«Ελευθέριος_Βενιζέλος»> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://el.dbpedia.org/resource/Διεθνής_Αερολιμένας_Αθηνών_«Ελευθέριος_Βενιζέλος»> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"37.93638888888889\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://el.dbpedia.org/resource/Διεθνής_Αερολιμένας_Αθηνών_«Ελευθέριος_Βενιζέλος»> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"23.947222222222223\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://el.dbpedia.org/resource/Διεθνής_Αερολιμένας_Αθηνών_«Ελευθέριος_Βενιζέλος»> <http://www.georss.org/georss/point> \"37.93638888888889 23.947222222222223\" .\n<http://el.dbpedia.org/resource/Κέρκυρα> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "3c89f59819bf72b38506fdfab06d82d39c0856ee40cb7295b7f3cace66a7d333",
+         "dataid-cv:lang": "el",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "15338",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=el.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=en.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=en.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-16T22:05:12Z\n<http://dbpedia.org/resource/Algeria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://dbpedia.org/resource/Algeria> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"36.7\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://dbpedia.org/resource/Algeria> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"3.216666666666667\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://dbpedia.org/resource/Algeria> <http://www.georss.org/georss/point> \"36.7 3.216666666666667\" .\n<http://dbpedia.org/resource/Andorra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://dbpedia.org/resource/Andorra> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"42.5\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://dbpedia.org/resource/Andorra> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"1.5166666666666666\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://dbpedia.org/resource/Andorra> <http://www.georss.org/georss/point> \"42.5 1.5166666666666666\" .\n<http://dbpedia.org/resource/Atlantic_Ocean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "efdce3b10fa8eda498cf56149f032936c92ee08fe260fff9ac97e81fbfa440bc",
+         "dataid-cv:lang": "en",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:29Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "17154395",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=en.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=hi.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=hi.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-15T23:48:35Z\n<http://hi.dbpedia.org/resource/दरभंगा> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://hi.dbpedia.org/resource/दरभंगा> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"26.17\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://hi.dbpedia.org/resource/दरभंगा> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"85.9\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://hi.dbpedia.org/resource/दरभंगा> <http://www.georss.org/georss/point> \"26.17 85.9\" .\n<http://hi.dbpedia.org/resource/जमशेदपुर> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://hi.dbpedia.org/resource/जमशेदपुर> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"22.8\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://hi.dbpedia.org/resource/जमशेदपुर> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"86.3\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://hi.dbpedia.org/resource/जमशेदपुर> <http://www.georss.org/georss/point> \"22.8 86.3\" .\n<http://hi.dbpedia.org/resource/धनबाद> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "d7ac5396efeee00a54da1340b4323ddfa3cf9ee04ce5fe56be7c564fe24b575f",
+         "dataid-cv:lang": "hi",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "149677",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=hi.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01#geo-coordinates-mappingbased_lang=ga.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=ga.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-16T02:54:07Z\n<http://ga.dbpedia.org/resource/Cill_Rónáin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://ga.dbpedia.org/resource/Cill_Rónáin> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"53.1247\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ga.dbpedia.org/resource/Cill_Rónáin> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"9.6683\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ga.dbpedia.org/resource/Cill_Rónáin> <http://www.georss.org/georss/point> \"53.1247 9.6683\" .\n<http://ga.dbpedia.org/resource/Gaillimh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .\n<http://ga.dbpedia.org/resource/Gaillimh> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> \"53.2719\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ga.dbpedia.org/resource/Gaillimh> <http://www.w3.org/2003/01/geo/wgs84_pos#long> \"9.0489\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ga.dbpedia.org/resource/Gaillimh> <http://www.georss.org/georss/point> \"53.2719 9.0489\" .\n<http://ga.dbpedia.org/resource/Caisleán_an_Bharraigh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .",
+         "dataid:sha256sum": "bce1b0b38ea6a063d4c6641c8b251e7da032f9eea7ae17663a36540b788f79d4",
+         "dataid-cv:lang": "ga",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-18T06:57:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "13489",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/geo-coordinates-mappingbased/2020.04.01/geo-coordinates-mappingbased_lang=ga.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

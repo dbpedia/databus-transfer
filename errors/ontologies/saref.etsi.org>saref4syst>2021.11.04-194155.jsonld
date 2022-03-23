@@ -1,0 +1,838 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The present document specifies a new reference ontology pattern for the [SAREF semantic model](https://saref.etsi.org/), which leverages the experience of the [EUREKA ITEA 12004 SEAS (Smart Energy Aware Systems) project](http://w3id.org/seas/), and the development of the [OGC&W3C SSN (Semantic Sensor Network) ontology](https://www.w3.org/TR/vocab-ssn/)."
+         },
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "SAREF4SYST: an extension of SAREF for typology of systems and their inter-connections"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=diff_axioms=old.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=orig.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=parsed_sorted.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=diff_axioms=new.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=pyLodeDoc.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=profile.txt"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The present document specifies a new reference ontology pattern for the [SAREF semantic model](https://saref.etsi.org/), which leverages the experience of the [EUREKA ITEA 12004 SEAS (Smart Energy Aware Systems) project](http://w3id.org/seas/), and the development of the [OGC&W3C SSN (Semantic Sensor Network) ontology](https://www.w3.org/TR/vocab-ssn/)."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:axioms",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=diff_axioms=old.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=diff_axioms=old.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "",
+         "dataid:sha256sum": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+         "dataid-cv:axioms": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=diff_axioms=old.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix schema: <http://schema.org/> .\n@prefix voaf: <http://purl.org/vocommons/voaf#> .\n@prefix vann: <http://purl.org/vocab/vann/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix s4syst: <https://saref.etsi.org/saref4syst/> .",
+         "dataid:sha256sum": "4383109d06ff0d2bb11eed47ba4ebcb32d5d6be980110067e035a0029619ac0a",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "12490",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "b97d087f1d025d16fe289802521cb52a425eb260417d0fee456ef6374435190e",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1900",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=orig.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=orig.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix schema: <http://schema.org/> .\n@prefix voaf: <http://purl.org/vocommons/voaf#> .\n@prefix vann: <http://purl.org/vocab/vann/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix s4syst: <https://saref.etsi.org/saref4syst/> .",
+         "dataid:sha256sum": "fba41bf3f744b9da7964584e4ee1580ad1ea9384a8bcb5832379f2b23ce3e1c3",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "12499",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=orig.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2021.11.04; 19:42:30\",\n        \"best-header\": \"text/turtle\",\n        \"content-length\": \"12498\",\n        \"e-tag\": \"\\\"30d2-5ab6dd65bae2b;5c8076883e17c\\\"\",\n        \"lastModified\": \"Mon, 27 Jul 2020 15:18:39 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Date': 'Thu, 04 Nov 2021 19:42:41 GMT', 'Server': 'Apache/2.4.29 (Ubuntu)', 'Location': 'https://saref.etsi.org/saref4syst/v1.1.2/', 'Content-Length': '306', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'text/html; charset=iso-8859-1'}\",",
+         "dataid:sha256sum": "4ec3d5a3d85c8122b20bc8c8eba15a719c4beb11e8fd50da4cf8a275d14b697f",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1697",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "e56690d9e700765a7df7d561dda9b03dd0a509d3d261fdb4350370e3a515dd04",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:45Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1900",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=parsed.ttl\nStart loading\nNov 04, 2021 7:42:41 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://saref.etsi.org/saref4syst/ @owl:versionIRI https://saref.etsi.org/saref4syst/v1.1.2/\nFinished loading in 00:00:00.211\nInput size: Classes = 5, Properties = 33, Individuals = 0\nExpressivity: SRIN\nStart consistency check\nFinished consistency check in 00:00:00.020",
+         "dataid:sha256sum": "d07c5937faeb9883f57657ca8d55ddb31bfdcfab51e4b5c579cfeff19aa1015d",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:41Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "784",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://saref.etsi.org/saref4syst/> ;",
+         "dataid:sha256sum": "3f824170fd33401f06147363ee7729e911453af5eac8c9a12e8c477f4f4191d7",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "11324",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=parsed_sorted.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=parsed_sorted.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .",
+         "dataid:sha256sum": "d00ee7dbedb10bda292d7f498346650ba4ab5dcf02d5412531dc071086438d73",
+         "dataid-cv:tag": "sorted",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "22419",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=parsed_sorted.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:s4syst=\"https://saref.etsi.org/saref4syst/\" xmlns:schema=\"http://schema.org/\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:voaf=\"http://purl.org/vocommons/voaf#\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\">\n  <rdf:Description rdf:about=\"https://saref.etsi.org/saref4syst/\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://saref.etsi.org/saref4syst/\">\n    <dcterms:title xml:lang=\"en\">SAREF4SYST: an extension of SAREF for typology of systems and their inter-connections</dcterms:title>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://saref.etsi.org/saref4syst/\">\n    <dcterms:issued rdf:datatype=\"http://www.w3.org/2001/XMLSchema#date\">2019-06-06</dcterms:issued>",
+         "dataid:sha256sum": "78d2c455dafbcacf1c8c50fd257ed25aad1b907157ef9eca43e76eea1e745670",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "27290",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=diff_axioms=new.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=diff_axioms=new.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "",
+         "dataid:sha256sum": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+         "dataid-cv:axioms": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=diff_axioms=new.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=pyLodeDoc.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=pyLodeDoc.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <title>SAREF4SYST: an extension of SAREF for typology of systems and their inter-connections</title>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1Sew\nEAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n    \n    <style>",
+         "dataid:sha256sum": "5cd65933e5ca80be812b0fb192f14314984a14eb1347de7899d6128131c9462b",
+         "dataid-cv:type": "pyLodeDoc",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "49233",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=pyLodeDoc.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>SAREF4SYST: an extension of SAREF for typology of systems and their inter-connections</title><title>SAREF4SYST: an extension of SAREF for typology of systems and their inter-connections</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"https://saref.etsi.org/saref4syst/v1.1.2/\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "a828a3e54cfc346bf41e457f21d70875add01746ac87a9d2c831643403adff6e",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "27848",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=parsed.ttl\nStart loading\nNov 04, 2021 7:42:38 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://saref.etsi.org/saref4syst/ @owl:versionIRI https://saref.etsi.org/saref4syst/v1.1.2/\nFinished loading in 00:00:00.269\nInput size: Classes = 5, Properties = 33, Individuals = 0\nExpressivity: SRIN\nStart consistency check\nFinished consistency check in 00:00:00.033",
+         "dataid:sha256sum": "e90833c22d75b47e848c1e10ad659b38678208414af593883c42ecbd100bf320",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:41Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "784",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<https://saref.etsi.org/saref4syst/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<https://saref.etsi.org/saref4syst/> <http://purl.org/dc/terms/title> \"SAREF4SYST: an extension of SAREF for typology of systems and their inter-connections\"@en .\n<https://saref.etsi.org/saref4syst/> <http://purl.org/dc/terms/issued> \"2019-06-06\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<https://saref.etsi.org/saref4syst/> <http://purl.org/dc/terms/modified> \"2020-06-14\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<https://saref.etsi.org/saref4syst/> <http://purl.org/dc/terms/creator> <http://maxime-lefrancois.info/me#> .\n<https://saref.etsi.org/saref4syst/> <http://purl.org/dc/terms/abstract> \"The present document specifies a new reference ontology pattern for the [SAREF semantic model](https://saref.etsi.org/), which leverages the experience of the [EUREKA ITEA 12004 SEAS (Smart Energy Aware Systems) project](http://w3id.org/seas/), and the development of the [OGC&W3C SSN (Semantic Sensor Network) ontology](https://www.w3.org/TR/vocab-ssn/). It also defines how this pattern may be instantiated for the verticals, and point to examples for the Smart Energy and the Smart Building domains. The present document is based on the requirements and guidelines defined in the associated [ETSI TS 103 549 document](https://www.etsi.org/deliver/etsi_tr/103500_103599/103549/01.01.01_60/tr_103549v010101p.pdf).\"^^<https://www.iana.org/assignments/media-types/text/markdown> .\n<https://saref.etsi.org/saref4syst/> <http://purl.org/dc/terms/description> \"The present document is the technical specification of SAREF4SYST, a generic extension of [ETSI TS 103 264 SAREF](https://www.etsi.org/deliver/etsi_ts/103200_103299/103264/02.01.01_60/ts_103264v020101p.pdf) that defines an ontology pattern which can be instantiated for different domains. SAREF4SYST defines Systems, Connections between systems, and Connection Points at which systems may be connected. These core concepts can be used generically to define the topology of features of interest, and can be specialized for multiple domains. The topology of features of interest is highly important in many use cases. If a room holds a lighting device, and if it is adjacent with an open window to a room whose luminosity is low, then by turning on the lighting device in the former room one may expect that the luminosity in the latter room will rise.\\n\\nThe SAREF4SYST ontology pattern can be instantiated for different domains. For example to describe zones inside a building (systems), that share a frontier (connections). Properties of systems are typically state variables (e.g. agent population, temperature), whereas properties of connections are typically flows (e.g. heat flow).\\n\\nSAREF4SYST has two main aims: on the one hand, to extend SAREF with the capability or representing general topology of systems and how they are connected or interact and, on the other hand, to exemplify how ontology patterns may help to ensure an homogeneous structure of the overall SAREF ontology and speed up the development of extensions.\\n\\nSAREF4SYST consists both of a core ontology, and guidelines to create ontologies following the SAREF4SYST ontology pattern. The core ontology is a lightweight OWL-DL ontology that defines 3 classes and 9 object properties.\\n\\nUse cases for ontology patterns are described extensively in  [ETSI TR 103 549 Clauses 4.2 and 4.3](https://www.etsi.org/deliver/etsi_tr/103500_103599/103549/01.01.01_60/tr_103549v010101p.pdf).\\n\\nFor the Smart Energy domain:\\n\\n- Electric power systems can exchange electricity with other electric power systems. The electric energy can flow both ways in some cases (from the Public Grid to a Prosumer), or in only one way (from the Public Grid to a Load). Electric power systems can be made up of different sub-systems. Generic sub-types of electric power systems include producers, consumers, storage systems, transmission systems. \\n- Electric power systems may be connected one to another through electrical connection points. An Electric power system may have multiple connection points (Multiple Winding Transformer generally have one single primary winding with two or more secondary windings). Generic sub-types of electrical connection points include plugs, sockets, direct-current, single-phase, three-phase, connection points. \\n- An Electrical connection may exist between two Electric power systems at two of their respective connection points. Generic sub-types of electrical connections include Single-phase Buses, Three-phase Buses. A single-phase electric power system can be connected using different configurations at a three-phase bus (RN, SN, TN types).\\n\\nFor the Smart Building domain:\\n\\n- Buildings, Storeys, Spaces, are different sub-types of Zones. Zones can contain sub-zones. Zones can be adjacent or intersect with other zones. \\n- Two zones may share one or more connections. For example some fresh air may be created inside a storey if it has two controllable openings to the exterior at different cardinal points. \\n\\nA graphical overview of the SAREF4SYST ontology is provided in Figure 1. In such figure:\\n\\n- Rectangles are used to denote Classes. The label of the rectangle is the identifier of the Class.\\n- Plain arrows are used to represent Object Properties between Classes. The label of the arrow is the identifier of the Object Property. The origin of the arrow is the domain Class of the property, and the target of the arrow is the range Class of the property.\\n- Dashed arrows with identifiers between stereotype signs (i.e. \\\"`<< >>`\\\") refer to OWL axioms that are applied to some property. Four pairs of properties are inverse one of the other; the property `s4syst:connectedTo` is symmetric, and properties `s4syst:hasSubSystem` and `s4syst:hasSubSystem` are transitive.\\n- A symbol =1 near the target of an arrow denotes that the associated property is functional. A symbol \\u2203 denotes a local existential restriction.\\n\\n\\n![SAREF4SYST overview](diagrams/overview.png)\\n\"^^<https://www.iana.org/assignments/media-types/text/markdown> .\n<https://saref.etsi.org/saref4syst/> <http://purl.org/dc/terms/publisher> <https://www.etsi.org/> .\n<https://saref.etsi.org/saref4syst/> <http://purl.org/dc/terms/source> <https://saref.etsi.org/sources/saref4syst/> .\n<https://saref.etsi.org/saref4syst/> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.etsi.org/deliver/etsi_ts/103500_103599/103548/01.01.02_60/ts_103548v010102p.pdf> .",
+         "dataid:sha256sum": "05227876c39e796e0d49fb06531c17ce975955f31ab4ddbd992dcf3fb8f43c82",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "22419",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155#saref4syst_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.1.0.jar\n\n",
+         "dataid:sha256sum": "35133f3681a6ccdb320324b1927689adc218a5150f47233c68c456e42e0d1a9f",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.11.04-194155",
+         "dct:issued": {
+            "@value": "2021-11-04T19:43:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://forge.etsi.org/etsi-software-license"
+         },
+         "dct:modified": {
+            "@value": "2021-11-04T19:42:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/saref.etsi.org/saref4syst/2021.11.04-194155/saref4syst_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      }
+   ]
+}

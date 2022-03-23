@@ -1,0 +1,838 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/w3.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The Data Privacy Vocabulary (DPV) provides terms (classes and properties) to represent information about legally compliant personal data handling, which includes purposes, processing, personal data, technical and organisational measures."
+         },
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Data Privacy Vocabulary"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=parsed_sorted.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=diff_axioms=new.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=diff_axioms=old.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=pyLodeDoc.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=orig.owl"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The Data Privacy Vocabulary (DPV) provides terms (classes and properties) to represent information about legally compliant personal data handling, which includes purposes, processing, personal data, technical and organisational measures."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:axioms",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/ns/dpv#hasAddress -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+         "dataid:sha256sum": "0b81c9da9aeaf6039807e42b996794f7daa22751308924d3e88a7d4af9c9aaff",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "12782",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=parsed_sorted.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=parsed_sorted.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://www.w3.org/ns/dpv#AcademicResearch> <http://purl.org/dc/terms/created> \"2019-04-05\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://www.w3.org/ns/dpv#AcademicResearch> <http://purl.org/dc/terms/creator> \"Axel Polleres\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://www.w3.org/ns/dpv#AcademicResearch> <http://purl.org/dc/terms/creator> \"Elmar Kiesling\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://www.w3.org/ns/dpv#AcademicResearch> <http://purl.org/dc/terms/creator> \"Fajar Ekaputra\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://www.w3.org/ns/dpv#AcademicResearch> <http://purl.org/dc/terms/creator> \"Harshvardhan J. Pandit\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://www.w3.org/ns/dpv#AcademicResearch> <http://purl.org/dc/terms/creator> \"Javier Fernandez\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://www.w3.org/ns/dpv#AcademicResearch> <http://purl.org/dc/terms/creator> \"Simon Steyskal\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://www.w3.org/ns/dpv#AcademicResearch> <http://purl.org/dc/terms/description> \"Conduct or assist with research conducted in an academic context e.g. within universities\"@en .\n<http://www.w3.org/ns/dpv#AcademicResearch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .\n<http://www.w3.org/ns/dpv#AcademicResearch> <http://www.w3.org/2000/01/rdf-schema#label> \"Academic Research\"@en .",
+         "dataid:sha256sum": "5eadca1b84441490728ff8bba7a30893c44eae8d05f5ad09eeb0a3083bd4316f",
+         "dataid-cv:tag": "sorted",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "520494",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=parsed_sorted.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/ns/dpv#hasAddress -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+         "dataid:sha256sum": "0b81c9da9aeaf6039807e42b996794f7daa22751308924d3e88a7d4af9c9aaff",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "12782",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=diff_axioms=new.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=diff_axioms=new.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "SellProducts ⊑ ServiceProvision\nRegisterOfProcessingActivities ⊑ ProcessingRecords\nVendorPayment ⊑ VendorManagement\nDataImporter ⊑ Recipient\nVendorRecordsManagement ⊑ VendorManagement\nDataTransferImpactAssessment ⊑ ImpactAssessment\nSellProductsToDataSubject ⊑ SellProducts\nConsent ⊑ LegalBasis\nCustomerOrderManagement ⊑ CustomerManagement\nCommunicationForCustomerCare ⊑ CommunicationManagement",
+         "dataid:sha256sum": "e907b5fdbed38687c1229d173d9f9b93fdf5e7a293dc8f7b41bbb2d387b53a3f",
+         "dataid-cv:axioms": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2764",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=diff_axioms=new.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.1.0.jar\n\n",
+         "dataid:sha256sum": "35133f3681a6ccdb320324b1927689adc218a5150f47233c68c456e42e0d1a9f",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix ns1: <http://purl.org/vocab/vann/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sw: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .\n\n<http://www.w3.org/ns/dpv#AcademicResearch>\n    dct:created \"2019-04-05\"^^<http://www.w3.org/2001/XMLSchema#date> ;\n    dct:creator \"Axel Polleres\"^^<http://www.w3.org/2001/XMLSchema#string>, \"Elmar Kiesling\"^^<http://www.w3.org/2001/XMLSchema#string>, \"Fajar Ekaputra\"^^<http://www.w3.org/2001/XMLSchema#string>, \"Harshvardhan J. Pandit\"^^<http://www.w3.org/2001/XMLSchema#string>, \"Javier Fernandez\"^^<http://www.w3.org/2001/XMLSchema#string>, \"Simon Steyskal\"^^<http://www.w3.org/2001/XMLSchema#string> ;",
+         "dataid:sha256sum": "7ed85bceac53ec0e3bd80ea42291558c66a7f368f46adb314dfaca08be4a4fd3",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "252990",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://www.w3.org/ns/dpv#Risk> <http://www.w3.org/2000/01/rdf-schema#comment> \"Risks can be associated with one or more different concepts such as purpose, processing, personal data, technical or organisational measure.\"@en .\n<http://www.w3.org/ns/dpv#Risk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .\n<http://www.w3.org/ns/dpv#Risk> <http://purl.org/dc/terms/creator> \"Harshvardhan J. Pandit\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://www.w3.org/ns/dpv#Risk> <http://www.w3.org/2000/01/rdf-schema#label> \"Risk\"@en .\n<http://www.w3.org/ns/dpv#Risk> <http://purl.org/dc/terms/description> \"A risk or possibility or uncertainty of negative effects, impacts, or consequences.\"@en .\n<http://www.w3.org/ns/dpv#Risk> <http://purl.org/dc/terms/created> \"2020-11-18\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://www.w3.org/ns/dpv#Risk> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> \"accepted\"@en .\n<http://www.w3.org/ns/dpv#EnforceSecurity> <http://purl.org/dc/terms/creator> \"Harshvardhan J. Pandit\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://www.w3.org/ns/dpv#EnforceSecurity> <http://purl.org/dc/terms/creator> \"Axel Polleres\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://www.w3.org/ns/dpv#EnforceSecurity> <http://purl.org/dc/terms/creator> \"Elmar Kiesling\"^^<http://www.w3.org/2001/XMLSchema#string> .",
+         "dataid:sha256sum": "f247c402bd9a7013586c28cfcd0da9a0a13ea30aebd7ac65190202b9c8dcd7cf",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "520494",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>Data Privacy Vocabulary</title><title>Data Privacy Vocabulary</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"https://w3c.github.io/dpv/dpv/dpv.rdf\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "47d9bc50deb24f4358b8f858453e35373c42b760c3cda303098914010b40e70c",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "346225",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:21Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=parsed.ttl\nStart loading\nFinished loading in 00:00:00.440\nInput size: Classes = 364, Properties = 63, Individuals = 401\nExpressivity: ALH(D)\nStart consistency check\nFinished consistency check in 00:00:00.056\n\nTimer summary:",
+         "dataid:sha256sum": "6c9c299f9c781a9159ebbdb3948ce2d64babcf49a21985c332e229dc7022333f",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:24Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "494",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=parsed.ttl\nStart loading\nFinished loading in 00:00:00.443\nInput size: Classes = 364, Properties = 63, Individuals = 401\nExpressivity: ALH(D)\nStart consistency check\nFinished consistency check in 00:00:00.055\n\nTimer summary:",
+         "dataid:sha256sum": "58ec34e4325ddeb2155aaa4fb48922e6346d11620eef513b70372d5b65e4b9f8",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:24Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "494",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=diff_axioms=old.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=diff_axioms=old.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "SellProductsToDataSubject ⊑ CommercialInterest\nMarketing ⊑ CommercialInterest\nSellInsightsFromData ⊑ CommercialInterest\nSellDataToThirdParties ⊑ CommercialInterest\nSellTargettedAdvertisements ⊑ CommercialInterest\nImpactAssessment ⊑ OrganisationalMeasure\nSecurity ⊑ Purpose\nUsageAnalytics ⊑ ServiceProvision\nPersonalisedAdvertising ⊑ ServicePersonalization\nFraudPreventionAndDetection ⊑ Security",
+         "dataid:sha256sum": "07eefd805907c2a50edb3423718dcf74969c4c2add0ce73ca49b3da03b02d6a8",
+         "dataid-cv:axioms": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "608",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=diff_axioms=old.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://w3.org/ns/dpv> ;\n            sh:resultMessage \"No dct:license statement found\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "c9d62d069b760b6f007c4e6a610f3228c878cbc879a738b4e88d48fc004d15b5",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:21Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "640",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://w3.org/ns/dpv> ;",
+         "dataid:sha256sum": "656740c603cdbd6571233a9875493582e85bd8cacf8f6653d101d43882f01e3a",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:21Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "5925",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:ns1=\"http://purl.org/vocab/vann/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:sw=\"http://www.w3.org/2003/06/sw-vocab-status/ns#\">\n  <rdf:Description rdf:about=\"http://www.w3.org/ns/dpv#Risk\">\n    <rdfs:comment xml:lang=\"en\">Risks can be associated with one or more different concepts such as purpose, processing, personal data, technical or organisational measure.</rdfs:comment>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://www.w3.org/ns/dpv#Risk\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2000/01/rdf-schema#Class\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://www.w3.org/ns/dpv#Risk\">\n    <dct:creator rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">Harshvardhan J. Pandit</dct:creator>",
+         "dataid:sha256sum": "cd346dc7b6708bc0b9fcbdfde49b94f041bbc25647648b3adffee5df5369f128",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:20Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "689927",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2021.10.01; 18:44:16\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"35931\",\n        \"e-tag\": \"W/\\\"61572ccf-5c72e\\\"\",\n        \"lastModified\": \"Fri, 01 Oct 2021 15:44:15 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'content-length': '0', 'location': 'https://www.w3.org/ns/dpv'}\",",
+         "dataid:sha256sum": "5c88aae0bf187d5fc41db774c3cb0559b87e057d86f9589fde5fbbdc05b85ad9",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1654",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://w3.org/ns/dpv> ;\n            sh:resultMessage \"No license found at all (neither dct:license, xhv:license nor cc:license)\"@en ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:OrConstraintComponent ;",
+         "dataid:sha256sum": "ed3e748ad63d8ae54c485f79d9f96c1e4d1ceba26039190eccff03a55ac8e0b1",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:21Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "638",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=pyLodeDoc.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=pyLodeDoc.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <title>Data Privacy Vocabulary</title>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1Sew\nEAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n    \n    <style>",
+         "dataid:sha256sum": "14db9643955f43f8dc447327de82c19edd0ac7adea4d5fd5e7199e13a4c74828",
+         "dataid-cv:type": "pyLodeDoc",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:46Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "572006",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=pyLodeDoc.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414#ns--dpv_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rdf:RDF\n   xmlns:dct=\"http://purl.org/dc/terms/\"\n   xmlns:ns1=\"http://purl.org/vocab/vann/\"\n   xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n   xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n   xmlns:sw=\"http://www.w3.org/2003/06/sw-vocab-status/ns#\"\n>\n  <rdf:Description rdf:about=\"http://www.w3.org/ns/dpv#Risk\">",
+         "dataid:sha256sum": "78787de8765999ab5c70230c745471201653b92bfe6dd652799eabad666fe92f",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.01-184414",
+         "dct:issued": {
+            "@value": "2021-10-01T18:44:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2021-10-01T18:44:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "378671",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--dpv/2021.10.01-184414/ns--dpv_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      }
+   ]
+}

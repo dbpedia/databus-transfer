@@ -1,0 +1,104 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/wikidata/properties/2021.02.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/properties",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/properties/2021.02.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/wikidata/properties"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/wikidata"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/wikidata/properties/2021.02.01"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/6ce5e19acd2b2051ee1283a1409bcffadde365f3 . After its releases, data is cleaned and persisted under the DBpedia account. ) Wikidata property URIs as subject and dbo:alias to their labels"
+         },
+         "dct:hasVersion": "2021.02.01",
+         "dct:issued": {
+            "@value": "2021-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Wikidata properties with labels"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/wikidata/properties/2021.02.01#properties.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/6ce5e19acd2b2051ee1283a1409bcffadde365f3 . After its releases, data is cleaned and persisted under the DBpedia account. ) Wikidata property URIs as subject and dbo:alias to their labels"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/properties/2021.02.01#properties.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/properties/2021.02.01/properties.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2021-02-23T15:48:50Z\n<http://www.wikidata.org/entity/P6> <http://dbpedia.org/ontology/alias> \"Ministerpräsident , Bürgermeister , Oberbürgermeister , Ratsvorsitzender , Ortsbürgermeister , Regierungschef , Premierminister , Landrat , Regierungspräsident , Gemeindepräsident\"@de .\n<http://www.wikidata.org/entity/P6> <http://dbpedia.org/ontology/alias> \"primer ministru , presidente , gobernador , alcalde\"@ast .\n<http://www.wikidata.org/entity/P6> <http://dbpedia.org/ontology/alias> \"prefeito , primeiro ministro , premiê , governador , presidente , primeiro-ministro , chefe de estado\"@pt .\n<http://www.wikidata.org/entity/P6> <http://dbpedia.org/ontology/alias> \"քաղաքապետ , Երկրին նախագահ , Վարչապետ , Մարզպետ , շրջանային կառավարիչ , նահանգապետ , հրամանատար\"@hyw .\n<http://www.wikidata.org/entity/P6> <http://dbpedia.org/ontology/alias> \"ministras pirmininkas , premjeras , pirmasis ministras , meras\"@lt .\n<http://www.wikidata.org/entity/P6> <http://dbpedia.org/ontology/alias> \"gradonačelnik\"@hr .\n<http://www.wikidata.org/entity/P6> <http://dbpedia.org/ontology/alias> \"mērs , valdības galva\"@lv .\n<http://www.wikidata.org/entity/P6> <http://dbpedia.org/ontology/alias> \"kormányfő , polgármester , főpolgármester , miniszterelnök\"@hu .\n<http://www.wikidata.org/entity/P6> <http://dbpedia.org/ontology/alias> \"ߞߏߕߌ߯ ߝߟߐ , ߞߎ߲߬ߠߊ߬ߛߌ߮ ߞߎ߲߬ߕߌ߮\"@nqo .",
+         "dataid:sha256sum": "c839071fa1da425fb4cd8d608d8705a6ef5b40a37ff6e19f5f37ac85207d7234",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.02.01",
+         "dct:issued": {
+            "@value": "2021-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-04T16:34:29Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "5174447",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/databus-repo/marvin/wikidata/properties/2021.02.01/properties.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

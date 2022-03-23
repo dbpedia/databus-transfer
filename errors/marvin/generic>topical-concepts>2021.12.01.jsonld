@@ -1,0 +1,504 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/generic"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01"
+         },
+         "dataid-debug:codeReference": {
+            "@id": "https://github.com/dbpedia/extraction-framework/blob/master/core/src/main/scala/org/dbpedia/extraction/mappings/"
+         },
+         "dataid-debug:documentationLocation": {
+            "@id": "https://git.informatik.uni-leipzig.de/dbpedia-assoc/marvin-config/-/tree/master/databus-poms/dbpedia/generic/topical-concepts"
+         },
+         "dataid-debug:feedbackChannel": {
+            "@id": "https://forum.dbpedia.org/c/data/databus/14"
+         },
+         "dataid-debug:issueTracker": {
+            "@id": "https://github.com/dbpedia/extraction-framework/issues"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/852b69e98e8243a67052bf5fa020c3c10656e550 . After its releases, data is cleaned and persisted under the DBpedia account. ) help needed"
+         },
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) topical-concepts dataset"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=it.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=el.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=en.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=es.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=eu.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=ja.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=ru.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=ar.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=ca.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=pt.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=fr.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/852b69e98e8243a67052bf5fa020c3c10656e550 . After its releases, data is cleaned and persisted under the DBpedia account. ) help needed"
+         }
+      },
+      {
+         "@id": "dataid-cv:lang",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=it.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01/topical-concepts_lang=it.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2022-01-10T00:36:10Z\n<http://it.dbpedia.org/resource/Categoria:Diritto_processuale_penale> <http://dbpedia.org/ontology/mainArticleForCategory> <http://it.dbpedia.org/resource/Diritto_processuale_penale> .\n<http://it.dbpedia.org/resource/Categoria:Diritto_privato> <http://dbpedia.org/ontology/mainArticleForCategory> <http://it.dbpedia.org/resource/Diritto_privato> .\n<http://it.dbpedia.org/resource/Categoria:Malattie_secondo_l'apparato_interessato> <http://dbpedia.org/ontology/mainArticleForCategory> <http://it.dbpedia.org/resource/Malattia> .\n<http://it.dbpedia.org/resource/Categoria:Anatomia_patologica> <http://dbpedia.org/ontology/mainArticleForCategory> <http://it.dbpedia.org/resource/Anatomia> .\n<http://it.dbpedia.org/resource/Categoria:Malattie_dell'apparato_ematopoietico_e_del_sangue> <http://dbpedia.org/ontology/mainArticleForCategory> <http://it.dbpedia.org/resource/Patologia> .\n<http://it.dbpedia.org/resource/Categoria:Medicina_legale> <http://dbpedia.org/ontology/mainArticleForCategory> <http://it.dbpedia.org/resource/Medicina_legale> .\n<http://it.dbpedia.org/resource/Categoria:Malattie_del_sistema_nervoso> <http://dbpedia.org/ontology/mainArticleForCategory> <http://it.dbpedia.org/resource/neurologia> .\n<http://it.dbpedia.org/resource/Categoria:Anatomia_topografica> <http://dbpedia.org/ontology/mainArticleForCategory> <http://it.dbpedia.org/resource/Regioni_del_corpo_umano> .\n<http://it.dbpedia.org/resource/Categoria:Sistema_cardiovascolare> <http://dbpedia.org/ontology/mainArticleForCategory> <http://it.dbpedia.org/resource/cuore> .",
+         "dataid:sha256sum": "a6945bf506c4fc2b344873f5388a126e6208b892fbca8ec9a5d10e959cfc2db9",
+         "dataid-cv:lang": "it",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2022-01-18T11:53:26Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1306",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2021.12.01/topical-concepts_lang=it.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=el.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01/topical-concepts_lang=el.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2022-01-10T02:50:04Z\n<http://el.dbpedia.org/resource/Κατηγορία:Πόλεις_της_Ελλάδας> <http://dbpedia.org/ontology/mainArticleForCategory> <http://el.dbpedia.org/resource/Κατάλογος_πόλεων_της_Ελλάδας> .\n<http://el.dbpedia.org/resource/Κατηγορία:Αστέρες> <http://dbpedia.org/ontology/mainArticleForCategory> <http://el.dbpedia.org/resource/Αστέρας> .\n<http://el.dbpedia.org/resource/Κατηγορία:Ελλάδα> <http://dbpedia.org/ontology/mainArticleForCategory> <http://el.dbpedia.org/resource/Ελλάδα> .\n<http://el.dbpedia.org/resource/Κατηγορία:Πόλεις_της_Γερμανίας> <http://dbpedia.org/ontology/mainArticleForCategory> <http://el.dbpedia.org/resource/Κατάλογος_πόλεων_της_Γερμανίας> .\n<http://el.dbpedia.org/resource/Κατηγορία:Γερμανία> <http://dbpedia.org/ontology/mainArticleForCategory> <http://el.dbpedia.org/resource/Γερμανία> .\n<http://el.dbpedia.org/resource/Κατηγορία:Αθήνα> <http://dbpedia.org/ontology/mainArticleForCategory> <http://el.dbpedia.org/resource/Αθήνα> .\n<http://el.dbpedia.org/resource/Κατηγορία:Πρόεδροι_της_Κύπρου> <http://dbpedia.org/ontology/mainArticleForCategory> <http://el.dbpedia.org/resource/Πρόεδρος_της_Κυπριακής_Δημοκρατίας> .\n<http://el.dbpedia.org/resource/Κατηγορία:Εκπαίδευση> <http://dbpedia.org/ontology/mainArticleForCategory> <http://el.dbpedia.org/resource/Εκπαίδευση> .\n<http://el.dbpedia.org/resource/Κατηγορία:Επιστήμη_υλικών> <http://dbpedia.org/ontology/mainArticleForCategory> <http://el.dbpedia.org/resource/Επιστήμη_υλικών> .",
+         "dataid:sha256sum": "818ae83ed3fe92a798941c8c7e826ef7a314386d62354e90faa94ed12606dbec",
+         "dataid-cv:lang": "el",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2022-01-18T11:52:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "44830",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2021.12.01/topical-concepts_lang=el.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=en.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01/topical-concepts_lang=en.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2022-01-10T07:45:24Z\n<http://dbpedia.org/resource/Category:Futurama> <http://dbpedia.org/ontology/mainArticleForCategory> <http://dbpedia.org/resource/Futurama> .\n<http://dbpedia.org/resource/Category:World_War_II> <http://dbpedia.org/ontology/mainArticleForCategory> <http://dbpedia.org/resource/World_War_II> .\n<http://dbpedia.org/resource/Category:Programming_languages> <http://dbpedia.org/ontology/mainArticleForCategory> <http://dbpedia.org/resource/Programming_language> .\n<http://dbpedia.org/resource/Category:Anime> <http://dbpedia.org/ontology/mainArticleForCategory> <http://dbpedia.org/resource/Anime> .\n<http://dbpedia.org/resource/Category:Abstract_algebra> <http://dbpedia.org/ontology/mainArticleForCategory> <http://dbpedia.org/resource/Abstract_algebra> .\n<http://dbpedia.org/resource/Category:Linear_algebra> <http://dbpedia.org/ontology/mainArticleForCategory> <http://dbpedia.org/resource/Linear_algebra> .\n<http://dbpedia.org/resource/Category:Monarchs> <http://dbpedia.org/ontology/mainArticleForCategory> <http://dbpedia.org/resource/Monarch> .\n<http://dbpedia.org/resource/Category:Star_Trek> <http://dbpedia.org/ontology/mainArticleForCategory> <http://dbpedia.org/resource/Star_Trek> .\n<http://dbpedia.org/resource/Category:People> <http://dbpedia.org/ontology/mainArticleForCategory> <http://dbpedia.org/resource/People> .",
+         "dataid:sha256sum": "e5212d7b067a5029623982cf63348484e3ef8be43246d70d124be1f4e21c7932",
+         "dataid-cv:lang": "en",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2022-01-18T11:53:02Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1441275",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2021.12.01/topical-concepts_lang=en.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=es.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01/topical-concepts_lang=es.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2022-01-09T15:49:43Z\n<http://es.dbpedia.org/resource/Categoría:Anatomía> <http://dbpedia.org/ontology/mainArticleForCategory> <http://es.dbpedia.org/resource/Anatomía> .\n<http://es.dbpedia.org/resource/Categoría:Software> <http://dbpedia.org/ontology/mainArticleForCategory> <http://es.dbpedia.org/resource/software> .\n<http://es.dbpedia.org/resource/Categoría:Sexualidad> <http://dbpedia.org/ontology/mainArticleForCategory> <http://es.dbpedia.org/resource/Sexualidad> .\n<http://es.dbpedia.org/resource/Categoría:Fútbol> <http://dbpedia.org/ontology/mainArticleForCategory> <http://es.dbpedia.org/resource/Fútbol> .\n<http://es.dbpedia.org/resource/Categoría:Historia_de_Aragón> <http://dbpedia.org/ontology/mainArticleForCategory> <http://es.dbpedia.org/resource/Historia_de_Aragón> .\n<http://es.dbpedia.org/resource/Categoría:Historia_de_Cataluña> <http://dbpedia.org/ontology/mainArticleForCategory> <http://es.dbpedia.org/resource/Historia_de_Cataluña> .\n<http://es.dbpedia.org/resource/Categoría:Historia_de_España> <http://dbpedia.org/ontology/mainArticleForCategory> <http://es.dbpedia.org/resource/Historia_de_España> .\n<http://es.dbpedia.org/resource/Categoría:Dibujantes_de_manga> <http://dbpedia.org/ontology/mainArticleForCategory> <http://es.dbpedia.org/resource/Mangaka> .\n<http://es.dbpedia.org/resource/Categoría:Historia_de_Europa> <http://dbpedia.org/ontology/mainArticleForCategory> <http://es.dbpedia.org/resource/Historia_de_Europa> .",
+         "dataid:sha256sum": "f5f24a57a4b60f07356c4359d022819f478152d8b22debcf80434d75725eada1",
+         "dataid-cv:lang": "es",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2022-01-18T11:53:05Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "693902",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2021.12.01/topical-concepts_lang=es.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=eu.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01/topical-concepts_lang=eu.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2022-01-10T17:28:24Z\n<http://eu.dbpedia.org/resource/Kategoria:Idazleak> <http://dbpedia.org/ontology/mainArticleForCategory> <http://eu.dbpedia.org/resource/Idazle> .\n<http://eu.dbpedia.org/resource/Kategoria:Elementu_kimikoak> <http://dbpedia.org/ontology/mainArticleForCategory> <http://eu.dbpedia.org/resource/Elementu_kimiko> .\n<http://eu.dbpedia.org/resource/Kategoria:Kimika> <http://dbpedia.org/ontology/mainArticleForCategory> <http://eu.dbpedia.org/resource/Kimika> .\n<http://eu.dbpedia.org/resource/Kategoria:Astronomia> <http://dbpedia.org/ontology/mainArticleForCategory> <http://eu.dbpedia.org/resource/Astronomia> .\n<http://eu.dbpedia.org/resource/Kategoria:Kristautasuna> <http://dbpedia.org/ontology/mainArticleForCategory> <http://eu.dbpedia.org/resource/Kristautasun> .\n<http://eu.dbpedia.org/resource/Kategoria:Zientziak> <http://dbpedia.org/ontology/mainArticleForCategory> <http://eu.dbpedia.org/resource/Zientzia> .\n<http://eu.dbpedia.org/resource/Kategoria:Urtarrila> <http://dbpedia.org/ontology/mainArticleForCategory> <http://eu.dbpedia.org/resource/Urtarril> .\n<http://eu.dbpedia.org/resource/Kategoria:Astronomoak> <http://dbpedia.org/ontology/mainArticleForCategory> <http://eu.dbpedia.org/resource/Zerrenda:Astronomo_ospetsuak> .\n<http://eu.dbpedia.org/resource/Kategoria:Filosofia> <http://dbpedia.org/ontology/mainArticleForCategory> <http://eu.dbpedia.org/resource/Filosofia> .",
+         "dataid:sha256sum": "295e0c1a1af526b44f56ccb16e00e320f6fc01b5593988cf257e13fb78276979",
+         "dataid-cv:lang": "eu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2022-01-18T11:53:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "140800",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2021.12.01/topical-concepts_lang=eu.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=ja.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01/topical-concepts_lang=ja.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2022-01-09T23:10:19Z\n<http://ja.dbpedia.org/resource/Category:韓国の政党> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ja.dbpedia.org/resource/大韓民国の政党> .\n<http://ja.dbpedia.org/resource/Category:工具> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ja.dbpedia.org/resource/工具> .\n<http://ja.dbpedia.org/resource/Category:文書> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ja.dbpedia.org/resource/文書> .\n<http://ja.dbpedia.org/resource/Category:昆虫> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ja.dbpedia.org/resource/昆虫> .\n<http://ja.dbpedia.org/resource/Category:節足動物> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ja.dbpedia.org/resource/節足動物> .\n<http://ja.dbpedia.org/resource/Category:甲殻類> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ja.dbpedia.org/resource/甲殻類> .\n<http://ja.dbpedia.org/resource/Category:脊椎動物> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ja.dbpedia.org/resource/脊椎動物> .\n<http://ja.dbpedia.org/resource/Category:フィクション> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ja.dbpedia.org/resource/フィクション> .\n<http://ja.dbpedia.org/resource/Category:日本の天皇> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ja.dbpedia.org/resource/天皇> .",
+         "dataid:sha256sum": "89f0919ff4747f4b54a13f13b8e1fdd0f3f783e956477fa50fa6c032a1bd51d7",
+         "dataid-cv:lang": "ja",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2022-01-18T11:53:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "9991",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2021.12.01/topical-concepts_lang=ja.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=ru.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01/topical-concepts_lang=ru.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2022-01-09T18:04:09Z\n<http://ru.dbpedia.org/resource/Категория:Боги_славян> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ru.dbpedia.org/resource/Список_славянских_богов> .\n<http://ru.dbpedia.org/resource/Категория:География> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ru.dbpedia.org/resource/География> .\n<http://ru.dbpedia.org/resource/Категория:Философы> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ru.dbpedia.org/resource/Философ> .\n<http://ru.dbpedia.org/resource/Категория:Википедия:Справка> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ru.dbpedia.org/resource/Википедия:Справка> .\n<http://ru.dbpedia.org/resource/Категория:Космонавты> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ru.dbpedia.org/resource/Космонавт> .\n<http://ru.dbpedia.org/resource/Категория:Искусство> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ru.dbpedia.org/resource/Искусство> .\n<http://ru.dbpedia.org/resource/Категория:Искусство> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ru.dbpedia.org/resource/Искусство> .\n<http://ru.dbpedia.org/resource/Категория:Писатели> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ru.dbpedia.org/resource/Писатель> .\n<http://ru.dbpedia.org/resource/Категория:Виды_спорта> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ru.dbpedia.org/resource/Вид_спорта> .",
+         "dataid:sha256sum": "0d7f15d027931d2f5fc3b3acb6e9e96589aaf48a7de7eadd2bcd719085c157c3",
+         "dataid-cv:lang": "ru",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2022-01-18T11:53:45Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "549885",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2021.12.01/topical-concepts_lang=ru.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=ar.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01/topical-concepts_lang=ar.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2022-01-10T17:59:04Z\n<http://ar.dbpedia.org/resource/تصنيف:حقوق_التأليف_والنشر> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ar.dbpedia.org/resource/حقوق_التأليف_والنشر> .\n<http://ar.dbpedia.org/resource/تصنيف:وحشيات_الأرجل> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ar.dbpedia.org/resource/وحشيات_الأرجل> .\n<http://ar.dbpedia.org/resource/تصنيف:قرى_محافظة_وادي_الفرع> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ar.dbpedia.org/resource/محافظة_وادي_الفرع> .\n<http://ar.dbpedia.org/resource/تصنيف:قرى_محافظة_وادي_الدواسر> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ar.dbpedia.org/resource/محافظة_وادي_الدواسر> .\n<http://ar.dbpedia.org/resource/تصنيف:أصنوفات_سماها_كارولوس_لينيوس> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ar.dbpedia.org/resource/كارولوس_لينيوس> .\n<http://ar.dbpedia.org/resource/تصنيف:أصنوفات_سماها_ريتشارد_أوين> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ar.dbpedia.org/resource/ريتشارد_أوين> .\n<http://ar.dbpedia.org/resource/تصنيف:أصنوفات_سماها_آزا_غراي> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ar.dbpedia.org/resource/آزا_غراي> .\n<http://ar.dbpedia.org/resource/تصنيف:مشاريع_رؤية_السعودية_2030> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ar.dbpedia.org/resource/رؤية_السعودية_2030> .\n<http://ar.dbpedia.org/resource/تصنيف:أحداث_متعلقة_بالملك_سلمان_بن_عبد_العزيز> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ar.dbpedia.org/resource/سلمان_بن_عبد_العزيز_آل_سعود> .",
+         "dataid:sha256sum": "ed810d68c5cb3ee21c374dfad39f1c8ab0a0abd2a0423d086c84dd9b41cf7839",
+         "dataid-cv:lang": "ar",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2022-01-18T11:52:40Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1931",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2021.12.01/topical-concepts_lang=ar.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=ca.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01/topical-concepts_lang=ca.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2022-01-10T16:38:46Z\n<http://ca.dbpedia.org/resource/Categoria:Mitologia> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ca.dbpedia.org/resource/Mitologia> .\n<http://ca.dbpedia.org/resource/Categoria:Mitologia_catalana> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ca.dbpedia.org/resource/Mitologia_catalana> .\n<http://ca.dbpedia.org/resource/Categoria:Literatura> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ca.dbpedia.org/resource/Literatura> .\n<http://ca.dbpedia.org/resource/Categoria:Poesia> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ca.dbpedia.org/resource/Poesia> .\n<http://ca.dbpedia.org/resource/Categoria:Elements_químics> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ca.dbpedia.org/resource/Element_químic> .\n<http://ca.dbpedia.org/resource/Categoria:Química> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ca.dbpedia.org/resource/Química> .\n<http://ca.dbpedia.org/resource/Categoria:Cantants> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ca.dbpedia.org/resource/Cantant> .\n<http://ca.dbpedia.org/resource/Categoria:Música> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ca.dbpedia.org/resource/Música> .\n<http://ca.dbpedia.org/resource/Categoria:Òpera> <http://dbpedia.org/ontology/mainArticleForCategory> <http://ca.dbpedia.org/resource/Òpera> .",
+         "dataid:sha256sum": "26d1f369af2154e1c2c33483218bebad020e985fe1e863b5e32dc8a3f3ab5382",
+         "dataid-cv:lang": "ca",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2022-01-18T11:52:45Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "124863",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2021.12.01/topical-concepts_lang=ca.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=pt.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01/topical-concepts_lang=pt.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2022-01-09T19:41:46Z\n<http://pt.dbpedia.org/resource/Categoria:Subdivisões_de_países> <http://dbpedia.org/ontology/mainArticleForCategory> <http://pt.dbpedia.org/resource/Divisão_administrativa> .\n<http://pt.dbpedia.org/resource/Categoria:Biologia> <http://dbpedia.org/ontology/mainArticleForCategory> <http://pt.dbpedia.org/resource/Biologia> .\n<http://pt.dbpedia.org/resource/Categoria:Rios> <http://dbpedia.org/ontology/mainArticleForCategory> <http://pt.dbpedia.org/resource/Rio> .\n<http://pt.dbpedia.org/resource/Categoria:Ciência_da_computação> <http://dbpedia.org/ontology/mainArticleForCategory> <http://pt.dbpedia.org/resource/Ciência_da_computação> .\n<http://pt.dbpedia.org/resource/Categoria:Divisões_administrativas> <http://dbpedia.org/ontology/mainArticleForCategory> <http://pt.dbpedia.org/resource/Divisão_administrativa> .\n<http://pt.dbpedia.org/resource/Categoria:Artes_marciais> <http://dbpedia.org/ontology/mainArticleForCategory> <http://pt.dbpedia.org/resource/Artes_marciais> .\n<http://pt.dbpedia.org/resource/Categoria:Taiwan> <http://dbpedia.org/ontology/mainArticleForCategory> <http://pt.dbpedia.org/resource/Taiwan> .\n<http://pt.dbpedia.org/resource/Categoria:Socialismo> <http://dbpedia.org/ontology/mainArticleForCategory> <http://pt.dbpedia.org/resource/Socialismo> .\n<http://pt.dbpedia.org/resource/Categoria:Cores> <http://dbpedia.org/ontology/mainArticleForCategory> <http://pt.dbpedia.org/resource/Cor> .",
+         "dataid:sha256sum": "775c7a3d4b9d322c9d08e02a3b6496c50b22c3aaf1d3deca51789b5392537a87",
+         "dataid-cv:lang": "pt",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2022-01-18T11:53:42Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "50714",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2021.12.01/topical-concepts_lang=pt.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01#topical-concepts_lang=fr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/topical-concepts/2021.12.01/topical-concepts_lang=fr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2022-01-10T05:12:40Z\n<http://fr.dbpedia.org/resource/Catégorie:Sept_Merveilles_du_monde> <http://dbpedia.org/ontology/mainArticleForCategory> <http://fr.dbpedia.org/resource/Sept_Merveilles_du_monde> .\n<http://fr.dbpedia.org/resource/Catégorie:Pluton> <http://dbpedia.org/ontology/mainArticleForCategory> <http://fr.dbpedia.org/resource/Pluton_(planète_naine)> .\n<http://fr.dbpedia.org/resource/Catégorie:Vénus> <http://dbpedia.org/ontology/mainArticleForCategory> <http://fr.dbpedia.org/resource/Vénus_(planète)> .\n<http://fr.dbpedia.org/resource/Catégorie:Mars> <http://dbpedia.org/ontology/mainArticleForCategory> <http://fr.dbpedia.org/resource/Mars_(mois)> .\n<http://fr.dbpedia.org/resource/Catégorie:Science> <http://dbpedia.org/ontology/mainArticleForCategory> <http://fr.dbpedia.org/resource/Science> .\n<http://fr.dbpedia.org/resource/Catégorie:Économie> <http://dbpedia.org/ontology/mainArticleForCategory> <http://fr.dbpedia.org/resource/Économie_(discipline)> .\n<http://fr.dbpedia.org/resource/Catégorie:Finance> <http://dbpedia.org/ontology/mainArticleForCategory> <http://fr.dbpedia.org/resource/Finance> .\n<http://fr.dbpedia.org/resource/Catégorie:Sociologue> <http://dbpedia.org/ontology/mainArticleForCategory> <http://fr.dbpedia.org/resource/Sociologue> .\n<http://fr.dbpedia.org/resource/Catégorie:Christianisme> <http://dbpedia.org/ontology/mainArticleForCategory> <http://fr.dbpedia.org/resource/Christianisme> .",
+         "dataid:sha256sum": "7e4575c2242689921d45652bdb87f4dd5c977712f1b71699171d4ca277efbb81",
+         "dataid-cv:lang": "fr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.01",
+         "dct:issued": {
+            "@value": "2021-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2022-01-18T11:53:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1092897",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/topical-concepts/2021.12.01/topical-concepts_lang=fr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

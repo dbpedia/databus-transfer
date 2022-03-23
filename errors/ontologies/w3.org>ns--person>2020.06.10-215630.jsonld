@@ -1,0 +1,668 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--person",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--person"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/w3.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The Person Core Vocabulary provides a minimum set of classes and properties for describing a natural person, i.e. the individual as opposed to any role they may play in society or the relationships they have to other people, organisations and property; all of which contribute significantly to the broader concept of identity."
+         },
+         "dct:hasVersion": "2020.06.10-215630",
+         "dct:issued": {
+            "@value": "2020-07-09T13:32:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "ISA Programme Person Core Vocabulary"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=orig.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=OOPS.rdf"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=parsed.owl"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The Person Core Vocabulary provides a minimum set of classes and properties for describing a natural person, i.e. the individual as opposed to any role they may play in society or the relationships they have to other people, organisations and property; all of which contribute significantly to the broader concept of identity."
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630/ns--person_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "_:genid1 <http://schema.org/affiliation> <http://www.w3.org/data#W3C> .\n_:genid1 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://philarcher.org/foaf.rdf#me> .\n_:genid1 <http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/People/all#phila> .\n_:genid1 <http://xmlns.com/foaf/0.1/name> \"Phil Archer\" .\n_:genid2 <http://xmlns.com/foaf/0.1/homepage> <http://ies.jrc.ec.europa.eu/DE> .\n_:genid2 <http://xmlns.com/foaf/0.1/name> \"European Commission, Joint Research Centre \" .\n_:genid3 <http://schema.org/affiliation> _:genid2 .\n_:genid3 <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://andrea-perego.name/foaf/#me> .\n_:genid3 <http://xmlns.com/foaf/0.1/homepage> <http://andrea-perego.name/> .\n_:genid3 <http://xmlns.com/foaf/0.1/name> \"Andrea Perego\" .",
+         "dataid:sha256sum": "f38b017398233b20796c53223b6f08d08fa3d719b4f4d288742027eaf7bb61b1",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-215630",
+         "dct:issued": {
+            "@value": "2020-07-09T13:32:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:31:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "15218",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--person/2020.06.10-215630/ns--person_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630/ns--person_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://www.w3.org/ns/person> ;",
+         "dataid:sha256sum": "52e6c0a651d0211222ff13ef660b34820eb6bbc09222f833a3e178de6eaefdb7",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-215630",
+         "dct:issued": {
+            "@value": "2020-07-09T13:32:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:31:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "6469",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--person/2020.06.10-215630/ns--person_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630/ns--person_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/ns/person#birthName -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/ns/person#citizenship -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/ns/person#countryOfBirth -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/ns/person#countryOfDeath -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/ns/person#patronymicName -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/ns/person#placeOfBirth -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+         "dataid:sha256sum": "1affda1f5945812f468f27bf6151e13038da9e3a9a7fef2c110a2212ab27d61b",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-215630",
+         "dct:issued": {
+            "@value": "2020-07-09T13:32:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:31:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4688",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--person/2020.06.10-215630/ns--person_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=orig.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630/ns--person_type=orig.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dcterms: <http://purl.org/dc/terms/>.\n@prefix foaf: <http://xmlns.com/foaf/0.1/>.\n@prefix owl: <http://www.w3.org/2002/07/owl#>.\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.\n@prefix xml: <http://www.w3.org/XML/1998/namespace>.\n@prefix voaf: <http://purl.org/vocommons/voaf#>.\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.\n@prefix wdrs: <http://www.w3.org/2007/05/powder-s#>.\n@prefix schema: <http://schema.org/> .",
+         "dataid:sha256sum": "ad0ed4a021db88109aff67a84a6d5d84752b5b318369989a6aafc38b727bac48",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-215630",
+         "dct:issued": {
+            "@value": "2020-07-09T13:32:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:31:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "7115",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--person/2020.06.10-215630/ns--person_type=orig.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=OOPS.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630/ns--person_type=OOPS.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<rdf:RDF\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n    xmlns:oops=\"http://oops.linkeddata.es/def#\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n    xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" > \n  <rdf:Description rdf:about=\"http://oops.linkeddata.es/def#suggestion\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Class\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://oops.linkeddata.es/data/e7461a09-d06a-4176-9cb9-b8ddb764017e\">",
+         "dataid:sha256sum": "8cf945c7414373a51573a51f63541b700dcd4b7fc49c151181b3889a1d39f190",
+         "dataid-cv:type": "OOPS",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-215630",
+         "dct:issued": {
+            "@value": "2020-07-09T13:32:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:31:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "7053",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--person/2020.06.10-215630/ns--person_type=OOPS.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630/ns--person_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.0.0.jar\n\n",
+         "dataid:sha256sum": "fcdd4ee978b74ae744e3205ebaee81c876347817db89cd283b1d71911a9e2047",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-215630",
+         "dct:issued": {
+            "@value": "2020-07-09T13:32:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:31:29Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--person/2020.06.10-215630/ns--person_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630/ns--person_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-215630",
+         "dct:issued": {
+            "@value": "2020-07-09T13:32:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:31:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--person/2020.06.10-215630/ns--person_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630/ns--person_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2020.05.07; 00:53:34\",\n        \"best-header\": \"text/turtle\",\n        \"content-length\": \"7050\",\n        \"e-tag\": \"\\\"1b8a-4eefa71200080;61-4eb751fbca3c0\\\"\",\n        \"lastModified\": \"Thu, 02 Jan 2014 10:41:54 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"\",",
+         "dataid:sha256sum": "861dc08827a78507c2cd73b88d8ac1a51b27ecaa703eb956867276cb0cdc063d",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-215630",
+         "dct:issued": {
+            "@value": "2020-07-09T13:32:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:31:29Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1201",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--person/2020.06.10-215630/ns--person_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630/ns--person_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@base <http://www.w3.org/ns/person> .\n@prefix rdf: <../1999/02/22-rdf-syntax-ns#> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix owl: <../2002/07/owl#> .\n@prefix xsd: <../2001/XMLSchema#> .\n@prefix xml: <../XML/1998/namespace> .\n@prefix voaf: <http://purl.org/vocommons/voaf#> .\n@prefix rdfs: <../2000/01/rdf-schema#> .\n@prefix wdrs: <../2007/05/powder-s#> .",
+         "dataid:sha256sum": "fdac246d1cb0245be74c3c4bf70b9a9ec683dbf9430760b7acf2fb612efaf6a0",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-215630",
+         "dct:issued": {
+            "@value": "2020-07-09T13:32:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:31:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "7068",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--person/2020.06.10-215630/ns--person_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630/ns--person_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<html><head><title>LODE error</title></head><body><h2>LODE error</h2><p><strong>Reason: </strong>Problem parsing http://www.w3.org/ns/person\nCould not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.\nThe following parsers were tried:\n1) RDFXMLParser\n2) OWLXMLParser\n3) OWLFunctionalSyntaxOWLParser\n4) TurtleOntologyParser\n5) KRSS2OWLParser\n6) ManchesterOWLSyntaxOntologyParser\n7) OBOFormatOWLAPIParser",
+         "dataid:sha256sum": "d2112ac7c365f24e600f19097bca65e90d89044466e464b2fcd76b8ec008ab62",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-215630",
+         "dct:issued": {
+            "@value": "2020-07-09T13:32:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:31:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2113",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--person/2020.06.10-215630/ns--person_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630/ns--person_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-215630",
+         "dct:issued": {
+            "@value": "2020-07-09T13:32:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:31:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--person/2020.06.10-215630/ns--person_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630/ns--person_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/w3.org/ns--person/2020.06.10-215630/ns--person_type=parsed.ttl\nStart loading\nFinished loading in 00:00:00.111\nInput size: Classes = 9, Properties = 40, Individuals = 22\nExpressivity: ALH(D)\nStart consistency check\nFinished consistency check in 00:00:00.021\n\nTimer summary:",
+         "dataid:sha256sum": "1d61bc0c760cd992b388a48c5ac78c045bddaf3577533b666c51904287f4005a",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-215630",
+         "dct:issued": {
+            "@value": "2020-07-09T13:32:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:31:25Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "519",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--person/2020.06.10-215630/ns--person_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630/ns--person_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/w3.org/ns--person/2020.06.10-215630/ns--person_type=parsed.ttl\nStart loading\nFinished loading in 00:00:00.114\nInput size: Classes = 9, Properties = 40, Individuals = 22\nExpressivity: ALH(D)\nStart consistency check\nFinished consistency check in 00:00:00.022\n\nTimer summary:",
+         "dataid:sha256sum": "52d7effa8ec950111e9f28010a5a1e8521603aba960761e4e1727a2cefea9a5f",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-215630",
+         "dct:issued": {
+            "@value": "2020-07-09T13:32:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:31:25Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "519",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--person/2020.06.10-215630/ns--person_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630/ns--person_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/ns/person#birthName -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/ns/person#citizenship -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/ns/person#countryOfBirth -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/ns/person#countryOfDeath -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/ns/person#patronymicName -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://www.w3.org/ns/person#placeOfBirth -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+         "dataid:sha256sum": "1affda1f5945812f468f27bf6151e13038da9e3a9a7fef2c110a2212ab27d61b",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-215630",
+         "dct:issued": {
+            "@value": "2020-07-09T13:32:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:31:29Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4688",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--person/2020.06.10-215630/ns--person_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630#ns--person_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3.org/ns--person/2020.06.10-215630/ns--person_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:schema=\"http://schema.org/\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:voaf=\"http://purl.org/vocommons/voaf#\" xmlns:wdrs=\"http://www.w3.org/2007/05/powder-s#\" xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"http://www.w3.org/ns/person#\" xml:base=\"http://www.w3.org/ns/person\">\n  <rdf:Description rdf:nodeID=\"genid1\">\n    <schema:affiliation rdf:resource=\"../data#W3C\"/>\n  </rdf:Description>\n  <rdf:Description rdf:nodeID=\"genid1\">\n    <rdfs:seeAlso rdf:resource=\"http://philarcher.org/foaf.rdf#me\"/>\n  </rdf:Description>\n  <rdf:Description rdf:nodeID=\"genid1\">\n    <foaf:homepage rdf:resource=\"../People/all#phila\"/>",
+         "dataid:sha256sum": "71d91cab1cbc47ac1973179e60d88563ec5f35af508e3e88ef549eb6a8573453",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-215630",
+         "dct:issued": {
+            "@value": "2020-07-09T13:32:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:31:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "16744",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3.org/ns--person/2020.06.10-215630/ns--person_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      }
+   ]
+}

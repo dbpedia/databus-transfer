@@ -1,0 +1,668 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "We built this ontology by looking at log4j version 1.2 and version 2 beta: http://logging.apache.org/log4j/2.x/manual/layouts.html, http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/PatternLayout.html  \tIs this complete? No! But it will be sufficient for most use cases, please feel free to extend and adapt the ontology, if you need more.      Loglevels: TRACE, DEBUG, INFO, WARN, ERROR and FATAL          Feedback \tIf you'd like to leave feedback, please open an issue on GitHub (https://github.com/NLP2RDF/ontologies/issues) and read the README (https://github.com/NLP2RDF/ontologies#readme) or write an email to the mailing list: http://lists.informatik.uni-leipzig.de/mailman/listinfo/nlp2rdf  \tVersioning process is explained here: http://persistence.uni-leipzig.org/nlp2rdf/specification/version.html          Changelog:     * 1.0.0 initial version     * 1.0.1 added Error Code class and errcode property     * 1.1.0 change Error Code class to Status Code"
+         },
+         "dct:hasVersion": "2020.06.10-201428",
+         "dct:issued": {
+            "@value": "2020-07-08T23:48:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "RLOG - an RDF Logging Ontology"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=orig.rdf"
+            },
+            {
+               "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=OOPS.rdf"
+            },
+            {
+               "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=pelletConsistency_imports=NONE.txt"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "We built this ontology by looking at log4j version 1.2 and version 2 beta: http://logging.apache.org/log4j/2.x/manual/layouts.html, http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/PatternLayout.html  \tIs this complete? No! But it will be sufficient for most use cases, please feel free to extend and adapt the ontology, if you need more.      Loglevels: TRACE, DEBUG, INFO, WARN, ERROR and FATAL          Feedback \tIf you'd like to leave feedback, please open an issue on GitHub (https://github.com/NLP2RDF/ontologies/issues) and read the README (https://github.com/NLP2RDF/ontologies#readme) or write an email to the mailing list: http://lists.informatik.uni-leipzig.de/mailman/listinfo/nlp2rdf  \tVersioning process is explained here: http://persistence.uni-leipzig.org/nlp2rdf/specification/version.html          Changelog:     * 1.0.0 initial version     * 1.0.1 added Error Code class and errcode property     * 1.1.0 change Error Code class to Status Code"
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2020.05.20; 17:35:33\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"11211\",\n        \"e-tag\": \"\",\n        \"lastModified\": \"Wed, 08 Apr 2015 13:31:12 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Content-Type': 'text/html', 'Content-Length': '185', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=30', 'Location': 'https://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog'}\",",
+         "dataid:sha256sum": "67eb5d2cd4d21cd8deef3a834b77c83a42668698bcadc369e45abe9170dbfe14",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201428",
+         "dct:issued": {
+            "@value": "2020-07-08T23:48:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:33:45Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1212",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>RLOG - an RDF Logging Ontology</title><title>RLOG - an RDF Logging Ontology</title><title>RLOG - an RDF Logging Ontology</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "58a956568be86e434e6f32e8b99be812185baed5f7eea2c3ee2c6a9cdf71b1a3",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201428",
+         "dct:issued": {
+            "@value": "2020-07-08T23:48:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:33:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "29300",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\nVersion Info = 1.1.0\norg.semanticweb.owlapi.model.OWLRuntimeException: No current axiom; is the walker being used outside of an ontology visit?\n\tat org.semanticweb.owlapi.util.OWLOntologyWalkerVisitor.getCurrentAxiom(OWLOntologyWalkerVisitor.java:48)\n\tat org.semanticweb.owlapi.profiles.OWL2DLProfile$OWL2DLProfileObjectVisitor.visit(OWL2DLProfile.java:484)",
+         "dataid:sha256sum": "1d7978de5e78361d6931a5d98b27c6edb50dc141ca53244ba564bc52f49fc300",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201428",
+         "dct:issued": {
+            "@value": "2020-07-08T23:48:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:33:43Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2856",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.0.0.jar\n\n",
+         "dataid:sha256sum": "fcdd4ee978b74ae744e3205ebaee81c876347817db89cd283b1d71911a9e2047",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201428",
+         "dct:issued": {
+            "@value": "2020-07-08T23:48:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:33:45Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201428",
+         "dct:issued": {
+            "@value": "2020-07-08T23:48:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:33:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@base <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix rlog: <> .\n@prefix vann: <http://purl.org/vocab/vann/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n",
+         "dataid:sha256sum": "dc51cfc483d9c0c982df9bd817becf004c9283fabec2b48e4c26ed8fa27d9d68",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201428",
+         "dct:issued": {
+            "@value": "2020-07-08T23:48:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:33:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "6568",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201428",
+         "dct:issued": {
+            "@value": "2020-07-08T23:48:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:33:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=parsed.ttl\nStart loading\nJul 08, 2020 12:33:40 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog @owl:versionIRI https://github.com/NLP2RDF/ontologies/blob/master/rlog/rlog.ttl\nFinished loading in 00:00:00.123\nInput size: Classes = 5, Properties = 30, Individuals = 14\nExpressivity: ALH(D)\nStart consistency check\nFinished consistency check in 00:00:00.025",
+         "dataid:sha256sum": "f6ca580306a55500201d136bead9b1568806f3c254b2ddad62799cb18e66b3e7",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201428",
+         "dct:issued": {
+            "@value": "2020-07-08T23:48:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:33:41Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "899",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#> <http://purl.org/dc/elements/1.1/contributor> \"TODO\" .\n<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#> <http://purl.org/dc/elements/1.1/creator> \"Sebastian Hellmann\" .\n<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#> <http://purl.org/dc/elements/1.1/description> \"We built this ontology by looking at log4j version 1.2 and version 2 beta: http://logging.apache.org/log4j/2.x/manual/layouts.html, http://logging.apache.org/log4j/1.2/apidocs/org/apache/log4j/PatternLayout.html \\n\\tIs this complete? No! But it will be sufficient for most use cases, please feel free to extend and adapt the ontology, if you need more. \\n    Loglevels: TRACE, DEBUG, INFO, WARN, ERROR and FATAL\\n    \\n    Feedback\\n\\tIf you'd like to leave feedback, please open an issue on GitHub (https://github.com/NLP2RDF/ontologies/issues) and read the README (https://github.com/NLP2RDF/ontologies#readme) or write an email to the mailing list: http://lists.informatik.uni-leipzig.de/mailman/listinfo/nlp2rdf\\n\\n\\tVersioning process is explained here: http://persistence.uni-leipzig.org/nlp2rdf/specification/version.html\\n    \\n    Changelog:\\n    * 1.0.0 initial version\\n    * 1.0.1 added Error Code class and errcode property\\n    * 1.1.0 change Error Code class to Status Code\\n    \"@en .\n<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#> <http://purl.org/dc/elements/1.1/publisher> \"AKSW, University Leipzig\" .\n<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#> <http://purl.org/dc/elements/1.1/rights> \"This ontology is licensed under Apache 2.0 (http://www.apache.org/licenses/LICENSE-2.0) and CC-BY (http://creativecommons.org/licenses/by/3.0/)\"@en .\n<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/3.0/> .\n<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#> <http://purl.org/dc/terms/license> <http://www.apache.org/licenses/LICENSE-2.0> .\n<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#> <http://purl.org/dc/terms/title> \"RLOG - an RDF Logging Ontology\"@en .\n<http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#> <http://purl.org/vocab/vann/changes> <https://github.com/NLP2RDF/persistence.uni-leipzig.org/commits/master/ontologies/rlog> .",
+         "dataid:sha256sum": "6cc22d274fef11ea8214b497bf752fd0065295cfa98a046687fee64f6fd92634",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201428",
+         "dct:issued": {
+            "@value": "2020-07-08T23:48:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:33:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "18620",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:rlog=\"http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xml:base=\"http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#\">\n  <rdf:Description rdf:about=\"\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"\">\n    <dc:contributor>TODO</dc:contributor>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"\">\n    <dc:creator>Sebastian Hellmann</dc:creator>",
+         "dataid:sha256sum": "75f4143167e617f6cd39c8d7cc37d7fb14f65908c352def2855c1d7ccff0b9ef",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201428",
+         "dct:issued": {
+            "@value": "2020-07-08T23:48:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:33:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "15622",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#codeId> ;",
+         "dataid:sha256sum": "c75032725859de2e352d60aeee950981ececd3956396c34871644f92e6a935f6",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201428",
+         "dct:issued": {
+            "@value": "2020-07-08T23:48:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:33:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "10276",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=orig.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=orig.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n   xmlns:dcterms=\"http://purl.org/dc/terms/\"\n   xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n   xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n   xmlns:rlog=\"http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog#\"\n   xmlns:vann=\"http://purl.org/vocab/vann/\"\n   xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\">",
+         "dataid:sha256sum": "7fc13a36b5fd7d10af997ef06250d9c8b2fd5a2f04604d8bce34561a25799430",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201428",
+         "dct:issued": {
+            "@value": "2020-07-08T23:48:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:33:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "11212",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=orig.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=OOPS.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=OOPS.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<rdf:RDF\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n    xmlns:oops=\"http://oops.linkeddata.es/def#\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n    xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" > \n  <rdf:Description rdf:about=\"http://oops.linkeddata.es/def#suggestion\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Class\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://oops.linkeddata.es/data/541da748-99f8-4ee0-a24e-47410f3ac35e\">",
+         "dataid:sha256sum": "0baf8cdaf4abdc12d2e274d31f774e9ab83815e2fefeefbe283bacc95cac1027",
+         "dataid-cv:type": "OOPS",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201428",
+         "dct:issued": {
+            "@value": "2020-07-08T23:48:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:33:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "7338",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=OOPS.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\nVersion Info = 1.1.0\norg.semanticweb.owlapi.model.OWLRuntimeException: No current axiom; is the walker being used outside of an ontology visit?\n\tat org.semanticweb.owlapi.util.OWLOntologyWalkerVisitor.getCurrentAxiom(OWLOntologyWalkerVisitor.java:48)\n\tat org.semanticweb.owlapi.profiles.OWL2DLProfile$OWL2DLProfileObjectVisitor.visit(OWL2DLProfile.java:484)",
+         "dataid:sha256sum": "1d7978de5e78361d6931a5d98b27c6edb50dc141ca53244ba564bc52f49fc300",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201428",
+         "dct:issued": {
+            "@value": "2020-07-08T23:48:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:33:45Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2856",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428#nlp2rdf--ontologies--rlog_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=parsed.ttl\nStart loading\nJul 08, 2020 12:33:41 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://persistence.uni-leipzig.org/nlp2rdf/ontologies/rlog @owl:versionIRI https://github.com/NLP2RDF/ontologies/blob/master/rlog/rlog.ttl\nFinished loading in 00:00:00.123\nInput size: Classes = 5, Properties = 30, Individuals = 14\nExpressivity: ALH(D)\nStart consistency check\nFinished consistency check in 00:00:00.025",
+         "dataid:sha256sum": "62b9828a8d4d3d5fb414618682c1c129dfd28b18881ea331261f7ee3fb119c8d",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201428",
+         "dct:issued": {
+            "@value": "2020-07-08T23:48:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:33:41Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "899",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/persistence.uni-leipzig.org/nlp2rdf--ontologies--rlog/2020.06.10-201428/nlp2rdf--ontologies--rlog_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      }
+   ]
+}

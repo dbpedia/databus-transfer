@@ -1,0 +1,296 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "dataid-pl": "http://dataid.dbpedia.org/ns/pl#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/dbpedia-diff/citations-diff/2019.09.02",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/dbpedia-diff/citations-diff",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/dbpedia-diff/citations-diff/2019.09.02#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:denis"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/dbpedia-diff/citations-diff"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/dbpedia-diff"
+         },
+         "dataid:maintainer": {
+            "@id": "https://termilion.github.io/webid.ttl#this"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/dbpedia-diff/citations-diff/2019.09.02"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The diffs of https://databus.dbpedia.org/dbpedia/generic/citations."
+         },
+         "dct:hasVersion": "2019.09.02",
+         "dct:issued": {
+            "@value": "2019-09-03T13:34:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "citations-diff dataset"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/dbpedia-diff/citations-diff/2019.09.02#citations-diff_lang=en_links_adds.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dbpedia-diff/citations-diff/2019.09.02#citations-diff_lang=en_data_deletes.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dbpedia-diff/citations-diff/2019.09.02#citations-diff_lang=en_data_adds.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dbpedia-diff/citations-diff/2019.09.02#citations-diff_lang=en_links_deletes.ttl.bz2"
+            }
+         ],
+         "prov:wasDerivedFrom": [
+            {
+               "@id": "https://databus.dbpedia.org/marvin/generic/citations/2019.08.30"
+            },
+            {
+               "@id": "https://databus.dbpedia.org/marvin/generic/citations/2019.08.01"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The diffs of https://databus.dbpedia.org/dbpedia/generic/citations."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:lang",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/dbpedia-diff/citations-diff/2019.09.02#citations-diff_lang=en_links_adds.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dbpedia-diff/citations-diff/2019.09.02/citations-diff_lang=en_links_adds.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "0",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "",
+         "dataid:sha256sum": "d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058",
+         "dataid:sorted": true,
+         "dataid:uncompressedByteSize": {
+            "@value": "0",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "en",
+         "dataid-cv:tag": [
+            "adds",
+            "links"
+         ],
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.09.02",
+         "dct:issued": {
+            "@value": "2019-09-03T13:34:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-02T16:25:58Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "14",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/dbpedia-diff/citations-diff/2019.09.02/citations-diff_lang=en_links_adds.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dbpedia-diff/citations-diff/2019.09.02#citations-diff_lang=en_data_deletes.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dbpedia-diff/citations-diff/2019.09.02/citations-diff_lang=en_data_deletes.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "0",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "",
+         "dataid:sha256sum": "d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058",
+         "dataid:sorted": true,
+         "dataid:uncompressedByteSize": {
+            "@value": "0",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "en",
+         "dataid-cv:tag": [
+            "deletes",
+            "data"
+         ],
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.09.02",
+         "dct:issued": {
+            "@value": "2019-09-03T13:34:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-02T16:09:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "14",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/dbpedia-diff/citations-diff/2019.09.02/citations-diff_lang=en_data_deletes.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dbpedia-diff/citations-diff/2019.09.02#citations-diff_lang=en_data_adds.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dbpedia-diff/citations-diff/2019.09.02/citations-diff_lang=en_data_adds.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "0",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "",
+         "dataid:sha256sum": "d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058",
+         "dataid:sorted": true,
+         "dataid:uncompressedByteSize": {
+            "@value": "0",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "en",
+         "dataid-cv:tag": [
+            "adds",
+            "data"
+         ],
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.09.02",
+         "dct:issued": {
+            "@value": "2019-09-03T13:34:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-02T16:09:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "14",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/dbpedia-diff/citations-diff/2019.09.02/citations-diff_lang=en_data_adds.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dbpedia-diff/citations-diff/2019.09.02#citations-diff_lang=en_links_deletes.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dbpedia-diff/citations-diff/2019.09.02/citations-diff_lang=en_links_deletes.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "0",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "",
+         "dataid:sha256sum": "d3dda84eb03b9738d118eb2be78e246106900493c0ae07819ad60815134a8058",
+         "dataid:sorted": true,
+         "dataid:uncompressedByteSize": {
+            "@value": "0",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "en",
+         "dataid-cv:tag": [
+            "links",
+            "deletes"
+         ],
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.09.02",
+         "dct:issued": {
+            "@value": "2019-09-03T13:34:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-02T16:25:58Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "14",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/dbpedia-diff/citations-diff/2019.09.02/citations-diff_lang=en_links_deletes.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      }
+   ]
+}

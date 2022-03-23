@@ -1,0 +1,838 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "CHMO, the chemical methods ontology, describes methods used to collect data in chemical experiments, such as mass spectrometry and electron microscopy prepare and separate material for further analysis, such as sample ionisation, chromatography, and electrophoresis synthesise materials, such as epitaxy and continuous vapour deposition It also describes the instruments used in these experiments, such as mass spectrometers and chromatography columns."
+         },
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Chemical Methods Ontology"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=diff_axioms=new.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=diff_axioms=old.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=pyLodeDoc.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=parsed_sorted.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=pelletConsistency_imports=NONE.txt"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "CHMO, the chemical methods ontology, describes methods used to collect data in chemical experiments, such as mass spectrometry and electron microscopy prepare and separate material for further analysis, such as sample ionisation, chromatography, and electrophoresis synthesise materials, such as epitaxy and continuous vapour deposition It also describes the instruments used in these experiments, such as mass spectrometers and chromatography columns."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:axioms",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <http://purl.obolibrary.org/obo/chmo.owl#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix obo: <http://purl.obolibrary.org/obo/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix xml: <http://www.w3.org/XML/1998/namespace> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix chmo: <http://purl.obolibrary.org/obo/chmo#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix terms: <http://purl.org/dc/terms/> .",
+         "dataid:sha256sum": "de5ec019fdd727ce750df4b9f2b1c8416e12abc11065b80ee78697bd8980eee0",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:05:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3307007",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n./data/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=parsed.ttl\nStart loading\nFinished loading in 00:00:01.636\nInput size: Classes = 3086, Properties = 63, Individuals = 2\nExpressivity: SH(D)\nStart consistency check\nFinished consistency check in 00:00:00.019\n\nTimer summary:",
+         "dataid:sha256sum": "1282057a4c654c7b997b00fcc1824753af704c63d25b203db9a0375e5cbeb24e",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:06:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "502",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:06:14Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=diff_axioms=new.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=diff_axioms=new.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "RO_0002411 ∈ R⁺\nRO_0002411 ⊑ BFO_0000063\nRO_0002411 ⊑ RO_0002418\nCHMO_0010022 ⊑ ∃ RO_0002411.CHMO_0010010",
+         "dataid:sha256sum": "a28724e5abc2aad434721bbd021ae7fa861539806cd83d08d3bcc0cd4d70259c",
+         "dataid-cv:axioms": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:05:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "118",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=diff_axioms=new.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://purl.obolibrary.org/obo/CHMO_0001796> ;",
+         "dataid:sha256sum": "cc065e775591aa1b72623b512cc090b5c3289385764357c50b87a8810bebb648",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:06:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2986707",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2021.06.22; 15:05:32\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"381883\",\n        \"e-tag\": \"W/\\\"e07f53dcb7829c3c7c368ad5b1643e766e1a24e05c3b0de89cfdc49bf23f741f\\\"\",\n        \"lastModified\": \"\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Date': 'Tue, 22 Jun 2021 15:05:25 GMT', 'Server': 'Apache/2.4.18 (Ubuntu)', 'Location': 'https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo.owl', 'Content-Length': '341', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'text/html; charset=iso-8859-1'}\",",
+         "dataid:sha256sum": "f1661bfa401cacfc32e92459fa2b46e11630245e6a7c4796ea5b8934c33fa02c",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:07:10Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2137",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>Chemical Methods Ontology</title><title>Chemical Methods Ontology</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo.owl\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "8d9a1aebd36676042829a09a67c8691de4fa6298a4c13f103ddda50979a3bd95",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:07:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2761882",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:chmo=\"http://purl.obolibrary.org/obo/chmo#\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:obo=\"http://purl.obolibrary.org/obo/\" xmlns:oboInOwl=\"http://www.geneontology.org/formats/oboInOwl#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:terms=\"http://purl.org/dc/terms/\" xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"http://purl.obolibrary.org/obo/chmo.owl#\">\n  <rdf:Description rdf:about=\"http://purl.obolibrary.org/obo/chmo.owl\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://purl.obolibrary.org/obo/chmo.owl\">\n    <dc:description rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">CHMO, the chemical methods ontology, describes methods used to collect data in chemical experiments, such as mass spectrometry and electron microscopy prepare and separate material for further analysis, such as sample ionisation, chromatography, and electrophoresis synthesise materials, such as epitaxy and continuous vapour deposition It also describes the instruments used in these experiments, such as mass spectrometers and chromatography columns. It is intended to be complementary to the Ontology for Biomedical Investigations (OBI).</dc:description>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://purl.obolibrary.org/obo/chmo.owl\">\n    <dc:title rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">Chemical Methods Ontology</dc:title>",
+         "dataid:sha256sum": "e45ace851547a071a46d004a0356e0b2fec41952bee882b1abba9e13b470c97e",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:05:58Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "9673577",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=diff_axioms=old.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=diff_axioms=old.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "CHMO_0010022 ⊑ ∃ CHMO_0010021.CHMO_0010010\n⊤ ⊑ ∀ CHMO_0010021.BFO_0000015\n∃ CHMO_0010021.⊤ ⊑ BFO_0000015",
+         "dataid:sha256sum": "4e801abb14275335b2f4a7b015b8aba99ae212d8d84e7006a7916d41aa7b0eda",
+         "dataid-cv:axioms": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:05:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "121",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=diff_axioms=old.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.1.0.jar\n\n",
+         "dataid:sha256sum": "35133f3681a6ccdb320324b1927689adc218a5150f47233c68c456e42e0d1a9f",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:07:10Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "76116ddc2fa696112d4cd1d1b1e090b471ab9fb7459ac4b4a5fdff59c245a30e",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:07:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3400",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=pyLodeDoc.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=pyLodeDoc.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <title>Chemical Methods Ontology</title>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1Sew\nEAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n    \n    <style>",
+         "dataid:sha256sum": "6cafda7490d6a018e113786560575c36a46c8ce999c7f5dd536103debe41c53f",
+         "dataid-cv:type": "pyLodeDoc",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:10:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3557822",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=pyLodeDoc.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n<rdf:RDF xmlns=\"http://purl.obolibrary.org/obo/chmo.owl#\"\n     xml:base=\"http://purl.obolibrary.org/obo/chmo.owl\"\n     xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n     xmlns:obo=\"http://purl.obolibrary.org/obo/\"\n     xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n     xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n     xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"\n     xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n     xmlns:chmo=\"http://purl.obolibrary.org/obo/chmo#\"",
+         "dataid:sha256sum": "9b60605cde866d3a76b3c9471a512dfb1c53c57d31166acebea195afd83e51cb",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:05:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "6234536",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=parsed_sorted.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=parsed_sorted.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.geneontology.org/formats/oboInOwl#id> \"BFO:0000002\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .\n<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/2000/01/rdf-schema#label> \"continuant\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.geneontology.org/formats/oboInOwl#id> \"BFO:0000015\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .\n<http://purl.obolibrary.org/obo/BFO_0000015> <http://www.w3.org/2000/01/rdf-schema#label> \"process\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.geneontology.org/formats/oboInOwl#id> \"BFO:0000016\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .\n<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/2000/01/rdf-schema#label> \"disposition\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/BFO_0000016> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000017> .",
+         "dataid:sha256sum": "acb72bf4669ccb0f06803ce2b9a90e0de23f278265fbe1505fee603c488a1c44",
+         "dataid-cv:tag": "sorted",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:05:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "7699642",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=parsed_sorted.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:06:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:06:14Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://purl.obolibrary.org/obo/chmo.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://purl.obolibrary.org/obo/chmo.owl> <http://purl.org/dc/elements/1.1/description> \"CHMO, the chemical methods ontology, describes methods used to collect data in chemical experiments, such as mass spectrometry and electron microscopy prepare and separate material for further analysis, such as sample ionisation, chromatography, and electrophoresis synthesise materials, such as epitaxy and continuous vapour deposition It also describes the instruments used in these experiments, such as mass spectrometers and chromatography columns. It is intended to be complementary to the Ontology for Biomedical Investigations (OBI).\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/chmo.owl> <http://purl.org/dc/elements/1.1/title> \"Chemical Methods Ontology\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/chmo.owl> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .\n<http://purl.obolibrary.org/obo/chmo.owl> <http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion> \"1.2\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/chmo.owl> <http://www.geneontology.org/formats/oboInOwl#saved-by> \"batchelorc\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/IAO_0000114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.w3.org/2000/01/rdf-schema#label> \"definition\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/IAO_0000117> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .",
+         "dataid:sha256sum": "4d91b3e3a4e602b790e690252f50eba273933b7d625b6c2ce3dc407cb55c7062",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:05:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "7699642",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "76116ddc2fa696112d4cd1d1b1e090b471ab9fb7459ac4b4a5fdff59c245a30e",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:07:02Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3400",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525#obo--chmo--owl_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n./data/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=parsed.ttl\nStart loading\nFinished loading in 00:00:01.674\nInput size: Classes = 3086, Properties = 63, Individuals = 2\nExpressivity: SH(D)\nStart consistency check\nFinished consistency check in 00:00:00.017\n\nTimer summary:",
+         "dataid:sha256sum": "a8ef062ecc174ca1eb910f6d1e01c5484bc68354de5aecbafbf4e06fb085cf7b",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.22-150525",
+         "dct:issued": {
+            "@value": "2021-06-22T15:10:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-06-22T15:06:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "502",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--chmo--owl/2021.06.22-150525/obo--chmo--owl_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      }
+   ]
+}

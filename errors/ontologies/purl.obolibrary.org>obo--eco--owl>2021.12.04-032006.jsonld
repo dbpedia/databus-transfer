@@ -1,0 +1,847 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The Evidence & Conclusion Ontology (ECO) describes types of scientific evidence within the biological research domain that arise from laboratory experiments, computational methods, literature curation, or other means."
+         },
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Evidence & Conclusion Ontology (ECO)"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=diff_triples=new.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=diff_axioms=old.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=diff_axioms=new.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=parsed_sorted.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=diff_triples=old.nt"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The Evidence & Conclusion Ontology (ECO) describes types of scientific evidence within the biological research domain that arise from laboratory experiments, computational methods, literature curation, or other means."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:axioms",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:triples",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://purl.obolibrary.org/obo/eco.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://purl.obolibrary.org/obo/eco.owl> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.obolibrary.org/obo/eco/releases/2021-12-03/eco.owl> .\n<http://purl.obolibrary.org/obo/eco.owl> <http://purl.org/dc/elements/1.1/description> \"The Evidence & Conclusion Ontology (ECO) describes types of scientific evidence within the biological research domain that arise from laboratory experiments, computational methods, literature curation, or other means.\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/eco.owl> <http://purl.org/dc/elements/1.1/title> \"Evidence & Conclusion Ontology (ECO)\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/eco.owl> <http://purl.org/dc/terms/license> <https://creativecommons.org/publicdomain/zero/1.0/> .\n<http://purl.obolibrary.org/obo/eco.owl> <http://www.geneontology.org/formats/oboInOwl#date> \"20:10:2021 16:01\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/eco.owl> <http://www.geneontology.org/formats/oboInOwl#default-namespace> \"eco\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/eco.owl> <http://www.w3.org/2000/01/rdf-schema#comment> \"ECO (https://github.com/evidenceontology/evidenceontology) is released into the public domain under CC0 1.0 Universal (CC0 1.0). Anyone is free to copy, modify, or distribute the work, even for commercial purposes, without asking permission. Please see the Public Domain Dedication (https://creativecommons.org/publicdomain/zero/1.0/) for an easy-to-read description of CC0 1.0 or the full legal code (https://creativecommons.org/publicdomain/zero/1.0/legalcode) for more detailed information. To get a sense of why ECO is CC0 as opposed to licensed under CC-BY, please read this thoughtful discussion (https://github.com/OBOFoundry/OBOFoundry.github.io/issues/285) on the OBO Foundry GitHub site.\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/ECO_9000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.obolibrary.org/obo/ECO_9000002> <http://www.w3.org/2000/01/rdf-schema#label> \"has GO evidence code\" .",
+         "dataid:sha256sum": "381eccb533dfcb737bb8a4566cf6bb338c39b6ae6dcfce0dd68cc79607428221",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:20:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "9341714",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:eco=\"http://purl.obolibrary.org/obo/eco#\" xmlns:obo=\"http://purl.obolibrary.org/obo/\" xmlns:oboInOwl=\"http://www.geneontology.org/formats/oboInOwl#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:terms=\"http://purl.org/dc/terms/\" xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"http://purl.obolibrary.org/obo/eco.owl#\">\n  <rdf:Description rdf:about=\"http://purl.obolibrary.org/obo/eco.owl\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://purl.obolibrary.org/obo/eco.owl\">\n    <owl:versionIRI rdf:resource=\"http://purl.obolibrary.org/obo/eco/releases/2021-12-03/eco.owl\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://purl.obolibrary.org/obo/eco.owl\">\n    <dc:description rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">The Evidence &amp; Conclusion Ontology (ECO) describes types of scientific evidence within the biological research domain that arise from laboratory experiments, computational methods, literature curation, or other means.</dc:description>",
+         "dataid:sha256sum": "0274ac5b4f1c281e7e3d5612ecfde839b3170d804348b5f34e2e7a570264a122",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:20:26Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "12182250",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.1.0.jar\n\n",
+         "dataid:sha256sum": "35133f3681a6ccdb320324b1927689adc218a5150f47233c68c456e42e0d1a9f",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:21:20Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "b23a714bce3380d08bbda12abeb8f0aa9ecb8156df1a20b801ea504c04674322",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:21:20Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1902",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "afc572720ffe82e3fbe36715419812a2c765a2a4d94fbc1727e274989311c3a6",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:21:15Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1902",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:20:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=parsed.ttl\nStart loading\nDec 04, 2021 3:21:08 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://purl.obolibrary.org/obo/eco.owl @owl:versionIRI http://purl.obolibrary.org/obo/eco/releases/2021-12-03/eco.owl\nFinished loading in 00:00:02.438\nInput size: Classes = 3111, Properties = 103, Individuals = 0\nExpressivity: SRIN(D)\nStart consistency check\nFinished consistency check in 00:00:00.020",
+         "dataid:sha256sum": "7fdaa44e49db464ec3b09cea1ca9d6083aa13e5831d76ef3fce8e8e791fed800",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:21:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "827",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2021.12.04; 03:20:13\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"330796\",\n        \"e-tag\": \"W/\\\"d23bd21dc7c859da2276ab7c3f9b8e2a082ac5c497d053992dadd8b07bb2b5f3\\\"\",\n        \"lastModified\": \"\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Date': 'Sat, 04 Dec 2021 03:20:07 GMT', 'Server': 'Apache/2.4.18 (Ubuntu)', 'Location': 'https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco.owl', 'Content-Length': '351', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'text/html; charset=iso-8859-1'}\",",
+         "dataid:sha256sum": "658ab314aedf27f83653a8c77ac3b08b95ea321ccb3c48db96c640287ba81466",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:21:20Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2163",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=parsed.ttl\nStart loading\nDec 04, 2021 3:21:04 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://purl.obolibrary.org/obo/eco.owl @owl:versionIRI http://purl.obolibrary.org/obo/eco/releases/2021-12-03/eco.owl\nFinished loading in 00:00:02.371\nInput size: Classes = 3111, Properties = 103, Individuals = 0\nExpressivity: SRIN(D)\nStart consistency check\nFinished consistency check in 00:00:00.020",
+         "dataid:sha256sum": "b53b2b0c01898bb0dc8cd3f577b5ec2c0e1a0873cfbd8db6d7baba5ce336720f",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:21:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "827",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://purl.obolibrary.org/obo/ECO_0007818> ;",
+         "dataid:sha256sum": "8d37541edc6e107cb0ef544446d07eea1355909377b324eebbefa40f69f42423",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:21:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2905057",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <http://purl.obolibrary.org/obo/eco.owl#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix eco: <http://purl.obolibrary.org/obo/eco#> .\n@prefix obo: <http://purl.obolibrary.org/obo/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix xml: <http://www.w3.org/XML/1998/namespace> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix terms: <http://purl.org/dc/terms/> .",
+         "dataid:sha256sum": "b20e543feefdc1b1002fb9e8f8b773f19808a5dcd4c143288f17b827e47e860a",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:20:24Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3377104",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=diff_triples=new.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=diff_triples=new.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://purl.obolibrary.org/obo/eco.owl> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.obolibrary.org/obo/eco/releases/2021-12-03/eco.owl> .",
+         "dataid:sha256sum": "da27b8353b9f735ee99da8d2d605c193c09c3d006ff02c09f425f9a19ebcbdd6",
+         "dataid-cv:triples": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:20:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "151",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=diff_triples=new.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n<rdf:RDF xmlns=\"http://purl.obolibrary.org/obo/eco.owl#\"\n     xml:base=\"http://purl.obolibrary.org/obo/eco.owl\"\n     xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n     xmlns:eco=\"http://purl.obolibrary.org/obo/eco#\"\n     xmlns:obo=\"http://purl.obolibrary.org/obo/\"\n     xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n     xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n     xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"\n     xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"",
+         "dataid:sha256sum": "19b629580eb7a15ab01ab7b037fd36d7e1048ad3d88fb19b4f00d045640214b7",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:20:13Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "6953330",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:20:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=diff_axioms=old.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=diff_axioms=old.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "",
+         "dataid:sha256sum": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+         "dataid-cv:axioms": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:20:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=diff_axioms=old.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=diff_axioms=new.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=diff_axioms=new.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "",
+         "dataid:sha256sum": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+         "dataid-cv:axioms": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:20:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=diff_axioms=new.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=parsed_sorted.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=parsed_sorted.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://purl.obolibrary.org/obo/BFO_0000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .\n<http://purl.obolibrary.org/obo/BFO_0000001> <http://www.w3.org/2000/01/rdf-schema#label> \"entity\"@en .\n<http://purl.obolibrary.org/obo/BFO_0000002> <http://purl.obolibrary.org/obo/IAO_0000115> \"An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.\"@en .\n<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .\n<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/2000/01/rdf-schema#label> \"continuant\"@en .\n<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/BFO_0000001> .\n<http://purl.obolibrary.org/obo/BFO_0000002> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.obolibrary.org/obo/BFO_0000003> .\n<http://purl.obolibrary.org/obo/BFO_0000003> <http://purl.obolibrary.org/obo/IAO_0000115> \"An entity that has temporal parts and that happens, unfolds or develops through time.\"@en .\n<http://purl.obolibrary.org/obo/BFO_0000003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .\n<http://purl.obolibrary.org/obo/BFO_0000003> <http://www.w3.org/2000/01/rdf-schema#label> \"occurrent\"@en .",
+         "dataid:sha256sum": "662852013808bf0ceeb8d6a89cc288a291b5b0d83c58755740dffab3c6af985a",
+         "dataid-cv:tag": "sorted",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:20:14Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "9341714",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=parsed_sorted.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:21:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006#obo--eco--owl_type=diff_triples=old.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=diff_triples=old.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://purl.obolibrary.org/obo/eco.owl> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.obolibrary.org/obo/eco/releases/2021-10-20/eco.owl> .",
+         "dataid:sha256sum": "75a168303f0df7a67f4349b65440ae060627c9829989749bfbe7ecf298b1b620",
+         "dataid-cv:triples": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.04-032006",
+         "dct:issued": {
+            "@value": "2021-12-04T03:24:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-04T03:20:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "151",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--eco--owl/2021.12.04-032006/obo--eco--owl_type=diff_triples=old.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

@@ -1,0 +1,668 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/foodontology",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/purl.org/foodontology"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/purl.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "Food Ontology is an ontology created for food and food products particularly which is being developed for MneMojno project to structure its knowledge base of food products and to interlink with other datasets (such as DBPedia) in future."
+         },
+         "dct:hasVersion": "2020.06.10-203447",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Food Ontology"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=OOPS.rdf"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=parsed.ttl"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "Food Ontology is an ontology created for food and food products particularly which is being developed for MneMojno project to structure its knowledge base of food products and to interlink with other datasets (such as DBPedia) in future."
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=OOPS.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447/foodontology_type=OOPS.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<rdf:RDF\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n    xmlns:oops=\"http://oops.linkeddata.es/def#\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n    xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" > \n  <rdf:Description rdf:about=\"http://oops.linkeddata.es/data/b4d17a56-e0f1-45e3-8c20-eae4eb3f5e60\">\n    <oops:hasAffectedElement rdf:datatype=\"http://www.w3.org/2001/XMLSchema#anyURI\">http://purl.org/goodrelations/v1#Individual</oops:hasAffectedElement>\n    <oops:hasAffectedElement rdf:datatype=\"http://www.w3.org/2001/XMLSchema#anyURI\">http://schema.org/Person</oops:hasAffectedElement>\n    <rdf:type rdf:resource=\"http://oops.linkeddata.es/def#equivalentClass\"/>",
+         "dataid:sha256sum": "375125fab628d3344a9302d09ee979167c4eed2537d23c34f75209a202ddca19",
+         "dataid-cv:type": "OOPS",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203447",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "34856",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/foodontology/2020.06.10-203447/foodontology_type=OOPS.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447/foodontology_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://purl.org/foodontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://purl.org/foodontology> <http://purl.org/dc/elements/1.1/title> \"The FoodOntology Vocabulary for Food Products Description\"@en .\n<http://purl.org/foodontology> <http://www.w3.org/2000/01/rdf-schema#label> \"Food Ontology\"@en .\n<http://purl.org/foodontology> <http://www.w3.org/2000/01/rdf-schema#label> \"\\u041E\\u043D\\u0442\\u043E\\u043B\\u043E\\u0433\\u0438\\u044F \\u0435\\u0434\\u044B \\u0438 \\u043F\\u0440\\u043E\\u0434\\u0443\\u043A\\u0442\\u043E\\u0432 \\u043F\\u0438\\u0442\\u0430\\u043D\\u0438\\u044F\"@ru .\n<http://purl.org/foodontology> <http://purl.org/dc/elements/1.1/date> \"2015-02-28\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://purl.org/foodontology> <http://www.w3.org/2000/01/rdf-schema#comment> \"The Food Ontology is an extension of GoodsRelations Ontology [GoodsRelations] created to represent food and food products. Food Ontology describes food products and provides information on ingredients, additives, nutrition facts and other food-specific facts.\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.org/foodontology> <http://purl.org/vocab/vann/preferredNamespaceUri> \"http://purl.org/foodontology#\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<http://purl.org/foodontology> <http://www.w3.org/2002/07/owl#versionInfo> \"0.0.9\" .\n<http://purl.org/foodontology> <http://purl.org/dc/elements/1.1/creator> \"Maxim Kolchin, ITMO University\" .\n<http://purl.org/foodontology> <http://purl.org/dc/elements/1.1/creator> \"Maxim Lapaev, ITMO University\" .",
+         "dataid:sha256sum": "1f71a7dc599760485b9a0fb5cbd2944ba5c327651713be2d06d2f7fc9cd0797c",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203447",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "16811",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/foodontology/2020.06.10-203447/foodontology_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447/foodontology_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"http://purl.org/foodontology#\" xml:base=\"http://purl.org/foodontology\">\n  <rdf:Description rdf:about=\"\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"\">\n    <dc:title xml:lang=\"en\">The FoodOntology Vocabulary for Food Products Description</dc:title>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"\">\n    <rdfs:label xml:lang=\"en\">Food Ontology</rdfs:label>",
+         "dataid:sha256sum": "78f9ea58fad21ed8439a3ead8418ea9a200fe390f33012d60d08f4b99e31aa64",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203447",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "17221",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/foodontology/2020.06.10-203447/foodontology_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447/foodontology_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/purl.org/foodontology/2020.06.10-203447/foodontology_type=parsed.ttl\nStart loading\nJul 08, 2020 1:30:52 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://purl.org/foodontology @owl:versionIRI http://purl.org/foodontology/0.0.9\nFinished loading in 00:00:00.133\nInput size: Classes = 7, Properties = 32, Individuals = 1\nExpressivity: ALH(D)\nStart consistency check\nFinished consistency check in 00:00:00.016",
+         "dataid:sha256sum": "f760da33814597a888fcae27c9d4cbb6def532c5126e4896768a071f8467242e",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203447",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "793",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/foodontology/2020.06.10-203447/foodontology_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447/foodontology_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/purl.org/foodontology/2020.06.10-203447/foodontology_type=parsed.ttl\nStart loading\nJul 08, 2020 1:30:51 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://purl.org/foodontology @owl:versionIRI http://purl.org/foodontology/0.0.9\nFinished loading in 00:00:00.130\nInput size: Classes = 7, Properties = 32, Individuals = 1\nExpressivity: ALH(D)\nStart consistency check\nFinished consistency check in 00:00:00.016",
+         "dataid:sha256sum": "e993fd38e40af558b50e4e4732c5bc2dd4a60ee5cc12507631dcd9d5627a1847",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203447",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "793",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/foodontology/2020.06.10-203447/foodontology_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447/foodontology_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://purl.org/goodrelations/v1#datatypeProductOrServiceProperty> ;",
+         "dataid:sha256sum": "e975d89bccee18453bdf7c7fa9158a41bfca16d6227eda4f49d10c4cd8600c17",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203447",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "24261",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/foodontology/2020.06.10-203447/foodontology_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447/foodontology_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://purl.org/foodontology> ;\n            sh:resultMessage \"No license found at all (neither dct:license, xhv:license nor cc:license)\"@en ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:OrConstraintComponent ;",
+         "dataid:sha256sum": "f1ae51e15ae3d4957fe9259788a23c04fbf11e28db760d471f506412cd00fc4c",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203447",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "652",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/foodontology/2020.06.10-203447/foodontology_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447/foodontology_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2020.05.07; 14:06:11\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"2233\",\n        \"e-tag\": \"W/\\\"e6a76dbfc9b7a86e5360fe98df361d0da91f9730249544e8e04437e471201510\\\"\",\n        \"lastModified\": \"\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Server': 'nginx/1.16.1 (Ubuntu)', 'Date': 'Thu, 07 May 2020 12:06:11 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '244', 'Connection': 'keep-alive', 'Location': 'https://raw.githubusercontent.com/ailabitmo/food-ontology/master/food.owl', 'Access-Control-Allow-Origin': '*'}\",",
+         "dataid:sha256sum": "696f9af80b27ea89ab574e68df4f69118d2c8e71560cb178415deb85f1685369",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203447",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2053",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/foodontology/2020.06.10-203447/foodontology_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447/foodontology_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>The FoodOntology Vocabulary for Food Products Description</title><title>Food Ontology</title><title>The FoodOntology Vocabulary for Food Products Description</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"http://purl.org/foodontology\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "dce6555690e058f1a2fb441b4040a196241d61f4744fa3de388f829c91ac69b5",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203447",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "20083",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/foodontology/2020.06.10-203447/foodontology_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447/foodontology_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://purl.org/foodontology> ;\n            sh:resultMessage \"No dct:license statement found\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "6999f38e9209f10d3754a18444dc34287acef0e5190f4f61044e956566519f8b",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203447",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "647",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/foodontology/2020.06.10-203447/foodontology_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447/foodontology_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n\n\n<!DOCTYPE rdf:RDF [\n    <!ENTITY foaf \"http://xmlns.com/foaf/0.1/\" >\n    <!ENTITY dc \"http://purl.org/dc/elements/1.1/\" >\n    <!ENTITY vann \"http://purl.org/vocab/vann/\" >\n    <!ENTITY owl \"http://www.w3.org/2002/07/owl#\" >\n    <!ENTITY xsd \"http://www.w3.org/2001/XMLSchema#\" >\n    <!ENTITY rdfs \"http://www.w3.org/2000/01/rdf-schema#\" >",
+         "dataid:sha256sum": "24119ab0616b7766ad1fa96c6911d9986fc34e15836d588c68444fc37bf47e8b",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203447",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "13301",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/foodontology/2020.06.10-203447/foodontology_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447/foodontology_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.AbstractState - Notice: root element does not have an xml:base. Relative IRIs will be resolved against http://purl.org/goodrelations/v1\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "8fad6180d844eb29769a5705c289fcfabbc46f8e8b0bbee5e6af562cd0f67cf9",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203447",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3815",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/foodontology/2020.06.10-203447/foodontology_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447/foodontology_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.0.0.jar\n\n",
+         "dataid:sha256sum": "fcdd4ee978b74ae744e3205ebaee81c876347817db89cd283b1d71911a9e2047",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203447",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/foodontology/2020.06.10-203447/foodontology_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447/foodontology_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.AbstractState - Notice: root element does not have an xml:base. Relative IRIs will be resolved against http://purl.org/goodrelations/v1\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "8fad6180d844eb29769a5705c289fcfabbc46f8e8b0bbee5e6af562cd0f67cf9",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203447",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3815",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/foodontology/2020.06.10-203447/foodontology_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447#foodontology_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/foodontology/2020.06.10-203447/foodontology_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@base <http://purl.org/foodontology> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <#> .\n@prefix dc: <dc/elements/1.1/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vann: <vocab/vann/> .\n",
+         "dataid:sha256sum": "184ee4be5cafa68e94930bd73f1e2760e61a2ae5414a667a8f3eee3087afc0d0",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203447",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "6003",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/foodontology/2020.06.10-203447/foodontology_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      }
+   ]
+}

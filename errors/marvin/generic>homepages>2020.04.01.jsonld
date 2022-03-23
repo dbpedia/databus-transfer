@@ -1,0 +1,580 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/generic/homepages"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/generic"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01"
+         },
+         "dataid-debug:codeReference": {
+            "@id": "https://github.com/dbpedia/extraction-framework/blob/master/core/src/main/scala/org/dbpedia/extraction/mappings/"
+         },
+         "dataid-debug:documentationLocation": {
+            "@id": "https://git.informatik.uni-leipzig.de/dbpedia-assoc/marvin-config/-/tree/master/databus-poms/dbpedia/generic/homepages"
+         },
+         "dataid-debug:feedbackChannel": {
+            "@id": "https://forum.dbpedia.org/c/data/databus/14"
+         },
+         "dataid-debug:issueTracker": {
+            "@id": "https://github.com/dbpedia/extraction-framework/issues"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/a83f55f37efa63cab80e09d59e1aab3f157d17f6 . After its releases, data is cleaned and persisted under the DBpedia account. ) help needed"
+         },
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) homepages dataset"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=it.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=el.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=en.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=ga.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=de.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=es.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=eu.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=ja.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=pl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=ru.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=ca.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=pt.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=fr.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/a83f55f37efa63cab80e09d59e1aab3f157d17f6 . After its releases, data is cleaned and persisted under the DBpedia account. ) help needed"
+         }
+      },
+      {
+         "@id": "dataid-cv:lang",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=it.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01/homepages_lang=it.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-24T16:47:27Z\n<http://it.dbpedia.org/resource/Andriano> <http://xmlns.com/foaf/0.1/homepage> <http://www.gemeinde.andrian.bz.it/system/web/default.aspx%3Fsprache=3> .\n<http://it.dbpedia.org/resource/Anno_luce> <http://xmlns.com/foaf/0.1/homepage> <http://archive.oapd.inaf.it> .\n<http://it.dbpedia.org/resource/Avola> <http://xmlns.com/foaf/0.1/homepage> <http://www.comune.avola.sr.it/> .\n<http://it.dbpedia.org/resource/Berra_(Riva_del_Po)> <http://xmlns.com/foaf/0.1/homepage> <http://www.comuneberra.gov.it/> .\n<http://it.dbpedia.org/resource/Bressanone> <http://xmlns.com/foaf/0.1/homepage> <http://www.bressanone.it/> .\n<http://it.dbpedia.org/resource/BBC> <http://xmlns.com/foaf/0.1/homepage> <https://www.bbc.co.uk/> .\n<http://it.dbpedia.org/resource/Cento_(Italia)> <http://xmlns.com/foaf/0.1/homepage> <http://www.comune.cento.fe.it> .\n<http://it.dbpedia.org/resource/Copparo> <http://xmlns.com/foaf/0.1/homepage> <http://www.comune.copparo.fe.it/> .\n<http://it.dbpedia.org/resource/Carpi> <http://xmlns.com/foaf/0.1/homepage> <http://www.comune.carpi.mo.it> .",
+         "dataid:sha256sum": "02b31159ab7cfefb1ce2553b14a21887ba60951f3d8ab6e4d06ee828a5fcfe72",
+         "dataid-cv:lang": "it",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-29T16:24:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "959127",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2020.04.01/homepages_lang=it.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=el.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01/homepages_lang=el.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-24T14:39:48Z\n<http://el.dbpedia.org/resource/Ελευθέριος_Βενιζέλος> <http://xmlns.com/foaf/0.1/homepage> <http://www.venizelos-foundation.gr> .\n<http://el.dbpedia.org/resource/Mega_Channel> <http://xmlns.com/foaf/0.1/homepage> <https://www.megatv.com/> .\n<http://el.dbpedia.org/resource/CNN> <http://xmlns.com/foaf/0.1/homepage> <https://edition.cnn.com/> .\n<http://el.dbpedia.org/resource/Πρέβεζα> <http://xmlns.com/foaf/0.1/homepage> <http://www.dimosprevezas.gr> .\n<http://el.dbpedia.org/resource/Ευρωπαϊκή_Ένωση> <http://xmlns.com/foaf/0.1/homepage> <https://web.archive.org/web/20150105215311/http:/www.eurunion.org/> .\n<http://el.dbpedia.org/resource/Κύπρος> <http://xmlns.com/foaf/0.1/homepage> <http://www.cyprus.gov.cy> .\n<http://el.dbpedia.org/resource/Νιου_Χάμσαϊρ> <http://xmlns.com/foaf/0.1/homepage> <http://www.nh.gov> .\n<http://el.dbpedia.org/resource/Βέλγιο> <http://xmlns.com/foaf/0.1/homepage> <http://www.Belgium.be/> .\n<http://el.dbpedia.org/resource/Αργεντινή> <http://xmlns.com/foaf/0.1/homepage> <https://web.archive.org/web/20170903065827/http:/www.info.gov.ar/> .",
+         "dataid:sha256sum": "d78ee52b40409e69d40b1d17258f190160c41bb94da5cff938f78e5180f923ce",
+         "dataid-cv:lang": "el",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-29T16:24:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "215538",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2020.04.01/homepages_lang=el.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=en.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01/homepages_lang=en.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-22T06:58:11Z\n<http://dbpedia.org/resource/Animalia_(book)> <http://xmlns.com/foaf/0.1/homepage> <http://www.graemebase.com> .\n<http://dbpedia.org/resource/Alain_Connes> <http://xmlns.com/foaf/0.1/homepage> <http://www.alainconnes.org/> .\n<http://dbpedia.org/resource/Animation> <http://xmlns.com/foaf/0.1/homepage> <http://boi.gov.ph> .\n<http://dbpedia.org/resource/Abacus> <http://xmlns.com/foaf/0.1/homepage> <http://enc.daum.net> .\n<http://dbpedia.org/resource/American_National_Standards_Institute> <http://xmlns.com/foaf/0.1/homepage> <http://www.ansi.org> .\n<http://dbpedia.org/resource/Alabama> <http://xmlns.com/foaf/0.1/homepage> <http://alabama.gov> .\n<http://dbpedia.org/resource/Aristotle> <http://xmlns.com/foaf/0.1/homepage> <http://Britannica.com> .\n<http://dbpedia.org/resource/Alaska> <http://xmlns.com/foaf/0.1/homepage> <http://alaska.gov> .\n<http://dbpedia.org/resource/Academy_Awards> <http://xmlns.com/foaf/0.1/homepage> <http://oscar.go.com/> .",
+         "dataid:sha256sum": "27c3d7465b79abc1d87667cb3780291f941341753010ce54a43c3323ed507f1b",
+         "dataid-cv:lang": "en",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-29T16:24:41Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "12838980",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2020.04.01/homepages_lang=en.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=ga.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01/homepages_lang=ga.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-24T22:07:18Z\n<http://ga.dbpedia.org/resource/Uachtarán_na_hÉireann> <http://xmlns.com/foaf/0.1/homepage> <http://www.president.ie/> .\n<http://ga.dbpedia.org/resource/Taoiseach> <http://xmlns.com/foaf/0.1/homepage> <http://www.taoiseach.gov.ie/irish/index.asp%3FCOMMAND=CHANGE_LANGUAGE&locID=1&docID=1865> .\n<http://ga.dbpedia.org/resource/An_Eilvéis> <http://xmlns.com/foaf/0.1/homepage> <http://www.ch.ch/de> .\n<http://ga.dbpedia.org/resource/Académie_française> <http://xmlns.com/foaf/0.1/homepage> <http://www.academie-francaise.fr> .\n<http://ga.dbpedia.org/resource/Contae_Mhaigh_Eo> <http://xmlns.com/foaf/0.1/homepage> <http://www.countymayo.com/> .\n<http://ga.dbpedia.org/resource/Contae_Ros_Comáin> <http://xmlns.com/foaf/0.1/homepage> <http://www.roscommoncoco.ie/> .\n<http://ga.dbpedia.org/resource/Balla> <http://xmlns.com/foaf/0.1/homepage> <http://balla.mayo-ireland.ie/> .\n<http://ga.dbpedia.org/resource/An_Opera_Meitreapólach> <http://xmlns.com/foaf/0.1/homepage> <http://www.metoperafamily.org/metopera/> .\n<http://ga.dbpedia.org/resource/An_tAontas_Eorpach> <http://xmlns.com/foaf/0.1/homepage> <http://europa.eu/index_ga.htm> .",
+         "dataid:sha256sum": "bc04f25ec355f7fc63d835fc6131504886f4585b4c05301f5bf73e34049c8c35",
+         "dataid-cv:lang": "ga",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-29T16:24:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "14991",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2020.04.01/homepages_lang=ga.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=de.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01/homepages_lang=de.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-26T05:40:03Z\n<http://de.dbpedia.org/resource/Anne_Haigis> <http://xmlns.com/foaf/0.1/homepage> <http://www.anne-haigis.de/> .\n<http://de.dbpedia.org/resource/Ankara> <http://xmlns.com/foaf/0.1/homepage> <http://www.ankara.bel.tr> .\n<http://de.dbpedia.org/resource/Nur-Sultan> <http://xmlns.com/foaf/0.1/homepage> <http://astana.gov.kz> .\n<http://de.dbpedia.org/resource/Angelina_Jolie> <http://xmlns.com/foaf/0.1/homepage> <http://www.unhcr.org/pages/49c3646c56.html> .\n<http://de.dbpedia.org/resource/Apple> <http://xmlns.com/foaf/0.1/homepage> <https://www.apple.com/> .\n<http://de.dbpedia.org/resource/Aldi> <http://xmlns.com/foaf/0.1/homepage> <http://www.aldi.de> .\n<http://de.dbpedia.org/resource/Almaty> <http://xmlns.com/foaf/0.1/homepage> <http://www.almaty.kz> .\n<http://de.dbpedia.org/resource/Albany_(New_York)> <http://xmlns.com/foaf/0.1/homepage> <http://www.albanyny.org> .\n<http://de.dbpedia.org/resource/Allgemeiner_Deutscher_Tanzlehrerverband> <http://xmlns.com/foaf/0.1/homepage> <http://www.adtv.de> .",
+         "dataid:sha256sum": "a378eda7f4e5a79d18644cc6465c691df4f08075a9c17639910dd1e7a19da630",
+         "dataid-cv:lang": "de",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-29T16:24:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3966954",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2020.04.01/homepages_lang=de.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=es.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01/homepages_lang=es.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-26T19:07:44Z\n<http://es.dbpedia.org/resource/Ana_María_Matute> <http://xmlns.com/foaf/0.1/homepage> <http://www.anamaria-matute.com> .\n<http://es.dbpedia.org/resource/Anoeta> <http://xmlns.com/foaf/0.1/homepage> <http://www.anoeta.eus/es/inicio> .\n<http://es.dbpedia.org/resource/Argentina> <http://xmlns.com/foaf/0.1/homepage> <http://www.argentina.gob.ar/> .\n<http://es.dbpedia.org/resource/Andorra> <http://xmlns.com/foaf/0.1/homepage> <http://visitandorra.com/es/home/> .\n<http://es.dbpedia.org/resource/Albert_Einstein> <http://xmlns.com/foaf/0.1/homepage> <http://www.alberteinstein.info/> .\n<http://es.dbpedia.org/resource/Commodore_Amiga> <http://xmlns.com/foaf/0.1/homepage> <http://www.amiga.com> .\n<http://es.dbpedia.org/resource/Amstrad> <http://xmlns.com/foaf/0.1/homepage> <https://web.archive.org/web/20180101090856/http:/www.amstrad.com/> .\n<http://es.dbpedia.org/resource/Animalia> <http://xmlns.com/foaf/0.1/homepage> <http://www.nationalgeographic.es/animales> .\n<http://es.dbpedia.org/resource/Almedina> <http://xmlns.com/foaf/0.1/homepage> <http://web.archive.org/web/http:/www.almedina.es> .",
+         "dataid:sha256sum": "5f33ca37f10fa69c8be3e376599d257cc2d1316a6656e136b6ac5b87dd13ca24",
+         "dataid-cv:lang": "es",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-29T16:24:46Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2523780",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2020.04.01/homepages_lang=es.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=eu.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01/homepages_lang=eu.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-27T02:17:31Z\n<http://eu.dbpedia.org/resource/Errenteria> <http://xmlns.com/foaf/0.1/homepage> <http://www.errenteria.eus> .\n<http://eu.dbpedia.org/resource/Donostia> <http://xmlns.com/foaf/0.1/homepage> <http://www.donostia.eus> .\n<http://eu.dbpedia.org/resource/Hondarribia> <http://xmlns.com/foaf/0.1/homepage> <http://www.hondarribia.eus> .\n<http://eu.dbpedia.org/resource/Elfriede_Jelinek> <http://xmlns.com/foaf/0.1/homepage> <http://ourworld.compuserve.com/homepages/elfriede/> .\n<http://eu.dbpedia.org/resource/Zumarraga> <http://xmlns.com/foaf/0.1/homepage> <http://www.zumarraga.net> .\n<http://eu.dbpedia.org/resource/Urretxu> <http://xmlns.com/foaf/0.1/homepage> <http://www.urretxu.eus/> .\n<http://eu.dbpedia.org/resource/Legazpi> <http://xmlns.com/foaf/0.1/homepage> <http://www.legazpi.eus/> .\n<http://eu.dbpedia.org/resource/GTK> <http://xmlns.com/foaf/0.1/homepage> <http://www.gtk.org/> .\n<http://eu.dbpedia.org/resource/GNOME> <http://xmlns.com/foaf/0.1/homepage> <http://www.gnome.org/> .",
+         "dataid:sha256sum": "bcc625e937a32a537679a5b7d7e22b5cec750c46c8ce99d36303ce2f51bd205f",
+         "dataid-cv:lang": "eu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-29T16:24:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "104611",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2020.04.01/homepages_lang=eu.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=ja.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01/homepages_lang=ja.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-27T07:01:11Z\n<http://ja.dbpedia.org/resource/GNU_Free_Documentation_License> <http://xmlns.com/foaf/0.1/homepage> <https://www.gnu.org/licenses/fdl.html> .\n<http://ja.dbpedia.org/resource/パリ> <http://xmlns.com/foaf/0.1/homepage> <https://www.paris.fr> .\n<http://ja.dbpedia.org/resource/イラク> <http://xmlns.com/foaf/0.1/homepage> <http://www.cabinet.iq/> .\n<http://ja.dbpedia.org/resource/山下和美> <http://xmlns.com/foaf/0.1/homepage> <https://ameblo.jp/y-tamarin/> .\n<http://ja.dbpedia.org/resource/日渡早紀> <http://xmlns.com/foaf/0.1/homepage> <https://blog.goo.ne.jp/purasunikki> .\n<http://ja.dbpedia.org/resource/聖悠紀> <http://xmlns.com/foaf/0.1/homepage> <http://www.denkaba.com/> .\n<http://ja.dbpedia.org/resource/永野のりこ> <http://xmlns.com/foaf/0.1/homepage> <http://naganoare.spaces.live.com/> .\n<http://ja.dbpedia.org/resource/寺沢武一> <http://xmlns.com/foaf/0.1/homepage> <http://www.buichi.com/index.html> .\n<http://ja.dbpedia.org/resource/竹本泉> <http://xmlns.com/foaf/0.1/homepage> <http://www.himawarihouse.com/> .",
+         "dataid:sha256sum": "37d8ebd6908cd1a52bd2c58d851309f1da44cb7c9f81b8d0a6985d45f783d96d",
+         "dataid-cv:lang": "ja",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-29T16:24:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2664560",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2020.04.01/homepages_lang=ja.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=pl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01/homepages_lang=pl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-26T03:06:45Z\n<http://pl.dbpedia.org/resource/AmigaOS> <http://xmlns.com/foaf/0.1/homepage> <http://www.amigaos.net/> .\n<http://pl.dbpedia.org/resource/Polonezköy> <http://xmlns.com/foaf/0.1/homepage> <http://www.polonezkoy.com/pl/> .\n<http://pl.dbpedia.org/resource/Association_for_Computing_Machinery> <http://xmlns.com/foaf/0.1/homepage> <http://www.acm.org/> .\n<http://pl.dbpedia.org/resource/Albania> <http://xmlns.com/foaf/0.1/homepage> <http://www.albania.al/> .\n<http://pl.dbpedia.org/resource/Amiga> <http://xmlns.com/foaf/0.1/homepage> <http://www.amiga.com> .\n<http://pl.dbpedia.org/resource/Adobe_Photoshop> <http://xmlns.com/foaf/0.1/homepage> <https://www.adobe.com/pl/> .\n<http://pl.dbpedia.org/resource/Agatha_Christie> <http://xmlns.com/foaf/0.1/homepage> <http://agathachristie.com/> .\n<http://pl.dbpedia.org/resource/Arkansas> <http://xmlns.com/foaf/0.1/homepage> <http://www.arkansas.gov> .\n<http://pl.dbpedia.org/resource/Arizona> <http://xmlns.com/foaf/0.1/homepage> <http://www.az.gov> .",
+         "dataid:sha256sum": "5f3a5cf8cd26a1a62c778b23d2a4d40852db61e2ec80d09bdcff1dd0690ea2c7",
+         "dataid-cv:lang": "pl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-29T16:25:07Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "822878",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2020.04.01/homepages_lang=pl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=ru.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01/homepages_lang=ru.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-24T11:07:43Z\n<http://ru.dbpedia.org/resource/Кавказские_Минеральные_Воды> <http://xmlns.com/foaf/0.1/homepage> <https://web.archive.org/web/20120814142237/http:/www.adm-kmv.ru/> .\n<http://ru.dbpedia.org/resource/Содружество_Независимых_Государств> <http://xmlns.com/foaf/0.1/homepage> <http://www.cis.minsk.by> .\n<http://ru.dbpedia.org/resource/Киров_(Кировская_область)> <http://xmlns.com/foaf/0.1/homepage> <http://www.mo-kirov.ru/> .\n<http://ru.dbpedia.org/resource/Москва> <http://xmlns.com/foaf/0.1/homepage> <https://www.mos.ru> .\n<http://ru.dbpedia.org/resource/Берлин> <http://xmlns.com/foaf/0.1/homepage> <https://www.berlin.de/> .\n<http://ru.dbpedia.org/resource/Калининград> <http://xmlns.com/foaf/0.1/homepage> <https://www.klgd.ru/> .\n<http://ru.dbpedia.org/resource/Венеция> <http://xmlns.com/foaf/0.1/homepage> <http://www.comune.venezia.it/> .\n<http://ru.dbpedia.org/resource/Италия> <http://xmlns.com/foaf/0.1/homepage> <http://www.italia.it/> .\n<http://ru.dbpedia.org/resource/Дворец_дожей> <http://xmlns.com/foaf/0.1/homepage> <http://palazzoducale.visitmuve.it> .",
+         "dataid:sha256sum": "dba4296e8be9a3acfa960071e08f7f91b5b3b44b21f2c923696b1dae1624c8db",
+         "dataid-cv:lang": "ru",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-29T16:25:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2886994",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2020.04.01/homepages_lang=ru.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=ca.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01/homepages_lang=ca.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-26T00:47:25Z\n<http://ca.dbpedia.org/resource/AIX> <http://xmlns.com/foaf/0.1/homepage> <http://www-1.ibm.com/servers/aix/> .\n<http://ca.dbpedia.org/resource/Atletisme> <http://xmlns.com/foaf/0.1/homepage> <http://www.iaaf.org/aboutiaaf/history/index.html> .\n<http://ca.dbpedia.org/resource/Atomium> <http://xmlns.com/foaf/0.1/homepage> <http://www.atomium.be> .\n<http://ca.dbpedia.org/resource/Aiguamolls_de_l'Empordà> <http://xmlns.com/foaf/0.1/homepage> <http://www.castello.cat/interior/ca/70-61/Vila-comtal.html%23an3> .\n<http://ca.dbpedia.org/resource/Alt_Camp> <http://xmlns.com/foaf/0.1/homepage> <http://www.altcamp.cat/> .\n<http://ca.dbpedia.org/resource/Acadèmia_de_les_Arts_i_les_Ciències_Cinematogràfiques> <http://xmlns.com/foaf/0.1/homepage> <http://www.oscars.org> .\n<http://ca.dbpedia.org/resource/Arbúcies> <http://xmlns.com/foaf/0.1/homepage> <http://www.montsoriu.cat/> .\n<http://ca.dbpedia.org/resource/Apollo_11> <http://xmlns.com/foaf/0.1/homepage> <http://D.C.> .\n<http://ca.dbpedia.org/resource/Amnistia_Internacional> <http://xmlns.com/foaf/0.1/homepage> <http://nobelprize.org/nobel_prizes/peace/laureates/1977/> .",
+         "dataid:sha256sum": "427443c01db6b7d51bbef82c8e421657743ff50b4ba8d3bef4600565a3e912c9",
+         "dataid-cv:lang": "ca",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-29T16:24:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "523951",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2020.04.01/homepages_lang=ca.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=pt.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01/homepages_lang=pt.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-27T04:11:58Z\n<http://pt.dbpedia.org/resource/Andorra> <http://xmlns.com/foaf/0.1/homepage> <http://www.andorra.ad/> .\n<http://pt.dbpedia.org/resource/António_Guterres> <http://xmlns.com/foaf/0.1/homepage> <http://www.antonioguterres.gov.pt/> .\n<http://pt.dbpedia.org/resource/Armin_van_Buuren> <http://xmlns.com/foaf/0.1/homepage> <http://www.arminvanbuuren.com/> .\n<http://pt.dbpedia.org/resource/Açores> <http://xmlns.com/foaf/0.1/homepage> <http://www.azores.gov.pt> .\n<http://pt.dbpedia.org/resource/Carl_Sagan> <http://xmlns.com/foaf/0.1/homepage> <http://www.carlsagan.com> .\n<http://pt.dbpedia.org/resource/Belo_Horizonte> <http://xmlns.com/foaf/0.1/homepage> <http://www.pbh.gov.br/> .\n<http://pt.dbpedia.org/resource/Conímbriga> <http://xmlns.com/foaf/0.1/homepage> <http://www.conimbriga.pt/index.html> .\n<http://pt.dbpedia.org/resource/Sport_Club_Corinthians_Paulista> <http://xmlns.com/foaf/0.1/homepage> <http://www.corinthians.com.br> .\n<http://pt.dbpedia.org/resource/Curitiba> <http://xmlns.com/foaf/0.1/homepage> <http://www.curitiba.pr.gov.br/> .",
+         "dataid:sha256sum": "2d3e79c2de612b6e318223e6fe334eb0c1248aaa6a79626cb0c16a6b282138d2",
+         "dataid-cv:lang": "pt",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-29T16:25:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1430812",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2020.04.01/homepages_lang=pt.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01#homepages_lang=fr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2020.04.01/homepages_lang=fr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-24T22:15:43Z\n<http://fr.dbpedia.org/resource/Aux_couleurs_du_Moyen_Âge> <http://xmlns.com/foaf/0.1/homepage> <http://aux-couleurs-du-moyen-age.over-blog.com/> .\n<http://fr.dbpedia.org/resource/Argentine> <http://xmlns.com/foaf/0.1/homepage> <http://www.argentina.travel/fr> .\n<http://fr.dbpedia.org/resource/Alpes-Maritimes> <http://xmlns.com/foaf/0.1/homepage> <http://www.cotedazur-tourisme.com/> .\n<http://fr.dbpedia.org/resource/Andorre> <http://xmlns.com/foaf/0.1/homepage> <https://www.govern.ad/> .\n<http://fr.dbpedia.org/resource/Advanced_Micro_Devices> <http://xmlns.com/foaf/0.1/homepage> <https://www.amd.com/> .\n<http://fr.dbpedia.org/resource/Association_francophone_des_utilisateurs_de_logiciels_libres> <http://xmlns.com/foaf/0.1/homepage> <https://aful.org/> .\n<http://fr.dbpedia.org/resource/Anvers> <http://xmlns.com/foaf/0.1/homepage> <http://www.antwerpen.be/> .\n<http://fr.dbpedia.org/resource/Aston_Martin> <http://xmlns.com/foaf/0.1/homepage> <http://www.astonmartin.com/> .\n<http://fr.dbpedia.org/resource/Amstrad> <http://xmlns.com/foaf/0.1/homepage> <http://www.amstrad.com> .",
+         "dataid:sha256sum": "06b1cb8781ee590501e0264328ba4999795a054b38aebf3c54e055d3171f0502",
+         "dataid-cv:lang": "fr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.04.01",
+         "dct:issued": {
+            "@value": "2020-04-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-29T16:24:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3270352",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/homepages/2020.04.01/homepages_lang=fr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

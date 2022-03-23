@@ -1,0 +1,149 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/wikidata/alias/2020.07.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/alias",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/alias/2020.07.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/wikidata/alias"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/wikidata"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/wikidata/alias/2020.07.01"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/f7babab6b592d0a1a4af8b618e668222959a8cf9 . After its releases, data is cleaned and persisted under the DBpedia account. ) Wikidata-specific dataset containing aliases for languages in the mappings wiki. Aliases for languages not in the mapping wiki are found in the _nmw variant."
+         },
+         "dct:hasVersion": "2020.07.01",
+         "dct:issued": {
+            "@value": "2020-07-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Wikidata Alias"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/wikidata/alias/2020.07.01#alias_nmw.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/wikidata/alias/2020.07.01#alias.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/f7babab6b592d0a1a4af8b618e668222959a8cf9 . After its releases, data is cleaned and persisted under the DBpedia account. ) Wikidata-specific dataset containing aliases for languages in the mappings wiki. Aliases for languages not in the mapping wiki are found in the _nmw variant."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/alias/2020.07.01#alias_nmw.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/alias/2020.07.01/alias_nmw.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-07-12T23:34:42Z\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/alias> \"Syd-Amerika\"@nn .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/alias> \"Көньяк Әмирикә\"@tt .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/alias> \"América del Sur , América do Sul\"@fi .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/alias> \"南美 , 南阿美利加洲\"@yue .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/alias> \"جنوبی آمریکا\"@azb .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/alias> \"America do Sud\"@lij .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/alias> \"Siadamerika\"@bar .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/alias> \"Mátta-Amerihkká\"@se .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/alias> \"Mauling America\"@pam .",
+         "dataid:sha256sum": "494c264310793e0c95c147729ef1f65767e319c1e2bd4d4108a234746eb9a12a",
+         "dataid-cv:tag": "nmw",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.01",
+         "dct:issued": {
+            "@value": "2020-07-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-21T14:59:10Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "96113813",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/databus-repo/marvin/wikidata/alias/2020.07.01/alias_nmw.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/alias/2020.07.01#alias.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/alias/2020.07.01/alias.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-07-12T23:34:42Z\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/alias> \"Süd-Amerika\"@de .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/alias> \"južnoamerički kontinent\"@hr .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/alias> \"Sud Amèrica , Amèrica del sud , Sudamèrica , Sud-Amèrica , Sud-amèrica\"@ca .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/alias> \"Јужноамерички континент\"@sr .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/alias> \"América del Sur , América do Sul\"@sv .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/alias> \"남미\"@ko .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/alias> \"Sudamérica\"@gl .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/alias> \"América del Sur , América do Sul\"@en .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/alias> \"Sud-Ameriko\"@eo .",
+         "dataid:sha256sum": "a9a041d5f18edb25dffbc8dd07e5c705cf4bf286034522dcc85cec17cb19cadf",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.01",
+         "dct:issued": {
+            "@value": "2020-07-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-21T14:59:10Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "164825797",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/databus-repo/marvin/wikidata/alias/2020.07.01/alias.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

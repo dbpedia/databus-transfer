@@ -1,0 +1,124 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/generic/anchor-text/2020.11.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/anchor-text",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/anchor-text/2020.11.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/generic/anchor-text"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/generic"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/generic/anchor-text/2020.11.01"
+         },
+         "dataid-debug:codeReference": {
+            "@id": "https://github.com/dbpedia/extraction-framework/blob/master/core/src/org/dbpedia/extraction/mappings/AnchorTextExtractor.scala"
+         },
+         "dataid-debug:documentationLocation": {
+            "@id": "https://git.informatik.uni-leipzig.de/dbpedia-assoc/marvin-config/-/tree/master/databus-poms/dbpedia/generic/anchor-text"
+         },
+         "dataid-debug:feedbackChannel": {
+            "@id": "https://forum.dbpedia.org/c/data/databus/14"
+         },
+         "dataid-debug:issueTracker": {
+            "@id": "https://github.com/dbpedia/extraction-framework/issues"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/6ce5e19acd2b2051ee1283a1409bcffadde365f3 . After its releases, data is cleaned and persisted under the DBpedia account. ) Human readable text (anchor text) of Wikilinks to refer to other Wikipedia articles"
+         },
+         "dct:hasVersion": "2020.11.01",
+         "dct:issued": {
+            "@value": "2020-11-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Anchor text of Wikilinks"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/generic/anchor-text/2020.11.01#anchor-text_lang=en.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/6ce5e19acd2b2051ee1283a1409bcffadde365f3 . After its releases, data is cleaned and persisted under the DBpedia account. ) Human readable text (anchor text) of Wikilinks to refer to other Wikipedia articles"
+         }
+      },
+      {
+         "@id": "dataid-cv:lang",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/anchor-text/2020.11.01#anchor-text_lang=en.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/anchor-text/2020.11.01/anchor-text_lang=en.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-11-15T08:52:42Z\n<http://dbpedia.org/resource/Constructed_language> <http://dbpedia.org/ontology/wikiPageWikiLinkText> \"Constructed language\"@en .\n<http://dbpedia.org/resource/As_We_May_Think> <http://dbpedia.org/ontology/wikiPageWikiLinkText> \"As_We_May_Think\"@en .\n<http://dbpedia.org/resource/Cain_and_Abel> <http://dbpedia.org/ontology/wikiPageWikiLinkText> \"Cain and Abel\"@en .\n<http://dbpedia.org/resource/Abbadid_dynasty> <http://dbpedia.org/ontology/wikiPageWikiLinkText> \"Abbadid dynasty\"@en .\n<http://dbpedia.org/resource/Foreign_relations_of_Afghanistan> <http://dbpedia.org/ontology/wikiPageWikiLinkText> \"Foreign relations of Afghanistan\"@en .\n<http://dbpedia.org/resource/Computer_accessibility> <http://dbpedia.org/ontology/wikiPageWikiLinkText> \"Computer accessibility\"@en .\n<http://dbpedia.org/resource/History_of_Afghanistan> <http://dbpedia.org/ontology/wikiPageWikiLinkText> \"History of Afghanistan\"@en .\n<http://dbpedia.org/resource/Abbey> <http://dbpedia.org/ontology/wikiPageWikiLinkText> \"Abbey\"@en .\n<http://dbpedia.org/resource/Afghan_Armed_Forces> <http://dbpedia.org/ontology/wikiPageWikiLinkText> \"Afghan Armed Forces\"@en .",
+         "dataid:sha256sum": "6a5da93e075df54970e57b05181d092d5716e51cf77cc64f5cbd606000c954d8",
+         "dataid-cv:lang": "en",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.01",
+         "dct:issued": {
+            "@value": "2020-11-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-11-17T07:55:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2354230582",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/anchor-text/2020.11.01/anchor-text_lang=en.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

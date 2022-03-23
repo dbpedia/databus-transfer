@@ -1,0 +1,1973 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/mappings"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01"
+         },
+         "dataid-debug:codeReference": {
+            "@id": "https://github.com/dbpedia/extraction-framework/blob/master/core/src/main/scala/org/dbpedia/extraction/mappings/MappingExtractor.scala"
+         },
+         "dataid-debug:documentationLocation": {
+            "@id": "https://github.com/dbpedia/databus-maven-plugin/blob/master/dbpedia/mappings/mappingbased-literals"
+         },
+         "dataid-debug:feedbackChannel": {
+            "@id": "https://forum.dbpedia.org/c/data/databus/14"
+         },
+         "dataid-debug:issueTracker": {
+            "@id": "https://github.com/dbpedia/extraction-framework/issues"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/0c57c6dd252f6d81a5d6d6c8736b03d0b911d396 . After its releases, data is cleaned and persisted under the DBpedia account. ) High-quality literal (datatyped) properties (numeric data and text) refined by the mappings extraction."
+         },
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Literals extracted with mappings"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=bg.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=it.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=ro.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=hu.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=sv.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=eo.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=sk.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=mk.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=tr.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=de.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=hr.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=el.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=ar.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=cy.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=cs.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=az.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=ko.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=hi.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=lv.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=uk.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_commons.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=nl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=hy.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=ga.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=en.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=bn.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=sr.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=sl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=pl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=be.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=fr.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=gl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=es.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=pt.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=ja.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=ca.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=ru.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=vi.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=eu.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=id.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/0c57c6dd252f6d81a5d6d6c8736b03d0b911d396 . After its releases, data is cleaned and persisted under the DBpedia account. ) High-quality literal (datatyped) properties (numeric data and text) refined by the mappings extraction."
+         }
+      },
+      {
+         "@id": "dataid-cv:lang",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=bg.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=bg.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "459168",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-06T14:02:25Z\n<http://bg.dbpedia.org/resource/България> <http://xmlns.com/foaf/0.1/name> \"България\"@bg .\n<http://bg.dbpedia.org/resource/България> <http://dbpedia.org/ontology/populationTotal> \"7000039\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://bg.dbpedia.org/resource/България> <http://dbpedia.org/ontology/populationTotalRanking> \"104\"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .\n<http://bg.dbpedia.org/resource/България> <http://dbpedia.org/ontology/mapDescription> \"Местоположение на България\" .\n<http://bg.dbpedia.org/resource/България> <http://dbpedia.org/ontology/currencyCode> \"BGN\" .\n<http://bg.dbpedia.org/resource/България> <http://dbpedia.org/ontology/motto> \"Съединението прави силата\" .\n<http://bg.dbpedia.org/resource/България> <http://dbpedia.org/ontology/areaTotal> \"1.109936E11\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://bg.dbpedia.org/resource/България> <http://dbpedia.org/ontology/areaTotalRanking> \"101\"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .\n<http://bg.dbpedia.org/resource/Софроний_Врачански> <http://xmlns.com/foaf/0.1/name> \"Софроний Врачански\"@bg .",
+         "dataid:sha256sum": "7a4aa95758fc5559942ccb16ec097473f3233d41f1ee0e3ed7c5ac82ea04429b",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "63287513",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "bg",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-06T14:09:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4286670",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=bg.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=it.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=it.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "3946730",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T16:56:44Z\n<http://it.dbpedia.org/resource/Abbie_Hoffman> <http://xmlns.com/foaf/0.1/name> \"Abbot \\\"Abbie\\\"\"@it .\n<http://it.dbpedia.org/resource/Abbie_Hoffman> <http://xmlns.com/foaf/0.1/surname> \"Hoffman\"@it .\n<http://it.dbpedia.org/resource/Abbie_Hoffman> <http://dbpedia.org/ontology/birthYear> \"1936\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://it.dbpedia.org/resource/Abbie_Hoffman> <http://dbpedia.org/ontology/deathYear> \"1989\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://it.dbpedia.org/resource/Alfred_Nobel> <http://xmlns.com/foaf/0.1/name> \"Alfred Bernhard\"@it .\n<http://it.dbpedia.org/resource/Alfred_Nobel> <http://xmlns.com/foaf/0.1/surname> \"Nobel\"@it .\n<http://it.dbpedia.org/resource/Alfred_Nobel> <http://dbpedia.org/ontology/birthYear> \"1833\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://it.dbpedia.org/resource/Alfred_Nobel> <http://dbpedia.org/ontology/deathYear> \"1896\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://it.dbpedia.org/resource/Austria> <http://dbpedia.org/ontology/flag> \"Flag of Austria.svg\" .",
+         "dataid:sha256sum": "77c3f35756325c7494a11bf9873ce295479bcbd58775eb9f7a59d063d98e7368",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "488839852",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "it",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T17:48:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "35105476",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=it.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=ro.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=ro.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "6866",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T19:06:59Z\n<http://ro.dbpedia.org/resource/Papa_Ioan_Paul_al_II-lea> <http://dbpedia.org/ontology/birthYear> \"0018\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://ro.dbpedia.org/resource/Papa_Ioan_Paul_al_II-lea> <http://dbpedia.org/ontology/deathYear> \"0002\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://ro.dbpedia.org/resource/Papa_Ioan_Paul_al_II-lea> <http://dbpedia.org/ontology/title> \"Ioan Paul I\"@ro .\n<http://ro.dbpedia.org/resource/Papa_Ioan_Paul_al_II-lea> <http://dbpedia.org/ontology/office> \"Benedict al XVI-lea\" .\n<http://ro.dbpedia.org/resource/Papa_Ioan_Paul_al_II-lea> <http://dbpedia.org/ontology/birthName> \"Karol Józef Wojtyła\"@ro .\n<http://ro.dbpedia.org/resource/Papa_Ioan_Paul_al_II-lea> <http://dbpedia.org/ontology/subtitle> \"Ioan Paul al II-lea\" .\n<http://ro.dbpedia.org/resource/Papa_Ioan_Paul_I> <http://dbpedia.org/ontology/birthYear> \"0017\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://ro.dbpedia.org/resource/Papa_Ioan_Paul_I> <http://dbpedia.org/ontology/deathYear> \"0028\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://ro.dbpedia.org/resource/Papa_Ioan_Paul_I> <http://dbpedia.org/ontology/title> \"Paul al VI-lea\"@ro .",
+         "dataid:sha256sum": "b128373bcebe273bd30df6701432182b1c83d26e987a1a96f2603d439a3b92bf",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "856057",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ro",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T19:14:42Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "47924",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=ro.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=hu.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=hu.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "456026",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T17:52:01Z\n<http://hu.dbpedia.org/resource/Omega_(együttes)> <http://xmlns.com/foaf/0.1/name> \"Omega\"@hu .\n<http://hu.dbpedia.org/resource/Wikipédia> <http://xmlns.com/foaf/0.1/name> \"Wikipédia\"@hu .\n<http://hu.dbpedia.org/resource/Janikovszky_Éva> <http://xmlns.com/foaf/0.1/name> \"Janikovszky Éva\"@hu .\n<http://hu.dbpedia.org/resource/Cserháti_Zsuzsa> <http://xmlns.com/foaf/0.1/name> \"Cserháti Zsuzsa\"@hu .\n<http://hu.dbpedia.org/resource/Isaac_Newton> <http://xmlns.com/foaf/0.1/name> \"Isaac Newton\"@hu .\n<http://hu.dbpedia.org/resource/Magyarország> <http://dbpedia.org/ontology/populationTotal> \"93\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://hu.dbpedia.org/resource/Magyarország> <http://dbpedia.org/ontology/grossDomesticProduct> \"58.0\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://hu.dbpedia.org/resource/Magyarország> <http://dbpedia.org/ontology/vehicleCode> \"H\" .\n<http://hu.dbpedia.org/resource/Magyarország> <http://dbpedia.org/ontology/vehicleCode> \"\" .",
+         "dataid:sha256sum": "a649f5d25e48c5e04dc3a5a70ec233f9367f9b4ed1a999c3a0a206efb5e9767d",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "53969735",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "hu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T18:05:20Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3850414",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=hu.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=sv.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=sv.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "7795461",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T20:01:55Z\n<http://sv.dbpedia.org/resource/Amager> <http://dbpedia.org/ontology/censusYear> \"2018\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://sv.dbpedia.org/resource/Amager> <http://dbpedia.org/ontology/populationTotal> \"196047\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://sv.dbpedia.org/resource/Amager> <http://xmlns.com/foaf/0.1/name> \"Amager\"@sv .\n<http://sv.dbpedia.org/resource/Amager> <http://dbpedia.org/ontology/utcOffset> \"+1\" .\n<http://sv.dbpedia.org/resource/Amager> <http://dbpedia.org/ontology/municipalityType> \"Ö\" .\n<http://sv.dbpedia.org/resource/Abbekås> <http://dbpedia.org/ontology/censusYear> \"2015\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://sv.dbpedia.org/resource/Abbekås> <http://dbpedia.org/ontology/populationUrban> \"729\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://sv.dbpedia.org/resource/Abbekås> <http://dbpedia.org/ontology/motto> \"Abbekås\" .\n<http://sv.dbpedia.org/resource/Abbekås> <http://dbpedia.org/ontology/populationTotal> \"708\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .",
+         "dataid:sha256sum": "4f2130a543039ce4cbaf83c429e34cc720af8a3e57f9ccd6cb807bdcbcdf82ef",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "934239664",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "sv",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T20:53:41Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "52455958",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=sv.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=eo.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=eo.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "257880",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-06T21:08:34Z\n<http://eo.dbpedia.org/resource/Afganio> <http://dbpedia.org/ontology/areaCode> \"93\" .\n<http://eo.dbpedia.org/resource/Afganio> <http://dbpedia.org/ontology/populationTotal> \"34\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://eo.dbpedia.org/resource/Afganio> <http://dbpedia.org/ontology/vehicleCode> \"AFG\" .\n<http://eo.dbpedia.org/resource/Al-Kindi> <http://dbpedia.org/ontology/birthYear> \"0004\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://eo.dbpedia.org/resource/Aachen> <http://dbpedia.org/ontology/otherName> \"Aachen\"@eo .\n<http://eo.dbpedia.org/resource/Aachen> <http://dbpedia.org/ontology/foundation> \"765\" .\n<http://eo.dbpedia.org/resource/Aachen> <http://dbpedia.org/ontology/status> \"Aŭtokodoj\" .\n<http://eo.dbpedia.org/resource/Aachen> <http://dbpedia.org/ontology/inseeCode> \"52062–52080\" .\n<http://eo.dbpedia.org/resource/Aachen> <http://dbpedia.org/ontology/humanDevelopmentIndex> \"5334002.0\"^^<http://www.w3.org/2001/XMLSchema#float> .",
+         "dataid:sha256sum": "d228e7559af744d42197de76568f4f03dcc80c63a5706a2819db0154aa79f5d3",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "28921998",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "eo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-06T21:13:18Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1752243",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=eo.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=sk.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=sk.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "142262",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-06T21:36:45Z\n<http://sk.dbpedia.org/resource/Isaac_Newton> <http://xmlns.com/foaf/0.1/name> \"Isaac Newton\"@sk .\n<http://sk.dbpedia.org/resource/Isaac_Newton> <http://xmlns.com/foaf/0.1/name> \"\"@sk .\n<http://sk.dbpedia.org/resource/Isaac_Newton> <http://dbpedia.org/ontology/birthDate> \"1643-01-04\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://sk.dbpedia.org/resource/Trnava> <http://dbpedia.org/ontology/cityType> \"mesto\" .\n<http://sk.dbpedia.org/resource/Trnava> <http://dbpedia.org/ontology/cityType> \"\" .\n<http://sk.dbpedia.org/resource/Trnava> <http://xmlns.com/foaf/0.1/name> \"Trnava\"@sk .\n<http://sk.dbpedia.org/resource/Trnava> <http://xmlns.com/foaf/0.1/name> \"\"@sk .\n<http://sk.dbpedia.org/resource/Trnava> <http://dbpedia.org/ontology/postalCode> \"917 01, 917 02, 917 05, 917 08\" .\n<http://sk.dbpedia.org/resource/Trnava> <http://dbpedia.org/ontology/postalCode> \"\" .",
+         "dataid:sha256sum": "23c87c15462a1ab8be58be4e82fe74846695cc4d654c7b84ebc2627279001a72",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "16396383",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "sk",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-06T21:40:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "984091",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=sk.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=mk.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=mk.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "205993",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T18:51:31Z\n<http://mk.dbpedia.org/resource/Тригонометрија> <http://dbpedia.org/ontology/year> \"2009\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://mk.dbpedia.org/resource/Алгебра> <http://dbpedia.org/ontology/title> \"Realm of Algebra\"@mk .\n<http://mk.dbpedia.org/resource/Алгебра> <http://dbpedia.org/ontology/year> \"1961\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://mk.dbpedia.org/resource/Владо_Малески> <http://xmlns.com/foaf/0.1/name> \"Владо Малески\"@mk .\n<http://mk.dbpedia.org/resource/Владо_Малески> <http://dbpedia.org/ontology/pseudonym> \"Тале\"@mk .\n<http://mk.dbpedia.org/resource/Славко_Јаневски> <http://xmlns.com/foaf/0.1/name> \"Славко Јаневски\"@mk .\n<http://mk.dbpedia.org/resource/Славко_Јаневски> <http://dbpedia.org/ontology/imageSize> \"200\"^^<http://www.w3.org/2001/XMLSchema#integer> .\n<http://mk.dbpedia.org/resource/Македонска_граматика> <http://dbpedia.org/ontology/title> \"Општа граматика на македонскиот јазик\"@mk .\n<http://mk.dbpedia.org/resource/Македонска_граматика> <http://dbpedia.org/ontology/isbn> \"978-9989-0-0662-7\" .",
+         "dataid:sha256sum": "8de0646cf2ab5f57c43f760fb5654db6e4179c8a2a8facf86f23227c81f437e6",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "28734316",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "mk",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T18:54:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1583419",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=mk.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=tr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=tr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "476599",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T21:24:16Z\n<http://tr.dbpedia.org/resource/Mustafa_Suphi> <http://xmlns.com/foaf/0.1/name> \"Mehmet Mustafa Suphi\"@tr .\n<http://tr.dbpedia.org/resource/Mustafa_Suphi__PersonFunction__1> <http://dbpedia.org/ontology/title> \"Siyasetçi\"@tr .\n<http://tr.dbpedia.org/resource/Mustafa_Suphi__PersonFunction__1> <http://dbpedia.org/ontology/title> \"Gazeteci\"@tr .\n<http://tr.dbpedia.org/resource/Mustafa_Suphi__PersonFunction__1> <http://dbpedia.org/ontology/title> \"Yazar\"@tr .\n<http://tr.dbpedia.org/resource/Linux> <http://xmlns.com/foaf/0.1/name> \"Linux\"@tr .\n<http://tr.dbpedia.org/resource/Linux> <http://xmlns.com/foaf/0.1/familyName> \"Unix benzeri\"@tr .\n<http://tr.dbpedia.org/resource/İsmail_Bilen_(siyasetçi)> <http://xmlns.com/foaf/0.1/name> \"İsmail Bilen\"@tr .\n<http://tr.dbpedia.org/resource/İsmail_Bilen_(siyasetçi)> <http://dbpedia.org/ontology/alias> \"Laz İsmail, Marat, S. Üstüngel\"@tr .\n<http://tr.dbpedia.org/resource/İsmail_Bilen_(siyasetçi)__PersonFunction__1> <http://dbpedia.org/ontology/title> \"Siyasetçi\"@tr .",
+         "dataid:sha256sum": "6046ec45835ded9582d3b80f56fa738827965462551e8ef447b85e660fedd4ba",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "57115869",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "tr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T21:33:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4578856",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=tr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=de.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=de.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "7617219",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-06T22:13:05Z\n<http://de.dbpedia.org/resource/Alan_Smithee> <http://dbpedia.org/ontology/individualisedGnd> \"123396956\" .\n<http://de.dbpedia.org/resource/Alan_Smithee> <http://dbpedia.org/ontology/viafId> \"86737339\" .\n<http://de.dbpedia.org/resource/Actinium> <http://dbpedia.org/ontology/individualisedGnd> \"4523163-1\" .\n<http://de.dbpedia.org/resource/Actinium> <http://dbpedia.org/ontology/lccn> \"sh/85/000706\" .\n<http://de.dbpedia.org/resource/Ang_Lee> <http://dbpedia.org/ontology/individualisedGnd> \"119317079\" .\n<http://de.dbpedia.org/resource/Ang_Lee> <http://dbpedia.org/ontology/viafId> \"69129224\" .\n<http://de.dbpedia.org/resource/Ang_Lee> <http://dbpedia.org/ontology/lccn> \"no/94/38345\" .\n<http://de.dbpedia.org/resource/Ang_Lee> <http://xmlns.com/foaf/0.1/name> \"Lee, Ang\"@de .\n<http://de.dbpedia.org/resource/Ang_Lee> <http://dbpedia.org/ontology/birthDate> \"1954-10-23\"^^<http://www.w3.org/2001/XMLSchema#date> .",
+         "dataid:sha256sum": "f5106610b9568e3b67c441ab6e27a0fa577972b52700670091671bf54b8647d4",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "933348743",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "de",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-06T23:37:10Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "80046929",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=de.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=hr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=hr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "56504",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T18:46:48Z\n<http://hr.dbpedia.org/resource/Hrvatski_jezik> <http://xmlns.com/foaf/0.1/name> \"Hrvatski jezik\"@hr .\n<http://hr.dbpedia.org/resource/Hrvatski_jezik> <http://xmlns.com/foaf/0.1/name> \"hrvatski\"@hr .\n<http://hr.dbpedia.org/resource/Judita_(Marko_Marulić)> <http://xmlns.com/foaf/0.1/name> \"Judita\"@hr .\n<http://hr.dbpedia.org/resource/Judita_(Marko_Marulić)> <http://xmlns.com/foaf/0.1/name> \"Judit\"@hr .\n<http://hr.dbpedia.org/resource/Mislav> <http://xmlns.com/foaf/0.1/name> \"Mislav\"@hr .\n<http://hr.dbpedia.org/resource/Mislav> <http://dbpedia.org/ontology/title> \"Knez Primorske Hrvatske\"@hr .\n<http://hr.dbpedia.org/resource/Mislav> <http://dbpedia.org/ontology/activeYearsStartYear> \"0835\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://hr.dbpedia.org/resource/Mislav> <http://dbpedia.org/ontology/activeYearsEndYear> \"0845\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://hr.dbpedia.org/resource/Borna> <http://xmlns.com/foaf/0.1/name> \"Borna\"@hr .",
+         "dataid:sha256sum": "9ff321bb7890ce10e471bac3bf812ad43c74f49f30352b46866ce4c12e14da34",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "7084074",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "hr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T18:50:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "593068",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=hr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=el.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=el.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "194856",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T15:44:41Z\n<http://el.dbpedia.org/resource/Λευκωσία> <http://dbpedia.org/ontology/populationTotal> \"332200\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://el.dbpedia.org/resource/Ελευθέριος_Βενιζέλος> <http://dbpedia.org/ontology/signature> \"150px\" .\n<http://el.dbpedia.org/resource/Ελευθέριος_Βενιζέλος> <http://xmlns.com/foaf/0.1/name> \"Ελευθέριος Βενιζέλος\"@el .\n<http://el.dbpedia.org/resource/Ελευθέριος_Βενιζέλος> <http://dbpedia.org/ontology/office> \"Πρωθυπουργός της Ελλάδας\" .\n<http://el.dbpedia.org/resource/Ελευθέριος_Βενιζέλος> <http://dbpedia.org/ontology/activeYearsStartDate> \"1910-10-06\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://el.dbpedia.org/resource/Ελευθέριος_Βενιζέλος> <http://dbpedia.org/ontology/activeYearsEndDate> \"1915-02-25\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://el.dbpedia.org/resource/Ελευθέριος_Βενιζέλος> <http://dbpedia.org/ontology/activeYearsStartDate> \"1915-08-10\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://el.dbpedia.org/resource/Ελευθέριος_Βενιζέλος> <http://dbpedia.org/ontology/activeYearsEndDate> \"1915-09-24\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://el.dbpedia.org/resource/Ελευθέριος_Βενιζέλος> <http://dbpedia.org/ontology/activeYearsStartDate> \"1917-06-14\"^^<http://www.w3.org/2001/XMLSchema#date> .",
+         "dataid:sha256sum": "1c49812fabebadaa6a5bac2b460e937129f9fa97b65ca3b1e6eb2bcd9d64c2a4",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "30475963",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "el",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T16:56:43Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2193621",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=el.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=ar.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=ar.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "268190",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-06T14:17:27Z\n<http://ar.dbpedia.org/resource/إستونيا> <http://xmlns.com/foaf/0.1/name> \"إستونيا\"@ar .\n<http://ar.dbpedia.org/resource/إستونيا> <http://dbpedia.org/ontology/motto> \"الوطن - الكرامة - الإتحاد\" .\n<http://ar.dbpedia.org/resource/إستونيا> <http://dbpedia.org/ontology/leaderTitle> \"رئيس الوزراء\"@ar .\n<http://ar.dbpedia.org/resource/إستونيا> <http://dbpedia.org/ontology/areaTotal> \"4.5228E10\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://ar.dbpedia.org/resource/إستونيا> <http://dbpedia.org/ontology/percentageOfAreaWater> \"4.45\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ar.dbpedia.org/resource/إستونيا> <http://dbpedia.org/ontology/populationDensity> \"29.0\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://ar.dbpedia.org/resource/فنلندا> <http://xmlns.com/foaf/0.1/name> \"جمهورية فنلندا\"@ar .\n<http://ar.dbpedia.org/resource/فنلندا> <http://dbpedia.org/ontology/leaderTitle> \"رئيس الوزراء\"@ar .\n<http://ar.dbpedia.org/resource/فنلندا> <http://dbpedia.org/ontology/leaderTitle> \"رئيس البرلمان\"@ar .",
+         "dataid:sha256sum": "e1473d47cb9cb340b670db88a52b4f1fc2352b2574098deab0e0335ef802f389",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "36702325",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ar",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-06T14:41:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2825855",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=ar.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=cy.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=cy.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "2148",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T18:50:20Z\n<http://cy.dbpedia.org/resource/Yr_Ariannin> <http://dbpedia.org/ontology/currencyCode> \"Peso\" .\n<http://cy.dbpedia.org/resource/Yr_Ariannin> <http://dbpedia.org/ontology/isoCode> \".ar\" .\n<http://cy.dbpedia.org/resource/Rhodri_Morgan> <http://xmlns.com/foaf/0.1/name> \"Rhodri Morgan\"@cy .\n<http://cy.dbpedia.org/resource/Llundain> <http://xmlns.com/foaf/0.1/name> \"Llundain\"@cy .\n<http://cy.dbpedia.org/resource/Y_Deyrnas_Unedig> <http://dbpedia.org/ontology/currencyCode> \"Punt Sterling\" .\n<http://cy.dbpedia.org/resource/Y_Deyrnas_Unedig> <http://dbpedia.org/ontology/isoCode> \".uk1\" .\n<http://cy.dbpedia.org/resource/Jimmy_Carter> <http://xmlns.com/foaf/0.1/name> \"yr Arlywydd James Earl Carter, Jr.\"@cy .\n<http://cy.dbpedia.org/resource/Jimmy_Carter> <http://xmlns.com/foaf/0.1/name> \"\"@cy .\n<http://cy.dbpedia.org/resource/Ronald_Reagan> <http://xmlns.com/foaf/0.1/name> \"Arlywydd Ronald Wilson Reagan\"@cy .",
+         "dataid:sha256sum": "2baa85f452d62e2ff53144f71816385133c96035dd116276ec559ab05f04ef11",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "242660",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "cy",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T18:51:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "21598",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=cy.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=cs.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=cs.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "1077545",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T18:05:21Z\n<http://cs.dbpedia.org/resource/Měď> <http://xmlns.com/foaf/0.1/name> \"Měď\"@cs .\n<http://cs.dbpedia.org/resource/Měď> <http://xmlns.com/foaf/0.1/name> \"\"@cs .\n<http://cs.dbpedia.org/resource/Měď> <http://dbpedia.org/ontology/casNumber> \"7440-50-8\" .\n<http://cs.dbpedia.org/resource/Měď> <http://dbpedia.org/ontology/casNumber> \"\" .\n<http://cs.dbpedia.org/resource/Měď> <http://dbpedia.org/ontology/density> \"8940.0\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://cs.dbpedia.org/resource/Měď> <http://dbpedia.org/ontology/formula> \"Cu\" .\n<http://cs.dbpedia.org/resource/Měď> <http://dbpedia.org/ontology/formula> \"\" .\n<http://cs.dbpedia.org/resource/Měď> <http://dbpedia.org/ontology/molarMass> \"7.11\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://cs.dbpedia.org/resource/Měď> <http://dbpedia.org/ontology/latinName> \"Cuprum\" .",
+         "dataid:sha256sum": "2bddc377dddb965a727e8152b3b97d72f638d6286eb5c6e7ffbd0411e682858b",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "125953530",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "cs",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T18:18:14Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "8166997",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=cs.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=az.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=az.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "19802",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-06T14:09:21Z\n<http://az.dbpedia.org/resource/Məhəmməd_Tağı_Zehtabi> <http://xmlns.com/foaf/0.1/name> \"Məhəmmədtağı Zehtabi\"@az .\n<http://az.dbpedia.org/resource/Cabir_Novruz> <http://xmlns.com/foaf/0.1/name> \"Cabir Novruz\"@az .\n<http://az.dbpedia.org/resource/Cabir_Novruz> <http://dbpedia.org/ontology/birthName> \"Cabir Mirzəbəy oğlu Novruzov\"@az .\n<http://az.dbpedia.org/resource/Xəlil_Rza_Ulutürk> <http://xmlns.com/foaf/0.1/name> \"Xəlil Rza Ulutürk\"@az .\n<http://az.dbpedia.org/resource/Xəlil_Rza_Ulutürk> <http://dbpedia.org/ontology/birthName> \"Xəlil Rza oğlu Xəlilov\"@az .\n<http://az.dbpedia.org/resource/Fikrət_Qoca> <http://xmlns.com/foaf/0.1/name> \"Fikrət Qoca\"@az .\n<http://az.dbpedia.org/resource/Fikrət_Qoca> <http://xmlns.com/foaf/0.1/name> \"\"@az .\n<http://az.dbpedia.org/resource/Fikrət_Qoca> <http://dbpedia.org/ontology/birthName> \"Fikrət Göyüş oğlu Qocayev\"@az .\n<http://az.dbpedia.org/resource/Fikrət_Qoca> <http://dbpedia.org/ontology/birthName> \"\"@az .",
+         "dataid:sha256sum": "01bc5ab03b091384ad1b483197dd08e25e42ef448d297a62c75559bf07f3b3d6",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "2384994",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "az",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-06T14:12:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "227552",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=az.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=ko.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=ko.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "688585",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-06T21:24:54Z\n<http://ko.dbpedia.org/resource/지미_카터> <http://xmlns.com/foaf/0.1/name> \"제임스 얼 카터 주니어\"@ko .\n<http://ko.dbpedia.org/resource/체첸_공화국> <http://xmlns.com/foaf/0.1/name> \"체첸 공화국\"@ko .\n<http://ko.dbpedia.org/resource/체첸_공화국> <http://xmlns.com/foaf/0.1/name> \"Нохчийн РеспубликаNoxçiyn Respublika\"@ko .\n<http://ko.dbpedia.org/resource/체첸_공화국> <http://dbpedia.org/ontology/leaderTitle> \"대통령\"@ko .\n<http://ko.dbpedia.org/resource/체첸_공화국> <http://dbpedia.org/ontology/area> \"1.73E10\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://ko.dbpedia.org/resource/체첸_공화국> <http://dbpedia.org/ontology/populationDensity> \"71.0\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://ko.dbpedia.org/resource/함석헌> <http://xmlns.com/foaf/0.1/name> \"함석헌\"@ko .\n<http://ko.dbpedia.org/resource/함석헌> <http://xmlns.com/foaf/0.1/name> \"咸錫憲\"@ko .\n<http://ko.dbpedia.org/resource/함석헌> <http://dbpedia.org/ontology/alias> \"호(號)는 신천(信天), 씨알, 바보새\"@ko .",
+         "dataid:sha256sum": "4e20ae030d13e7b837f5424c49c5331e5a4244bf3349e8d648efbe5daa4c7fd8",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "89020062",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ko",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-06T21:36:43Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "6466734",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=ko.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=hi.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=hi.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "48845",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T17:48:59Z\n<http://hi.dbpedia.org/resource/दरभंगा> <http://dbpedia.org/ontology/vehicleCode> \"BH-xx\" .\n<http://hi.dbpedia.org/resource/दरभंगा> <http://dbpedia.org/ontology/areaCode> \"8405967173\" .\n<http://hi.dbpedia.org/resource/दरभंगा> <http://dbpedia.org/ontology/areaCode> \"\" .\n<http://hi.dbpedia.org/resource/दरभंगा> <http://dbpedia.org/ontology/populationTotal> \"3295789\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://hi.dbpedia.org/resource/दरभंगा> <http://dbpedia.org/ontology/postalCode> \"847422\" .\n<http://hi.dbpedia.org/resource/दरभंगा> <http://dbpedia.org/ontology/postalCode> \"\" .\n<http://hi.dbpedia.org/resource/दरभंगा> <http://dbpedia.org/ontology/areaTotal> \"2.279E9\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://hi.dbpedia.org/resource/दरभंगा> <http://dbpedia.org/ontology/populationDensity> \"1101.0\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://hi.dbpedia.org/resource/जमशेदपुर> <http://dbpedia.org/ontology/vehicleCode> \"जे एच 05\" .",
+         "dataid:sha256sum": "c8c4af88256f385a9374e5c7f986550394f4f8cba1b703b3405288ff84a3b425",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "8509811",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "hi",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T17:52:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "386752",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=hi.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=lv.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=lv.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "135247",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T14:32:46Z\n<http://lv.dbpedia.org/resource/Eiropas_Savienība> <http://dbpedia.org/ontology/flag> \"Flag of Europe.svg\" .\n<http://lv.dbpedia.org/resource/Eiropas_Savienība> <http://dbpedia.org/ontology/leaderTitle> \"Eiropadomes prezidents\"@lv .\n<http://lv.dbpedia.org/resource/Eiropas_Savienība> <http://dbpedia.org/ontology/leaderTitle> \"Komisijas prezidents\"@lv .\n<http://lv.dbpedia.org/resource/Eiropas_Savienība> <http://dbpedia.org/ontology/areaTotal> \"4.324782E12\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://lv.dbpedia.org/resource/Eiropas_Savienība> <http://dbpedia.org/ontology/percentageOfAreaWater> \"3.08\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://lv.dbpedia.org/resource/Eiropas_Savienība> <http://dbpedia.org/ontology/populationTotal> \"506913394\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://lv.dbpedia.org/resource/Eiropas_Savienība> <http://dbpedia.org/ontology/populationDensity> \"116.2\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://lv.dbpedia.org/resource/Eiropas_Savienība> <http://dbpedia.org/ontology/giniCoefficient> \"30.4\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://lv.dbpedia.org/resource/Eiropas_Savienība> <http://dbpedia.org/ontology/humanDevelopmentIndex> \"0.876\"^^<http://www.w3.org/2001/XMLSchema#float> .",
+         "dataid:sha256sum": "3f54051ac22c60c6bbb669725df8d8e12dc881974a7017b1a0b53004b56d1c78",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "16051094",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "lv",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T14:35:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1165419",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=lv.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=uk.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=uk.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "1282927",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T14:06:26Z\n<http://uk.dbpedia.org/resource/Молостова_Ірина_Олександрівна> <http://dbpedia.org/ontology/thumbnailCaption> \"Молостова Ірина Олександрівна.jpg\" .\n<http://uk.dbpedia.org/resource/Антонович_Володимир_Боніфатійович> <http://dbpedia.org/ontology/thumbnailCaption> \"Антонович Володимир Боніфатійович.jpg\" .\n<http://uk.dbpedia.org/resource/Рудольф_Людвіг_Мессбауер> <http://dbpedia.org/ontology/thumbnailCaption> \"Mossbauer.jpg\" .\n<http://uk.dbpedia.org/resource/Чубинський_Павло_Платонович> <http://dbpedia.org/ontology/thumbnailCaption> \"Pavlo Chybynskyi.jpg\" .\n<http://uk.dbpedia.org/resource/Омеляновський_Михайло_Еразмович> <http://dbpedia.org/ontology/thumbnailCaption> \"Омеляновський Михайло Еразмович.jpg\" .\n<http://uk.dbpedia.org/resource/Україна> <http://dbpedia.org/ontology/areaRank> \"46\" .\n<http://uk.dbpedia.org/resource/Україна> <http://dbpedia.org/ontology/phonePrefix> \"380\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://uk.dbpedia.org/resource/Україна> <http://dbpedia.org/ontology/ethnicGroupsInYear> \"2001\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://uk.dbpedia.org/resource/Україна> <http://dbpedia.org/ontology/populationTotalRanking> \"32\"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .",
+         "dataid:sha256sum": "68b8178faa9b1c1e5230bf519f7020e429abfb3e4b81ccda57e98ea1bffd91ec",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "173714016",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "uk",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T14:32:45Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "8630947",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=uk.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_commons.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_commons.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "117826630",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T22:46:39Z\n<http://commons.dbpedia.org/resource/File:Kane_QC.png> <http://purl.org/dc/terms/description> \"Kane quantum computer\"@en .\n<http://commons.dbpedia.org/resource/Callipepla_gambelii> <http://dbpedia.org/ontology/title> \"Gambel's Quail\"@en .\n<http://commons.dbpedia.org/resource/Callipepla_gambelii> <http://dbpedia.org/ontology/title> \"Helmwachtel\"@de .\n<http://commons.dbpedia.org/resource/Callipepla_gambelii> <http://dbpedia.org/ontology/title> \"Colin à ventre noir\"@fr .\n<http://commons.dbpedia.org/resource/Callipepla_gambelii> <http://dbpedia.org/ontology/title> \"przepiór czubaty\"@pl .\n<http://commons.dbpedia.org/resource/Callipepla_gambelii> <http://dbpedia.org/ontology/title> \"ズアカカンムリウズラ\"@ja .\n<http://commons.dbpedia.org/resource/Callipepla_gambelii> <http://dbpedia.org/ontology/title> \"Codorniz Chiquiri\"@es .\n<http://commons.dbpedia.org/resource/Callipepla_gambelii> <http://dbpedia.org/ontology/title> \"Ökentofsvaktel\"@sv .\n<http://commons.dbpedia.org/resource/Callipepla_gambelii> <http://dbpedia.org/ontology/title> \"Gambelkwartel\"@nl .",
+         "dataid:sha256sum": "4a8098cd09b2618a86f00bd50c8dbbe914a46f88d806b1b65eec9b9843a6391a",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "21089827246",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:tag": "commons",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-06T14:02:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1474488068",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_commons.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=nl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=nl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "5748067",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T19:14:43Z\n<http://nl.dbpedia.org/resource/Albert_Speer> <http://xmlns.com/foaf/0.1/name> \"Albert Speer\"@nl .\n<http://nl.dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/ontology/subtitle> \"Speer op hetProces van Neurenberg(1945-1946)\" .\n<http://nl.dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/ontology/birthDate> \"1905-03-19\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://nl.dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/ontology/deathDate> \"1981-09-01\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://nl.dbpedia.org/resource/Anthony_Fokker> <http://xmlns.com/foaf/0.1/name> \"Anthony Fokker\"@nl .\n<http://nl.dbpedia.org/resource/Anthony_Fokker> <http://dbpedia.org/ontology/longName> \"Antonij Herman Gerard Fokker\"@nl .\n<http://nl.dbpedia.org/resource/Anthony_Fokker> <http://dbpedia.org/ontology/birthDate> \"1890-04-06\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://nl.dbpedia.org/resource/Anthony_Fokker> <http://dbpedia.org/ontology/deathDate> \"1939-12-23\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://nl.dbpedia.org/resource/Albert_Plesman> <http://xmlns.com/foaf/0.1/name> \"Albert Plesman\"@nl .",
+         "dataid:sha256sum": "19dc93f6a0e09d9637b324f86bf0576d04ee5363bd77044e899851021c6e5bfa",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "732934457",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "nl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T20:01:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "46521675",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=nl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=hy.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=hy.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "333",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T14:35:11Z\n<http://hy.dbpedia.org/resource/Հովհաննես_Թումանյան> <http://dbpedia.org/ontology/activeYearsStartYear> \"1881\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://hy.dbpedia.org/resource/Հովհաննես_Թումանյան> <http://dbpedia.org/ontology/activeYearsEndYear> \"1923\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://hy.dbpedia.org/resource/Րաֆֆի> <http://dbpedia.org/ontology/activeYearsStartYear> \"1850\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://hy.dbpedia.org/resource/Րաֆֆի> <http://dbpedia.org/ontology/activeYearsEndYear> \"1888\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://hy.dbpedia.org/resource/Վահան_Տերյան> <http://dbpedia.org/ontology/pseudonym> \"Վահան Տերյան\"@hy .\n<http://hy.dbpedia.org/resource/Սիլվա_Կապուտիկյան> <http://dbpedia.org/ontology/activeYearsStartYear> \"1933\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://hy.dbpedia.org/resource/Սիլվա_Կապուտիկյան> <http://dbpedia.org/ontology/activeYearsEndYear> \"2006\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://hy.dbpedia.org/resource/Պարույր_Սևակ> <http://dbpedia.org/ontology/pseudonym> \"Պարույր Սևակ\"@hy .\n<http://hy.dbpedia.org/resource/Լեո> <http://dbpedia.org/ontology/pseudonym> \"Լեո\"@hy .",
+         "dataid:sha256sum": "eac86b40f5dc8f8dde6f5dde66299c4418637c24e61ec8e6666970ca302db456",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "51862",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "hy",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T14:40:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4284",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=hy.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=ga.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=ga.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "37643",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T20:01:24Z\n<http://ga.dbpedia.org/resource/An_tSeapáin> <http://xmlns.com/foaf/0.1/name> \"'''日本国\"@ga .\n<http://ga.dbpedia.org/resource/An_tSeapáin> <http://xmlns.com/foaf/0.1/name> \"Nippon'''\"@ga .\n<http://ga.dbpedia.org/resource/An_tSeapáin> <http://dbpedia.org/ontology/percentageOfAreaWater> \"0.8\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ga.dbpedia.org/resource/An_tSeapáin> <http://dbpedia.org/ontology/leaderTitle> \"Impire\"@ga .\n<http://ga.dbpedia.org/resource/An_tSeapáin> <http://dbpedia.org/ontology/leaderTitle> \"Príomh-Aire\"@ga .\n<http://ga.dbpedia.org/resource/An_tSeapáin> <http://dbpedia.org/ontology/areaTotal> \"3.77873E11\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://ga.dbpedia.org/resource/An_tSeapáin> <http://dbpedia.org/ontology/populationDensity> \"336.0\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://ga.dbpedia.org/resource/George_W._Bush> <http://xmlns.com/foaf/0.1/name> \"George Walker Bush\"@ga .\n<http://ga.dbpedia.org/resource/George_W._Bush> <http://dbpedia.org/ontology/birthDate> \"1946-07-06\"^^<http://www.w3.org/2001/XMLSchema#date> .",
+         "dataid:sha256sum": "60fdfcdd8f0791ab388b7611d6351587e10a290ab98855b6925b0d85bedd4253",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "4655677",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ga",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T20:01:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "310878",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=ga.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=en.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=en.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "16827991",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-06T14:49:24Z\n<http://dbpedia.org/resource/Autism> <http://xmlns.com/foaf/0.1/name> \"Autism\"@en .\n<http://dbpedia.org/resource/Autism> <http://dbpedia.org/ontology/complications> \"Social isolation, employment problems, family stress,bullying,self-harm\" .\n<http://dbpedia.org/resource/Autism> <http://dbpedia.org/ontology/icd10> \"F84.0\" .\n<http://dbpedia.org/resource/Autism> <http://dbpedia.org/ontology/icd9> \"299.00\" .\n<http://dbpedia.org/resource/Autism> <http://dbpedia.org/ontology/omim> \"209850\"^^<http://www.w3.org/2001/XMLSchema#integer> .\n<http://dbpedia.org/resource/Autism> <http://dbpedia.org/ontology/diseasesDB> \"1142\" .\n<http://dbpedia.org/resource/Autism> <http://dbpedia.org/ontology/medlinePlus> \"001526\" .\n<http://dbpedia.org/resource/Autism> <http://dbpedia.org/ontology/eMedicineSubject> \"med\"@en .\n<http://dbpedia.org/resource/Autism> <http://dbpedia.org/ontology/eMedicineTopic> \"3202\"@en .",
+         "dataid:sha256sum": "1aa8c310b449e90b350bf0dfc7c410935ffb8b261b7d38fd1b9207e3d9fc5a56",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "2237640352",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "en",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-06T19:12:40Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "156300951",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=en.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=bn.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=bn.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "12654",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-06T14:12:19Z\n<http://bn.dbpedia.org/resource/আনন্দমঠ> <http://xmlns.com/foaf/0.1/name> \"আনন্দমঠ\"@bn .\n<http://bn.dbpedia.org/resource/শ্রীনিবাস_রামানুজন> <http://xmlns.com/foaf/0.1/name> \"শ্রীনিবাস রামানুজন\"@bn .\n<http://bn.dbpedia.org/resource/এভারিস্ত_গালোয়া> <http://xmlns.com/foaf/0.1/name> \"এভারিস্ত গ্যালোয়া\"@bn .\n<http://bn.dbpedia.org/resource/এডওয়ার্ড_উইটেন> <http://xmlns.com/foaf/0.1/name> \"এডওয়ার্ড উইটেন\"@bn .\n<http://bn.dbpedia.org/resource/রিচার্ড_হ্যামিং> <http://xmlns.com/foaf/0.1/name> \"রিচার্ড ওয়েসলি হ্যামিং\"@bn .\n<http://bn.dbpedia.org/resource/জন_ভন_নিউম্যান> <http://xmlns.com/foaf/0.1/name> \"জন ভন নিউম্যান\"@bn .\n<http://bn.dbpedia.org/resource/জুলিয়াস_সিজার> <http://xmlns.com/foaf/0.1/name> \"গাউস  জুলিয়াস সিজার\"@bn .\n<http://bn.dbpedia.org/resource/ইয়োহান_জেবাস্টিয়ান_বাখ> <http://xmlns.com/foaf/0.1/name> \"ইয়োহান জেবাস্টিয়ান বাখ\"@bn .\n<http://bn.dbpedia.org/resource/রিচার্ড_ফাইনম্যান> <http://xmlns.com/foaf/0.1/name> \"রিচার্ড ফিলিপ্‌স ফাইনম্যান\"@bn .",
+         "dataid:sha256sum": "3b3e0975b417771a3e9ead201320dfad74a5a8fc8a3ff8577e7314056aeb7d23",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "2049730",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "bn",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-06T14:17:26Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "167739",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=bn.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=sr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=sr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "1584348",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T18:18:15Z\n<http://sr.dbpedia.org/resource/HTML> <http://dbpedia.org/ontology/pronunciation> \"ха-те-ем-ел\" .\n<http://sr.dbpedia.org/resource/Никола_Тесла> <http://xmlns.com/foaf/0.1/name> \"Никола Тесла\"@sr .\n<http://sr.dbpedia.org/resource/Ћирилица> <http://xmlns.com/foaf/0.1/name> \"Ћирилица\"@sr .\n<http://sr.dbpedia.org/resource/Џудо> <http://xmlns.com/foaf/0.1/name> \"Џудо\"@sr .\n<http://sr.dbpedia.org/resource/Хрватски_језик> <http://xmlns.com/foaf/0.1/name> \"хрватски језик\"@sr .\n<http://sr.dbpedia.org/resource/Хрватски_језик> <http://dbpedia.org/ontology/pronunciation> \"[xř̩ʋaːtskiː]\" .\n<http://sr.dbpedia.org/resource/Хрватски_језик> <http://dbpedia.org/ontology/numberOfSpeakers> \"6\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://sr.dbpedia.org/resource/Хрватски_језик> <http://dbpedia.org/ontology/iso6391Code> \"hr\" .\n<http://sr.dbpedia.org/resource/Хрватски_језик> <http://dbpedia.org/ontology/iso6392Code> \"hrv\" .",
+         "dataid:sha256sum": "b635b45c881eb2c302cdfa652209749ca4279f8db792179d3a1b4fee45018160",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "226333202",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "sr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T18:46:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "9991982",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=sr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=sl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=sl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "95687",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-06T14:41:31Z\n<http://sl.dbpedia.org/resource/Sojuz_1> <http://dbpedia.org/ontology/numberOfOrbits> \"18\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://sl.dbpedia.org/resource/Sojuz_1> <http://dbpedia.org/ontology/orbitalInclination> \"50.8\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://sl.dbpedia.org/resource/Sojuz_1> <http://dbpedia.org/ontology/distanceTraveled> \"7.38E8\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://sl.dbpedia.org/resource/Sojuz_1> <http://xmlns.com/foaf/0.1/name> \"Sojuz 1\"@sl .\n<http://sl.dbpedia.org/resource/Slovenščina> <http://dbpedia.org/ontology/speaker> \"3\"^^<http://www.w3.org/2001/XMLSchema#integer> .\n<http://sl.dbpedia.org/resource/Slovenščina> <http://dbpedia.org/ontology/iso6391Code> \"sl\" .\n<http://sl.dbpedia.org/resource/Wikipedija> <http://xmlns.com/foaf/0.1/name> \"Wikipedija\"@sl .\n<http://sl.dbpedia.org/resource/Adelard> <http://xmlns.com/foaf/0.1/name> \"Adelard\"@sl .\n<http://sl.dbpedia.org/resource/Albert_Einstein> <http://xmlns.com/foaf/0.1/name> \"Albert Einstein\"@sl .",
+         "dataid:sha256sum": "47af72de619610c316f79718c648bef836b940c4fd3f3085700bcef4abd34101",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "12207103",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "sl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-06T14:45:10Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "926583",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=sl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=pl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=pl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "2833811",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-06T21:40:38Z\n<http://pl.dbpedia.org/resource/Aceton> <http://dbpedia.org/ontology/meltingPoint> \"178.45\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://pl.dbpedia.org/resource/Aceton> <http://dbpedia.org/ontology/boilingPoint> \"329.2\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://pl.dbpedia.org/resource/Aceton> <http://xmlns.com/foaf/0.1/name> \"propan-2-on, 2-propanon, propanon, keton dimetylowy\"@pl .\n<http://pl.dbpedia.org/resource/Aceton> <http://xmlns.com/foaf/0.1/name> \"\"@pl .\n<http://pl.dbpedia.org/resource/Aceton> <http://xmlns.com/foaf/0.1/name> \"dimetyloketon, dwumetyloketon\"@pl .\n<http://pl.dbpedia.org/resource/Aceton> <http://dbpedia.org/ontology/pubchem> \"\" .\n<http://pl.dbpedia.org/resource/Aceton> <http://dbpedia.org/ontology/casNumber> \"\" .\n<http://pl.dbpedia.org/resource/Polonezköy> <http://dbpedia.org/ontology/postalCode> \"34829\" .\n<http://pl.dbpedia.org/resource/Polonezköy> <http://dbpedia.org/ontology/postalCode> \"\" .",
+         "dataid:sha256sum": "d01aec1cbf3256bd58a7195d65d23602938dea2bc50e36583e20ef65e2c34d77",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "322159782",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "pl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-06T22:13:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "21773214",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=pl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=be.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=be.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "343988",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-06T20:08:11Z\n<http://be.dbpedia.org/resource/30_грэнадзёрская_дывізія_войскаў_пры_СС> <http://xmlns.com/foaf/0.1/name> \"30-я грэнадзёрская дывізія СС (1-я беларуская)\"@be .\n<http://be.dbpedia.org/resource/30_грэнадзёрская_дывізія_войскаў_пры_СС> <http://dbpedia.org/ontology/motto> \"Meine Ehre heißt Treue (Мой гонар завецца вернасцю)\" .\n<http://be.dbpedia.org/resource/Microsoft> <http://xmlns.com/foaf/0.1/name> \"Microsoft Corporation\"@be .\n<http://be.dbpedia.org/resource/Іванка> <http://xmlns.com/foaf/0.1/name> \"Іванка\"@be .\n<http://be.dbpedia.org/resource/Іванка> <http://xmlns.com/foaf/0.1/name> \"Иванко\"@be .\n<http://be.dbpedia.org/resource/Іванка> <http://dbpedia.org/ontology/orderInOffice> \"цар\" .\n<http://be.dbpedia.org/resource/Іванаўскі_раён> <http://xmlns.com/foaf/0.1/name> \"Іванаўскі раён\"@be .\n<http://be.dbpedia.org/resource/Іванаўскі_раён> <http://dbpedia.org/ontology/populationTotal> \"43586\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://be.dbpedia.org/resource/Іванаўскі_раён> <http://dbpedia.org/ontology/populationYear> \"2009\" .",
+         "dataid:sha256sum": "da10c66f5af43e72baad1b1b08ef31b05b57fa859739012524bb274a89fd91fe",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "44460257",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "be",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-06T20:12:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2725642",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=be.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=fr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=fr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "7827086",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T21:33:02Z\n<http://fr.dbpedia.org/resource/Arc_de_triomphe_de_l'Étoile> <http://dbpedia.org/ontology/yearOfConstruction> \"1806\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://fr.dbpedia.org/resource/Arc_de_triomphe_de_l'Étoile> <http://dbpedia.org/ontology/height> \"50.0\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://fr.dbpedia.org/resource/Arc_de_triomphe_de_l'Étoile> <http://dbpedia.org/ontology/initiallyUsedFor> \"Commémoration de labataille d'Austerlitz\" .\n<http://fr.dbpedia.org/resource/Arc_de_triomphe_de_l'Étoile> <http://dbpedia.org/ontology/currentlyUsedFor> \"Commémoration de laPremière Guerre mondiale(tombeau du Soldat inconnu) et musée\" .\n<http://fr.dbpedia.org/resource/Arc_de_triomphe_de_l'Étoile> <http://dbpedia.org/ontology/thumbnailCaption> \"L'Arc de Triomphe vu desChamps-Élysées.\" .\n<http://fr.dbpedia.org/resource/Autriche> <http://xmlns.com/foaf/0.1/name> \"République d’Autriche\"@fr .\n<http://fr.dbpedia.org/resource/Autriche> <http://xmlns.com/foaf/0.1/name> \"\"@fr .\n<http://fr.dbpedia.org/resource/Autriche> <http://xmlns.com/foaf/0.1/name> \"Republik Österreich\"@fr .\n<http://fr.dbpedia.org/resource/Autriche> <http://dbpedia.org/ontology/flag> \"Flag of Austria.svg\" .",
+         "dataid:sha256sum": "09183e2b20550d92b3e789bdd28c75ed8d59fb7bb5d60b994323262d77ffbb28",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "1028194617",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "fr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T22:46:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "64552746",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=fr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=gl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=gl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "341066",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-06T14:45:12Z\n<http://gl.dbpedia.org/resource/Bibiano_Fernández_Osorio-Tafall> <http://xmlns.com/foaf/0.1/name> \"Bibiano Fernández Osorio-Tafall\"@gl .\n<http://gl.dbpedia.org/resource/Bibiano_Fernández_Osorio-Tafall> <http://dbpedia.org/ontology/subtitle> \"nunha conferencia en 1935.\" .\n<http://gl.dbpedia.org/resource/Bibiano_Fernández_Osorio-Tafall> <http://dbpedia.org/ontology/activeYearsStartYear> \"1931\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://gl.dbpedia.org/resource/Bibiano_Fernández_Osorio-Tafall> <http://dbpedia.org/ontology/activeYearsEndYear> \"1934\"^^<http://www.w3.org/2001/XMLSchema#gYear> .\n<http://gl.dbpedia.org/resource/Bibiano_Fernández_Osorio-Tafall> <http://xmlns.com/foaf/0.1/name> \"Manuel Casqueiro Paz\"@gl .\n<http://gl.dbpedia.org/resource/Bibiano_Fernández_Osorio-Tafall> <http://xmlns.com/foaf/0.1/name> \"Ramón Segura de la Garmilla\"@gl .\n<http://gl.dbpedia.org/resource/Bibiano_Fernández_Osorio-Tafall> <http://dbpedia.org/ontology/title> \"20px\"@gl .\n<http://gl.dbpedia.org/resource/Bibiano_Fernández_Osorio-Tafall> <http://dbpedia.org/ontology/title> \"Alcalde de Pontevedra\"@gl .\n<http://gl.dbpedia.org/resource/Bibiano_Fernández_Osorio-Tafall> <http://dbpedia.org/ontology/activeYearsStartYear> \"1936\"^^<http://www.w3.org/2001/XMLSchema#gYear> .",
+         "dataid:sha256sum": "b1921cab45ea3303f457acfce5ac463d346d50ca37296645735f66886173c76b",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "44853786",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "gl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-06T14:49:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2824715",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=gl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=es.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=es.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "3172161",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-06T20:12:54Z\n<http://es.dbpedia.org/resource/Andorra> <http://xmlns.com/foaf/0.1/name> \"Principado de Andorra\"@es .\n<http://es.dbpedia.org/resource/Andorra> <http://dbpedia.org/ontology/grossDomesticProduct> \"8.22E8\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://es.dbpedia.org/resource/Andorra> <http://dbpedia.org/ontology/humanDevelopmentIndex> \"0.857\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://es.dbpedia.org/resource/Anoeta> <http://dbpedia.org/ontology/areaCode> \"20\" .\n<http://es.dbpedia.org/resource/Anoeta> <http://dbpedia.org/ontology/municipalityCode> \"010\" .\n<http://es.dbpedia.org/resource/Anoeta> <http://xmlns.com/foaf/0.1/name> \"Anoeta\"@es .\n<http://es.dbpedia.org/resource/Anoeta> <http://dbpedia.org/ontology/postalCode> \"20270\" .\n<http://es.dbpedia.org/resource/Anoeta> <http://dbpedia.org/ontology/flag> \"no\" .\n<http://es.dbpedia.org/resource/Anoeta> <http://dbpedia.org/ontology/areaTotal> \"4000000.0\"^^<http://www.w3.org/2001/XMLSchema#double> .",
+         "dataid:sha256sum": "b2654361e68a2b6e4ffd475e05a6e699606c99f7d2ed54fee7f69f208c1c403f",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "394045346",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "es",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-06T21:08:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "33307276",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=es.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=pt.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=pt.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "2625744",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T20:53:42Z\n<http://pt.dbpedia.org/resource/América_Latina> <http://xmlns.com/foaf/0.1/name> \"América Latina\"@pt .\n<http://pt.dbpedia.org/resource/América_Latina> <http://xmlns.com/foaf/0.1/name> \"\"@pt .\n<http://pt.dbpedia.org/resource/América_Latina> <http://xmlns.com/foaf/0.1/name> \"Latin America (orthographic projection).svg\"@pt .\n<http://pt.dbpedia.org/resource/América_Latina> <http://xmlns.com/foaf/0.1/name> \"Ásia,África,América Anglo-Saxônica,Antártida,EuropaeOceania\"@pt .\n<http://pt.dbpedia.org/resource/América_Latina> <http://dbpedia.org/ontology/areaTotal> \"2.1069501E13\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://pt.dbpedia.org/resource/América_Latina> <http://dbpedia.org/ontology/maximumElevation> \"6962.0\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://pt.dbpedia.org/resource/América_Latina> <http://dbpedia.org/ontology/populationTotal> \"569000\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://pt.dbpedia.org/resource/Albert_Einstein> <http://xmlns.com/foaf/0.1/name> \"Albert Einstein\"@pt .\n<http://pt.dbpedia.org/resource/Albert_Einstein> <http://dbpedia.org/ontology/imageSize> \"250\"^^<http://www.w3.org/2001/XMLSchema#integer> .",
+         "dataid:sha256sum": "573535b21f7ac14f73985f5a708837eec211bff735d385d73a988e819f48133f",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "339881323",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "pt",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T21:24:14Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "25228493",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=pt.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=ja.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=ja.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "1862128",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-06T19:12:41Z\n<http://ja.dbpedia.org/resource/コケ植物> <http://dbpedia.org/ontology/colourName> \"lightgreen\"@ja .\n<http://ja.dbpedia.org/resource/コケ植物> <http://xmlns.com/foaf/0.1/name> \"コケ植物門\"@ja .\n<http://ja.dbpedia.org/resource/コケ植物> <http://xmlns.com/foaf/0.1/name> \"Bryophyta\"@ja .\n<http://ja.dbpedia.org/resource/コケ植物> <http://purl.org/dc/elements/1.1/description> \"コケ植物に覆われた八ヶ岳の林床\" .\n<http://ja.dbpedia.org/resource/日本語> <http://xmlns.com/foaf/0.1/name> \"日本語\"@ja .\n<http://ja.dbpedia.org/resource/日本語> <http://xmlns.com/foaf/0.1/name> \"にほんご、にっぽんご\"@ja .\n<http://ja.dbpedia.org/resource/日本語> <http://dbpedia.org/ontology/iso6391Code> \"ja\" .\n<http://ja.dbpedia.org/resource/日本語> <http://dbpedia.org/ontology/iso6392Code> \"jpn\" .\n<http://ja.dbpedia.org/resource/日本語> <http://dbpedia.org/ontology/iso6393Code> \"jpn\" .",
+         "dataid:sha256sum": "2aac8a98f188c33517df42ebd98f7ab44f95b945b9b59b63fe0c3d36b09de924",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "241722642",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ja",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-06T19:53:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "20211483",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=ja.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=ca.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=ca.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "58389",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-06T19:54:01Z\n<http://ca.dbpedia.org/resource/Abat_Oliba> <http://xmlns.com/foaf/0.1/name> \"Abat Oliba\"@ca .\n<http://ca.dbpedia.org/resource/Argelaguer> <http://dbpedia.org/ontology/demonym> \"Argelaguenc, argelaguenca\"@ca .\n<http://ca.dbpedia.org/resource/Argelaguer> <http://dbpedia.org/ontology/postalCode> \"17853\" .\n<http://ca.dbpedia.org/resource/Argelaguer> <http://dbpedia.org/ontology/elevation> \"183.0\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://ca.dbpedia.org/resource/Annie_Hall> <http://dbpedia.org/ontology/runtime> \"5580.0\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://ca.dbpedia.org/resource/Allò_que_el_vent_s'endugué> <http://xmlns.com/foaf/0.1/name> \"Allò que el vent s'endugué\"@ca .\n<http://ca.dbpedia.org/resource/Allò_que_el_vent_s'endugué> <http://dbpedia.org/ontology/runtime> \"13320.0\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://ca.dbpedia.org/resource/Alien> <http://dbpedia.org/ontology/runtime> \"7020.0\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://ca.dbpedia.org/resource/Belga_(agència)> <http://xmlns.com/foaf/0.1/name> \"Belga News Agency NV\"@ca .",
+         "dataid:sha256sum": "111872738dbdc34f26a8ef37ff742102a99a8ed58c228fe7abd2e316196afaf1",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "6743396",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ca",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-06T20:08:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "844248",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=ca.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=ru.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=ru.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "5298206",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T14:40:34Z\n<http://ru.dbpedia.org/resource/Литва> <http://dbpedia.org/ontology/humanDevelopmentIndex> \"0.869\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://ru.dbpedia.org/resource/Литва__Поспелов_Е._М.__1> <http://xmlns.com/foaf/0.1/name> \"Географические названия мира. Топонимический словарь\"@ru .\n<http://ru.dbpedia.org/resource/Литва__Поспелов_Е._М.__1> <http://dbpedia.org/ontology/isbn> \"5-17-001389-2\" .\n<http://ru.dbpedia.org/resource/Литва__Поспелов_Е._М.__1> <http://purl.org/dc/elements/1.1/publisher> \"Русские словари, Астрель, АСТ\" .\n<http://ru.dbpedia.org/resource/Литва__Поспелов_Е._М.__1> <http://dbpedia.org/ontology/numberOfPages> \"512\"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .\n<http://ru.dbpedia.org/resource/Литва__Поспелов_Е._М.__1> <http://dbpedia.org/ontology/circulation> \"3\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://ru.dbpedia.org/resource/Красная_книга> <http://xmlns.com/foaf/0.1/name> \"Красная книга: Дикая природа в опасности\"@ru .\n<http://ru.dbpedia.org/resource/Красная_книга> <http://xmlns.com/foaf/0.1/name> \"\"@ru .\n<http://ru.dbpedia.org/resource/Красная_книга> <http://xmlns.com/foaf/0.1/name> \"The Red Book: Wild Life in Danger. London, 1969\"@ru .",
+         "dataid:sha256sum": "52afe8da0e0115e30724f7f997fab0b817a9938668c27a51e29b8a8140e63f1f",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "828364541",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ru",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T15:44:40Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "62283701",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=ru.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=vi.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=vi.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "159345",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-06T21:13:20Z\n<http://vi.dbpedia.org/resource/Lào_Cai> <http://xmlns.com/foaf/0.1/name> \"Lào Cai\"@vi .\n<http://vi.dbpedia.org/resource/Lào_Cai> <http://dbpedia.org/ontology/populationTotal> \"730420\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://vi.dbpedia.org/resource/Lào_Cai> <http://dbpedia.org/ontology/populationUrban> \"171401\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://vi.dbpedia.org/resource/Lào_Cai> <http://dbpedia.org/ontology/populationRural> \"559019\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://vi.dbpedia.org/resource/Lào_Cai> <http://dbpedia.org/ontology/areaTotal> \"6.36402E9\"^^<http://www.w3.org/2001/XMLSchema#double> .\n<http://vi.dbpedia.org/resource/Lào_Cai> <http://dbpedia.org/ontology/populationAsOf> \"2019-04-01\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://vi.dbpedia.org/resource/Lào_Cai> <http://dbpedia.org/ontology/areaCode> \"214\" .\n<http://vi.dbpedia.org/resource/Lào_Cai> <http://dbpedia.org/ontology/postalCode> \"33xxxx\" .\n<http://vi.dbpedia.org/resource/Lào_Cai> <http://dbpedia.org/ontology/populationDensity> \"109.0\"^^<http://www.w3.org/2001/XMLSchema#double> .",
+         "dataid:sha256sum": "07fac4d6eb8c8521e0199422a4effdee9dc79f73fae27d4d585052dad934201f",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "18978896",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "vi",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-06T21:24:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1051810",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=vi.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=eu.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=eu.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "253326",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T14:00:34Z\n<http://eu.dbpedia.org/resource/Esperanto> <http://xmlns.com/foaf/0.1/name> \"Esperanto\"@eu .\n<http://eu.dbpedia.org/resource/Esperanto> <http://dbpedia.org/ontology/iso6391Code> \"eo\" .\n<http://eu.dbpedia.org/resource/Esperanto> <http://dbpedia.org/ontology/iso6392Code> \"epo\" .\n<http://eu.dbpedia.org/resource/Esperanto> <http://dbpedia.org/ontology/iso6393Code> \"epo\" .\n<http://eu.dbpedia.org/resource/Pakistan> <http://xmlns.com/foaf/0.1/name> \"pakistandar\"@eu .\n<http://eu.dbpedia.org/resource/Pakistan> <http://dbpedia.org/ontology/demonym> \"pakistandar\"@eu .\n<http://eu.dbpedia.org/resource/Pakistan> <http://dbpedia.org/ontology/percentageOfAreaWater> \"31.0\"^^<http://www.w3.org/2001/XMLSchema#float> .\n<http://eu.dbpedia.org/resource/Krakovia__ko_Gune_Historikoa__1> <http://xmlns.com/foaf/0.1/name> \"Krakoviako Gune Historikoa\"@eu .\n<http://eu.dbpedia.org/resource/Krakovia__ko_Gune_Historikoa__1> <http://dbpedia.org/ontology/criteria> \"iv\" .",
+         "dataid:sha256sum": "d65ece083191ede9319cbfa8bb3080fe055f3de22bfc0ad5443d6193ebde308a",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "27537055",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "eu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T14:06:25Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1668150",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=eu.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01#mappingbased-literals_lang=id.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=id.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "717115",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2020-03-05T18:54:13Z\n<http://id.dbpedia.org/resource/Buaya_muara> <http://xmlns.com/foaf/0.1/name> \"Buaya muara\"@in .\n<http://id.dbpedia.org/resource/Buaya_sepit> <http://xmlns.com/foaf/0.1/name> \"Buaya sepit\"@in .\n<http://id.dbpedia.org/resource/Buaya_irian> <http://xmlns.com/foaf/0.1/name> \"Buaya irian\"@in .\n<http://id.dbpedia.org/resource/Chairil_Anwar> <http://xmlns.com/foaf/0.1/name> \"Chairil Anwar\"@in .\n<http://id.dbpedia.org/resource/Bali> <http://xmlns.com/foaf/0.1/name> \"Bali\"@in .\n<http://id.dbpedia.org/resource/Bali> <http://dbpedia.org/ontology/motto> \"Bali Dwipa Jaya\" .\n<http://id.dbpedia.org/resource/Bali> <http://dbpedia.org/ontology/motto> \"ᬩᬮᬶᬤ᭄ᬯᬶᬧᬚᬬ\" .\n<http://id.dbpedia.org/resource/Bali> <http://dbpedia.org/ontology/motto> \"(Bahasa KawidanSanskerta: Jayalah Pulau Bali)\" .\n<http://id.dbpedia.org/resource/Bali> <http://dbpedia.org/ontology/foundingYear> \"1959\"^^<http://www.w3.org/2001/XMLSchema#gYear> .",
+         "dataid:sha256sum": "bd7cd837b49f812e110cdb3934232099159f71877faaab57398230eb78cf5fa3",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "95411997",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "id",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.02.01",
+         "dct:issued": {
+            "@value": "2020-02-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-03-05T19:06:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "5776311",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-literals/2020.02.01/mappingbased-literals_lang=id.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

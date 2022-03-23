@@ -1,0 +1,723 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/mmoon.org/core"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/mmoon.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The Multilingual Morpheme Ontology (MMoOn) is  an ontological model that contains the vocabulary needed to describe the morphological elements, meanings and representations of natural languages.  This is the reference ontology from which various language specific MMoOn Inventories can be derived."
+         },
+         "dct:hasVersion": "2020.11.27-180310",
+         "dct:issued": {
+            "@value": "2020-11-27T17:03:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Multilingual Morpheme Ontology"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=parsed_sorted.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=diff_axioms=old.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=diff_axioms=new.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=pelletInfo_imports=FULL.txt"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The Multilingual Morpheme Ontology (MMoOn) is  an ontological model that contains the vocabulary needed to describe the morphological elements, meanings and representations of natural languages.  This is the reference ontology from which various language specific MMoOn Inventories can be derived."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:axioms",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310/core_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "\nOWL2_DL: 197 violations\nOWL2_QL: 512 violations\nOWL2_EL: 219 violations\nOWL2_RL: 211 violations\nOWL2_FULL: 197 violations\n",
+         "dataid:sha256sum": "bd9010551726e3ed957bcedcd1b26b654e940a787cc37745f3f9bc97dc8b2c1b",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.27-180310",
+         "dct:issued": {
+            "@value": "2020-11-27T17:03:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-11-27T17:03:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "124",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mmoon.org/core/2020.11.27-180310/core_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=parsed_sorted.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310/core_type=parsed_sorted.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://mmoon.org/core/> <http://purl.org/dc/elements/1.1/creator> <http://aksw.org/BettinaKlimek.rdf> .\n<http://mmoon.org/core/> <http://purl.org/dc/elements/1.1/description> \"The Multilingual Morpheme Ontology (MMoOn) is  an ontological model that contains the vocabulary needed to describe the morphological elements, meanings and representations of natural languages.\\n\\nThis is the reference ontology from which various language specific MMoOn Inventories can be derived.\"@en .\n<http://mmoon.org/core/> <http://purl.org/dc/elements/1.1/identifier> \"http://mmoon.org/mmoon/core/v1.0.0/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<http://mmoon.org/core/> <http://purl.org/dc/elements/1.1/title> \"The Multilingual Morpheme Ontology\"@en .\n<http://mmoon.org/core/> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .\n<http://mmoon.org/core/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://mmoon.org/core/> <http://www.w3.org/2000/01/rdf-schema#label> \"Multilingual Morpheme Ontology\"@en .\n<http://mmoon.org/core/> <http://www.w3.org/2002/07/owl#versionIRI> <http://mmoon.org/core/v1.0.0/> .\n<http://mmoon.org/core/> <http://www.w3.org/2002/07/owl#versionInfo> \"Version 1.0, 2016. Created and maintained by Bettina Klimek.\"@en .\n<http://mmoon.org/core/Ablative> <http://mmoon.org/core/definition> \"The ablative is a case that signals spatial orientation, esp. motion, away from the referent of its carrier.\\nTo the extent that it is grammaticalized in a language, its function may also include other circumstantial case roles.\\n[Christian Lehmann, under \\\"ablative\\\" at http://linguistik.uni-regensburg.de:8080/lido/Lido]\"@en .",
+         "dataid:sha256sum": "972dd322dda397a20c342f9e6994fd660c2e6d498f2b971c74ba9f64bb3ee033",
+         "dataid-cv:tag": "sorted",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.27-180310",
+         "dct:issued": {
+            "@value": "2020-11-27T17:03:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-11-27T17:03:10Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "761252",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mmoon.org/core/2020.11.27-180310/core_type=parsed_sorted.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310/core_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.27-180310",
+         "dct:issued": {
+            "@value": "2020-11-27T17:03:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-11-27T17:03:14Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mmoon.org/core/2020.11.27-180310/core_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310/core_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/data/home/dstreitmatter/data/archivo-init-release/mmoon.org/core/2020.11.27-180310/core_type=parsed.ttl\nStart loading\nNov 27, 2020 6:03:24 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring range axiom for AnnotationProperty http://mmoon.org/core/externalDefinitionDesc\nNov 27, 2020 6:03:24 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://mmoon.org/core/ @owl:versionIRI http://mmoon.org/core/v1.0.0/\nNov 27, 2020 6:03:24 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring range axiom for AnnotationProperty http://mmoon.org/core/externalDefinition\nFinished loading in 00:00:00.478",
+         "dataid:sha256sum": "452259762a717802e53de56e3374a19683ee30f61ad131a86ccfadfb8f43e582",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.27-180310",
+         "dct:issued": {
+            "@value": "2020-11-27T17:03:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-11-27T17:03:25Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1216",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mmoon.org/core/2020.11.27-180310/core_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310/core_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2020.11.27; 18:03:10\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"\",\n        \"e-tag\": \"\",\n        \"lastModified\": \"\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Date': 'Fri, 27 Nov 2020 17:03:10 GMT', 'Server': 'Apache/2.4.18 (Ubuntu)', 'Location': 'http://mmoon.org/core.rdf', 'Content-Type': 'application/rdf+xml;charset=UTF-8', 'Content-Length': '0', 'X-Visited': 'redirector'}\",",
+         "dataid:sha256sum": "2bdc475e4a8182b4ea38abc816b1778378587e5d2a8035631fe477769d68e54b",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.27-180310",
+         "dct:issued": {
+            "@value": "2020-11-27T17:03:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-11-27T17:03:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1152",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mmoon.org/core/2020.11.27-180310/core_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310/core_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://mmoon.org/core/AugmentativeNoun> ;",
+         "dataid:sha256sum": "d84a3d2df43bfc6bf90b4ef876a6aec45eb5529bbec4a1e61294a0950186d6b8",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.27-180310",
+         "dct:issued": {
+            "@value": "2020-11-27T17:03:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-11-27T17:03:21Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "442361",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mmoon.org/core/2020.11.27-180310/core_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310/core_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n<rdf:RDF xmlns=\"http://mmoon.org/core/\"\n     xml:base=\"http://mmoon.org/core/\"\n     xmlns:gold=\"http://purl.org/linguistics/gold/\"\n     xmlns:dct=\"http://purl.org/dc/terms/\"\n     xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n     xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n     xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"\n     xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n     xmlns:lexvo=\"http://lexvo.org/ontology#\"",
+         "dataid:sha256sum": "c60ee7f0bbf2709325a2e7212b4f7d11d4b442674053c87c0877f520e22808b6",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.27-180310",
+         "dct:issued": {
+            "@value": "2020-11-27T17:03:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-11-27T17:03:10Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "623818",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mmoon.org/core/2020.11.27-180310/core_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310/core_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <http://mmoon.org/core/> .\n@prefix gold: <http://purl.org/linguistics/gold/> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix xml: <http://www.w3.org/XML/1998/namespace> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix lexvo: <http://lexvo.org/ontology#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix ontolex: <http://www.w3.org/ns/lemon/ontolex#> .",
+         "dataid:sha256sum": "7df29cddfb4b04b1f63572c2dc63e99f487caaec93d973013522c0d796cd8d9c",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.27-180310",
+         "dct:issued": {
+            "@value": "2020-11-27T17:03:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-11-27T17:03:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "335478",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mmoon.org/core/2020.11.27-180310/core_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310/core_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\nVersion Info = Version 1.0, 2016. Created and maintained by Bettina Klimek.\norg.semanticweb.owlapi.model.OWLRuntimeException: No current axiom; is the walker being used outside of an ontology visit?\n\tat org.semanticweb.owlapi.util.OWLOntologyWalkerVisitor.getCurrentAxiom(OWLOntologyWalkerVisitor.java:48)\n\tat org.semanticweb.owlapi.profiles.OWL2DLProfile$OWL2DLProfileObjectVisitor.visit(OWL2DLProfile.java:484)",
+         "dataid:sha256sum": "f67f028f95994c1dbb38f7a31d3326506e211509963d1cc5e12d7ee630c9aa7c",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.27-180310",
+         "dct:issued": {
+            "@value": "2020-11-27T17:03:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-11-27T17:03:29Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2820",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mmoon.org/core/2020.11.27-180310/core_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=diff_axioms=old.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310/core_type=diff_axioms=old.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "",
+         "dataid:sha256sum": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+         "dataid-cv:axioms": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.27-180310",
+         "dct:issued": {
+            "@value": "2020-11-27T17:03:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-11-27T17:03:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mmoon.org/core/2020.11.27-180310/core_type=diff_axioms=old.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310/core_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.27-180310",
+         "dct:issued": {
+            "@value": "2020-11-27T17:03:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-11-27T17:03:21Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mmoon.org/core/2020.11.27-180310/core_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=diff_axioms=new.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310/core_type=diff_axioms=new.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "",
+         "dataid:sha256sum": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+         "dataid-cv:axioms": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.27-180310",
+         "dct:issued": {
+            "@value": "2020-11-27T17:03:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-11-27T17:03:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mmoon.org/core/2020.11.27-180310/core_type=diff_axioms=new.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310/core_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/data/home/dstreitmatter/data/archivo-init-release/mmoon.org/core/2020.11.27-180310/core_type=parsed.ttl\nStart loading\nNov 27, 2020 6:03:22 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring range axiom for AnnotationProperty http://mmoon.org/core/externalDefinitionDesc\nNov 27, 2020 6:03:23 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://mmoon.org/core/ @owl:versionIRI http://mmoon.org/core/v1.0.0/\nNov 27, 2020 6:03:23 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring range axiom for AnnotationProperty http://mmoon.org/core/externalDefinition\nFinished loading in 00:00:00.474",
+         "dataid:sha256sum": "a10300f701b0a7c74d602283323ed08559d13af35192a66274f525cadffc9fef",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.27-180310",
+         "dct:issued": {
+            "@value": "2020-11-27T17:03:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-11-27T17:03:25Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1216",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mmoon.org/core/2020.11.27-180310/core_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310/core_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://mmoon.org/core/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://mmoon.org/core/> <http://www.w3.org/2002/07/owl#versionIRI> <http://mmoon.org/core/v1.0.0/> .\n<http://mmoon.org/core/> <http://purl.org/dc/elements/1.1/creator> <http://aksw.org/BettinaKlimek.rdf> .\n<http://mmoon.org/core/> <http://purl.org/dc/elements/1.1/description> \"The Multilingual Morpheme Ontology (MMoOn) is  an ontological model that contains the vocabulary needed to describe the morphological elements, meanings and representations of natural languages.\\n\\nThis is the reference ontology from which various language specific MMoOn Inventories can be derived.\"@en .\n<http://mmoon.org/core/> <http://purl.org/dc/elements/1.1/identifier> \"http://mmoon.org/mmoon/core/v1.0.0/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<http://mmoon.org/core/> <http://purl.org/dc/elements/1.1/title> \"The Multilingual Morpheme Ontology\"@en .\n<http://mmoon.org/core/> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .\n<http://mmoon.org/core/> <http://www.w3.org/2000/01/rdf-schema#label> \"Multilingual Morpheme Ontology\"@en .\n<http://mmoon.org/core/> <http://www.w3.org/2002/07/owl#versionInfo> \"Version 1.0, 2016. Created and maintained by Bettina Klimek.\"@en .\n<http://mmoon.org/core/definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .",
+         "dataid:sha256sum": "5c578b88c2d857d2b1ca51739cdfec5cba8af2c77fa42221528e9f19744e4062",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.27-180310",
+         "dct:issued": {
+            "@value": "2020-11-27T17:03:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-11-27T17:03:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "761252",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mmoon.org/core/2020.11.27-180310/core_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310/core_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:gold=\"http://purl.org/linguistics/gold/\" xmlns:lexvo=\"http://lexvo.org/ontology#\" xmlns:ontolex=\"http://www.w3.org/ns/lemon/ontolex#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"http://mmoon.org/core/\">\n  <rdf:Description rdf:about=\"http://mmoon.org/core/\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://mmoon.org/core/\">\n    <owl:versionIRI rdf:resource=\"http://mmoon.org/core/v1.0.0/\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://mmoon.org/core/\">\n    <dc:creator rdf:resource=\"http://aksw.org/BettinaKlimek.rdf\"/>",
+         "dataid:sha256sum": "d7c0891467669469190be6b9c57c2c05b4635a8b27005ad16f73b578039a440d",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.27-180310",
+         "dct:issued": {
+            "@value": "2020-11-27T17:03:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-11-27T17:03:13Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "968619",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mmoon.org/core/2020.11.27-180310/core_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310#core_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mmoon.org/core/2020.11.27-180310/core_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\nVersion Info = Version 1.0, 2016. Created and maintained by Bettina Klimek.\norg.semanticweb.owlapi.model.OWLRuntimeException: No current axiom; is the walker being used outside of an ontology visit?\n\tat org.semanticweb.owlapi.util.OWLOntologyWalkerVisitor.getCurrentAxiom(OWLOntologyWalkerVisitor.java:48)\n\tat org.semanticweb.owlapi.profiles.OWL2DLProfile$OWL2DLProfileObjectVisitor.visit(OWL2DLProfile.java:484)",
+         "dataid:sha256sum": "f67f028f95994c1dbb38f7a31d3326506e211509963d1cc5e12d7ee630c9aa7c",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.27-180310",
+         "dct:issued": {
+            "@value": "2020-11-27T17:03:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-11-27T17:03:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2820",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mmoon.org/core/2020.11.27-180310/core_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      }
+   ]
+}

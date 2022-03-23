@@ -1,0 +1,149 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/wikidata/description/2020.11.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/description",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/description/2020.11.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/wikidata/description"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/wikidata"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/wikidata/description/2020.11.01"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/6ce5e19acd2b2051ee1283a1409bcffadde365f3 . After its releases, data is cleaned and persisted under the DBpedia account. ) Wikidata-specific dataset containing descriptions for languages in the mappings wiki."
+         },
+         "dct:hasVersion": "2020.11.01",
+         "dct:issued": {
+            "@value": "2020-11-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Wikidata Description"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/wikidata/description/2020.11.01#description.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/wikidata/description/2020.11.01#description_nmw.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/6ce5e19acd2b2051ee1283a1409bcffadde365f3 . After its releases, data is cleaned and persisted under the DBpedia account. ) Wikidata-specific dataset containing descriptions for languages in the mappings wiki."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/description/2020.11.01#description.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/description/2020.11.01/description.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-11-11T17:45:22Z\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"Kontinent auf der Südhalbkugel\"@de .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"continent, mainly on the Earth's southwestern quadrant\"@en .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"continente\"@it .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"continent des Amériques, situé principalement sur le cadran sud-ouest de la Terre\"@fr .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"континент\"@ru .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"subcontinente de América\"@es .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"대륙\"@ko .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"subcontinent d'Amèrica, travessat per l'equador terrestre\"@ca .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"världsdel, huvudsakligen på jordens södra halvklot\"@sv .",
+         "dataid:sha256sum": "a858cce3b553ae98b130480efbb540cf9463367317185e576d2dcf0fa46e0ac3",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.01",
+         "dct:issued": {
+            "@value": "2020-11-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-11-20T15:38:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2979402953",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/databus-repo/marvin/wikidata/description/2020.11.01/description.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/description/2020.11.01#description_nmw.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/description/2020.11.01/description_nmw.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-11-11T17:45:22Z\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"美洲大陆南部的区域\"@zh .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"maanosa\"@fi .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"kontinente\"@ilo .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"கண்டம்\"@ta .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"vasteland in die Westelike Halfrond wat die ewenaar oorspan\"@af .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"kontinent\"@da .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"Kuntinent von de Eer\"@nds .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"ชื่อทวีป\"@th .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"महाद्वीप\"@ne .",
+         "dataid:sha256sum": "d42a23264499648c73040bf72a82c350c982f0ffe50c18c45f96acd1310b0beb",
+         "dataid-cv:tag": "nmw",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.11.01",
+         "dct:issued": {
+            "@value": "2020-11-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-11-20T15:38:02Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1792408911",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/databus-repo/marvin/wikidata/description/2020.11.01/description_nmw.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

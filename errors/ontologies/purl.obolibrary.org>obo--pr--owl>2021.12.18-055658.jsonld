@@ -1,0 +1,847 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The PRotein Ontology (PRO) formally defines taxon-specific and taxon-neutral protein-related entities in three major areas: proteins related by evolution; proteins produced from a given gene; and protein-containing complexes."
+         },
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "PRotein Ontology"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=diff_axioms=new.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=diff_axioms=old.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=diff_triples=new.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=parsed_sorted.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=diff_triples=old.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=pelletInfo_imports=FULL.txt"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The PRotein Ontology (PRO) formally defines taxon-specific and taxon-neutral protein-related entities in three major areas: proteins related by evolution; proteins produced from a given gene; and protein-containing complexes."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:axioms",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:triples",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=diff_axioms=new.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=diff_axioms=new.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "AT3G09670 ⊑ SO_0001217\nPR_Q7ZUC7 ≡ PR_000013422 ⊓ (∃ RO_0002160.NCBITaxon_7955)\nPR_G2HK15-2 ⊑ PR_G2HK15\nPR_A3FPJ2-1 ⊑ ∃ RO_0002160.NCBITaxon_6239\nPR_Q20937 ⊑ ∃ has_gene_template.WBGene00002845\nAT5G02950 ⊑ SO_0001217\nPR_H2KZZ6 ⊑ PR_000036194\nPR_A9D2P7-1 ⊑ PR_A9D2P7\nWBGene00044068 ⊑ SO_0001217\nPR_Q26261-6 ⊑ ∃ RO_0002160.NCBITaxon_6239",
+         "dataid:sha256sum": "f3110bd7a384d9c302ce60b2223e9e1cd00126109afca4a2d87494207065ca23",
+         "dataid-cv:axioms": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T06:15:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "60416",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=diff_axioms=new.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Timeout in pellet\n\n",
+         "dataid:sha256sum": "cbb42a834bc4c2ffe399627b3a443360b333ef8bbed6487d27ec6acf1a7894e2",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T07:55:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "20",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <http://purl.obolibrary.org/obo/pr.owl#> .\n@prefix pr: <http://purl.obolibrary.org/obo/pr#> .\n@prefix terms: <http://purl.org/dc/terms/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix obo: <http://purl.obolibrary.org/obo/> .\n",
+         "dataid:sha256sum": "512eb58b23fc429fbe07505926795f32c40281824167f0b77fe5824e3a1aabe5",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T06:21:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "591496498",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T07:07:05Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2021.12.18; 06:00:07\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"1235756817\",\n        \"e-tag\": \"\\\"49a82711-5d313305e6091\\\"\",\n        \"lastModified\": \"Tue, 14 Dec 2021 03:57:32 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Date': 'Sat, 18 Dec 2021 05:56:58 GMT', 'Server': 'Apache/2.4.18 (Ubuntu)', 'Location': 'https://proconsortium.org/download/current/pro_reasoned.owl', 'Content-Length': '328', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'text/html; charset=iso-8859-1'}\",",
+         "dataid:sha256sum": "7023fc465b122d88d3ca159a216b1c22f191f0650ccbd4af6ccf373ff0d12bb4",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T08:01:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1638",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=diff_axioms=old.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=diff_axioms=old.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "PR_Q5ZJY9 ≡ PR_000000001 ⊓ (∃ RO_0002160.NCBITaxon_9031) ⊓ (∃ has_gene_template.423977)\nPR_O88281 ≡ PR_000000001 ⊓ (∃ RO_0002160.NCBITaxon_10116) ⊓ (∃ has_gene_template.main.html?id=621188)\nPR_Q4V8V2 ≡ PR_000000001 ⊓ (∃ RO_0002160.NCBITaxon_7955) ⊓ (∃ has_gene_template.ZDB-GENE-050913-50)\nPR_Q5VZT2 ⊑ ∃ has_gene_template.gene_symbol_report?hgnc_id=31447\nPR_Q32Q52-2 ⊑ ∃ RO_0002160.NCBITaxon_9606\nPR_Q8JHW2 ≡ PR_000000001 ⊓ (∃ RO_0002160.NCBITaxon_7955) ⊓ (∃ has_gene_template.ZDB-GENE-020708-3)\n107053803 ⊑ SO_0001217\nPR_A0JMD2 ≡ PR_000000001 ⊓ (∃ RO_0002160.NCBITaxon_7955) ⊓ (∃ has_gene_template.ZDB-GENE-061103-208)\ngene_symbol_report?hgnc_id=8103 ⊑ ∃ RO_0002160.NCBITaxon_9606\nPR_A0A087WTH5 ⊑ ∃ has_gene_template.gene_symbol_report?hgnc_id=52280",
+         "dataid:sha256sum": "71e13f46c79a743496c6b3df70f37dbe5c679503954b2516f73256e7ccd5e5fb",
+         "dataid-cv:axioms": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T06:15:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "29605",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=diff_axioms=old.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.1.0.jar\n\n",
+         "dataid:sha256sum": "35133f3681a6ccdb320324b1927689adc218a5150f47233c68c456e42e0d1a9f",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T08:01:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T07:07:05Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=diff_triples=new.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=diff_triples=new.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://birdgenenames.org/cgnc/GeneReport?id=10048> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32262 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10067> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32264 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10092> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32266 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10123> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32268 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10194> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32270 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10199> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32272 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10207> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32274 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10319> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32276 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10362> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32278 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10387> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32280 .",
+         "dataid:sha256sum": "7f741bb8d76dad91c4daba5147cf079f8c5733fbf081394873760294f8e22311",
+         "dataid-cv:triples": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T06:15:10Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "881874092",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=diff_triples=new.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "31de70a74530e2c15c268d4231456c6a7cbabbd14725c49b2ce3e4048e9ae234",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T08:01:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3373",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T07:35:05Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Timeout in pellet\n\n",
+         "dataid:sha256sum": "cbb42a834bc4c2ffe399627b3a443360b333ef8bbed6487d27ec6acf1a7894e2",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T07:55:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "20",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=parsed_sorted.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=parsed_sorted.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://birdgenenames.org/cgnc/GeneReport?id=10048> <http://purl.obolibrary.org/obo/IAO_0000115> \"A protein coding gene GBX2 in chicken.\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://birdgenenames.org/cgnc/GeneReport?id=10048> <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> \"gene\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://birdgenenames.org/cgnc/GeneReport?id=10048> <http://www.geneontology.org/formats/oboInOwl#id> \"CGNC:10048\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://birdgenenames.org/cgnc/GeneReport?id=10048> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .\n<http://birdgenenames.org/cgnc/GeneReport?id=10048> <http://www.w3.org/2000/01/rdf-schema#comment> \"Category=external.\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://birdgenenames.org/cgnc/GeneReport?id=10048> <http://www.w3.org/2000/01/rdf-schema#label> \"GBX2 (chicken)\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://birdgenenames.org/cgnc/GeneReport?id=10048> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.obolibrary.org/obo/SO_0001217> .\n<http://birdgenenames.org/cgnc/GeneReport?id=10048> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32262 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10067> <http://purl.obolibrary.org/obo/IAO_0000115> \"A protein coding gene IL7R in chicken.\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://birdgenenames.org/cgnc/GeneReport?id=10067> <http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> \"gene\"^^<http://www.w3.org/2001/XMLSchema#string> .",
+         "dataid:sha256sum": "4a9666988ee9d73296d3a06745d6fca51d6390f99a4135331c375c62596cecb0",
+         "dataid-cv:tag": "sorted",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T06:02:56Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1639933934",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=parsed_sorted.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://purl.obolibrary.org/obo/PR_H2KY91-1> ;",
+         "dataid:sha256sum": "bca52c537fcb801defd509dca2e045240e3547445e42a7efa924a6514892c296",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T07:35:05Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "160504578",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:obo=\"http://purl.obolibrary.org/obo/\" xmlns:oboInOwl=\"http://www.geneontology.org/formats/oboInOwl#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:pr=\"http://purl.obolibrary.org/obo/pr#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:terms=\"http://purl.org/dc/terms/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"http://purl.obolibrary.org/obo/pr.owl#\">\n  <rdf:Description rdf:about=\"http://purl.obolibrary.org/obo/pr.owl\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://purl.obolibrary.org/obo/pr.owl\">\n    <oboInOwl:hasOBOFormatVersion rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">1.2</oboInOwl:hasOBOFormatVersion>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://purl.obolibrary.org/obo/pr.owl\">\n    <oboInOwl:date rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">13:12:2021 13:23</oboInOwl:date>",
+         "dataid:sha256sum": "034698f7f7a3a5085979e99e3d5fe34d6c57b619b8efbcd61eed47478451ba7a",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T06:28:13Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2151853364",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n<rdf:RDF xmlns=\"http://purl.obolibrary.org/obo/pr.owl#\"\n     xml:base=\"http://purl.obolibrary.org/obo/pr.owl\"\n     xmlns:pr=\"http://purl.obolibrary.org/obo/pr#\"\n     xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n     xmlns:terms=\"http://purl.org/dc/terms/\"\n     xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n     xmlns:oboInOwl=\"http://www.geneontology.org/formats/oboInOwl#\"\n     xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n     xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"",
+         "dataid:sha256sum": "8d3cf61f6d2f4f5b27fd8fc04c240e356ff429bbbf97d67183379e4cc46dcd47",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T06:00:07Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1235756818",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=diff_triples=old.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=diff_triples=old.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://birdgenenames.org/cgnc/GeneReport?id=10048> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32218 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10067> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32220 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10092> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32222 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10123> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32224 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10194> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32226 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10199> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32228 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10207> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32230 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10319> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32232 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10362> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32234 .\n<http://birdgenenames.org/cgnc/GeneReport?id=10387> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid32236 .",
+         "dataid:sha256sum": "6039f94ec6ee85fa1ac6b3669bdae412eef3e81f121bbbe1efd0ee9e947e0c37",
+         "dataid-cv:triples": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T06:15:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "879977188",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=diff_triples=old.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://purl.obolibrary.org/obo/pr.owl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://purl.obolibrary.org/obo/pr.owl> <http://www.geneontology.org/formats/oboInOwl#hasOBOFormatVersion> \"1.2\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/pr.owl> <http://www.geneontology.org/formats/oboInOwl#date> \"13:12:2021 13:23\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/pr.owl> <http://www.geneontology.org/formats/oboInOwl#auto-generated-by> \"PRO dB\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/pr.owl> <http://purl.org/dc/terms/title> \"PRotein Ontology\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/pr.owl> <http://purl.org/dc/terms/description> \"The PRotein Ontology (PRO) formally defines taxon-specific and taxon-neutral protein-related entities in three major areas: proteins related by evolution; proteins produced from a given gene; and protein-containing complexes.\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/pr.owl> <http://www.w3.org/2000/01/rdf-schema#comment> \"The PRotein Ontology is licensed under CC BY 4.0. Please see http://obofoundry.org/ontology/pr for details.\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/pr.owl> <http://www.w3.org/2000/01/rdf-schema#comment> \"Use reasoner in Protege to see the correct hierarchy.\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/pr.owl> <http://www.geneontology.org/formats/oboInOwl#saved-by> \"jcowart\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.obolibrary.org/obo/pr.owl> <http://www.geneontology.org/formats/oboInOwl#default-namespace> \"protein\"^^<http://www.w3.org/2001/XMLSchema#string> .",
+         "dataid:sha256sum": "003c3fd56e11b6de1da0694bdd5b6367c2c17fbd8d04fcd941da5ad195d24b48",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T06:17:18Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1639933934",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658#obo--pr--owl_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "31de70a74530e2c15c268d4231456c6a7cbabbd14725c49b2ce3e4048e9ae234",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.12.18-055658",
+         "dct:issued": {
+            "@value": "2021-12-18T09:14:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-12-18T07:58:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3373",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.obolibrary.org/obo--pr--owl/2021.12.18-055658/obo--pr--owl_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      }
+   ]
+}

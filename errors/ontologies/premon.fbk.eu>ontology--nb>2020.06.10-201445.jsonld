@@ -1,0 +1,668 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/premon.fbk.eu"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The NomBank module of the PreMOn ontology defines [pmonb:Roleset](http://premon.fbk.eu/ontology/nb#Roleset) and [pmonb:SemanticRole](http://premon.fbk.eu/ontology/nb#SemanticRole) as subclasses of [pmo:SemanticClass](http://premon.fbk.eu/ontology/core#SemanticClass) and [pmo:SemanticRole](http://premon.fbk.eu/ontology/core#SemanticRole), respectively.  Each [pmonb:SemanticRole](http://premon.fbk.eu/ontology/nb#SemanticRole) instance is related (via property [pmonb:argument](http://premon.fbk.eu/ontology/nb#argument)) to exactly one [pmonb:Argument](http://premon.fbk.eu/ontology/nb#Argument), which is defined as the disjoint union of two subclasses:   * [pmonb:NumberedArgument](http://premon.fbk.eu/ontology/nb#NumberedArgument), containing the individuals corresponding to numbered argument (e.g., *Arg0*, *Arg1*); and,  * [pmonb:Modifier](http://premon.fbk.eu/ontology/nb#Modifier), containing the individuals corresponding to modifiers (e.g., *ArgM-LOC*, *ArgM-TMP*).  We also define class [pmonb:Tag](http://premon.fbk.eu/ontology/nb#Tag) to capture (via property [pmonb:tag](http://premon.fbk.eu/ontology/nb#tag)) some specific annotations of markables (e.g., *PRD*, *REF*, *SUPPORT*) in the examples."
+         },
+         "dct:hasVersion": "2020.06.10-201445",
+         "dct:issued": {
+            "@value": "2020-07-08T23:58:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Predicate Model for Ontologies (PreMOn) - NomBank ontology module"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=orig.rdf"
+            },
+            {
+               "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=OOPS.rdf"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The NomBank module of the PreMOn ontology defines [pmonb:Roleset](http://premon.fbk.eu/ontology/nb#Roleset) and [pmonb:SemanticRole](http://premon.fbk.eu/ontology/nb#SemanticRole) as subclasses of [pmo:SemanticClass](http://premon.fbk.eu/ontology/core#SemanticClass) and [pmo:SemanticRole](http://premon.fbk.eu/ontology/core#SemanticRole), respectively.  Each [pmonb:SemanticRole](http://premon.fbk.eu/ontology/nb#SemanticRole) instance is related (via property [pmonb:argument](http://premon.fbk.eu/ontology/nb#argument)) to exactly one [pmonb:Argument](http://premon.fbk.eu/ontology/nb#Argument), which is defined as the disjoint union of two subclasses:   * [pmonb:NumberedArgument](http://premon.fbk.eu/ontology/nb#NumberedArgument), containing the individuals corresponding to numbered argument (e.g., *Arg0*, *Arg1*); and,  * [pmonb:Modifier](http://premon.fbk.eu/ontology/nb#Modifier), containing the individuals corresponding to modifiers (e.g., *ArgM-LOC*, *ArgM-TMP*).  We also define class [pmonb:Tag](http://premon.fbk.eu/ontology/nb#Tag) to capture (via property [pmonb:tag](http://premon.fbk.eu/ontology/nb#tag)) some specific annotations of markables (e.g., *PRD*, *REF*, *SUPPORT*) in the examples."
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201445",
+         "dct:issued": {
+            "@value": "2020-07-08T23:58:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:34:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.0.0.jar\n\n",
+         "dataid:sha256sum": "fcdd4ee978b74ae744e3205ebaee81c876347817db89cd283b1d71911a9e2047",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201445",
+         "dct:issued": {
+            "@value": "2020-07-08T23:58:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:34:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:decomp=\"http://www.w3.org/ns/lemon/decomp#\" xmlns:lime=\"http://www.w3.org/ns/lemon/lime#\" xmlns:nif=\"http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#\" xmlns:ontolex=\"http://www.w3.org/ns/lemon/ontolex#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:pmo=\"http://premon.fbk.eu/ontology/core#\" xmlns:pmofn=\"http://premon.fbk.eu/ontology/fn#\" xmlns:pmonb=\"http://premon.fbk.eu/ontology/nb#\" xmlns:pmopb=\"http://premon.fbk.eu/ontology/pb#\" xmlns:pmovn=\"http://premon.fbk.eu/ontology/vn#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:synsem=\"http://www.w3.org/ns/lemon/synsem#\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:vartrans=\"http://www.w3.org/ns/lemon/vartrans#\" xmlns:void=\"http://rdfs.org/ns/void#\" xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"http://premon.fbk.eu/ontology/all#\" xml:base=\"http://premon.fbk.eu/ontology/nb\">\n  <rdf:Description rdf:about=\"\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"\">\n    <dcterms:issued rdf:datatype=\"http://www.w3.org/2001/XMLSchema#date\">2015-10-28</dcterms:issued>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"\">\n    <dcterms:modified rdf:datatype=\"http://www.w3.org/2001/XMLSchema#date\">2018-02-15</dcterms:modified>",
+         "dataid:sha256sum": "a62603eefc40b5c2f0fd863772748a9d22a5f7ae970aba77d4147c4462a491a0",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201445",
+         "dct:issued": {
+            "@value": "2020-07-08T23:58:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:34:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "21057",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://premon.fbk.eu/ontology/nb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://premon.fbk.eu/ontology/nb> <http://purl.org/dc/terms/issued> \"2015-10-28\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://premon.fbk.eu/ontology/nb> <http://purl.org/dc/terms/modified> \"2018-02-15\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://premon.fbk.eu/ontology/nb> <http://www.w3.org/2002/07/owl#versionInfo> \"2018a\" .\n<http://premon.fbk.eu/ontology/nb> <http://purl.org/dc/terms/creator> \"Francesco Corcoglioniti\" .\n<http://premon.fbk.eu/ontology/nb> <http://purl.org/dc/terms/creator> \"Marco Rospocher <https://dkm.fbk.eu/rospocher>\" .\n<http://premon.fbk.eu/ontology/nb> <http://purl.org/vocab/vann/preferredNamespaceUri> \"http://premon.fbk.eu/ontology/nb#\" .\n<http://premon.fbk.eu/ontology/nb> <http://purl.org/dc/terms/publisher> \"DKM, Fondazione Bruno Kessler <http://dkm.fbk.eu/>\" .\n<http://premon.fbk.eu/ontology/nb> <http://purl.org/dc/terms/title> \"Predicate Model for Ontologies (PreMOn) - NomBank ontology module\"@en .\n<http://premon.fbk.eu/ontology/nb> <http://purl.org/dc/terms/description> <http://premon.fbk.eu/images/nb.svg> .",
+         "dataid:sha256sum": "daefd7651f0a235f246f4cb3cd0aa66ea4bc725a3a0425a7ac297c034a7df85e",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201445",
+         "dct:issued": {
+            "@value": "2020-07-08T23:58:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:34:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "19724",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=parsed.ttl\nStart loading\nJul 08, 2020 12:34:11 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring literal value used with ObjectProperty : http://premon.fbk.eu/ontology/nb @http://purl.org/dc/terms/description \"The NomBank module of the PreMOn ontology defines [pmonb:Roleset](http://premon.fbk.eu/ontology/nb#Roleset) and [pmonb:SemanticRole](http://premon.fbk.eu/ontology/nb#SemanticRole) as subclasses of [pmo:SemanticClass](http://premon.fbk.eu/ontology/core#SemanticClass) and [pmo:SemanticRole](http://premon.fbk.eu/ontology/core#SemanticRole), respectively.\n\nEach [pmonb:SemanticRole](http://premon.fbk.eu/ontology/nb#SemanticRole) instance is related (via property [pmonb:argument](http://premon.fbk.eu/ontology/nb#argument)) to exactly one [pmonb:Argument](http://premon.fbk.eu/ontology/nb#Argument), which is defined as the disjoint union of two subclasses: \n\n* [pmonb:NumberedArgument](http://premon.fbk.eu/ontology/nb#NumberedArgument), containing the individuals corresponding to numbered argument (e.g., *Arg0*, *Arg1*); and, \n* [pmonb:Modifier](http://premon.fbk.eu/ontology/nb#Modifier), containing the individuals corresponding to modifiers (e.g., *ArgM-LOC*, *ArgM-TMP*).",
+         "dataid:sha256sum": "482e2eaf7d08abb3155e09d3254e98b6c6671e571e744c3f21d717145082dc65",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201445",
+         "dct:issued": {
+            "@value": "2020-07-08T23:58:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:34:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2008",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201445",
+         "dct:issued": {
+            "@value": "2020-07-08T23:58:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:34:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=parsed.ttl\nStart loading\nJul 08, 2020 12:34:10 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring literal value used with ObjectProperty : http://premon.fbk.eu/ontology/nb @http://purl.org/dc/terms/description \"The NomBank module of the PreMOn ontology defines [pmonb:Roleset](http://premon.fbk.eu/ontology/nb#Roleset) and [pmonb:SemanticRole](http://premon.fbk.eu/ontology/nb#SemanticRole) as subclasses of [pmo:SemanticClass](http://premon.fbk.eu/ontology/core#SemanticClass) and [pmo:SemanticRole](http://premon.fbk.eu/ontology/core#SemanticRole), respectively.\n\nEach [pmonb:SemanticRole](http://premon.fbk.eu/ontology/nb#SemanticRole) instance is related (via property [pmonb:argument](http://premon.fbk.eu/ontology/nb#argument)) to exactly one [pmonb:Argument](http://premon.fbk.eu/ontology/nb#Argument), which is defined as the disjoint union of two subclasses: \n\n* [pmonb:NumberedArgument](http://premon.fbk.eu/ontology/nb#NumberedArgument), containing the individuals corresponding to numbered argument (e.g., *Arg0*, *Arg1*); and, \n* [pmonb:Modifier](http://premon.fbk.eu/ontology/nb#Modifier), containing the individuals corresponding to modifiers (e.g., *ArgM-LOC*, *ArgM-TMP*).",
+         "dataid:sha256sum": "e8088dbb5ce3dd44ba23b359e9fd2118fe129a282b921215db90e4b76ca53705",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201445",
+         "dct:issued": {
+            "@value": "2020-07-08T23:58:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:34:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2008",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.AbstractState - Notice: root element does not have an xml:base. Relative IRIs will be resolved against http://premon.fbk.eu/ontology/core\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "7021724203ac8b35be1d319d0d9fb45b991422ea0a3d5230d4c89b8239cb4f36",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201445",
+         "dct:issued": {
+            "@value": "2020-07-08T23:58:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:34:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3929",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>Predicate Model for Ontologies (PreMOn) - NomBank ontology module</title><title>Predicate Model for Ontologies (PreMOn) - NomBank ontology module</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"http://premon.fbk.eu/ontology/nb\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "585ee183c941c9dcfcfbac1415d38c579e4f4d7aef52d94afb99e3215a9d9669",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201445",
+         "dct:issued": {
+            "@value": "2020-07-08T23:58:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:34:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "30226",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.AbstractState - Notice: root element does not have an xml:base. Relative IRIs will be resolved against http://premon.fbk.eu/ontology/core\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "7021724203ac8b35be1d319d0d9fb45b991422ea0a3d5230d4c89b8239cb4f36",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201445",
+         "dct:issued": {
+            "@value": "2020-07-08T23:58:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:34:14Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3929",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2020.05.07; 00:57:24\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"17263\",\n        \"e-tag\": \"\\\"436f-56540eab2b10f;56540eab2b8df\\\"\",\n        \"lastModified\": \"Thu, 15 Feb 2018 14:19:33 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"\",",
+         "dataid:sha256sum": "488c0a7dd5300efa69df76ef0136b8829ef747525984756a7136e56c891ed7f4",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201445",
+         "dct:issued": {
+            "@value": "2020-07-08T23:58:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:34:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1222",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://premon.fbk.eu/ontology/nb> ;",
+         "dataid:sha256sum": "f693ba7df16e29218c3c1084e8cb7f96224b18de19b4de246812941df4b06176",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201445",
+         "dct:issued": {
+            "@value": "2020-07-08T23:58:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:34:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "13131",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@base <http://premon.fbk.eu/ontology/nb> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <all#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix xml: <http://www.w3.org/XML/1998/namespace> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .",
+         "dataid:sha256sum": "767433f7ef2b9d01ba39c27c030addc5418b9735a2a31a71cbe12a267104fed3",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201445",
+         "dct:issued": {
+            "@value": "2020-07-08T23:58:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:34:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "6812",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=orig.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=orig.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rdf:RDF\n\txmlns=\"http://premon.fbk.eu/ontology/all#\"\n\txmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n\txmlns:nif=\"http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#\"\n\txmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n\txmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n\txmlns:xml=\"http://www.w3.org/XML/1998/namespace\"\n\txmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n\txmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"",
+         "dataid:sha256sum": "84ea44e0b4e6a3b257e2751e0d6c43f3555cfb4de0fe1309d71ba76aa35e6ede",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201445",
+         "dct:issued": {
+            "@value": "2020-07-08T23:58:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:34:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "17264",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=orig.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445#ontology--nb_type=OOPS.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=OOPS.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<rdf:RDF\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n    xmlns:oops=\"http://oops.linkeddata.es/def#\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n    xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" > \n  <rdf:Description rdf:about=\"http://oops.linkeddata.es/data/508ad3e8-5d14-4e6f-a737-e73db752cc37\">\n    <oops:hasAffectedElement rdf:datatype=\"http://www.w3.org/2001/XMLSchema#anyURI\">http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#denotes</oops:hasAffectedElement>\n    <oops:hasAffectedElement rdf:datatype=\"http://www.w3.org/2001/XMLSchema#anyURI\">http://premon.fbk.eu/ontology/core#item</oops:hasAffectedElement>\n    <oops:hasAffectedElement rdf:datatype=\"http://www.w3.org/2001/XMLSchema#anyURI\">http://www.w3.org/ns/lemon/ontolex#morphologicalPattern</oops:hasAffectedElement>",
+         "dataid:sha256sum": "a6bd8ebad0ff53d1d5f52dd933c9c4de1bad1aec0bc757815416b2d60ba2c9c8",
+         "dataid-cv:type": "OOPS",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-201445",
+         "dct:issued": {
+            "@value": "2020-07-08T23:58:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by-sa/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T22:34:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "19801",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/premon.fbk.eu/ontology--nb/2020.06.10-201445/ontology--nb_type=OOPS.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      }
+   ]
+}

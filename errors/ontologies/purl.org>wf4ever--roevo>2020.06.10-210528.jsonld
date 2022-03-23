@@ -1,0 +1,668 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/purl.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The Research Object Evolution Ontology (roevo) extends the ro ontology to capture the lifecycle and versioning of research objects (ROs). roevo is also an extension of PROV ontology for describing Research Object evolution provenance.         roevo enables the representation of the different stages of the ROs lifecycle, their dependencies, as well as the corresponding versions of ROs and their aggregated resources, with the associated changes in these resources.          roevo follows a modular approach, enabling the creation of extensions for modeling detailed taxonomies of changes for particular resources, e.g., workflows.         Additional information about roevo and background information is available at http://www.wf4ever-project.org/wiki/display/docs/RO+evolution"
+         },
+         "dct:hasVersion": "2020.06.10-210528",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Research Object Evolution Ontology"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=orig.rdf"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=OOPS.rdf"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=pelletInfo_imports=FULL.txt"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The Research Object Evolution Ontology (roevo) extends the ro ontology to capture the lifecycle and versioning of research objects (ROs). roevo is also an extension of PROV ontology for describing Research Object evolution provenance.         roevo enables the representation of the different stages of the ROs lifecycle, their dependencies, as well as the corresponding versions of ROs and their aggregated resources, with the associated changes in these resources.          roevo follows a modular approach, enabling the creation of extensions for modeling detailed taxonomies of changes for particular resources, e.g., workflows.         Additional information about roevo and background information is available at http://www.wf4ever-project.org/wiki/display/docs/RO+evolution"
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:ao=\"http://purl.org/ao/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:prov=\"http://www.w3.org/ns/prov#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:ro=\"http://purl.org/wf4ever/ro#\" xmlns:roevo=\"http://purl.org/wf4ever/roevo#\" xmlns:terms=\"http://www.openarchives.org/ore/terms/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"http://www.semanticweb.org/owl/owlapi/turtle#\" xml:base=\"http://purl.org/wf4ever/roevo\">\n  <rdf:Description rdf:about=\"\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"\">\n    <rdfs:comment xml:lang=\"en\">The Research Object Evolution Ontology (roevo) extends the ro ontology to capture the lifecycle and versioning of research objects. ro ontology and other extensions are described at http://wf4ever.github.io/ro/.\n        roevo is also an extension of PROV ontology for describing Research Object evolution provenance. PROV ontology is described at http://www.w3.org/TR/prov-o/.</rdfs:comment>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"\">",
+         "dataid:sha256sum": "9f3af697583ff055f744bcb81fb0aa5e74b4c65f2993a8be4d8534b79e6bdf9b",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-210528",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:15:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "32039",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;",
+         "dataid:sha256sum": "3c2e7cb741fac9b3b072e05b80a1f6ab49f19af923527f19b883fdb44382b867",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-210528",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:15:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "42626",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://purl.org/wf4ever/roevo> ;\n            sh:resultMessage \"No license found at all (neither dct:license, xhv:license nor cc:license)\"@en ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:OrConstraintComponent ;",
+         "dataid:sha256sum": "6eec2e0c6bb8a5058cc6f83462e54b584d2a7c0bc01d4b94a4721459bb37d3c5",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-210528",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:15:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "654",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2020.05.07; 10:54:51\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"3753\",\n        \"e-tag\": \"W/\\\"595d0151-549e\\\"\",\n        \"lastModified\": \"Wed, 05 Jul 2017 15:10:09 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Server': 'nginx/1.16.1 (Ubuntu)', 'Date': 'Thu, 07 May 2020 08:54:51 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '196', 'Connection': 'keep-alive', 'Location': 'https://w3id.org/ro/roevo', 'Access-Control-Allow-Origin': '*'}\",",
+         "dataid:sha256sum": "8d1ccaca58b31eb232328951f98d4e3d5f9c5be567636f19b67a21b8ec04d4c0",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-210528",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:15:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1732",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>Research Object Evolution Ontology</title><title>Research Object Evolution Ontology</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"http://purl.org/wf4ever/roevo\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "59b546ff6f152d66fa437bf1350083cfc9f0dfa5f55e48ab62657af298258de2",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-210528",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:15:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "42573",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=parsed.ttl\nStart loading\nJul 08, 2020 2:15:35 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://purl.org/wf4ever/roevo @owl:versionIRI http://purl.org/wf4ever/roevo/0.6.1\nJul 08, 2020 2:15:35 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring literal value used with ObjectProperty : http://purl.org/wf4ever/roevo @dc:description \"The Research Object Evolution Ontology (roevo) extends the ro ontology to capture the lifecycle and versioning of research objects (ROs). roevo is also an extension of PROV ontology for describing Research Object evolution provenance.\n        roevo enables the representation of the different stages of the ROs lifecycle, their dependencies, as well as the corresponding versions of ROs and their aggregated resources, with the associated changes in these resources. \n        roevo follows a modular approach, enabling the creation of extensions for modeling detailed taxonomies of changes for particular resources, e.g., workflows.\n        Additional information about roevo and background information is available at http://www.wf4ever-project.org/wiki/display/docs/RO+evolution\"^^http://www.w3.org/2001/XMLSchema#string",
+         "dataid:sha256sum": "95a3be876adebd9f45d731af41bacb32bca0c04f72555475be4c064464dbb84c",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-210528",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:15:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1853",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=parsed.ttl\nStart loading\nJul 08, 2020 2:15:34 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://purl.org/wf4ever/roevo @owl:versionIRI http://purl.org/wf4ever/roevo/0.6.1\nJul 08, 2020 2:15:34 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring literal value used with ObjectProperty : http://purl.org/wf4ever/roevo @dc:description \"The Research Object Evolution Ontology (roevo) extends the ro ontology to capture the lifecycle and versioning of research objects (ROs). roevo is also an extension of PROV ontology for describing Research Object evolution provenance.\n        roevo enables the representation of the different stages of the ROs lifecycle, their dependencies, as well as the corresponding versions of ROs and their aggregated resources, with the associated changes in these resources. \n        roevo follows a modular approach, enabling the creation of extensions for modeling detailed taxonomies of changes for particular resources, e.g., workflows.\n        Additional information about roevo and background information is available at http://www.wf4ever-project.org/wiki/display/docs/RO+evolution\"^^http://www.w3.org/2001/XMLSchema#string",
+         "dataid:sha256sum": "7c4c0a33ed6166de5a0361860183ff75a98ae915affd019802e33e0abc9d546b",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-210528",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:15:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1853",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://purl.org/wf4ever/roevo> ;\n            sh:resultMessage \"No dct:license statement found\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "40754e7e5664e343fd3db455646f8b00fadb6637c211a98b46c15d7d9bd55d06",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-210528",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:15:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "648",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=orig.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=orig.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n\n\n<!DOCTYPE rdf:RDF [\n    <!ENTITY ao \"http://purl.org/ao/\" >\n    <!ENTITY dcterms \"http://purl.org/dc/terms/\" >\n    <!ENTITY prov \"http://www.w3.org/ns/prov#\" >\n    <!ENTITY foaf \"http://xmlns.com/foaf/0.1/\" >\n    <!ENTITY ro \"http://purl.org/wf4ever/ro#\" >\n    <!ENTITY roevo \"http://purl.org/wf4ever/roevo#\" >",
+         "dataid:sha256sum": "25ed379cc668e239b3c1b67a708a59aa2e530ad6f838ac83ea177b0357da9bac",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-210528",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:15:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "21663",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=orig.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@base <http://purl.org/wf4ever/roevo> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <http://www.semanticweb.org/owl/owlapi/turtle#> .\n@prefix dc: <../dc/elements/1.1/> .\n@prefix ro: <ro#> .\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix terms: <http://www.openarchives.org/ore/terms/> .\n@prefix dcterms: <../dc/terms/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .",
+         "dataid:sha256sum": "119508088ec7b5ba0305704b017f6f67b4a8c9afd1c17b68e59953183dfe70a9",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-210528",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:15:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "12527",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=OOPS.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=OOPS.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<rdf:RDF\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n    xmlns:oops=\"http://oops.linkeddata.es/def#\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n    xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" > \n  <rdf:Description rdf:about=\"http://oops.linkeddata.es/data/85ebddef-c785-4737-b107-8cde431fe190\">\n    <oops:hasImportanceLevel rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">Minor</oops:hasImportanceLevel>\n    <oops:hasAffectedElement rdf:datatype=\"http://www.w3.org/2001/XMLSchema#anyURI\">http://purl.org/wf4ever/ro#ResearchObject</oops:hasAffectedElement>\n    <oops:hasNumberAffectedElements rdf:datatype=\"http://www.w3.org/2001/XMLSchema#integer\">1</oops:hasNumberAffectedElements>",
+         "dataid:sha256sum": "3eff3d3ffbaec25b1ede88d39ced15d8a6d51b7212583e4d0c77864b26d91994",
+         "dataid-cv:type": "OOPS",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-210528",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:15:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "18709",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=OOPS.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\nVersion Info = 0.6.1\norg.semanticweb.owlapi.model.OWLRuntimeException: No current axiom; is the walker being used outside of an ontology visit?\n\tat org.semanticweb.owlapi.util.OWLOntologyWalkerVisitor.getCurrentAxiom(OWLOntologyWalkerVisitor.java:48)\n\tat org.semanticweb.owlapi.profiles.OWL2DLProfile$OWL2DLProfileObjectVisitor.visit(OWL2DLProfile.java:484)",
+         "dataid:sha256sum": "f1d453c419f8964c631b607db17dc55a13b69521b578e70651c651dde632b917",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-210528",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:15:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2786",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.0.0.jar\n\n",
+         "dataid:sha256sum": "fcdd4ee978b74ae744e3205ebaee81c876347817db89cd283b1d71911a9e2047",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-210528",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:15:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://purl.org/wf4ever/roevo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://purl.org/wf4ever/roevo> <http://www.w3.org/2000/01/rdf-schema#comment> \"The Research Object Evolution Ontology (roevo) extends the ro ontology to capture the lifecycle and versioning of research objects. ro ontology and other extensions are described at http://wf4ever.github.io/ro/.\\n        roevo is also an extension of PROV ontology for describing Research Object evolution provenance. PROV ontology is described at http://www.w3.org/TR/prov-o/.\"@en .\n<http://purl.org/wf4ever/roevo> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.org/wf4ever/roevo/0.6.1> .\n<http://purl.org/wf4ever/roevo> <http://www.w3.org/2002/07/owl#versionInfo> \"0.6.1\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.org/wf4ever/roevo> <http://purl.org/dc/elements/1.1/date> \"2014-01-15\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.org/wf4ever/roevo> <http://purl.org/dc/elements/1.1/creator> \"Raul Palma\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.org/wf4ever/roevo> <http://purl.org/dc/elements/1.1/title> \"Research Object Evolution Ontology\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.org/wf4ever/roevo> <http://purl.org/dc/elements/1.1/description> \"The Research Object Evolution Ontology (roevo) extends the ro ontology to capture the lifecycle and versioning of research objects (ROs). roevo is also an extension of PROV ontology for describing Research Object evolution provenance.\\n        roevo enables the representation of the different stages of the ROs lifecycle, their dependencies, as well as the corresponding versions of ROs and their aggregated resources, with the associated changes in these resources. \\n        roevo follows a modular approach, enabling the creation of extensions for modeling detailed taxonomies of changes for particular resources, e.g., workflows.\\n        Additional information about roevo and background information is available at http://www.wf4ever-project.org/wiki/display/docs/RO+evolution\"^^<http://www.w3.org/2001/XMLSchema#string> .\n<http://purl.org/wf4ever/roevo> <http://purl.org/dc/elements/1.1/description> <http://www.wf4ever-project.org/wiki/download/attachments/2065027/ROevo_v0.4%2823%29.png> .\n<http://purl.org/wf4ever/roevo> <http://purl.org/dc/elements/1.1/contributor> \"Jun Zhao\"^^<http://www.w3.org/2001/XMLSchema#string> .",
+         "dataid:sha256sum": "3a2d100aae83b03e9a10ee825875ad06e245d9f64d858a394f8179fe4149c65d",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-210528",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:15:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "29807",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528#wf4ever--roevo_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\nVersion Info = 0.6.1\norg.semanticweb.owlapi.model.OWLRuntimeException: No current axiom; is the walker being used outside of an ontology visit?\n\tat org.semanticweb.owlapi.util.OWLOntologyWalkerVisitor.getCurrentAxiom(OWLOntologyWalkerVisitor.java:48)\n\tat org.semanticweb.owlapi.profiles.OWL2DLProfile$OWL2DLProfileObjectVisitor.visit(OWL2DLProfile.java:484)",
+         "dataid:sha256sum": "f1d453c419f8964c631b607db17dc55a13b69521b578e70651c651dde632b917",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-210528",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:15:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2786",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/wf4ever--roevo/2020.06.10-210528/wf4ever--roevo_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      }
+   ]
+}

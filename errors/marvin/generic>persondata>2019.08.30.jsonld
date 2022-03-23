@@ -1,0 +1,180 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/generic/persondata/2019.08.30",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/persondata",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/persondata/2019.08.30#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/generic/persondata"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/generic"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/generic/persondata/2019.08.30"
+         },
+         "dataid-debug:codeReference": {
+            "@id": "https://github.com/dbpedia/extraction-framework/blob/master/core/src/main/scala/org/dbpedia/extraction/mappings/"
+         },
+         "dataid-debug:documentationLocation": {
+            "@id": "https://github.com/dbpedia/databus-maven-plugin/blob/master/dbpedia/generic/persondata"
+         },
+         "dataid-debug:feedbackChannel": {
+            "@id": "https://forum.dbpedia.org/c/databus-dbpedia/generic"
+         },
+         "dataid-debug:issueTracker": {
+            "@id": "https://github.com/dbpedia/extraction-framework/issues"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot, that runs the DBpedia Information Extraction Framework (DIEF) and releases the data as is, i.e. unparsed, unsorted, not redirected for debugging the software. After its releases, data is cleaned and persisted under the dbpedia account.)help needed"
+         },
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release)persondata dataset"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/generic/persondata/2019.08.30#persondata_lang=en.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/persondata/2019.08.30#persondata_lang=de.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot, that runs the DBpedia Information Extraction Framework (DIEF) and releases the data as is, i.e. unparsed, unsorted, not redirected for debugging the software. After its releases, data is cleaned and persisted under the dbpedia account.)help needed"
+         }
+      },
+      {
+         "@id": "dataid-cv:lang",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/persondata/2019.08.30#persondata_lang=en.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/persondata/2019.08.30/persondata_lang=en.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "5",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://dbpedia.org/resource/Jim_Pewter> <http://xmlns.com/foaf/0.1/name> \"Jim Pewter\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .\n<http://dbpedia.org/resource/Jim_Pewter> <http://xmlns.com/foaf/0.1/surname> \"Pewter\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .\n<http://dbpedia.org/resource/Jim_Pewter> <http://xmlns.com/foaf/0.1/givenName> \"Jim\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .\n<http://dbpedia.org/resource/Jim_Pewter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .\n<http://dbpedia.org/resource/Jim_Pewter> <http://purl.org/dc/elements/1.1/description> \"American radio personality\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .",
+         "dataid:sha256sum": "5e7a2705ee48de1e05ac189b09744df8129e9f2d828a5575f260f24fda988551",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "738",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "en",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T21:54:20Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "290",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/persondata/2019.08.30/persondata_lang=en.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/persondata/2019.08.30#persondata_lang=de.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/persondata/2019.08.30/persondata_lang=de.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "3559860",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://de.dbpedia.org/resource/Björk> <http://xmlns.com/foaf/0.1/name> \"Björk\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .\n<http://de.dbpedia.org/resource/Björk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .\n<http://de.dbpedia.org/resource/Björk> <http://purl.org/dc/elements/1.1/description> \"isländische Musikerin\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .\n<http://de.dbpedia.org/resource/Charles_Babbage> <http://xmlns.com/foaf/0.1/name> \"Charles Babbage\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .\n<http://de.dbpedia.org/resource/Charles_Babbage> <http://xmlns.com/foaf/0.1/surname> \"Babbage\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .\n<http://de.dbpedia.org/resource/Charles_Babbage> <http://xmlns.com/foaf/0.1/givenName> \"Charles\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .\n<http://de.dbpedia.org/resource/Charles_Babbage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .\n<http://de.dbpedia.org/resource/Charles_Babbage> <http://purl.org/dc/elements/1.1/description> \"englischer Mathematiker, Philosoph, Erfinder und Politischer Ökonom\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .\n<http://de.dbpedia.org/resource/Frederic_Vester> <http://xmlns.com/foaf/0.1/name> \"Frederic Vester\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .\n<http://de.dbpedia.org/resource/Frederic_Vester> <http://xmlns.com/foaf/0.1/surname> \"Vester\"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .",
+         "dataid:sha256sum": "f3729906cf9b5519db5466e9a4cff022105f0e27b5ac9f8de068696e896d509f",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "578303930",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "de",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T21:54:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "29646751",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/persondata/2019.08.30/persondata_lang=de.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

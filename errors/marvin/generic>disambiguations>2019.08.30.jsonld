@@ -1,0 +1,744 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/generic"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30"
+         },
+         "dataid-debug:codeReference": {
+            "@id": "https://github.com/dbpedia/extraction-framework/blob/master/core/src/org/dbpedia/extraction/mappings/DisambiguationExtractor.scala"
+         },
+         "dataid-debug:documentationLocation": {
+            "@id": "https://github.com/dbpedia/databus-maven-plugin/blob/master/dbpedia/generic/disambiguations"
+         },
+         "dataid-debug:feedbackChannel": {
+            "@id": "https://forum.dbpedia.org/c/databus-dbpedia/generic"
+         },
+         "dataid-debug:issueTracker": {
+            "@id": "https://github.com/dbpedia/extraction-framework/issues"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot, that runs the DBpedia Information Extraction Framework (DIEF) and releases the data as is, i.e. unparsed, unsorted, not redirected for debugging the software. After its releases, data is cleaned and persisted under the dbpedia account.)Disambiguation Links extracted from Wikipedia disambiguation pages"
+         },
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release)Entity Disambiguation Links"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=es.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=pl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=nl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=ru.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=eu.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=ja.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=ko.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=pt.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=fr.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=ca.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=it.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=el.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=en.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=de.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot, that runs the DBpedia Information Extraction Framework (DIEF) and releases the data as is, i.e. unparsed, unsorted, not redirected for debugging the software. After its releases, data is cleaned and persisted under the dbpedia account.)Disambiguation Links extracted from Wikipedia disambiguation pages"
+         }
+      },
+      {
+         "@id": "dataid-cv:lang",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=es.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30/disambiguations_lang=es.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "300221",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://es.dbpedia.org/resource/Santa_Fe> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/Centro_Santa_Fe> .\n<http://es.dbpedia.org/resource/Santa_Fe> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/Monasterio_de_Santa_Fe_(Navarra)> .\n<http://es.dbpedia.org/resource/Santa_Fe> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/Monasterio_de_Santa_Fe_de_Huerva> .\n<http://es.dbpedia.org/resource/Santa_Fe> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/Isla_Santa_Fe> .\n<http://es.dbpedia.org/resource/Santa_Fe> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/Independiente_Santa_Fe> .\n<http://es.dbpedia.org/resource/Santa_Fe> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/Provincia_de_Santa_Fe> .\n<http://es.dbpedia.org/resource/Santa_Fe> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/Santa_Fe_(Argentina)> .\n<http://es.dbpedia.org/resource/Santa_Fe> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/Gran_Santa_Fe> .\n<http://es.dbpedia.org/resource/Santa_Fe> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/Santa_Fe_de_Yapacaní> .\n<http://es.dbpedia.org/resource/Santa_Fe> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/Santa_Fe_(Chile)> .",
+         "dataid:sha256sum": "0e417b213acf50e383215635ea9738ac6279bf9eaee0d9f228b28323b4eacbc5",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "47741433",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "es",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T19:58:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2585021",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/disambiguations/2019.08.30/disambiguations_lang=es.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=pl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30/disambiguations_lang=pl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "338175",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://pl.dbpedia.org/resource/Andriej_Markow> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/Andriej_Markow_(starszy)> .\n<http://pl.dbpedia.org/resource/Andriej_Markow> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/Andriej_Markow_(młodszy)> .\n<http://pl.dbpedia.org/resource/Andriej_Markow> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/Andriej_Markow_(hokeista)> .\n<http://pl.dbpedia.org/resource/Charon> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/Charon_(mitologia)> .\n<http://pl.dbpedia.org/resource/Charon> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/Charon_(księżyc)> .\n<http://pl.dbpedia.org/resource/Charon> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/Charon_(zespół_muzyczny)> .\n<http://pl.dbpedia.org/resource/Jaszczurka> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/Jaszczurka_(dopływ_Hwoźny)> .\n<http://pl.dbpedia.org/resource/Jaszczurka> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/Jaszczurka_(narzędzie)> .\n<http://pl.dbpedia.org/resource/Jaszczurka> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/Jaszczurka_(album)> .\n<http://pl.dbpedia.org/resource/Jaszczurka> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/Jaszczurka_(singel)> .",
+         "dataid:sha256sum": "a16291ef8e8bfb2c5c4675e32160ec1adf9dac5639f9d80ac0beba0856506d1f",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "52996979",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "pl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T19:59:02Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2929252",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/disambiguations/2019.08.30/disambiguations_lang=pl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=nl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30/disambiguations_lang=nl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "332486",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://nl.dbpedia.org/resource/Lens> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/Lens_(optica)> .\n<http://nl.dbpedia.org/resource/Lens> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/Ooglens> .\n<http://nl.dbpedia.org/resource/Lens> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/Contactlens> .\n<http://nl.dbpedia.org/resource/Lens> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/Intraoculaire_lens> .\n<http://nl.dbpedia.org/resource/Lens> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/Lens_(geslacht)> .\n<http://nl.dbpedia.org/resource/Lens> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/Lens_(België)> .\n<http://nl.dbpedia.org/resource/Lens> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/Lens_(Frankrijk)> .\n<http://nl.dbpedia.org/resource/Lens> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/Lens_(Zwitserland)> .\n<http://nl.dbpedia.org/resource/Lens> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/RC_Lens> .\n<http://nl.dbpedia.org/resource/Lens> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/Jeremain_Lens> .",
+         "dataid:sha256sum": "890803b11be694730271934aec63d5b3bea99e9f2c415a897ced2a9fc824ce9e",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "50337509",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "nl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T19:58:58Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3007389",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/disambiguations/2019.08.30/disambiguations_lang=nl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=ru.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30/disambiguations_lang=ru.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "783582",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://ru.dbpedia.org/resource/Квакер_(значения)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/Квакеры> .\n<http://ru.dbpedia.org/resource/Квакер_(значения)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/Квакер_(явление)> .\n<http://ru.dbpedia.org/resource/Квакер_(значения)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/НПО-1_«Квакер»> .\n<http://ru.dbpedia.org/resource/Независимость_(значения)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/Независимость> .\n<http://ru.dbpedia.org/resource/Независимость_(значения)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/Алгебраическая_независимость> .\n<http://ru.dbpedia.org/resource/Независимость_(значения)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/Независимость_системы_аксиом> .\n<http://ru.dbpedia.org/resource/Независимость_(значения)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/Независимость_(теория_вероятностей)> .\n<http://ru.dbpedia.org/resource/Независимость_(значения)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/Редакционная_независимость> .\n<http://ru.dbpedia.org/resource/Независимость_(значения)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/Кроссплатформенность> .\n<http://ru.dbpedia.org/resource/Независимость_(значения)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/Независимость_(компания)> .",
+         "dataid:sha256sum": "665a9df9e0c9fa105cbc48ec2d778d52fe14a6a55dd2cbe0a1c7dc000e83ff6c",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "145017660",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ru",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T19:57:43Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "6483148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/disambiguations/2019.08.30/disambiguations_lang=ru.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=eu.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30/disambiguations_lang=eu.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "19587",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://eu.dbpedia.org/resource/Argia> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/Zodiakoko_argia> .\n<http://eu.dbpedia.org/resource/Argia> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/Ilargia> .\n<http://eu.dbpedia.org/resource/Argia> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/Argia_(aldizkaria)> .\n<http://eu.dbpedia.org/resource/Argia> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/Argia_Sariak> .\n<http://eu.dbpedia.org/resource/Argia> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/Argia_(1921-1936)> .\n<http://eu.dbpedia.org/resource/Argia> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/Argia_Dantza_Taldea> .\n<http://eu.dbpedia.org/resource/Argia> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/Izarren_argia> .\n<http://eu.dbpedia.org/resource/Aznar> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/Tota_Azearitz> .\n<http://eu.dbpedia.org/resource/Aznar> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/Eduardo_Aznar_de_la_Sota> .\n<http://eu.dbpedia.org/resource/Aznar> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/Manuel_Aznar> .",
+         "dataid:sha256sum": "3ffd815573164e58d1864d5cd7a988904131fa36a068031fa8e960e43876cb26",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "3026305",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "eu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T19:57:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "161656",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/disambiguations/2019.08.30/disambiguations_lang=eu.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=ja.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30/disambiguations_lang=ja.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "183169",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://ja.dbpedia.org/resource/EU_(曖昧さ回避)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/Europa_Universalis> .\n<http://ja.dbpedia.org/resource/EU_(曖昧さ回避)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/.eu> .\n<http://ja.dbpedia.org/resource/サンバ> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/サンバ_(ブラジル)> .\n<http://ja.dbpedia.org/resource/サンバ> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/サンバ_(アルゼンチン)> .\n<http://ja.dbpedia.org/resource/サンバ> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/サンバ_(映画)> .\n<http://ja.dbpedia.org/resource/サンバ> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/クリストファー・サンバ> .\n<http://ja.dbpedia.org/resource/サンバ> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/サンバ・ソウ> .\n<http://ja.dbpedia.org/resource/サンバ> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/サンバ・ディアキテ> .\n<http://ja.dbpedia.org/resource/サンバ> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/ファイ・サンバ> .\n<http://ja.dbpedia.org/resource/VTR_(曖昧さ回避)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/ホンダ・VTR> .",
+         "dataid:sha256sum": "af05d3e1d45381e0656eb5ff085109cbefbcfa32cd6600781d19e1567c8eaac3",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "29485288",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ja",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T19:58:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1537733",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/disambiguations/2019.08.30/disambiguations_lang=ja.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=ko.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30/disambiguations_lang=ko.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "160784",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://ko.dbpedia.org/resource/뉴턴> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/아이작_뉴턴> .\n<http://ko.dbpedia.org/resource/뉴턴> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/앨프리드_뉴턴> .\n<http://ko.dbpedia.org/resource/뉴턴> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/뉴턴_(단위)> .\n<http://ko.dbpedia.org/resource/뉴턴> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/애플_뉴턴> .\n<http://ko.dbpedia.org/resource/뉴턴> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/뉴턴_(잡지)> .\n<http://ko.dbpedia.org/resource/아이아스> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/아이아스_(대)> .\n<http://ko.dbpedia.org/resource/아이아스> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/아이아스_(소)> .\n<http://ko.dbpedia.org/resource/아이아스> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/아이아스_(소포클레스)> .\n<http://ko.dbpedia.org/resource/아이아스> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/아이아스_(이탈리아)> .\n<http://ko.dbpedia.org/resource/이아페투스> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/이아페투스_(위성)> .",
+         "dataid:sha256sum": "8eb4991aecaf7f7b42172ec5eba7634df784718a9bebdd0b706e48b5f0e18e1f",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "24964106",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ko",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T19:57:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1257671",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/disambiguations/2019.08.30/disambiguations_lang=ko.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=pt.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30/disambiguations_lang=pt.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "138675",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://pt.dbpedia.org/resource/GPL> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/GNU_General_Public_License> .\n<http://pt.dbpedia.org/resource/GPL> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/Gás_liquefeito_de_petróleo> .\n<http://pt.dbpedia.org/resource/Papa_Pelágio> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/Papa_Pelágio_I> .\n<http://pt.dbpedia.org/resource/Papa_Pelágio> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/Papa_Pelágio_II> .\n<http://pt.dbpedia.org/resource/Aguiar> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/Aguiar_(Paraíba)> .\n<http://pt.dbpedia.org/resource/Aguiar> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/Aguiar_da_Beira> .\n<http://pt.dbpedia.org/resource/Aguiar> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/Aguiar_da_Beira_(freguesia)> .\n<http://pt.dbpedia.org/resource/Aguiar> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/Aguiar_(Barcelos)> .\n<http://pt.dbpedia.org/resource/Aguiar> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/Aguiar_(Viana_do_Alentejo)> .\n<http://pt.dbpedia.org/resource/Aguiar> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/Aguiar_(família)> .",
+         "dataid:sha256sum": "fa7d3d50b80a653589cdcf89c5d7a23764e318c25c304c0056d5da67710083bb",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "21630919",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "pt",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T19:58:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1211377",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/disambiguations/2019.08.30/disambiguations_lang=pt.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=fr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30/disambiguations_lang=fr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "679494",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://fr.dbpedia.org/resource/FTP> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/Francs-tireurs_et_partisans> .\n<http://fr.dbpedia.org/resource/FTP> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/Francs-tireurs_partisans> .\n<http://fr.dbpedia.org/resource/FTP> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/France_Télévisions_Publicité> .\n<http://fr.dbpedia.org/resource/FTP> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/Ftp_(Unix)> .\n<http://fr.dbpedia.org/resource/FTP> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/Ftp_(commande)> .\n<http://fr.dbpedia.org/resource/FTP> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/Free-to-play> .\n<http://fr.dbpedia.org/resource/FTP> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/Foster_the_People> .\n<http://fr.dbpedia.org/resource/Interdit> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/Interdit_(anthropologie)> .\n<http://fr.dbpedia.org/resource/Interdit> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/Interdit_(droit_canonique)> .\n<http://fr.dbpedia.org/resource/Interdit> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/Interdit_(Rome_antique)> .",
+         "dataid:sha256sum": "da91a53b03e969307c6330f18477ab4a696eaeee26d89d140fa28eb26a415d13",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "103528246",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "fr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T19:57:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "5818630",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/disambiguations/2019.08.30/disambiguations_lang=fr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=ca.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30/disambiguations_lang=ca.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "85002",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://ca.dbpedia.org/resource/Atlant> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/Atlant_(arquitectura)> .\n<http://ca.dbpedia.org/resource/Atlant> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/Atlant_(tità)> .\n<http://ca.dbpedia.org/resource/La> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/Lingüística> .\n<http://ca.dbpedia.org/resource/La> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/La_bemoll_major> .\n<http://ca.dbpedia.org/resource/La> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/La_bemoll_menor> .\n<http://ca.dbpedia.org/resource/La> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/La_major> .\n<http://ca.dbpedia.org/resource/La> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/La_menor> .\n<http://ca.dbpedia.org/resource/La> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/La_sostingut_menor> .\n<http://ca.dbpedia.org/resource/La> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/Lantani> .\n<http://ca.dbpedia.org/resource/La> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/Los_Angeles> .",
+         "dataid:sha256sum": "ebdc91227d3e2d8b69c7e235b16ac9a83cbbcba47b9afb2dc3b18604420b4846",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "13024846",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ca",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T19:58:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "695513",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/disambiguations/2019.08.30/disambiguations_lang=ca.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=it.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30/disambiguations_lang=it.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "454795",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://it.dbpedia.org/resource/Giulio_Cesare_(disambigua)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/Gaio_Giulio_Cesare> .\n<http://it.dbpedia.org/resource/Giulio_Cesare_(disambigua)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/Giulio_Cesare_(nome)> .\n<http://it.dbpedia.org/resource/Giulio_Cesare_(disambigua)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/Germanico_Giulio_Cesare> .\n<http://it.dbpedia.org/resource/Giulio_Cesare_(disambigua)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/Gaio_Giulio_Cesare_(padre_di_Cesare)> .\n<http://it.dbpedia.org/resource/Giulio_Cesare_(disambigua)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/Giulio_Cesare_(nave_da_battaglia)> .\n<http://it.dbpedia.org/resource/Giulio_Cesare_(disambigua)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/Giulio_Cesare_(transatlantico_1920)> .\n<http://it.dbpedia.org/resource/Giulio_Cesare_(disambigua)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/Giulio_Cesare_(transatlantico_1949)> .\n<http://it.dbpedia.org/resource/Giulio_Cesare_(disambigua)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/Cratere_Giulio_Cesare> .\n<http://it.dbpedia.org/resource/Giulio_Cesare_(disambigua)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/Liceo_classico_statale_Giulio_Cesare> .\n<http://it.dbpedia.org/resource/Giulio_Cesare_(disambigua)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/Giulio_Cesare_(Shakespeare)> .",
+         "dataid:sha256sum": "182a251d3d46bc4723b731d36ced3f790867e0be7fa8d13f066b9472f34c3810",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "69950323",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "it",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T19:58:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3947353",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/disambiguations/2019.08.30/disambiguations_lang=it.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=el.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30/disambiguations_lang=el.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "24576",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://el.dbpedia.org/resource/NA> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/.na> .\n<http://el.dbpedia.org/resource/Φίλιππος_(αποσαφήνιση)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/Φίλιππος_Μάριος_Ιούλιος> .\n<http://el.dbpedia.org/resource/Φίλιππος_(αποσαφήνιση)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/Φίλιππος_ο_Άραβας> .\n<http://el.dbpedia.org/resource/Φίλιππος_(αποσαφήνιση)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/Φίλιππος_-_Ισότης> .\n<http://el.dbpedia.org/resource/Φίλιππος_(αποσαφήνιση)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/Φίλιππος_της_Βουργουνδίας> .\n<http://el.dbpedia.org/resource/Φίλιππος_(αποσαφήνιση)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/Φίλιππος_της_Ναβάρας> .\n<http://el.dbpedia.org/resource/Φίλιππος_(αποσαφήνιση)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/Φίλιππος_(σατράπης)> .\n<http://el.dbpedia.org/resource/Φίλιππος_(αποσαφήνιση)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/Φίλιππος_Α'_της_Σαβοΐας> .\n<http://el.dbpedia.org/resource/Φίλιππος_(αποσαφήνιση)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/Φίλιππος_της_Αλσατίας> .\n<http://el.dbpedia.org/resource/Φίλιππος_(αποσαφήνιση)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/Φίλιππος_της_Γερμανίας> .",
+         "dataid:sha256sum": "8df468f2c67579e5de0c2bf776562edd12c67b78c48c07bd0b6ec15d7258c297",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "4582522",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "el",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T19:58:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "197528",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/disambiguations/2019.08.30/disambiguations_lang=el.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=en.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30/disambiguations_lang=en.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "1764808",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://dbpedia.org/resource/ASA> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/Accessible_surface_area> .\n<http://dbpedia.org/resource/ASA> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/Acrylonitrile_styrene_acrylate> .\n<http://dbpedia.org/resource/ASA> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/Photorefractive_keratectomy> .\n<http://dbpedia.org/resource/ASA> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/Anterior_spinal_artery> .\n<http://dbpedia.org/resource/ASA> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/ASA_physical_status_classification_system> .\n<http://dbpedia.org/resource/ASA> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/African_Studies_Association_of_the_United_Kingdom> .\n<http://dbpedia.org/resource/ASA> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/African_Studies_Association> .\n<http://dbpedia.org/resource/ASA> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/Massey_University> .\n<http://dbpedia.org/resource/ASA> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/Alexander-Smith_Academy> .\n<http://dbpedia.org/resource/ASA> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/Alpha_Sigma_Alpha> .",
+         "dataid:sha256sum": "57af182cd7752ebe583ca0b3d246eda2c43a353add709172aa0f379af3c79151",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "261931077",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "en",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T19:58:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "15794607",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/disambiguations/2019.08.30/disambiguations_lang=en.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30#disambiguations_lang=de.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2019.08.30/disambiguations_lang=de.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "1315604",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://de.dbpedia.org/resource/Apollo> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/Apollon> .\n<http://de.dbpedia.org/resource/Apollo> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/(1862)_Apollo> .\n<http://de.dbpedia.org/resource/Apollo> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/Apollo_(Apfel)> .\n<http://de.dbpedia.org/resource/Apollo> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/Apollo_(Freimaurerloge)> .\n<http://de.dbpedia.org/resource/Apollo> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/Apollo_(Mondkrater)> .\n<http://de.dbpedia.org/resource/Apollo> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/Apollo_(Zeitschrift)> .\n<http://de.dbpedia.org/resource/Apollo> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/Apollos> .\n<http://de.dbpedia.org/resource/Apollo> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/Prix_Apollo> .\n<http://de.dbpedia.org/resource/Apollo> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/Roter_Apollo> .\n<http://de.dbpedia.org/resource/Apollo> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/Apollo_Cinerama> .",
+         "dataid:sha256sum": "d47bd92ea3576ed97d30139d5b0d551a4c4154c347ad386d542623236af88de2",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "200726161",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "de",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T19:58:13Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "11273333",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/disambiguations/2019.08.30/disambiguations_lang=de.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

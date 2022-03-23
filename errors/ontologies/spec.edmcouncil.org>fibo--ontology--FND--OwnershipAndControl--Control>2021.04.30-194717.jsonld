@@ -1,0 +1,800 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "This ontology defines high-level, control-related concepts for use in other FIBO ontology elements.  The ontology covers basic concepts around control, along with a distinction between de jure and de facto control, the former being derived with reference to terms in the LegalCapacity ontology."
+         },
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Control Ontology"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=diff_axioms=new.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=parsed_sorted.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=diff_axioms=old.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=meta.json"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "This ontology defines high-level, control-related concepts for use in other FIBO ontology elements.  The ontology covers basic concepts around control, along with a distinction between de jure and de facto control, the former being derived with reference to terms in the LegalCapacity ontology."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:axioms",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:fibo-fnd-dt-fd=\"https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/\" xmlns:fibo-fnd-law-lcap=\"https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/\" xmlns:fibo-fnd-oac-ctl=\"https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/\" xmlns:fibo-fnd-pty-pty=\"https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/\" xmlns:fibo-fnd-rel-rel=\"https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/\" xmlns:fibo-fnd-utl-av=\"https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:sm=\"http://www.omg.org/techprocess/ab/SpecificationMetadata/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\">\n  <rdf:Description rdf:about=\"https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/\">\n    <rdfs:label>Control Ontology</rdfs:label>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/\">\n    <rdfs:comment>QName: fibo-fnd-oac-ctl:</rdfs:comment>",
+         "dataid:sha256sum": "b8d8f57dc7a3648958ffd3f4847efa9e698d6c403ac6a75437cd610387c3b6fd",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-04-30T19:47:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "44238",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl",
+         "dataid:sha256sum": "7a2f18639a5a28f28f8192070a90133188e5c2cac2c618d4bbc46774e02f3ff0",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-04-30T19:47:42Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "25722",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n./data/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=parsed.ttl\nStart loading\nApr 30, 2021 7:47:32 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/ @owl:versionIRI https://spec.edmcouncil.org/fibo/ontology/master/latest/FND/OwnershipAndControl/Control/\nFinished loading in 00:00:00.175\nInput size: Classes = 12, Properties = 46, Individuals = 16\nExpressivity: ALCHI(D)\nStart consistency check\nFinished consistency check in 00:00:00.020",
+         "dataid:sha256sum": "611e6de50e8313fcb801c18f7ef3de73dc76b4937c42bcf08487659947d85d2c",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-04-30T19:47:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "943",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-04-30T19:47:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> ;\n            sh:resultMessage \"dct:license statement is not an IRI\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "8eb05887e5c0476de87346e193cd8031d87ec09196356e50b7eb96dc65bf3e62",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-04-30T19:47:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "770",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.1.0.jar\n\n",
+         "dataid:sha256sum": "35133f3681a6ccdb320324b1927689adc218a5150f47233c68c456e42e0d1a9f",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-04-30T19:47:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=diff_axioms=new.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=diff_axioms=new.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "involvesControlledThing ⊑ hasUndergoer\ncontrols ⊑ playsActiveRoleThatDirectlyAffects\n⊤ ⊑ ∀ involvesControlledThing.ControlledThing\n⊤ ⊑ ∀ isControlledBy.IndependentParty\n⊤ ⊑ ∀ isControlledThingIn.Control\nControlledThing ⊑ = 1 isInitiallyControlledOn.CombinedDateTime\nControllingParty ⊑ ∃ isPartyControlling.ControlledThing\nisControlledThingIn ≡ involvesControlledThing⁻\nisControllingPartyOf ⊑ directlyAffects\n∃ controls.⊤ ⊑ IndependentParty",
+         "dataid:sha256sum": "28f265dacfc9a25c16b7488884e86542e835b78490b7283262a9e4526e89150c",
+         "dataid-cv:axioms": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-04-30T19:47:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1369",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=diff_axioms=new.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://www.w3.org/2000/01/rdf-schema#label> \"Control Ontology\" .\n<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://www.w3.org/2000/01/rdf-schema#comment> \"QName: fibo-fnd-oac-ctl:\" .\n<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://purl.org/dc/terms/abstract> \"This ontology defines high-level, control-related concepts for use in other FIBO ontology elements.  The ontology covers basic concepts around control, along with a distinction between de jure and de facto control, the former being derived with reference to terms in the LegalCapacity ontology.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://purl.org/dc/terms/license> \"http://opensource.org/licenses/MIT\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/contentLanguage> \"https://www.w3.org/TR/owl2-quick-reference/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2013-2021 EDM Council, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2013-2021 Object Management Group, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/BusinessDates/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .",
+         "dataid:sha256sum": "aaf70386c7f975e6a76771c34d0705e325c17185c40a12756af46dab2789c838",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-04-30T19:47:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "37354",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=parsed_sorted.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=parsed_sorted.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://purl.org/dc/terms/abstract> \"This ontology defines high-level, control-related concepts for use in other FIBO ontology elements.  The ontology covers basic concepts around control, along with a distinction between de jure and de facto control, the former being derived with reference to terms in the LegalCapacity ontology.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://purl.org/dc/terms/license> \"http://opensource.org/licenses/MIT\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/contentLanguage> \"https://www.w3.org/TR/owl2-quick-reference/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2013-2021 EDM Council, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/copyright> \"Copyright (c) 2013-2021 Object Management Group, Inc.\" .\n<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/BusinessDates/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .\n<https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> <http://www.omg.org/techprocess/ab/SpecificationMetadata/dependsOn> \"https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Roles/\"^^<http://www.w3.org/2001/XMLSchema#anyURI> .",
+         "dataid:sha256sum": "3cc9f8e156fd98abba1b2fe387faf406db91738654ba11ffda3ec0ce61ee9930",
+         "dataid-cv:tag": "sorted",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-04-30T19:47:18Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "37354",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=parsed_sorted.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>Control Ontology</title><title>Control Ontology</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "a68a60c54009e359173810f0edee62e8559d77829ac24d82c34d97294537416a",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-04-30T19:47:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "35085",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-04-30T19:47:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE rdf:RDF [\n\t<!ENTITY dct \"http://purl.org/dc/terms/\">\n\t<!ENTITY fibo-fnd-dt-fd \"https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/\">\n\t<!ENTITY fibo-fnd-law-lcap \"https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/\">\n\t<!ENTITY fibo-fnd-oac-ctl \"https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/\">\n\t<!ENTITY fibo-fnd-pty-pty \"https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/\">\n\t<!ENTITY fibo-fnd-rel-rel \"https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/\">\n\t<!ENTITY fibo-fnd-utl-av \"https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/\">\n\t<!ENTITY owl \"http://www.w3.org/2002/07/owl#\">",
+         "dataid:sha256sum": "6ce88b3fde9391aa5d69da68e21c4e9a9f85cc0966e3cb15cb66665bfb451f65",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-04-30T19:47:18Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "19148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix fibo-fnd-dt-fd: <https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/> .\n@prefix fibo-fnd-law-lcap: <https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/> .\n@prefix fibo-fnd-oac-ctl: <https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/> .\n@prefix fibo-fnd-pty-pty: <https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/> .\n@prefix fibo-fnd-rel-rel: <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/> .\n@prefix fibo-fnd-utl-av: <https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .",
+         "dataid:sha256sum": "4c5bd6c1310f7ecabe90d0167fa7dddd6c4d83a55110efabfebffdf940514c25",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-04-30T19:47:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "14872",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl",
+         "dataid:sha256sum": "7a2f18639a5a28f28f8192070a90133188e5c2cac2c618d4bbc46774e02f3ff0",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-04-30T19:47:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "25722",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n./data/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=parsed.ttl\nStart loading\nApr 30, 2021 7:47:34 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Control/ @owl:versionIRI https://spec.edmcouncil.org/fibo/ontology/master/latest/FND/OwnershipAndControl/Control/\nFinished loading in 00:00:00.170\nInput size: Classes = 12, Properties = 46, Individuals = 16\nExpressivity: ALCHI(D)\nStart consistency check\nFinished consistency check in 00:00:00.019",
+         "dataid:sha256sum": "bdd753726c8d8ca8b5694e4bf8e60f552f802493bda9498da034520c5b0f6080",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-04-30T19:47:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "943",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/controls> ;",
+         "dataid:sha256sum": "8f3fb73ba363f561ea608ebc60638152ef74f22aec86d56df5c3ab70c8f43f63",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-04-30T19:47:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "8569",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=diff_axioms=old.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=diff_axioms=old.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "isControllingPartyInRole ≡ hasPartyInControl⁻\n∃ isInControlOfThing.⊤ ⊑ Control\n⊤ ⊑ ∀ isControllingPartyInRole.Control\nisControllingPartyInRole ⊑ actsIn\n∃ isControllingPartyInRole.⊤ ⊑ ControllingParty\nControl ⊑ ∃ isInControlOfThing.Undergoer\n⊤ ⊑ ∀ isInControlOfThing.ControlledThing\n∃ isControlledThingInRole.⊤ ⊑ ControlledThing\nControl ⊑ ∃ hasPartyInControl.Actor\nControlledThing ⊑ ∃ isPlayedBy.(∃ isControlledBy.⊤)",
+         "dataid:sha256sum": "43c4e1cc31fe464a4a6ad1f8dee5d301f18837da6aa8fa386537a7663dac721f",
+         "dataid-cv:axioms": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-04-30T19:47:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "691",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=diff_axioms=old.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717#fibo--ontology--FND--OwnershipAndControl--Control_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2021.04.30; 19:47:18\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"19147\",\n        \"e-tag\": \"\\\"60898552-4acb\\\"\",\n        \"lastModified\": \"Wed, 28 Apr 2021 15:54:58 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"\",",
+         "dataid:sha256sum": "c2b5722823d69c6a7208364bb3cbdbebbd1cad59f144300338b48c9530b97c05",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.04.30-194717",
+         "dct:issued": {
+            "@value": "2021-04-30T19:48:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-04-30T19:47:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1254",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/spec.edmcouncil.org/fibo--ontology--FND--OwnershipAndControl--Control/2021.04.30-194717/fibo--ontology--FND--OwnershipAndControl--Control_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      }
+   ]
+}

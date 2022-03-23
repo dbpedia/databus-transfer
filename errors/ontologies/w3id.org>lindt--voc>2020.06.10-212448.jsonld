@@ -1,0 +1,668 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/lindt--voc",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/w3id.org/lindt--voc"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/w3id.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The lindt (Linked Datatypes) vocabulary describes custom datatypes.  This vocabulary may be used by RDF processors and SPARQL engines to recognize custom datatypes on the fly.   See also:  - [The Specification](spec.html) - [The Ontology](index.ttl) - [Some custom datatypes](custom_datatypes)"
+         },
+         "dct:hasVersion": "2020.06.10-212448",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "The lindt Vocabulary"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=orig.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=OOPS.rdf"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=parsed.owl"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The lindt (Linked Datatypes) vocabulary describes custom datatypes.  This vocabulary may be used by RDF processors and SPARQL engines to recognize custom datatypes on the fly.   See also:  - [The Specification](spec.html) - [The Ontology](index.ttl) - [Some custom datatypes](custom_datatypes)"
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<html><head><title>LODE error</title></head><body><h2>LODE error</h2><p><strong>Reason: </strong>Problem parsing http://w3id.org/lindt/voc\nCould not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.\nThe following parsers were tried:\n1) RDFXMLParser\n2) OWLXMLParser\n3) OWLFunctionalSyntaxOWLParser\n4) TurtleOntologyParser\n5) KRSS2OWLParser\n6) ManchesterOWLSyntaxOntologyParser\n7) OBOFormatOWLAPIParser",
+         "dataid:sha256sum": "9a93b92da493e6877ef46c48bda7a16e95f24585cb4c8d443b4060f3151b4a8e",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-212448",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:50:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2159",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://w3id.org/lindt/voc#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://w3id.org/lindt/voc#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocommons/voaf#Vocabulary> .\n<http://w3id.org/lindt/voc#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .\n<http://w3id.org/lindt/voc#> <http://purl.org/dc/terms/title> \"The lindt Vocabulary \"@en .\n<http://w3id.org/lindt/voc#> <http://purl.org/dc/terms/description> \"The lindt (Linked Datatypes) vocabulary describes custom datatypes. \\nThis vocabulary may be used by RDF processors and SPARQL engines to recognize custom datatypes on the fly.\\n\\n\\nSee also:\\n\\n- [The Specification](spec.html)\\n- [The Ontology](index.ttl)\\n- [Some custom datatypes](custom_datatypes)\\n\\n\"@en .\n<http://w3id.org/lindt/voc#> <http://purl.org/dc/terms/issued> \"2016-04-22\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://w3id.org/lindt/voc#> <http://purl.org/dc/terms/modified> \"2016-04-22T10:42:42+02:00\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n<http://w3id.org/lindt/voc#> <http://purl.org/dc/terms/modified> \"2016-06-03T10:46:00+02:00\"^^<http://www.w3.org/2001/XMLSchema#dateTime> .\n<http://w3id.org/lindt/voc#> <http://purl.org/dc/terms/modified> \"2016-04-22\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://w3id.org/lindt/voc#> <http://purl.org/dc/terms/creator> <http://maxime-lefrancois.info/me#> .",
+         "dataid:sha256sum": "5c9e19977e1d6e3b42cd7238bb609c44b938865a3b90d01becf306597021548e",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-212448",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:50:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "55751",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=parsed.ttl\nStart loading\nFinished loading in 00:00:00.166\nInput size: Classes = 17, Properties = 35, Individuals = 91\nExpressivity: ALCHO(D)\nStart consistency check\nFinished consistency check in 00:00:00.041\n\nTimer summary:",
+         "dataid:sha256sum": "08db82df81b4e28a81c6c029618def564d311be5a89a501d93a7102c61bfae2c",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-212448",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:50:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "524",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl",
+         "dataid:sha256sum": "52d43838355acf0f67393ec50e3ab157de7bc038c37b98694212226d4282b531",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-212448",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:50:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4962",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=orig.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=orig.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# Copyright 2016 ITEA 12004 SEAS Project.\n# \n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this file except in compliance with the License.\n# You may obtain a copy of the License at\n# \n#      http://www.apache.org/licenses/LICENSE-2.0\n# \n# Unless required by applicable law or agreed to in writing,\n# distributed under the License is distributed on an \"AS IS\" BASIS,",
+         "dataid:sha256sum": "c2136168f8d90f69ceaf7d0eb81a4b17a7a7db1333b3d95761a7e6317a132e2a",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-212448",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:50:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "19737",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=orig.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://w3id.org/lindt/voc#> ;\n            sh:resultMessage \"No dct:license statement found\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "add969ff9410599d0e0c1fb14214a93be47babc92abc46c08aa84f4eff64bcfe",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-212448",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:50:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "645",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.0.0.jar\n\n",
+         "dataid:sha256sum": "fcdd4ee978b74ae744e3205ebaee81c876347817db89cd283b1d71911a9e2047",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-212448",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:50:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=OOPS.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=OOPS.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<rdf:RDF\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\nxmlns:oops=\"http://www.oeg-upm.net/oops#\" > \n<rdf:Description rdf:about=\"http://www.oeg-upm.net/oops/unexpected_error\">\n    <oops:hasTitle rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">OOPS! something went wrong.</oops:hasTitle>\n    <oops:hasMessage rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">There was an unexpected error.</oops:hasMessage>\n    <rdf:type rdf:resource=\"http://www.oeg-upm.net/oops#response\"/>\n</rdf:Description>\n</rdf:RDF>\n",
+         "dataid:sha256sum": "fee85825301371342ac23871a7d98e8b6ab4722b9eb9cb3eb57550f59bc37678",
+         "dataid-cv:type": "OOPS",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-212448",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:50:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "527",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=OOPS.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://w3id.org/lindt/voc#> ;",
+         "dataid:sha256sum": "ff91710b2cb978eea67b3e781aacd426d4e6ce3c472bbf419b893865fd0604cc",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-212448",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:50:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "5987",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@base <http://w3id.org/lindt/voc#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix max: <http://maxime-lefrancois.info/me#> .\n@prefix vann: <http://purl.org/vocab/vann/> .\n@prefix voaf: <http://purl.org/vocommons/voaf#> .\n@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .\n@prefix dc: <http://purl.org/dc/terms/> .",
+         "dataid:sha256sum": "d9f319bc5a257d09b5077b730d7fa788fa5ed2d6f9980831afe6259e7c1f49cd",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-212448",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:50:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "20314",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=parsed.ttl\nStart loading\nFinished loading in 00:00:00.163\nInput size: Classes = 17, Properties = 35, Individuals = 91\nExpressivity: ALCHO(D)\nStart consistency check\nFinished consistency check in 00:00:00.041\n\nTimer summary:",
+         "dataid:sha256sum": "2d6029f0f19284ba9e455db9716a6683e073f3ef0a4defa71a2c60ef98e5e771",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-212448",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:50:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "524",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2020.05.07; 10:15:24\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"19736\",\n        \"e-tag\": \"\",\n        \"lastModified\": \"Tue, 12 Feb 2019 14:14:58 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Date': 'Thu, 07 May 2020 08:15:24 GMT', 'Server': 'Apache/2.4.29 (Ubuntu)', 'Access-Control-Allow-Origin': '*', 'Location': 'https://w3id.org/lindt/voc', 'Content-Length': '308', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'text/html; charset=iso-8859-1'}\",",
+         "dataid:sha256sum": "e1a6ab61a2dbe8e0af694b6f41456a1a49afa3cf698ef6f67c948623b33e33c8",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-212448",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:50:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1491",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-212448",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:50:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl",
+         "dataid:sha256sum": "52d43838355acf0f67393ec50e3ab157de7bc038c37b98694212226d4282b531",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-212448",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:50:43Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4962",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448#lindt--voc_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:az=\"http://zimmer.aprilfoolsreview.com/antoine#\" xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:dc=\"http://purl.org/dc/terms/\" xmlns:fn=\"http://semweb.mmlab.be/ns/function#\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\" xmlns:lindt=\"http://w3id.org/lindt/voc#\" xmlns:max=\"http://maxime-lefrancois.info/me#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:voaf=\"http://purl.org/vocommons/voaf#\" xmlns:vs=\"http://www.w3.org/2003/06/sw-vocab-status/ns#\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xml:base=\"http://w3id.org/lindt/voc#\">\n  <rdf:Description rdf:about=\"\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"\">\n    <rdf:type rdf:resource=\"http://purl.org/vocommons/voaf#Vocabulary\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"\">\n    <rdf:type rdf:resource=\"http://xmlns.com/foaf/0.1/Document\"/>",
+         "dataid:sha256sum": "51b970ff9b8b9f5eed41b6fdf67fc0379399242d22041979b14284df0aa6f663",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-212448",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T00:50:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "64112",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/lindt--voc/2020.06.10-212448/lindt--voc_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      }
+   ]
+}

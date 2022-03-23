@@ -1,0 +1,150 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/wikidata/page/2020.08.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/page",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/page/2020.08.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/wikidata/page"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/wikidata"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/wikidata/page/2020.08.01"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/d69e027e6f7ace84ba485d3158913bf901b812e2 . After its releases, data is cleaned and persisted under the DBpedia account. ) Numbers of characters contained in a Wikidata article's source and ids"
+         },
+         "dct:hasVersion": "2020.08.01",
+         "dct:issued": {
+            "@value": "2020-08-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Page Length and Ids"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/wikidata/page/2020.08.01#page_length.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/wikidata/page/2020.08.01#page_ids.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/d69e027e6f7ace84ba485d3158913bf901b812e2 . After its releases, data is cleaned and persisted under the DBpedia account. ) Numbers of characters contained in a Wikidata article's source and ids"
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/page/2020.08.01#page_length.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/page/2020.08.01/page_length.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://wikidata.dbpedia.org/resource/Q10000000> <http://dbpedia.org/ontology/wikiPageLength> \"16346\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://wikidata.dbpedia.org/resource/Q10000001> <http://dbpedia.org/ontology/wikiPageLength> \"8007\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://wikidata.dbpedia.org/resource/Q10000002> <http://dbpedia.org/ontology/wikiPageLength> \"12988\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://wikidata.dbpedia.org/resource/Q10000005> <http://dbpedia.org/ontology/wikiPageLength> \"12266\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://wikidata.dbpedia.org/resource/Q10000006> <http://dbpedia.org/ontology/wikiPageLength> \"12846\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://wikidata.dbpedia.org/resource/Q10000007> <http://dbpedia.org/ontology/wikiPageLength> \"13653\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://wikidata.dbpedia.org/resource/Q1000000> <http://dbpedia.org/ontology/wikiPageLength> \"4190\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://wikidata.dbpedia.org/resource/Q10000010> <http://dbpedia.org/ontology/wikiPageLength> \"12401\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://wikidata.dbpedia.org/resource/Q10000013> <http://dbpedia.org/ontology/wikiPageLength> \"12440\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://wikidata.dbpedia.org/resource/Q10000014> <http://dbpedia.org/ontology/wikiPageLength> \"13817\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .",
+         "dataid:sha256sum": "13c597ee0a031ee034b5cca997ac76b3b49573dc6244a0289fb69d1097c680e0",
+         "dataid-cv:tag": "length",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.08.01",
+         "dct:issued": {
+            "@value": "2020-08-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-08-24T10:15:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "376467565",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/databus-repo/marvin/wikidata/page/2020.08.01/page_length.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/page/2020.08.01#page_ids.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/page/2020.08.01/page_ids.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://wikidata.dbpedia.org/resource/Category:API_dataset> <http://dbpedia.org/ontology/wikiPageID> \"52295690\"^^<http://www.w3.org/2001/XMLSchema#integer> .\n<http://wikidata.dbpedia.org/resource/Category:API_datasets> <http://dbpedia.org/ontology/wikiPageID> \"52295331\"^^<http://www.w3.org/2001/XMLSchema#integer> .\n<http://wikidata.dbpedia.org/resource/Category:Admin_user_templates> <http://dbpedia.org/ontology/wikiPageID> \"52241\"^^<http://www.w3.org/2001/XMLSchema#integer> .\n<http://wikidata.dbpedia.org/resource/Category:Administration_templates> <http://dbpedia.org/ontology/wikiPageID> \"4556313\"^^<http://www.w3.org/2001/XMLSchema#integer> .\n<http://wikidata.dbpedia.org/resource/Category:Administrators'_noticeboard_archive> <http://dbpedia.org/ontology/wikiPageID> \"3691101\"^^<http://www.w3.org/2001/XMLSchema#integer> .\n<http://wikidata.dbpedia.org/resource/Category:Ahmad_al-Mansur_Eddahbi> <http://dbpedia.org/ontology/wikiPageID> \"95516957\"^^<http://www.w3.org/2001/XMLSchema#integer> .\n<http://wikidata.dbpedia.org/resource/Category:Alabama-related_properties> <http://dbpedia.org/ontology/wikiPageID> \"93887635\"^^<http://www.w3.org/2001/XMLSchema#integer> .\n<http://wikidata.dbpedia.org/resource/Category:All_Properties> <http://dbpedia.org/ontology/wikiPageID> \"18014910\"^^<http://www.w3.org/2001/XMLSchema#integer> .\n<http://wikidata.dbpedia.org/resource/Category:Alternative_Wikidata_account_templates> <http://dbpedia.org/ontology/wikiPageID> \"12346230\"^^<http://www.w3.org/2001/XMLSchema#integer> .\n<http://wikidata.dbpedia.org/resource/Category:Alternative_Wikidata_accounts> <http://dbpedia.org/ontology/wikiPageID> \"12345629\"^^<http://www.w3.org/2001/XMLSchema#integer> .",
+         "dataid:sha256sum": "86beac6218f4a42db64d9f74ba6d05db236a7e2b3a99b3ecb461b73e1e45b2af",
+         "dataid-cv:tag": "ids",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.08.01",
+         "dct:issued": {
+            "@value": "2020-08-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-08-24T10:01:49Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "267673833",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/databus-repo/marvin/wikidata/page/2020.08.01/page_ids.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

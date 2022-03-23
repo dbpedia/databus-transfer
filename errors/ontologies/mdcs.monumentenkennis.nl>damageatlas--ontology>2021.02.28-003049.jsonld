@@ -1,0 +1,669 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The Monument Diagnosis and Conservation System (MDCS) damage atlas ontology (MDCS-O) is derived from the original MDCS damage atlas web application (https://mdcs.monumentenkennis.nl/damageatlas) hosted by TNO, TU Delft and the Dutch Rijksdienst voor het Cultureel Erfgoed."
+         },
+         "dct:hasVersion": "2021.02.28-003049",
+         "dct:issued": {
+            "@value": "2021-02-27T23:31:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "MDCS damage atlas Ontology (MDCS-O)"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=shaclReport_validates=minLicense.ttl"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The Monument Diagnosis and Conservation System (MDCS) damage atlas ontology (MDCS-O) is derived from the original MDCS damage atlas web application (https://mdcs.monumentenkennis.nl/damageatlas) hosted by TNO, TU Delft and the Dutch Rijksdienst voor het Cultureel Erfgoed."
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<html><head><title>LODE error</title></head><body><h2>LODE error</h2><p><strong>Reason: </strong>A sequence of more than one item is not allowed as the @select attribute of xsl:sort</p></body></html>\n",
+         "dataid:sha256sum": "8bedb295026e2f36357b7d3c649e5761aa12b9d8f2e9e98333fb880660c1872e",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.02.28-003049",
+         "dct:issued": {
+            "@value": "2021-02-27T23:31:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-02-27T23:31:18Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "201",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.02.28-003049",
+         "dct:issued": {
+            "@value": "2021-02-27T23:31:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-02-27T23:30:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<https://mdcs.monumentenkennis.nl/damageatlas/ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<https://mdcs.monumentenkennis.nl/damageatlas/ontology> <http://www.w3.org/2002/07/owl#versionIRI> <https://mdcs.monumentenkennis.nl/damageatlas/ontology/1.0.0> .\n<https://mdcs.monumentenkennis.nl/damageatlas/ontology> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .\n<https://mdcs.monumentenkennis.nl/damageatlas/ontology> <http://purl.org/dc/terms/created> \"2020-09-29\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<https://mdcs.monumentenkennis.nl/damageatlas/ontology> <http://purl.org/dc/terms/creator> _:genid1 .\n<https://mdcs.monumentenkennis.nl/damageatlas/ontology> <http://purl.org/dc/terms/description> \"The Monument Diagnosis and Conservation System (MDCS) damage atlas ontology (MDCS-O) is derived from the original MDCS damage atlas web application (https://mdcs.monumentenkennis.nl/damageatlas) hosted by TNO, TU Delft and the Dutch Rijksdienst voor het Cultureel Erfgoed. While the web application is designed as an interactive support tool, this web ontology makes it possible to use the uniform MDCS damage atlas terminology to classify construction damage cases defined in an RDF dataset. It is defined as an extension of the generic Damage Topology Ontology (DOT, available at https://w3id.org/dot#). The web ontology version of the MDCS damage atlas was created by Mathias Bonduel (KU Leuven) during his PhD research (2017-2020) funded by the Research Foundation Flanders in the form of a Strategic Basic Research grant (grant agreement 1S65917N).\"@en .\n<https://mdcs.monumentenkennis.nl/damageatlas/ontology> <http://purl.org/dc/terms/issued> \"2020-10-05\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<https://mdcs.monumentenkennis.nl/damageatlas/ontology> <http://purl.org/dc/terms/title> \"MDCS damage atlas Ontology (MDCS-O)\"@en .\n<https://mdcs.monumentenkennis.nl/damageatlas/ontology> <http://purl.org/vocab/vann/preferredNamespacePrefix> \"mdcs\" .\n<https://mdcs.monumentenkennis.nl/damageatlas/ontology> <http://purl.org/vocab/vann/preferredNamespaceUri> \"https://mdcs.monumentenkennis.nl/damageatlas/ontology#\" .",
+         "dataid:sha256sum": "5b83cf923737c1ae7f42035c8e063ecfdb2e5de9bcba75293b798e6fc1d77cc0",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.02.28-003049",
+         "dct:issued": {
+            "@value": "2021-02-27T23:31:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-02-27T23:30:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1084920",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://mdcs.monumentenkennis.nl/damageatlas/ontology> ;\n            sh:resultMessage \"No dct:license statement found\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "f96ce78c70ddf50ecf8f7fffc8e179f4abd2024cd3ad1b162ac21375c5285cf4",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.02.28-003049",
+         "dct:issued": {
+            "@value": "2021-02-27T23:31:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-02-27T23:30:54Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "672",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\nVersion Info = 1.0.0\n\nTimer summary:\nName | Total (ms)",
+         "dataid:sha256sum": "0a41081b8fbd62c4c3f9ad679fec95c623d5c94c373d08446d088028b581a45f",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.02.28-003049",
+         "dct:issued": {
+            "@value": "2021-02-27T23:31:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-02-27T23:31:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1369",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2021-02-28 00:30:49.436896\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"827479\",\n        \"e-tag\": \"\\\"0c357db279bd61:0\\\"\",\n        \"lastModified\": \"Mon, 05 Oct 2020 14:57:34 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Content-Type': 'text/html; charset=UTF-8', 'Location': 'https://mdcs.monumentenkennis.nl/damageatlas/ontology/mdcs.rdf', 'Server': 'Microsoft-IIS/10.0', 'Content-Security-Policy': \\\"frame-ancestors 'self'\\\", 'X-Frame-Options': 'SAMEORIGIN', 'X-Powered-By': 'ASP.NET', 'Date': 'Sat, 27 Feb 2021 23:30:43 GMT', 'Content-Length': '185'}\",",
+         "dataid:sha256sum": "1f9c536a81adebbc7ce840bbd5e742b0b0ebef99426af15a453dcf4dbdfe1ad9",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.02.28-003049",
+         "dct:issued": {
+            "@value": "2021-02-27T23:31:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-02-27T23:31:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1482",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <https://mdcs.monumentenkennis.nl/damageatlas/ontology#> .\n@prefix ns: <http://www.w3.org/2006/vcard/ns#> .\n@prefix ns1: <http://creativecommons.org/ns#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix xml: <http://www.w3.org/XML/1998/namespace> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix vann: <http://purl.org/vocab/vann/> .\n@prefix terms: <http://purl.org/dc/terms/> .",
+         "dataid:sha256sum": "5ceeb86058765473657146eba032418bd4eab418b5ccbb07049fb2f15fadbea3",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.02.28-003049",
+         "dct:issued": {
+            "@value": "2021-02-27T23:31:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-02-27T23:30:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "521571",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/data/home/dstreitmatter/data/archivo-init-release/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=parsed.ttl\nStart loading\nFeb 28, 2021 12:30:58 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://mdcs.monumentenkennis.nl/damageatlas/ontology @owl:versionIRI https://mdcs.monumentenkennis.nl/damageatlas/ontology/1.0.0\nFinished loading in 00:00:00.464\nInput size: Classes = 352, Properties = 28, Individuals = 845\nExpressivity: ALH(D)\nStart consistency check\nFinished consistency check in 00:00:00.058",
+         "dataid:sha256sum": "8fbceb115b115681e5ffdec59954fde709fe01cffd7e05e24d084adf88ea1cb1",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.02.28-003049",
+         "dct:issued": {
+            "@value": "2021-02-27T23:31:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-02-27T23:30:58Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "887",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n<rdf:RDF xmlns=\"https://mdcs.monumentenkennis.nl/damageatlas/ontology#\"\n     xml:base=\"https://mdcs.monumentenkennis.nl/damageatlas/ontology\"\n     xmlns:ns=\"http://www.w3.org/2006/vcard/ns#\"\n     xmlns:ns1=\"http://creativecommons.org/ns#\"\n     xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n     xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n     xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"\n     xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n     xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"",
+         "dataid:sha256sum": "527ff86904cef1e2250dcd86b8e60dd2731afda9d970dc43f09d4ce0b1d6578b",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.02.28-003049",
+         "dct:issued": {
+            "@value": "2021-02-27T23:31:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-02-27T23:30:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "827480",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/data/home/dstreitmatter/data/archivo-init-release/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=parsed.ttl\nStart loading\nFeb 28, 2021 12:30:56 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://mdcs.monumentenkennis.nl/damageatlas/ontology @owl:versionIRI https://mdcs.monumentenkennis.nl/damageatlas/ontology/1.0.0\nFinished loading in 00:00:00.472\nInput size: Classes = 352, Properties = 28, Individuals = 845\nExpressivity: ALH(D)\nStart consistency check\nFinished consistency check in 00:00:00.056",
+         "dataid:sha256sum": "e8549fb53d5cdd36b90bed1eec0b0c1dc67d8aada31be4f6a1a24c1676437fd4",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.02.28-003049",
+         "dct:issued": {
+            "@value": "2021-02-27T23:31:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-02-27T23:30:58Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "887",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://mdcs.monumentenkennis.nl/damageatlas/ontology#Mortar-damage_Surface-change_Transformation_Crust> ;",
+         "dataid:sha256sum": "8e3febbce91dd0c508ee7c73606ca3e4e33db7965d3601fe0e11f21815a54e91",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.02.28-003049",
+         "dct:issued": {
+            "@value": "2021-02-27T23:31:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-02-27T23:30:54Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "230921",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\nVersion Info = 1.0.0\n\nTimer summary:\nName | Total (ms)",
+         "dataid:sha256sum": "4a6d4a533194f4e7ca29e4d13eb77af01e7bec997d43da0952d231fdaa162d81",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.02.28-003049",
+         "dct:issued": {
+            "@value": "2021-02-27T23:31:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-02-27T23:31:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1369",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "\nOWL2_DL: OK\nOWL2_QL: 1688 violations\nOWL2_EL: 1688 violations\nOWL2_RL: OK\nOWL2_FULL: OK\n",
+         "dataid:sha256sum": "2f0a691a69cd9c9a9aee850ba9d1aa5054e06f06d79b83a38f1dc2f0d2e33b66",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.02.28-003049",
+         "dct:issued": {
+            "@value": "2021-02-27T23:31:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-02-27T23:31:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "90",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:Arpenteur=\"http://www.arpenteur.org/ontology/Arpenteur.owl#\" xmlns:ns1=\"http://creativecommons.org/ns#\" xmlns:ns=\"http://www.w3.org/2006/vcard/ns#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:terms=\"http://purl.org/dc/terms/\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"https://mdcs.monumentenkennis.nl/damageatlas/ontology#\">\n  <rdf:Description rdf:about=\"https://mdcs.monumentenkennis.nl/damageatlas/ontology\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://mdcs.monumentenkennis.nl/damageatlas/ontology\">\n    <owl:versionIRI rdf:resource=\"https://mdcs.monumentenkennis.nl/damageatlas/ontology/1.0.0\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://mdcs.monumentenkennis.nl/damageatlas/ontology\">\n    <ns1:license rdf:resource=\"https://creativecommons.org/licenses/by/4.0/\"/>",
+         "dataid:sha256sum": "ec61678c3e8e240a64b115717237ef4e84959bcd9ad96dc3f234513bedebda1b",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.02.28-003049",
+         "dct:issued": {
+            "@value": "2021-02-27T23:31:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-02-27T23:30:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1259404",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049#damageatlas--ontology_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.02.28-003049",
+         "dct:issued": {
+            "@value": "2021-02-27T23:31:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-02-27T23:30:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/mdcs.monumentenkennis.nl/damageatlas--ontology/2021.02.28-003049/damageatlas--ontology_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

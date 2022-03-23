@@ -1,0 +1,694 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/generic/images/2021.09.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/images",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/images/2021.09.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/generic/images"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/generic"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/generic/images/2021.09.01"
+         },
+         "dataid-debug:codeReference": {
+            "@id": "https://github.com/dbpedia/extraction-framework/blob/master/core/src/main/scala/org/dbpedia/extraction/mappings/"
+         },
+         "dataid-debug:documentationLocation": {
+            "@id": "https://git.informatik.uni-leipzig.de/dbpedia-assoc/marvin-config/-/tree/master/databus-poms/dbpedia/generic/images"
+         },
+         "dataid-debug:feedbackChannel": {
+            "@id": "https://forum.dbpedia.org/c/data/databus/14"
+         },
+         "dataid-debug:issueTracker": {
+            "@id": "https://github.com/dbpedia/extraction-framework/issues"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/3135600dd860b38a6aa0f35cfaa57948d7d48f60 . After its releases, data is cleaned and persisted under the DBpedia account. ) help needed"
+         },
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) images dataset"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=id.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=de.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=es.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=eu.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=ja.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=pl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=nl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=ru.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=ar.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=bg.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=gl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=pt.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=fr.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=it.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=el.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=en.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/3135600dd860b38a6aa0f35cfaa57948d7d48f60 . After its releases, data is cleaned and persisted under the DBpedia account. ) help needed"
+         }
+      },
+      {
+         "@id": "dataid-cv:lang",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=id.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/images/2021.09.01/images_lang=id.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2021-10-12T14:27:50Z\n<http://id.dbpedia.org/resource/Azhar_Mansor> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Azhar_Mansor_Jalur_Gemilang.jpg> .\n<http://id.dbpedia.org/resource/Azhar_Mansor> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Azhar_Mansor_Jalur_Gemilang.jpg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Azhar_Mansor_Jalur_Gemilang.jpg> <http://xmlns.com/foaf/0.1/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Azhar_Mansor_Jalur_Gemilang.jpg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Azhar_Mansor_Jalur_Gemilang.jpg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Azhar_Mansor_Jalur_Gemilang.jpg?width=300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Azhar_Mansor_Jalur_Gemilang.jpg> <http://purl.org/dc/elements/1.1/rights> <http://id.wikipedia.org/wiki/Berkas:Azhar_Mansor_Jalur_Gemilang.jpg> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Azhar_Mansor_Jalur_Gemilang.jpg?width=300> <http://purl.org/dc/elements/1.1/rights> <http://id.wikipedia.org/wiki/Berkas:Azhar_Mansor_Jalur_Gemilang.jpg> .\n<http://id.dbpedia.org/resource/Anwar_Sadat> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Anwar_Sadat_cropped.jpg> .\n<http://id.dbpedia.org/resource/Anwar_Sadat> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Anwar_Sadat_cropped.jpg?width=300> .",
+         "dataid:sha256sum": "5946bd3e9360ab0ab0275b565ff107a43387443df35199e1c509adaec950c019",
+         "dataid-cv:lang": "id",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-15T15:05:20Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "34004704",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/databus-repo/marvin/generic/images/2021.09.01/images_lang=id.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=de.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/images/2021.09.01/images_lang=de.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2021-10-12T14:42:55Z\n<http://de.dbpedia.org/resource/Actinium> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Periodensystem_Mendelejews.jpg> .\n<http://de.dbpedia.org/resource/Actinium> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Periodensystem_Mendelejews.jpg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Periodensystem_Mendelejews.jpg> <http://xmlns.com/foaf/0.1/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Periodensystem_Mendelejews.jpg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Periodensystem_Mendelejews.jpg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Periodensystem_Mendelejews.jpg?width=300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Periodensystem_Mendelejews.jpg> <http://purl.org/dc/elements/1.1/rights> <http://de.wikipedia.org/wiki/Datei:Periodensystem_Mendelejews.jpg> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Periodensystem_Mendelejews.jpg?width=300> <http://purl.org/dc/elements/1.1/rights> <http://de.wikipedia.org/wiki/Datei:Periodensystem_Mendelejews.jpg> .\n<http://de.dbpedia.org/resource/Ang_Lee> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Ang_Lee_-_66eme_Festival_de_Venise_(Mostra)_2.jpg> .\n<http://de.dbpedia.org/resource/Ang_Lee> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Ang_Lee_-_66eme_Festival_de_Venise_(Mostra)_2.jpg?width=300> .",
+         "dataid:sha256sum": "2edac0eb6dbf8dfddb1e21164d5fda28a628ee0bd3834c5a1ede98d6e29ff47f",
+         "dataid-cv:lang": "de",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-15T15:05:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "260309780",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/databus-repo/marvin/generic/images/2021.09.01/images_lang=de.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=es.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/images/2021.09.01/images_lang=es.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2021-09-15T07:23:28Z\n<http://es.dbpedia.org/resource/Artes_visuales> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg> .\n<http://es.dbpedia.org/resource/Artes_visuales> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg> <http://xmlns.com/foaf/0.1/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg?width=300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg> <http://purl.org/dc/elements/1.1/rights> <http://es.wikipedia.org/wiki/Archivo:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg?width=300> <http://purl.org/dc/elements/1.1/rights> <http://es.wikipedia.org/wiki/Archivo:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg> .\n<http://es.dbpedia.org/resource/Artes_visuales> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Wolf_Vostell,_Fiebre_de_Automóvil,_1973,_Instalación.jpg> .\n<http://es.dbpedia.org/resource/Artes_visuales> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Wolf_Vostell,_Fiebre_de_Automóvil,_1973,_Instalación.jpg?width=300> .",
+         "dataid:sha256sum": "730616a27b946e63a0d54fddc81f80686e7240d3919858b3796786cb92123797",
+         "dataid-cv:lang": "es",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-15T12:38:18Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "94616226",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/databus-repo/marvin/generic/images/2021.09.01/images_lang=es.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=eu.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/images/2021.09.01/images_lang=eu.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2021-10-12T14:20:42Z\n<http://eu.dbpedia.org/resource/Astronomia> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Comet-Hale-Bopp-29-03-1997_hires_adj.jpg> .\n<http://eu.dbpedia.org/resource/Astronomia> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Comet-Hale-Bopp-29-03-1997_hires_adj.jpg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Comet-Hale-Bopp-29-03-1997_hires_adj.jpg> <http://xmlns.com/foaf/0.1/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Comet-Hale-Bopp-29-03-1997_hires_adj.jpg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Comet-Hale-Bopp-29-03-1997_hires_adj.jpg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Comet-Hale-Bopp-29-03-1997_hires_adj.jpg?width=300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Comet-Hale-Bopp-29-03-1997_hires_adj.jpg> <http://purl.org/dc/elements/1.1/rights> <http://eu.wikipedia.org/wiki/Fitxategi:Comet-Hale-Bopp-29-03-1997_hires_adj.jpg> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Comet-Hale-Bopp-29-03-1997_hires_adj.jpg?width=300> <http://purl.org/dc/elements/1.1/rights> <http://eu.wikipedia.org/wiki/Fitxategi:Comet-Hale-Bopp-29-03-1997_hires_adj.jpg> .\n<http://eu.dbpedia.org/resource/Astronomia> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Summer_Solstice_Sunrise_over_Stonehenge_2005.jpg> .\n<http://eu.dbpedia.org/resource/Astronomia> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Summer_Solstice_Sunrise_over_Stonehenge_2005.jpg?width=300> .",
+         "dataid:sha256sum": "c725393644fede205628793f60b6f21d54ead7b1cc683a35d1b5f3532a472846",
+         "dataid-cv:lang": "eu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-15T15:05:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "13826893",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/databus-repo/marvin/generic/images/2021.09.01/images_lang=eu.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=ja.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/images/2021.09.01/images_lang=ja.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2021-10-12T13:24:36Z\n<http://ja.dbpedia.org/resource/アンパサンド> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Trebuchet_MS_ampersand.svg> .\n<http://ja.dbpedia.org/resource/アンパサンド> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Trebuchet_MS_ampersand.svg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Trebuchet_MS_ampersand.svg> <http://xmlns.com/foaf/0.1/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Trebuchet_MS_ampersand.svg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Trebuchet_MS_ampersand.svg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Trebuchet_MS_ampersand.svg?width=300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Trebuchet_MS_ampersand.svg> <http://purl.org/dc/elements/1.1/rights> <http://ja.wikipedia.org/wiki/ファイル:Trebuchet_MS_ampersand.svg> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Trebuchet_MS_ampersand.svg?width=300> <http://purl.org/dc/elements/1.1/rights> <http://ja.wikipedia.org/wiki/ファイル:Trebuchet_MS_ampersand.svg> .\n<http://ja.dbpedia.org/resource/アンパサンド> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Historical_ampersand_evolution.svg> .\n<http://ja.dbpedia.org/resource/アンパサンド> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Historical_ampersand_evolution.svg?width=300> .",
+         "dataid:sha256sum": "bddc4c75f80f1eb1798f0d62cb98ecc64663ad32f4681e6a6ce3a8b1eb48dafe",
+         "dataid-cv:lang": "ja",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-15T15:05:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "97574878",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/databus-repo/marvin/generic/images/2021.09.01/images_lang=ja.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=pl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/images/2021.09.01/images_lang=pl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2021-10-12T12:42:13Z\n<http://pl.dbpedia.org/resource/ASCII> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/ASCII_full.svg> .\n<http://pl.dbpedia.org/resource/ASCII> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/ASCII_full.svg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/ASCII_full.svg> <http://xmlns.com/foaf/0.1/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/ASCII_full.svg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/ASCII_full.svg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/ASCII_full.svg?width=300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/ASCII_full.svg> <http://purl.org/dc/elements/1.1/rights> <http://pl.wikipedia.org/wiki/Plik:ASCII_full.svg> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/ASCII_full.svg?width=300> <http://purl.org/dc/elements/1.1/rights> <http://pl.wikipedia.org/wiki/Plik:ASCII_full.svg> .\n<http://pl.dbpedia.org/resource/ASCII> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/USASCII_code_chart.png> .\n<http://pl.dbpedia.org/resource/ASCII> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/USASCII_code_chart.png?width=300> .",
+         "dataid:sha256sum": "43e298156c814a16b73c51815d1e936cc9a5006b6767c8582f6cf89a70f1c8d0",
+         "dataid-cv:lang": "pl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-15T15:05:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "92231671",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/databus-repo/marvin/generic/images/2021.09.01/images_lang=pl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=nl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/images/2021.09.01/images_lang=nl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2021-10-12T23:24:45Z\n<http://nl.dbpedia.org/resource/Albert_Speer> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Albert_Speer_Neurenberg.jpg> .\n<http://nl.dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Albert_Speer_Neurenberg.jpg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Albert_Speer_Neurenberg.jpg> <http://xmlns.com/foaf/0.1/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Albert_Speer_Neurenberg.jpg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Albert_Speer_Neurenberg.jpg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Albert_Speer_Neurenberg.jpg?width=300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Albert_Speer_Neurenberg.jpg> <http://purl.org/dc/elements/1.1/rights> <http://nl.wikipedia.org/wiki/Bestand:Albert_Speer_Neurenberg.jpg> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Albert_Speer_Neurenberg.jpg?width=300> <http://purl.org/dc/elements/1.1/rights> <http://nl.wikipedia.org/wiki/Bestand:Albert_Speer_Neurenberg.jpg> .\n<http://nl.dbpedia.org/resource/Albert_Speer> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-V00555-3,_Obersalzberg,_Albert_Speer,_Adolf_Hitler.jpg> .\n<http://nl.dbpedia.org/resource/Albert_Speer> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Bundesarchiv_Bild_183-V00555-3,_Obersalzberg,_Albert_Speer,_Adolf_Hitler.jpg?width=300> .",
+         "dataid:sha256sum": "cdb4581313db5f2c9ce731cbd6380acce5047c23735bdcf76957bc53b5326ea4",
+         "dataid-cv:lang": "nl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-15T15:05:20Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "104563881",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/databus-repo/marvin/generic/images/2021.09.01/images_lang=nl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=ru.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/images/2021.09.01/images_lang=ru.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2021-10-12T22:03:27Z\n<http://ru.dbpedia.org/resource/Литва> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Lithuania.svg> .\n<http://ru.dbpedia.org/resource/Литва> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Lithuania.svg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Lithuania.svg> <http://xmlns.com/foaf/0.1/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Lithuania.svg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Lithuania.svg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Lithuania.svg?width=300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Lithuania.svg> <http://purl.org/dc/elements/1.1/rights> <http://ru.wikipedia.org/wiki/Файл:Coat_of_Arms_of_Lithuania.svg> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_Arms_of_Lithuania.svg?width=300> <http://purl.org/dc/elements/1.1/rights> <http://ru.wikipedia.org/wiki/Файл:Coat_of_Arms_of_Lithuania.svg> .\n<http://ru.dbpedia.org/resource/Литва> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Lithuania.svg> .\n<http://ru.dbpedia.org/resource/Литва> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Lithuania.svg?width=300> .",
+         "dataid:sha256sum": "9829cce1534990cc5b059d5333ec8dbb57b69fcb367d168f0179b6ba3fcc8013",
+         "dataid-cv:lang": "ru",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-15T15:05:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "152056132",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/databus-repo/marvin/generic/images/2021.09.01/images_lang=ru.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=ar.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/images/2021.09.01/images_lang=ar.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2021-10-13T00:07:39Z\n<http://ar.dbpedia.org/resource/الصفحة_الرئيسية> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/HSutvald3.svg> .\n<http://ar.dbpedia.org/resource/الصفحة_الرئيسية> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/HSutvald3.svg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/HSutvald3.svg> <http://xmlns.com/foaf/0.1/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/HSutvald3.svg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/HSutvald3.svg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/HSutvald3.svg?width=300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/HSutvald3.svg> <http://purl.org/dc/elements/1.1/rights> <http://ar.wikipedia.org/wiki/ملف:HSutvald3.svg> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/HSutvald3.svg?width=300> <http://purl.org/dc/elements/1.1/rights> <http://ar.wikipedia.org/wiki/ملف:HSutvald3.svg> .\n<http://ar.dbpedia.org/resource/الصفحة_الرئيسية> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/HSUtvaldgrey.png> .\n<http://ar.dbpedia.org/resource/الصفحة_الرئيسية> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/HSUtvaldgrey.png?width=300> .",
+         "dataid:sha256sum": "ee6bd2426da59f87d4c22dfca285e5f6991684226377cfb1068f8ee202e7d4b1",
+         "dataid-cv:lang": "ar",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-15T15:05:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "48894876",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/databus-repo/marvin/generic/images/2021.09.01/images_lang=ar.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=bg.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/images/2021.09.01/images_lang=bg.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2021-09-17T14:57:33Z\n<http://bg.dbpedia.org/resource/Лиценз_за_свободна_документация_на_ГНУ> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/GFDL_Logo.svg> .\n<http://bg.dbpedia.org/resource/Лиценз_за_свободна_документация_на_ГНУ> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/GFDL_Logo.svg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/GFDL_Logo.svg> <http://xmlns.com/foaf/0.1/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/GFDL_Logo.svg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/GFDL_Logo.svg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/GFDL_Logo.svg?width=300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/GFDL_Logo.svg> <http://purl.org/dc/elements/1.1/rights> <http://bg.wikipedia.org/wiki/Файл:GFDL_Logo.svg> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/GFDL_Logo.svg?width=300> <http://purl.org/dc/elements/1.1/rights> <http://bg.wikipedia.org/wiki/Файл:GFDL_Logo.svg> .\n<http://bg.dbpedia.org/resource/Григориански_календар> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Gregory_XIII.jpg> .\n<http://bg.dbpedia.org/resource/Григориански_календар> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Gregory_XIII.jpg?width=300> .",
+         "dataid:sha256sum": "8ed39d5b5375b4173b97f9923a237934e073e2d9b8f4d84b1842b04f522abc43",
+         "dataid-cv:lang": "bg",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-15T12:38:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "19599118",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/databus-repo/marvin/generic/images/2021.09.01/images_lang=bg.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=gl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/images/2021.09.01/images_lang=gl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2021-10-12T12:27:32Z\n<http://gl.dbpedia.org/resource/Acción> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Mofa_e_Befa.jpg> .\n<http://gl.dbpedia.org/resource/Antropoloxía> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Mofa_e_Befa.jpg> .\n<http://gl.dbpedia.org/resource/Alimento> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Pain_epices_DSC00141.jpg> .\n<http://gl.dbpedia.org/resource/Alimento> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Pain_epices_DSC00141.jpg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Pain_epices_DSC00141.jpg> <http://xmlns.com/foaf/0.1/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Pain_epices_DSC00141.jpg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Pain_epices_DSC00141.jpg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Pain_epices_DSC00141.jpg?width=300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Pain_epices_DSC00141.jpg> <http://purl.org/dc/elements/1.1/rights> <http://gl.wikipedia.org/wiki/Ficheiro:Pain_epices_DSC00141.jpg> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Pain_epices_DSC00141.jpg?width=300> <http://purl.org/dc/elements/1.1/rights> <http://gl.wikipedia.org/wiki/Ficheiro:Pain_epices_DSC00141.jpg> .",
+         "dataid:sha256sum": "87fa6bf25a5af28765209a8f9684d499d9bdf2628752a508182789807df9a27a",
+         "dataid-cv:lang": "gl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-15T15:05:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "15328607",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/databus-repo/marvin/generic/images/2021.09.01/images_lang=gl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=pt.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/images/2021.09.01/images_lang=pt.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2021-09-29T00:40:24Z\n<http://pt.dbpedia.org/resource/Anno_Domini> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Scriptorium.jpg> .\n<http://pt.dbpedia.org/resource/Anno_Domini> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Scriptorium.jpg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Scriptorium.jpg> <http://xmlns.com/foaf/0.1/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Scriptorium.jpg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Scriptorium.jpg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Scriptorium.jpg?width=300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Scriptorium.jpg> <http://purl.org/dc/elements/1.1/rights> <http://pt.wikipedia.org/wiki/Ficheiro:Scriptorium.jpg> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Scriptorium.jpg?width=300> <http://purl.org/dc/elements/1.1/rights> <http://pt.wikipedia.org/wiki/Ficheiro:Scriptorium.jpg> .\n<http://pt.dbpedia.org/resource/Anno_Domini> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Rome_Statue_of_Augustus.jpg> .\n<http://pt.dbpedia.org/resource/Anno_Domini> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Rome_Statue_of_Augustus.jpg?width=300> .",
+         "dataid:sha256sum": "d14cc64456b59b85b5b233464e8b49f9d9d07399141ef54b3fc1d96915445c11",
+         "dataid-cv:lang": "pt",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-15T12:38:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "77926304",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/databus-repo/marvin/generic/images/2021.09.01/images_lang=pt.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=fr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/images/2021.09.01/images_lang=fr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2021-09-22T15:36:35Z\n<http://fr.dbpedia.org/resource/Antigua-et-Barbuda> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Antigua_and_Barbuda.svg> .\n<http://fr.dbpedia.org/resource/Antigua-et-Barbuda> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Antigua_and_Barbuda.svg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Antigua_and_Barbuda.svg> <http://xmlns.com/foaf/0.1/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Antigua_and_Barbuda.svg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Antigua_and_Barbuda.svg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Antigua_and_Barbuda.svg?width=300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Antigua_and_Barbuda.svg> <http://purl.org/dc/elements/1.1/rights> <http://fr.wikipedia.org/wiki/Fichier:Flag_of_Antigua_and_Barbuda.svg> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Antigua_and_Barbuda.svg?width=300> <http://purl.org/dc/elements/1.1/rights> <http://fr.wikipedia.org/wiki/Fichier:Flag_of_Antigua_and_Barbuda.svg> .\n<http://fr.dbpedia.org/resource/Antigua-et-Barbuda> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Antigua_and_Barbuda.svg> .\n<http://fr.dbpedia.org/resource/Antigua-et-Barbuda> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Coat_of_arms_of_Antigua_and_Barbuda.svg?width=300> .",
+         "dataid:sha256sum": "d9cc345203f3267508b2f60476d21530cb4c5933ffcd92ed6ca095e82d3b0ac3",
+         "dataid-cv:lang": "fr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-15T12:38:18Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "210893488",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/databus-repo/marvin/generic/images/2021.09.01/images_lang=fr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=it.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/images/2021.09.01/images_lang=it.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2021-09-18T11:08:37Z\n<http://it.dbpedia.org/resource/Analisi_delle_frequenze> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Frequenze-alf_it.png> .\n<http://it.dbpedia.org/resource/Analisi_delle_frequenze> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Frequenze-alf_it.png?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Frequenze-alf_it.png> <http://xmlns.com/foaf/0.1/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Frequenze-alf_it.png?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Frequenze-alf_it.png> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Frequenze-alf_it.png?width=300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Frequenze-alf_it.png> <http://purl.org/dc/elements/1.1/rights> <http://it.wikipedia.org/wiki/File:Frequenze-alf_it.png> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Frequenze-alf_it.png?width=300> <http://purl.org/dc/elements/1.1/rights> <http://it.wikipedia.org/wiki/File:Frequenze-alf_it.png> .\n<http://it.dbpedia.org/resource/Analisi_delle_frequenze> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Frequenze-ord-alf_it.png> .\n<http://it.dbpedia.org/resource/Analisi_delle_frequenze> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Frequenze-ord-alf_it.png?width=300> .",
+         "dataid:sha256sum": "19a807c9568093301536325ea44b9b4cc88a9120cb13d04f0b37342326e027fc",
+         "dataid-cv:lang": "it",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-15T12:38:18Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "132244010",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/databus-repo/marvin/generic/images/2021.09.01/images_lang=it.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=el.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/images/2021.09.01/images_lang=el.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2021-10-12T12:33:56Z\n<http://el.dbpedia.org/resource/Οξιτανική_γλώσσα> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Languesdoc.svg> .\n<http://el.dbpedia.org/resource/Οξιτανική_γλώσσα> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Languesdoc.svg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Languesdoc.svg> <http://xmlns.com/foaf/0.1/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Languesdoc.svg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Languesdoc.svg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Languesdoc.svg?width=300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Languesdoc.svg> <http://purl.org/dc/elements/1.1/rights> <http://el.wikipedia.org/wiki/Αρχείο:Languesdoc.svg> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Languesdoc.svg?width=300> <http://purl.org/dc/elements/1.1/rights> <http://el.wikipedia.org/wiki/Αρχείο:Languesdoc.svg> .\n<http://el.dbpedia.org/resource/Οξιτανική_γλώσσα> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Europe2005_bossost-aranes1.jpg> .\n<http://el.dbpedia.org/resource/Οξιτανική_γλώσσα> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Europe2005_bossost-aranes1.jpg?width=300> .",
+         "dataid:sha256sum": "6c15b597c9ee8d0eac495c9a5d5ce95f402268c4d39d705305146144eebfc5b1",
+         "dataid-cv:lang": "el",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-15T15:05:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "17128374",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/databus-repo/marvin/generic/images/2021.09.01/images_lang=el.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/images/2021.09.01#images_lang=en.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/images/2021.09.01/images_lang=en.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2021-10-12T16:39:53Z\n<http://dbpedia.org/resource/Albedo> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Albedo-e_hg.svg> .\n<http://dbpedia.org/resource/Albedo> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Albedo-e_hg.svg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Albedo-e_hg.svg> <http://xmlns.com/foaf/0.1/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Albedo-e_hg.svg?width=300> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Albedo-e_hg.svg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Albedo-e_hg.svg?width=300> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://dbpedia.org/ontology/Image> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Albedo-e_hg.svg> <http://purl.org/dc/elements/1.1/rights> <http://en.wikipedia.org/wiki/File:Albedo-e_hg.svg> .\n<http://commons.wikimedia.org/wiki/Special:FilePath/Albedo-e_hg.svg?width=300> <http://purl.org/dc/elements/1.1/rights> <http://en.wikipedia.org/wiki/File:Albedo-e_hg.svg> .\n<http://dbpedia.org/resource/Albedo> <http://xmlns.com/foaf/0.1/depiction> <http://commons.wikimedia.org/wiki/Special:FilePath/Ceres_2003_2004_clear_sky_total_sky_albedo.png> .\n<http://dbpedia.org/resource/Albedo> <http://dbpedia.org/ontology/thumbnail> <http://commons.wikimedia.org/wiki/Special:FilePath/Ceres_2003_2004_clear_sky_total_sky_albedo.png?width=300> .",
+         "dataid:sha256sum": "61cdf6f770f5f1d2efd2d3e3a3a30cc9357685138cb2010d894e87896673f53b",
+         "dataid-cv:lang": "en",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.09.01",
+         "dct:issued": {
+            "@value": "2021-09-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-15T15:05:20Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "570834351",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/databus-repo/marvin/generic/images/2021.09.01/images_lang=en.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

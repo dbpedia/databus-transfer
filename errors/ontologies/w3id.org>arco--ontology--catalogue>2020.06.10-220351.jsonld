@@ -1,0 +1,668 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/w3id.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The Catalogue module allows the description of concepts related to the Italian General Catalogue of Cultural Heritage (ICCD-MiBAC), and in particular catalogue records, that is XML files recording all data gathered by a cataloguer on a particular cultural property."
+         },
+         "dct:hasVersion": "2020.06.10-220351",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A31_CCBYSA40"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Catalogue Ontology (ArCo network)"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=OOPS.rdf"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=pelletConsistency_imports=NONE.txt"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The Catalogue module allows the description of concepts related to the Italian General Catalogue of Cultural Heritage (ICCD-MiBAC), and in particular catalogue records, that is XML files recording all data gathered by a cataloguer on a particular cultural property."
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@base <https://w3id.org/arco/ontology/catalogue> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <catalogue/> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix l0: <../../italia/onto/l0/> .\n@prefix CLV: <../../italia/onto/CLV/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix xml: <http://www.w3.org/XML/1998/namespace> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix a-cd: <context-description/> .",
+         "dataid:sha256sum": "e5ac04ed366dee3990e0d6be422d0e57e6dd688fc8bdae2b5b0496558bd0f724",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220351",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A31_CCBYSA40"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:42:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "77927",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=parsed.ttl\nStart loading\nJul 08, 2020 3:42:05 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://w3id.org/arco/ontology/catalogue @owl:versionIRI https://w3id.org/arco/ontology/catalogue/1.1\nFinished loading in 00:00:00.306\nInput size: Classes = 53, Properties = 98, Individuals = 9\nExpressivity: SROIF(D)\nStart consistency check\nFinished consistency check in 00:00:00.038",
+         "dataid:sha256sum": "7165548536bb16ac5cd17a33313cecdb727feb9e244071338772f4f0ae3ec7d9",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220351",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A31_CCBYSA40"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:42:07Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "844",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "8249a81677ff459582e1d416b79902fe1df4d9b936324ce171590e918bb99622",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220351",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A31_CCBYSA40"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:42:10Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2412",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n<rdf:RDF xmlns=\"https://w3id.org/arco/ontology/catalogue/\"\n     xml:base=\"https://w3id.org/arco/ontology/catalogue/\"\n     xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n     xmlns:l0=\"https://w3id.org/italia/onto/l0/\"\n     xmlns:CLV=\"https://w3id.org/italia/onto/CLV/\"\n     xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n     xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n     xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"\n     xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"",
+         "dataid:sha256sum": "bda8dba67b4f016f71a03e2ace9834b9e381b216681f8daa6b8370d700f58920",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220351",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A31_CCBYSA40"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:42:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "158004",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:CLV=\"https://w3id.org/italia/onto/CLV/\" xmlns:a-cd=\"https://w3id.org/arco/ontology/context-description/\" xmlns:arco=\"https://w3id.org/arco/ontology/arco/\" xmlns:core=\"https://w3id.org/arco/ontology/core/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:l0=\"https://w3id.org/italia/onto/l0/\" xmlns:opla=\"http://ontologydesignpatterns.org/opla/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:prov=\"http://www.w3.org/ns/prov#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:roapit=\"https://w3id.org/italia/onto/RO/\" xmlns:terms=\"http://purl.org/dc/terms/\" xmlns:tiapit=\"https://w3id.org/italia/onto/TI/\" xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"https://w3id.org/arco/ontology/catalogue/\" xml:base=\"https://w3id.org/arco/ontology/catalogue\">\n  <rdf:Description rdf:about=\"\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"\">\n    <owl:versionIRI rdf:resource=\"catalogue/1.1\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"\">\n    <owl:imports rdf:resource=\"core\"/>",
+         "dataid:sha256sum": "d7d1c4a084c37e64df8f042c45b3ebe4ce0a67f340d68fb2c4961607f045090e",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220351",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A31_CCBYSA40"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:42:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "239780",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.0.0.jar\n\n",
+         "dataid:sha256sum": "fcdd4ee978b74ae744e3205ebaee81c876347817db89cd283b1d71911a9e2047",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220351",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A31_CCBYSA40"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:42:14Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220351",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A31_CCBYSA40"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:42:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<https://w3id.org/arco/ontology/catalogue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<https://w3id.org/arco/ontology/catalogue> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/arco/ontology/catalogue/1.1> .\n<https://w3id.org/arco/ontology/catalogue> <http://www.w3.org/2002/07/owl#imports> <https://w3id.org/arco/ontology/core> .\n<https://w3id.org/arco/ontology/catalogue> <http://ontologydesignpatterns.org/opla/reusesPatternAsTemplate> <http://ontologydesignpatterns.org/cp/owl/classification.owl> .\n<https://w3id.org/arco/ontology/catalogue> <http://ontologydesignpatterns.org/opla/reusesPatternAsTemplate> <http://ontologydesignpatterns.org/cp/owl/sequence.owl> .\n<https://w3id.org/arco/ontology/catalogue> <http://purl.org/dc/elements/1.1/creator> \"Aldo Gangemi (ISTC-CNR, STLab)\" .\n<https://w3id.org/arco/ontology/catalogue> <http://purl.org/dc/elements/1.1/creator> \"Andrea Nuzzolese (ISTC-CNR, STLab)\" .\n<https://w3id.org/arco/ontology/catalogue> <http://purl.org/dc/elements/1.1/creator> \"Chiara Veninata (MiBACT, ICCD)\" .\n<https://w3id.org/arco/ontology/catalogue> <http://purl.org/dc/elements/1.1/creator> \"Ludovica Marinucci (ISTC-CNR, STLab)\" .\n<https://w3id.org/arco/ontology/catalogue> <http://purl.org/dc/elements/1.1/creator> \"Maria Letizia Mancinelli (MiBACT, ICCD)\" .",
+         "dataid:sha256sum": "52d7b12f95d0d37f3b428a913f5459cd2698c14973f0775b65b0e1ee0ddcc137",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220351",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A31_CCBYSA40"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:42:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "235229",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.io.AbstractOWLParser - URL connection input stream is compressed using gzip\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "03baf2776cf247f252d65d6bab32df3e36669fe1d3cb89b947fda340d6c3b3c6",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220351",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A31_CCBYSA40"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:42:14Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2412",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220351",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A31_CCBYSA40"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:42:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>Catalogue Ontology (ArCo network)</title><title>Catalogue Ontology (ArCo network)</title><title>Catalogue Ontology (ArCo network)</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"https://w3id.org/arco/ontology/catalogue\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "df4c63e239fe24c925f704514f01cc4ffcb14b4666bf056310d6e415eb1b792f",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220351",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A31_CCBYSA40"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:42:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "369303",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2020.05.20; 14:06:36\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"13198\",\n        \"e-tag\": \"W/\\\"4bec0589a2caa6f8c3ebe45ca36aeb8055e034b4294161f4c02a25dcfa47a9f0\\\"\",\n        \"lastModified\": \"\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Date': 'Wed, 20 May 2020 12:06:36 GMT', 'Server': 'Apache/2.4.29 (Ubuntu)', 'Access-Control-Allow-Origin': '*', 'Location': 'https://raw.githubusercontent.com/ICCD-MiBACT/ArCo/master/ArCo-release/ontologie/catalogue/catalogue.owl', 'Content-Length': '386', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'text/html; charset=iso-8859-1'}\",",
+         "dataid:sha256sum": "abdd291210e061e95c03fc4c8ca52a3b4c72e068413b30605afbada40a29686f",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220351",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A31_CCBYSA40"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:42:14Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2137",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=OOPS.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=OOPS.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<rdf:RDF\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n    xmlns:oops=\"http://oops.linkeddata.es/def#\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n    xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" > \n  <rdf:Description rdf:about=\"http://oops.linkeddata.es/data/e74dd2ca-e694-42d1-93fa-59b5a742e076\">\n    <oops:hasPitfall rdf:resource=\"http://oops.linkeddata.es/data/d5733765-20fc-4b03-82ec-3eea976fc5c2\"/>\n    <oops:hasPitfall rdf:resource=\"http://oops.linkeddata.es/data/6664e5c4-24c7-4ddf-b94d-3ddee5fd3668\"/>\n    <oops:hasPitfall rdf:resource=\"http://oops.linkeddata.es/data/a1a01064-dc0d-49b1-a1dc-32c910b2762b\"/>",
+         "dataid:sha256sum": "0edf191bec052ffb4edd66f8d59b460f8f691493aef50712816090031218c833",
+         "dataid-cv:type": "OOPS",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220351",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A31_CCBYSA40"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:42:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "24582",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=OOPS.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://w3id.org/arco/ontology/core/isTypeOf> ;",
+         "dataid:sha256sum": "8199d1297fdf89ec5cb52ad6066cbac67aa5dec665615aeae20c5aa3288cc94b",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220351",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A31_CCBYSA40"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:42:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "35148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351#arco--ontology--catalogue_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=parsed.ttl\nStart loading\nJul 08, 2020 3:42:07 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: https://w3id.org/arco/ontology/catalogue @owl:versionIRI https://w3id.org/arco/ontology/catalogue/1.1\nFinished loading in 00:00:00.314\nInput size: Classes = 53, Properties = 98, Individuals = 9\nExpressivity: SROIF(D)\nStart consistency check\nFinished consistency check in 00:00:00.040",
+         "dataid:sha256sum": "fa2be857877fa072a48154c9c54a193a76caffe2a2f6f5ed7bfe2ad546a36a15",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-220351",
+         "dct:issued": {
+            "@value": "2020-07-09T10:28:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://w3id.org/italia/controlled-vocabulary/licences/A31_CCBYSA40"
+         },
+         "dct:modified": {
+            "@value": "2020-07-08T01:42:07Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "844",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/arco--ontology--catalogue/2020.06.10-220351/arco--ontology--catalogue_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      }
+   ]
+}

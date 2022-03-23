@@ -1,0 +1,458 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/cartridges/kb-cartridge",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:vehnem"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/cartridges/kb-cartridge"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#me"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/cartridges"
+         },
+         "dataid:maintainer": {
+            "@id": "https://vehnem.github.io/webid.ttl#me"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "Koninklijke Bibliotheek - Cartridge"
+         },
+         "dct:hasVersion": "2020.08.02",
+         "dct:issued": {
+            "@value": "2020-08-02T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Koninklijke Bibliotheek - Cartridge"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#kb-cartridge_dbo_birthDate.jsonld.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#kb-cartridge_gp_69Vk.jsonld.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#kb-cartridge_dbo_gender.jsonld.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#kb-cartridge_dbo_deathDate.jsonld.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#kb-cartridge_dbo_gender_context.jsonld"
+            },
+            {
+               "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#kb-cartridge_dbo_birthDate_context.jsonld"
+            },
+            {
+               "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#kb-cartridge_dbo_deathDate_context.jsonld"
+            },
+            {
+               "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#kb-cartridge_unmapped.tbz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#kb-cartridge_gp_69Vk_context.jsonld"
+            }
+         ],
+         "prov:wasDerivedFrom": [
+            {
+               "@id": "https://databus.dbpedia.org/jj-author/mapping-management/global-ids/2019.10.23/global-ids_base58.tsv.bz2"
+            },
+            {
+               "@id": "https://databus.dbpedia.org/jj-author/id-management/global-ids/2020.07.30/global-ids_base58.tsv.bz2"
+            },
+            {
+               "@id": "https://databus.dbpedia.org/jj-author/kb/thesaurus/2020.07.29/thesaurus_persons.nt.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "Koninklijke Bibliotheek - Cartridge"
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#kb-cartridge_dbo_birthDate.jsonld.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02/kb-cartridge_dbo_birthDate.jsonld.bz2"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/birthDate\"},\"subject\":{\"@id\":\"http://data.bibliotheken.nl/id/dbnla/tege005\"},\"objects\":[{\"object\":{\"@value\":\"11xx\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"p_prov\":{\"@id\":\"http://schema.org/birthDate\"}}]}],\"@context\":\"prefusion_dbo%3AbirthDate_context.jsonld\",\"@id\":\"293618c6c51d97335d1ffb0564f1b1868d9b13749cdd1f3d4de3c8b84f9fec06\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/birthDate\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/CKrvh\"},\"objects\":[{\"object\":{\"@value\":\"1958\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p161430619\"},\"p_prov\":{\"@id\":\"http://schema.org/birthDate\"}}]}],\"@context\":\"prefusion_dbo%3AbirthDate_context.jsonld\",\"@id\":\"c7a0ccf1fb5c32b929ca033279a1e2a55c00a7068958e70d545bd05ca89fb994\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/birthDate\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/eBBF\"},\"objects\":[{\"object\":{\"@value\":\"1856\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p161796907\"},\"p_prov\":{\"@id\":\"http://schema.org/birthDate\"}}]}],\"@context\":\"prefusion_dbo%3AbirthDate_context.jsonld\",\"@id\":\"b5c5deb45f94d2f25b5a255d7a76ecc55d3e95aeb2cba6ca0c85bded0dd74eb7\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/birthDate\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/CLgT2\"},\"objects\":[{\"object\":{\"@value\":\"1933\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p075168901\"},\"p_prov\":{\"@id\":\"http://schema.org/birthDate\"}}]}],\"@context\":\"prefusion_dbo%3AbirthDate_context.jsonld\",\"@id\":\"32591984473f47dfb7ca7f0af88c1bb4362c8abc8efdd3a191fa773ca8713ecf\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/birthDate\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/1xuPX\"},\"objects\":[{\"object\":{\"@value\":\"1849\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p075126818\"},\"p_prov\":{\"@id\":\"http://schema.org/birthDate\"}}]}],\"@context\":\"prefusion_dbo%3AbirthDate_context.jsonld\",\"@id\":\"f0a2000fb9a1c1e1aad6acc24e4f8ddf73336fd562ce31e4a5f8e378c0ac5764\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/birthDate\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/4i5xC\"},\"objects\":[{\"object\":{\"@value\":\"1931\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p07131699X\"},\"p_prov\":{\"@id\":\"http://schema.org/birthDate\"}}]}],\"@context\":\"prefusion_dbo%3AbirthDate_context.jsonld\",\"@id\":\"62dce518e45c8e1350228135094c0c799811b7a9441133df6f2ac8eed2aedd32\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/birthDate\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/CXTSK\"},\"objects\":[{\"object\":{\"@value\":\"1955\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p14755294X\"},\"p_prov\":{\"@id\":\"http://schema.org/birthDate\"}}]}],\"@context\":\"prefusion_dbo%3AbirthDate_context.jsonld\",\"@id\":\"d1b3374443d40f47c2c4ad4e4b2c88ccfbffc917ffd084d1e7f03045241c7bf7\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/birthDate\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/A4CTj\"},\"objects\":[{\"object\":{\"@value\":\"1982\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p339601485\"},\"p_prov\":{\"@id\":\"http://schema.org/birthDate\"}}]}],\"@context\":\"prefusion_dbo%3AbirthDate_context.jsonld\",\"@id\":\"1c4019c06caa5eafd7c5d8632f5f2114941648e8019faab7d380be3ba5f65a3a\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/birthDate\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/CQboD\"},\"objects\":[{\"object\":{\"@value\":\"1771\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p070634076\"},\"p_prov\":{\"@id\":\"http://schema.org/birthDate\"}}]}],\"@context\":\"prefusion_dbo%3AbirthDate_context.jsonld\",\"@id\":\"0c1e1d06f893e671851e078f3a49080b7394228710d60b5bb092f5d55baaa33b\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/birthDate\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/4kHPN\"},\"objects\":[{\"object\":{\"@value\":\"1825\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p072778725\"},\"p_prov\":{\"@id\":\"http://schema.org/birthDate\"}}]}],\"@context\":\"prefusion_dbo%3AbirthDate_context.jsonld\",\"@id\":\"d0dac700b234dd38af2d83a356dfd57bda38d2526956b38e1b5b6ad68e471fc6\"}",
+         "dataid:sha256sum": "c19ba5546e8e4a52f5e1943a7fcc71117671f9df9fd994997c0f8c780c7c67fe",
+         "dataid-cv:tag": [
+            "birthDate",
+            "dbo"
+         ],
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.08.02",
+         "dct:issued": {
+            "@value": "2020-08-02T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-08-04T12:26:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "35814259",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/dbpedia/cartridges/kb-cartridge/2020.08.02/kb-cartridge_dbo_birthDate.jsonld.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#kb-cartridge_gp_69Vk.jsonld.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02/kb-cartridge_gp_69Vk.jsonld.bz2"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "{\"predicate\":{\"@id\":\"https://global.dbpedia.org/property/69Vk\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/CJMBD\"},\"objects\":[{\"object\":{\"@id\":\"https://global.dbpedia.org/id/CJMBD\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p130357324\"},\"p_prov\":{\"@id\":\"http://www.w3.org/2002/07/owl#sameAs\"},\"o_prov\":{\"@id\":\"http://viaf.org/viaf/245552511\"}}]}],\"@context\":\"prefusion_gp%3A69Vk_context.jsonld\",\"@id\":\"def5d58f8893544a4d6226c117da70bcd4a4355106d803c6310b9f1c2fe7e913\"}\n{\"predicate\":{\"@id\":\"https://global.dbpedia.org/property/69Vk\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/CU8iu\"},\"objects\":[{\"object\":{\"@id\":\"https://global.dbpedia.org/id/CU8iu\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p074054309\"},\"p_prov\":{\"@id\":\"http://www.w3.org/2002/07/owl#sameAs\"},\"o_prov\":{\"@id\":\"http://viaf.org/viaf/47159\"}}]}],\"@context\":\"prefusion_gp%3A69Vk_context.jsonld\",\"@id\":\"c071928643abf99fb3439dfd9d1a7bba78ae0abf749ac6b0c350288c72760323\"}\n{\"predicate\":{\"@id\":\"https://global.dbpedia.org/property/69Vk\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/CRmG4\"},\"objects\":[{\"object\":{\"@id\":\"https://global.dbpedia.org/id/CRmG4\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p391101382\"},\"p_prov\":{\"@id\":\"http://www.w3.org/2002/07/owl#sameAs\"},\"o_prov\":{\"@id\":\"http://viaf.org/viaf/317173876\"}}]}],\"@context\":\"prefusion_gp%3A69Vk_context.jsonld\",\"@id\":\"2185b0cbeba0949d4e15ee14e2abe2d84d2624fd866d67f21d3c312c3a5b4197\"}\n{\"predicate\":{\"@id\":\"https://global.dbpedia.org/property/69Vk\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/CJoRg\"},\"objects\":[{\"object\":{\"@id\":\"https://global.dbpedia.org/id/CJoRg\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p277951011\"},\"p_prov\":{\"@id\":\"http://www.w3.org/2002/07/owl#sameAs\"},\"o_prov\":{\"@id\":\"http://viaf.org/viaf/284411695\"}}]}],\"@context\":\"prefusion_gp%3A69Vk_context.jsonld\",\"@id\":\"0a4e5e002e7c727824dc2e355a112e467d5d80d3861e67f418fefc302e93b9d1\"}\n{\"predicate\":{\"@id\":\"https://global.dbpedia.org/property/69Vk\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/A9R7m\"},\"objects\":[{\"object\":{\"@id\":\"https://global.dbpedia.org/id/A9R7m\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p243414609\"},\"p_prov\":{\"@id\":\"http://www.w3.org/2002/07/owl#sameAs\"},\"o_prov\":{\"@id\":\"http://viaf.org/viaf/18114772\"}}]}],\"@context\":\"prefusion_gp%3A69Vk_context.jsonld\",\"@id\":\"c0879440a5d147226b957484df833c8c5a5f9905e017a739c05f562943f1812f\"}\n{\"predicate\":{\"@id\":\"https://global.dbpedia.org/property/69Vk\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/CLtxp\"},\"objects\":[{\"object\":{\"@id\":\"https://global.dbpedia.org/id/CLtxp\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p341680109\"},\"p_prov\":{\"@id\":\"http://www.w3.org/2002/07/owl#sameAs\"},\"o_prov\":{\"@id\":\"http://viaf.org/viaf/26534199\"}}]}],\"@context\":\"prefusion_gp%3A69Vk_context.jsonld\",\"@id\":\"c4649e53f96454e9e94d45a54d16979b151e3c3eae94371955b48be3b0884e50\"}\n{\"predicate\":{\"@id\":\"https://global.dbpedia.org/property/69Vk\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/CSDip\"},\"objects\":[{\"object\":{\"@id\":\"https://global.dbpedia.org/id/CSDip\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p197768296\"},\"p_prov\":{\"@id\":\"http://www.w3.org/2002/07/owl#sameAs\"},\"o_prov\":{\"@id\":\"http://viaf.org/viaf/282109597\"}}]}],\"@context\":\"prefusion_gp%3A69Vk_context.jsonld\",\"@id\":\"177217b9051d616106bc032803868e0cd44c723e026b5d2321046f5e5c03cbbd\"}\n{\"predicate\":{\"@id\":\"https://global.dbpedia.org/property/69Vk\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/CR1vF\"},\"objects\":[{\"object\":{\"@id\":\"https://global.dbpedia.org/id/CR1vF\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p345732723\"},\"p_prov\":{\"@id\":\"http://www.w3.org/2002/07/owl#sameAs\"},\"o_prov\":{\"@id\":\"http://viaf.org/viaf/290294816\"}}]}],\"@context\":\"prefusion_gp%3A69Vk_context.jsonld\",\"@id\":\"549d1112c2abadfd89e0ead5c374fefc93c3edf74e4a1c6ca22c9e1c632379c0\"}\n{\"predicate\":{\"@id\":\"https://global.dbpedia.org/property/69Vk\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/CHZ1u\"},\"objects\":[{\"object\":{\"@id\":\"https://global.dbpedia.org/id/CHZ1u\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p302383999\"},\"p_prov\":{\"@id\":\"http://www.w3.org/2002/07/owl#sameAs\"},\"o_prov\":{\"@id\":\"http://viaf.org/viaf/73081453\"}}]}],\"@context\":\"prefusion_gp%3A69Vk_context.jsonld\",\"@id\":\"3437747c0fac678173fdf007c14baf6cda3a209ad34fee548dec88cac4478f80\"}\n{\"predicate\":{\"@id\":\"https://global.dbpedia.org/property/69Vk\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/CUMfZ\"},\"objects\":[{\"object\":{\"@id\":\"https://global.dbpedia.org/id/CUMfZ\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p081840268\"},\"p_prov\":{\"@id\":\"http://www.w3.org/2002/07/owl#sameAs\"},\"o_prov\":{\"@id\":\"http://viaf.org/viaf/50467691\"}}]}],\"@context\":\"prefusion_gp%3A69Vk_context.jsonld\",\"@id\":\"d6fd75f4a8ea305156b7a898f12a46b1e886e3088dba8c4e47cd9cc04bf69d6b\"}",
+         "dataid:sha256sum": "41ec898947535a65b6870c1cbd3376efa1c9e3e1e5028e7ecc9f638c3e1031ed",
+         "dataid-cv:tag": [
+            "69Vk",
+            "gp"
+         ],
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.08.02",
+         "dct:issued": {
+            "@value": "2020-08-02T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-08-04T12:26:02Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "141762030",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/dbpedia/cartridges/kb-cartridge/2020.08.02/kb-cartridge_gp_69Vk.jsonld.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#kb-cartridge_dbo_gender.jsonld.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02/kb-cartridge_dbo_gender.jsonld.bz2"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/gender\"},\"subject\":{\"@id\":\"http://data.bibliotheken.nl/id/dbnla/veen011\"},\"objects\":[{\"object\":{\"@id\":\"http://schema.org/Male\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"p_prov\":{\"@id\":\"http://schema.org/gender\"}}]}],\"@context\":\"prefusion_dbo%3Agender_context.jsonld\",\"@id\":\"fae5d0c97578afa1f6a4756f2182df735ffc11605af1386c35cea60bc05af8e8\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/gender\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/QZd6\"},\"objects\":[{\"object\":{\"@id\":\"http://schema.org/Male\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/dbnla/mast009\"},\"p_prov\":{\"@id\":\"http://schema.org/gender\"}}]}],\"@context\":\"prefusion_dbo%3Agender_context.jsonld\",\"@id\":\"dd4d6da0fabcf4e7b51a22c01a3aa57eeff1333f9a047c5c1f739d115c2a91d0\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/gender\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/A9167\"},\"objects\":[{\"object\":{\"@id\":\"http://schema.org/Male\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/dbnla/gros019\"},\"p_prov\":{\"@id\":\"http://schema.org/gender\"}}]}],\"@context\":\"prefusion_dbo%3Agender_context.jsonld\",\"@id\":\"7443c38b73605f30dbcd33c970b268359c25e1b86f49bf319a4098e26def17b3\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/gender\"},\"subject\":{\"@id\":\"http://data.bibliotheken.nl/id/dbnla/leop022\"},\"objects\":[{\"object\":{\"@id\":\"http://schema.org/Male\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"p_prov\":{\"@id\":\"http://schema.org/gender\"}}]}],\"@context\":\"prefusion_dbo%3Agender_context.jsonld\",\"@id\":\"38efff162158d20ec45ff0425a49661de21d0d7dd418a3997ebba11ac7c363bc\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/gender\"},\"subject\":{\"@id\":\"http://data.bibliotheken.nl/id/dbnla/vond013\"},\"objects\":[{\"object\":{\"@id\":\"http://schema.org/Female\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"p_prov\":{\"@id\":\"http://schema.org/gender\"}}]}],\"@context\":\"prefusion_dbo%3Agender_context.jsonld\",\"@id\":\"2469169c766b22c8504c1cd877ce96f54e785015bf74d5e51ef3a939c34f9a09\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/gender\"},\"subject\":{\"@id\":\"http://data.bibliotheken.nl/id/dbnla/unro001\"},\"objects\":[{\"object\":{\"@id\":\"http://schema.org/Male\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"p_prov\":{\"@id\":\"http://schema.org/gender\"}}]}],\"@context\":\"prefusion_dbo%3Agender_context.jsonld\",\"@id\":\"c9cbd52d7337171abfb4da6d216c18df3aec41b3aa8ec988b1c11ca2eb2dae35\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/gender\"},\"subject\":{\"@id\":\"http://data.bibliotheken.nl/id/dbnla/mitz003\"},\"objects\":[{\"object\":{\"@id\":\"http://schema.org/Male\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"p_prov\":{\"@id\":\"http://schema.org/gender\"}}]}],\"@context\":\"prefusion_dbo%3Agender_context.jsonld\",\"@id\":\"d7808cb64698c99725c825426fb4c981a3237975214359077cd73e96d8ad72e2\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/gender\"},\"subject\":{\"@id\":\"http://data.bibliotheken.nl/id/dbnla/reys006\"},\"objects\":[{\"object\":{\"@id\":\"http://schema.org/Male\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"p_prov\":{\"@id\":\"http://schema.org/gender\"}}]}],\"@context\":\"prefusion_dbo%3Agender_context.jsonld\",\"@id\":\"ed5199571ba6aea6486cfeac9d0d72f3c08c277cf2cb997735ad1dab9f08abe5\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/gender\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/4vTZN\"},\"objects\":[{\"object\":{\"@id\":\"http://schema.org/Female\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/dbnla/kors010\"},\"p_prov\":{\"@id\":\"http://schema.org/gender\"}}]}],\"@context\":\"prefusion_dbo%3Agender_context.jsonld\",\"@id\":\"c464a6f387424e7373bceb33f8ed9bfb6d1487e700ba91c97291749660863766\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/gender\"},\"subject\":{\"@id\":\"http://data.bibliotheken.nl/id/dbnla/meyl003\"},\"objects\":[{\"object\":{\"@id\":\"http://schema.org/Female\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"p_prov\":{\"@id\":\"http://schema.org/gender\"}}]}],\"@context\":\"prefusion_dbo%3Agender_context.jsonld\",\"@id\":\"ea87eb5492aa203bc1cdbe33583cf6206a1498ee9101e56bb57cea87bd4744fe\"}",
+         "dataid:sha256sum": "bd5176c6e90208e43266d3f3c5d71641f1eb51df55c3ea630f41c78e1c9626b0",
+         "dataid-cv:tag": [
+            "dbo",
+            "gender"
+         ],
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.08.02",
+         "dct:issued": {
+            "@value": "2020-08-02T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-08-04T12:26:02Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4098705",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/dbpedia/cartridges/kb-cartridge/2020.08.02/kb-cartridge_dbo_gender.jsonld.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#kb-cartridge_dbo_deathDate.jsonld.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02/kb-cartridge_dbo_deathDate.jsonld.bz2"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/deathDate\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/CMSeJ\"},\"objects\":[{\"object\":{\"@value\":\"1767\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p394344715\"},\"p_prov\":{\"@id\":\"http://schema.org/deathDate\"}}]}],\"@context\":\"prefusion_dbo%3AdeathDate_context.jsonld\",\"@id\":\"20133784c244af85c02914543bab8a9a6e01fef7617c60819ba8acd095af651a\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/deathDate\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/CaXJx\"},\"objects\":[{\"object\":{\"@value\":\"1813\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p353537411\"},\"p_prov\":{\"@id\":\"http://schema.org/deathDate\"}}]}],\"@context\":\"prefusion_dbo%3AdeathDate_context.jsonld\",\"@id\":\"26d36be83d1c5b3ce54fe0c9e0007a6c83cb8b2dfec9e9fb7870cce30a3c6f5b\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/deathDate\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/2uEDP\"},\"objects\":[{\"object\":{\"@value\":\"50 n. Chr\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p069311048\"},\"p_prov\":{\"@id\":\"http://schema.org/deathDate\"}}]}],\"@context\":\"prefusion_dbo%3AdeathDate_context.jsonld\",\"@id\":\"dcb2f90aa2e47f7de0e6e6b3fa43fc3bf596d5c776096d371aba37d6bed08129\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/deathDate\"},\"subject\":{\"@id\":\"http://data.bibliotheken.nl/id/dbnla/cuyp029\"},\"objects\":[{\"object\":{\"@value\":\"1918-09-30\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"p_prov\":{\"@id\":\"http://schema.org/deathDate\"}}]}],\"@context\":\"prefusion_dbo%3AdeathDate_context.jsonld\",\"@id\":\"afdff7578baf3926faddbdd8c56fdd3e4b952f101768d1db12c4bb970c7e49da\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/deathDate\"},\"subject\":{\"@id\":\"http://data.bibliotheken.nl/id/dbnla/bake010\"},\"objects\":[{\"object\":{\"@value\":\"1948\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"p_prov\":{\"@id\":\"http://schema.org/deathDate\"}}]}],\"@context\":\"prefusion_dbo%3AdeathDate_context.jsonld\",\"@id\":\"e67057f963ed22a41eaafacaa0623c52740c41bd2937149db794a783ec8ab775\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/deathDate\"},\"subject\":{\"@id\":\"http://data.bibliotheken.nl/id/dbnla/coll032\"},\"objects\":[{\"object\":{\"@value\":\"1737-09-10\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"p_prov\":{\"@id\":\"http://schema.org/deathDate\"}}]}],\"@context\":\"prefusion_dbo%3AdeathDate_context.jsonld\",\"@id\":\"02939ddd02b69c467dbbe77c4c465d688c3509ee27ea04bed07f890cb9bc189d\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/deathDate\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/CXBZQ\"},\"objects\":[{\"object\":{\"@value\":\"1972\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p308682904\"},\"p_prov\":{\"@id\":\"http://schema.org/deathDate\"}}]}],\"@context\":\"prefusion_dbo%3AdeathDate_context.jsonld\",\"@id\":\"d2e773d95fe2ce8113551bd2129de468f65b985617f067a7be6abd481a70ac37\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/deathDate\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/4jHv6\"},\"objects\":[{\"object\":{\"@value\":\"1969\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p318743086\"},\"p_prov\":{\"@id\":\"http://schema.org/deathDate\"}}]}],\"@context\":\"prefusion_dbo%3AdeathDate_context.jsonld\",\"@id\":\"a2b0c90228595f885e5390c920215d16be4814cb016e4f6eac4d0c92d0dfba59\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/deathDate\"},\"subject\":{\"@id\":\"https://global.dbpedia.org/id/2vvQz\"},\"objects\":[{\"object\":{\"@value\":\"1959\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"s_prov\":{\"@id\":\"http://data.bibliotheken.nl/id/thes/p069973199\"},\"p_prov\":{\"@id\":\"http://schema.org/deathDate\"}}]}],\"@context\":\"prefusion_dbo%3AdeathDate_context.jsonld\",\"@id\":\"1d5feeb2d9f4649676ce766332845fb6125ae9db135254f91e989d94eaf1edc6\"}\n{\"predicate\":{\"@id\":\"http://dbpedia.org/ontology/deathDate\"},\"subject\":{\"@id\":\"http://data.bibliotheken.nl/id/dbnla/vos_089\"},\"objects\":[{\"object\":{\"@value\":\"1878-10-27\",\"@type\":\"http://www.w3.org/2001/XMLSchema#string\"},\"prov\":[{\"src\":{\"@id\":\"d0:persons.nt.bz2\"},\"p_prov\":{\"@id\":\"http://schema.org/deathDate\"}}]}],\"@context\":\"prefusion_dbo%3AdeathDate_context.jsonld\",\"@id\":\"87c466bbc385c692b99dfb83ba742f566e5eb7335030461ebadef7ee815c66c1\"}",
+         "dataid:sha256sum": "78ab2e22ba478710708ea3132dfa5247be3f5500cbac03614f8d71d3a3420a6e",
+         "dataid-cv:tag": [
+            "dbo",
+            "deathDate"
+         ],
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.08.02",
+         "dct:issued": {
+            "@value": "2020-08-02T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-08-04T12:26:02Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "12109319",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/dbpedia/cartridges/kb-cartridge/2020.08.02/kb-cartridge_dbo_deathDate.jsonld.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#kb-cartridge_dbo_gender_context.jsonld",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02/kb-cartridge_dbo_gender_context.jsonld"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "{\"@context\":{\"@base\":\"http://dbpedia.org/fusion/\",\"@vocab\":\"http://dbpedia.org/fusion/vocab#\",\"d0\":\"https://databus.dbpedia.org/jj-author/kb/thesaurus/2020.07.29/thesaurus_\"}}",
+         "dataid:sha256sum": "071328ba984f3f8d3f50368a7c7d788e4cd27436dd3793f46a08e34dc80cf9c8",
+         "dataid-cv:tag": [
+            "context",
+            "dbo",
+            "gender"
+         ],
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.08.02",
+         "dct:issued": {
+            "@value": "2020-08-02T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-08-04T12:26:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "175",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/dbpedia/cartridges/kb-cartridge/2020.08.02/kb-cartridge_dbo_gender_context.jsonld"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#kb-cartridge_dbo_birthDate_context.jsonld",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02/kb-cartridge_dbo_birthDate_context.jsonld"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "{\"@context\":{\"@base\":\"http://dbpedia.org/fusion/\",\"@vocab\":\"http://dbpedia.org/fusion/vocab#\",\"d0\":\"https://databus.dbpedia.org/jj-author/kb/thesaurus/2020.07.29/thesaurus_\"}}",
+         "dataid:sha256sum": "071328ba984f3f8d3f50368a7c7d788e4cd27436dd3793f46a08e34dc80cf9c8",
+         "dataid-cv:tag": [
+            "birthDate",
+            "dbo",
+            "context"
+         ],
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.08.02",
+         "dct:issued": {
+            "@value": "2020-08-02T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-08-04T12:26:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "175",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/dbpedia/cartridges/kb-cartridge/2020.08.02/kb-cartridge_dbo_birthDate_context.jsonld"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#kb-cartridge_dbo_deathDate_context.jsonld",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02/kb-cartridge_dbo_deathDate_context.jsonld"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "{\"@context\":{\"@base\":\"http://dbpedia.org/fusion/\",\"@vocab\":\"http://dbpedia.org/fusion/vocab#\",\"d0\":\"https://databus.dbpedia.org/jj-author/kb/thesaurus/2020.07.29/thesaurus_\"}}",
+         "dataid:sha256sum": "071328ba984f3f8d3f50368a7c7d788e4cd27436dd3793f46a08e34dc80cf9c8",
+         "dataid-cv:tag": [
+            "dbo",
+            "deathDate",
+            "context"
+         ],
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.08.02",
+         "dct:issued": {
+            "@value": "2020-08-02T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-08-04T12:26:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "175",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/dbpedia/cartridges/kb-cartridge/2020.08.02/kb-cartridge_dbo_deathDate_context.jsonld"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#kb-cartridge_unmapped.tbz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "tar",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02/kb-cartridge_unmapped.tbz2"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "",
+         "dataid:sha256sum": "f3f3c51edd42cb5d1ee9a99c6a11910908fb1ffaf09301afea0ae5776d6ebbb8",
+         "dataid-cv:tag": "unmapped",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.08.02",
+         "dct:issued": {
+            "@value": "2020-08-02T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-08-04T12:26:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "766136320",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/dbpedia/cartridges/kb-cartridge/2020.08.02/kb-cartridge_unmapped.tbz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02#kb-cartridge_gp_69Vk_context.jsonld",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/cartridges/kb-cartridge/2020.08.02/kb-cartridge_gp_69Vk_context.jsonld"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "{\"@context\":{\"@base\":\"http://dbpedia.org/fusion/\",\"@vocab\":\"http://dbpedia.org/fusion/vocab#\",\"d0\":\"https://databus.dbpedia.org/jj-author/kb/thesaurus/2020.07.29/thesaurus_\"}}",
+         "dataid:sha256sum": "071328ba984f3f8d3f50368a7c7d788e4cd27436dd3793f46a08e34dc80cf9c8",
+         "dataid-cv:tag": [
+            "context",
+            "69Vk",
+            "gp"
+         ],
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.08.02",
+         "dct:issued": {
+            "@value": "2020-08-02T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-08-04T12:26:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "175",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/dbpedia/cartridges/kb-cartridge/2020.08.02/kb-cartridge_gp_69Vk_context.jsonld"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      }
+   ]
+}

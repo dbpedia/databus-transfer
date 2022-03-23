@@ -1,0 +1,630 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/dati.cdec.it"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The ontology describing the Shoah domain, proposed here in beta version, aims to formally describe concepts and relationships that characterize the process of persecution and deportation of Jews in Italy between 1943 and 1945."
+         },
+         "dct:hasVersion": "2020.06.10-181402",
+         "dct:issued": {
+            "@value": "2020-07-08T15:02:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "http://dati.cdec.it/lod/shoah/"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=orig.rdf"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=parsed.ttl"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The ontology describing the Shoah domain, proposed here in beta version, aims to formally describe concepts and relationships that characterize the process of persecution and deportation of Jews in Italy between 1943 and 1945."
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-181402",
+         "dct:issued": {
+            "@value": "2020-07-08T15:02:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:33:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"http://dati.cdec.it/lod/shoah/\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "25576e4672fa1dca9bef24f44a974856b39b31044c6fb67c9337a637bd6b812d",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-181402",
+         "dct:issued": {
+            "@value": "2020-07-08T15:02:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:33:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "38279",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2020.05.20; 17:36:37\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"13711\",\n        \"e-tag\": \"\",\n        \"lastModified\": \"Mon, 03 Dec 2018 09:19:57 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Date': 'Wed, 20 May 2020 15:36:37 GMT', 'Server': 'Apache', 'Location': 'http://dati.cdec.it/lod/shoah/shoah.rdf', 'Content-Length': '246', 'Content-Type': 'text/html; charset=iso-8859-1'}\",",
+         "dataid:sha256sum": "1acdce60f58005abc61a7ef197fdc4e85c55db7579dd68461c624783cea014b5",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-181402",
+         "dct:issued": {
+            "@value": "2020-07-08T15:02:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:34:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1197",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=parsed.ttl\nStart loading\nJul 07, 2020 11:33:47 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://dati.cdec.it/lod/shoah/ @owl:versionIRI http://dati.cdec.it/lod/shoah/0.1\nFinished loading in 00:00:00.147\nInput size: Classes = 12, Properties = 49, Individuals = 5\nExpressivity: ALCH(D)\nStart consistency check\nFinished consistency check in 00:00:00.018",
+         "dataid:sha256sum": "b0e49680910a392d36f2c02f992a655589ac3df505e8dbc73f48ed71919db32a",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-181402",
+         "dct:issued": {
+            "@value": "2020-07-08T15:02:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:33:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "797",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://dati.cdec.it/lod/shoah/subCampOf> ;",
+         "dataid:sha256sum": "b38ba7d3f91a2442d67b9f95597dd647832345833f39ff14b51b83beace81d54",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-181402",
+         "dct:issued": {
+            "@value": "2020-07-08T15:02:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:33:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "41015",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=parsed.ttl\nStart loading\nJul 07, 2020 11:33:45 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://dati.cdec.it/lod/shoah/ @owl:versionIRI http://dati.cdec.it/lod/shoah/0.1\nFinished loading in 00:00:00.146\nInput size: Classes = 12, Properties = 49, Individuals = 5\nExpressivity: ALCH(D)\nStart consistency check\nFinished consistency check in 00:00:00.017",
+         "dataid:sha256sum": "93cfec90113f69c4598831db38f99a131b26583287f405046c6fb65f6be075b1",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-181402",
+         "dct:issued": {
+            "@value": "2020-07-08T15:02:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:33:47Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "797",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[Fatal Error] :6:3: The element type \"hr\" must be terminated by the matching end-tag \"</hr>\".\n[Fatal Error] :6:3: The element type \"hr\" must be terminated by the matching end-tag \"</hr>\".",
+         "dataid:sha256sum": "8e7ba4843dbe94e07b786fd5b8459617599da13bc8534bc0f253290950ac4134",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-181402",
+         "dct:issued": {
+            "@value": "2020-07-08T15:02:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:34:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "20001",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:vs=\"http://www.w3.org/2003/06/sw-vocab-status/ns#\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"http://dati.cdec.it/lod/shoah/\" xml:base=\"http://dati.cdec.it/lod/shoah/\">\n  <rdf:Description rdf:about=\"\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"\">\n    <owl:versionIRI rdf:resource=\"0.1\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"\">\n    <dc:creator>Laura Brazzo</dc:creator>",
+         "dataid:sha256sum": "5966a1c9dcbb9acff74ab5cacc80bbb9508ac795799d261ea7115bdc604cf9df",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-181402",
+         "dct:issued": {
+            "@value": "2020-07-08T15:02:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:33:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "24158",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://dati.cdec.it/lod/shoah/> ;\n            sh:resultMessage \"No dct:license statement found\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "39a4bfeb04ff7d50b1a80c15e16f4d7db6cc09e123efcab621d5b94009ee29aa",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-181402",
+         "dct:issued": {
+            "@value": "2020-07-08T15:02:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:33:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "649",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.0.0.jar\n\n",
+         "dataid:sha256sum": "fcdd4ee978b74ae744e3205ebaee81c876347817db89cd283b1d71911a9e2047",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-181402",
+         "dct:issued": {
+            "@value": "2020-07-08T15:02:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:34:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://dati.cdec.it/lod/shoah/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://dati.cdec.it/lod/shoah/> <http://www.w3.org/2002/07/owl#versionIRI> <http://dati.cdec.it/lod/shoah/0.1> .\n<http://dati.cdec.it/lod/shoah/> <http://purl.org/dc/elements/1.1/creator> \"Laura Brazzo\" .\n<http://dati.cdec.it/lod/shoah/> <http://purl.org/dc/elements/1.1/description> \"The ontology describing the Shoah domain, proposed here in beta version, aims to formally describe concepts and relationships that characterize the process of persecution and deportation of Jews in Italy between 1943 and 1945.\"@en .\n<http://dati.cdec.it/lod/shoah/> <http://purl.org/vocab/vann/preferredNamespaceUri> \"http://dati.cdec.it/lod/shoah/\" .\n<http://dati.cdec.it/lod/shoah/> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/vocab/bio/0.1/> .\n<http://dati.cdec.it/lod/shoah/> <http://purl.org/dc/terms/creator> <https://plus.google.com/+silviamazzini_lod/> .\n<http://dati.cdec.it/lod/shoah/> <http://purl.org/dc/terms/creator> <http://dati.cdec.it/lod/shoah/www.cdec.it> .\n<http://dati.cdec.it/lod/shoah/> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .\n<http://dati.cdec.it/lod/shoah/> <http://www.w3.org/2002/07/owl#versionInfo> \"beta version\"^^<http://www.w3.org/2001/XMLSchema#string> .",
+         "dataid:sha256sum": "d12b0a116ccd8d06dd95c8129128eef272bed1021d6d97b8d750cdf4f7a1d3cf",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-181402",
+         "dct:issued": {
+            "@value": "2020-07-08T15:02:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:33:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "23436",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=orig.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=orig.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n<rdf:RDF\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns=\"http://dati.cdec.it/lod/shoah/\"\n    xmlns:cc=\"http://creativecommons.org/ns#\"\n    xmlns:vs=\"http://www.w3.org/2003/06/sw-vocab-status/ns#\"\n    xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n    xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n    xmlns:dcterms=\"http://purl.org/dc/terms/\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"",
+         "dataid:sha256sum": "fdb91a3ced7aec564c85ef50d503e076eebe2def362292112474d3cd2264f44a",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-181402",
+         "dct:issued": {
+            "@value": "2020-07-08T15:02:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:33:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "13712",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=orig.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[Fatal Error] :6:3: The element type \"hr\" must be terminated by the matching end-tag \"</hr>\".\n[Fatal Error] :6:3: The element type \"hr\" must be terminated by the matching end-tag \"</hr>\".",
+         "dataid:sha256sum": "8e7ba4843dbe94e07b786fd5b8459617599da13bc8534bc0f253290950ac4134",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-181402",
+         "dct:issued": {
+            "@value": "2020-07-08T15:02:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:34:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "20001",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402#lod--shoah_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@base <http://dati.cdec.it/lod/shoah/> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <> .\n@prefix cc: <http://creativecommons.org/ns#> .\n@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix vann: <http://purl.org/vocab/vann/> .",
+         "dataid:sha256sum": "83d0b5662024df989c04793f69f7abb84c6a14363eef1e075a945d0ceb63d445",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-181402",
+         "dct:issued": {
+            "@value": "2020-07-08T15:02:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T21:33:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "6590",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.cdec.it/lod--shoah/2020.06.10-181402/lod--shoah_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      }
+   ]
+}

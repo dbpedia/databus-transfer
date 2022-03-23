@@ -1,0 +1,171 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/generic/citations/2020.06.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/citations",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/citations/2020.06.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/generic/citations"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/generic"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/generic/citations/2020.06.01"
+         },
+         "dataid-debug:codeReference": {
+            "@id": "https://github.com/dbpedia/extraction-framework/blob/master/core/src/org/dbpedia/extraction/mappings/CitationExtractor.scala"
+         },
+         "dataid-debug:documentationLocation": {
+            "@id": "https://git.informatik.uni-leipzig.de/dbpedia-assoc/marvin-config/-/tree/master/databus-poms/dbpedia/generic/citations"
+         },
+         "dataid-debug:feedbackChannel": {
+            "@id": "https://forum.dbpedia.org/c/data/databus/14"
+         },
+         "dataid-debug:issueTracker": {
+            "@id": "https://github.com/dbpedia/extraction-framework/issues"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/a83f55f37efa63cab80e09d59e1aab3f157d17f6 . After its releases, data is cleaned and persisted under the DBpedia account. ) Contains citations from articles and bibliographic information of the references"
+         },
+         "dct:hasVersion": "2020.06.01",
+         "dct:issued": {
+            "@value": "2020-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Citations and References"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/generic/citations/2020.06.01#citations_lang=en_links.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/citations/2020.06.01#citations_lang=en_data.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/a83f55f37efa63cab80e09d59e1aab3f157d17f6 . After its releases, data is cleaned and persisted under the DBpedia account. ) Contains citations from articles and bibliographic information of the references"
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:lang",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/citations/2020.06.01#citations_lang=en_links.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/citations/2020.06.01/citations_lang=en_links.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-06-15T22:04:34Z\n<http://www.stockholmfilmfestival.se/en/festival/1997/film/actrius> <http://dbpedia.org/property/isCitedBy> <http://dbpedia.org/resource/Actrius> .\n<http://www.mrqe.com/movie_reviews/actrius-m100030469%7Cpublisher=mrqe> <http://dbpedia.org/property/isCitedBy> <http://dbpedia.org/resource/Actrius> .\n<http://barbarabranden.com/interview4.html> <http://dbpedia.org/property/isCitedBy> <http://dbpedia.org/resource/List_of_Atlas_Shrugged_characters> .\n<http://books.google.com/books%3Fvid=ISBN978-1-101-13721-5> <http://dbpedia.org/property/isCitedBy> <http://dbpedia.org/resource/List_of_Atlas_Shrugged_characters> .\n<http://books.google.com/books%3Fvid=ISBN0-313-30321-5> <http://dbpedia.org/property/isCitedBy> <http://dbpedia.org/resource/List_of_Atlas_Shrugged_characters> .\n<http://books.google.com/books%3Fvid=ISBN978-0-7391-2779-7> <http://dbpedia.org/property/isCitedBy> <http://dbpedia.org/resource/List_of_Atlas_Shrugged_characters> .\n<http://books.google.com/books%3Fvid=ISBN0-525-93418-9> <http://dbpedia.org/property/isCitedBy> <http://dbpedia.org/resource/List_of_Atlas_Shrugged_characters> .\n<http://books.google.com/books%3Fvid=ISBN0-7546-5533-4> <http://dbpedia.org/property/isCitedBy> <http://dbpedia.org/resource/List_of_Atlas_Shrugged_characters> .\n<http://www.penguin.com.au/products/9781405904674/animalia-colouring-book> <http://dbpedia.org/property/isCitedBy> <http://dbpedia.org/resource/Animalia_(book)> .",
+         "dataid:sha256sum": "596afa2f736a2eedee92c0c6749e4d201529ece032409633d76e1821a24f7481",
+         "dataid-cv:lang": "en",
+         "dataid-cv:tag": "links",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.01",
+         "dct:issued": {
+            "@value": "2020-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-06-17T19:42:41Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "496190736",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/citations/2020.06.01/citations_lang=en_links.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/citations/2020.06.01#citations_lang=en_data.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/citations/2020.06.01/citations_lang=en_data.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-06-15T22:04:34Z\n<http://www.stockholmfilmfestival.se/en/festival/1997/film/actrius> <http://dbpedia.org/property/title> \"Actrius\" .\n<http://www.stockholmfilmfestival.se/en/festival/1997/film/actrius> <http://dbpedia.org/property/date> \"1997\" .\n<http://www.stockholmfilmfestival.se/en/festival/1997/film/actrius> <http://dbpedia.org/property/accessdate> \"2015-12-21\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://www.mrqe.com/movie_reviews/actrius-m100030469%7Cpublisher=mrqe> <http://dbpedia.org/property/last1> \"staff\" .\n<http://www.mrqe.com/movie_reviews/actrius-m100030469%7Cpublisher=mrqe> <http://dbpedia.org/property/title> \"Actrius\" .\n<http://www.mrqe.com/movie_reviews/actrius-m100030469%7Cpublisher=mrqe> <http://dbpedia.org/property/url> \"http://www.mrqe.com/movie_reviews/actrius-m100030469|publisher=MRQE\" .\n<http://www.mrqe.com/movie_reviews/actrius-m100030469%7Cpublisher=mrqe> <http://dbpedia.org/property/accessdate> \"2015-12-21\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://barbarabranden.com/interview4.html> <http://dbpedia.org/property/last1> \"Reedstrom\" .\n<http://barbarabranden.com/interview4.html> <http://dbpedia.org/property/first1> \"Karen\" .",
+         "dataid:sha256sum": "763d30be381b5930787d039f396d94e2fad88202336a236b2eb73112085ed1f5",
+         "dataid-cv:lang": "en",
+         "dataid-cv:tag": "data",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.01",
+         "dct:issued": {
+            "@value": "2020-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-06-17T19:42:40Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1625398150",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/citations/2020.06.01/citations_lang=en_data.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

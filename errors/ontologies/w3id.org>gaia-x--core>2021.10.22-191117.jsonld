@@ -1,0 +1,838 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/w3id.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The GAIA-X core ontology contains the components needed to model an efficient, competitive, secure and trustworthy federation of data infrastructure and service providers.  The different ontology modules can be found here:   Core: <a href=\"https://www.w3id.org/gaia-x/core\">https://www.w3id.org/gaia-x/core</a>   Asset: <a href=\"https://www.w3id.org/gaia-x/asset\">https://www.w3id.org/gaia-x/asset</a>   Contract: <a href=\"https://www.w3id.org/gaia-x/contract\">https://www.w3id.org/gaia-x/contract</a>   Node: <a href=\"https://www.w3id.org/gaia-x/node\">https://www.w3id.org/gaia-x/node</a>   Participant: <a href=\"https://www.w3id.org/gaia-x/participant\">https://www.w3id.org/gaia-x/participant</a>   Service: <a href=\"https://www.w3id.org/gaia-x/service\">https://www.w3id.org/gaia-x/service</a>"
+         },
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "GAIA-X Core Ontology"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=pyLodeDoc.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=diff_axioms=old.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=diff_axioms=new.dl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=parsed_sorted.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=meta.json"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The GAIA-X core ontology contains the components needed to model an efficient, competitive, secure and trustworthy federation of data infrastructure and service providers.  The different ontology modules can be found here:   Core: <a href=\"https://www.w3id.org/gaia-x/core\">https://www.w3id.org/gaia-x/core</a>   Asset: <a href=\"https://www.w3id.org/gaia-x/asset\">https://www.w3id.org/gaia-x/asset</a>   Contract: <a href=\"https://www.w3id.org/gaia-x/contract\">https://www.w3id.org/gaia-x/contract</a>   Node: <a href=\"https://www.w3id.org/gaia-x/node\">https://www.w3id.org/gaia-x/node</a>   Participant: <a href=\"https://www.w3id.org/gaia-x/participant\">https://www.w3id.org/gaia-x/participant</a>   Service: <a href=\"https://www.w3id.org/gaia-x/service\">https://www.w3id.org/gaia-x/service</a>"
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:axioms",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;",
+         "dataid:sha256sum": "af707bfc3c758e617263d4ac0fd9a715e0d8440d89a1b1490e7fc6586d9180d3",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "45540",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>GAIA-X Core Ontology</title><title>GAIA-X Core Ontology</title><title>GAIA-X Core Ontology</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"https://gaia-x.gitlab.io/gaia-x-community/gaia-x-self-descriptions/core/ontology.xml\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "8555f014b345b73f843113776d0ac63e47b6556ab8b1198a9224a1ae6c102c1f",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "51336",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://w3id.org/gaia-x/core#> ;\n            sh:resultMessage \"No dct:license statement found\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "fb31f4e10274098b8e4fc22802f53859893163c9fa940c4c3d8c72fc41f1495a",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "647",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=pyLodeDoc.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=pyLodeDoc.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <title>GAIA-X Core Ontology</title>\n    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1Sew\nEAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC\">\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>\n    \n    <style>",
+         "dataid:sha256sum": "60c80d94fac0b90449a6739c6aaa18865b1a66abeee8b1789d618f91069638cc",
+         "dataid-cv:type": "pyLodeDoc",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "85932",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=pyLodeDoc.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.1.0.jar\n\n",
+         "dataid:sha256sum": "35133f3681a6ccdb320324b1927689adc218a5150f47233c68c456e42e0d1a9f",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=diff_axioms=old.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=diff_axioms=old.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "org.semanticweb.owlapi.io.UnparsableOntologyException: Problem parsing file:/usr/local/archivo-data/w3id.org/gaia-x--core/2021.10.22-191117/oldVersionSorted.nt\nCould not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.\nThe following parsers were tried:\n1) RDFXMLParser\n2) OWLXMLParser\n3) OWLFunctionalSyntaxOWLParser\n4) TurtleOntologyParser\n5) OWLOBOParser\n6) KRSS2OWLParser\n7) ManchesterOWLSyntaxOntologyParser",
+         "dataid:sha256sum": "faceb7f3bc61dc00741f321b606ebda866e18f013401965c26eb8a9493283ae5",
+         "dataid-cv:axioms": "old",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2681",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=diff_axioms=old.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <http://w3id.org/gaia-x/core#> .\n@prefix ns: <http://creativecommons.org/ns#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix xml: <http://www.w3.org/XML/1998/namespace> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix vann: <http://purl.org/vocab/vann/> .\n@prefix void: <http://rdfs.org/ns/void#> .",
+         "dataid:sha256sum": "7c7b1881a9e0647ef499e221677b88e51a53098f9bb92e8766f98d4a59a24734",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "13747",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=diff_axioms=new.dl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=diff_axioms=new.dl"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "org.semanticweb.owlapi.io.UnparsableOntologyException: Problem parsing file:/usr/local/archivo-data/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=parsed_sorted.nt\nCould not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.\nThe following parsers were tried:\n1) RDFXMLParser\n2) OWLXMLParser\n3) OWLFunctionalSyntaxOWLParser\n4) TurtleOntologyParser\n5) OWLOBOParser\n6) KRSS2OWLParser\n7) ManchesterOWLSyntaxOntologyParser",
+         "dataid:sha256sum": "2dcdaa50c2abd32ba264bbc916b89fa7f53b667507bfc3283144756179baa44b",
+         "dataid-cv:axioms": "new",
+         "dataid-cv:type": "diff",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2726",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=diff_axioms=new.dl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=parsed_sorted.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=parsed_sorted.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://org.semanticweb.owlapi/error#Error1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .\n<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .\n<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .",
+         "dataid:sha256sum": "fa2da171dd124bd0493a196189b6d77a5a9285b98105e8b3d9306795cd9d4b75",
+         "dataid-cv:tag": "sorted",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:20Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "34980",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=parsed_sorted.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=parsed.ttl\nStart loading\nFinished loading in 00:00:00.128\nInput size: Classes = 31, Properties = 46, Individuals = 1\nExpressivity: ALCHN\nStart consistency check\nFinished consistency check in 00:00:00.015\n\nTimer summary:",
+         "dataid:sha256sum": "ebd27ae2d973072acfb50169b0290e051e0a87c241785e908695d9c086dec81d",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:26Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "502",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "dec1ef5a82aa413c4340f9f94d53f8548601fbefb934cd3cbca553e8b11e4bb4",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1891",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/usr/local/archivo-data/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=parsed.ttl\nStart loading\nFinished loading in 00:00:00.129\nInput size: Classes = 31, Properties = 46, Individuals = 1\nExpressivity: ALCHN\nStart consistency check\nFinished consistency check in 00:00:00.015\n\nTimer summary:",
+         "dataid:sha256sum": "c185669924e15a4ee3cf9fe112807220f29293cc64fdb7f37766973a5b95c3d2",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:26Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "502",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "WARNING: An illegal reflective access operation has occurred\nWARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/usr/lib/pellet/cli/target/pelletcli/lib/guice-4.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)\nWARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2\nWARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations\nWARNING: All illegal access operations will be denied in a future release\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples",
+         "dataid:sha256sum": "9b8d2e1cd14abd8d1775d291a55136f90ed237cc06a574a0627bc8891581ae94",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1891",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://w3id.org/gaia-x/core#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://w3id.org/gaia-x/core#> <http://creativecommons.org/ns#license> <http://www.apache.org/licenses/LICENSE-2.0> .\n<http://w3id.org/gaia-x/core#> <http://purl.org/dc/terms/abstract> \"The GAIA-X core ontology contains the components needed to model an efficient, competitive, secure and trustworthy federation of data infrastructure and service providers.\\n\\nThe different ontology modules can be found here: \\n\\nCore: <a href=\\\"https://www.w3id.org/gaia-x/core\\\">https://www.w3id.org/gaia-x/core</a> \\n\\nAsset: <a href=\\\"https://www.w3id.org/gaia-x/asset\\\">https://www.w3id.org/gaia-x/asset</a> \\n\\nContract: <a href=\\\"https://www.w3id.org/gaia-x/contract\\\">https://www.w3id.org/gaia-x/contract</a> \\n\\nNode: <a href=\\\"https://www.w3id.org/gaia-x/node\\\">https://www.w3id.org/gaia-x/node</a> \\n\\nParticipant: <a href=\\\"https://www.w3id.org/gaia-x/participant\\\">https://www.w3id.org/gaia-x/participant</a> \\n\\nService: <a href=\\\"https://www.w3id.org/gaia-x/service\\\">https://www.w3id.org/gaia-x/service</a>\" .\n<http://w3id.org/gaia-x/core#> <http://purl.org/dc/terms/contributor> <https://github.com/JohannesLipp> .\n<http://w3id.org/gaia-x/core#> <http://purl.org/dc/terms/contributor> <https://github.com/clange> .\n<http://w3id.org/gaia-x/core#> <http://purl.org/dc/terms/contributor> <https://github.com/jlangkau> .\n<http://w3id.org/gaia-x/core#> <http://purl.org/dc/terms/contributor> <https://github.com/jpfr> .\n<http://w3id.org/gaia-x/core#> <http://purl.org/dc/terms/contributor> <https://github.com/moosmannp> .\n<http://w3id.org/gaia-x/core#> <http://purl.org/dc/terms/created> \"2021-10-18T12:00:00+01:00\"^^<http://www.w3.org/2001/XMLSchema#dateTimeStamp> .\n<http://w3id.org/gaia-x/core#> <http://purl.org/dc/terms/creator> \"GAIA-X Open Work Package 'Self-Description'\" .",
+         "dataid:sha256sum": "7fd13cb53a1bc5aeac56f08d1146cca5e9f0f7fe2b6293f00a1bf4febf73fe3c",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "34980",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:ns=\"http://creativecommons.org/ns#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:terms=\"http://purl.org/dc/terms/\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:void=\"http://rdfs.org/ns/void#\" xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"http://w3id.org/gaia-x/core#\">\n  <rdf:Description rdf:about=\"http://w3id.org/gaia-x/core#\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://w3id.org/gaia-x/core#\">\n    <ns:license rdf:resource=\"http://www.apache.org/licenses/LICENSE-2.0\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://w3id.org/gaia-x/core#\">\n    <terms:abstract>The GAIA-X core ontology contains the components needed to model an efficient, competitive, secure and trustworthy federation of data infrastructure and service providers.",
+         "dataid:sha256sum": "3145da6deb929984a6ac1aa8a191a373ae21c64157e4cc58744d7e683d1ee2be",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "45383",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n<rdf:RDF xmlns=\"http://w3id.org/gaia-x/core#\"\n     xml:base=\"http://w3id.org/gaia-x/core\"\n     xmlns:ns=\"http://creativecommons.org/ns#\"\n     xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n     xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n     xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"\n     xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n     xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n     xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"",
+         "dataid:sha256sum": "36e9bd1197fa39cf7807d746f0c8b1711c443f3fd7f0b61c39b97b3b60517960",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "28919",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117#gaia-x--core_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2021.10.22; 19:11:19\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"28918\",\n        \"e-tag\": \"\",\n        \"lastModified\": \"\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Date': 'Fri, 22 Oct 2021 19:11:17 GMT', 'Server': 'Apache/2.4.29 (Ubuntu)', 'Access-Control-Allow-Origin': '*', 'Location': 'https://w3id.org/gaia-x/core', 'Content-Length': '310', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'text/html; charset=iso-8859-1'}\",",
+         "dataid:sha256sum": "735f6afe962bf6625e8f0dc4d71615c4a095a45b55ea1d65b12d65e33c1cf860",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.10.22-191117",
+         "dct:issued": {
+            "@value": "2021-10-22T19:11:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://www.apache.org/licenses/LICENSE-2.0"
+         },
+         "dct:modified": {
+            "@value": "2021-10-22T19:11:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1385",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/gaia-x--core/2021.10.22-191117/gaia-x--core_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      }
+   ]
+}

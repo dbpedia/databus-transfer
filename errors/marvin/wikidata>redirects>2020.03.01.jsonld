@@ -1,0 +1,152 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/wikidata/redirects/2020.03.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/redirects",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/redirects/2020.03.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/wikidata/redirects"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/wikidata"
+         },
+         "dataid:maintainer": {
+            "@id": "https://alismayilov.github.io/webid-ali.ttl#this"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/wikidata/redirects/2020.03.01"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/f7babab6b592d0a1a4af8b618e668222959a8cf9 . After its releases, data is cleaned and persisted under the DBpedia account. ) Dataset containing redirects between articles in Wikidata."
+         },
+         "dct:hasVersion": "2020.03.01",
+         "dct:issued": {
+            "@value": "2020-03-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Redirects"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/wikidata/redirects/2020.03.01#redirects_transitive.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/wikidata/redirects/2020.03.01#redirects.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/f7babab6b592d0a1a4af8b618e668222959a8cf9 . After its releases, data is cleaned and persisted under the DBpedia account. ) Dataset containing redirects between articles in Wikidata."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/redirects/2020.03.01#redirects_transitive.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/redirects/2020.03.01/redirects_transitive.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-08T03:02:48Z\n<http://wikidata.dbpedia.org/resource/Template:Soft_redirect> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Template:Softredirect> .\n<http://wikidata.dbpedia.org/resource/Q1379> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Q25550430> .\n<http://wikidata.dbpedia.org/resource/Template:Dot> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Template:·> .\n<http://wikidata.dbpedia.org/resource/Template:Nobots> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Template:Bots> .\n<http://wikidata.dbpedia.org/resource/Template:Smile> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Template:Smiley> .\n<http://wikidata.dbpedia.org/resource/Q5641> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Q3407658> .\n<http://wikidata.dbpedia.org/resource/Template:Clr> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Template:Clear> .\n<http://wikidata.dbpedia.org/resource/Q6825> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Q26709563> .\n<http://wikidata.dbpedia.org/resource/Q7593> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Q7715973> .",
+         "dataid:sha256sum": "ced0cb6c56ca1c68cad4de76f15c0debd4c0ad2b2456ce539e5b8f2fe2c7d9d4",
+         "dataid-cv:tag": "transitive",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.03.01",
+         "dct:issued": {
+            "@value": "2020-03-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-16T16:52:23Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "17271717",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/databus-repo/marvin/wikidata/redirects/2020.03.01/redirects_transitive.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/redirects/2020.03.01#redirects.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/redirects/2020.03.01/redirects.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "# started 2020-04-01T07:29:41Z\n<http://wikidata.dbpedia.org/resource/Template:Soft_redirect> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Template:Softredirect> .\n<http://wikidata.dbpedia.org/resource/Q1379> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Q25550430> .\n<http://wikidata.dbpedia.org/resource/Template:Dot> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Template:·> .\n<http://wikidata.dbpedia.org/resource/Template:Nobots> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Template:Bots> .\n<http://wikidata.dbpedia.org/resource/Template:Smile> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Template:Smiley> .\n<http://wikidata.dbpedia.org/resource/Q5641> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Q3407658> .\n<http://wikidata.dbpedia.org/resource/Template:Clr> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Template:Clear> .\n<http://wikidata.dbpedia.org/resource/Q6825> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Q26709563> .\n<http://wikidata.dbpedia.org/resource/Q7593> <http://dbpedia.org/ontology/wikiPageRedirects> <http://wikidata.dbpedia.org/resource/Q7715973> .",
+         "dataid:sha256sum": "e676f2a0908faa31a37a836b4ce1752bae5e3f522a709d2776963056ecdce59c",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.03.01",
+         "dct:issued": {
+            "@value": "2020-03-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-04-16T16:52:15Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "17273128",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/databus-repo/marvin/wikidata/redirects/2020.03.01/redirects.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

@@ -1,0 +1,669 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/con-tax",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/w3id.org/con-tax"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/w3id.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "An ontology containing additional terminology for structuring and annotating RDFS/OWL taxonomies for describing constructions (components, materials, spatial zones, damages, construction tasks and properties)."
+         },
+         "dct:hasVersion": "2021.01.31-005833",
+         "dct:issued": {
+            "@value": "2021-01-30T23:58:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "ConTax ontology"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=orig.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=pelletConsistency_imports=NONE.txt"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "An ontology containing additional terminology for structuring and annotating RDFS/OWL taxonomies for describing constructions (components, materials, spatial zones, damages, construction tasks and properties)."
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833/con-tax_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-005833",
+         "dct:issued": {
+            "@value": "2021-01-30T23:58:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:58:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/con-tax/2021.01.31-005833/con-tax_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833/con-tax_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dcat=\"http://www.w3.org/ns/dcat#\" xmlns:ns1=\"http://creativecommons.org/ns#\" xmlns:ns=\"http://www.w3.org/2006/vcard/ns#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:schema=\"http://schema.org/\" xmlns:terms=\"http://purl.org/dc/terms/\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"https://w3id.org/con-tax#\">\n  <rdf:Description rdf:about=\"https://w3id.org/con-tax\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://w3id.org/con-tax\">\n    <ns1:license rdf:resource=\"https://creativecommons.org/licenses/by/4.0/\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"https://w3id.org/con-tax\">\n    <terms:creator rdf:nodeID=\"genid1\"/>",
+         "dataid:sha256sum": "808bd5d9bb17e180e05185f0fd1ca27085aa55a8bfc28153f659efea9c1262e3",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-005833",
+         "dct:issued": {
+            "@value": "2021-01-30T23:58:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:58:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "47500",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/con-tax/2021.01.31-005833/con-tax_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833/con-tax_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n<rdf:RDF xmlns=\"https://w3id.org/con-tax#\"\n     xml:base=\"https://w3id.org/con-tax\"\n     xmlns:ns=\"http://www.w3.org/2006/vcard/ns#\"\n     xmlns:ns1=\"http://creativecommons.org/ns#\"\n     xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n     xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n     xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"\n     xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n     xmlns:dcat=\"http://www.w3.org/ns/dcat#\"",
+         "dataid:sha256sum": "50f7a7730484b771620344586aa6a65bb458b10b6f64935f0dcc2a3a4b2d330d",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-005833",
+         "dct:issued": {
+            "@value": "2021-01-30T23:58:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:58:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "33076",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/con-tax/2021.01.31-005833/con-tax_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833/con-tax_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<https://w3id.org/con-tax> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<https://w3id.org/con-tax> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .\n<https://w3id.org/con-tax> <http://purl.org/dc/terms/creator> _:genid1 .\n<https://w3id.org/con-tax> <http://purl.org/dc/terms/description> \"An ontology containing additional terminology for structuring and annotating RDFS/OWL taxonomies for describing constructions (components, materials, spatial zones, damages, construction tasks and properties). It also functions as an index for known taxonomies starting from root classes and properties.\"@en .\n<https://w3id.org/con-tax> <http://purl.org/dc/terms/issued> \"2020-11-29\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<https://w3id.org/con-tax> <http://purl.org/dc/terms/title> \"ConTax ontology\"@en .\n<https://w3id.org/con-tax> <http://purl.org/vocab/vann/preferredNamespacePrefix> \"contax\" .\n<https://w3id.org/con-tax> <http://purl.org/vocab/vann/preferredNamespaceUri> \"https://w3id.org/con-tax#\" .\n<https://w3id.org/con-tax> <http://www.w3.org/2000/01/rdf-schema#comment> \"- Version 0.0.1: initial version\"@en .\n<https://w3id.org/con-tax> <http://www.w3.org/2002/07/owl#versionInfo> \"0.0.1\" .",
+         "dataid:sha256sum": "84fb7ddd43b5730717cc1691678b7c0db1ef8b78da0cd7bf1c2cf3661d8974c8",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-005833",
+         "dct:issued": {
+            "@value": "2021-01-30T23:58:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:58:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "37762",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/con-tax/2021.01.31-005833/con-tax_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833/con-tax_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/data/home/dstreitmatter/data/archivo-init-release/w3id.org/con-tax/2021.01.31-005833/con-tax_type=parsed.ttl\nStart loading\nJan 31, 2021 12:58:35 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring domain axiom for AnnotationProperty https://w3id.org/con-tax#rangeOrObjectIncludes\nJan 31, 2021 12:58:35 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring range axiom for AnnotationProperty https://w3id.org/con-tax#containsConcept\nJan 31, 2021 12:58:35 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring domain axiom for AnnotationProperty https://w3id.org/con-tax#containsConcept\nJan 31, 2021 12:58:35 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature",
+         "dataid:sha256sum": "5dd971e8857239f98476337b6d78fc6f6a1038ae2c70dfab56745d61dd6ebe23",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-005833",
+         "dct:issued": {
+            "@value": "2021-01-30T23:58:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:58:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3190",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/con-tax/2021.01.31-005833/con-tax_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833/con-tax_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://pi.pauwel.be/voc/distributionelement#DistributionElement> ;",
+         "dataid:sha256sum": "e4d5883fee60ff14182c8c415424c1a5b55e8b03c8357b560eab7b45bfd19d54",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-005833",
+         "dct:issued": {
+            "@value": "2021-01-30T23:58:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:58:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "43317",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/con-tax/2021.01.31-005833/con-tax_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833/con-tax_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2021-01-31 00:58:33.002820\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"4280\",\n        \"e-tag\": \"W/\\\"5fc77791-8133\\\"\",\n        \"lastModified\": \"Wed, 02 Dec 2020 11:16:33 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Date': 'Sat, 30 Jan 2021 23:58:30 GMT', 'Server': 'Apache/2.4.29 (Ubuntu)', 'Access-Control-Allow-Origin': '*', 'Location': 'https://w3id.org/con-tax/', 'Content-Length': '308', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'text/html; charset=iso-8859-1'}\",",
+         "dataid:sha256sum": "9fc9eceab122d39aed8d50a1d134b6ab9ef8f9872e4137ed69f9d44f906f40fb",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-005833",
+         "dct:issued": {
+            "@value": "2021-01-30T23:58:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:58:42Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1903",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/con-tax/2021.01.31-005833/con-tax_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833/con-tax_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\nVersion Info = 0.0.1\n\nTimer summary:\nName | Total (ms)",
+         "dataid:sha256sum": "d9d2b1ae45c230d731f38cc4017c9d92e5eef28b8de75215351909ac9667655a",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-005833",
+         "dct:issued": {
+            "@value": "2021-01-30T23:58:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:58:40Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1291",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/con-tax/2021.01.31-005833/con-tax_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833/con-tax_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "\nOWL2_DL: OK\nOWL2_QL: 6 violations\nOWL2_EL: 6 violations\nOWL2_RL: OK\nOWL2_FULL: OK\n",
+         "dataid:sha256sum": "585672227a00019e682ddcb6e9d3012831dcdd518dd1caf20a968a7c6ec57d71",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-005833",
+         "dct:issued": {
+            "@value": "2021-01-30T23:58:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:58:42Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/con-tax/2021.01.31-005833/con-tax_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833/con-tax_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <https://w3id.org/con-tax#> .\n@prefix ns: <http://www.w3.org/2006/vcard/ns#> .\n@prefix ns1: <http://creativecommons.org/ns#> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix xml: <http://www.w3.org/XML/1998/namespace> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix dcat: <http://www.w3.org/ns/dcat#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix vann: <http://purl.org/vocab/vann/> .",
+         "dataid:sha256sum": "27287072a366e258f8b38e588e2c8a17949f393802246067e7f35b8801212def",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-005833",
+         "dct:issued": {
+            "@value": "2021-01-30T23:58:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:58:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "17794",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/con-tax/2021.01.31-005833/con-tax_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833/con-tax_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<html><head><title>LODE error</title></head><body><h2>LODE error</h2><p><strong>Reason: </strong>A sequence of more than one item is not allowed as the @select attribute of xsl:sort</p></body></html>\n",
+         "dataid:sha256sum": "8bedb295026e2f36357b7d3c649e5761aa12b9d8f2e9e98333fb880660c1872e",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-005833",
+         "dct:issued": {
+            "@value": "2021-01-30T23:58:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:58:43Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "201",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/con-tax/2021.01.31-005833/con-tax_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833/con-tax_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\nVersion Info = 0.0.1\n\nTimer summary:\nName | Total (ms)",
+         "dataid:sha256sum": "bbcfe99bdd97f88b6c90b991baac03e76f93445a47e8c2c84ce6fbd026718e73",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-005833",
+         "dct:issued": {
+            "@value": "2021-01-30T23:58:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:58:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1291",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/con-tax/2021.01.31-005833/con-tax_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833/con-tax_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+         "dataid:sha256sum": "8cc7623326d727b72062b0d9a0514eae24060b5f3e9945d603fa8b2c551fe965",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-005833",
+         "dct:issued": {
+            "@value": "2021-01-30T23:58:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:58:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "148",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/con-tax/2021.01.31-005833/con-tax_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833/con-tax_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <https://w3id.org/con-tax> ;\n            sh:resultMessage \"No dct:license statement found\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "8a8ff4c3780bf2d2d7d70c268a86cea972e705f7daaebd2e4123d1b7ca77eecd",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-005833",
+         "dct:issued": {
+            "@value": "2021-01-30T23:58:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:58:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "643",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/con-tax/2021.01.31-005833/con-tax_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833#con-tax_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/w3id.org/con-tax/2021.01.31-005833/con-tax_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/data/home/dstreitmatter/data/archivo-init-release/w3id.org/con-tax/2021.01.31-005833/con-tax_type=parsed.ttl\nStart loading\nJan 31, 2021 12:58:36 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring domain axiom for AnnotationProperty https://w3id.org/con-tax#rangeOrObjectIncludes\nJan 31, 2021 12:58:36 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring range axiom for AnnotationProperty https://w3id.org/con-tax#containsConcept\nJan 31, 2021 12:58:36 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring domain axiom for AnnotationProperty https://w3id.org/con-tax#containsConcept\nJan 31, 2021 12:58:36 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature",
+         "dataid:sha256sum": "693482526892b3aee94f647abda915e8fe0c81bbddbc375854c4f965d5cb82b4",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-005833",
+         "dct:issued": {
+            "@value": "2021-01-30T23:58:52Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "https://creativecommons.org/licenses/by/4.0/"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:58:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3190",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/w3id.org/con-tax/2021.01.31-005833/con-tax_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      }
+   ]
+}

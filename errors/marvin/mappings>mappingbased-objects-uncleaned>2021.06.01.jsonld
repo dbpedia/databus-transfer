@@ -1,0 +1,1568 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/mappings"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01"
+         },
+         "dataid-debug:codeReference": {
+            "@id": "https://github.com/dbpedia/extraction-framework/blob/master/core/src/main/scala/org/dbpedia/extraction/mappings/MappingExtractor.scala"
+         },
+         "dataid-debug:documentationLocation": {
+            "@id": "https://git.informatik.uni-leipzig.de/dbpedia-assoc/marvin-config/-/tree/master/databus-poms/dbpedia/mappings/mappingbased-objects-uncleaned"
+         },
+         "dataid-debug:feedbackChannel": {
+            "@id": "https://forum.dbpedia.org/c/data/databus/14"
+         },
+         "dataid-debug:issueTracker": {
+            "@id": "https://github.com/dbpedia/extraction-framework/issues"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/6ce5e19acd2b2051ee1283a1409bcffadde365f3 . After its releases, data is cleaned and persisted under the DBpedia account. ) Uncleand High quality statements with IRI object values extracted by the mappings extraction from Wikipedia Infoboxes."
+         },
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) (Uncleaned) Object properties extracted with mappings"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=sk.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=mk.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=de.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=hr.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=el.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=cy.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=ko.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=hi.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=eo.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=lv.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=tr.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=nl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=ar.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=cs.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=az.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=en.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=bn.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=uk.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=sr.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=pl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=fr.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=gl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=hy.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=es.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=pt.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=ja.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=ga.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=ru.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=id.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=sl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=be.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=bg.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=it.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=ca.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=ro.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=vi.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=hu.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=sv.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=eu.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/6ce5e19acd2b2051ee1283a1409bcffadde365f3 . After its releases, data is cleaned and persisted under the DBpedia account. ) Uncleand High quality statements with IRI object values extracted by the mappings extraction from Wikipedia Infoboxes."
+         }
+      },
+      {
+         "@id": "dataid-cv:lang",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=sk.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=sk.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://sk.dbpedia.org/resource/(137924)_2000_BD19> <http://dbpedia.org/ontology/discoverer> <http://sk.dbpedia.org/resource/Lincoln_Near-Earth_Asteroid_Research> .\n<http://sk.dbpedia.org/resource/(143649)_2003_QQ47> <http://dbpedia.org/ontology/discoverer> <http://sk.dbpedia.org/resource/Lincoln_Near-Earth_Asteroid_Research> .\n<http://sk.dbpedia.org/resource/(15788)_1993_SB> <http://dbpedia.org/ontology/discoverer> <http://sk.dbpedia.org/resource/Alan_Fitzsimmons> .\n<http://sk.dbpedia.org/resource/(15788)_1993_SB> <http://dbpedia.org/ontology/discoverer> <http://sk.dbpedia.org/resource/Donal_O'Ceallaigh> .\n<http://sk.dbpedia.org/resource/(15788)_1993_SB> <http://dbpedia.org/ontology/discoverer> <http://sk.dbpedia.org/resource/Iwan_P._Williams> .\n<http://sk.dbpedia.org/resource/(15874)_1996_TL66> <http://dbpedia.org/ontology/discoverer> <http://sk.dbpedia.org/resource/David_C._Jewitt> .\n<http://sk.dbpedia.org/resource/(15874)_1996_TL66> <http://dbpedia.org/ontology/discoverer> <http://sk.dbpedia.org/resource/Jane_X._Luu> .\n<http://sk.dbpedia.org/resource/(15874)_1996_TL66> <http://dbpedia.org/ontology/discoverer> <http://sk.dbpedia.org/resource/Jun_Chen> .\n<http://sk.dbpedia.org/resource/(15874)_1996_TL66> <http://dbpedia.org/ontology/discoverer> <http://sk.dbpedia.org/resource/Rok> .\n<http://sk.dbpedia.org/resource/(19308)_1996_TO66> <http://dbpedia.org/ontology/discoverer> <http://sk.dbpedia.org/resource/Chad_Trujillo> .",
+         "dataid:sha256sum": "6c480b00ec1561b7b865ca8ecbf924fe86933f1b34796789f3dcec4890b2213b",
+         "dataid-cv:lang": "sk",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:54:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "556627",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=sk.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=mk.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=mk.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://mk.dbpedia.org/resource/(Marie's_the_Name)_His_Latest_Flame> <http://dbpedia.org/ontology/genre> <http://mk.dbpedia.org/resource/Поп-музика> .\n<http://mk.dbpedia.org/resource/(Marie's_the_Name)_His_Latest_Flame> <http://dbpedia.org/ontology/genre> <http://mk.dbpedia.org/resource/Рокенрол> .\n<http://mk.dbpedia.org/resource/(Marie's_the_Name)_His_Latest_Flame> <http://dbpedia.org/ontology/musicalArtist> <http://mk.dbpedia.org/resource/Елвис_Пресли> .\n<http://mk.dbpedia.org/resource/(Marie's_the_Name)_His_Latest_Flame> <http://dbpedia.org/ontology/musicalBand> <http://mk.dbpedia.org/resource/Елвис_Пресли> .\n<http://mk.dbpedia.org/resource/(Marie's_the_Name)_His_Latest_Flame> <http://dbpedia.org/ontology/previousWork> <http://mk.dbpedia.org/resource/I_Feel_So_Bad> .\n<http://mk.dbpedia.org/resource/(Marie's_the_Name)_His_Latest_Flame> <http://dbpedia.org/ontology/previousWork> <http://mk.dbpedia.org/resource/Wild_in_the_Country_(песна_на_Елвис_Присли)> .\n<http://mk.dbpedia.org/resource/(Marie's_the_Name)_His_Latest_Flame> <http://dbpedia.org/ontology/recordedIn> <http://mk.dbpedia.org/resource/1961> .\n<http://mk.dbpedia.org/resource/(Marie's_the_Name)_His_Latest_Flame> <http://dbpedia.org/ontology/recordedIn> <http://mk.dbpedia.org/resource/Нешвил> .\n<http://mk.dbpedia.org/resource/(Marie's_the_Name)_His_Latest_Flame> <http://dbpedia.org/ontology/subsequentWork> <http://mk.dbpedia.org/resource/Can't_Help_Falling_in_Love> .\n<http://mk.dbpedia.org/resource/(Marie's_the_Name)_His_Latest_Flame> <http://dbpedia.org/ontology/subsequentWork> <http://mk.dbpedia.org/resource/Rock-A-Hula_Baby> .",
+         "dataid:sha256sum": "80dece92725e6d30000d526f2e0d96d267f52919e5b91babba8ffb85fd8067cf",
+         "dataid-cv:lang": "mk",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:51:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "887438",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=mk.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=de.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=de.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://de.dbpedia.org/resource/!!!> <http://www.w3.org/2002/07/owl#sameAs> <http://www.viaf.org/viaf/160969480> .\n<http://de.dbpedia.org/resource/!distain> <http://dbpedia.org/ontology/bandMember> <http://de.dbpedia.org/resource/Gesang> .\n<http://de.dbpedia.org/resource/!distain> <http://dbpedia.org/ontology/bandMember> <http://de.dbpedia.org/resource/Keyboard> .\n<http://de.dbpedia.org/resource/!distain> <http://dbpedia.org/ontology/formerBandMember> <http://de.dbpedia.org/resource/Gesang> .\n<http://de.dbpedia.org/resource/!distain> <http://dbpedia.org/ontology/formerBandMember> <http://de.dbpedia.org/resource/Keyboard> .\n<http://de.dbpedia.org/resource/!distain> <http://dbpedia.org/ontology/genre> <http://de.dbpedia.org/resource/Synthiepop> .\n<http://de.dbpedia.org/resource/!distain> <http://xmlns.com/foaf/0.1/homepage> <http://www.distain.de/> .\n<http://de.dbpedia.org/resource/$100,000_Nanjing_2015> <http://dbpedia.org/ontology/city> <http://de.dbpedia.org/resource/Nanjing> .\n<http://de.dbpedia.org/resource/$100,000_Nanjing_2015> <http://xmlns.com/foaf/0.1/homepage> <http://www.tennis.org.cn> .\n<http://de.dbpedia.org/resource/$100,000_Shenzhen_2016> <http://dbpedia.org/ontology/city> <http://de.dbpedia.org/resource/Shenzhen> .",
+         "dataid:sha256sum": "69a18cd7a746a0b0014cfb0eb3f8d9dd3236737a14182e145fe05babd6487d70",
+         "dataid-cv:lang": "de",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:53:40Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "44723053",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=de.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=hr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=hr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://hr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedBand> <http://hr.dbpedia.org/resource/LCD_Soundsystem> .\n<http://hr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedBand> <http://hr.dbpedia.org/resource/Maserati_(sastav)> .\n<http://hr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedBand> <http://hr.dbpedia.org/resource/Out_Hud> .\n<http://hr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedBand> <http://hr.dbpedia.org/resource/The_Juan_Maclean> .\n<http://hr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedBand> <http://hr.dbpedia.org/resource/Turing_Machine> .\n<http://hr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedMusicalArtist> <http://hr.dbpedia.org/resource/LCD_Soundsystem> .\n<http://hr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedMusicalArtist> <http://hr.dbpedia.org/resource/Maserati_(sastav)> .\n<http://hr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedMusicalArtist> <http://hr.dbpedia.org/resource/Out_Hud> .\n<http://hr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedMusicalArtist> <http://hr.dbpedia.org/resource/The_Juan_Maclean> .\n<http://hr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedMusicalArtist> <http://hr.dbpedia.org/resource/Turing_Machine> .",
+         "dataid:sha256sum": "12985b53b066fc37517e37e54dec0408351b949a1927080f150c1a33f39cb859",
+         "dataid-cv:lang": "hr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:55:26Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1339701",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=hr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=el.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=el.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://el.dbpedia.org/resource/%22The_Spaghetti_Incident%3F%22> <http://dbpedia.org/ontology/artist> <http://el.dbpedia.org/resource/Guns_N'_Roses> .\n<http://el.dbpedia.org/resource/%22The_Spaghetti_Incident%3F%22> <http://dbpedia.org/ontology/genre> <http://el.dbpedia.org/resource/Hard_rock> .\n<http://el.dbpedia.org/resource/%22The_Spaghetti_Incident%3F%22> <http://dbpedia.org/ontology/genre> <http://el.dbpedia.org/resource/Πανκ> .\n<http://el.dbpedia.org/resource/%22The_Spaghetti_Incident%3F%22> <http://dbpedia.org/ontology/producer> <http://el.dbpedia.org/resource/Guns_N'_Roses> .\n<http://el.dbpedia.org/resource/%22The_Spaghetti_Incident%3F%22> <http://dbpedia.org/ontology/producer> <http://el.dbpedia.org/resource/Νταφ_ΜαΚέγκαν> .\n<http://el.dbpedia.org/resource/%22The_Spaghetti_Incident%3F%22> <http://dbpedia.org/ontology/subsequentWork> <http://el.dbpedia.org/resource/Chinese_Democracy> .\n<http://el.dbpedia.org/resource/'74_Jaibreak> <http://dbpedia.org/ontology/artist> <http://el.dbpedia.org/resource/AC/DC> .\n<http://el.dbpedia.org/resource/'74_Jaibreak> <http://dbpedia.org/ontology/genre> <http://el.dbpedia.org/resource/Hard_rock> .\n<http://el.dbpedia.org/resource/'74_Jaibreak> <http://dbpedia.org/ontology/genre> <http://el.dbpedia.org/resource/Μπλουζ_ροκ> .\n<http://el.dbpedia.org/resource/'74_Jaibreak> <http://dbpedia.org/ontology/previousWork> <http://el.dbpedia.org/resource/Flick_of_the_Switch> .",
+         "dataid:sha256sum": "660918c89ae752e99752aa2577cdcf6b0e6435ec1a662efcbc78db00bb786421",
+         "dataid-cv:lang": "el",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:54:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1945591",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=el.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=cy.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=cy.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://cy.dbpedia.org/resource/'Anathema'_a_Homiliau_Eraill> <http://dbpedia.org/ontology/firstPublisher> <http://cy.dbpedia.org/resource/Amrywiol> .\n<http://cy.dbpedia.org/resource/'Anwir_Anwedhys_y_Mae_yn_i_Ysgrivennv_Ymma'> <http://dbpedia.org/ontology/firstPublisher> <http://cy.dbpedia.org/resource/Canolfan_Uwchefrydiau_Cymreig_a_Cheltaidd_Prifysgol_Cymru> .\n<http://cy.dbpedia.org/resource/'Brenhines_Ymdrochleoedd_Cymru'> <http://dbpedia.org/ontology/firstPublisher> <http://cy.dbpedia.org/resource/Canolfan_Uwchefrydiau_Cymreig_a_Cheltaidd_Prifysgol_Cymru> .\n<http://cy.dbpedia.org/resource/'Chi'n_Bril,_Bos!'> <http://dbpedia.org/ontology/firstPublisher> <http://cy.dbpedia.org/resource/Gwasg_Gomer> .\n<http://cy.dbpedia.org/resource/'Curiouser_and_Curiouser'_-_Oddities_in_North-West_Wales> <http://dbpedia.org/ontology/firstPublisher> <http://cy.dbpedia.org/resource/Bridge_Books> .\n<http://cy.dbpedia.org/resource/'D.P.B._Un_yn_Galw!'> <http://dbpedia.org/ontology/firstPublisher> <http://cy.dbpedia.org/resource/Gwasg_Gomer> .\n<http://cy.dbpedia.org/resource/'Dwi_Eisiau_Mynd!> <http://dbpedia.org/ontology/firstPublisher> <http://cy.dbpedia.org/resource/Houdmont> .\n<http://cy.dbpedia.org/resource/'Dwisio_Dad> <http://dbpedia.org/ontology/firstPublisher> <http://cy.dbpedia.org/resource/Gwasg_Gomer> .\n<http://cy.dbpedia.org/resource/'Dwisio_Nain> <http://dbpedia.org/ontology/firstPublisher> <http://cy.dbpedia.org/resource/Gwasg_Gomer> .\n<http://cy.dbpedia.org/resource/'Dydw_i_Ddim_Eisiau'_-_Stori_Jona> <http://dbpedia.org/ontology/firstPublisher> <http://cy.dbpedia.org/resource/Cyhoeddiadau'r_Gair> .",
+         "dataid:sha256sum": "625553100d0e1e1c439277b6f4dbcb1196ca631b0956ef9b8526719e15887227",
+         "dataid-cv:lang": "cy",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:52:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "74607",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=cy.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=ko.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=ko.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://ko.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedAct> <http://ko.dbpedia.org/resource/LCD_사운드시스템> .\n<http://ko.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedAct> <http://ko.dbpedia.org/resource/마세라티_(밴드)> .\n<http://ko.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedAct> <http://ko.dbpedia.org/resource/아웃_허드> .\n<http://ko.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedAct> <http://ko.dbpedia.org/resource/주안_맥클라런> .\n<http://ko.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/birthPlace> <http://ko.dbpedia.org/resource/새크라멘토> .\n<http://ko.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/currentMember> <http://ko.dbpedia.org/resource/닉_오퍼> .\n<http://ko.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/currentMember> <http://ko.dbpedia.org/resource/댄_고어맨> .\n<http://ko.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/currentMember> <http://ko.dbpedia.org/resource/마리오_안드레오니> .\n<http://ko.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/currentMember> <http://ko.dbpedia.org/resource/샤논_펀체스> .\n<http://ko.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/currentMember> <http://ko.dbpedia.org/resource/숀_맥개한> .",
+         "dataid:sha256sum": "37436feda36037248d6715ae3e9da9e758acb07949fa6d3fd82db30cf9196f73",
+         "dataid-cv:lang": "ko",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:52:26Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "7476278",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=ko.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=hi.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=hi.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://hi.dbpedia.org/resource/1001_मूवीज_यू_मस्ट_सी_बिफोर_यू_डाय> <http://dbpedia.org/ontology/literaryGenre> <http://hi.dbpedia.org/resource/नॉन-फिक्शन> .\n<http://hi.dbpedia.org/resource/100_दिन> <http://dbpedia.org/ontology/language> <http://hi.dbpedia.org/resource/हिन्दी> .\n<http://hi.dbpedia.org/resource/100_दिन> <http://dbpedia.org/ontology/musicBy> <http://hi.dbpedia.org/resource/रामलक्ष्मण> .\n<http://hi.dbpedia.org/resource/100_दिन> <http://dbpedia.org/ontology/producer> <http://hi.dbpedia.org/resource/जय_मेहता> .\n<http://hi.dbpedia.org/resource/100_दिन> <http://dbpedia.org/ontology/starring> <http://hi.dbpedia.org/resource/जावेद_जाफ़री> .\n<http://hi.dbpedia.org/resource/100_दिन> <http://dbpedia.org/ontology/starring> <http://hi.dbpedia.org/resource/जैकी_श्रॉफ> .\n<http://hi.dbpedia.org/resource/100_दिन> <http://dbpedia.org/ontology/starring> <http://hi.dbpedia.org/resource/माधुरी_दीक्षित> .\n<http://hi.dbpedia.org/resource/100_दिन> <http://dbpedia.org/ontology/starring> <http://hi.dbpedia.org/resource/मुनमुन_सेन> .\n<http://hi.dbpedia.org/resource/100_दिन> <http://dbpedia.org/ontology/starring> <http://hi.dbpedia.org/resource/लक्ष्मीकांत_बेर्डे> .\n<http://hi.dbpedia.org/resource/102_नॉट_आउट> <http://dbpedia.org/ontology/director> <http://hi.dbpedia.org/resource/उमेश_शुक्ला> .",
+         "dataid:sha256sum": "1770b1d35dddc92090ed3afe1d2f036bcd8bff06c14472cfbca6c856141a5b96",
+         "dataid-cv:lang": "hi",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:52:18Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1066668",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=hi.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=eo.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=eo.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://eo.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/recordLabel> <http://eo.dbpedia.org/resource/Gold_Standard_Laboratories> .\n<http://eo.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/recordLabel> <http://eo.dbpedia.org/resource/Touch_and_Go_Records> .\n<http://eo.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/recordLabel> <http://eo.dbpedia.org/resource/Warp_Records> .\n<http://eo.dbpedia.org/resource/%3F!_(muzikalbumo)> <http://dbpedia.org/ontology/previousWork> <http://eo.dbpedia.org/resource/1997> .\n<http://eo.dbpedia.org/resource/%3F!_(muzikalbumo)> <http://dbpedia.org/ontology/producer> <http://eo.dbpedia.org/resource/Caparezza> .\n<http://eo.dbpedia.org/resource/%3F!_(muzikalbumo)> <http://dbpedia.org/ontology/subsequentWork> <http://eo.dbpedia.org/resource/2003> .\n<http://eo.dbpedia.org/resource/%3F!_(muzikalbumo)> <http://dbpedia.org/ontology/subsequentWork> <http://eo.dbpedia.org/resource/Verità_supposte> .\n<http://eo.dbpedia.org/resource/...And_You_Will_Know_Us_by_the_Trail_of_Dead> <http://dbpedia.org/ontology/recordLabel> <http://eo.dbpedia.org/resource/Interscope_Records> .\n<http://eo.dbpedia.org/resource/...And_You_Will_Know_Us_by_the_Trail_of_Dead> <http://dbpedia.org/ontology/recordLabel> <http://eo.dbpedia.org/resource/Merge_Records> .\n<http://eo.dbpedia.org/resource/...And_You_Will_Know_Us_by_the_Trail_of_Dead> <http://dbpedia.org/ontology/recordLabel> <http://eo.dbpedia.org/resource/Superball_music> .",
+         "dataid:sha256sum": "601c6dab036386afbcb874307d58535da0fea5608956f3121e2d8afbcc2216e5",
+         "dataid-cv:lang": "eo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:55:41Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "670819",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=eo.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=lv.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=lv.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://lv.dbpedia.org/resource/%22Bada_spēļu%22_triloģija> <http://dbpedia.org/ontology/author> <http://lv.dbpedia.org/resource/Sūzena_Kolinsa> .\n<http://lv.dbpedia.org/resource/%22Bada_spēļu%22_triloģija> <http://dbpedia.org/ontology/country> <http://lv.dbpedia.org/resource/Amerikas_Savienotās_Valstis> .\n<http://lv.dbpedia.org/resource/%22Ciklons%22_sāksies_naktī> <http://dbpedia.org/ontology/cinematography> <http://lv.dbpedia.org/resource/Vadims_Mass> .\n<http://lv.dbpedia.org/resource/%22Ciklons%22_sāksies_naktī> <http://dbpedia.org/ontology/country> <http://lv.dbpedia.org/resource/Latvijas_PSR> .\n<http://lv.dbpedia.org/resource/%22Ciklons%22_sāksies_naktī> <http://dbpedia.org/ontology/director> <http://lv.dbpedia.org/resource/Ada_Neretniece> .\n<http://lv.dbpedia.org/resource/%22Ciklons%22_sāksies_naktī> <http://dbpedia.org/ontology/editing> <http://lv.dbpedia.org/resource/Marija_Edelmane> .\n<http://lv.dbpedia.org/resource/%22Ciklons%22_sāksies_naktī> <http://dbpedia.org/ontology/language> <http://lv.dbpedia.org/resource/Krievu_valoda> .\n<http://lv.dbpedia.org/resource/%22Ciklons%22_sāksies_naktī> <http://dbpedia.org/ontology/musicComposer> <http://lv.dbpedia.org/resource/Romualds_Grīnblats> .\n<http://lv.dbpedia.org/resource/%22Tobago%22_maina_kursu> <http://dbpedia.org/ontology/cinematography> <http://lv.dbpedia.org/resource/Māris_Rudzītis> .\n<http://lv.dbpedia.org/resource/%22Tobago%22_maina_kursu> <http://dbpedia.org/ontology/country> <http://lv.dbpedia.org/resource/Latvijas_PSR> .",
+         "dataid:sha256sum": "3ad20908ec9315c47dcc519cfc9071b9b272456ad9a0ea5a7bae7604464060be",
+         "dataid-cv:lang": "lv",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:52:51Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1008120",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=lv.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=tr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=tr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://tr.dbpedia.org/resource/!_(albüm)> <http://dbpedia.org/ontology/artist> <http://tr.dbpedia.org/resource/The_Dismemberment_Plan> .\n<http://tr.dbpedia.org/resource/!_(albüm)> <http://dbpedia.org/ontology/recordLabel> <http://tr.dbpedia.org/resource/DeSoto_Records> .\n<http://tr.dbpedia.org/resource/!_(albüm)> <http://dbpedia.org/ontology/subsequentWork> <http://tr.dbpedia.org/resource/The_Dismemberment_Plan_Is_Terrified> .\n<http://tr.dbpedia.org/resource/%22Awaken,_My_Love!%22> <http://dbpedia.org/ontology/artist> <http://tr.dbpedia.org/resource/Donald_Glover> .\n<http://tr.dbpedia.org/resource/%22Awaken,_My_Love!%22> <http://dbpedia.org/ontology/previousWork> <http://tr.dbpedia.org/resource/STN_MTN_/_Kauai> .\n<http://tr.dbpedia.org/resource/%22Awaken,_My_Love!%22> <http://dbpedia.org/ontology/recordLabel> <http://tr.dbpedia.org/resource/Glassnote_Records> .\n<http://tr.dbpedia.org/resource/%22Halkın_Dostları%22_Kimlerdir_ve_Sosyal-Demokratlara_Karşı_Nasıl_Savaşırlar%3F> <http://dbpedia.org/ontology/author> <http://tr.dbpedia.org/resource/Vladimir_Lenin> .\n<http://tr.dbpedia.org/resource/%22Halkın_Dostları%22_Kimlerdir_ve_Sosyal-Demokratlara_Karşı_Nasıl_Savaşırlar%3F> <http://dbpedia.org/ontology/country> <http://tr.dbpedia.org/resource/Rusya> .\n<http://tr.dbpedia.org/resource/%22Halkın_Dostları%22_Kimlerdir_ve_Sosyal-Demokratlara_Karşı_Nasıl_Savaşırlar%3F> <http://dbpedia.org/ontology/language> <http://tr.dbpedia.org/resource/Rusça> .\n<http://tr.dbpedia.org/resource/%22Heroes%22> <http://dbpedia.org/ontology/artist> <http://tr.dbpedia.org/resource/David_Bowie> .",
+         "dataid:sha256sum": "8caff61a91c75cdf50993a27ef7982b759c02beeb1820b08ac4fb1314d716727",
+         "dataid-cv:lang": "tr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:55:24Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "5560115",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=tr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=nl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=nl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://nl.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://nl.dbpedia.org/resource/Dance-punk> .\n<http://nl.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://nl.dbpedia.org/resource/Indie_(muziek)> .\n<http://nl.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://nl.dbpedia.org/resource/Postpunkrevival> .\n<http://nl.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/origin> <http://nl.dbpedia.org/resource/Californië> .\n<http://nl.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/origin> <http://nl.dbpedia.org/resource/Sacramento_(Californië)> .\n<http://nl.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/parentOrganisation> <http://nl.dbpedia.org/resource/Gold_Standard_Laboratories> .\n<http://nl.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/parentOrganisation> <http://nl.dbpedia.org/resource/Touch_and_Go_Records> .\n<http://nl.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/parentOrganisation> <http://nl.dbpedia.org/resource/Warp_Records> .\n<http://nl.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/related> <http://nl.dbpedia.org/resource/LCD_Soundsystem> .\n<http://nl.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/related> <http://nl.dbpedia.org/resource/Maserati_(band)> .",
+         "dataid:sha256sum": "7f12f66ad549ba069445b3723e66fcf811f929ce9e2546509e46042a1bbe1072",
+         "dataid-cv:lang": "nl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:55:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "48533805",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=nl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=ar.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=ar.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://ar.dbpedia.org/resource/(276033)_2002_AJ129> <http://dbpedia.org/ontology/discoverer> <http://ar.dbpedia.org/resource/تعقب_الأجرام_القريبة_من_الأرض> .\n<http://ar.dbpedia.org/resource/(29075)_1950_DA> <http://dbpedia.org/ontology/discoverer> <http://ar.dbpedia.org/resource/كارل_ورتانن> .\n<http://ar.dbpedia.org/resource/(363505)_2003_UC20> <http://dbpedia.org/ontology/discoverer> <http://ar.dbpedia.org/resource/بحث_لنكولن_عن_الكويكبات_القريبة_من_الأرض> .\n<http://ar.dbpedia.org/resource/(أنت_تجعلني)_مجنونة> <http://dbpedia.org/ontology/album> <http://ar.dbpedia.org/resource/...حبيبي_مرة_أخرى_(ألبوم)> .\n<http://ar.dbpedia.org/resource/(أنت_تجعلني)_مجنونة> <http://dbpedia.org/ontology/genre> <http://ar.dbpedia.org/resource/بوب> .\n<http://ar.dbpedia.org/resource/(أنت_تجعلني)_مجنونة> <http://dbpedia.org/ontology/musicalArtist> <http://ar.dbpedia.org/resource/بريتني_سبيرز> .\n<http://ar.dbpedia.org/resource/(أنت_تجعلني)_مجنونة> <http://dbpedia.org/ontology/musicalBand> <http://ar.dbpedia.org/resource/بريتني_سبيرز> .\n<http://ar.dbpedia.org/resource/(أنت_تجعلني)_مجنونة> <http://dbpedia.org/ontology/previousWork> <http://ar.dbpedia.org/resource/أحيانا_(أغنية)> .\n<http://ar.dbpedia.org/resource/(أنت_تجعلني)_مجنونة> <http://dbpedia.org/ontology/subsequentWork> <http://ar.dbpedia.org/resource/ولدت_لأسعدك> .\n<http://ar.dbpedia.org/resource/(تبا_ل)_الجهة_المشرقة> <http://dbpedia.org/ontology/album> <http://ar.dbpedia.org/resource/صل_للشرير> .",
+         "dataid:sha256sum": "b1bc6fd0f9fb0b77446d7cfd899cd896a7706545842c22d29e738a5c1f43c8ed",
+         "dataid-cv:lang": "ar",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:55:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2475873",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=ar.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=cs.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=cs.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://cs.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/bandMember> <http://cs.dbpedia.org/resource/Nic_Offer> .\n<http://cs.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/country> <http://cs.dbpedia.org/resource/Kalifornie> .\n<http://cs.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/country> <http://cs.dbpedia.org/resource/Sacramento> .\n<http://cs.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/country> <http://cs.dbpedia.org/resource/Spojené_státy_americké> .\n<http://cs.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/formerBandMember> <http://cs.dbpedia.org/resource/Jerry_Fuchs> .\n<http://cs.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/formerBandMember> <http://cs.dbpedia.org/resource/Justin_Van_Der_Volgen> .\n<http://cs.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/recordLabel> <http://cs.dbpedia.org/resource/Gold_Standard_Laboratories> .\n<http://cs.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/recordLabel> <http://cs.dbpedia.org/resource/Touch_and_Go_Records> .\n<http://cs.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/recordLabel> <http://cs.dbpedia.org/resource/Warp_Records> .\n<http://cs.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/style> <http://cs.dbpedia.org/resource/Dance-punk> .",
+         "dataid:sha256sum": "9457e130afe58915bc00032af112a16eb2e87b79b79d7267e3bebe84630397ab",
+         "dataid-cv:lang": "cs",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:53:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "7298248",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=cs.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=az.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=az.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://az.dbpedia.org/resource/Adi_quayava> <http://dbpedia.org/ontology/domain> <http://az.dbpedia.org/resource/Psidium> .\n<http://az.dbpedia.org/resource/Agelenidae> <http://dbpedia.org/ontology/kingdom> <http://az.dbpedia.org/resource/Fəsilə> .\n<http://az.dbpedia.org/resource/Agelescape_caucasica> <http://dbpedia.org/ontology/domain> <http://az.dbpedia.org/resource/Agelescape> .\n<http://az.dbpedia.org/resource/Agelescape_talyshica> <http://dbpedia.org/ontology/domain> <http://az.dbpedia.org/resource/Agelescape> .\n<http://az.dbpedia.org/resource/Alireza_Jam_Farsadi> <http://dbpedia.org/ontology/birthPlace> <http://az.dbpedia.org/resource/Təbriz> .\n<http://az.dbpedia.org/resource/Alosa_sphaerocephala> <http://dbpedia.org/ontology/domain> <http://az.dbpedia.org/resource/Alosa> .\n<http://az.dbpedia.org/resource/Amur_enlibaşı> <http://dbpedia.org/ontology/kingdom> <http://az.dbpedia.org/resource/Bioloji_növ> .\n<http://az.dbpedia.org/resource/Amöb> <http://dbpedia.org/ontology/domain> <http://az.dbpedia.org/resource/Amoebidae> .\n<http://az.dbpedia.org/resource/Ananas> <http://xmlns.com/foaf/0.1/depiction> <http://az.dbpedia.org/resource/Pineapple> .\n<http://az.dbpedia.org/resource/Araukariyakimilər> <http://dbpedia.org/ontology/domain> <http://az.dbpedia.org/resource/Bitkilər> .",
+         "dataid:sha256sum": "a680b914ab266372fef9d748b49e3436e76ba3f34fc58b2d5756ee40a913ea20",
+         "dataid-cv:lang": "az",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:51:20Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2819",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=az.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=en.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=en.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedBand> <http://dbpedia.org/resource/Maserati_(band)> .\n<http://dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedBand> <http://dbpedia.org/resource/Out_Hud> .\n<http://dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedMusicalArtist> <http://dbpedia.org/resource/Maserati_(band)> .\n<http://dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedMusicalArtist> <http://dbpedia.org/resource/Out_Hud> .\n<http://dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/bandMember> <http://dbpedia.org/resource/Nic_Offer> .\n<http://dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/formerBandMember> <http://dbpedia.org/resource/Jerry_Fuchs> .\n<http://dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/formerBandMember> <http://dbpedia.org/resource/Justin_Van_Der_Volgen> .\n<http://dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/formerBandMember> <http://dbpedia.org/resource/Tyler_Pope> .\n<http://dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://dbpedia.org/resource/Alternative_dance> .\n<http://dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://dbpedia.org/resource/Dance-punk> .",
+         "dataid:sha256sum": "80924f8f6dbc12304ab04f098aec3b43c809e19efd4a32fd6b83787b3da09a92",
+         "dataid-cv:lang": "en",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:55:09Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "180320482",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=en.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=bn.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=bn.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://bn.dbpedia.org/resource/অঁতোয়ান_লাভোয়াজিয়ে> <http://dbpedia.org/ontology/almaMater> <http://bn.dbpedia.org/resource/কোলেজ_দে_কাত্র-নাসিওঁ> .\n<http://bn.dbpedia.org/resource/অঁতোয়ান_লাভোয়াজিয়ে> <http://dbpedia.org/ontology/almaMater> <http://bn.dbpedia.org/resource/প্যারিস_বিশ্ববিদ্যালয়> .\n<http://bn.dbpedia.org/resource/অঁতোয়ান_লাভোয়াজিয়ে> <http://dbpedia.org/ontology/birthPlace> <http://bn.dbpedia.org/resource/প্যারিস> .\n<http://bn.dbpedia.org/resource/অঁতোয়ান_লাভোয়াজিয়ে> <http://dbpedia.org/ontology/birthPlace> <http://bn.dbpedia.org/resource/ফ্রান্স_রাজ্য> .\n<http://bn.dbpedia.org/resource/অঁতোয়ান_লাভোয়াজিয়ে> <http://dbpedia.org/ontology/deathPlace> <http://bn.dbpedia.org/resource/প্যারিস> .\n<http://bn.dbpedia.org/resource/অঁতোয়ান_লাভোয়াজিয়ে> <http://dbpedia.org/ontology/deathPlace> <http://bn.dbpedia.org/resource/ফ্রান্স> .\n<http://bn.dbpedia.org/resource/অঁতোয়ান_লাভোয়াজিয়ে> <http://dbpedia.org/ontology/influencedBy> <http://bn.dbpedia.org/resource/এতিয়েন_কোঁদিইয়াক> .\n<http://bn.dbpedia.org/resource/অঁতোয়ান_লাভোয়াজিয়ে> <http://dbpedia.org/ontology/influencedBy> <http://bn.dbpedia.org/resource/গিইয়োম-ফ্রঁসোয়া_রুয়েল> .\n<http://bn.dbpedia.org/resource/অঁতোয়ান_লাভোয়াজিয়ে> <http://dbpedia.org/ontology/knownFor> <http://bn.dbpedia.org/resource/Stoichiometry> .\n<http://bn.dbpedia.org/resource/অঁতোয়ান_লাভোয়াজিয়ে> <http://dbpedia.org/ontology/knownFor> <http://bn.dbpedia.org/resource/অক্সিজেন> .",
+         "dataid:sha256sum": "166d5dd69ae4b66545fa5e2bb1563f45463a0e29924be1f8082613aafbc12ca3",
+         "dataid-cv:lang": "bn",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:55:24Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "525537",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=bn.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=uk.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=uk.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://uk.dbpedia.org/resource/!FEST> <http://dbpedia.org/ontology/foundationPlace> <http://uk.dbpedia.org/resource/2007> .\n<http://uk.dbpedia.org/resource/&RQ> <http://dbpedia.org/ontology/author> <http://uk.dbpedia.org/resource/Масімо_Меліна> .\n<http://uk.dbpedia.org/resource/(Не)ідеальний_чоловік> <http://dbpedia.org/ontology/country> <http://uk.dbpedia.org/resource/Russia> .\n<http://uk.dbpedia.org/resource/..._На_прізвисько_«Звір»> <http://dbpedia.org/ontology/producedBy> <http://uk.dbpedia.org/resource/Мосфільм> .\n<http://uk.dbpedia.org/resource/.NET_Framework> <http://dbpedia.org/ontology/creator> <http://uk.dbpedia.org/resource/Microsoft> .\n<http://uk.dbpedia.org/resource/.kkrieger> <http://dbpedia.org/ontology/gameArtist> <http://uk.dbpedia.org/resource/.theprodukkt> .\n<http://uk.dbpedia.org/resource/007:_Quantum_of_Solace> <http://dbpedia.org/ontology/distributor> <http://uk.dbpedia.org/resource/Activision> .\n<http://uk.dbpedia.org/resource/007:_Quantum_of_Solace> <http://dbpedia.org/ontology/distributor> <http://uk.dbpedia.org/resource/Sony_Interactive_Entertainment> .\n<http://uk.dbpedia.org/resource/007:_Quantum_of_Solace> <http://dbpedia.org/ontology/distributor> <http://uk.dbpedia.org/resource/Square_Enix> .\n<http://uk.dbpedia.org/resource/007:_Quantum_of_Solace> <http://dbpedia.org/ontology/gameArtist> <http://uk.dbpedia.org/resource/Beenox> .",
+         "dataid:sha256sum": "5d8a9ffcd4b941f323419da333515a0140d041bfbe1ba86d85bb66803fc03a0f",
+         "dataid-cv:lang": "uk",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:55:48Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3189998",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=uk.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=sr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=sr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://sr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/album> <http://sr.dbpedia.org/resource/!!!__Album__1> .\n<http://sr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/bandMember> <http://sr.dbpedia.org/resource/Џастин_Ван_Дер_Волген> .\n<http://sr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/bandMember> <http://sr.dbpedia.org/resource/Џери_Фукс> .\n<http://sr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/bandMember> <http://sr.dbpedia.org/resource/Алан_Вилсон> .\n<http://sr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/bandMember> <http://sr.dbpedia.org/resource/Ден_Гормен> .\n<http://sr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/bandMember> <http://sr.dbpedia.org/resource/Марио_Андреони> .\n<http://sr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/bandMember> <http://sr.dbpedia.org/resource/Ник_Офер> .\n<http://sr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/bandMember> <http://sr.dbpedia.org/resource/Тајлер_Поуп> .\n<http://sr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/formerBandMember> <http://sr.dbpedia.org/resource/Џејсон_Ресин> .\n<http://sr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/formerBandMember> <http://sr.dbpedia.org/resource/Џон_Пуг> .",
+         "dataid:sha256sum": "e0aafb740c0505e410c652e3b547ca950b30041a122d5f3b8e1b9f9554fce2da",
+         "dataid-cv:lang": "sr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:53:02Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "5598659",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=sr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=pl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=pl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://pl.dbpedia.org/resource/!!!_(album)> <http://dbpedia.org/ontology/artist> <http://pl.dbpedia.org/resource/!!!> .\n<http://pl.dbpedia.org/resource/!!!_(album)> <http://dbpedia.org/ontology/genre> <http://pl.dbpedia.org/resource/Dance-punk> .\n<http://pl.dbpedia.org/resource/!!!_(album)> <http://dbpedia.org/ontology/genre> <http://pl.dbpedia.org/resource/Post-punk_revival> .\n<http://pl.dbpedia.org/resource/!!!_(album)> <http://dbpedia.org/ontology/recordLabel> <http://pl.dbpedia.org/resource/Gold_Standard_Laboratories> .\n<http://pl.dbpedia.org/resource/!!!_(album)> <http://dbpedia.org/ontology/subsequentWork> <http://pl.dbpedia.org/resource/Louden_Up_Now> .\n<http://pl.dbpedia.org/resource/!To!> <http://dbpedia.org/ontology/artist> <http://pl.dbpedia.org/resource/Strachy_na_Lachy> .\n<http://pl.dbpedia.org/resource/!To!> <http://dbpedia.org/ontology/genre> <http://pl.dbpedia.org/resource/Rock> .\n<http://pl.dbpedia.org/resource/!To!> <http://dbpedia.org/ontology/previousWork> <http://pl.dbpedia.org/resource/Dekada_(album_Strachów_na_Lachy)> .\n<http://pl.dbpedia.org/resource/!To!> <http://dbpedia.org/ontology/recordLabel> <http://pl.dbpedia.org/resource/S.P._Records> .\n<http://pl.dbpedia.org/resource/!To!> <http://dbpedia.org/ontology/subsequentWork> <http://pl.dbpedia.org/resource/Przechodzień_o_wschodzie> .",
+         "dataid:sha256sum": "c9529195b7a405459af41eb5ee5d478568145dae00ea12a869e002aed2b17d8a",
+         "dataid-cv:lang": "pl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:56:05Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "17601568",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=pl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=fr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=fr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://fr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://fr.dbpedia.org/resource/Dance-punk> .\n<http://fr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://fr.dbpedia.org/resource/Rock_indépendant> .\n<http://fr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/nationality> <http://fr.dbpedia.org/resource/États-Unis> .\n<http://fr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/recordLabel> <http://fr.dbpedia.org/resource/Gold_Standard_Laboratories> .\n<http://fr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/recordLabel> <http://fr.dbpedia.org/resource/Touch_and_Go_Records> .\n<http://fr.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/recordLabel> <http://fr.dbpedia.org/resource/Warp_Records> .\n<http://fr.dbpedia.org/resource/!!!> <http://xmlns.com/foaf/0.1/homepage> <http://www.chkchkchk.net/> .\n<http://fr.dbpedia.org/resource/!!!_(album)> <http://dbpedia.org/ontology/artist> <http://fr.dbpedia.org/resource/!!!> .\n<http://fr.dbpedia.org/resource/!!!_(album)> <http://dbpedia.org/ontology/genre> <http://fr.dbpedia.org/resource/Dance-punk> .\n<http://fr.dbpedia.org/resource/!!!_(album)> <http://dbpedia.org/ontology/genre> <http://fr.dbpedia.org/resource/Post-punk> .",
+         "dataid:sha256sum": "29e3f4db1dfabeb4c5a8dbd7f87ab5e4d3965d69c18fc8dad656c888e6130b1a",
+         "dataid-cv:lang": "fr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:55:22Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "55459613",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=fr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=gl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=gl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://gl.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://gl.dbpedia.org/resource/Dance-punk> .\n<http://gl.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://gl.dbpedia.org/resource/Indie_rock> .\n<http://gl.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://gl.dbpedia.org/resource/Post-punk_revival> .\n<http://gl.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/hometown> <http://gl.dbpedia.org/resource/Sacramento,_California> .\n<http://gl.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/related> <http://gl.dbpedia.org/resource/Maserati_(grupo_musical)> .\n<http://gl.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/related> <http://gl.dbpedia.org/resource/Out_Hud> .\n<http://gl.dbpedia.org/resource/!!!> <http://xmlns.com/foaf/0.1/homepage> <http://www.chkchkchk.net/> .\n<http://gl.dbpedia.org/resource/!!!_(álbum)> <http://dbpedia.org/ontology/genre> <http://gl.dbpedia.org/resource/Dance-punk> .\n<http://gl.dbpedia.org/resource/!!!_(álbum)> <http://dbpedia.org/ontology/genre> <http://gl.dbpedia.org/resource/Post-punk_revival> .\n<http://gl.dbpedia.org/resource/!!!_(álbum)> <http://dbpedia.org/ontology/recordLabel> <http://gl.dbpedia.org/resource/Gold_Standard_Laboratories> .",
+         "dataid:sha256sum": "2e0f183bf3fc4e2b03ab3451cb66a86eb08d4d2eaf1d77b03ec4eda83c435fb3",
+         "dataid-cv:lang": "gl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:56:10Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2945274",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=gl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=hy.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=hy.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://hy.dbpedia.org/resource/Աբբաս_Սիխաթ> <http://dbpedia.org/ontology/birthPlace> <http://hy.dbpedia.org/resource/Շամախի> .\n<http://hy.dbpedia.org/resource/Աբբաս_Սիխաթ> <http://dbpedia.org/ontology/deathPlace> <http://hy.dbpedia.org/resource/Գանձակ> .\n<http://hy.dbpedia.org/resource/Աբբոթ_Լիման> <http://dbpedia.org/ontology/deathPlace> <http://hy.dbpedia.org/resource/Ամերիկայի_Միացյալ_Նահանգներ> .\n<http://hy.dbpedia.org/resource/Աբբոթ_Լիման> <http://dbpedia.org/ontology/deathPlace> <http://hy.dbpedia.org/resource/Նյու_Յորք> .\n<http://hy.dbpedia.org/resource/Աբդ_ալ-Ռահման_Շուքրի> <http://dbpedia.org/ontology/deathPlace> <http://hy.dbpedia.org/resource/Կահիրե> .\n<http://hy.dbpedia.org/resource/Աբդալլահ_իբն_ալ-Մուկաֆֆաա> <http://dbpedia.org/ontology/deathPlace> <http://hy.dbpedia.org/resource/Բաղդադ> .\n<http://hy.dbpedia.org/resource/Աբդուլլա_Ղահհար> <http://dbpedia.org/ontology/genre> <http://hy.dbpedia.org/resource/Ռեալիզմ_(գրականություն)> .\n<http://hy.dbpedia.org/resource/Աբել_Ապրեսյան> <http://dbpedia.org/ontology/deathPlace> <http://hy.dbpedia.org/resource/Աստրախան> .\n<http://hy.dbpedia.org/resource/Աբյուդենոս> <http://dbpedia.org/ontology/language> <http://hy.dbpedia.org/resource/Հունարեն> .\n<http://hy.dbpedia.org/resource/Աբու-Բաքար_Ահմադխան> <http://dbpedia.org/ontology/birthPlace> <http://hy.dbpedia.org/resource/Կուբաչի> .",
+         "dataid:sha256sum": "d47be441f2892dcce1e1562b42da0237ca42dc5fc8348397b55ef2ab3f8a44bc",
+         "dataid-cv:lang": "hy",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:53:40Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "6866",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=hy.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=es.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=es.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://es.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/bandMember> <http://es.dbpedia.org/resource/Allan_Wilson> .\n<http://es.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/bandMember> <http://es.dbpedia.org/resource/Dan_Gorman> .\n<http://es.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/bandMember> <http://es.dbpedia.org/resource/Mario_Andreoni> .\n<http://es.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/bandMember> <http://es.dbpedia.org/resource/Nic_Offer> .\n<http://es.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/formerBandMember> <http://es.dbpedia.org/resource/John_Pugh> .\n<http://es.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/formerBandMember> <http://es.dbpedia.org/resource/Tyler_Pope> .\n<http://es.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://es.dbpedia.org/resource/Dance_punk> .\n<http://es.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://es.dbpedia.org/resource/Indie_rock> .\n<http://es.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://es.dbpedia.org/resource/Pospunk_revival> .\n<http://es.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/hometown> <http://es.dbpedia.org/resource/California> .",
+         "dataid:sha256sum": "6b33b861100fdbe1f0a5259e8cb17f8eb4bcf366993c3c9b7c380fd98ec1c2ad",
+         "dataid-cv:lang": "es",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:53:58Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "37353213",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=es.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=pt.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=pt.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://pt.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedBand> <http://pt.dbpedia.org/resource/LCD_Soundsystem> .\n<http://pt.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedBand> <http://pt.dbpedia.org/resource/Out_Hud> .\n<http://pt.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedMusicalArtist> <http://pt.dbpedia.org/resource/LCD_Soundsystem> .\n<http://pt.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/associatedMusicalArtist> <http://pt.dbpedia.org/resource/Out_Hud> .\n<http://pt.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/country> <http://pt.dbpedia.org/resource/Estados_Unidos> .\n<http://pt.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/currentMember> <http://pt.dbpedia.org/resource/Nic_Offer> .\n<http://pt.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://pt.dbpedia.org/resource/Dance-punk> .\n<http://pt.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://pt.dbpedia.org/resource/Indie_rock> .\n<http://pt.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://pt.dbpedia.org/resource/Post-punk_revival> .\n<http://pt.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/hometown> <http://pt.dbpedia.org/resource/Califórnia> .",
+         "dataid:sha256sum": "b575eab603c421f106b7880bfec0605c0943cde2d776b733523ef5a14dd02ade",
+         "dataid-cv:lang": "pt",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:54:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "24421317",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=pt.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=ja.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=ja.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://ja.dbpedia.org/resource/!!!!!!!!/君という仮説> <http://dbpedia.org/ontology/album> <http://ja.dbpedia.org/resource/4thアルバム（仮）> .\n<http://ja.dbpedia.org/resource/!!!!!!!!/君という仮説> <http://dbpedia.org/ontology/artist> <http://ja.dbpedia.org/resource/アップアップガールズ（仮）> .\n<http://ja.dbpedia.org/resource/!!!!!!!!/君という仮説> <http://dbpedia.org/ontology/format> <http://ja.dbpedia.org/resource/シングル> .\n<http://ja.dbpedia.org/resource/!!!!!!!!/君という仮説> <http://dbpedia.org/ontology/format> <http://ja.dbpedia.org/resource/音楽配信> .\n<http://ja.dbpedia.org/resource/!!!!!!!!/君という仮説> <http://dbpedia.org/ontology/genre> <http://ja.dbpedia.org/resource/J-POP> .\n<http://ja.dbpedia.org/resource/!!!!!!!!/君という仮説> <http://dbpedia.org/ontology/position> <http://ja.dbpedia.org/resource/オリコンチャート> .\n<http://ja.dbpedia.org/resource/!!!!!!!!/君という仮説> <http://dbpedia.org/ontology/previousWork> <http://ja.dbpedia.org/resource/パーリーピーポーエイリアン/セブン☆ピース> .\n<http://ja.dbpedia.org/resource/!!!!!!!!/君という仮説> <http://dbpedia.org/ontology/recordLabel> <http://ja.dbpedia.org/resource/T-Palette_Records> .\n<http://ja.dbpedia.org/resource/!!!!!!!!/君という仮説> <http://dbpedia.org/ontology/writer> <http://ja.dbpedia.org/resource/Michitomo> .\n<http://ja.dbpedia.org/resource/!!!!!!!!/君という仮説> <http://dbpedia.org/ontology/writer> <http://ja.dbpedia.org/resource/児玉雨子> .",
+         "dataid:sha256sum": "5796cae6af84b3c5e74358c0b7bd1fb5134693608905933ec1faadd5444684af",
+         "dataid-cv:lang": "ja",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:52:55Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "21546773",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=ja.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=ga.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=ga.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://ga.dbpedia.org/resource/!Xóõ> <http://dbpedia.org/ontology/languageFamily> <http://ga.dbpedia.org/resource/Teangacha_Khoisan> .\n<http://ga.dbpedia.org/resource/!Xóõ> <http://dbpedia.org/ontology/spokenIn> <http://ga.dbpedia.org/resource/An_Bhotsuáin> .\n<http://ga.dbpedia.org/resource/!Xóõ> <http://dbpedia.org/ontology/spokenIn> <http://ga.dbpedia.org/resource/An_Namaib> .\n<http://ga.dbpedia.org/resource/%22Weird_Al%22_Yankovic> <http://dbpedia.org/ontology/occupation> <http://ga.dbpedia.org/resource/Fuirseoir> .\n<http://ga.dbpedia.org/resource/%22Weird_Al%22_Yankovic> <http://dbpedia.org/ontology/stateOfOrigin> <http://ga.dbpedia.org/resource/Stáit_Aontaithe_Mheiriceá> .\n<http://ga.dbpedia.org/resource/1._Fußballclub_Union_Berlin> <http://dbpedia.org/ontology/city> <http://ga.dbpedia.org/resource/Beirlín> .\n<http://ga.dbpedia.org/resource/1._Fußballclub_Union_Berlin> <http://dbpedia.org/ontology/country> <http://ga.dbpedia.org/resource/An_Ghearmáin> .\n<http://ga.dbpedia.org/resource/10_Items_or_Less_(scannán)> <http://dbpedia.org/ontology/cinematography> <http://ga.dbpedia.org/resource/Phedon_Papamichael> .\n<http://ga.dbpedia.org/resource/10_Items_or_Less_(scannán)> <http://dbpedia.org/ontology/country> <http://ga.dbpedia.org/resource/Stáit_Aontaithe_Mheiriceá> .\n<http://ga.dbpedia.org/resource/10_Items_or_Less_(scannán)> <http://dbpedia.org/ontology/director> <http://ga.dbpedia.org/resource/Brad_Silberling> .",
+         "dataid:sha256sum": "749f2506b811c9a03a7c57f2910240c0473a6b5983efcfdc22155463a6493741",
+         "dataid-cv:lang": "ga",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:52:26Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "286947",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=ga.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=ru.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=ru.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://ru.dbpedia.org/resource/!!!!!!!> <http://dbpedia.org/ontology/album> <http://ru.dbpedia.org/resource/When_We_All_Fall_Asleep,_Where_Do_We_Go%3F> .\n<http://ru.dbpedia.org/resource/!!!!!!!> <http://dbpedia.org/ontology/artist> <http://ru.dbpedia.org/resource/Айлиш,_Билли> .\n<http://ru.dbpedia.org/resource/!!!!!!!> <http://dbpedia.org/ontology/producer> <http://ru.dbpedia.org/resource/О’Коннелл,_Финнеас> .\n<http://ru.dbpedia.org/resource/!!!!!!!> <http://dbpedia.org/ontology/recordLabel> <http://ru.dbpedia.org/resource/Interscope_Records> .\n<http://ru.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/city> <http://ru.dbpedia.org/resource/Сакраменто_(Калифорния)> .\n<http://ru.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://ru.dbpedia.org/resource/Дэнс-панк> .\n<http://ru.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://ru.dbpedia.org/resource/Инди-рок> .\n<http://ru.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://ru.dbpedia.org/resource/Постпанк-ривайвл> .\n<http://ru.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/recordLabel> <http://ru.dbpedia.org/resource/Gold_Standard_Laboratories> .\n<http://ru.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/recordLabel> <http://ru.dbpedia.org/resource/Touch_and_Go_Records> .",
+         "dataid:sha256sum": "c5569b7f6a1c27f306c7e7f896f09d249569c542a143ae34d4898c3d8b46d27f",
+         "dataid-cv:lang": "ru",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:52:50Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "24781520",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=ru.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=id.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=id.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://id.dbpedia.org/resource/!!!_(album)> <http://dbpedia.org/ontology/artist> <http://id.dbpedia.org/resource/!!!> .\n<http://id.dbpedia.org/resource/!!!_(album)> <http://dbpedia.org/ontology/genre> <http://id.dbpedia.org/resource/Dance-punk> .\n<http://id.dbpedia.org/resource/!!!_(album)> <http://dbpedia.org/ontology/genre> <http://id.dbpedia.org/resource/Post-punk_revival> .\n<http://id.dbpedia.org/resource/!!!_(album)> <http://dbpedia.org/ontology/producer> <http://id.dbpedia.org/resource/Justin_Van_Der_Volgen> .\n<http://id.dbpedia.org/resource/!!!_(album)> <http://dbpedia.org/ontology/recordLabel> <http://id.dbpedia.org/resource/Gold_Standard_Laboratories> .\n<http://id.dbpedia.org/resource/!!!_(album)> <http://dbpedia.org/ontology/subsequentWork> <http://id.dbpedia.org/resource/Louden_Up_Now> .\n<http://id.dbpedia.org/resource/!!!_(album)> <http://dbpedia.org/ontology/type> <http://id.dbpedia.org/resource/Album> .\n<http://id.dbpedia.org/resource/%22O%22-Jung.Ban.Hap.> <http://dbpedia.org/ontology/artist> <http://id.dbpedia.org/resource/TVXQ> .\n<http://id.dbpedia.org/resource/%22O%22-Jung.Ban.Hap.> <http://dbpedia.org/ontology/genre> <http://id.dbpedia.org/resource/Akapela> .\n<http://id.dbpedia.org/resource/%22O%22-Jung.Ban.Hap.> <http://dbpedia.org/ontology/genre> <http://id.dbpedia.org/resource/Balada> .",
+         "dataid:sha256sum": "41df5afd8ffa93bf01259c17973969cf90902545ab98dce35f9dc3f9b3eab7c7",
+         "dataid-cv:lang": "id",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:51:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "11781169",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=id.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=sl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=sl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://sl.dbpedia.org/resource/'38> <http://dbpedia.org/ontology/cinematography> <http://sl.dbpedia.org/resource/Gérard_Vandenberg> .\n<http://sl.dbpedia.org/resource/'38> <http://dbpedia.org/ontology/director> <http://sl.dbpedia.org/resource/Wolfgang_Glück> .\n<http://sl.dbpedia.org/resource/'38> <http://dbpedia.org/ontology/distributor> <http://sl.dbpedia.org/resource/East_West_Classics> .\n<http://sl.dbpedia.org/resource/'38> <http://dbpedia.org/ontology/language> <http://sl.dbpedia.org/resource/Nemščina> .\n<http://sl.dbpedia.org/resource/'38> <http://dbpedia.org/ontology/musicComposer> <http://sl.dbpedia.org/resource/Bert_Grund> .\n<http://sl.dbpedia.org/resource/(119068)_2001_KC77> <http://dbpedia.org/ontology/discoverer> <http://sl.dbpedia.org/resource/M._W._Buie> .\n<http://sl.dbpedia.org/resource/(119979)_2002_WC19> <http://dbpedia.org/ontology/discoverer> <http://sl.dbpedia.org/resource/Observatorij_Mount_Palomar> .\n<http://sl.dbpedia.org/resource/(130391)_2000_JG81> <http://dbpedia.org/ontology/discoverer> <http://sl.dbpedia.org/resource/Observatorij_La_Silla> .\n<http://sl.dbpedia.org/resource/(15760)_1992_QB1> <http://dbpedia.org/ontology/discoverer> <http://sl.dbpedia.org/resource/David_C._Jewitt> .\n<http://sl.dbpedia.org/resource/(15760)_1992_QB1> <http://dbpedia.org/ontology/discoverer> <http://sl.dbpedia.org/resource/Jane_X._Luu> .",
+         "dataid:sha256sum": "51371c6b8ea532f9be3a0b9d548ce8b2d5c8bd26678f566902eebec3d37ebf8c",
+         "dataid-cv:lang": "sl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:55:59Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1319352",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=sl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=be.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=be.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://be.dbpedia.org/resource/!T.O.O.H.!> <http://dbpedia.org/ontology/genre> <http://be.dbpedia.org/resource/Дэз-метал> .\n<http://be.dbpedia.org/resource/!T.O.O.H.!> <http://dbpedia.org/ontology/genre> <http://be.dbpedia.org/resource/Дэзграйнд> .\n<http://be.dbpedia.org/resource/!T.O.O.H.!> <http://dbpedia.org/ontology/recordLabel> <http://be.dbpedia.org/resource/Earache_Records> .\n<http://be.dbpedia.org/resource/!T.O.O.H.!> <http://xmlns.com/foaf/0.1/homepage> <http://tooh.wz.cz/> .\n<http://be.dbpedia.org/resource/...Ready_for_It%3F_(песня_Тэйлар_Свіфт)> <http://dbpedia.org/ontology/genre> <http://be.dbpedia.org/resource/Поп-музыка> .\n<http://be.dbpedia.org/resource/1-е_Аршанскае_раённае_благачынне> <http://dbpedia.org/ontology/type> <http://be.dbpedia.org/resource/Праваслаўе> .\n<http://be.dbpedia.org/resource/1-е_Барысаўскае_благачынне> <http://dbpedia.org/ontology/type> <http://be.dbpedia.org/resource/Праваслаўе> .\n<http://be.dbpedia.org/resource/1-е_Віцебскае_раённае_благачынне> <http://dbpedia.org/ontology/type> <http://be.dbpedia.org/resource/Праваслаўе> .\n<http://be.dbpedia.org/resource/1-е_Лагойскае_благачынне> <http://dbpedia.org/ontology/type> <http://be.dbpedia.org/resource/Праваслаўе> .\n<http://be.dbpedia.org/resource/1-е_Мінскае_гарадское_благачынне> <http://dbpedia.org/ontology/type> <http://be.dbpedia.org/resource/Праваслаўе> .",
+         "dataid:sha256sum": "85caa64d54cc5a134d5ff4eab3f0a367fb0f1b41758ebef475d19809ea62a13a",
+         "dataid-cv:lang": "be",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:55:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1287143",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=be.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=bg.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=bg.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://bg.dbpedia.org/resource/'74_Jailbreak_(плоча)> <http://dbpedia.org/ontology/genre> <http://bg.dbpedia.org/resource/Блус_рок> .\n<http://bg.dbpedia.org/resource/'74_Jailbreak_(плоча)> <http://dbpedia.org/ontology/genre> <http://bg.dbpedia.org/resource/Хард_рок> .\n<http://bg.dbpedia.org/resource/'74_Jailbreak_(плоча)> <http://dbpedia.org/ontology/previousWork> <http://bg.dbpedia.org/resource/Flick_of_the_switch> .\n<http://bg.dbpedia.org/resource/'74_Jailbreak_(плоча)> <http://dbpedia.org/ontology/producer> <http://bg.dbpedia.org/resource/Джордж_Йънг> .\n<http://bg.dbpedia.org/resource/'74_Jailbreak_(плоча)> <http://dbpedia.org/ontology/producer> <http://bg.dbpedia.org/resource/Хари_Ванда> .\n<http://bg.dbpedia.org/resource/'74_Jailbreak_(плоча)> <http://dbpedia.org/ontology/subsequentWork> <http://bg.dbpedia.org/resource/Fly_on_the_Wall> .\n<http://bg.dbpedia.org/resource/'74_Jailbreak_(плоча)> <http://dbpedia.org/ontology/type> <http://bg.dbpedia.org/resource/EP> .\n<http://bg.dbpedia.org/resource/'98_Live_Meltdown> <http://dbpedia.org/ontology/artist> <http://bg.dbpedia.org/resource/Джудас_Прийст> .\n<http://bg.dbpedia.org/resource/'98_Live_Meltdown> <http://dbpedia.org/ontology/genre> <http://bg.dbpedia.org/resource/Хеви_метъл> .\n<http://bg.dbpedia.org/resource/'98_Live_Meltdown> <http://dbpedia.org/ontology/previousWork> <http://bg.dbpedia.org/resource/Priest...Live!> .",
+         "dataid:sha256sum": "042e84f20741b51b51a7224b0499b92356184af8eb287fecfa33754a7389facc",
+         "dataid-cv:lang": "bg",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:55:40Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3781305",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=bg.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=it.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=it.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://it.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/recordLabel> <http://it.dbpedia.org/resource/Gold_Standard_Laboratories> .\n<http://it.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/recordLabel> <http://it.dbpedia.org/resource/Touch_and_Go_Records> .\n<http://it.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/recordLabel> <http://it.dbpedia.org/resource/Warp_Records> .\n<http://it.dbpedia.org/resource/!!!Fuck_You!!!> <http://dbpedia.org/ontology/artist> <http://it.dbpedia.org/resource/Overkill_(gruppo_musicale)> .\n<http://it.dbpedia.org/resource/!!!Fuck_You!!!> <http://dbpedia.org/ontology/mediaType> <http://it.dbpedia.org/resource/Audiocassetta> .\n<http://it.dbpedia.org/resource/!!!Fuck_You!!!> <http://dbpedia.org/ontology/mediaType> <http://it.dbpedia.org/resource/Compact_disc> .\n<http://it.dbpedia.org/resource/!!!Fuck_You!!!> <http://dbpedia.org/ontology/mediaType> <http://it.dbpedia.org/resource/Disco_in_vinile> .\n<http://it.dbpedia.org/resource/!!!Fuck_You!!!> <http://dbpedia.org/ontology/previousWork> <http://it.dbpedia.org/resource/Taking_Over_(Overkill)> .\n<http://it.dbpedia.org/resource/!!!Fuck_You!!!> <http://dbpedia.org/ontology/producer> <http://it.dbpedia.org/resource/Alex_Perialas> .\n<http://it.dbpedia.org/resource/!!!Fuck_You!!!> <http://dbpedia.org/ontology/producer> <http://it.dbpedia.org/resource/Overkill_(gruppo_musicale)> .",
+         "dataid:sha256sum": "1ae321e04feaf3f51694deb78d099b268ede7c62d1e179eb54a1f6a49934a98b",
+         "dataid-cv:lang": "it",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:55:57Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "29723238",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=it.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=ca.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=ca.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://ca.dbpedia.org/resource/'Anata> <http://dbpedia.org/ontology/country> <http://ca.dbpedia.org/resource/Espanya> .\n<http://ca.dbpedia.org/resource/'Anin> <http://dbpedia.org/ontology/country> <http://ca.dbpedia.org/resource/Espanya> .\n<http://ca.dbpedia.org/resource/'Aqqaba> <http://dbpedia.org/ontology/country> <http://ca.dbpedia.org/resource/Espanya> .\n<http://ca.dbpedia.org/resource/'Arab_al-Rashayida> <http://dbpedia.org/ontology/country> <http://ca.dbpedia.org/resource/Espanya> .\n<http://ca.dbpedia.org/resource/'Atara> <http://dbpedia.org/ontology/country> <http://ca.dbpedia.org/resource/Espanya> .\n<http://ca.dbpedia.org/resource/'Azza> <http://dbpedia.org/ontology/country> <http://ca.dbpedia.org/resource/Espanya> .\n<http://ca.dbpedia.org/resource/'Eua> <http://dbpedia.org/ontology/country> <http://ca.dbpedia.org/resource/Espanya> .\n<http://ca.dbpedia.org/resource/'Ohonua> <http://dbpedia.org/ontology/country> <http://ca.dbpedia.org/resource/Espanya> .\n<http://ca.dbpedia.org/resource/'Uiha> <http://dbpedia.org/ontology/country> <http://ca.dbpedia.org/resource/Espanya> .\n<http://ca.dbpedia.org/resource/'s-Gravenvoeren> <http://dbpedia.org/ontology/country> <http://ca.dbpedia.org/resource/Espanya> .",
+         "dataid:sha256sum": "8767029eaf322c122eeab05853c72daa1ffd7a46c82e08deaca0860715ba2879",
+         "dataid-cv:lang": "ca",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:56:07Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1772998",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=ca.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=ro.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=ro.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://ro.dbpedia.org/resource/...Și_la_sfârșit_a_mai_rămas_coșmarul> <http://dbpedia.org/ontology/author> <http://ro.dbpedia.org/resource/Oliviu_Crâznic> .\n<http://ro.dbpedia.org/resource/...Și_la_sfârșit_a_mai_rămas_coșmarul> <http://dbpedia.org/ontology/literaryGenre> <http://ro.dbpedia.org/resource/Horror_(dezambiguizare)> .\n<http://ro.dbpedia.org/resource/...Și_la_sfârșit_a_mai_rămas_coșmarul> <http://dbpedia.org/ontology/publisher> <http://ro.dbpedia.org/resource/Listă_de_edituri_din_România> .\n<http://ro.dbpedia.org/resource/1632_(roman)> <http://dbpedia.org/ontology/author> <http://ro.dbpedia.org/resource/Eric_Flint> .\n<http://ro.dbpedia.org/resource/1632_(roman)> <http://dbpedia.org/ontology/country> <http://ro.dbpedia.org/resource/Statele_Unite_ale_Americii> .\n<http://ro.dbpedia.org/resource/1632_(roman)> <http://dbpedia.org/ontology/illustrator> <http://ro.dbpedia.org/resource/Larry_Elmore> .\n<http://ro.dbpedia.org/resource/1632_(roman)> <http://dbpedia.org/ontology/language> <http://ro.dbpedia.org/resource/Limba_engleză> .\n<http://ro.dbpedia.org/resource/1632_(roman)> <http://dbpedia.org/ontology/literaryGenre> <http://ro.dbpedia.org/resource/Ucronie> .\n<http://ro.dbpedia.org/resource/1632_(roman)> <http://dbpedia.org/ontology/publisher> <http://ro.dbpedia.org/resource/Baen_Books> .\n<http://ro.dbpedia.org/resource/1632_(roman)> <http://dbpedia.org/ontology/series> <http://ro.dbpedia.org/resource/Seria_1632> .",
+         "dataid:sha256sum": "85288dcd4ee96bc19cb7827e851d1f68d73688bb2780d50bc4eda92ac0c97637",
+         "dataid-cv:lang": "ro",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:55:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "30134",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=ro.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=vi.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=vi.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://vi.dbpedia.org/resource/100_ngày_bên_em> <http://dbpedia.org/ontology/musicComposer> <http://vi.dbpedia.org/resource/Hoàng_Dũng_(ca_sĩ)> .\n<http://vi.dbpedia.org/resource/100_ngày_bên_em> <http://dbpedia.org/ontology/musicComposer> <http://vi.dbpedia.org/resource/Hòa_Minzy> .\n<http://vi.dbpedia.org/resource/100_ngày_bên_em> <http://dbpedia.org/ontology/musicComposer> <http://vi.dbpedia.org/resource/Jun_Phạm> .\n<http://vi.dbpedia.org/resource/100_ngày_bên_em> <http://dbpedia.org/ontology/musicComposer> <http://vi.dbpedia.org/resource/Văn_Mai_Hương> .\n<http://vi.dbpedia.org/resource/100_ngày_bên_em> <http://dbpedia.org/ontology/musicComposer> <http://vi.dbpedia.org/resource/Đức_Phúc> .\n<http://vi.dbpedia.org/resource/100_ngày_bên_em> <http://dbpedia.org/ontology/starring> <http://vi.dbpedia.org/resource/B_Trần> .\n<http://vi.dbpedia.org/resource/100_ngày_bên_em> <http://dbpedia.org/ontology/starring> <http://vi.dbpedia.org/resource/Chiều_Xuân> .\n<http://vi.dbpedia.org/resource/100_ngày_bên_em> <http://dbpedia.org/ontology/starring> <http://vi.dbpedia.org/resource/Gin_Tuấn_Kiệt> .\n<http://vi.dbpedia.org/resource/100_ngày_bên_em> <http://dbpedia.org/ontology/starring> <http://vi.dbpedia.org/resource/Jun_Phạm> .\n<http://vi.dbpedia.org/resource/100_ngày_bên_em> <http://dbpedia.org/ontology/starring> <http://vi.dbpedia.org/resource/Khả_Ngân> .",
+         "dataid:sha256sum": "9669fdb69f0efbfe8b9f44ce3d8dd29e8b36f7634a23f80de6c86b9ee9d4ae66",
+         "dataid-cv:lang": "vi",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:52:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "548277",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=vi.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=hu.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=hu.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://hu.dbpedia.org/resource/!T.O.O.H.!> <http://dbpedia.org/ontology/country> <http://hu.dbpedia.org/resource/Csehország> .\n<http://hu.dbpedia.org/resource/!T.O.O.H.!> <http://dbpedia.org/ontology/country> <http://hu.dbpedia.org/resource/Prága> .\n<http://hu.dbpedia.org/resource/(10003)_1971_UD1> <http://dbpedia.org/ontology/discoverer> <http://hu.dbpedia.org/resource/Luboš_Kohoutek> .\n<http://hu.dbpedia.org/resource/(10018)_1979_MG4> <http://dbpedia.org/ontology/discoverer> <http://hu.dbpedia.org/resource/Eleanor_F._Helin> .\n<http://hu.dbpedia.org/resource/(10019)_1979_MK7> <http://dbpedia.org/ontology/discoverer> <http://hu.dbpedia.org/resource/Eleanor_F._Helin> .\n<http://hu.dbpedia.org/resource/(10019)_1979_MK7> <http://dbpedia.org/ontology/discoverer> <http://hu.dbpedia.org/resource/Schelte_J._Bus> .\n<http://hu.dbpedia.org/resource/(10020)_1979_OQ5> <http://dbpedia.org/ontology/discoverer> <http://hu.dbpedia.org/resource/Schelte_J._Bus> .\n<http://hu.dbpedia.org/resource/(10026)_1980_RE1> <http://dbpedia.org/ontology/discoverer> <http://hu.dbpedia.org/resource/Antonín_Mrkos> .\n<http://hu.dbpedia.org/resource/(10032)_1981_RF7> <http://dbpedia.org/ontology/discoverer> <http://hu.dbpedia.org/resource/Schelte_J._Bus> .\n<http://hu.dbpedia.org/resource/(10033)_1981_UJ23> <http://dbpedia.org/ontology/discoverer> <http://hu.dbpedia.org/resource/Schelte_J._Bus> .",
+         "dataid:sha256sum": "405028b70c68881bee7d1315d19b3a06da20c247665b5ab82e84e5130a0abfea",
+         "dataid-cv:lang": "hu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:55:15Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "5204175",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=hu.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=sv.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=sv.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://sv.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/bandMember> <http://sv.dbpedia.org/resource/Allan_Wilson> .\n<http://sv.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/bandMember> <http://sv.dbpedia.org/resource/Dan_Gorman> .\n<http://sv.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/bandMember> <http://sv.dbpedia.org/resource/Mario_Andreoni> .\n<http://sv.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/bandMember> <http://sv.dbpedia.org/resource/Nic_Offer> .\n<http://sv.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/bandMember> <http://sv.dbpedia.org/resource/Paul_Quattrone> .\n<http://sv.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/country> <http://sv.dbpedia.org/resource/Kalifornien> .\n<http://sv.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/country> <http://sv.dbpedia.org/resource/Sacramento> .\n<http://sv.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/country> <http://sv.dbpedia.org/resource/USA> .\n<http://sv.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://sv.dbpedia.org/resource/Dance-punk> .\n<http://sv.dbpedia.org/resource/!!!> <http://dbpedia.org/ontology/genre> <http://sv.dbpedia.org/resource/Electronica> .",
+         "dataid:sha256sum": "99c7648d6844b9d2c9496f948fb72397a7b06e54269ddf9d35b0e2005910ff6d",
+         "dataid-cv:lang": "sv",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:52:15Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "29708618",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=sv.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01#mappingbased-objects-uncleaned_lang=eu.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=eu.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://eu.dbpedia.org/resource/...eta_maita_herria,_üken_dezadan_plazera> <http://dbpedia.org/ontology/artist> <http://eu.dbpedia.org/resource/Benito_Lertxundi> .\n<http://eu.dbpedia.org/resource/...eta_maita_herria,_üken_dezadan_plazera> <http://dbpedia.org/ontology/recordLabel> <http://eu.dbpedia.org/resource/Elkar_(argipena)> .\n<http://eu.dbpedia.org/resource/1._FC_Kaiserslautern> <http://dbpedia.org/ontology/chairman> <http://eu.dbpedia.org/resource/Stefan_Kuntz> .\n<http://eu.dbpedia.org/resource/1._FC_Kaiserslautern> <http://dbpedia.org/ontology/homeArena> <http://eu.dbpedia.org/resource/Fritz-Walter-Stadion> .\n<http://eu.dbpedia.org/resource/1._FC_Kaiserslautern> <http://dbpedia.org/ontology/homeStadium> <http://eu.dbpedia.org/resource/Fritz-Walter-Stadion> .\n<http://eu.dbpedia.org/resource/1._FC_Kaiserslautern> <http://dbpedia.org/ontology/league> <http://eu.dbpedia.org/resource/2._Bundesliga> .\n<http://eu.dbpedia.org/resource/1._FC_Kaiserslautern> <http://dbpedia.org/ontology/manager> <http://eu.dbpedia.org/resource/Norbert_Meier> .\n<http://eu.dbpedia.org/resource/1._FC_Kaiserslautern> <http://xmlns.com/foaf/0.1/homepage> <http://www.fck.de> .\n<http://eu.dbpedia.org/resource/1._FC_Köln> <http://dbpedia.org/ontology/homeArena> <http://eu.dbpedia.org/resource/RheinEnergieStadion> .\n<http://eu.dbpedia.org/resource/1._FC_Köln> <http://dbpedia.org/ontology/homeStadium> <http://eu.dbpedia.org/resource/RheinEnergieStadion> .",
+         "dataid:sha256sum": "0fe06a91db498992e65f84bf509c1bd6259020281addf3aadde71284a1bc1b63",
+         "dataid-cv:lang": "eu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-20T01:56:10Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "394184",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/mappings/mappingbased-objects-uncleaned/2021.06.01/mappingbased-objects-uncleaned_lang=eu.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

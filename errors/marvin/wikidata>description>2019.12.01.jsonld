@@ -1,0 +1,170 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/wikidata/description/2019.12.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/description",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/description/2019.12.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/wikidata/description"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/wikidata"
+         },
+         "dataid:maintainer": {
+            "@id": "https://alismayilov.github.io/webid-ali.ttl#this"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/wikidata/description/2019.12.01"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software. After its releases, data is cleaned and persisted under the dbpedia account. Commit: ) Wikidata-specific dataset containing descriptions for languages in the mappings wiki."
+         },
+         "dct:hasVersion": "2019.12.01",
+         "dct:issued": {
+            "@value": "2019-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Wikidata Description"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/wikidata/description/2019.12.01#description_nmw.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/wikidata/description/2019.12.01#description.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software. After its releases, data is cleaned and persisted under the dbpedia account. Commit: ) Wikidata-specific dataset containing descriptions for languages in the mappings wiki."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/description/2019.12.01#description_nmw.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/description/2019.12.01/description_nmw.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "709367053",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2019-12-13T23:27:03Z\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"七大洲之一\"@zh .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"maanosa\"@fi .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"kontinente\"@ilo .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"கண்டம்\"@ta .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"klimaat\"@af .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"kontinent\"@da .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"Kuntinent von de Eer\"@nds .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"ชื่อทวีป\"@th .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"महाद्वीप\"@ne .",
+         "dataid:sha256sum": "ce47188555cc337ebdae9ddbcdc94a856e6db3ff05f42377bbc93d24f498db11",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "89106732932",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:tag": "nmw",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.12.01",
+         "dct:issued": {
+            "@value": "2019-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-01-03T12:09:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1631689455",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/release/wikidata/description/2019.12.01/description_nmw.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/wikidata/description/2019.12.01#description.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/wikidata/description/2019.12.01/description.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "915700052",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "# started 2019-12-13T23:27:03Z\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"Kontinent auf der Südhalbkugel\"@de .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"continent, mainly on the Earth's southwestern quadrant\"@en .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"continente\"@it .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"sous-continent de l'Amérique\"@fr .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"континент\"@ru .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"subcontinente de América\"@es .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"대륙\"@ko .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"subcontinent d'Amèrica, travessat per l'equador terrestre\"@ca .\n<http://wikidata.dbpedia.org/resource/Q18> <http://dbpedia.org/ontology/description> \"världsdel, huvudsakligen på jordens södra halvklot\"@sv .",
+         "dataid:sha256sum": "62e93e7a34d49f915d882cd2825473c60ec74173783e9473cdb160d6def31db7",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "117477183568",
+            "@type": "xsd:decimal"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.12.01",
+         "dct:issued": {
+            "@value": "2019-12-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2020-01-03T12:09:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2398239400",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-wikidata.tib.eu/release/wikidata/description/2019.12.01/description.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

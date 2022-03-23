@@ -1,0 +1,668 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/purl.org"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The Dataset Quality Vocabulary (daQ) is a lightweight, extensible core vocabulary for attaching the result of quality benchmarking of a linked open dataset (usually an expensive process) to that dataset.  daQ is designed to be extended by custom quality metrics.  Use cases include filtering and ranking datasets by quality."
+         },
+         "dct:hasVersion": "2020.06.10-203414",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Dataset Quality Vocabulary (daQ)"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=orig.rdf"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=OOPS.rdf"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=pelletInfo_imports=NONE.txt"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The Dataset Quality Vocabulary (daQ) is a lightweight, extensible core vocabulary for attaching the result of quality benchmarking of a linked open dataset (usually an expensive process) to that dataset.  daQ is designed to be extended by custom quality metrics.  Use cases include filtering and ranking datasets by quality."
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://purl.org/eis/vocab/daq#computedOn -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://purl.org/eis/vocab/daq#expectedDataType -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://purl.org/eis/vocab/daq#hasDimension -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://purl.org/eis/vocab/daq#hasMetric -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://purl.org/eis/vocab/daq#hasObservation -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://purl.org/eis/vocab/daq#isEstimate -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+         "dataid:sha256sum": "ceef52880a179ce3a39da36252cb24897331c05f15923955e8893b5b946a3d6b",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203414",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:35Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "6347",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2020.05.06; 19:54:24\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"18012\",\n        \"e-tag\": \"\\\"465c-555db275a9580\\\"\",\n        \"lastModified\": \"Thu, 03 Aug 2017 15:37:10 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Server': 'nginx/1.16.1 (Ubuntu)', 'Date': 'Wed, 06 May 2020 17:54:25 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '208', 'Connection': 'keep-alive', 'Location': 'http://theme-e.adaptcentre.ie/daq/daq', 'Access-Control-Allow-Origin': '*'}\",",
+         "dataid:sha256sum": "adcd995512c5a9472d7f5a8635e5467499955ea9418561df0c2c73dc220cefb2",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203414",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1292",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=parsed.ttl\nStart loading\nFinished loading in 00:00:00.136\nInput size: Classes = 21, Properties = 46, Individuals = 14\nExpressivity: ALCHOIN(D)\nStart consistency check\nFinished consistency check in 00:00:00.021\n\nTimer summary:",
+         "dataid:sha256sum": "dc4bcb22205d2507bc8c81998cdce9f601ba7756271c6fbd257edb32f6973e77",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203414",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "536",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://purl.org/eis/vocab/daq#> ;",
+         "dataid:sha256sum": "183778506d07d41b451773f09f5434e54968a509aaec24b42e5b008d3938fb0d",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203414",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "12615",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:qb=\"http://purl.org/linked-data/cube#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:vann=\"http://purl.org/vocab/vann/\" xml:base=\"http://purl.org/eis/vocab/daq#\">\n  <rdf:Description rdf:nodeID=\"ub92bL79C3\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Restriction\"/>\n  </rdf:Description>\n  <rdf:Description rdf:nodeID=\"ub92bL79C3\">\n    <owl:onProperty rdf:resource=\"#isEstimate\"/>\n  </rdf:Description>\n  <rdf:Description rdf:nodeID=\"ub92bL79C3\">\n    <owl:cardinality rdf:datatype=\"http://www.w3.org/2001/XMLSchema#nonNegativeInteger\">1</owl:cardinality>",
+         "dataid:sha256sum": "79a580573255206d8cfdce854cdb7e32ad5bd6ea83952d1ba95d737199753f9e",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203414",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "24841",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=orig.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=orig.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rdf:RDF\n   xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n   xmlns:dct=\"http://purl.org/dc/terms/\"\n   xmlns:foaf=\"http://xmlns.com/foaf/0.1/\"\n   xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n   xmlns:qb=\"http://purl.org/linked-data/cube#\"\n   xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n   xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n   xmlns:vann=\"http://purl.org/vocab/vann/\"",
+         "dataid:sha256sum": "605facc19fa5248f6a821508014771b1862a00b7e4fd48621eae89f20301d0f1",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203414",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "18013",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=orig.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "Error: Unable to access jarfile /data/home/dstreitmatter/profilechecker-1.0.0.jar\n\n",
+         "dataid:sha256sum": "fcdd4ee978b74ae744e3205ebaee81c876347817db89cd283b1d71911a9e2047",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203414",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "84",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/dstreitmatter/data/archivo-init-release/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=parsed.ttl\nStart loading\nFinished loading in 00:00:00.134\nInput size: Classes = 21, Properties = 46, Individuals = 14\nExpressivity: ALCHOIN(D)\nStart consistency check\nFinished consistency check in 00:00:00.021\n\nTimer summary:",
+         "dataid:sha256sum": "8d55fbde128f76853f803b29e008c7d1f330d665fdeb3d8bbf6b5e4706e73531",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203414",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "536",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=OOPS.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=OOPS.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<rdf:RDF\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n    xmlns:oops=\"http://oops.linkeddata.es/def#\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n    xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" > \n  <rdf:Description rdf:about=\"http://oops.linkeddata.es/data/8148186f-360b-41d8-b5f2-719fc659bbf4\">\n    <oops:hasAffectedElement rdf:datatype=\"http://www.w3.org/2001/XMLSchema#anyURI\">http://purl.org/linked-data/sdmx/2009/dimension#timePeriod</oops:hasAffectedElement>\n    <oops:hasAffectedElement rdf:datatype=\"http://www.w3.org/2001/XMLSchema#anyURI\">http://www.w3.org/ns/prov#Entity</oops:hasAffectedElement>\n    <oops:hasCode rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">P34</oops:hasCode>",
+         "dataid:sha256sum": "c7248baa19f771b31ef2ca0f32b754f6b21e3e6b2ec73492b96c4ba72ecb5c03",
+         "dataid-cv:type": "OOPS",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203414",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "16731",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=OOPS.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://purl.org/eis/vocab/daq#> ;\n            sh:resultMessage \"No dct:license statement found\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "fc2914a52080a900009ca1ebdade9f02c08e5aaf5e2369dcda8688e18534cb76",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203414",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "649",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://purl.org/eis/vocab/daq#> ;\n            sh:resultMessage \"No license found at all (neither dct:license, xhv:license nor cc:license)\"@en ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:OrConstraintComponent ;",
+         "dataid:sha256sum": "8353f3b601140d5a183f33197a129e62ebd4877ef58db6cf07f68bb292ee9714",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203414",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:31Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "656",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<html><head><title>LODE error</title></head><body><h2>LODE error</h2><p><strong>Reason: </strong>A sequence of more than one item is not allowed as the @select attribute of xsl:sort</p></body></html>\n",
+         "dataid:sha256sum": "8bedb295026e2f36357b7d3c649e5761aa12b9d8f2e9e98333fb880660c1872e",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203414",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "201",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@base <http://purl.org/eis/vocab/daq#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix dc: <../../dc/elements/1.1/> .\n@prefix dct: <../../dc/terms/> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix qb: <../../linked-data/cube#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix vann: <../../vocab/vann/> .\n",
+         "dataid:sha256sum": "d815ff71fb69a463604a8bc67ab10b753cf96b8bffc23ec90223683856dbda8f",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203414",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "9530",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "_:ub92bL79C3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .\n_:ub92bL79C3 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/eis/vocab/daq#isEstimate> .\n_:ub92bL79C3 <http://www.w3.org/2002/07/owl#cardinality> \"1\"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .\n<http://purl.org/eis/vocab/daq#> <http://purl.org/dc/terms/modified> \"2017-08-03\"^^<http://www.w3.org/2001/XMLSchema#date> .\n<http://purl.org/eis/vocab/daq#> <http://purl.org/dc/terms/contributor> _:ub92bL27C18 .\n<http://purl.org/eis/vocab/daq#> <http://xmlns.com/foaf/0.1/homepage> <http://purl.org/eis/vocab/daq> .\n<http://purl.org/eis/vocab/daq#> <http://purl.org/dc/elements/1.1/description> \"The Dataset Quality Vocabulary (daQ) is a lightweight, extensible core vocabulary for attaching the result of quality benchmarking of a linked open dataset (usually an expensive process) to that dataset.  daQ is designed to be extended by custom quality metrics.  Use cases include filtering and ranking datasets by quality.\"@en .\n<http://purl.org/eis/vocab/daq#> <http://purl.org/dc/terms/title> \"Dataset Quality Vocabulary (daQ)\"@en .\n<http://purl.org/eis/vocab/daq#> <http://purl.org/dc/terms/language> \"en\"^^<http://www.w3.org/2001/XMLSchema#language> .\n<http://purl.org/eis/vocab/daq#> <http://purl.org/vocab/vann/preferredNamespacePrefix> \"daq\" .",
+         "dataid:sha256sum": "897c083602f2a0ba76df732ffda4f528de08d068dc7c92e071acd9aa10922359",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203414",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "22665",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414#eis--vocab--daq_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://purl.org/eis/vocab/daq#computedOn -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://purl.org/eis/vocab/daq#expectedDataType -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://purl.org/eis/vocab/daq#hasDimension -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://purl.org/eis/vocab/daq#hasMetric -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://purl.org/eis/vocab/daq#hasObservation -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.TripleHandlers - Usage of rdf vocabulary: http://purl.org/eis/vocab/daq#isEstimate -> http://www.w3.org/1999/02/22-rdf-syntax-ns#type -> http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+         "dataid:sha256sum": "ab30bfd022cc207e7f2f30af20f3fe8e5a678f1f3527bc6d8565765b8b850d9b",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.06.10-203414",
+         "dct:issued": {
+            "@value": "2020-07-09T00:47:01Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notSpecified"
+         },
+         "dct:modified": {
+            "@value": "2020-07-07T23:30:37Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "6347",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/purl.org/eis--vocab--daq/2020.06.10-203414/eis--vocab--daq_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      }
+   ]
+}

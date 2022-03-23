@@ -65,6 +65,17 @@ function fixDecimalNan(fileGraph) {
 
 async function transfer() {
 
+  if (!fs.existsSync('./errors')){
+    fs.mkdirSync('./errors');
+  }
+
+  if (!fs.existsSync(`./errors${sourceUri.pathname}`)){
+    fs.mkdirSync(`./errors${sourceUri.pathname}`);
+  }
+
+
+  var errorCsv = '';
+
   // TODO: Configurable?
   var sourceEndpoint = sourceUri.origin + '/repo/sparql';
 
@@ -150,12 +161,22 @@ async function transfer() {
       } catch (e) {
         console.log(e);
         console.log(`ERROR ${e.response.statusCode}: ${e.response.body}`);
+
+        var groupPath = groupdata['@id'].replace(targetUri.href, '');
+        errorCsv += `${groupPath},"${e.response.body}"\n`;
       }
 
     }
 
     console.log(`All groups created!`);
   }
+
+  var skipContent = fs.readFileSync(path.resolve(__dirname, 'skip.txt'), 'utf8');
+  var skips = skipContent.split('\n');
+
+  console.log('\n');
+  console.log('Skipping the following artifacts (see skip.txt):');
+  console.log(skips);
   
   // Fetch all graphs that specify a dataid:Dataset
   var selectGraphs = fs.readFileSync(path.resolve(__dirname, 'select-graphs.sparql'), 'utf8');
@@ -206,6 +227,12 @@ async function transfer() {
     } catch (e) {
       console.log(`Error querying DataId from source Databus:`);
       console.log(e);
+
+      
+
+      var versionPath = graph.graph.replace(sourceUri.href, '');
+      errorCsv += `${versionPath},"${e.message}"\n`;
+
       continue;
     }
 
@@ -267,6 +294,21 @@ async function transfer() {
 
     console.log(`Processing ${datasetGraph['@id']}`);
 
+    var doSkip = false;
+
+    for(var skip of skips) {
+      if(skip != '' && datasetGraph['@id'].startsWith(skip)) {
+        doSkip = true;
+        break;
+
+      }
+    }
+
+    if(doSkip) {
+      console.log(`Skipping ${datasetGraph['@id']}`);
+      continue;
+    }
+
     // Add subgraphs
     targetBody['@graph'].push(versionGraph);
     targetBody['@graph'].push(artifactGraph);
@@ -308,7 +350,7 @@ async function transfer() {
       }
       
       fixDecimalNan(fileGraph);
-      fixDuplicateCv(fileGraph);
+      // fixDuplicateCv(fileGraph);
 
       targetBody['@graph'].push(fileGraph);
 
@@ -335,7 +377,6 @@ async function transfer() {
         json: targetBody
       };
       
-      fs.writeFileSync(path.resolve(__dirname, `current.jsonld`), JSON.stringify(targetBody, null, 3), 'utf8');
       //fs.writeFileSync(path.resolve(__dirname, `dataids/dataid_${k}.jsonld`), JSON.stringify(targetBody, null, 3), 'utf8');
 
       var res = await got.put(versionGraph['@id'], params);
@@ -343,12 +384,20 @@ async function transfer() {
 
     } catch (e) {
       console.log(e);
+
+      var versionPath = versionGraph['@id'].replace(targetUri.href, '');
+      errorCsv += `${versionPath},"${e.response.statusCode}:${e.response.body}"\n`;
+
+      versionPath = versionPath.replaceAll('/', '>').substring(1);
+      fs.writeFileSync(path.resolve(__dirname, `./errors${sourceUri.pathname}/${versionPath}.jsonld`), JSON.stringify(targetBody, null, 3), 'utf8');
+      fs.writeFileSync(path.resolve(__dirname, `./errors${sourceUri.pathname}/---error.csv`), errorCsv, 'utf8');
+    
       console.log(`ERROR ${e.response.statusCode}: ${e.response.body}`);
       hasError = true;
-      break;
     }
   }
-  
+
+    
   if(!hasError) {
     console.log('SUCCESS WITHOUT ERRORS!');
   } else {

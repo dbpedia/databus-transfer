@@ -1,0 +1,592 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/dati.beniculturali.it"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "The ontology aims at modelling the data on cultural institutes or sites such as data regarding the agents that play a specific role on cultural institutes or sites, the sites themselves, the contact points, all multimedia files which describe the cultural institute or site and any other information useful to the public in order to access the institute or site."
+         },
+         "dct:hasVersion": "2020.07.10-174213",
+         "dct:issued": {
+            "@value": "2020-09-10T14:06:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/it/"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Cultural-ON (Cultural ONtology): Cultural Institute/Site and Cultural Event Ontology"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=OOPS.rdf"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=orig.rdf"
+            },
+            {
+               "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=parsed.ttl"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "The ontology aims at modelling the data on cultural institutes or sites such as data regarding the agents that play a specific role on cultural institutes or sites, the sites themselves, the contact points, all multimedia files which describe the cultural institute or site and any other information useful to the public in order to access the institute or site."
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\nVersion Info = Versione 2.0 - 30 Marzo 2016\nVersion Info = 2.0 - March 30 2016\norg.semanticweb.owlapi.model.OWLRuntimeException: No current axiom; is the walker being used outside of an ontology visit?\n\tat org.semanticweb.owlapi.util.OWLOntologyWalkerVisitor.getCurrentAxiom(OWLOntologyWalkerVisitor.java:48)",
+         "dataid:sha256sum": "04a53da3652ef565a4f2afe798462d54f4d33e10b3230ef84a66f90fd86f5b3a",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.10-174213",
+         "dct:issued": {
+            "@value": "2020-09-10T14:06:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/it/"
+         },
+         "dct:modified": {
+            "@value": "2020-09-07T11:33:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2835",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/denis/Workspace/Job/Archivo/testdir/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=parsed.ttl\nStart loading\nSep 07, 2020 1:26:00 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://dati.beniculturali.it/cis/ @owl:versionIRI http://dati.beniculturali.it/cis/2.0\nFinished loading in 00:00:00.313\nInput size: Classes = 59, Properties = 109, Individuals = 28\nExpressivity: SROIQ(D)\nStart consistency check\nFinished consistency check in 00:00:00.017",
+         "dataid:sha256sum": "aff903e9eb500d5f5cfde02641a065d268fbde649a71937809b98895c8ee94c4",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.10-174213",
+         "dct:issued": {
+            "@value": "2020-09-10T14:06:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/it/"
+         },
+         "dct:modified": {
+            "@value": "2020-09-07T11:33:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "796",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\nVersion Info = Versione 2.0 - 30 Marzo 2016\nVersion Info = 2.0 - March 30 2016\norg.semanticweb.owlapi.model.OWLRuntimeException: No current axiom; is the walker being used outside of an ontology visit?\n\tat org.semanticweb.owlapi.util.OWLOntologyWalkerVisitor.getCurrentAxiom(OWLOntologyWalkerVisitor.java:48)",
+         "dataid:sha256sum": "04a53da3652ef565a4f2afe798462d54f4d33e10b3230ef84a66f90fd86f5b3a",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.10-174213",
+         "dct:issued": {
+            "@value": "2020-09-10T14:06:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/it/"
+         },
+         "dct:modified": {
+            "@value": "2020-09-07T11:33:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2835",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix ns1: <http://www.w3.org/ns/shacl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a ns1:ValidationReport ;\n    ns1:conforms false ;\n    ns1:result [ a ns1:ValidationResult ;\n            ns1:focusNode <http://dati.beniculturali.it/cis/> ;\n            ns1:resultMessage \"no dc:description given or no literal, will not be displayed\"@en ;\n            ns1:resultPath <http://purl.org/dc/elements/1.1/description> ;",
+         "dataid:sha256sum": "f79f479b7cbc9e6e5b8759526a79a4da03d03473f164bc87a5e03f298aded156",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.10-174213",
+         "dct:issued": {
+            "@value": "2020-09-10T14:06:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/it/"
+         },
+         "dct:modified": {
+            "@value": "2020-09-07T11:33:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "12269",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://dati.beniculturali.it/cis/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://dati.beniculturali.it/cis/> <http://purl.org/dc/elements/1.1/creator> \"Ministero dei Beni e delle Attivit\\u00E0 Culturali e il Turismo (MIBACT)\" .\n<http://dati.beniculturali.it/cis/> <http://purl.org/dc/elements/1.1/creator> \"Istituto di Scienze e Tecnologie della Cognizione, Consiglio Nazionale delle Ricerche (ISTC-CNR, ST-Lab)\" .\n<http://dati.beniculturali.it/cis/> <http://purl.org/dc/elements/1.1/creator> \"Annarita Orsini (MIBACT)\" .\n<http://dati.beniculturali.it/cis/> <http://purl.org/dc/elements/1.1/creator> \"Chiara Veninata (MIBACT)\" .\n<http://dati.beniculturali.it/cis/> <http://purl.org/dc/elements/1.1/creator> \"Luigi Asprino (ISTC-CNR, ST-Lab)\" .\n<http://dati.beniculturali.it/cis/> <http://purl.org/dc/elements/1.1/creator> \"Aldo Gangemi (ISTC-CNR, ST-Lab)\" .\n<http://dati.beniculturali.it/cis/> <http://purl.org/dc/elements/1.1/creator> \"Giorgia Lodi (ISTC-CNR, ST-Lab)\" .\n<http://dati.beniculturali.it/cis/> <http://purl.org/dc/elements/1.1/creator> \"Andrea Nuzzolese (ISTC-CNR, ST-Lab)\" .\n<http://dati.beniculturali.it/cis/> <http://purl.org/dc/elements/1.1/creator> \"Silvio Peroni (ISTC-CNR, ST-Lab)\" .",
+         "dataid:sha256sum": "c0f60b4f058f75bdf7dabe787704c2b8d503bcc2b14bf8db955b00b435e74bda",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.10-174213",
+         "dct:issued": {
+            "@value": "2020-09-10T14:06:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/it/"
+         },
+         "dct:modified": {
+            "@value": "2020-09-07T11:33:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "394387",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix ns1: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a ns1:ValidationReport ;\n    ns1:conforms false ;\n    ns1:result [ a ns1:ValidationResult ;\n            ns1:focusNode <http://dati.beniculturali.it/cis/> ;\n            ns1:resultMessage \"No license found at all (neither dct:license, xhv:license nor cc:license)\"@en ;\n            ns1:resultSeverity ns1:Violation ;\n            ns1:sourceConstraintComponent ns1:OrConstraintComponent ;",
+         "dataid:sha256sum": "44ad3a57e7c35f19b15a9bb5df087d74f1305837ced9153a28c91eaaf6bc01b3",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.10-174213",
+         "dct:issued": {
+            "@value": "2020-09-10T14:06:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/it/"
+         },
+         "dct:modified": {
+            "@value": "2020-09-07T11:33:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "675",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix ns1: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a ns1:ValidationReport ;\n    ns1:conforms false ;\n    ns1:result [ a ns1:ValidationResult ;\n            ns1:focusNode <http://dati.beniculturali.it/cis/> ;\n            ns1:resultMessage \"No dct:license statement found\"@en ;\n            ns1:resultPath <http://purl.org/dc/terms/license> ;\n            ns1:resultSeverity ns1:Violation ;",
+         "dataid:sha256sum": "67ca2c624adc2382ec2f1ad90da194fc5fc8a8f02a7d3e7f00ead4a0ea80009c",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.10-174213",
+         "dct:issued": {
+            "@value": "2020-09-10T14:06:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/it/"
+         },
+         "dct:modified": {
+            "@value": "2020-09-07T11:33:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "645",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "None",
+         "dataid:sha256sum": "af5d8a21858f42808c9bcc17012b77bcc2fd6ab3b071dbd4a05f13f410470541",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.10-174213",
+         "dct:issued": {
+            "@value": "2020-09-10T14:06:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/it/"
+         },
+         "dct:modified": {
+            "@value": "2020-09-07T11:33:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "5",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=OOPS.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=OOPS.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<rdf:RDF\n    xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n    xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n    xmlns:oops=\"http://oops.linkeddata.es/def#\"\n    xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n    xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" > \n  <rdf:Description rdf:about=\"http://oops.linkeddata.es/data/dd25ab21-a4b3-4b17-9e39-049c39e2c917\">\n    <oops:hasImportanceLevel rdf:datatype=\"http://www.w3.org/2001/XMLSchema#string\">Minor</oops:hasImportanceLevel>\n    <oops:hasAffectedElement rdf:datatype=\"http://www.w3.org/2001/XMLSchema#anyURI\">http://www.w3.org/ns/adms#SemanticAsset</oops:hasAffectedElement>\n    <oops:hasNumberAffectedElements rdf:datatype=\"http://www.w3.org/2001/XMLSchema#integer\">1</oops:hasNumberAffectedElements>",
+         "dataid:sha256sum": "486417baaf7e4f0b18bf278da3a57714f2bd0b155f597a52ad35aa92db57f97e",
+         "dataid-cv:type": "OOPS",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.10-174213",
+         "dct:issued": {
+            "@value": "2020-09-10T14:06:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/it/"
+         },
+         "dct:modified": {
+            "@value": "2020-09-07T11:33:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "18981",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=OOPS.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/home/denis/Workspace/Job/Archivo/testdir/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=parsed.ttl\nStart loading\nSep 07, 2020 1:25:59 PM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://dati.beniculturali.it/cis/ @owl:versionIRI http://dati.beniculturali.it/cis/2.0\nFinished loading in 00:00:00.320\nInput size: Classes = 59, Properties = 109, Individuals = 28\nExpressivity: SROIQ(D)\nStart consistency check\nFinished consistency check in 00:00:00.014",
+         "dataid:sha256sum": "c80aba7d068909ba5eb7d7068ea893a0063d48cf6f54d8fec1166c25b589c65c",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.10-174213",
+         "dct:issued": {
+            "@value": "2020-09-10T14:06:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/it/"
+         },
+         "dct:modified": {
+            "@value": "2020-09-07T11:33:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "796",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2020.07.10; 17:42:13\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"308241\",\n        \"e-tag\": \"\\\"35d436b288c9d21:0\\\"\",\n        \"lastModified\": \"Wed, 10 May 2017 12:26:48 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"\",",
+         "dataid:sha256sum": "bc957bf3c9350a6f5889a51d20de91988ffcc83be441a1ab624cc488fdf697ba",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.10-174213",
+         "dct:issued": {
+            "@value": "2020-09-10T14:06:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/it/"
+         },
+         "dct:modified": {
+            "@value": "2020-09-07T11:33:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1127",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=orig.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=orig.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n\n\n<!DOCTYPE rdf:RDF [\n    <!ENTITY schema \"http://schema.org/\" >\n    <!ENTITY tio \"http://purl.org/tio/ns#\" >\n    <!ENTITY dcterms \"http://purl.org/dc/terms/\" >\n    <!ENTITY org \"http://www.w3.org/ns/org#\" >\n    <!ENTITY pro \"http://purl.org/spar/pro/\" >\n    <!ENTITY lcn \"http://www.w3.org/ns/locn#\" >",
+         "dataid:sha256sum": "2b07414d5542b09f67f025f218359e142980713fbcdae77bbb9b95fd97b6a98b",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.10-174213",
+         "dct:issued": {
+            "@value": "2020-09-10T14:06:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/it/"
+         },
+         "dct:modified": {
+            "@value": "2020-09-07T11:33:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "308242",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=orig.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213#cis_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <http://dati.beniculturali.it/cis/> .\n@prefix schema: <http://schema.org/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix cito: <http://purl.org/spar/cito/> .\n@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .\n@prefix lcn: <http://www.w3.org/ns/locn#> .",
+         "dataid:sha256sum": "cb14cfcea40362b763380ebf0cb9d34bf2019b72d08babaed2be621dcdd86999",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2020.07.10-174213",
+         "dct:issued": {
+            "@value": "2020-09-10T14:06:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://creativecommons.org/licenses/by/3.0/it/"
+         },
+         "dct:modified": {
+            "@value": "2020-09-07T11:33:17Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "191292",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/dati.beniculturali.it/cis/2020.07.10-174213/cis_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      }
+   ]
+}

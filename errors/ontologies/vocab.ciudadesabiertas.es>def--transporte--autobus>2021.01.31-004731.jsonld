@@ -1,0 +1,669 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:ontologies"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es"
+         },
+         "dataid:maintainer": {
+            "@id": "https://yum-yab.github.io/webid.ttl#onto"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "This vocabulary is being developed in the context of the action on open data of the project \"Platform of Open, Collaborative and Interoperable Government\" of the \"II Call for Intelligent Cities\" of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Progress of the Ministry."
+         },
+         "dct:hasVersion": "2021.01.31-004731",
+         "dct:issued": {
+            "@value": "2021-01-30T23:47:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Vocabulary for the representation of data on public transport by bus."
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=parsed.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=parsed.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=pelletInfo_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=shaclReport_validates=lodeMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=shaclReport_validates=goodLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=pelletConsistency_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=shaclReport_validates=archivoMetadata.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=parsed.owl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=pelletConsistency_imports=FULL.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=meta.json"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=profile.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=shaclReport_validates=minLicense.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=generatedDocu.html"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=pelletInfo_imports=NONE.txt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=orig.owl"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "This vocabulary is being developed in the context of the action on open data of the project \"Platform of Open, Collaborative and Interoperable Government\" of the \"II Call for Intelligent Cities\" of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Progress of the Ministry."
+         }
+      },
+      {
+         "@id": "dataid-cv:imports",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:validates",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "dataid-cv:type",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=parsed.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=parsed.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix : <http://vocab.ciudadesabiertas.es/def/transporte/autobus#> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix xml: <http://www.w3.org/XML/1998/namespace> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix vann: <http://purl.org/vocab/vann/> .\n@prefix terms: <http://purl.org/dc/terms/> .",
+         "dataid:sha256sum": "bea3330b44f9c86ff4e00cec6e4104d43ed527be64db866f5ac1ea47d78b79cc",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-004731",
+         "dct:issued": {
+            "@value": "2021-01-30T23:47:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:47:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "73819",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=parsed.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=parsed.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=parsed.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .\n<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.ciudadesabiertas.es/def/transporte/autobus/1.0.0> .\n<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/abstract> \"Este vocabulario ha sido desarrollado en el contexto de la actuaci\\u00F3n sobre datos abiertos del proyecto \\\"Plataforma de Gobierno Abierto, Colaborativa e Interoperable\\\" de la \\\"II Convocatoria de Ciudades Inteligentes\\\" del Ministerio de Econom\\u00EDa y Empresa lanzada a trav\\u00E9s de la Entidad P\\u00FAblica Empresarial Red.es adscrita a la Secretar\\u00EDa de estado de Avance Digital de dicho ministerio.\\n\\tEl vocabulario de Autob\\u00FAs trabaja con el est\\u00E1ndar europeo TransModel (EN 12896 realizado por el CEN, Comit\\u00E9 Europeo de Normalizaci\\u00F3n) que ha sido adoptado por el reglamento europeo 2017/1926 y que sigue la directiva europea sobre servicios inteligentes de transporte (Directiva 2010/40/UE sobre ITS,Intelligent Transport System).\\n\\tDesde diciembre de 2019 este reglamento ha entrado en vigor y dictamina que cualquier operador o autoridad de transporte europea debe ofrecer sus datos en formatos compatibles con Transmodel.\\n\\tEsta ontolog\\u00EDa se basa en el trabajo previo realizado durante el proyecto SNAP (snap-project.eu) donde se realiz\\u00F3 una primera versi\\u00F3n de la ontolog\\u00EDa transmodel.\\n\\tEn general se han reusado los siguientes conceptos de Transmodel: Operador, Autoridad, L\\u00EDnea, Ruta, Puntos en una Ruta, Patr\\u00F3n de Viaje, Puntos en un Patr\\u00F3n de Viaje, Parada, Viaje asociado a un Patr\\u00F3n de Viaje, Horarios y Frecuencias de un Viaje y Calendario de Servicio.\\n\\tEste vocabulario realiza otras relaciones: con el concepto de Incidencia que se ha desarrollado en el vocabulario de Tr\\u00E1fico del mismo proyecto de Ciudades Abiertas; con el vocabularios de Direcci\\u00F3n Postal; con geosparql para la representaci\\u00F3n geogr\\u00E1fica.\\nEl vocabulario se ha dividido en tres grandes partes:\\n- Organizaciones (autoridad y operador) y sus l\\u00EDneas\\n- Rutas y puntos de las mismas, incluidas las paradas.\\n- Viajes y patrones de viaje\"@es .\n<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/abstract> \"This vocabulary has been developed in the context of the action on open data of the project \\\"Platform of Open, Collaborative and Interoperable Government\\\" of the \\\"II Call for Intelligent Cities\\\" of the Ministry of Economy and Enterprise launched through the Public Business Entity Red.es assigned to the Secretariat of State for Digital Advancement of that ministry.\\n\\tThe Bus Vocabulary works with the European standard TransModel (EN 12896 made by the CEN, European Committee for Standardization) which has been adopted by the European regulation 2017/1926 and which follows the European directive on intelligent transport services (Directive 2010/40/EU on ITS,Intelligent Transport System).\\n\\tSince December 2019 this regulation has come into force and dictates that any European operator or transport authority must offer its data in formats compatible with Transmodel.\\n\\tThis ontology is based on the previous work carried out during the SNAP project (snap-project.eu) where a first version of the Transmodel ontology was developed.\\n\\tIn general, the following Transmodel concepts have been reused: Operator, Authority, Line, Route, Points on a Route, Trip Pattern, Points on a Trip Pattern, Stop, Trip associated to a Trip Pattern, Timetables and Frequencies of a Trip and Service Calendar.\\n\\tThis vocabulary makes other relations: with the concept of Incidence that has been developed in the Traffic vocabulary of the same Open Cities project; with the Postal Address vocabulary; with geosparql for the geographical representation.\\nThe vocabulary has been divided into three main parts:\\n- Organizations (authority and operator) and their lines\\n- Routes and points thereof, including stops.\\n- Journeys and travel patterns.\"@en .\n<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/contributor> \"Andr\\u00E9s Iglesias Pardo - Empresa Municipal de Transportes de Madrid\"@es .\n<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/contributor> \"Andr\\u00E9s Recio Mart\\u00EDn - Empresa Municipal de Transportes de Madrid\"@es .\n<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/contributor> \"Honorio Enrique Crespo D\\u00EDaz-Alejo - Ayuntamiento de Madrid\"@es .\n<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/contributor> \"Jos\\u00E9 Antonio Chanca C\\u00E1ceres - Ayuntamiento de Zaragoza\"@es .\n<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/contributor> \"Mar\\u00EDa Carmen Ruiz Moreno - Ayuntamiento de Madrid\"@es .\n<http://vocab.ciudadesabiertas.es/def/transporte/autobus> <http://purl.org/dc/elements/1.1/contributor> \"Mar\\u00EDa Jes\\u00FAs Fern\\u00E1ndez Ruiz - Ayuntamiento de Zaragoza\"@es .",
+         "dataid:sha256sum": "fa8367ee9fc64d18b9947f425a2a6fdc2c8bcfe1e9218a86a146bb6e80a3aa2a",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-004731",
+         "dct:issued": {
+            "@value": "2021-01-30T23:47:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:47:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "168402",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=parsed.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=pelletInfo_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=pelletInfo_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\n[main] ERROR uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl - Illegal redeclarations of entities: reuse of entity http://purl.org/dc/terms/created in punning not allowed [Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>)), Declaration(DataProperty(<http://purl.org/dc/terms/created>))]\n[main] ERROR uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl - Illegal redeclarations of entities: reuse of entity http://www.opengis.net/ont/geosparql#asWKT in punning not allowed [Declaration(ObjectProperty(<http://www.opengis.net/ont/geosparql#asWKT>)), Declaration(DataProperty(<http://www.opengis.net/ont/geosparql#asWKT>))]\nVersion Info = This is the initial version of the Traffic ontology that has been implemented in the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate.\nVersion Info = Versión 1.0 de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.",
+         "dataid:sha256sum": "e9ab7f31a0580773cc1db979cf2f5a7c38d144d8ca47e7313fba85bbcc8ae0f2",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-004731",
+         "dct:issued": {
+            "@value": "2021-01-30T23:47:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:47:38Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2549",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=pelletInfo_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=shaclReport_validates=lodeMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://w3id.org/transmodel/journeys#lastDepartureTime> ;",
+         "dataid:sha256sum": "02071572398d6530b735f3040993c11672b742b6c00ab161e259b849425701b5",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "lodeMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-004731",
+         "dct:issued": {
+            "@value": "2021-01-30T23:47:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "51917",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=shaclReport_validates=lodeMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=shaclReport_validates=goodLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://w3id.org/transmodel/kos/journeys/direction-type/> ;\n            sh:resultMessage \"No dct:license statement found\"@en ;\n            sh:resultPath dct:license ;",
+         "dataid:sha256sum": "0ac29bbc88ecf5d141bd5ad9dde917842fb46376179230369b57b68b56c4f277",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "goodLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-004731",
+         "dct:issued": {
+            "@value": "2021-01-30T23:47:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2664",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=shaclReport_validates=goodLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=pelletConsistency_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/data/home/dstreitmatter/data/archivo-init-release/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=parsed.ttl\nStart loading\n[main] WARN org.apache.jena.riot - [line: 203, col: 19] Lexical form '2020-05-05' not valid for datatype http://www.w3.org/2001/XMLSchema#dateTime\n[main] WARN org.apache.jena.riot - [line: 205, col: 18] Lexical form '2020-11-03' not valid for datatype http://www.w3.org/2001/XMLSchema#dateTime\nJan 31, 2021 12:47:36 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Property http://www.opengis.net/ont/geosparql#asWKT is defined both as a DatatypeProperty and a ObjectProperty\nJan 31, 2021 12:47:36 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://vocab.ciudadesabiertas.es/def/transporte/autobus @owl:versionIRI http://vocab.ciudadesabiertas.es/def/transporte/autobus/1.0.0\nJan 31, 2021 12:47:36 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature",
+         "dataid:sha256sum": "0bcbb42e582d34fcd56d1e79838cfa83e8d385dbb9e4d2ebdf277e75bb46b932",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-004731",
+         "dct:issued": {
+            "@value": "2021-01-30T23:47:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:47:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2141",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=pelletConsistency_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=shaclReport_validates=archivoMetadata.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://w3id.org/transmodel/kos/journeys/direction-type/> ;\n            sh:resultMessage \"Archivo requires either dct:abstract, dct:description or dc:description for a short comment about the ontology.\"@en ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:OrConstraintComponent ;",
+         "dataid:sha256sum": "fd7f454219b16c1b9b66b9ca042038cc97eec23c83b5508bb953506a21dc0dda",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "archivoMetadata",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-004731",
+         "dct:issued": {
+            "@value": "2021-01-30T23:47:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3312",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=shaclReport_validates=archivoMetadata.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=parsed.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=parsed.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\" xmlns:terms=\"http://purl.org/dc/terms/\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:xml=\"http://www.w3.org/XML/1998/namespace\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns=\"http://vocab.ciudadesabiertas.es/def/transporte/autobus#\">\n  <rdf:Description rdf:about=\"http://vocab.ciudadesabiertas.es/def/transporte/autobus\">\n    <rdf:type rdf:resource=\"http://www.w3.org/2002/07/owl#Ontology\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://vocab.ciudadesabiertas.es/def/transporte/autobus\">\n    <owl:versionIRI rdf:resource=\"http://vocab.ciudadesabiertas.es/def/transporte/autobus/1.0.0\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://vocab.ciudadesabiertas.es/def/transporte/autobus\">\n    <dc:abstract xml:lang=\"es\">Este vocabulario ha sido desarrollado en el contexto de la actuación sobre datos abiertos del proyecto \"Plataforma de Gobierno Abierto, Colaborativa e Interoperable\" de la \"II Convocatoria de Ciudades Inteligentes\" del Ministerio de Economía y Empresa lanzada a través de la Entidad Pública Empresarial Red.es adscrita a la Secretaría de estado de Avance Digital de dicho ministerio.",
+         "dataid:sha256sum": "13cf2a1ebf1954a4f6c519a9fec4780ec181127cf9545013908c8e743d973189",
+         "dataid-cv:type": "parsed",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-004731",
+         "dct:issued": {
+            "@value": "2021-01-30T23:47:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:47:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "208539",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=parsed.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=pelletConsistency_imports=FULL.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "There are 1 input files:\n/data/home/dstreitmatter/data/archivo-init-release/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=parsed.ttl\nStart loading\n[main] WARN org.apache.jena.riot - [line: 203, col: 19] Lexical form '2020-05-05' not valid for datatype http://www.w3.org/2001/XMLSchema#dateTime\n[main] WARN org.apache.jena.riot - [line: 205, col: 18] Lexical form '2020-11-03' not valid for datatype http://www.w3.org/2001/XMLSchema#dateTime\nJan 31, 2021 12:47:35 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Property http://www.opengis.net/ont/geosparql#asWKT is defined both as a DatatypeProperty and a ObjectProperty\nJan 31, 2021 12:47:35 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature\nWARNING: Unsupported axiom: Ignoring triple with unknown property from OWL namespace: http://vocab.ciudadesabiertas.es/def/transporte/autobus @owl:versionIRI http://vocab.ciudadesabiertas.es/def/transporte/autobus/1.0.0\nJan 31, 2021 12:47:35 AM org.mindswap.pellet.jena.graph.loader.DefaultGraphLoader addUnsupportedFeature",
+         "dataid:sha256sum": "8941e79d2df5ccb500b50eb0844d913059bdd4ef9960504ca0de4a6c2c495853",
+         "dataid-cv:imports": "FULL",
+         "dataid-cv:type": "pelletConsistency",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-004731",
+         "dct:issued": {
+            "@value": "2021-01-30T23:47:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:47:36Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2141",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=pelletConsistency_imports=FULL.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=meta.json",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=meta.json"
+         },
+         "dataid:formatExtension": "json",
+         "dataid:preview": "{\n    \"http-data\": {\n        \"accessed\": \"2021-01-31 00:47:31.986804\",\n        \"best-header\": \"application/rdf+xml\",\n        \"content-length\": \"18032\",\n        \"e-tag\": \"\\\"1e1fa-5b2925388d900-gzip\\\"\",\n        \"lastModified\": \"Mon, 26 Oct 2020 12:47:00 GMT\"\n    },\n    \"logs\": {\n        \"nir-header\": \"{'Date': 'Sun, 31 Jan 2021 00:05:04 GMT', 'Server': 'Apache', 'Location': 'http://vocab.ciudadesabiertas.es/def/transporte/autobus/', 'Content-Length': '339', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'text/html; charset=iso-8859-1'}\",",
+         "dataid:sha256sum": "de3e79571301677890db0759783be3693d8c2115ebec4f464556dcf28d98259f",
+         "dataid-cv:type": "meta",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-004731",
+         "dct:issued": {
+            "@value": "2021-01-30T23:47:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:47:43Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1538",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=meta.json"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationJson"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=profile.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=profile.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] ERROR uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl - Illegal redeclarations of entities: reuse of entity http://purl.org/dc/terms/created in punning not allowed [Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>)), Declaration(DataProperty(<http://purl.org/dc/terms/created>))]\n[main] ERROR uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl - Illegal redeclarations of entities: reuse of entity http://www.opengis.net/ont/geosparql#asWKT in punning not allowed [Declaration(ObjectProperty(<http://www.opengis.net/ont/geosparql#asWKT>)), Declaration(DataProperty(<http://www.opengis.net/ont/geosparql#asWKT>))]\n\nOWL2_DL: 8 violations\nOWL2_QL: 36 violations\nOWL2_EL: 34 violations\nOWL2_RL: 15 violations\nOWL2_FULL: 8 violations\n",
+         "dataid:sha256sum": "138bbc78e608a469378425ae129d7a3c144c80a648d1e3319b24a0091baa5a05",
+         "dataid-cv:type": "profile",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-004731",
+         "dct:issued": {
+            "@value": "2021-01-30T23:47:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:47:43Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "763",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=profile.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=shaclReport_validates=minLicense.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms false ;\n    sh:result [ a sh:ValidationResult ;\n            sh:focusNode <http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/tipo-incidencia> ;\n            sh:resultMessage \"No license found at all (neither dct:license, xhv:license nor cc:license)\"@en ;\n            sh:resultSeverity sh:Violation ;\n            sh:sourceConstraintComponent sh:OrConstraintComponent ;",
+         "dataid:sha256sum": "57fee7aea4e6daa311592f86d0f6805cac12ab5d5075ee27607f38eefec79b7f",
+         "dataid-cv:type": "shaclReport",
+         "dataid-cv:validates": "minLicense",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-004731",
+         "dct:issued": {
+            "@value": "2021-01-30T23:47:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:47:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2388",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=shaclReport_validates=minLicense.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=generatedDocu.html",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=generatedDocu.html"
+         },
+         "dataid:formatExtension": "",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /><title>Vocabulary for the representation of data on public transport by bus.</title><title>Vocabulary for the representation of data on public transport by bus.</title><link href=\"http://150.146.207.114/lode/owl.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/Primer.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/rec.css\" rel=\"stylesheet\" type=\"text/css\" /><link href=\"http://150.146.207.114/lode/extra.css\" rel=\"stylesheet\" type=\"text/css\" /><link rel=\"shortcut icon\" href=\"http://150.146.207.114/lode/favicon.ico\" /><script src=\"http://150.146.207.114/lode/jquery.js\"></script><script src=\"http://150.146.207.114/lode/jquery.scrollTo.js\"></script><script src=\"http://150.146.207.114/lode/marked.min.js\"></script><script>\n                $(document).ready(\n                    function () {\n                    \tjQuery(\".markdown\").each(function(el){\n\t\t\t\t\t\t\tjQuery(this).after(marked(jQuery(this).text())).remove()});\n                        var list = $('a[name=\"http://vocab.ciudadesabiertas.es/def/transporte/autobus/ontology.xml\"]');\n                        if (list.size() != 0) {\n                        \tvar element = list.first();\n                        \t$.scrollTo(element);\n                        }",
+         "dataid:sha256sum": "5fbf6b41d58387fbaa2625955b8d4191b38f29f1fc7d96ab2170559c78dad71c",
+         "dataid-cv:type": "generatedDocu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-004731",
+         "dct:issued": {
+            "@value": "2021-01-30T23:47:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:47:44Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "163705",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=generatedDocu.html"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=pelletInfo_imports=NONE.txt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=pelletInfo_imports=NONE.txt"
+         },
+         "dataid:formatExtension": "txt",
+         "dataid:preview": "[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - http://www.oracle.com/xml/jaxp/properties/entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] WARN org.semanticweb.owlapi.util.SAXParsers - entityExpansionLimit not supported by parser type org.apache.xerces.jaxp.SAXParserImpl\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - dumping remaining triples\n[main] INFO org.semanticweb.owlapi.rdf.rdfxml.parser.OWLRDFConsumer - done dumping remaining triples\n[main] ERROR uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl - Illegal redeclarations of entities: reuse of entity http://purl.org/dc/terms/created in punning not allowed [Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>)), Declaration(DataProperty(<http://purl.org/dc/terms/created>))]\n[main] ERROR uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl - Illegal redeclarations of entities: reuse of entity http://www.opengis.net/ont/geosparql#asWKT in punning not allowed [Declaration(ObjectProperty(<http://www.opengis.net/ont/geosparql#asWKT>)), Declaration(DataProperty(<http://www.opengis.net/ont/geosparql#asWKT>))]\nVersion Info = This is the initial version of the Traffic ontology that has been implemented in the context of the project Open, collaborative and interoperable government platform in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate.\nVersion Info = Versión 1.0 de la ontología de Tráfico que ha sido implementada en el contexto del proyecto Plataforma de gobierno abierto, colaborativa e interoperable en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña.",
+         "dataid:sha256sum": "561b980a8277fa4ca912de8075c6c008a337d45c68327345b611ff07e1d9c34e",
+         "dataid-cv:imports": "NONE",
+         "dataid-cv:type": "pelletInfo",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-004731",
+         "dct:issued": {
+            "@value": "2021-01-30T23:47:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:47:40Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2549",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=pelletInfo_imports=NONE.txt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextPlain"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731#def--transporte--autobus_type=orig.owl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=orig.owl"
+         },
+         "dataid:formatExtension": "owl",
+         "dataid:preview": "<?xml version=\"1.0\"?>\n<rdf:RDF xmlns=\"http://vocab.ciudadesabiertas.es/def/transporte/autobus#\"\n     xml:base=\"http://vocab.ciudadesabiertas.es/def/transporte/autobus\"\n     xmlns:dc=\"http://purl.org/dc/elements/1.1/\"\n     xmlns:owl=\"http://www.w3.org/2002/07/owl#\"\n     xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\n     xmlns:xml=\"http://www.w3.org/XML/1998/namespace\"\n     xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\"\n     xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\n     xmlns:skos=\"http://www.w3.org/2004/02/skos/core#\"",
+         "dataid:sha256sum": "8225bcc99bcdf2da071465c52737a27ffde8bd9cecafce39b1b8b7a7a15c1551",
+         "dataid-cv:type": "orig",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.01.31-004731",
+         "dct:issued": {
+            "@value": "2021-01-30T23:47:53Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://archivo.dbpedia.org/sys/licenses#notAnIRI"
+         },
+         "dct:modified": {
+            "@value": "2021-01-30T23:47:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "123387",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://akswnc7.informatik.uni-leipzig.de/dstreitmatter/archivo/vocab.ciudadesabiertas.es/def--transporte--autobus/2021.01.31-004731/def--transporte--autobus_type=orig.owl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      }
+   ]
+}

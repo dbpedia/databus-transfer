@@ -1,0 +1,656 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/generic"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01"
+         },
+         "dataid-debug:codeReference": {
+            "@id": "https://github.com/dbpedia/extraction-framework/blob/master/core/src/main/scala/org/dbpedia/extraction/mappings/DisambiguationExtractor.scala"
+         },
+         "dataid-debug:documentationLocation": {
+            "@id": "https://git.informatik.uni-leipzig.de/dbpedia-assoc/marvin-config/-/tree/master/databus-poms/dbpedia/generic/disambiguations"
+         },
+         "dataid-debug:feedbackChannel": {
+            "@id": "https://forum.dbpedia.org/c/data/databus/14"
+         },
+         "dataid-debug:issueTracker": {
+            "@id": "https://github.com/dbpedia/extraction-framework/issues"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/6ce5e19acd2b2051ee1283a1409bcffadde365f3 . After its releases, data is cleaned and persisted under the DBpedia account. ) Disambiguation Links extracted from Wikipedia disambiguation pages"
+         },
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release) Entity Disambiguation Links"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=it.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=el.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=en.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=de.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=es.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=eu.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=cs.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=ja.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=pl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=ko.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=nl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=ru.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=ca.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=fr.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=pt.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot for monthly raw releases (unparsed, unsorted) for debugging the DIEF software, commit: https://github.com/dbpedia/extraction-framework/commit/6ce5e19acd2b2051ee1283a1409bcffadde365f3 . After its releases, data is cleaned and persisted under the DBpedia account. ) Disambiguation Links extracted from Wikipedia disambiguation pages"
+         }
+      },
+      {
+         "@id": "dataid-cv:lang",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=it.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01/disambiguations_lang=it.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://it.dbpedia.org/resource/!_(disambigua)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/!!!> .\n<http://it.dbpedia.org/resource/!_(disambigua)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/!!> .\n<http://it.dbpedia.org/resource/!_(disambigua)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/!_(Adeva)> .\n<http://it.dbpedia.org/resource/!_(disambigua)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/!_(Shirley_Murdock)> .\n<http://it.dbpedia.org/resource/!_(disambigua)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/!_(Trippie_Redd)> .\n<http://it.dbpedia.org/resource/!_(disambigua)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/!_(album)> .\n<http://it.dbpedia.org/resource/$5,000_Reward> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/$5,000_Reward_(film_1909)> .\n<http://it.dbpedia.org/resource/$5,000_Reward> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/$5,000_Reward_(film_1916)> .\n<http://it.dbpedia.org/resource/$5,000_Reward> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/$5,000_Reward_(film_1918)> .\n<http://it.dbpedia.org/resource/$_(disambigua)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://it.dbpedia.org/resource/$_(album)> .",
+         "dataid:sha256sum": "1b56578c1d1a3c6491b385a3ae0da436223a92cb65953258cc75d6604b30791f",
+         "dataid-cv:lang": "it",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-17T16:20:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4344143",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/disambiguations/2021.06.01/disambiguations_lang=it.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=el.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01/disambiguations_lang=el.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://el.dbpedia.org/resource/10η_Κοινοβουλευτική_περίοδος> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/10η_Κοινοβουλευτική_περίοδος_(Ελλάδα)> .\n<http://el.dbpedia.org/resource/10ο_διαμέρισμα> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/10ο_διαμέρισμα_της_Μασσαλίας> .\n<http://el.dbpedia.org/resource/10ο_διαμέρισμα> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/10ο_διαμέρισμα_του_Διαμερίσματος_Λιτοράλ> .\n<http://el.dbpedia.org/resource/10ο_διαμέρισμα> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/10ο_διαμέρισμα_του_Παρισιού> .\n<http://el.dbpedia.org/resource/11_A.M.> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/11_A.M._(ταινία)> .\n<http://el.dbpedia.org/resource/11_A.M.> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/11_A.M._(τηλεοπτική_σειρά)> .\n<http://el.dbpedia.org/resource/25ος_παράλληλος> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/25ος_παράλληλος_βόρεια> .\n<http://el.dbpedia.org/resource/25ος_παράλληλος> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/25ος_παράλληλος_νότια> .\n<http://el.dbpedia.org/resource/307_(αποσαφήνιση)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/307> .\n<http://el.dbpedia.org/resource/307_(αποσαφήνιση)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://el.dbpedia.org/resource/307_π.Χ.> .",
+         "dataid:sha256sum": "647f8d78f7f74a85269e96068e64f8d8e77ff7bc6a175e53f8709f0f219a3e6f",
+         "dataid-cv:lang": "el",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-17T16:20:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "218242",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/disambiguations/2021.06.01/disambiguations_lang=el.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=en.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01/disambiguations_lang=en.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://dbpedia.org/resource/!!!_(disambiguation)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/!!!> .\n<http://dbpedia.org/resource/!!!_(disambiguation)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/!!!_(album)> .\n<http://dbpedia.org/resource/!!> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/!!!_(disambiguation)> .\n<http://dbpedia.org/resource/!!> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/Chess_annotation_symbols> .\n<http://dbpedia.org/resource/!_(disambiguation)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/!!!_(disambiguation)> .\n<http://dbpedia.org/resource/!_(disambiguation)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/!!> .\n<http://dbpedia.org/resource/!_(disambiguation)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/!_(Cláudia_Pascoal_album)> .\n<http://dbpedia.org/resource/!_(disambiguation)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/!_(The_Dismemberment_Plan_album)> .\n<http://dbpedia.org/resource/!_(disambiguation)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/!_(The_Song_Formerly_Known_As)> .\n<http://dbpedia.org/resource/!_(disambiguation)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://dbpedia.org/resource/!_(Trippie_Redd_album)> .",
+         "dataid:sha256sum": "ff8b42da63dd5169514d56ee0de1710d7edcc807348f7ec788ec61c9044c0ec8",
+         "dataid-cv:lang": "en",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-17T16:21:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "15147856",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/disambiguations/2021.06.01/disambiguations_lang=en.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=de.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01/disambiguations_lang=de.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://de.dbpedia.org/resource/.357> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/.357_(Film)> .\n<http://de.dbpedia.org/resource/.357> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/.357_Magnum> .\n<http://de.dbpedia.org/resource/.357> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/.357_SIG> .\n<http://de.dbpedia.org/resource/.357> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/Coonan_(Pistole)> .\n<http://de.dbpedia.org/resource/.45> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/.45_ACP> .\n<http://de.dbpedia.org/resource/.45> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/.45_Blaser> .\n<http://de.dbpedia.org/resource/.45> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/.45_Colt> .\n<http://de.dbpedia.org/resource/.45> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/.45_GAP> .\n<http://de.dbpedia.org/resource/.45> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/.45_WinMag> .\n<http://de.dbpedia.org/resource/007_(Begriffsklärung)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://de.dbpedia.org/resource/.007> .",
+         "dataid:sha256sum": "65803f1598dae8f09351c67cacbb3873234b889a0802be3a3bb69b08f555872d",
+         "dataid-cv:lang": "de",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-17T16:21:15Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "10791759",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/disambiguations/2021.06.01/disambiguations_lang=de.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=es.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01/disambiguations_lang=es.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://es.dbpedia.org/resource/!_(desambiguación)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/!_(álbum)> .\n<http://es.dbpedia.org/resource/!_(desambiguación)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/!_(álbum_de_Trippie_Redd)> .\n<http://es.dbpedia.org/resource/$_(desambiguación)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/$> .\n<http://es.dbpedia.org/resource/%3F_(desambiguación)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/%3F_(Lost)> .\n<http://es.dbpedia.org/resource/%3F_(desambiguación)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/%3F_(álbum)> .\n<http://es.dbpedia.org/resource/%3F_(desambiguación)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/%3F_(álbum_de_XXXTentacion)> .\n<http://es.dbpedia.org/resource/&_(desambiguación)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/&> .\n<http://es.dbpedia.org/resource/&_(desambiguación)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/&_(canción)> .\n<http://es.dbpedia.org/resource/&_(desambiguación)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/&_(álbum_de_Hedningarna)> .\n<http://es.dbpedia.org/resource/++> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://es.dbpedia.org/resource/C++> .",
+         "dataid:sha256sum": "fdfca3b57b5a5256e07eab190d0a82bfb148bf26998f0fe1cbb42b8bb4cb4b27",
+         "dataid-cv:lang": "es",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-17T16:20:41Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2481583",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/disambiguations/2021.06.01/disambiguations_lang=es.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=eu.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01/disambiguations_lang=eu.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://eu.dbpedia.org/resource/10._linea> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/10._linea_(Bartzelonako_metroa)> .\n<http://eu.dbpedia.org/resource/10._linea> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/10._linea_(Eskualdeko_Hiri_Garraioa)> .\n<http://eu.dbpedia.org/resource/10._linea> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/10._linea_(Shanghaiko_metroa)> .\n<http://eu.dbpedia.org/resource/10._linea> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/10._linea_(Txik_Txak)> .\n<http://eu.dbpedia.org/resource/10._linea> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/Kategoria:10._linea_artikuluak> .\n<http://eu.dbpedia.org/resource/11._linea> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/11._linea_(Bartzelonako_metroa)> .\n<http://eu.dbpedia.org/resource/11._linea> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/11._linea_(Eskualdeko_Hiri_Garraioa)> .\n<http://eu.dbpedia.org/resource/11._linea> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/11._linea_(Shanghaiko_metroa)> .\n<http://eu.dbpedia.org/resource/11._linea> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/11._linea_(Txik_Txak)> .\n<http://eu.dbpedia.org/resource/11._linea> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://eu.dbpedia.org/resource/Kategoria:11._linea_artikuluak> .",
+         "dataid:sha256sum": "c128b76f482d52ff493354c57f2b0a8079e099dc70a51e77376a45eff5190a02",
+         "dataid-cv:lang": "eu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-17T16:20:27Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "171454",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/disambiguations/2021.06.01/disambiguations_lang=eu.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=cs.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01/disambiguations_lang=cs.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://cs.dbpedia.org/resource/00> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://cs.dbpedia.org/resource/1900> .\n<http://cs.dbpedia.org/resource/00> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://cs.dbpedia.org/resource/2000> .\n<http://cs.dbpedia.org/resource/01> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://cs.dbpedia.org/resource/01_Distribution> .\n<http://cs.dbpedia.org/resource/01> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://cs.dbpedia.org/resource/2021> .\n<http://cs.dbpedia.org/resource/01> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://cs.dbpedia.org/resource/’01> .\n<http://cs.dbpedia.org/resource/0_(rozcestník)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://cs.dbpedia.org/resource/Nula> .\n<http://cs.dbpedia.org/resource/0_(rozcestník)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://cs.dbpedia.org/resource/Rok_nula> .\n<http://cs.dbpedia.org/resource/1._FC_Lokomotive_Leipzig> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://cs.dbpedia.org/resource/1._FC_Lokomotive_Leipzig_(1966)> .\n<http://cs.dbpedia.org/resource/1._FC_Lokomotive_Leipzig> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://cs.dbpedia.org/resource/1._FC_Lokomotive_Leipzig_(2003)> .\n<http://cs.dbpedia.org/resource/1._návštěvní_expedice> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://cs.dbpedia.org/resource/1._návštěvní_expedice_(ISS)> .",
+         "dataid:sha256sum": "8dc680036597b85e9386619f854c9cbfa345cfca2c960958cb469e5725a64bc5",
+         "dataid-cv:lang": "cs",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-17T16:20:28Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "575862",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/disambiguations/2021.06.01/disambiguations_lang=cs.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=ja.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01/disambiguations_lang=ja.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://ja.dbpedia.org/resource/$10> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/$10_(曲)> .\n<http://ja.dbpedia.org/resource/&CAST!!!アワー> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/&CAST!!!アワー_ラブエール!> .\n<http://ja.dbpedia.org/resource/&CAST!!!アワー> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/&CAST!!!アワー_ラブテン!> .\n<http://ja.dbpedia.org/resource/&CAST!!!アワー> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/&CAST!!!アワー_ラブナイツ!> .\n<http://ja.dbpedia.org/resource/&CAST!!!アワー> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/&CAST!!!アワー_ラブパレット!> .\n<http://ja.dbpedia.org/resource/&CAST!!!アワー> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/&CAST!!!アワー_ラブランチ!> .\n<http://ja.dbpedia.org/resource/&CAST!!!アワー> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/DOUBLE_DECKER!_ダグ&キリル> .\n<http://ja.dbpedia.org/resource/&CAST!!!アワー> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/クイーンズブレイド> .\n<http://ja.dbpedia.org/resource/&_(曖昧さ回避)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/&_(Mr.FanTastiCのシングル)> .\n<http://ja.dbpedia.org/resource/&_(曖昧さ回避)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ja.dbpedia.org/resource/&_(シングル)> .",
+         "dataid:sha256sum": "e1f498f8bf9bbf0e2c2d6aa3fad55d6d1bac29b139980372a09be7ece8a102aa",
+         "dataid-cv:lang": "ja",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-17T16:20:45Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1555524",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/disambiguations/2021.06.01/disambiguations_lang=ja.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=pl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01/disambiguations_lang=pl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://pl.dbpedia.org/resource/%3F_(ujednoznacznienie)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/%3F_(English_version)> .\n<http://pl.dbpedia.org/resource/%3F_(ujednoznacznienie)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/%3F_(XXXTentaciona)> .\n<http://pl.dbpedia.org/resource/%3F_(ujednoznacznienie)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/%3F_(album_Hey)> .\n<http://pl.dbpedia.org/resource/%3F_(ujednoznacznienie)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/%3F_(album_Neny)> .\n<http://pl.dbpedia.org/resource/'A'_Division> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/'A'_Division_(1946/1947)> .\n<http://pl.dbpedia.org/resource/'A'_Division> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/'A'_Division_(1947/1948)> .\n<http://pl.dbpedia.org/resource/'A'_Division> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/'A'_Division_(1948/1949)> .\n<http://pl.dbpedia.org/resource/'A'_Division> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/'A'_Division_(1949/1950)> .\n<http://pl.dbpedia.org/resource/'A'_Division> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/'A'_Division_(1950/1951)> .\n<http://pl.dbpedia.org/resource/'A'_Division> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pl.dbpedia.org/resource/'A'_Division_(1951/1952)> .",
+         "dataid:sha256sum": "7d3239ca688521f970c5e3da47552364c4d477ed216e575f0567d3651253be25",
+         "dataid-cv:lang": "pl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-17T16:21:18Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2839277",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/disambiguations/2021.06.01/disambiguations_lang=pl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=ko.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01/disambiguations_lang=ko.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://ko.dbpedia.org/resource/!!> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/!!!> .\n<http://ko.dbpedia.org/resource/!_(동음이의)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/!_(클라우디아_파스코알의_음반)> .\n<http://ko.dbpedia.org/resource/$_(동음이의)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/$> .\n<http://ko.dbpedia.org/resource/+1> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/+1_(음반)> .\n<http://ko.dbpedia.org/resource/+1> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/UTC+01:00> .\n<http://ko.dbpedia.org/resource/...Baby_One_More_Time> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/...Baby_One_More_Time_(노래)> .\n<http://ko.dbpedia.org/resource/...Baby_One_More_Time> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/...Baby_One_More_Time_(음반)> .\n<http://ko.dbpedia.org/resource/...Baby_One_More_Time> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/...Baby_One_More_Time_Tour> .\n<http://ko.dbpedia.org/resource/.app> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/.app_(일반_최상위_도메인)> .\n<http://ko.dbpedia.org/resource/0011_나폴레옹_솔로_(동음이의)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ko.dbpedia.org/resource/0011_나폴레옹_솔로> .",
+         "dataid:sha256sum": "61e8e34ac1f7534d65f46804c4fca291824d06fc9e294ee64e28b92f3ea97cb6",
+         "dataid-cv:lang": "ko",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-17T16:20:18Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1382301",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/disambiguations/2021.06.01/disambiguations_lang=ko.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=nl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01/disambiguations_lang=nl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://nl.dbpedia.org/resource/%3F_(doorverwijspagina)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/%3F_(Ange)> .\n<http://nl.dbpedia.org/resource/%3F_(doorverwijspagina)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/%3F_(album_van_Neal_Morse)> .\n<http://nl.dbpedia.org/resource/%3F_(doorverwijspagina)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/%3F_(album_van_Nena)> .\n<http://nl.dbpedia.org/resource/%3F_(doorverwijspagina)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/%3F_(album_van_XXXTentacion)> .\n<http://nl.dbpedia.org/resource/%3F_(doorverwijspagina)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/%3F_(single_van_Nena)> .\n<http://nl.dbpedia.org/resource/%3F_(doorverwijspagina)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/%3F_Live> .\n<http://nl.dbpedia.org/resource/'A'_You're_Adorable> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/'A'_You're_Adorable_(album)> .\n<http://nl.dbpedia.org/resource/'A'_You're_Adorable> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/'A'_You're_Adorable_(nummer)> .\n<http://nl.dbpedia.org/resource/'Amran> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/'Amran_(gouvernement)> .\n<http://nl.dbpedia.org/resource/'Amran> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://nl.dbpedia.org/resource/'Amran_(stad)> .",
+         "dataid:sha256sum": "d3cf9ac032dabedb1fd6d4eadd5e3f789754903602d64cf3efbc28dd20128bef",
+         "dataid-cv:lang": "nl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-17T16:21:03Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2979253",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/disambiguations/2021.06.01/disambiguations_lang=nl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=ru.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01/disambiguations_lang=ru.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://ru.dbpedia.org/resource/!!_(значения)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/!!!> .\n<http://ru.dbpedia.org/resource/!> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/!!!> .\n<http://ru.dbpedia.org/resource/!> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/!!!_(альбом)> .\n<http://ru.dbpedia.org/resource/!> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/!!_(значения)> .\n<http://ru.dbpedia.org/resource/!> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/!_(альбом)> .\n<http://ru.dbpedia.org/resource/!> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/!_(альбом_Trippie_Redd)> .\n<http://ru.dbpedia.org/resource/!> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/DA!_(группа)> .\n<http://ru.dbpedia.org/resource/$> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/$_(альбом)> .\n<http://ru.dbpedia.org/resource/%3F_(значения)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/%3F%3F> .\n<http://ru.dbpedia.org/resource/%3F_(значения)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ru.dbpedia.org/resource/%3F_(Остаться_в_живых)> .",
+         "dataid:sha256sum": "f38e3475b3545b701912d203d59a6b017501a0be9f30415024b551032f3135ef",
+         "dataid-cv:lang": "ru",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-17T16:20:26Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "6190552",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/disambiguations/2021.06.01/disambiguations_lang=ru.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=ca.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01/disambiguations_lang=ca.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://ca.dbpedia.org/resource/!Kung> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/!Kung_(grup_humà)> .\n<http://ca.dbpedia.org/resource/!Kung> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/!Kung_(llengua)> .\n<http://ca.dbpedia.org/resource/...And_Justice_for_All> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/...And_Justice_for_All_(àlbum)> .\n<http://ca.dbpedia.org/resource/1080_(desambiguació)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/1080> .\n<http://ca.dbpedia.org/resource/1080_(desambiguació)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/1080i> .\n<http://ca.dbpedia.org/resource/1080_(desambiguació)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/1080p> .\n<http://ca.dbpedia.org/resource/1080_(desambiguació)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/1080°_Snowboarding> .\n<http://ca.dbpedia.org/resource/125_(desambiguació)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/125> .\n<http://ca.dbpedia.org/resource/125_(desambiguació)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/125_aC> .\n<http://ca.dbpedia.org/resource/125_(desambiguació)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://ca.dbpedia.org/resource/Campionat_del_Món_de_motociclisme_de_velocitat_de_125cc> .",
+         "dataid:sha256sum": "f3c51aeb330f9bcfd279fe29696b8be0fa6914691d469d1e0abb7c7fbb8a97b1",
+         "dataid-cv:lang": "ca",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-17T16:20:16Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "720710",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/disambiguations/2021.06.01/disambiguations_lang=ca.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=fr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01/disambiguations_lang=fr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://fr.dbpedia.org/resource/!!> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/!!!> .\n<http://fr.dbpedia.org/resource/!_(homonymie)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/!!!> .\n<http://fr.dbpedia.org/resource/!_(homonymie)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/!Kung> .\n<http://fr.dbpedia.org/resource/!_(homonymie)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/!_(album)> .\n<http://fr.dbpedia.org/resource/%3F_(homonymie)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/%3F:_A_Question_Mark> .\n<http://fr.dbpedia.org/resource/%3F_(homonymie)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/%3F_(album_d'Eason_Chan)> .\n<http://fr.dbpedia.org/resource/%3F_(homonymie)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/%3F_(album_de_Bersuit_Vergarabat)> .\n<http://fr.dbpedia.org/resource/%3F_(homonymie)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/%3F_(album_de_Neal_Morse)> .\n<http://fr.dbpedia.org/resource/%3F_(homonymie)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/%3F_(album_de_Nena)> .\n<http://fr.dbpedia.org/resource/%3F_(homonymie)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://fr.dbpedia.org/resource/%3F_(album_de_XXXTentacion)> .",
+         "dataid:sha256sum": "e235c1ee4f76546266b35c6652e85383d4d3fc42dc9126b30b74018125f2787c",
+         "dataid-cv:lang": "fr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-17T16:20:39Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "5844845",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/disambiguations/2021.06.01/disambiguations_lang=fr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01#disambiguations_lang=pt.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/disambiguations/2021.06.01/disambiguations_lang=pt.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "<http://pt.dbpedia.org/resource/!!> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/!!!_(desambiguação)> .\n<http://pt.dbpedia.org/resource/!!> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/!!_(xadrez)> .\n<http://pt.dbpedia.org/resource/%3F_(desambiguação)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/%3F_(álbum_de_Neal_Morse)> .\n<http://pt.dbpedia.org/resource/%3F_(desambiguação)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/%3F_(álbum_de_XXXTentacion)> .\n<http://pt.dbpedia.org/resource/0> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/0_(número)> .\n<http://pt.dbpedia.org/resource/1+1_(desambiguação)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/1+1> .\n<http://pt.dbpedia.org/resource/1+1_(desambiguação)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/1+1_(rede_de_televisão)> .\n<http://pt.dbpedia.org/resource/1+1_(desambiguação)> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/1+1_(álbum)> .\n<http://pt.dbpedia.org/resource/100%25> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/100%25_(álbum)> .\n<http://pt.dbpedia.org/resource/100%25> <http://dbpedia.org/ontology/wikiPageDisambiguates> <http://pt.dbpedia.org/resource/100%25_(álbum_de_Banda_Calypso)> .",
+         "dataid:sha256sum": "2d10864021211bb16f9efbf687187070edb3deab3d96eb0b1947f3addcda1819",
+         "dataid-cv:lang": "pt",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2021.06.01",
+         "dct:issued": {
+            "@value": "2021-06-01T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-07-17T16:20:43Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1125787",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-mappings.tib.eu/databus-repo/marvin/generic/disambiguations/2021.06.01/disambiguations_lang=pt.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

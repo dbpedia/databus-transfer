@@ -1,0 +1,697 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:marvin"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/generic/homepages"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/generic"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30"
+         },
+         "dataid-debug:codeReference": {
+            "@id": "https://github.com/dbpedia/extraction-framework/blob/master/core/src/main/scala/org/dbpedia/extraction/mappings/"
+         },
+         "dataid-debug:documentationLocation": {
+            "@id": "https://github.com/dbpedia/databus-maven-plugin/blob/master/dbpedia/generic/homepages"
+         },
+         "dataid-debug:feedbackChannel": {
+            "@id": "https://forum.dbpedia.org/c/databus-dbpedia/generic"
+         },
+         "dataid-debug:issueTracker": {
+            "@id": "https://github.com/dbpedia/extraction-framework/issues"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "(MARVIN is the DBpedia bot, that runs the DBpedia Information Extraction Framework (DIEF) and releases the data as is, i.e. unparsed, unsorted, not redirected for debugging the software. After its releases, data is cleaned and persisted under the dbpedia account.)help needed"
+         },
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "(pre-release)homepages dataset"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=it.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=el.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=en.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=ga.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=de.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=es.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=eu.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=ja.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=pl.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=ru.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=ca.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=fr.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=pt.ttl.bz2"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "(MARVIN is the DBpedia bot, that runs the DBpedia Information Extraction Framework (DIEF) and releases the data as is, i.e. unparsed, unsorted, not redirected for debugging the software. After its releases, data is cleaned and persisted under the dbpedia account.)help needed"
+         }
+      },
+      {
+         "@id": "dataid-cv:lang",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=it.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30/homepages_lang=it.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "53662",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://it.dbpedia.org/resource/Gabicce_Mare> <http://xmlns.com/foaf/0.1/homepage> <http://www.parcosanbartolo.it/> .\n<http://it.dbpedia.org/resource/Giochi_della_XV_Olimpiade> <http://xmlns.com/foaf/0.1/homepage> <http://olympic.org> .\n<http://it.dbpedia.org/resource/San_Valentino> <http://xmlns.com/foaf/0.1/homepage> <http://www.eventivalentiniani.net/it/component/content/article.html?layout=edit&id=79> .\n<http://it.dbpedia.org/resource/Società_Sportiva_Calcio_Napoli> <http://xmlns.com/foaf/0.1/homepage> <http://www.sscnapoli.it> .\n<http://it.dbpedia.org/resource/Ludwig_van_Beethoven> <http://xmlns.com/foaf/0.1/homepage> <http://www.beethoven-haus-bonn.de/sixcms/detail.php/portal_en> .\n<http://it.dbpedia.org/resource/Interazione_forte> <http://xmlns.com/foaf/0.1/homepage> <http://www.physnet.org> .\n<http://it.dbpedia.org/resource/Alfa_Centauri> <http://xmlns.com/foaf/0.1/homepage> <http://SpaceRef.com> .\n<http://it.dbpedia.org/resource/Dresano> <http://xmlns.com/foaf/0.1/homepage> <http://www.comune.dresano.mi.it/> .\n<http://it.dbpedia.org/resource/Falzes> <http://xmlns.com/foaf/0.1/homepage> <http://www.comune.falzes.bz.it/system/web/default.aspx?sprache=3> .\n<http://it.dbpedia.org/resource/Taranta_Peligna> <http://xmlns.com/foaf/0.1/homepage> <http://www.comune.tarantapeligna.ch.it/> .",
+         "dataid:sha256sum": "6fb2744ba1b6c69fed508ad7fad0f26a02ee8a67714d246e04e0e33fab5a0970",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "7295263",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "it",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T20:40:11Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "977852",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/homepages/2019.08.30/homepages_lang=it.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=el.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30/homepages_lang=el.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "11845",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://el.dbpedia.org/resource/Ελευθέριος_Βενιζέλος> <http://xmlns.com/foaf/0.1/homepage> <http://www.venizelos-foundation.gr/> .\n<http://el.dbpedia.org/resource/Ολυμπιακοί_Αγώνες> <http://xmlns.com/foaf/0.1/homepage> <http://www.olympic.org/> .\n<http://el.dbpedia.org/resource/Νορβηγία> <http://xmlns.com/foaf/0.1/homepage> <http://www.norway.gr/> .\n<http://el.dbpedia.org/resource/Ελληνική_Χωροφυλακή> <http://xmlns.com/foaf/0.1/homepage> <http://www.astynomia.gr/index.php?option=ozo_content&perform=view&id=34&Itemid=13&lang=EN> .\n<http://el.dbpedia.org/resource/Μέθανα> <http://xmlns.com/foaf/0.1/homepage> <http://www.methana.com.gr> .\n<http://el.dbpedia.org/resource/Άκουρεϊρι> <http://xmlns.com/foaf/0.1/homepage> <http://www.akureyri.is/> .\n<http://el.dbpedia.org/resource/Ιράν> <http://xmlns.com/foaf/0.1/homepage> <http://www.leader.ir/> .\n<http://el.dbpedia.org/resource/Πρωτάθλημα_Ελλάδας_καλαθοσφαίρισης_γυναικών> <http://xmlns.com/foaf/0.1/homepage> <http://www.basket.gr/index.asp> .\n<http://el.dbpedia.org/resource/Μάικλ_Τζάκσον> <http://xmlns.com/foaf/0.1/homepage> <http://www.michaeljackson.com> .\n<http://el.dbpedia.org/resource/Απογραφή> <http://xmlns.com/foaf/0.1/homepage> <http://www.statistics.gr> .",
+         "dataid:sha256sum": "5fbf4996fbe0413dc38d75d1066c2dcfb8237fb00b7654332ae0b7e459577dd5",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "1686916",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "el",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T20:40:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "201670",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/homepages/2019.08.30/homepages_lang=el.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=en.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30/homepages_lang=en.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "672762",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://dbpedia.org/resource/Australian_Democrats> <http://xmlns.com/foaf/0.1/homepage> <https://www.australian-democrats.org.au> .\n<http://dbpedia.org/resource/AFC_Ajax> <http://xmlns.com/foaf/0.1/homepage> <http://www.ajax.nl/> .\n<http://dbpedia.org/resource/Abakan> <http://xmlns.com/foaf/0.1/homepage> <http://xn--80aaac0ct.xn--p1ai> .\n<http://dbpedia.org/resource/Aegina> <http://xmlns.com/foaf/0.1/homepage> <http://www.discoveraegina.gr/> .\n<http://dbpedia.org/resource/Brasília> <http://xmlns.com/foaf/0.1/homepage> <http://www.brasilia.df.gov.br> .\n<http://dbpedia.org/resource/Cape_Breton_Island> <http://xmlns.com/foaf/0.1/homepage> <http://cbisland.com/> .\n<http://dbpedia.org/resource/Campaign_for_Real_Ale> <http://xmlns.com/foaf/0.1/homepage> <http://www.camra.org.uk/> .\n<http://dbpedia.org/resource/CLU_(programming_language)> <http://xmlns.com/foaf/0.1/homepage> <http://www.pmg.lcs.mit.edu/CLU.html> .\n<http://dbpedia.org/resource/Charles_Mingus> <http://xmlns.com/foaf/0.1/homepage> <http://www.mingusmingusmingus.com/> .\n<http://dbpedia.org/resource/DC_Comics> <http://xmlns.com/foaf/0.1/homepage> <https://www.dccomics.com> .",
+         "dataid:sha256sum": "937dbd4fae2a53fac53ac1bb6137a332ef9e871e1dcd0c2812a4455a88030049",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "87351111",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "en",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T20:40:30Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "13459328",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/homepages/2019.08.30/homepages_lang=en.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=ga.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30/homepages_lang=ga.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "837",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://ga.dbpedia.org/resource/Corn_FIFA_an_Domhain_2006> <http://xmlns.com/foaf/0.1/homepage> <http://fifaworldcup.yahoo.com> .\n<http://ga.dbpedia.org/resource/Dakota_Thuaidh> <http://xmlns.com/foaf/0.1/homepage> <http://nd.gov/> .\n<http://ga.dbpedia.org/resource/Johnny_Cash> <http://xmlns.com/foaf/0.1/homepage> <http://www.johnnycash.com/> .\n<http://ga.dbpedia.org/resource/Shane_MacGowan> <http://xmlns.com/foaf/0.1/homepage> <http://www.shanemacgowan.com> .\n<http://ga.dbpedia.org/resource/Comhaontas_Glas> <http://xmlns.com/foaf/0.1/homepage> <https://comhaontasglas.ie/> .\n<http://ga.dbpedia.org/resource/Lá_Nua> <http://xmlns.com/foaf/0.1/homepage> <http://www.nuacht.com/> .\n<http://ga.dbpedia.org/resource/Daniel_Radcliffe> <http://xmlns.com/foaf/0.1/homepage> <http://www.danradcliffe.com/> .\n<http://ga.dbpedia.org/resource/Emma_Watson> <http://xmlns.com/foaf/0.1/homepage> <http://www.emmawatsonofficial.com/> .\n<http://ga.dbpedia.org/resource/PAE_Panathinaikos> <http://xmlns.com/foaf/0.1/homepage> <http://www.pao.gr> .\n<http://ga.dbpedia.org/resource/The_Sun> <http://xmlns.com/foaf/0.1/homepage> <http://www.thesun.co.uk/> .",
+         "dataid:sha256sum": "79b0e10f1907384d82d089027318853777bfd30875275031100be13c01fe321b",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "104988",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ga",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T20:40:10Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "14786",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/homepages/2019.08.30/homepages_lang=ga.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=de.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30/homepages_lang=de.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "228249",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://de.dbpedia.org/resource/Björk> <http://xmlns.com/foaf/0.1/homepage> <https://www.bjork.com/> .\n<http://de.dbpedia.org/resource/Enigma_(Maschine)> <http://xmlns.com/foaf/0.1/homepage> <http://www.bletchleypark.org.uk/> .\n<http://de.dbpedia.org/resource/ETH_Zürich> <http://xmlns.com/foaf/0.1/homepage> <http://www.ethz.ch/> .\n<http://de.dbpedia.org/resource/FIFA> <http://xmlns.com/foaf/0.1/homepage> <http://de.fifa.com/index.html> .\n<http://de.dbpedia.org/resource/Greenpeace> <http://xmlns.com/foaf/0.1/homepage> <https://www.greenpeace.org/international/en> .\n<http://de.dbpedia.org/resource/Gernika> <http://xmlns.com/foaf/0.1/homepage> <http://www.gernika-lumo.net> .\n<http://de.dbpedia.org/resource/Joe_Zawinul> <http://xmlns.com/foaf/0.1/homepage> <http://www.joezawinul.com/> .\n<http://de.dbpedia.org/resource/KDE> <http://xmlns.com/foaf/0.1/homepage> <https://kde.org/> .\n<http://de.dbpedia.org/resource/Kelkheim_(Taunus)> <http://xmlns.com/foaf/0.1/homepage> <https://www.kelkheim.de/> .\n<http://de.dbpedia.org/resource/Mel_Brooks> <http://xmlns.com/foaf/0.1/homepage> <http://www.g4tv.com/spaceballs/index.html> .",
+         "dataid:sha256sum": "4f441d1668210ee43da9524059cc0718c99d901dc90f2b01487f5d4909c8016a",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "28636428",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "de",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T20:40:19Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "4114773",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/homepages/2019.08.30/homepages_lang=de.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=es.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30/homepages_lang=es.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "130206",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://es.dbpedia.org/resource/Agricultura_ecológica> <http://xmlns.com/foaf/0.1/homepage> <https://web.archive.org/web/20110320093623/http:/ec.europa.eu/agriculture/organic/home_es> .\n<http://es.dbpedia.org/resource/Pirekua> <http://xmlns.com/foaf/0.1/homepage> <http://www.purepecha.mx/threads/4112-Carta-a-la-UNESCO-del-Consejo-Ind%C3%ADgena-PIR%C3%89KUA-como-Patrimonio-Humanidad> .\n<http://es.dbpedia.org/resource/Richard_Stallman> <http://xmlns.com/foaf/0.1/homepage> <http://www.stallman.org> .\n<http://es.dbpedia.org/resource/Premio_Nobel_de_Literatura> <http://xmlns.com/foaf/0.1/homepage> <http://nobelprize.org/nobel_prizes/literature/laureates/> .\n<http://es.dbpedia.org/resource/World_Wide_Web_Consortium> <http://xmlns.com/foaf/0.1/homepage> <http://w3.org/> .\n<http://es.dbpedia.org/resource/Roma> <http://xmlns.com/foaf/0.1/homepage> <http://www.comune.roma.it/> .\n<http://es.dbpedia.org/resource/Pink_Floyd> <http://xmlns.com/foaf/0.1/homepage> <http://www.pinkfloyd.co.uk/> .\n<http://es.dbpedia.org/resource/Ramón_Irigoyen> <http://xmlns.com/foaf/0.1/homepage> <http://www.ramonirigoyen.com/> .\n<http://es.dbpedia.org/resource/Alfredo_Bryce_Echenique> <http://xmlns.com/foaf/0.1/homepage> <https://web.archive.org/web/20160403141241/http:/www.bryce-echenique.com/> .\n<http://es.dbpedia.org/resource/Maratón> <http://xmlns.com/foaf/0.1/homepage> <http://www.olympic.org/athletics-marathon-men> .",
+         "dataid:sha256sum": "0776b95ef0794f9781c804c6aa5a5500a916b644ba30b0e6140577750df117dc",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "17780583",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "es",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T20:40:07Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2593980",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/homepages/2019.08.30/homepages_lang=es.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=eu.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30/homepages_lang=eu.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "10136",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://eu.dbpedia.org/resource/Berrobi> <http://xmlns.com/foaf/0.1/homepage> <http://www.berrobi.net> .\n<http://eu.dbpedia.org/resource/Lizartza> <http://xmlns.com/foaf/0.1/homepage> <http://www.lizartza.com/> .\n<http://eu.dbpedia.org/resource/Areatza> <http://xmlns.com/foaf/0.1/homepage> <http://www.areatza.net> .\n<http://eu.dbpedia.org/resource/Erandio> <http://xmlns.com/foaf/0.1/homepage> <http://www.erandio.eus/> .\n<http://eu.dbpedia.org/resource/Lemoiz> <http://xmlns.com/foaf/0.1/homepage> <http://www.lemoiz.net> .\n<http://eu.dbpedia.org/resource/Otxandio> <http://xmlns.com/foaf/0.1/homepage> <http://www.otxandio.eus> .\n<http://eu.dbpedia.org/resource/Arraia-Maeztu> <http://xmlns.com/foaf/0.1/homepage> <http://www.arraia-maeztu.org/index.php> .\n<http://eu.dbpedia.org/resource/Lagran> <http://xmlns.com/foaf/0.1/homepage> <http://www.lagran.org/> .\n<http://eu.dbpedia.org/resource/Ablitas> <http://xmlns.com/foaf/0.1/homepage> <http://ablitas.es/> .\n<http://eu.dbpedia.org/resource/Artaxoa> <http://xmlns.com/foaf/0.1/homepage> <http://www.artajona.net/> .",
+         "dataid:sha256sum": "a13158ccdd32f3c3ad24cd664c935e16383961a6e37aeda4d1ab813a818057d3",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "1244410",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "eu",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T20:40:08Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "163773",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/homepages/2019.08.30/homepages_lang=eu.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=ja.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30/homepages_lang=ja.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "138008",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://ja.dbpedia.org/resource/日本の漫画家> <http://xmlns.com/foaf/0.1/homepage> <http://www.manga-ka.net> .\n<http://ja.dbpedia.org/resource/唐沢なをき> <http://xmlns.com/foaf/0.1/homepage> <http://www.nawosan.com/index.shtml> .\n<http://ja.dbpedia.org/resource/池田理代子> <http://xmlns.com/foaf/0.1/homepage> <http://www.ikeda-riyoko-pro.com/> .\n<http://ja.dbpedia.org/resource/大森葵> <http://xmlns.com/foaf/0.1/homepage> <http://irumo.vis.ne.jp/> .\n<http://ja.dbpedia.org/resource/さいとう・たかを> <http://xmlns.com/foaf/0.1/homepage> <https://www.saito-pro.co.jp/> .\n<http://ja.dbpedia.org/resource/兼六園> <http://xmlns.com/foaf/0.1/homepage> <http://www.pref.ishikawa.jp/siro-niwa/kenrokuen/> .\n<http://ja.dbpedia.org/resource/遊佐未森> <http://xmlns.com/foaf/0.1/homepage> <http://www.mimoriyusa.net/> .\n<http://ja.dbpedia.org/resource/塀内夏子> <http://xmlns.com/foaf/0.1/homepage> <http://www.ponytail.co.jp/index2.html> .\n<http://ja.dbpedia.org/resource/矢口高雄> <http://xmlns.com/foaf/0.1/homepage> <http://www.sampei33.jp/> .\n<http://ja.dbpedia.org/resource/NASCAR> <http://xmlns.com/foaf/0.1/homepage> <http://www.nascar.com/> .",
+         "dataid:sha256sum": "153cc9ec147522013d8fdebb80ebf44bfdd10c1a48926749f7d8258184c4d177",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "18813271",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ja",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T20:40:10Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "2676792",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/homepages/2019.08.30/homepages_lang=ja.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=pl.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30/homepages_lang=pl.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "47526",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://pl.dbpedia.org/resource/Buenos_Aires> <http://xmlns.com/foaf/0.1/homepage> <http://www.buenosaires.gov.ar> .\n<http://pl.dbpedia.org/resource/C++> <http://xmlns.com/foaf/0.1/homepage> <https://isocpp.org> .\n<http://pl.dbpedia.org/resource/Hawaje> <http://xmlns.com/foaf/0.1/homepage> <http://portal.ehawaii.gov/> .\n<http://pl.dbpedia.org/resource/Heidelberg> <http://xmlns.com/foaf/0.1/homepage> <https://www.heidelberg.de/> .\n<http://pl.dbpedia.org/resource/Judaizm> <http://xmlns.com/foaf/0.1/homepage> <http://www.warszawa.jewish.org.pl/> .\n<http://pl.dbpedia.org/resource/Monako> <http://xmlns.com/foaf/0.1/homepage> <http://www.gouv.mc/> .\n<http://pl.dbpedia.org/resource/Scalable_Vector_Graphics> <http://xmlns.com/foaf/0.1/homepage> <https://www.w3.org/Graphics/SVG> .\n<http://pl.dbpedia.org/resource/Wegetarianizm> <http://xmlns.com/foaf/0.1/homepage> <http://www.ivu.org/> .\n<http://pl.dbpedia.org/resource/Visual_Basic_for_Applications> <http://xmlns.com/foaf/0.1/homepage> <http://msdn.microsoft.com/en-us/library/d2tx7z6d(v=vs.80).aspx> .\n<http://pl.dbpedia.org/resource/Commodore_International> <http://xmlns.com/foaf/0.1/homepage> <http://www.commodoreusa.net> .",
+         "dataid:sha256sum": "8ddc183edec78aef31152b8a64056fa098b7302ce8274e3f9345e825af912058",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "6039962",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "pl",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T20:40:06Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "857809",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/homepages/2019.08.30/homepages_lang=pl.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=ru.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30/homepages_lang=ru.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "171500",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://ru.dbpedia.org/resource/Варшава> <http://xmlns.com/foaf/0.1/homepage> <http://www.um.warszawa.pl/> .\n<http://ru.dbpedia.org/resource/Украина> <http://xmlns.com/foaf/0.1/homepage> <http://www.president.gov.ua/> .\n<http://ru.dbpedia.org/resource/Пермь> <http://xmlns.com/foaf/0.1/homepage> <http://www.gorodperm.ru/> .\n<http://ru.dbpedia.org/resource/Нигерия> <http://xmlns.com/foaf/0.1/homepage> <https://web.archive.org/web/20041127020926/http:/www.nigeria.gov.ng/> .\n<http://ru.dbpedia.org/resource/Московский_метрополитен> <http://xmlns.com/foaf/0.1/homepage> <http://mosmetro.ru> .\n<http://ru.dbpedia.org/resource/ПЛ/1> <http://xmlns.com/foaf/0.1/homepage> <http://www-306.ibm.com/software/awdtools/pli/> .\n<http://ru.dbpedia.org/resource/Католицизм> <http://xmlns.com/foaf/0.1/homepage> <http://www.vatican.va> .\n<http://ru.dbpedia.org/resource/Президент_Российской_Федерации> <http://xmlns.com/foaf/0.1/homepage> <http://kremlin.ru/> .\n<http://ru.dbpedia.org/resource/Вернигероде> <http://xmlns.com/foaf/0.1/homepage> <http://www.wernigerode.de/> .\n<http://ru.dbpedia.org/resource/Таганрог> <http://xmlns.com/foaf/0.1/homepage> <http://www.tagancity.ru> .",
+         "dataid:sha256sum": "acc07ea8a0eb32be30f842dfad4894ba664ff1be929b06c5ef5363374650fa57",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "24845776",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ru",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T20:40:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3182641",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/homepages/2019.08.30/homepages_lang=ru.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=ca.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30/homepages_lang=ca.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "51095",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://ca.dbpedia.org/resource/AIX> <http://xmlns.com/foaf/0.1/homepage> <http://www-1.ibm.com/servers/aix/> .\n<http://ca.dbpedia.org/resource/Cervera> <http://xmlns.com/foaf/0.1/homepage> <https://www.cerverapaeria.cat/> .\n<http://ca.dbpedia.org/resource/Groenlàndia> <http://xmlns.com/foaf/0.1/homepage> <http://uk.nanoq.gl/> .\n<http://ca.dbpedia.org/resource/Química_orgànica> <http://xmlns.com/foaf/0.1/homepage> <http://www.quimics.cat/> .\n<http://ca.dbpedia.org/resource/Miguel_de_Cervantes_Saavedra> <http://xmlns.com/foaf/0.1/homepage> <http://D.F.> .\n<http://ca.dbpedia.org/resource/Antic_Egipte> <http://xmlns.com/foaf/0.1/homepage> <http://D.C.> .\n<http://ca.dbpedia.org/resource/Diputació_de_Lleida> <http://xmlns.com/foaf/0.1/homepage> <http://www.diputaciolleida.cat/> .\n<http://ca.dbpedia.org/resource/Sant_Martí_Sesgueioles> <http://xmlns.com/foaf/0.1/homepage> <http://www.sesgueioles.cat/> .\n<http://ca.dbpedia.org/resource/Navarcles> <http://xmlns.com/foaf/0.1/homepage> <http://www.navarcles.cat/> .\n<http://ca.dbpedia.org/resource/Saldes> <http://xmlns.com/foaf/0.1/homepage> <http://www.saldes.cat> .",
+         "dataid:sha256sum": "016dfcb9300f08f196664123c27e96269aff40320859532c8081987895de47e2",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "6321782",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "ca",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T20:40:32Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "844616",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/homepages/2019.08.30/homepages_lang=ca.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=fr.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30/homepages_lang=fr.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "191661",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://fr.dbpedia.org/resource/Arc_de_triomphe_de_l'Étoile> <http://xmlns.com/foaf/0.1/homepage> <http://www.laflammesouslarcdetriomphe.org/> .\n<http://fr.dbpedia.org/resource/Corse> <http://xmlns.com/foaf/0.1/homepage> <https://www.isula.corsica/> .\n<http://fr.dbpedia.org/resource/Organisation_du_traité_de_l'Atlantique_nord> <http://xmlns.com/foaf/0.1/homepage> <http://www.larousse.fr/encyclopedie%7Curl=http:/www.larousse.fr/encyclopedie/divers/OTAN/136491%7Cid=Larousse-OTAN%7Cconsult%C3%A9> .\n<http://fr.dbpedia.org/resource/Roland_C._Wagner> <http://xmlns.com/foaf/0.1/homepage> <http://rcw.noosfere.org/default.htm> .\n<http://fr.dbpedia.org/resource/Tourisme> <http://xmlns.com/foaf/0.1/homepage> <http://mkt.unwto.org> .\n<http://fr.dbpedia.org/resource/Commission_économique_pour_l'Amérique_latine_et_les_Caraïbes> <http://xmlns.com/foaf/0.1/homepage> <https://www.cepal.org/> .\n<http://fr.dbpedia.org/resource/Monterrey> <http://xmlns.com/foaf/0.1/homepage> <http://www.portal.monterrey.gob.mx> .\n<http://fr.dbpedia.org/resource/Two_Tone_Club> <http://xmlns.com/foaf/0.1/homepage> <http://www.twotoneclub.fr> .\n<http://fr.dbpedia.org/resource/Montréal> <http://xmlns.com/foaf/0.1/homepage> <https://mairesse.montreal.ca> .\n<http://fr.dbpedia.org/resource/L'Humanité> <http://xmlns.com/foaf/0.1/homepage> <https://www.humanite.fr/> .",
+         "dataid:sha256sum": "8918416efb251afb189c3f8e98ac4ed371dc159fee0472f7744194ac4d66b7f0",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "24588775",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "fr",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T20:40:15Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "3426408",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/homepages/2019.08.30/homepages_lang=fr.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30#homepages_lang=pt.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/generic/homepages/2019.08.30/homepages_lang=pt.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:nonEmptyLines": {
+            "@value": "85090",
+            "@type": "xsd:decimal"
+         },
+         "dataid:preview": "<http://pt.dbpedia.org/resource/Armin_van_Buuren> <http://xmlns.com/foaf/0.1/homepage> <http://www.arminvanbuuren.com/> .\n<http://pt.dbpedia.org/resource/MacOS> <http://xmlns.com/foaf/0.1/homepage> <http://www.apple.com/macosx/> .\n<http://pt.dbpedia.org/resource/Mac_OS_Classic> <http://xmlns.com/foaf/0.1/homepage> <http://www.apple.com/mac> .\n<http://pt.dbpedia.org/resource/Roma> <http://xmlns.com/foaf/0.1/homepage> <http://www.comune.roma.it/> .\n<http://pt.dbpedia.org/resource/PHP> <http://xmlns.com/foaf/0.1/homepage> <http://www.php.net/> .\n<http://pt.dbpedia.org/resource/Jordânia> <http://xmlns.com/foaf/0.1/homepage> <http://www.jordan.gov.jo/wps/portal/%7Cjordan.gov.jo> .\n<http://pt.dbpedia.org/resource/Cabinda_(província)> <http://xmlns.com/foaf/0.1/homepage> <http://www.cabinda.org/portugues.htm> .\n<http://pt.dbpedia.org/resource/Duas_Igrejas_(Vila_Verde)> <http://xmlns.com/foaf/0.1/homepage> <http://www.duasigrejas.freguesias.pt> .\n<http://pt.dbpedia.org/resource/Freineda> <http://xmlns.com/foaf/0.1/homepage> <http://www.jf-freineda.pt> .\n<http://pt.dbpedia.org/resource/São_Bartolomeu_dos_Regatos> <http://xmlns.com/foaf/0.1/homepage> <http://www.freguesias.pt/solucao1_v2.php?cod=200811&ver=freguesia> .",
+         "dataid:sha256sum": "f5e6e16cc8f422227d01bf5ed27a05f0c8fcaddd60a7a39abfde9c3cf4376e37",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "10663542",
+            "@type": "xsd:decimal"
+         },
+         "dataid-cv:lang": "pt",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.08.30",
+         "dct:issued": {
+            "@value": "2019-08-30T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-09T20:40:12Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1460906",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "http://dbpedia-generic.tib.eu/release/generic/homepages/2019.08.30/homepages_lang=pt.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}
