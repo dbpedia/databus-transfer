@@ -10,6 +10,10 @@ const path = require('path');
 const got = require('got');
 const ttl2jsonld = require('@frogcat/ttl2jsonld').parse;
 
+const DEFAULT_ABSTRACT = {
+  "@value": "This abstract has been auto-generated. More documentation is needed."
+}
+
 // Parse CLI parameters
 var sourceUri = "";
 var targetUri = "";
@@ -35,11 +39,22 @@ for (var i = 2; i < process.argv.length; i++) {
   }
 }
 
+
 console.log(apiKey);
 console.log(targetUri);
 console.log(sourceUri);
 console.log(offset);
 console.log(publishGroups);
+
+
+
+var tagMap = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'cv-map.json'), 'utf8'));
+
+console.log();
+
+
+console.log(`Using CV map:`);
+console.log(tagMap);
 
 
 // Start the transfer process
@@ -53,9 +68,9 @@ function fixDecimalNan(fileGraph) {
     'dcat:byteSize'
   ]
 
-  for(var p of nanProperties) {
+  for (var p of nanProperties) {
     var obj = fileGraph[p];
-    if(obj != null && obj['@value'] == 'NaN' && obj['@type'] == 'xsd:decimal') {
+    if (obj != null && obj['@value'] == 'NaN' && obj['@type'] == 'xsd:decimal') {
       console.log(`Invalid decimal NaN value detected for ${p}. Replacing with xsd:double`);
       obj['@type'] = 'xsd:double';
     }
@@ -63,13 +78,85 @@ function fixDecimalNan(fileGraph) {
 
 }
 
+function fixLongAbstracts(datasetGraph) {
+  var abstract = datasetGraph['dct:abstract'];
+
+  if (abstract == undefined) {
+    console.log(`Inserting default abstract.`);
+    datasetGraph['dct:abstract'] = DEFAULT_ABSTRACT;
+    return;
+  }
+
+  if (abstract['@value'].length > 300) {
+    console.log(`Cutting abstract at 300 characters.`);
+    datasetGraph['dct:abstract']['@value'] = abstract['@value'].substr(0, 297) + '...';
+  }
+
+}
+
+function convertTags(fileGraph, usedTags) {
+
+  var tags = fileGraph['dataid-cv:tag'];
+
+  if (tags == undefined) {
+    return;
+  }
+
+  if (!Array.isArray(tags)) {
+    tags = [fileGraph['dataid-cv:tag']];
+  }
+
+  for (var tag of tags) {
+
+    var tagMapEntry = tagMap[tag];
+
+    if (tagMapEntry == undefined) {
+      continue;
+    }
+
+    var tagUri = `dataid-cv:${tagMapEntry.cv}`;
+
+    if (fileGraph[tagUri] != undefined) {
+      console.log(`Tag conversion failed due to CV collision on ${tagUri}.`);
+      return;
+    }
+
+    console.log(`Converting tag ${tag} to variant ${tagUri}=${tagMapEntry.value}`);
+    fileGraph[tagUri] = tagMapEntry.value;
+
+    if (!usedTags.includes(tag)) {
+      usedTags.push(tag);
+    }
+  }
+
+
+
+  delete fileGraph['dataid-cv:tag'];
+}
+
+function setDefaultTags(fileGraph, usedTags) {
+  for (var usedTag of usedTags) {
+    var tagMapEntry = tagMap[usedTag];
+
+    if (tagMapEntry.default == undefined) {
+      continue;
+    }
+
+    var tagUri = `dataid-cv:${tagMapEntry.cv}`;
+
+    if (fileGraph[tagUri] == undefined) {
+      fileGraph[tagUri] = tagMapEntry.default;
+    }
+  }
+}
+
 async function transfer() {
 
-  if (!fs.existsSync('./errors')){
+  if (!fs.existsSync('./errors')) {
     fs.mkdirSync('./errors');
   }
 
-  if (!fs.existsSync(`./errors${sourceUri.pathname}`)){
+  if (!fs.existsSync(`./errors${sourceUri.pathname}`)) {
     fs.mkdirSync(`./errors${sourceUri.pathname}`);
   }
 
@@ -79,7 +166,7 @@ async function transfer() {
   // TODO: Configurable?
   var sourceEndpoint = sourceUri.origin + '/repo/sparql';
 
-  if(publishGroups != 'false') {
+  if (publishGroups != 'false') {
     // Fetch the list of groups from the specified account of the source Databus.
     var selectGroupsQuery = fs.readFileSync(path.resolve(__dirname, 'select-groups.sparql'), 'utf8');
     selectGroupsQuery = selectGroupsQuery.replace('%SOURCE%', sourceUri.href);
@@ -104,7 +191,7 @@ async function transfer() {
     for (var uri of groups) {
 
       k++;
-      
+
       // Initialize groupdata with fixed values
       var groupdata = {
         "@id": uri.replace(sourceUri.href, targetUri.href),
@@ -177,7 +264,7 @@ async function transfer() {
   console.log('\n');
   console.log('Skipping the following artifacts (see skip.txt):');
   console.log(skips);
-  
+
   // Fetch all graphs that specify a dataid:Dataset
   var selectGraphs = fs.readFileSync(path.resolve(__dirname, 'select-graphs.sparql'), 'utf8');
   selectGraphs = selectGraphs.replace('%SOURCE%', sourceUri.href);
@@ -208,9 +295,11 @@ async function transfer() {
   // Iterate over the found graphs and convert them to new syntax dataids
   for (var graph of graphs) {
 
+    var usedTags = [];
+
     k++;
 
-    if(k < offset) {
+    if (k < offset) {
       continue;
     }
 
@@ -228,7 +317,7 @@ async function transfer() {
       console.log(`Error querying DataId from source Databus:`);
       console.log(e);
 
-      
+
 
       var versionPath = graph.graph.replace(sourceUri.href, '');
       errorCsv += `${versionPath},"${e.message}"\n`;
@@ -269,7 +358,7 @@ async function transfer() {
       }
     }
 
-    if(versionGraph == null) {
+    if (versionGraph == null) {
       continue;
     }
     // Modify the graphs to match the new API input format
@@ -292,19 +381,22 @@ async function transfer() {
     datasetGraph['dct:publisher'] = { '@id': `${targetUri.href}#this` }
     datasetGraph['dcat:distribution'] = [];
 
+
+    fixLongAbstracts(datasetGraph);
+
     console.log(`Processing ${datasetGraph['@id']}`);
 
     var doSkip = false;
 
-    for(var skip of skips) {
-      if(skip != '' && datasetGraph['@id'].startsWith(skip)) {
+    for (var skip of skips) {
+      if (skip != '' && datasetGraph['@id'].startsWith(skip)) {
         doSkip = true;
         break;
 
       }
     }
 
-    if(doSkip) {
+    if (doSkip) {
       console.log(`Skipping ${datasetGraph['@id']}`);
       continue;
     }
@@ -342,22 +434,28 @@ async function transfer() {
       delete fileGraph['dataid:maintainer'];
 
 
-      if(fileGraph['dataid:compression'] == undefined) {
+      if (fileGraph['dataid:compression'] == undefined) {
         fileGraph['dataid:compression'] = '';
       }
-      if(fileGraph['dataid:compression'] == 'None') {
+      if (fileGraph['dataid:compression'] == 'None') {
         fileGraph['dataid:compression'] = 'none';
       }
-      
+
       fixDecimalNan(fileGraph);
+      convertTags(fileGraph, usedTags);
       // fixDuplicateCv(fileGraph);
 
       targetBody['@graph'].push(fileGraph);
 
       datasetGraph['dcat:distribution'].push({
-        '@id' : fileGraph['@id']
+        '@id': fileGraph['@id']
       });
 
+    }
+
+    for (var fileGraph of fileGraphs) {
+
+      setDefaultTags(fileGraph, usedTags);
     }
 
 
@@ -376,7 +474,7 @@ async function transfer() {
         },
         json: targetBody
       };
-      
+
       //fs.writeFileSync(path.resolve(__dirname, `dataids/dataid_${k}.jsonld`), JSON.stringify(targetBody, null, 3), 'utf8');
 
       var res = await got.put(versionGraph['@id'], params);
@@ -391,14 +489,14 @@ async function transfer() {
       versionPath = versionPath.replaceAll('/', '>').substring(1);
       fs.writeFileSync(path.resolve(__dirname, `./errors${sourceUri.pathname}/${versionPath}.jsonld`), JSON.stringify(targetBody, null, 3), 'utf8');
       fs.writeFileSync(path.resolve(__dirname, `./errors${sourceUri.pathname}/---error.csv`), errorCsv, 'utf8');
-    
+
       console.log(`ERROR ${e.response.statusCode}: ${e.response.body}`);
       hasError = true;
     }
   }
 
-    
-  if(!hasError) {
+
+  if (!hasError) {
     console.log('SUCCESS WITHOUT ERRORS!');
   } else {
     console.log('EXITING WITH ERROR!');
