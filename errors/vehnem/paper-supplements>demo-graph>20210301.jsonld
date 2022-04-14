@@ -1,0 +1,810 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:vehnem"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://vehnem.github.io/webid.ttl#me"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/paper-supplements"
+         },
+         "dataid:maintainer": {
+            "@id": "https://vehnem.github.io/webid.ttl#me"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "Databus-Mods Demo Resources (Graph)"
+         },
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Databus-Mods Demo Resources (Graph)"
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.ttl.bz2.gz"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.png.gz"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.png.bz2.gz"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.jsonld.gz"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.ttl.gz"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.nt"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.jsonld.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.rdf"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.rdf.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.rdf.gz"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.png.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.png"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.ttl"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.nt.bz2.gz"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.ttl.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.jsonld.bz2.gz"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.rdf.bz2.gz"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.nt.bz2"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.jsonld"
+            },
+            {
+               "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.nt.gz"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "Databus-Mods Demo Resources (Graph)"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.ttl.bz2.gz",
+         "@type": "dataid:Part",
+         "dataid:compression": "gz",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.ttl.bz2.gz"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "[binary data - no preview]",
+         "dataid:sha256sum": "2e26961236f44554624a36ca8e7dcc6377ab257edd7eb029a2fc7cec029cae88",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "409",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.ttl.bz2.gz"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:TextTurtle"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.png.gz",
+         "@type": "dataid:Part",
+         "dataid:compression": "gz",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.png.gz"
+         },
+         "dataid:formatExtension": "png",
+         "dataid:preview": "[binary data - no preview]",
+         "dataid:sha256sum": "e7c0bde2b4b22252940d8c56997a094fbb951b3176e4ca9ae5c911e40b832192",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "78798",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.png.gz"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.png.bz2.gz",
+         "@type": "dataid:Part",
+         "dataid:compression": "gz",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.png.bz2.gz"
+         },
+         "dataid:formatExtension": "bz2",
+         "dataid:preview": "[binary data - no preview]",
+         "dataid:sha256sum": "14b1b16762e0ec0394f1b30b845f8c4c8d56dd6129262ae9c0eef45e52ed3501",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "76677",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.png.bz2.gz"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.jsonld.gz",
+         "@type": "dataid:Part",
+         "dataid:compression": "gz",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.jsonld.gz"
+         },
+         "dataid:formatExtension": "jsonld",
+         "dataid:preview": "[\n   {\n      \"@id\" : \"_:b0\",\n      \"http://www.w3.org/1999/02/22-rdf-sytnax-ns#type\" : [\n         {\n            \"@id\" : \"http://xmlns.com/foaf/0.1/Person\"\n         }\n      ],\n      \"http://xmlns.com/foaf/0.1/name\" : [\n         {",
+         "dataid:sha256sum": "3a776d721631abc1192453761efc48b1a49d5bac703cc5fec6694cce80797aca",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "383",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.jsonld.gz"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.ttl.gz",
+         "@type": "dataid:Part",
+         "dataid:compression": "gz",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.ttl.gz"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix dbo:  <http://dbpedia.org/ontology/> .\n@prefix wkd:  <http://www.wikidata.org/entity/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-sytnax-ns#> .\n\ndbo:Ora_Lassila \n\trdf:type   dbo:Engineer ;\n\tfoaf:name  \"Ora Lassila\"@en ;\n\tfoaf:knows wkd:Q6135847 , ",
+         "dataid:sha256sum": "bad1688ef182cdb6407121cab9bc5c05506df647e0e1c1100babd2c214bc149d",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "337",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.ttl.gz"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.nt",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.nt"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "_:genid1 <http://xmlns.com/foaf/0.1/name> \"Tim Berners-Lee\"@en .\n_:genid1 <http://www.w3.org/1999/02/22-rdf-sytnax-ns#type> <http://xmlns.com/foaf/0.1/Person> .\n<http://dbpedia.org/ontology/Ora_Lassila> <http://www.w3.org/1999/02/22-rdf-sytnax-ns#type> <http://dbpedia.org/ontology/Engineer> .\n<http://dbpedia.org/ontology/Ora_Lassila> <http://xmlns.com/foaf/0.1/name> \"Ora Lassila\"@en .\n<http://dbpedia.org/ontology/Ora_Lassila> <http://xmlns.com/foaf/0.1/knows> <http://www.wikidata.org/entity/Q6135847> .\n<http://dbpedia.org/ontology/Ora_Lassila> <http://xmlns.com/foaf/0.1/knows> _:genid1 .\n<http://www.wikidata.org/entity/Q6135847> <http://www.w3.org/2000/01/rdf-schema#label> \"Jim Hendler\"@en .\n<http://dbpedia.org/ontology/Engineer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .\n<http://xmlns.com/foaf/0.1/knows> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .\n<http://xmlns.com/foaf/0.1/knows> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .",
+         "dataid:sha256sum": "041677a6c3f1000ee21b8346edba7eb53c678fd65691f0af62e4f06d74f2ce8b",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1060",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.nt"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.jsonld.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.jsonld.bz2"
+         },
+         "dataid:formatExtension": "jsonld",
+         "dataid:preview": "[\n   {\n      \"@id\" : \"_:b0\",\n      \"http://www.w3.org/1999/02/22-rdf-sytnax-ns#type\" : [\n         {\n            \"@id\" : \"http://xmlns.com/foaf/0.1/Person\"\n         }\n      ],\n      \"http://xmlns.com/foaf/0.1/name\" : [\n         {",
+         "dataid:sha256sum": "e5635ec2c73b7ddf3259d5692fdc2e938719c40a8db852888956e8e7f2718ab7",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "425",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.jsonld.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.rdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.rdf"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dbo=\"http://dbpedia.org/ontology/\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:wkd=\"http://www.wikidata.org/entity/\">\n  <rdf:Description rdf:nodeID=\"genid1\">\n    <foaf:name xml:lang=\"en\">Tim Berners-Lee</foaf:name>\n  </rdf:Description>\n  <rdf:Description rdf:nodeID=\"genid1\">\n    <ns0:type xmlns:ns0=\"http://www.w3.org/1999/02/22-rdf-sytnax-ns#\" rdf:resource=\"http://xmlns.com/foaf/0.1/Person\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://dbpedia.org/ontology/Ora_Lassila\">\n    <ns0:type xmlns:ns0=\"http://www.w3.org/1999/02/22-rdf-sytnax-ns#\" rdf:resource=\"http://dbpedia.org/ontology/Engineer\"/>",
+         "dataid:sha256sum": "687df6d5b12f72ccbb6121c09ad13deabf738fdb6e7916141f849bce8c93eeee",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1863",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.rdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.rdf.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.rdf.bz2"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dbo=\"http://dbpedia.org/ontology/\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:wkd=\"http://www.wikidata.org/entity/\">\n  <rdf:Description rdf:nodeID=\"genid1\">\n    <foaf:name xml:lang=\"en\">Tim Berners-Lee</foaf:name>\n  </rdf:Description>\n  <rdf:Description rdf:nodeID=\"genid1\">\n    <ns0:type xmlns:ns0=\"http://www.w3.org/1999/02/22-rdf-sytnax-ns#\" rdf:resource=\"http://xmlns.com/foaf/0.1/Person\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://dbpedia.org/ontology/Ora_Lassila\">\n    <ns0:type xmlns:ns0=\"http://www.w3.org/1999/02/22-rdf-sytnax-ns#\" rdf:resource=\"http://dbpedia.org/ontology/Engineer\"/>",
+         "dataid:sha256sum": "f96ecd05cc5d7c49748679a9d9ca950723105ba535c12fd0ddd21d84a8cbf29d",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "540",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.rdf.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.rdf.gz",
+         "@type": "dataid:Part",
+         "dataid:compression": "gz",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.rdf.gz"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<rdf:RDF xmlns:dbo=\"http://dbpedia.org/ontology/\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:wkd=\"http://www.wikidata.org/entity/\">\n  <rdf:Description rdf:nodeID=\"genid1\">\n    <foaf:name xml:lang=\"en\">Tim Berners-Lee</foaf:name>\n  </rdf:Description>\n  <rdf:Description rdf:nodeID=\"genid1\">\n    <ns0:type xmlns:ns0=\"http://www.w3.org/1999/02/22-rdf-sytnax-ns#\" rdf:resource=\"http://xmlns.com/foaf/0.1/Person\"/>\n  </rdf:Description>\n  <rdf:Description rdf:about=\"http://dbpedia.org/ontology/Ora_Lassila\">\n    <ns0:type xmlns:ns0=\"http://www.w3.org/1999/02/22-rdf-sytnax-ns#\" rdf:resource=\"http://dbpedia.org/ontology/Engineer\"/>",
+         "dataid:sha256sum": "683d8e8ea541079f895b400f08c7d1dd1d499193ce22a0f5e285c9d7b6d77e09",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "452",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.rdf.gz"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.png.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.png.bz2"
+         },
+         "dataid:formatExtension": "png",
+         "dataid:preview": "[binary data - no preview]",
+         "dataid:sha256sum": "2a8968b3cec1691e3743add9b87c7f9d4ab18032e197253b84fa455a0bfbea2a",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "76625",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.png.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.png",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.png"
+         },
+         "dataid:formatExtension": "png",
+         "dataid:preview": "[binary data - no preview]",
+         "dataid:sha256sum": "1a2de53e299ced48bb8a106c6dc1c1d83aa31773f7d368902f1d7fb297a6167a",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:34Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "85231",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.png"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.ttl",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.ttl"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix dbo:  <http://dbpedia.org/ontology/> .\n@prefix wkd:  <http://www.wikidata.org/entity/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-sytnax-ns#> .\n\ndbo:Ora_Lassila \n\trdf:type   dbo:Engineer ;\n\tfoaf:name  \"Ora Lassila\"@en ;\n\tfoaf:knows wkd:Q6135847 , ",
+         "dataid:sha256sum": "8f2930b1c3f2b31728a9197a2742dca972ef95eaf1f41a8cb158dda86cf89bb8",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "587",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.ttl"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.nt.bz2.gz",
+         "@type": "dataid:Part",
+         "dataid:compression": "gz",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.nt.bz2.gz"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "[binary data - no preview]",
+         "dataid:sha256sum": "ee508b37ba42b21c8788528a14443122af6e568ffd3f1fd60e37e5b283a9177f",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "391",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.nt.bz2.gz"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.ttl.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.ttl.bz2"
+         },
+         "dataid:formatExtension": "ttl",
+         "dataid:preview": "@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix dbo:  <http://dbpedia.org/ontology/> .\n@prefix wkd:  <http://www.wikidata.org/entity/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-sytnax-ns#> .\n\ndbo:Ora_Lassila \n\trdf:type   dbo:Engineer ;\n\tfoaf:name  \"Ora Lassila\"@en ;\n\tfoaf:knows wkd:Q6135847 , ",
+         "dataid:sha256sum": "0dc26e9340ec6ca0c4298b2db111f9f3224c74047e812ce6e4362df2ae3486ee",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "367",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.ttl.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.jsonld.bz2.gz",
+         "@type": "dataid:Part",
+         "dataid:compression": "gz",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.jsonld.bz2.gz"
+         },
+         "dataid:formatExtension": "bz2",
+         "dataid:preview": "[binary data - no preview]",
+         "dataid:sha256sum": "944365fb977541b63ffe70756d5efbee656e1a047d600162a02f8202a70589d7",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "470",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.jsonld.bz2.gz"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.rdf.bz2.gz",
+         "@type": "dataid:Part",
+         "dataid:compression": "gz",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.rdf.bz2.gz"
+         },
+         "dataid:formatExtension": "rdf",
+         "dataid:preview": "[binary data - no preview]",
+         "dataid:sha256sum": "e2619cbbf3e1f80bd6045c4122b1e20aeb592e07f13adcd48a81968637eb11ee",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "582",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.rdf.bz2.gz"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationRDFXML"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.nt.bz2",
+         "@type": "dataid:Part",
+         "dataid:compression": "bzip2",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.nt.bz2"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "_:genid1 <http://xmlns.com/foaf/0.1/name> \"Tim Berners-Lee\"@en .\n_:genid1 <http://www.w3.org/1999/02/22-rdf-sytnax-ns#type> <http://xmlns.com/foaf/0.1/Person> .\n<http://dbpedia.org/ontology/Ora_Lassila> <http://www.w3.org/1999/02/22-rdf-sytnax-ns#type> <http://dbpedia.org/ontology/Engineer> .\n<http://dbpedia.org/ontology/Ora_Lassila> <http://xmlns.com/foaf/0.1/name> \"Ora Lassila\"@en .\n<http://dbpedia.org/ontology/Ora_Lassila> <http://xmlns.com/foaf/0.1/knows> <http://www.wikidata.org/entity/Q6135847> .\n<http://dbpedia.org/ontology/Ora_Lassila> <http://xmlns.com/foaf/0.1/knows> _:genid1 .\n<http://www.wikidata.org/entity/Q6135847> <http://www.w3.org/2000/01/rdf-schema#label> \"Jim Hendler\"@en .\n<http://dbpedia.org/ontology/Engineer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .\n<http://xmlns.com/foaf/0.1/knows> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .\n<http://xmlns.com/foaf/0.1/knows> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .",
+         "dataid:sha256sum": "d47422d4c88238b954c7ca12ac47c0c9c1210657470b82bfa9aa66699069aadf",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "350",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.nt.bz2"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.jsonld",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.jsonld"
+         },
+         "dataid:formatExtension": "jsonld",
+         "dataid:preview": "[\n   {\n      \"@id\" : \"_:b0\",\n      \"http://www.w3.org/1999/02/22-rdf-sytnax-ns#type\" : [\n         {\n            \"@id\" : \"http://xmlns.com/foaf/0.1/Person\"\n         }\n      ],\n      \"http://xmlns.com/foaf/0.1/name\" : [\n         {",
+         "dataid:sha256sum": "c520b112ed44c6ecc36e4e8748d9d30bfa334e03b65dd471180916162bd9599f",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "1709",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.jsonld"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      },
+      {
+         "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301#demo-graph.nt.gz",
+         "@type": "dataid:Part",
+         "dataid:compression": "gz",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/paper-supplements/demo-graph/20210301/demo-graph.nt.gz"
+         },
+         "dataid:formatExtension": "nt",
+         "dataid:preview": "_:genid1 <http://xmlns.com/foaf/0.1/name> \"Tim Berners-Lee\"@en .\n_:genid1 <http://www.w3.org/1999/02/22-rdf-sytnax-ns#type> <http://xmlns.com/foaf/0.1/Person> .\n<http://dbpedia.org/ontology/Ora_Lassila> <http://www.w3.org/1999/02/22-rdf-sytnax-ns#type> <http://dbpedia.org/ontology/Engineer> .\n<http://dbpedia.org/ontology/Ora_Lassila> <http://xmlns.com/foaf/0.1/name> \"Ora Lassila\"@en .\n<http://dbpedia.org/ontology/Ora_Lassila> <http://xmlns.com/foaf/0.1/knows> <http://www.wikidata.org/entity/Q6135847> .\n<http://dbpedia.org/ontology/Ora_Lassila> <http://xmlns.com/foaf/0.1/knows> _:genid1 .\n<http://www.wikidata.org/entity/Q6135847> <http://www.w3.org/2000/01/rdf-schema#label> \"Jim Hendler\"@en .\n<http://dbpedia.org/ontology/Engineer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .\n<http://xmlns.com/foaf/0.1/knows> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .\n<http://xmlns.com/foaf/0.1/knows> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .",
+         "dataid:sha256sum": "bd08c06d63665801c5bb09838cf25443d4766dae7bc34aaffbbc308d26cd8560",
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "20210301",
+         "dct:issued": {
+            "@value": "2021-05-12T09:53:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2021-03-17T10:54:33Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "308",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://vmdbpedia.informatik.uni-leipzig.de/repo/vehnem/paper-supplements/demo-graph/20210301/demo-graph.nt.gz"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:ApplicationNTriples"
+         }
+      }
+   ]
+}

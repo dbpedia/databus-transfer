@@ -1,0 +1,127 @@
+{
+   "@context": {
+      "databus": "https://databus.dbpedia.org/",
+      "dataid-mt": "http://dataid.dbpedia.org/ns/mt#",
+      "dct": "http://purl.org/dc/terms/",
+      "dataid": "http://dataid.dbpedia.org/ns/core#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "dataid-cv": "http://dataid.dbpedia.org/ns/cv#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov": "http://www.w3.org/ns/prov#",
+      "dataid-debug": "http://dataid.dbpedia.org/ns/debug.ttl#"
+   },
+   "@graph": [
+      {
+         "@id": "http://localhost:3000/janni/publication/strategy/2019.09.09",
+         "@type": "dataid:Version"
+      },
+      {
+         "@id": "http://localhost:3000/janni/publication/strategy",
+         "@type": "dataid:Artifact"
+      },
+      {
+         "@id": "http://localhost:3000/janni/publication/strategy/2019.09.09#Dataset",
+         "@type": "dataid:Dataset",
+         "dataid:account": {
+            "@id": "databus:dbpedia"
+         },
+         "dataid:artifact": {
+            "@id": "http://localhost:3000/janni/publication/strategy"
+         },
+         "dataid:associatedAgent": {
+            "@id": "https://webid.dbpedia.org/webid.ttl#this"
+         },
+         "dataid:group": {
+            "@id": "http://localhost:3000/janni/publication"
+         },
+         "dataid:version": {
+            "@id": "http://localhost:3000/janni/publication/strategy/2019.09.09"
+         },
+         "dataid-debug:feedbackChannel": {
+            "@id": "https://forum.dbpedia.org/c/strategy"
+         },
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:description": {
+            "@value": "Databus Public Beta announcement and strategic impact, to be used as Databus documentation and follow-up discussion with DBpedia Association members, chapters and community to create a strategic agenda for DBpedia."
+         },
+         "dct:hasVersion": "2019.09.09",
+         "dct:issued": {
+            "@value": "2019-09-09T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:publisher": {
+            "@id": "http://localhost:3000/janni#this"
+         },
+         "dct:title": {
+            "@value": "Databus & Initiative \"1 Billion derived Knowledge Graphs\""
+         },
+         "dcat:distribution": [
+            {
+               "@id": "http://localhost:3000/janni/publication/strategy/2019.09.09#strategy_databus_initiative.pdf"
+            }
+         ],
+         "dct:abstract": {
+            "@value": "Databus Public Beta announcement and strategic impact, to be used as Databus documentation and follow-up discussion with DBpedia Association members, chapters and community to create a strategic agenda for DBpedia."
+         }
+      },
+      {
+         "@id": "dataid-cv:tag",
+         "rdfs:subPropertyOf": {
+            "@id": "dataid:contentVariant"
+         },
+         "@type": "rdf:Property"
+      },
+      {
+         "@id": "http://localhost:3000/janni/publication/strategy/2019.09.09#strategy_databus_initiative.pdf",
+         "@type": "dataid:Part",
+         "dataid:compression": "none",
+         "dataid:file": {
+            "@id": "http://localhost:3000/janni/publication/strategy/2019.09.09/strategy_databus_initiative.pdf"
+         },
+         "dataid:formatExtension": "pdf",
+         "dataid:nonEmptyLines": {
+            "@value": "NaN",
+            "@type": "xsd:double"
+         },
+         "dataid:preview": "[binary data - no preview]",
+         "dataid:sha256sum": "f2bfaf6be42ebb4b5b6af6fae3f5f402ae068082d873e3167efeca5995510494",
+         "dataid:sorted": false,
+         "dataid:uncompressedByteSize": {
+            "@value": "NaN",
+            "@type": "xsd:double"
+         },
+         "dataid-cv:tag": [
+            "initiative",
+            "databus"
+         ],
+         "dct:conformsTo": "http://dataid.dbpedia.org/ns/core#",
+         "dct:hasVersion": "2019.09.09",
+         "dct:issued": {
+            "@value": "2019-09-09T00:00:00Z",
+            "@type": "xsd:dateTime"
+         },
+         "dct:license": {
+            "@id": "http://purl.oclc.org/NET/rdflicense/cc-by3.0"
+         },
+         "dct:modified": {
+            "@value": "2019-09-10T11:46:04Z",
+            "@type": "xsd:dateTime"
+         },
+         "dcat:byteSize": {
+            "@value": "313717",
+            "@type": "xsd:decimal"
+         },
+         "dcat:downloadURL": {
+            "@id": "https://downloads.dbpedia.org/repo/lts/publication/strategy/2019.09.09/strategy_databus_initiative.pdf"
+         },
+         "dcat:mediaType": {
+            "@id": "dataid-mt:UNKNOWN"
+         }
+      }
+   ]
+}

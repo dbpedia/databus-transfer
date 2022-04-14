@@ -49,7 +49,7 @@ console.log(publishGroups);
 
 
 var tagMap = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'cv-map.json'), 'utf8'));
-
+var dirtyFixMap = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'dirty-tag-fixes.json'), 'utf8'));
 console.log();
 
 
@@ -78,6 +78,38 @@ function fixDecimalNan(fileGraph) {
 
 }
 
+function fixFormatExtension(fileGraph) {
+
+  if(fileGraph['dataid:formatExtension'] == "") {
+    var fileUri = fileGraph['dataid:file']['@id'];
+    
+    var uri = new URL(fileUri);
+    var uriSplits = uri.pathname.split('/');
+    var name = uriSplits[uriSplits.length - 1];
+    var nameSplits = name.split('?')[0].split('.');
+
+    if(nameSplits.length == 2) {
+      fileGraph['dataid:formatExtension'] = nameSplits[1];
+      return;
+    }
+
+    if(nameSplits.length > 2) {
+      fileGraph['dataid:formatExtension'] = nameSplits[nameSplits.length - 2];
+    }
+  }
+}
+
+function applyDirtyFixes(fileGraph) {
+
+  var tagFix = dirtyFixMap[fileGraph['@id']];
+
+  if(tagFix == undefined) {
+    return;
+  }
+
+  fileGraph['dataid-cv:tag'] = tagFix;
+}
+
 function fixLongAbstracts(datasetGraph) {
   var abstract = datasetGraph['dct:abstract'];
 
@@ -90,6 +122,72 @@ function fixLongAbstracts(datasetGraph) {
   if (abstract['@value'].length > 300) {
     console.log(`Cutting abstract at 300 characters.`);
     datasetGraph['dct:abstract']['@value'] = abstract['@value'].substr(0, 297) + '...';
+  }
+}
+
+function convertFusionTags(fileGraph) {
+
+  if (fileGraph['dataid-cv:tag'] == undefined) {
+    return;
+  }
+  // copy tags
+  var tags = JSON.parse(JSON.stringify(fileGraph['dataid-cv:tag']));
+
+  // exit if only one entry
+  if (!Array.isArray(tags)) {
+    return;
+  }
+
+  var ignoreTags = [ 'context', 'preference' ];
+
+  // check if it is tagged with context
+  var ignoreTag = undefined;
+
+  for(var t of ignoreTags) {
+    if(tags.includes(t)) {
+      ignoreTag = t;
+      break;
+    }
+  }
+
+  // get tags without context
+  tags = tags.filter(function (v) {
+    return v != ignoreTag;
+  });
+
+  // find content variant (dbo or gp)
+  var cv = undefined;
+
+  if (tags.includes('dbo')) {
+    cv = 'dbo';
+  }
+
+  if (tags.includes('gp')) {
+    cv = 'gp';
+  }
+
+  if (cv == undefined) {
+    return;
+  }
+
+  // get tags without gp or dbo
+  tags = tags.filter(function (v) {
+    return v != 'gp' && v != 'dbo';
+  });
+
+  if (tags.length == 0) {
+    return;
+  }
+
+  // set cv to remaining tag
+  var tagUri = `dataid-cv:${cv}`;
+  fileGraph[tagUri] = tags[0];
+
+  // reset the tag cv with context if we are context, else delete tag
+  if (ignoreTag != undefined) {
+    fileGraph['dataid-cv:tag'] = ignoreTag;
+  } else {
+    delete fileGraph['dataid-cv:tag'];
   }
 
 }
@@ -114,6 +212,15 @@ function convertTags(fileGraph, usedTags) {
       continue;
     }
 
+    // if cv is null, drop the tag
+    if(tagMapEntry.cv == null) {
+      tags = tags.filter(function(v) {
+        return v != tag;
+      });
+
+      continue;
+    }
+
     var tagUri = `dataid-cv:${tagMapEntry.cv}`;
 
     if (fileGraph[tagUri] != undefined) {
@@ -124,14 +231,21 @@ function convertTags(fileGraph, usedTags) {
     console.log(`Converting tag ${tag} to variant ${tagUri}=${tagMapEntry.value}`);
     fileGraph[tagUri] = tagMapEntry.value;
 
+    // remove the tag from the list
+    tags = tags.filter(function(v) {
+      return v != tag;
+    });
+
     if (!usedTags.includes(tag)) {
       usedTags.push(tag);
     }
   }
 
-
-
-  delete fileGraph['dataid-cv:tag'];
+  if (tags.length == 0) {
+    delete fileGraph['dataid-cv:tag'];
+  } else {
+    fileGraph['dataid-cv:tag'] = tags;
+  }
 }
 
 function setDefaultTags(fileGraph, usedTags) {
@@ -441,7 +555,10 @@ async function transfer() {
         fileGraph['dataid:compression'] = 'none';
       }
 
+      applyDirtyFixes(fileGraph);
       fixDecimalNan(fileGraph);
+      fixFormatExtension(fileGraph);
+      convertFusionTags(fileGraph);
       convertTags(fileGraph, usedTags);
       // fixDuplicateCv(fileGraph);
 
