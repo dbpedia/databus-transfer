@@ -542,6 +542,7 @@ async function transfer() {
       delete fileGraph['dct:publisher'];
       delete fileGraph['dataid:format'];
       delete fileGraph['dataid:contentVariant'];
+      delete fileGraph['dataid:preview'];
 
       delete fileGraph['rdfs:label'];
       delete fileGraph['rdfs:comment'];
