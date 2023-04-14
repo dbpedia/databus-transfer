@@ -19,7 +19,8 @@ var sourceUri = "";
 var targetUri = "";
 var apiKey = "";
 var offset = 0;
-var publishGroups = true;
+var publishGroups = false;
+var replaceUris = false;
 
 for (var i = 2; i < process.argv.length; i++) {
   if (process.argv[i] == "-a") {
@@ -35,7 +36,10 @@ for (var i = 2; i < process.argv.length; i++) {
     offset = process.argv[i + 1];
   }
   if (process.argv[i] == "-g") {
-    publishGroups = process.argv[i + 1];
+    publishGroups = true;
+  }
+  if (process.argv[i] == "-replaceUris") {
+    replaceUris = true;
   }
 }
 
@@ -45,8 +49,6 @@ console.log(targetUri);
 console.log(sourceUri);
 console.log(offset);
 console.log(publishGroups);
-
-
 
 var tagMap = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'cv-map.json'), 'utf8'));
 var dirtyFixMap = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'dirty-tag-fixes.json'), 'utf8'));
@@ -104,6 +106,11 @@ function applyDirtyFixes(fileGraph) {
   var tagFix = dirtyFixMap[fileGraph['@id']];
 
   if(tagFix == undefined) {
+    return;
+  }
+
+  if(tagFix == '_DELETE_') {
+    delete fileGraph['dataid-cv:tag'];
     return;
   }
 
@@ -308,7 +315,7 @@ async function transfer() {
 
       // Initialize groupdata with fixed values
       var groupdata = {
-        "@id": uri.replace(sourceUri.href, targetUri.href),
+        "@id": replaceUris ? uri.replace(sourceUri.href, targetUri.href) : uri,
         "@type": "http://dataid.dbpedia.org/ns/core#Group",
         "http://purl.org/dc/terms/title": {
           "@value": "",
@@ -356,7 +363,7 @@ async function transfer() {
         console.log(`Publishing Group ${groupdata['@id']}..`);
 
         // Send request to target databus
-        var res = await got.put(groupdata['@id'], params);
+        var res = await got.post(targetUri.origin + '/api/publish', params);
         console.log(`${res.statusCode}: ${res.body}`);
 
       } catch (e) {
@@ -366,7 +373,6 @@ async function transfer() {
         var groupPath = groupdata['@id'].replace(targetUri.href, '');
         errorCsv += `${groupPath},"${e.response.body}"\n`;
       }
-
     }
 
     console.log(`All groups created!`);
@@ -426,7 +432,7 @@ async function transfer() {
       console.log(`Quering DataId for ${graph.dataset}`);
 
       var res = await got.get(graph.dataset);
-      var replacedBody = res.body.replaceAll(sourceUri.href, targetUri.href);
+      var replacedBody = replaceUris ? res.body.replaceAll(sourceUri.href, targetUri.href) : res.body;
     } catch (e) {
       console.log(`Error querying DataId from source Databus:`);
       console.log(e);
@@ -481,10 +487,10 @@ async function transfer() {
     targetBody['@graph'] = [];
 
     // Assign new id, set dct:abstract/description/publisher
-    datasetGraph['@id'] = `${versionGraph['@id']}#Dataset`;
+    datasetGraph['@id'] = `${versionGraph['@id']}`;
     datasetGraph['dct:abstract'] = datasetGraph['rdfs:comment'];
     datasetGraph['dct:description'] = datasetGraph['rdfs:comment'];
-
+    datasetGraph['@type'] = [ 'dataid:Version', 'dataid:Dataset' ];
 
     delete datasetGraph['rdfs:label'];
     delete datasetGraph['rdfs:comment'];
@@ -492,9 +498,8 @@ async function transfer() {
     delete datasetGraph['dct:abstract']['@language'];
     delete datasetGraph['dct:description']['@language'];
     delete datasetGraph['dct:title']['@language'];
-    datasetGraph['dct:publisher'] = { '@id': `${targetUri.href}#this` }
+    datasetGraph['dct:publisher'] = { '@id': replaceUris ? `${targetUri.href}#this` : `${sourceUri.href}#this` }
     datasetGraph['dcat:distribution'] = [];
-
 
     fixLongAbstracts(datasetGraph);
 
@@ -516,7 +521,6 @@ async function transfer() {
     }
 
     // Add subgraphs
-    targetBody['@graph'].push(versionGraph);
     targetBody['@graph'].push(artifactGraph);
     targetBody['@graph'].push(datasetGraph);
 
@@ -594,7 +598,7 @@ async function transfer() {
 
       //fs.writeFileSync(path.resolve(__dirname, `dataids/dataid_${k}.jsonld`), JSON.stringify(targetBody, null, 3), 'utf8');
 
-      var res = await got.put(versionGraph['@id'], params);
+      var res = await got.post(targetUri.origin + '/api/publish?fetch-file-properties=false', params);
       console.log(res.body);
 
     } catch (e) {
