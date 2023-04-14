@@ -80,6 +80,24 @@ function fixDecimalNan(fileGraph) {
 
 }
 
+ function navigateUp(uri, steps) {
+
+    if (steps == undefined) {
+      steps = 1;
+    }
+
+    for (var i = 0; i < steps; i++) {
+      uri = uri.substr(0, uri.lastIndexOf('/'));
+    }
+
+    if (uri.includes('#')) {
+      uri = uri.substr(0, uri.lastIndexOf('#'));
+    }
+
+    return uri;
+  }
+
+
 function fixFormatExtension(fileGraph) {
 
   if(fileGraph['dataid:formatExtension'] == "") {
@@ -269,6 +287,27 @@ function setDefaultTags(fileGraph, usedTags) {
       fileGraph[tagUri] = tagMapEntry.default;
     }
   }
+}
+
+function fixArtifactUris(versionGraph) {
+  
+  var versionUri = versionGraph["@id"];
+  var artifactUri = navigateUp(versionUri, 1);
+  var groupUri = navigateUp(versionUri, 2);
+  
+  var artifactName = ""; // TODO
+  
+  if(artifactName.length > 3) {
+    return versionGraph; 
+  }
+  
+  var fixedArtiactName = ""; // TODO
+  var fixedArtifactUri = groupUri + "/" + fixedArtiactName;
+  
+  var graphString = JSON.stringify(versionGraph);
+  var fixedGraphString = graphString.replaceAll(artifactUri, fixedArtifactUri);
+  
+  return JSON.parse(fixedGraphString);
 }
 
 async function transfer() {
@@ -580,6 +619,7 @@ async function transfer() {
     }
 
 
+    versionGraph = fixArtifactUris(versionGraph);
     console.log(`Publishing Version ${versionGraph['@id']}..`);
 
 
