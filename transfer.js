@@ -289,24 +289,26 @@ function setDefaultTags(fileGraph, usedTags) {
   }
 }
 
-function fixArtifactUris(versionGraph) {
+function fixArtifactUris(targetBody, oldID) {
   
-  var versionUri = versionGraph["@id"];
+  var versionUri = oldID;
   var artifactUri = navigateUp(versionUri, 1);
   var groupUri = navigateUp(versionUri, 2);
   
-  var artifactName = ""; // TODO
-  
+  var artifactName = artifactUri.substr(artifactUri.lastIndexOf('/') + 1);
+
   if(artifactName.length > 3) {
-    return versionGraph; 
+    return targetBody; 
   }
   
-  var fixedArtiactName = ""; // TODO
-  var fixedArtifactUri = groupUri + "/" + fixedArtiactName;
+  console.log("Found too short artifact of " + versionUri + " : " + artifactName)
+
+  var fixedArtifactName = artifactName + "--artifact"; // TODO
+  var fixedArtifactUri = groupUri + "/" + fixedArtifactName;
   
-  var graphString = JSON.stringify(versionGraph);
+  var graphString = JSON.stringify(targetBody);
   var fixedGraphString = graphString.replaceAll(artifactUri, fixedArtifactUri);
-  
+  console.log(JSON.parse(fixedGraphString)) 
   return JSON.parse(fixedGraphString);
 }
 
@@ -326,7 +328,7 @@ async function transfer() {
   // TODO: Configurable?
   var sourceEndpoint = sourceUri.origin + '/repo/sparql';
 
-  if (publishGroups != 'false') {
+  if (publishGroups) {
     // Fetch the list of groups from the specified account of the source Databus.
     var selectGroupsQuery = fs.readFileSync(path.resolve(__dirname, 'select-groups.sparql'), 'utf8');
     selectGroupsQuery = selectGroupsQuery.replace('%SOURCE%', sourceUri.href);
@@ -528,7 +530,7 @@ async function transfer() {
     // Assign new id, set dct:abstract/description/publisher
     datasetGraph['@id'] = `${versionGraph['@id']}`;
     datasetGraph['dct:abstract'] = datasetGraph['rdfs:comment'];
-    datasetGraph['dct:description'] = datasetGraph['rdfs:comment'];
+    datasetGraph['dct:description'] = datasetGraph['dct:description'];
     datasetGraph['@type'] = [ 'dataid:Version', 'dataid:Dataset' ];
 
     delete datasetGraph['rdfs:label'];
@@ -572,6 +574,12 @@ async function transfer() {
     // Edit file graphs and add
     for (var fileGraph of fileGraphs) {
 
+      let tag = fileGraph["dataid-cv:tag"]
+
+      if (tag === "sorted") {
+        console.log("SKipped sorted ntriples: tag-> " + tag)
+        continue
+      }
       var hash = new URL(fileGraph['@id']).hash.replace('#', '');
 
       fileGraph['@id'] = `${versionGraph['@id']}#${hash}`;
@@ -619,7 +627,7 @@ async function transfer() {
     }
 
 
-    versionGraph = fixArtifactUris(versionGraph);
+    targetBody = fixArtifactUris(targetBody, versionGraph["@id"]);
     console.log(`Publishing Version ${versionGraph['@id']}..`);
 
 
