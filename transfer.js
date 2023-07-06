@@ -9,6 +9,10 @@ const fs = require('fs');
 const path = require('path');
 const got = require('got');
 const ttl2jsonld = require('@frogcat/ttl2jsonld').parse;
+const DatabusUris = require('./databus-uris');
+const QueryNode = require('./query-node');
+
+const DEFAULT_CONTEXT = "https://downloads.dbpedia.org/databus/context.jsonld"
 
 const DEFAULT_ABSTRACT = {
   "@value": "This abstract has been auto-generated. More documentation is needed."
@@ -21,6 +25,7 @@ var apiKey = "";
 var offset = 0;
 var publishGroups = false;
 var replaceUris = false;
+var publishCollections = false;
 
 for (var i = 2; i < process.argv.length; i++) {
   if (process.argv[i] == "-a") {
@@ -37,6 +42,9 @@ for (var i = 2; i < process.argv.length; i++) {
   }
   if (process.argv[i] == "-g") {
     publishGroups = true;
+  }
+  if (process.argv[i] == "-c") {
+    publishCollections = true;
   }
   if (process.argv[i] == "-replaceUris") {
     replaceUris = true;
@@ -80,54 +88,61 @@ function fixDecimalNan(fileGraph) {
 
 }
 
- function navigateUp(uri, steps) {
-
-    if (steps == undefined) {
-      steps = 1;
-    }
-
-    for (var i = 0; i < steps; i++) {
-      uri = uri.substr(0, uri.lastIndexOf('/'));
-    }
-
-    if (uri.includes('#')) {
-      uri = uri.substr(0, uri.lastIndexOf('#'));
-    }
-
-    return uri;
-  }
-
-
 function fixFormatExtension(fileGraph) {
 
-  if(fileGraph['dataid:formatExtension'] == "") {
-    var fileUri = fileGraph['dataid:file']['@id'];
-    
-    var uri = new URL(fileUri);
-    var uriSplits = uri.pathname.split('/');
-    var name = uriSplits[uriSplits.length - 1];
-    var nameSplits = name.split('?')[0].split('.');
 
-    if(nameSplits.length == 2) {
-      fileGraph['dataid:formatExtension'] = nameSplits[1];
+  if (fileGraph['dataid:formatExtension'] == null || fileGraph['dataid:formatExtension'] == "") {
+
+    var fileUrl = fileGraph['dcat:downloadURL'];
+
+    if (fileUrl == null && fileGraph['dataid:file'] != null) {
+      fileUrl = fileGraph['dataid:file']['@id'];
+    }
+
+    if (fileUrl == null) {
+      fileGraph['databus:formatExtension'] = "";
+      delete fileGraph['dataid:formatExtension'];
       return;
     }
 
-    if(nameSplits.length > 2) {
-      fileGraph['dataid:formatExtension'] = nameSplits[nameSplits.length - 2];
+
+    try {
+      if (typeof fileUrl === 'object') {
+        fileUrl = fileUrl['@id'];
+      }
+
+      var uri = new URL(fileUrl);
+      var uriSplits = uri.pathname.split('/');
+      var name = uriSplits[uriSplits.length - 1];
+      var nameSplits = name.split('?')[0].split('.');
+
+      if (nameSplits.length == 2) {
+        fileGraph['databus:formatExtension'] = nameSplits[1];
+      } else if (nameSplits.length > 2) {
+        fileGraph['databus:formatExtension'] = nameSplits[nameSplits.length - 2];
+      }
+    } catch (err) {
+      console.log(err);
+      console.log(fileUrl);
+      fileGraph['databus:formatExtension'] = "";
     }
+
+  } else {
+    fileGraph['databus:formatExtension'] = fileGraph['dataid:formatExtension'];
   }
+
+  delete fileGraph['dataid:formatExtension'];
 }
 
 function applyDirtyFixes(fileGraph) {
 
   var tagFix = dirtyFixMap[fileGraph['@id']];
 
-  if(tagFix == undefined) {
+  if (tagFix == undefined) {
     return;
   }
 
-  if(tagFix == '_DELETE_') {
+  if (tagFix == '_DELETE_') {
     delete fileGraph['dataid-cv:tag'];
     return;
   }
@@ -150,6 +165,94 @@ function fixLongAbstracts(datasetGraph) {
   }
 }
 
+async function transferCollection(binding) {
+
+
+
+  var collectionUri = binding.uri.value;
+
+  if(!collectionUri.startsWith(sourceUri)) {
+    return;
+  }
+  
+  var contentValue = unescape(binding.content.value);
+
+  contentValue = contentValue.replaceAll('dataid:artifact', 'databus:artifact');
+  contentValue = contentValue.replaceAll('dataid:group', 'databus:group');
+  contentValue = contentValue.replaceAll('http://dataid.dbpedia.org/ns/core#', 'https://dataid.dbpedia.org/databus#');
+  contentValue = contentValue.replaceAll('http://dataid.dbpedia.org/ns/cv#', 'https://dataid.dbpedia.org/databus-cv#');
+  contentValue = contentValue.replaceAll('dataid:', 'databus:');
+
+  
+  var oldContent = JSON.parse(decodeURIComponent(contentValue));
+
+  var collection = {};
+
+  collection[DatabusUris.JSONLD_ID] = collectionUri;  
+  collection[DatabusUris.JSONLD_TYPE] = DatabusUris.DATABUS_COLLECTION;
+  collection.title = decodeURIComponent(binding.title.value);
+  collection.abstract = decodeURIComponent(binding.abstract.value);
+  collection.description = decodeURIComponent(binding.description.value);
+
+  if(collection.abstract.length > 300) {
+    collection.abstract = collection.abstract.substr(0, 295) + "...";
+  }
+
+  var databusNode = new QueryNode(sourceUri.origin, null);
+
+  var content = {};
+  content.root = new QueryNode(null, null);
+  content.root.addChild(databusNode);
+
+  if (oldContent.generatedQuery != null) {
+    for (var groupNode of oldContent.generatedQuery.root.childNodes) {
+      databusNode.addChild(groupNode);
+    }
+  }
+
+  if (oldContent.customQueries != null) {
+    for (var customNode of oldContent.customQueries) {
+
+      var label = customNode.label;
+      var query = customNode.query;
+
+      databusNode.addChild(new QueryNode(label, query));
+    }
+  }
+
+  collection.collectionContent = encodeURIComponent(JSON.stringify(content));
+  collection.issued = binding.issued.value;
+
+  var input = {};
+  input[DatabusUris.JSONLD_GRAPH] = [ collection ];
+  input[DatabusUris.JSONLD_CONTEXT] = DEFAULT_CONTEXT;
+
+  try {
+    var params = {
+      headers: {
+        'x-api-key': apiKey
+      },
+      json: input
+    };
+
+    console.log(`Publishing Collection ${collectionUri}..`);
+
+    var path = new URL(collectionUri).pathname;
+    var target = `${targetUri.origin}${path}`;
+
+    console.log(target);
+
+    // Send request to target databus
+    var res = await got.put(target, params);
+    console.log(`${res.statusCode}`);
+
+  } catch (e) {
+    console.log(e);
+    console.log(`ERROR ${e.response.statusCode}: ${e.response.body}`);
+  }
+}
+
+
 function convertFusionTags(fileGraph) {
 
   if (fileGraph['dataid-cv:tag'] == undefined) {
@@ -163,13 +266,13 @@ function convertFusionTags(fileGraph) {
     return;
   }
 
-  var ignoreTags = [ 'context', 'preference' ];
+  var ignoreTags = ['context', 'preference'];
 
   // check if it is tagged with context
   var ignoreTag = undefined;
 
-  for(var t of ignoreTags) {
-    if(tags.includes(t)) {
+  for (var t of ignoreTags) {
+    if (tags.includes(t)) {
       ignoreTag = t;
       break;
     }
@@ -238,8 +341,8 @@ function convertTags(fileGraph, usedTags) {
     }
 
     // if cv is null, drop the tag
-    if(tagMapEntry.cv == null) {
-      tags = tags.filter(function(v) {
+    if (tagMapEntry.cv == null) {
+      tags = tags.filter(function (v) {
         return v != tag;
       });
 
@@ -257,7 +360,7 @@ function convertTags(fileGraph, usedTags) {
     fileGraph[tagUri] = tagMapEntry.value;
 
     // remove the tag from the list
-    tags = tags.filter(function(v) {
+    tags = tags.filter(function (v) {
       return v != tag;
     });
 
@@ -289,27 +392,6 @@ function setDefaultTags(fileGraph, usedTags) {
   }
 }
 
-function fixArtifactUris(versionGraph) {
-  
-  var versionUri = versionGraph["@id"];
-  var artifactUri = navigateUp(versionUri, 1);
-  var groupUri = navigateUp(versionUri, 2);
-  
-  var artifactName = ""; // TODO
-  
-  if(artifactName.length > 3) {
-    return versionGraph; 
-  }
-  
-  var fixedArtiactName = ""; // TODO
-  var fixedArtifactUri = groupUri + "/" + fixedArtiactName;
-  
-  var graphString = JSON.stringify(versionGraph);
-  var fixedGraphString = graphString.replaceAll(artifactUri, fixedArtifactUri);
-  
-  return JSON.parse(fixedGraphString);
-}
-
 async function transfer() {
 
   if (!fs.existsSync('./errors')) {
@@ -326,7 +408,27 @@ async function transfer() {
   // TODO: Configurable?
   var sourceEndpoint = sourceUri.origin + '/repo/sparql';
 
-  if (publishGroups != 'false') {
+  if (publishCollections) {
+    var selectCollectionsQuery = fs.readFileSync(path.resolve(__dirname, 'select-collections.sparql'), 'utf8');
+
+    try {
+      console.log(`Selecting collections...`);
+      var requestUri = sourceEndpoint + `?query=${encodeURIComponent(selectCollectionsQuery)}`;
+      var res = await got.get(requestUri, { responseType: 'json' });
+
+
+      console.log(`Found ${res.body.results.bindings.length} collections.`);
+
+      for (var binding of res.body.results.bindings) {
+        await transferCollection(binding);
+      }
+    } catch (e) {
+      console.log(e);
+    }
+
+  }
+
+  if (publishGroups) {
     // Fetch the list of groups from the specified account of the source Databus.
     var selectGroupsQuery = fs.readFileSync(path.resolve(__dirname, 'select-groups.sparql'), 'utf8');
     selectGroupsQuery = selectGroupsQuery.replace('%SOURCE%', sourceUri.href);
@@ -355,7 +457,7 @@ async function transfer() {
       // Initialize groupdata with fixed values
       var groupdata = {
         "@id": replaceUris ? uri.replace(sourceUri.href, targetUri.href) : uri,
-        "@type": "http://dataid.dbpedia.org/ns/core#Group",
+        "@type": DatabusUris.DATABUS_GROUP,
         "http://purl.org/dc/terms/title": {
           "@value": "",
         },
@@ -506,6 +608,7 @@ async function transfer() {
 
       if (subgraph['@type'] == 'dataid:Artifact') {
         artifactGraph = subgraph;
+        artifactGraph['@type'] = DatabusUris.DATABUS_ARTIFACT
       }
 
       if (subgraph['@type'] == 'dataid:SingleFile') {
@@ -513,6 +616,8 @@ async function transfer() {
       }
 
       if (subgraph['rdfs:subPropertyOf'] != undefined) {
+        subgraph['rdfs:subPropertyOf'] = DatabusUris.DATABUS_CONTENT_VARIANT;
+        subgraph['@id'] = 'dcv' + subgraph['@id'].substr(subgraph['@id'].indexOf(':'));
         cvGraphs.push(subgraph);
       }
     }
@@ -520,16 +625,17 @@ async function transfer() {
     if (versionGraph == null) {
       continue;
     }
+
     // Modify the graphs to match the new API input format
     var targetBody = {};
-    targetBody['@context'] = jsonld['@context'];
+    targetBody['@context'] = "https://downloads.dbpedia.org/databus/context.jsonld";
     targetBody['@graph'] = [];
 
     // Assign new id, set dct:abstract/description/publisher
     datasetGraph['@id'] = `${versionGraph['@id']}`;
     datasetGraph['dct:abstract'] = datasetGraph['rdfs:comment'];
     datasetGraph['dct:description'] = datasetGraph['rdfs:comment'];
-    datasetGraph['@type'] = [ 'dataid:Version', 'dataid:Dataset' ];
+    datasetGraph['@type'] = ['databus:Version', 'dataid:Dataset'];
 
     delete datasetGraph['rdfs:label'];
     delete datasetGraph['rdfs:comment'];
@@ -537,7 +643,21 @@ async function transfer() {
     delete datasetGraph['dct:abstract']['@language'];
     delete datasetGraph['dct:description']['@language'];
     delete datasetGraph['dct:title']['@language'];
-    datasetGraph['dct:publisher'] = { '@id': replaceUris ? `${targetUri.href}#this` : `${sourceUri.href}#this` }
+    delete datasetGraph['dct:conformsTo'];
+    delete datasetGraph['dataid:maintainer'];
+    delete datasetGraph['dataid:associatedAgent'];
+    delete datasetGraph['dataid:account'];
+    delete datasetGraph['dataid:group'];
+    delete datasetGraph['dataid:artifact'];
+    delete datasetGraph['dataid:version'];
+    delete datasetGraph['dct:publisher'];
+
+    delete datasetGraph['dataid-debug:feedbackChannel'];
+    delete datasetGraph['dataid-debug:issueTracker'];
+    delete datasetGraph['dataid-debug:documentationLocation'];
+    delete datasetGraph['dataid-debug:codeReference'];
+
+
     datasetGraph['dcat:distribution'] = [];
 
     fixLongAbstracts(datasetGraph);
@@ -560,7 +680,7 @@ async function transfer() {
     }
 
     // Add subgraphs
-    targetBody['@graph'].push(artifactGraph);
+    // targetBody['@graph'].push(artifactGraph);
     targetBody['@graph'].push(datasetGraph);
 
     // Extend cvGraphs and add
@@ -574,10 +694,13 @@ async function transfer() {
 
       var hash = new URL(fileGraph['@id']).hash.replace('#', '');
 
-      fileGraph['@id'] = `${versionGraph['@id']}#${hash}`;
-      fileGraph['@type'] = 'dataid:Part'
-      fileGraph['dataid:file'] = { '@id': `${versionGraph['@id']}/${hash}` };
 
+      // fileGraph['@id'] = `${versionGraph['@id']}#${hash}`;
+      fileGraph['@type'] = DatabusUris.DATABUS_PART;
+      //fileGraph[DatabusUris.DATABUS_FILE] = { '@id': `${versionGraph['@id']}/${hash}` };
+
+      delete fileGraph['@id'];
+      delete fileGraph['dataid:file'];
       delete fileGraph['dataid:signature'];
       delete fileGraph['dataid:duplicates'];
       delete fileGraph['dataid:isDistributionOf'];
@@ -586,30 +709,64 @@ async function transfer() {
       delete fileGraph['dataid:format'];
       delete fileGraph['dataid:contentVariant'];
 
+      delete fileGraph['dataid:preview'];
+      delete fileGraph['dcat:mediaType'];
+      delete fileGraph['dct:modified'];
+      delete fileGraph['dataid:uncompressedByteSize'];
+      delete fileGraph['dataid:sorted'];
+      delete fileGraph['dataid:nonEmptyLines'];
+      delete fileGraph['dct:conformsTo'];
+      delete fileGraph['dct:hasVersion'];
+
+      delete fileGraph['dataid-debug:feedbackChannel'];
+      delete fileGraph['dataid-debug:issueTracker'];
+      delete fileGraph['dataid-debug:documentationLocation'];
+      delete fileGraph['dataid-debug:codeReference'];
+
+      delete fileGraph['dct:title'];
+      delete fileGraph['dct:abstract'];
+      delete fileGraph['dct:description'];
+
       delete fileGraph['rdfs:label'];
       delete fileGraph['rdfs:comment'];
       delete fileGraph['dataid:maintainer'];
+      delete fileGraph['dct:license'];
+
 
 
       if (fileGraph['dataid:compression'] == undefined) {
-        fileGraph['dataid:compression'] = '';
+        fileGraph['databus:compression'] = '';
+      } else if (fileGraph['dataid:compression'] == 'None') {
+        fileGraph['databus:compression'] = 'none';
+      } else {
+        fileGraph['databus:compression'] = fileGraph['dataid:compression'];
       }
-      if (fileGraph['dataid:compression'] == 'None') {
-        fileGraph['dataid:compression'] = 'none';
-      }
+
+      fileGraph['databus:sha256sum'] = fileGraph['dataid:sha256sum'];
+
+      delete fileGraph['dataid:compression'];
+      delete fileGraph['dataid:sha256sum'];
 
       applyDirtyFixes(fileGraph);
       fixDecimalNan(fileGraph);
       fixFormatExtension(fileGraph);
       convertFusionTags(fileGraph);
       convertTags(fileGraph, usedTags);
+
+      for (var key in fileGraph) {
+
+        if (key.startsWith('dataid-cv')) {
+          var newKey = 'dcv' + key.substr(key.indexOf(':'));
+
+          fileGraph[newKey] = fileGraph[key];
+          delete fileGraph[key];
+        }
+      }
       // fixDuplicateCv(fileGraph);
 
-      targetBody['@graph'].push(fileGraph);
+      // targetBody['@graph'].push(fileGraph);
 
-      datasetGraph['dcat:distribution'].push({
-        '@id': fileGraph['@id']
-      });
+      datasetGraph['dcat:distribution'].push(fileGraph);
 
     }
 
@@ -619,12 +776,7 @@ async function transfer() {
     }
 
 
-    versionGraph = fixArtifactUris(versionGraph);
     console.log(`Publishing Version ${versionGraph['@id']}..`);
-
-
-
-    // console.log(JSON.stringify(targetBody, null, 3));
 
 
     // Send PUT to API
