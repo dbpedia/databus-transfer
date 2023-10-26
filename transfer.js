@@ -16,8 +16,8 @@ const jsonld = require('jsonld');
 const JsonldUtils = require('./jsonld-utils');
 
 
-const CONTEXT_URL = "https://downloads.dbpedia.org/databus/context.jsonld";
-const targetUri = new URL("https://databus.dbpedia.org");
+const CONTEXT_URL = "https://databus.openenergyplatform.org/res/context.jsonld";
+const targetUri = new URL("https://databus.openenergyplatform.org");
 
 function* walkSync(dir) {
   const files = fs.readdirSync(dir, { withFileTypes: true });
@@ -43,6 +43,8 @@ async function publish(apiKey, data) {
       json: data
     };
 
+    console.log(params);
+
     // Send request to target databus
     var res = await got.post(targetUri.origin + '/api/publish', params);
     console.log(`${res.statusCode}: ${res.body}`);
@@ -64,17 +66,12 @@ async function transfer() {
 
   for (var record of records) {
 
-    var apiKeys = JSON.parse(atob(record[3]));
-    var apiKey = null;
 
-    if (apiKeys.length > 0) {
-      apiKey = apiKeys[0].key;
-    }
 
     accounts.push({
-      sub: record[1],
-      accountName: record[2],
-      apiKey: apiKey
+      sub: record[2],
+      accountName: record[1],
+      apiKey: record[0]
     });
   }
 
@@ -84,6 +81,7 @@ async function transfer() {
     if (account.apiKey == null) {
       continue;
     }
+
 
     console.log(account);
 
@@ -108,6 +106,11 @@ async function transfer() {
       }
     }
 
+    console.log(groupPaths);
+    console.log(versionPaths);
+
+
+    /*
     if (groupPaths.length > 0) {
       console.log(`Publishing Groups of ${account.accountName}`);
       // Get all files called "group.jsonld"
@@ -115,6 +118,16 @@ async function transfer() {
       for (var groupPath of groupPaths) {
         // Load
         var groupContent = JSON.parse(fs.readFileSync(groupPath));
+
+
+        var groupString = JSON.stringify(groupContent).replaceAll("https://energy.databus.dbpedia.org/",
+          targetUri.origin + '/');
+
+        groupString = groupString.replaceAll(
+          "http://dataid.dbpedia.org/ns/core#",
+          "https://dataid.dbpedia.org/databus#");
+
+        groupContent = JSON.parse(groupString);
         groupContent = await jsonld.flatten(groupContent);
 
         // Rewrite Model:
@@ -123,11 +136,14 @@ async function transfer() {
         // Publish
         // TODO uncomment-> await publish(account.apiKey, groupContent);
 
+        console.log(groupContent);
 
         var input = {};
-        input[DatabusUris.JSONLD_GRAPH] = [ groupContent ];
+        input[DatabusUris.JSONLD_GRAPH] = [groupContent];
         input[DatabusUris.JSONLD_CONTEXT] = CONTEXT_URL;
 
+
+        await publish(account.apiKey, input);
       }
     }
 
@@ -139,6 +155,12 @@ async function transfer() {
       for (var versionPath of versionPaths) {
         // Load
         var versionContent = JSON.parse(fs.readFileSync(versionPath));
+
+        var versionString = JSON.stringify(versionContent).replaceAll("https://energy.databus.dbpedia.org/",
+          targetUri.origin + '/');
+
+        versionContent = JSON.parse(versionString);
+
         versionContent = await jsonld.flatten(versionContent);
 
         // Rewrite Model:
@@ -150,7 +172,7 @@ async function transfer() {
         }
 
         for (var graph of JsonldUtils.getTypedGraphs(versionContent,
-          "https://dataid.dbpedia.org/databus#")) {
+          "https://dataid.dbpedia.org/databus#Part")) {
           partGraphs.push(graph);
         }
 
@@ -184,14 +206,15 @@ async function transfer() {
         delete versionGraph[DatabusUris.SEC_PROOF];
         delete versionGraph[DatabusUris.DATABUS_VERSION_PROPERTY];
 
+
+
         var versionId = new URL(versionGraph[DatabusUris.JSONLD_ID]);
         versionId.hash = "";
 
         versionGraph[DatabusUris.JSONLD_ID] = `${versionId}`;
 
         versionGraph[DatabusUris.JSONLD_TYPE] = [
-          DatabusUris.DATABUS_VERSION,
-          DatabusUris.DATAID_DATASET
+          DatabusUris.DATABUS_VERSION
         ];
 
         var graphs = [];
@@ -222,10 +245,12 @@ async function transfer() {
         input[DatabusUris.JSONLD_GRAPH] = graphs;
         input[DatabusUris.JSONLD_CONTEXT] = CONTEXT_URL;
 
+        console.log(JSON.stringify(input));
         // Publish
-        // TODO: uncomment-> await publish(account.apiKey, graphs);
+        // TODO: uncomment-> 
+        await publish(account.apiKey, input);
       }
-    }
+    }*/
 
     if (collectionPaths.length > 0) {
       console.log(`Publishing Collections of ${account.accountName}`);
@@ -236,28 +261,81 @@ async function transfer() {
         var collectionContent = JSON.parse(fs.readFileSync(collectionPath));
         collectionContent = await jsonld.flatten(collectionContent);
 
-        var collectionContentString = JSON.stringify(collectionContent[0]);
-        collectionContentString = collectionContentString.replaceAll(
+        var collectionString = JSON.stringify(collectionContent[0]);
+
+        collectionString = collectionString.replaceAll("https://energy.databus.dbpedia.org/",
+          targetUri.origin + '/');
+
+        collectionString = collectionString.replaceAll(
+          "dataid:",
+          "databus:");
+
+        collectionString = collectionString.replaceAll(
+          "dataid:",
+          "databus:");
+
+        collectionString = collectionString.replaceAll(
           "http://dataid.dbpedia.org/ns/core#",
           "https://dataid.dbpedia.org/databus#");
 
-        collectionContentString = collectionContentString.replaceAll(
+        collectionString = collectionString.replaceAll(
           "https://dataid.dbpedia.org/databus#content",
           "https://dataid.dbpedia.org/databus#collectionContent");
 
-        collectionContent = JSON.parse(collectionContentString);
+        collectionContent = JSON.parse(collectionString);
 
         delete collectionContent[DatabusUris.DCT_PUBLISHER];
 
         // Rewrite Model:
-        
+
         collectionContent[DatabusUris.JSONLD_TYPE] = [DatabusUris.DATABUS_COLLECTION];
 
+        var collectionContentString = collectionContent[DatabusUris.DATABUS_COLLECTION_CONTENT][0][DatabusUris.JSONLD_VALUE];
+        collectionContentString = decodeURIComponent(collectionContentString);
+
+        collectionContentString = collectionContentString.replaceAll("https://energy.databus.dbpedia.org",
+          targetUri.origin);
+
+        collectionContentString = collectionContentString.replaceAll(
+          "dataid:",
+          "databus:");
+
+        collectionContentString = collectionContentString.replaceAll(
+          "http://dataid.dbpedia.org/ns/core#",
+          "https://dataid.dbpedia.org/databus#");
+
+
+        console.log(collectionContentString);
+
+        collectionContent[DatabusUris.DATABUS_COLLECTION_CONTENT] = [
+          {
+            "@value": encodeURIComponent(collectionContentString)
+          }
+        ];
+
+
         var input = {};
-        input[DatabusUris.JSONLD_GRAPH] = [ collectionContent ];
+        input[DatabusUris.JSONLD_GRAPH] = [collectionContent];
         input[DatabusUris.JSONLD_CONTEXT] = CONTEXT_URL;
 
         console.log(JSON.stringify(input, null, 3));
+
+        try {
+          var params = {
+            headers: {
+              'x-api-key': account.apiKey
+            },
+            json: input
+          };
+      
+          // Send request to target databus
+          var res = await got.put(collectionContent[DatabusUris.JSONLD_ID], params);
+          console.log(`${res.statusCode}: ${res.body}`);
+      
+        } catch (e) {
+          console.log(e);
+        }
+
       }
     }
   }
