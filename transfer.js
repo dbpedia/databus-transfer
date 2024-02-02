@@ -487,6 +487,8 @@ async function transfer() {
 
         if (entry.description != undefined) {
           groupdata["http://purl.org/dc/terms/description"]["@value"] = entry.description.value;
+        } else if (entry.groupdocu != undefined) {  // get the groupdocu as description if description is missing
+          groupdata["http://purl.org/dc/terms/description"]["@value"] = entry.groupdocu.value;
         }
       }
 
