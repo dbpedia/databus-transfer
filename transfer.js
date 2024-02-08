@@ -636,7 +636,11 @@ async function transfer() {
     // Assign new id, set dct:abstract/description/publisher
     datasetGraph['@id'] = `${versionGraph['@id']}`;
     datasetGraph['dct:abstract'] = datasetGraph['rdfs:comment'];
-    datasetGraph['dct:description'] = datasetGraph['rdfs:comment'];
+
+    if(datasetGraph['dct:description'] == undefined || datasetGraph['dct:description'] == "") {
+      datasetGraph['dct:description'] = datasetGraph['rdfs:comment'];
+    }
+    
     datasetGraph['@type'] = ['databus:Version', 'dataid:Dataset'];
 
     delete datasetGraph['rdfs:label'];
