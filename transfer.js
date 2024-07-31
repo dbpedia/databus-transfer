@@ -20,6 +20,7 @@ const DEFAULT_ABSTRACT = {
 
 // Parse CLI parameters
 var sourceUri = "";
+var oldDatabusHostname = "https://staging.databus.dbpedia.org";
 var targetUri = "";
 var apiKey = "";
 var offset = 0;
@@ -40,6 +41,9 @@ for (var i = 2; i < process.argv.length; i++) {
   if (process.argv[i] == "-o") {
     offset = process.argv[i + 1];
   }
+  if (process.argv[i] == "-h") { 
+    offset = process.argv[i + 1];
+  }
   if (process.argv[i] == "-g") {
     publishGroups = true;
   }
@@ -52,11 +56,15 @@ for (var i = 2; i < process.argv.length; i++) {
 }
 
 
+
 console.log(apiKey);
 console.log(targetUri);
 console.log(sourceUri);
 console.log(offset);
 console.log(publishGroups);
+console.log(publishCollections);
+console.log(oldDatabusHostname);
+console.log(replaceUris);
 
 var tagMap = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'cv-map.json'), 'utf8'));
 var dirtyFixMap = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'dirty-tag-fixes.json'), 'utf8'));
@@ -198,7 +206,7 @@ async function transferCollection(binding) {
     collection.abstract = collection.abstract.substr(0, 295) + "...";
   }
 
-  var databusNode = new QueryNode(sourceUri.origin, null);
+  var databusNode = new QueryNode(oldDatabusHostname, null);
 
   var content = {};
   content.root = new QueryNode(null, null);
@@ -406,7 +414,7 @@ async function transfer() {
   var errorCsv = '';
 
   // TODO: Configurable?
-  var sourceEndpoint = sourceUri.origin + '/repo/sparql';
+  var sourceEndpoint = oldDatabusHostname + '/repo/sparql';
 
   if (publishCollections) {
     var selectCollectionsQuery = fs.readFileSync(path.resolve(__dirname, 'select-collections.sparql'), 'utf8');
@@ -531,7 +539,7 @@ async function transfer() {
   // Fetch all graphs that specify a dataid:Dataset
   var selectGraphs = fs.readFileSync(path.resolve(__dirname, 'select-graphs.sparql'), 'utf8');
   selectGraphs = selectGraphs.replace('%SOURCE%', sourceUri.href);
-  var sourceEndpoint = sourceUri.origin + '/repo/sparql';
+  var sourceEndpoint = oldDatabusHostname + '/repo/sparql';
   var graphs = [];
 
   // Send the query
